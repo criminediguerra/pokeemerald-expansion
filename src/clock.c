@@ -12,6 +12,7 @@
 #include "overworld.h"
 #include "wallclock.h"
 #include "constants/form_change_types.h"
+#include "apricorn_tree.h"
 
 static void UpdatePerDay(struct Time *localTime);
 static void UpdatePerMinute(struct Time *localTime);
@@ -54,6 +55,7 @@ static void UpdatePerDay(struct Time *localTime)
         UpdateFrontierGambler(daysSince);
         SetShoalItemFlag(daysSince);
         SetRandomLotteryNumber(daysSince);
+        DailyResetApricornTrees();
         *days = localTime->days;
     }
 }
@@ -83,7 +85,7 @@ static void FormChangeTimeUpdate()
     {
         struct Pokemon *mon = &gPlayerParty[i];
         u16 targetSpecies = GetFormChangeTargetSpecies(mon, FORM_CHANGE_TIME_OF_DAY, 0);
-        
+
         if (targetSpecies != SPECIES_NONE)
         {
             SetMonData(mon, MON_DATA_SPECIES, &targetSpecies);
