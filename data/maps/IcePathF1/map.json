@@ -2,7 +2,7 @@
   "id": "MAP_ICE_PATH_F1",
   "name": "IcePathF1",
   "layout": "LAYOUT_ICE_PATH_F1",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "DARKCAVE",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",

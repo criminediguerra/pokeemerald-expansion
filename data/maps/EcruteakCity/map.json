@@ -2,7 +2,7 @@
   "id": "MAP_ECRUTEAK_CITY",
   "name": "EcruteakCity",
   "layout": "LAYOUT_ECRUTEAK_CITY",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "CYANWOOD",
   "region_map_section": "MAPSEC_ECRUTEAK",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

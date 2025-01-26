@@ -2,7 +2,7 @@
   "id": "MAP_MAHOGANY_MART",
   "name": "MahoganyMart",
   "layout": "LAYOUT_MAHOGANY_MART",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "CHERRYGROVE",
   "region_map_section": "MAPSEC_MAHOGANY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

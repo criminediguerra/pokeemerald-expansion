@@ -2,7 +2,7 @@
   "id": "MAP_TIN_TOWER",
   "name": "TinTower",
   "layout": "LAYOUT_TIN_TOWER",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "TINTOWER",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",

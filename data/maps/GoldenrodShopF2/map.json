@@ -2,7 +2,7 @@
   "id": "MAP_GOLDENROD_SHOP_F2",
   "name": "GoldenrodShopF2",
   "layout": "LAYOUT_GOLDENROD_SHOP_F2",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "GOLDENROD",
   "region_map_section": "MAPSEC_GOLDENROD",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

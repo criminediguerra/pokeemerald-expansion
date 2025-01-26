@@ -2,7 +2,7 @@
   "id": "MAP_MT_MORTAR_F4",
   "name": "MtMortarF4",
   "layout": "LAYOUT_MT_MORTAR_F4",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "ALPH",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",

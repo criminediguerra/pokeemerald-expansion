@@ -2,7 +2,7 @@
   "id": "MAP_JOHTO_SAFARI_F2",
   "name": "JohtoSafariF2",
   "layout": "LAYOUT_JOHTO_SAFARI_F2",
-  "music": "MUS_SAFARI_ZONE",
+  "music": "ROUTE34",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

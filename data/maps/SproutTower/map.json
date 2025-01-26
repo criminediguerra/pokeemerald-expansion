@@ -2,7 +2,7 @@
   "id": "MAP_SPROUT_TOWER",
   "name": "SproutTower",
   "layout": "LAYOUT_SPROUT_TOWER",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "SPROUTTOWER",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",

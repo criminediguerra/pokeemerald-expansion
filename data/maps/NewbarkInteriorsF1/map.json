@@ -2,7 +2,7 @@
   "id": "MAP_NEWBARK_INTERIORS_F1",
   "name": "NewbarkInteriorsF1",
   "layout": "LAYOUT_NEWBARK_INTERIORS_F1",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "NEWBARK",
   "region_map_section": "MAPSEC_NEWBARK",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

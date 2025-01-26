@@ -2,7 +2,7 @@
   "id": "MAP_KANTO_VICTORY_ROAD",
   "name": "KantoVictoryRoad",
   "layout": "LAYOUT_KANTO_VICTORY_ROAD",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "GSVICTORYROAD",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

@@ -2,7 +2,7 @@
   "id": "MAP_WHIRL_F4",
   "name": "WhirlF4",
   "layout": "LAYOUT_WHIRL_F4",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "WHIRL",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",

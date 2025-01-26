@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE99CRYPT",
   "name": "Route99Crypt",
   "layout": "LAYOUT_ROUTE99CRYPT",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "ALPHDEEP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",

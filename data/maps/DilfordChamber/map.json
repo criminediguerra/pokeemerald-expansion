@@ -2,7 +2,7 @@
   "id": "MAP_DILFORD_CHAMBER",
   "name": "DilfordChamber",
   "layout": "LAYOUT_DILFORD_CHAMBER",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "ALPHDEEP",
   "region_map_section": "MAPSEC_TANOBY_CHAMBERS",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

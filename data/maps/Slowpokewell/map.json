@@ -2,7 +2,7 @@
   "id": "MAP_SLOWPOKEWELL",
   "name": "Slowpokewell",
   "layout": "LAYOUT_SLOWPOKEWELL",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "DARKCAVE",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",

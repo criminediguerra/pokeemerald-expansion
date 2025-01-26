@@ -2,7 +2,7 @@
   "id": "MAP_DARK_CAVE_F1",
   "name": "DarkCaveF1",
   "layout": "LAYOUT_DARK_CAVE_F1",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "DARKCAVE",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": true,
   "weather": "WEATHER_SHADE",

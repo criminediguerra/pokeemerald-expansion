@@ -2,7 +2,7 @@
   "id": "MAP_CYANWOOD_FLORAL_SHOPPE",
   "name": "CyanwoodFloralShoppe",
   "layout": "LAYOUT_CYANWOOD_FLORAL_SHOPPE",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "CYANWOOD",
   "region_map_section": "MAPSEC_CYANWOOD",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

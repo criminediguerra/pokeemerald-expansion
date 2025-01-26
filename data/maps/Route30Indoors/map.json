@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE30INDOORS",
   "name": "Route30Indoors",
   "layout": "LAYOUT_ROUTE30INDOORS",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "ROUTE30",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

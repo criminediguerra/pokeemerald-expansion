@@ -611,6 +611,49 @@ gSongTable::
 	song ph_nurse_blend, 2, 2
 	song ph_nurse_held, 2, 2
 	song ph_nurse_solo, 2, 2
+	song cyanwood, 0, 0
+	song route34, 0, 0
+	song route29, 0, 0
+	song elmlab, 0, 0
+	song alphdeep, 0, 0
+	song darkcave, 0, 0
+	song cherrygrove, 0, 0
+	song goldenrod, 0, 0
+	song alph, 0, 0
+	song kimonogirl, 0, 0
+	song newbark, 0, 0
+	song whirl, 0, 0
+	song natpark, 0, 0
+	song route47, 0, 0
+	song johtosafari, 0, 0
+	song route26, 0, 0
+	song route30, 0, 0
+	song sprouttower, 0, 0
+	song tintower, 0, 0
+	song burnedtower, 0, 0
+	song dragonsden, 0, 0
+	song lugia, 0, 0
+	song hooh, 0, 0
+	song mtmoontop, 0, 0
+	song rockethq, 0, 0
+	song gsvictoryroad, 0, 0
+	song johtowild, 0, 0
+	song jirachi, 0, 0
+	song johtogymleader, 0, 0
+	song johtotrainer, 0, 0
+	song kimairan, 0, 0
+	song kantoelite, 0, 0
+	song indigoleague, 0, 0
+	song redbattle, 0, 0
+	song bluebattle, 0, 0
+	song seviiwild, 0, 0
+	song rocket, 0, 0
+	song encounterrocket, 0, 0
+	song johtocasino, 0, 0
+	song jessejames, 0, 0
+	song eusine, 0, 0
+	song seviicenter, 0, 0
+	song seviitrainer, 0, 0
 
 	.align 2
 dummy_song_header:

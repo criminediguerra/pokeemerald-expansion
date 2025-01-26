@@ -2,7 +2,7 @@
   "id": "MAP_BURNED_TOWER",
   "name": "BurnedTower",
   "layout": "LAYOUT_BURNED_TOWER",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "BURNEDTOWER",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",

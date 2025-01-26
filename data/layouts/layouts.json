@@ -4035,9 +4035,9 @@
       "id": "LAYOUT_BIRTH_ISLAND_EXTERIOR",
       "name": "BirthIsland_Exterior_Layout",
       "width": 30,
-      "height": 30,
+      "height": 31,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Dewford",
+      "secondary_tileset": "gTileset_MeteorFalls",
       "border_filepath": "data/layouts/BirthIsland_Exterior/border.bin",
       "blockdata_filepath": "data/layouts/BirthIsland_Exterior/map.bin"
     },

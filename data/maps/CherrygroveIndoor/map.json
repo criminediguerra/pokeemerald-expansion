@@ -2,7 +2,7 @@
   "id": "MAP_CHERRYGROVE_INDOOR",
   "name": "CherrygroveIndoor",
   "layout": "LAYOUT_CHERRYGROVE_INDOOR",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "CHERRYGROVE",
   "region_map_section": "MAPSEC_CHERRYGROVE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

@@ -2,7 +2,7 @@
   "id": "MAP_NEWBARK_INTERIORS",
   "name": "NewbarkInteriors",
   "layout": "LAYOUT_NEWBARK_INTERIORS",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "NEWBARK",
   "region_map_section": "MAPSEC_NEWBARK",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -37,7 +37,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NewbarkInteriors_Gold",
       "flag": "FLAG_SYS_GAME_CLEAR"
     },
     {

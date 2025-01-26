@@ -2,7 +2,7 @@
   "id": "MAP_ELM_LAB",
   "name": "ElmLab",
   "layout": "LAYOUT_ELM_LAB",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "ELMLAB",
   "region_map_section": "MAPSEC_NEWBARK",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
