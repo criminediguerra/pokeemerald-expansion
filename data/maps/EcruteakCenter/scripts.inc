@@ -14,3 +14,4 @@ EcruteakCenter_MapScripts::
 	waitbuttonpress
 	release
 	end
+

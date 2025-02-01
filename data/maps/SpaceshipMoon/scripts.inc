@@ -25,3 +25,4 @@ SpaceshipMoon_EventScript_DowantFly:
 
 SpaceshipMoon_EventScript_Comeback:
 	.string "Come back when you're ready.$"
+

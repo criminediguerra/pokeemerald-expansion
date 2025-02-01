@@ -5,3 +5,4 @@ VermilionContest_MapScripts::
 VermilionContest_OnTransition:
 	setvar VAR_SAFARI_LOCATION, 1
 	end
+

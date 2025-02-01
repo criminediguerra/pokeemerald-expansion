@@ -78,3 +78,4 @@ Vermilion_Steelix::
 
 Vermilion_Steelix_Text:
 	.string "STEELIX: Aaaaagh!$"
+

@@ -5,3 +5,4 @@ IndigoPlateau_MapScripts::
 IndigoPlateau_OnTransition:
 	setflag FLAG_VISITED_INDIGOPLATEAU
 	end
+

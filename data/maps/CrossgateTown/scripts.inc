@@ -5,3 +5,4 @@ CrossgateTown_MapScripts::
 CrossgateTown_OnTransition:
 	setflag FLAG_VISITED_CROSSGATE
 	end
+

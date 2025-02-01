@@ -14,3 +14,4 @@ JohtoSafariCenter_MapScripts::
 	waitbuttonpress
 	release
 	end
+

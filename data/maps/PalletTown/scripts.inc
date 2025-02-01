@@ -603,3 +603,4 @@ PalletTown_UndergroundOrizSign::
 PalletTown_UndergroundOrizSignText:
 	.string "UNDERGROUND PATH\n"
 	.string "CELADON CITY - LAVENDER TOWN$"
+

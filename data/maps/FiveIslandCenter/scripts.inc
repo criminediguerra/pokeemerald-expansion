@@ -14,3 +14,4 @@ FiveIslandCenter_MapScripts::
 	waitbuttonpress
 	release
 	end
+

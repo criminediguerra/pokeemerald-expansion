@@ -5,3 +5,4 @@ ThreeIsland_MapScripts::
 ThreeIsland_OnTransition:
 	setflag FLAG_VISITED_THREEISLAND
 	end
+

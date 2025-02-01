@@ -14,3 +14,4 @@ MahoganyCenter_MapScripts::
 	waitbuttonpress
 	release
 	end
+

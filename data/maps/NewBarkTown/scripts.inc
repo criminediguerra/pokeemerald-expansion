@@ -660,3 +660,4 @@ NewBarkTown_IcePathSign::
 NewBarkTown_IcePathSignText:
 	.string "ICE PATH\n"
 	.string "Tunnel entrance$"
+

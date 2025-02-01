@@ -5,3 +5,4 @@ EcruteakCity_MapScripts::
 EcruteakCity_OnTransition:
 	setflag FLAG_VISITED_ECRUTEAK
 	end
+

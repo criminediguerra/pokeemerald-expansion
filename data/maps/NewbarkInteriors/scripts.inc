@@ -24,3 +24,4 @@ NewbarkInteriors_Text_Krys:
 	.string "Hi there! Have you come to bring\n"
 	.string "us your POKéMON?\p"
 	.string "I'll take care of them personally!$"
+

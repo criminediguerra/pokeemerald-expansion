@@ -44,3 +44,4 @@ Celadon_Dragonair_Text:
 
 Celadon_Slowpoke_Text:
 	.string "SLOWPOKE: ...?$"
+

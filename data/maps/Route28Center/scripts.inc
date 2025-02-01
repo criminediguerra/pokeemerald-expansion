@@ -14,3 +14,4 @@ Route28Center_MapScripts::
 	waitbuttonpress
 	release
 	end
+

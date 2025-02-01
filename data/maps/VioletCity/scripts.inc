@@ -5,3 +5,4 @@ VioletCity_MapScripts::
 VioletCity_OnTransition:
 	setflag FLAG_VISITED_VIOLET
 	end
+

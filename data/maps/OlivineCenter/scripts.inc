@@ -14,3 +14,4 @@ OlivineCenter_MapScripts::
 	waitbuttonpress
 	release
 	end
+

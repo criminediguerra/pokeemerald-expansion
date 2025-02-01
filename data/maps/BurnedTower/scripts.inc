@@ -43,3 +43,4 @@ BurnedTower_BeastAwakened_2::
 	setvar VAR_BEASTAWAKENED, 3
 	release
 	end
+

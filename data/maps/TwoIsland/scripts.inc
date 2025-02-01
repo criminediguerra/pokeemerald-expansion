@@ -5,3 +5,4 @@ TwoIsland_MapScripts::
 TwoIsland_OnTransition:
 	setflag FLAG_VISITED_TWOISLAND
 	end
+

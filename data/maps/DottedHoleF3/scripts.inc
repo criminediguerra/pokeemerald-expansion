@@ -5,3 +5,4 @@ DottedHoleF3_MapScripts::
 DottedHoleF3_OnResume:
 	setdivewarp MAP_DOTTED_HOLE_F4, 11, 40
 	end
+

@@ -14,3 +14,4 @@ CinnabarCenter_MapScripts::
 	waitbuttonpress
 	release
 	end
+

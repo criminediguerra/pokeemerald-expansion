@@ -14,3 +14,4 @@ IndigoPlateauF1_MapScripts::
 	waitbuttonpress
 	release
 	end
+

@@ -6,3 +6,4 @@ PokemonMansionF4_Mewtwo_Room::
 	waitstate
 	release
 	end
+

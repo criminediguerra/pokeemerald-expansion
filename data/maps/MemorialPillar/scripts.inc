@@ -23,3 +23,4 @@ MemorialPillar_Text_Tectonix:
     .string "on a boulder.\p"
     .string "There is a LEMONADE placed as an\n"
     .string "offering in front of the grave.$"
+

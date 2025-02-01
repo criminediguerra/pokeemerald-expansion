@@ -14,3 +14,4 @@ VermilionCenter_MapScripts::
 	waitbuttonpress
 	release
 	end
+

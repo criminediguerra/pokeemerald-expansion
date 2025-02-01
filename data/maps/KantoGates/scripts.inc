@@ -137,3 +137,4 @@ KantoGates_Text_GiveMeDrink::
     .string "You can go on through.\p"
     .string "I'll share this TEA with the other\n"
     .string "guards!$"
+

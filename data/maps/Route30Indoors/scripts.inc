@@ -122,3 +122,4 @@ Route30Indoors_Egg_Receive::
 Route30Indoors_Egg_Invisible:
 	set_invisible
 	step_end
+

@@ -11,3 +11,4 @@ AzaleaTown_Well::
 	waitstate
 	release
 	end
+

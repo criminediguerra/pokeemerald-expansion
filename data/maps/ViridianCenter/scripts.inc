@@ -14,3 +14,4 @@ ViridianCenter_MapScripts::
 	waitbuttonpress
 	release
 	end
+

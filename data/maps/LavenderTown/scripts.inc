@@ -5,3 +5,4 @@ LavenderTown_MapScripts::
 LavenderTown_OnTransition:
 	setflag FLAG_VISITED_LAVENDER
 	end
+

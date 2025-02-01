@@ -17,3 +17,4 @@ FuchsiaGuardianHouse_WardenFossil::
 FuchsiaGuardianHouse_Text_WardenFossil:
 	.string "It looks like the FOSSIL of a small\n"
 	.string "POKéMON.$"
+

@@ -40,3 +40,4 @@ Lavender_Cubone::
 
 Lavender_Cubone_Text:
 	.string "CUBONE: Uogh..?$"
+

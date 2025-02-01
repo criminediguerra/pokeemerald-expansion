@@ -6,3 +6,4 @@ CobaltBeacha_Warp::
 	waitstate
 	release
 	end
+

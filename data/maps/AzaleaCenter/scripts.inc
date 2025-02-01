@@ -14,3 +14,4 @@ AzaleaCenter_MapScripts::
 	waitbuttonpress
 	release
 	end
+

@@ -11,3 +11,4 @@ DottedHole_WarpF4::
 DottedHoleF4_OnResume:
 	setdivewarp MAP_DOTTED_HOLE_F3, 3, 5
 	end
+

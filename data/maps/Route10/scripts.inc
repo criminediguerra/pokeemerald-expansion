@@ -5,3 +5,4 @@ Route10_MapScripts::
 Route10_OnTransition:
 	setflag FLAG_VISITED_ROUTE10
 	end
+

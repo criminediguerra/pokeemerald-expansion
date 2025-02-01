@@ -5,3 +5,4 @@ FourIsland_MapScripts::
 FourIsland_OnTransition:
 	setflag FLAG_VISITED_FOURISLAND
 	end
+

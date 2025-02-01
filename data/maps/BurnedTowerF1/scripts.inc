@@ -180,3 +180,4 @@ BurnedTowerF1_Movement_RaikouFleeing:
 	jump_right
 	set_invisible
 	step_end
+

@@ -26,3 +26,4 @@ IndigoPlateauF10_Champion_Lance_Room::
 	waitstate
 	release
 	end
+

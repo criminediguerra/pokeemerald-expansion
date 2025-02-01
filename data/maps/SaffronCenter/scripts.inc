@@ -14,3 +14,4 @@ SaffronCenter_MapScripts::
 	waitbuttonpress
 	release
 	end
+

@@ -6,3 +6,4 @@ Mt_Ember_Moltres_Room::
 	waitstate
 	release
 	end
+

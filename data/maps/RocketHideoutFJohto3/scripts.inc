@@ -13,3 +13,4 @@ RocketHideoutFJohto3_Electrode::
 
 RocketHideoutFJohto3_Electrode_Text:
 	.string "ELECTRODE: Zzzzzzz!$"
+

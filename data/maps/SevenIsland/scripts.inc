@@ -5,3 +5,4 @@ SevenIsland_MapScripts::
 SevenIsland_OnTransition:
 	setflag FLAG_VISITED_SEVENISLAND
 	end
+

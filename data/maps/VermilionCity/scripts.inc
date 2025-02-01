@@ -44,3 +44,4 @@ Vermilion_Persian::
 
 Vermilion_Persian_Text:
 	.string "PERSIAN: Purrrrr!$"
+

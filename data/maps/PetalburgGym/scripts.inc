@@ -207,3 +207,4 @@ PetalburgGym_Movement_OpponentGoesAwayThird:
 	walk_up
 	set_invisible
 	step_end
+

@@ -5,3 +5,4 @@ ViridianCity_MapScripts::
 ViridianCity_OnTransition:
 	setflag FLAG_VISITED_VIRIDIAN
 	end
+

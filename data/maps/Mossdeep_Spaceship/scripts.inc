@@ -25,3 +25,4 @@ Mossdeep_Spaceship_EventScript_DowantFly:
 
 Mossdeep_Spaceship_EventScript_Comeback:
 	.string "Come back when you're ready.$"
+

@@ -14,3 +14,4 @@ TwoIslandCenter_MapScripts::
 	waitbuttonpress
 	release
 	end
+

@@ -5,3 +5,4 @@ GoldenrodCity_MapScripts::
 GoldenrodCity_OnTransition:
 	setflag FLAG_VISITED_GOLDENROD
 	end
+

@@ -107,3 +107,4 @@ UnionRoom_EventScript_Unused::
 	waitstate
 	releaseall
 	end
+

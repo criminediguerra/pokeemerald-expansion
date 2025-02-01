@@ -5,3 +5,4 @@ JohtoBattleTower_MapScripts::
 JohtoBattleTower_OnTransition:
 	setflag FLAG_VISITED_JOHTOBATTLETOWER
 	end
+

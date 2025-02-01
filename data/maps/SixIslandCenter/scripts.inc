@@ -14,3 +14,4 @@ SixIslandCenter_MapScripts::
 	waitbuttonpress
 	release
 	end
+

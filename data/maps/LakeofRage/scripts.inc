@@ -5,3 +5,4 @@ LakeofRage_MapScripts::
 LakeofRage_OnTransition:
 	setflag FLAG_VISITED_LAKEOFRAGE
 	end
+

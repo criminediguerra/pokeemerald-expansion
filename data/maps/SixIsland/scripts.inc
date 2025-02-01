@@ -5,3 +5,4 @@ SixIsland_MapScripts::
 SixIsland_OnTransition:
 	setflag FLAG_VISITED_SIXISLAND
 	end
+

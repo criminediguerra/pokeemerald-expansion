@@ -21,3 +21,4 @@ BerryForest_OnWarp:
 BerryForest_EventScript_TurnPlayerNorth::
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
 	end
+

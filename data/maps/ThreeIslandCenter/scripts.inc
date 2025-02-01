@@ -14,3 +14,4 @@ ThreeIslandCenter_MapScripts::
 	waitbuttonpress
 	release
 	end
+

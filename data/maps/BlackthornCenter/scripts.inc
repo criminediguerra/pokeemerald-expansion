@@ -14,3 +14,4 @@ BlackthornCenter_MapScripts::
 	waitbuttonpress
 	release
 	end
+

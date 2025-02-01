@@ -14,3 +14,4 @@ VioletCenter_MapScripts::
 	waitbuttonpress
 	release
 	end
+

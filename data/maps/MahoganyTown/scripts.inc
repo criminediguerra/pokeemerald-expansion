@@ -5,3 +5,4 @@ MahoganyTown_MapScripts::
 MahoganyTown_OnTransition:
 	setflag FLAG_VISITED_MAHOGANY
 	end
+

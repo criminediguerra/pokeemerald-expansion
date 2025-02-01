@@ -14,3 +14,4 @@ FuchsiaCenter_MapScripts::
 	waitbuttonpress
 	release
 	end
+

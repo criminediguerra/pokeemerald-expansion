@@ -25,3 +25,4 @@ PokmonNetworkCenter_Text_Celio:
 	.string "MACHINE, the machine that allows\p"
 	.string "you to trade POKéMON across the\n"
 	.string "CONTINENT!$"
+

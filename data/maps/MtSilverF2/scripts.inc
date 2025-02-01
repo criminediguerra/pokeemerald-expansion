@@ -5,3 +5,4 @@ MtSilverF2_MapScripts::
 MtSilverF2_OnTransition:
 	setflag FLAG_VISITED_MTSILVER
 	end
+

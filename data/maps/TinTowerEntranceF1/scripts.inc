@@ -9,3 +9,4 @@ TinTowerEntranceF1_Text_NoBlessing:
 	.string "Halt!\l"
 	.string "Only PURE HEARTED and BLESSED\n"
 	.string "individuals can pass through this door.$"
+

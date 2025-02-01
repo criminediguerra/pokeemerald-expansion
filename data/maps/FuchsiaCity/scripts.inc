@@ -137,3 +137,4 @@ Fuchsia_Chansey::
 
 Fuchsia_Chansey_Text:
 	.string "CHANSEY: Chan Chan!$"
+

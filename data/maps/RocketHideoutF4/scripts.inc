@@ -33,3 +33,4 @@ RocketHideoutF4_EventScript_Guard::
 RocketHideoutF4_Text_Guard:
 	.string "Hey you can't stay here!\n"
 	.string "Go play somewhere else.$"
+

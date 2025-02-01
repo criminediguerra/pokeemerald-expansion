@@ -11,3 +11,4 @@ Route25_Worker::
 Route25_Worker_Text:
 	.string "Im sorry, this place is still\n"
 	.string "under construction!$"
+

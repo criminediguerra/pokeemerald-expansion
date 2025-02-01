@@ -32,3 +32,4 @@ Route32_EventScript_Laugh:
 Route32_EventScript_Comeback:
 	.string "You don't want it?\n"
 	.string "Then scram, shoo!$"
+

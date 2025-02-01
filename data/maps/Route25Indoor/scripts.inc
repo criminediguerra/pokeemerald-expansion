@@ -10,3 +10,4 @@ Route25Indoor_EventScript_BillsPc::
 Route25Indoor_Text_BillsPc:
 	.string "It's BILL's PC.\p"
 	.string "It's full of rare POKéMON!$"
+

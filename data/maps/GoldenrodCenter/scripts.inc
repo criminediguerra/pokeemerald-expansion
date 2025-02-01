@@ -14,3 +14,4 @@ GoldenrodCenter_MapScripts::
 	waitbuttonpress
 	release
 	end
+

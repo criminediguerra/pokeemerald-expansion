@@ -14,3 +14,4 @@ Goldenrod_Clefairy::
 
 Goldenrod_Clefairy_Text:
 	.string "CLEFAIRY: Pippi!$"
+

@@ -82,3 +82,4 @@ NationalPark_EventScript_DefeatedNationalParkSnorlax::
 	setflag FLAG_DEFEATED_NATPARKSNORLAX
 	goto Common_EventScript_RemoveStaticPokemon
 	end
+

@@ -26,3 +26,4 @@ PokemonMansionF5_MewtwoApproachPlayer:
 
 PokemonMansionF5_Text_MewtwoFled:
 	.string "The POKéMON has fled.$"
+

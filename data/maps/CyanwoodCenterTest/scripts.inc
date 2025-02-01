@@ -14,3 +14,4 @@ CyanwoodCenterTest_MapScripts::
 	waitbuttonpress
 	release
 	end
+

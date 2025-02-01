@@ -915,3 +915,4 @@ Cherrygrove_Salamence::
 
 Cherrygrove_Salamence_Text:
 	.string "SALAMENCE: ROARGH!$"
+

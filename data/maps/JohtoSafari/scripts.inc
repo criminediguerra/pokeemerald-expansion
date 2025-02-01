@@ -5,3 +5,4 @@ JohtoSafari_MapScripts::
 JohtoSafari_OnTransition:
 	setflag FLAG_VISITED_JOHTOSAFARI
 	end
+

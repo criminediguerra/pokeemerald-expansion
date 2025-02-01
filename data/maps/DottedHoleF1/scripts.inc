@@ -47,3 +47,4 @@ DottedHole_Right_4::
 DottedHoleF1_OnResume:
 	setdivewarp MAP_DOTTED_HOLE_F2, 36, 59
 	end
+

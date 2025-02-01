@@ -14,3 +14,4 @@ CeruleanCenter_MapScripts::
 	waitbuttonpress
 	release
 	end
+

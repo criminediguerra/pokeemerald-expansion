@@ -83,3 +83,4 @@ Route36_Movement_SudowoodoShake:
 	delay_8
 	face_down
 	step_end
+

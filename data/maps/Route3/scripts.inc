@@ -5,3 +5,4 @@ Route3_MapScripts::
 Route3_OnTransition:
 	setflag FLAG_VISITED_ROUTE3
 	end
+

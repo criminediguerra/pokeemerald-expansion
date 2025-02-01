@@ -14,3 +14,4 @@ SevenIslandCenter_MapScripts::
 	waitbuttonpress
 	release
 	end
+

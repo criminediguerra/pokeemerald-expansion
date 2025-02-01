@@ -145,3 +145,4 @@ Testroom_EventScript_Var::
 	setflag FLAG_TRAINER_BLESSED
 	setvar VAR_BEASTAWAKENED, 1
 end
+

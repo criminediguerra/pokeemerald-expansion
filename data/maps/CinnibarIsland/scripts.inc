@@ -38,3 +38,4 @@ Cinnabar_Growlithe::
 
 Cinnabar_Growlithe_Text:
 	.string "GROWLITHE: Graoh!$"
+

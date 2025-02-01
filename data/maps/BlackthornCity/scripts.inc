@@ -5,3 +5,4 @@ BlackthornCity_MapScripts::
 BlackthornCity_OnTransition:
 	setflag FLAG_VISITED_BLACKTHORN
 	end
+

@@ -14,3 +14,4 @@ CrossgateCenter_MapScripts::
 	waitbuttonpress
 	release
 	end
+

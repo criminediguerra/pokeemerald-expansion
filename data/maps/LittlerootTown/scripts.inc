@@ -1081,3 +1081,4 @@ LittlerootTown_Psyduck::
 
 LittlerootTown_Psyduck_Text:
 	.string "PSYDUCK: Psy..?$"
+

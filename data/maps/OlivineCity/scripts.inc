@@ -5,3 +5,4 @@ OlivineCity_MapScripts::
 OlivineCity_OnTransition:
 	setflag FLAG_VISITED_OLIVINE
 	end
+

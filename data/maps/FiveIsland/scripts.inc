@@ -5,3 +5,4 @@ FiveIsland_MapScripts::
 FiveIsland_OnTransition:
 	setflag FLAG_VISITED_FIVEISLAND
 	end
+

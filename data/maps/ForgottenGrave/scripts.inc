@@ -126,3 +126,4 @@ ForgottenGrave_GemDescText:
 	.string "The GEM remained stuck in the\n"
 	.string "niche, it's impossible to\p"
 	.string "get it out.$"
+

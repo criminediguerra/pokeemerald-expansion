@@ -32,3 +32,4 @@ CeruleanBikeShop_EventScript_Laugh:
 
 CeruleanBikeShop_EventScript_Comeback:
 	.string "Come back again!$"
+

@@ -107,3 +107,4 @@ Deoxys_Journal_4_Text::
 
 Deoxys_Journal_5_Text::
     .string "Looks like the remains of ORGANISM NO.1$"
+

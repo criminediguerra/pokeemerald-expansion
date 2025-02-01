@@ -5,3 +5,4 @@ CyanwoodCity_MapScripts::
 CyanwoodCity_OnTransition:
 	setflag FLAG_VISITED_CIANWOOD
 	end
+
