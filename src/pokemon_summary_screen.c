@@ -142,9 +142,8 @@ static EWRAM_DATA struct PokemonSummaryScreenData
         u8 ribbonCount; // 0x6
         u8 ailment; // 0x7
         u8 abilityNum; // 0x8
-        u8 metLocation; // 0x9
-        u8 metLevel; // 0xA
-        u8 metGame; // 0xB
+        u8 teraType; // 0x9
+        u16 metLocation; // 0xA
         u32 pid; // 0xC
         u32 exp; // 0x10
         u16 moves[MAX_MON_MOVES]; // 0x14
@@ -162,10 +161,11 @@ static EWRAM_DATA struct PokemonSummaryScreenData
         u8 nature; // 0x33
         u8 ppBonuses; // 0x34
         u8 sanity; // 0x35
-        u8 OTName[17]; // 0x36
-        u32 OTID; // 0x48
-        u8 teraType;
-        u8 mintNature;
+        u8 metLevel; // 0x36
+        u8 metGame; // 0x37
+        u32 OTID; // 0x38
+        u8 OTName[17]; // 0x3C
+        u8 mintNature; // 0x4D
     } summary;
     u16 bgTilemapBuffers[PSS_PAGE_COUNT][2][0x400];
     u8 mode;

@@ -40,7 +40,7 @@ struct MatchCallStructCommon {
 
 struct MatchCallStructNPC {
     u8 type;
-    u8 mapSec;
+    u16 mapSec;
     u16 flag;
     const u8 *desc;
     const u8 *name;
