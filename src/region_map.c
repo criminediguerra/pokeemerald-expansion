@@ -27,6 +27,7 @@
 #include "constants/map_types.h"
 #include "constants/rgb.h"
 #include "constants/weather.h"
+#include "task.h"
 
 /*
  *  This file handles region maps generally, and the map used when selecting a fly destination.
@@ -44,6 +45,33 @@
 #define MAPCURSOR_Y_MIN 2
 #define MAPCURSOR_X_MAX (MAPCURSOR_X_MIN + MAP_WIDTH - 1)
 #define MAPCURSOR_Y_MAX (MAPCURSOR_Y_MIN + MAP_HEIGHT - 1)
+
+#define ZOOMED_MINIMAL_SCROLL_X         -0x2C
+#define ZOOMED_MAXIMAL_SCROLL_X         0xAC
+#define ZOOMED_SPAN_SCROLL_X            ZOOMED_MAXIMAL_SCROLL_X-ZOOMED_MINIMAL_SCROLL_X
+#define ADAPTED_MAXIMAL_SPAN_SCROLL_X   ZOOMED_MINIMAL_SCROLL_X + (2 * ZOOMED_SPAN_SCROLL_X)
+
+#define ZOOMED_MINIMAL_SCROLL_Y         -0x34
+#define ZOOMED_MAXIMAL_SCROLL_Y         0x3C
+#define ZOOMED_SPAN_SCROLL_Y            ZOOMED_MAXIMAL_SCROLL_Y-ZOOMED_MINIMAL_SCROLL_Y
+#define ADAPTED_MAXIMAL_SPAN_SCROLL_Y   ZOOMED_MINIMAL_SCROLL_Y + (2 * ZOOMED_SPAN_SCROLL_Y)
+
+#define INCREMENT                       8
+#define MINIMAL_BACKGROUND_INCREMENT    0x0100
+#define BACKGROUND_INCREMENT            INCREMENT * MINIMAL_BACKGROUND_INCREMENT
+
+#define MINIMAL_OFFSET_SCROLL_X 0x0000
+#define MAXIMAL_OFFSET_SCROLL_X 0xF000
+
+#define MINIMAL_OFFSET_SCROLL_Y 0x0000
+#define MAXIMAL_OFFSET_SCROLL_Y 0xF000
+
+#define MAP_SEC_INCREMENT               8
+#define INCREMENT_X_COUNT               (MAXIMAL_OFFSET_SCROLL_X/MINIMAL_BACKGROUND_INCREMENT)/MAP_SEC_INCREMENT
+#define INCREMENT_Y_COUNT               (MAXIMAL_OFFSET_SCROLL_Y/MINIMAL_BACKGROUND_INCREMENT)/MAP_SEC_INCREMENT
+
+#define SCROLLED_MAP_WIDTH              INCREMENT_X_COUNT + MAP_WIDTH
+#define SCROLLED_MAP_HEIGHT             INCREMENT_Y_COUNT + MAP_HEIGHT
 
 #define FLYDESTICON_RED_OUTLINE 6
 
@@ -115,6 +143,8 @@ static void SpriteCB_FlyDestIcon(struct Sprite *sprite);
 static void CB_FadeInFlyMap(void);
 static void CB_HandleFlyMapInput(void);
 static void CB_ExitFlyMap(void);
+static bool8 ScrollMap(s16 unitX, s16 unitY);
+static void UpdateRegionMapPlayerIconPosition(void);
 
 static const u16 sRegionMapCursorPal[] = INCBIN_U16("graphics/pokenav/region_map/cursor.gbapal");
 static const u32 sRegionMapCursorSmallGfxLZ[] = INCBIN_U32("graphics/pokenav/region_map/cursor_small.4bpp.lz");
@@ -623,8 +653,9 @@ bool8 LoadRegionMapGfx(void)
         }
         else
         {
-            sRegionMap->scrollX = sRegionMap->cursorPosX * 8 - 0x34;
-            sRegionMap->scrollY = sRegionMap->cursorPosY * 8 - 0x44;
+            sRegionMap->scrollX = (sRegionMap->cursorPosX + (GetGpuReg(REG_OFFSET_BG2X_L)/0x800) )* 8 - 0x34;
+            sRegionMap->scrollY = (sRegionMap->cursorPosY + (GetGpuReg(REG_OFFSET_BG2Y_L)/0x800) )* 8 - 0x44;
+
             sRegionMap->zoomedCursorPosX = sRegionMap->cursorPosX;
             sRegionMap->zoomedCursorPosY = sRegionMap->cursorPosY;
             CalcZoomScrollParams(sRegionMap->scrollX, sRegionMap->scrollY, 0x38, 0x48, 0x80, 0x80, 0);
@@ -681,6 +712,61 @@ u8 DoRegionMapInputCallback(void)
     return sRegionMap->inputCallback();
 }
 
+static bool8 ScrollMap(s16 unitX, s16 unitY)
+{
+    bool8 deleteTask = FALSE;
+
+    u16 initialScrollX = GetGpuReg(REG_OFFSET_BG2X_L);
+    u16 initialScrollY = GetGpuReg(REG_OFFSET_BG2Y_L);
+
+    s16 incrementX = unitX * BACKGROUND_INCREMENT;
+    s16 incrementY = unitY * BACKGROUND_INCREMENT;
+
+    u16 newScrollX = incrementX + initialScrollX;
+    u16 newScrollY = incrementY + initialScrollY;
+
+    if (incrementX != 0) {
+        if (((MAXIMAL_OFFSET_SCROLL_X - initialScrollX) <= incrementX) && (incrementX > 0)) {
+            newScrollX = MAXIMAL_OFFSET_SCROLL_X;
+            deleteTask = TRUE;
+        }
+        else if (((initialScrollX - MINIMAL_OFFSET_SCROLL_X) <= -incrementX) && (incrementX < 0)) {
+            newScrollX = MINIMAL_OFFSET_SCROLL_X;
+            deleteTask = TRUE;
+        }
+    }
+    
+    if (incrementY != 0) {
+        if (((MAXIMAL_OFFSET_SCROLL_Y - initialScrollY) <= incrementY) && (incrementY > 0)) {
+            newScrollY = MAXIMAL_OFFSET_SCROLL_Y;
+            deleteTask = TRUE;
+        }
+        else if (((initialScrollY - MINIMAL_OFFSET_SCROLL_Y) <= -incrementY) && (incrementY < 0)) {
+            newScrollY = MINIMAL_OFFSET_SCROLL_Y;
+            deleteTask = TRUE;
+        }
+    }
+
+    SetGpuReg(REG_OFFSET_BG2X_L, newScrollX);
+    SetGpuReg(REG_OFFSET_BG2Y_L, newScrollY);
+
+    UpdateRegionMapPlayerIconPosition();
+
+    return deleteTask;
+}
+
+static void UpdateRegionMapPlayerIconPosition(void)
+{
+    s16 positionX = sRegionMap->playerIconSpritePosX * 8 + 4;
+    s16 positionY = sRegionMap->playerIconSpritePosY * 8 + 4;
+
+    u16 scrollX = GetGpuReg(REG_OFFSET_BG2X_L) / MINIMAL_BACKGROUND_INCREMENT;
+    u16 scrollY = GetGpuReg(REG_OFFSET_BG2Y_L) / MINIMAL_BACKGROUND_INCREMENT;
+
+    sRegionMap->playerIconSprite->x = positionX - scrollX;
+    sRegionMap->playerIconSprite->y = positionY - scrollY;
+}
+
 static u8 ProcessRegionMapInput_Full(void)
 {
     u8 input;
@@ -688,25 +774,54 @@ static u8 ProcessRegionMapInput_Full(void)
     input = MAP_INPUT_NONE;
     sRegionMap->cursorDeltaX = 0;
     sRegionMap->cursorDeltaY = 0;
-    if (JOY_HELD(DPAD_UP) && sRegionMap->cursorPosY > MAPCURSOR_Y_MIN)
+    if (JOY_HELD(DPAD_UP))
     {
-        sRegionMap->cursorDeltaY = -1;
-        input = MAP_INPUT_MOVE_START;
+        if (sRegionMap->cursorPosY > MAPCURSOR_Y_MIN) {
+            sRegionMap->cursorDeltaY = -1;
+            input = MAP_INPUT_MOVE_START;
+        }
+        else {
+            ScrollMap(0, -1);
+            input = MAP_INPUT_MOVE_START;
+        }
+        
     }
-    if (JOY_HELD(DPAD_DOWN) && sRegionMap->cursorPosY < MAPCURSOR_Y_MAX)
+    if (JOY_HELD(DPAD_DOWN))
     {
-        sRegionMap->cursorDeltaY = +1;
-        input = MAP_INPUT_MOVE_START;
+        if (sRegionMap->cursorPosY < MAPCURSOR_Y_MAX) {
+            sRegionMap->cursorDeltaY = +1;
+            input = MAP_INPUT_MOVE_START;
+        }
+        else {
+            ScrollMap(0, 1);
+            input = MAP_INPUT_MOVE_START;
+        }
     }
-    if (JOY_HELD(DPAD_LEFT) && sRegionMap->cursorPosX > MAPCURSOR_X_MIN)
+    if (JOY_HELD(DPAD_LEFT))
     {
-        sRegionMap->cursorDeltaX = -1;
-        input = MAP_INPUT_MOVE_START;
+        if (sRegionMap->cursorPosX > MAPCURSOR_X_MIN)
+        {
+            sRegionMap->cursorDeltaX = -1;
+            input = MAP_INPUT_MOVE_START;
+        }
+        else {
+            ScrollMap(-1, 0);
+            input = MAP_INPUT_MOVE_START;
+        }
     }
-    if (JOY_HELD(DPAD_RIGHT) && sRegionMap->cursorPosX < MAPCURSOR_X_MAX)
+
+    if (JOY_HELD(DPAD_RIGHT))
     {
-        sRegionMap->cursorDeltaX = +1;
-        input = MAP_INPUT_MOVE_START;
+        if (sRegionMap->cursorPosX < MAPCURSOR_X_MAX)
+        {
+            sRegionMap->cursorDeltaX = +1;
+            input = MAP_INPUT_MOVE_START;
+        }
+        else {
+            ScrollMap(1, 0);
+            input = MAP_INPUT_MOVE_START;
+        }
+        
     }
     if (JOY_NEW(A_BUTTON))
     {
@@ -721,6 +836,9 @@ static u8 ProcessRegionMapInput_Full(void)
         sRegionMap->cursorMovementFrameCounter = 4;
         sRegionMap->inputCallback = MoveRegionMapCursor_Full;
     }
+
+    UpdateRegionMapPlayerIconPosition();
+
     return input;
 }
 
@@ -748,7 +866,10 @@ static u8 MoveRegionMapCursor_Full(void)
         sRegionMap->cursorPosY--;
     }
 
-    mapSecId = GetMapSecIdAt(sRegionMap->cursorPosX, sRegionMap->cursorPosY);
+    u16 posX = sRegionMap->cursorPosX + GetGpuReg(REG_OFFSET_BG2X_L) / MINIMAL_BACKGROUND_INCREMENT / MAP_SEC_INCREMENT;
+    u16 posY = sRegionMap->cursorPosY + GetGpuReg(REG_OFFSET_BG2Y_L) / MINIMAL_BACKGROUND_INCREMENT / MAP_SEC_INCREMENT;
+
+    mapSecId = GetMapSecIdAt(posX, posY);
     sRegionMap->mapSecType = GetMapsecType(mapSecId);
     if (mapSecId != sRegionMap->mapSecId)
     {
@@ -767,22 +888,22 @@ static u8 ProcessRegionMapInput_Zoomed(void)
     input = MAP_INPUT_NONE;
     sRegionMap->zoomedCursorDeltaX = 0;
     sRegionMap->zoomedCursorDeltaY = 0;
-    if (JOY_HELD(DPAD_UP) && sRegionMap->scrollY > -0x34)
+    if (JOY_HELD(DPAD_UP) && sRegionMap->scrollY > ZOOMED_MINIMAL_SCROLL_Y)
     {
         sRegionMap->zoomedCursorDeltaY = -1;
         input = MAP_INPUT_MOVE_START;
     }
-    if (JOY_HELD(DPAD_DOWN) && sRegionMap->scrollY < 0x3c)
+    if (JOY_HELD(DPAD_DOWN) && sRegionMap->scrollY < ADAPTED_MAXIMAL_SPAN_SCROLL_Y)
     {
         sRegionMap->zoomedCursorDeltaY = +1;
         input = MAP_INPUT_MOVE_START;
     }
-    if (JOY_HELD(DPAD_LEFT) && sRegionMap->scrollX > -0x2c)
+    if (JOY_HELD(DPAD_LEFT) && sRegionMap->scrollX > ZOOMED_MINIMAL_SCROLL_X)
     {
         sRegionMap->zoomedCursorDeltaX = -1;
         input = MAP_INPUT_MOVE_START;
     }
-    if (JOY_HELD(DPAD_RIGHT) && sRegionMap->scrollX < 0xac)
+    if (JOY_HELD(DPAD_RIGHT) && sRegionMap->scrollX < ADAPTED_MAXIMAL_SPAN_SCROLL_X)
     {
         sRegionMap->zoomedCursorDeltaX = +1;
         input = MAP_INPUT_MOVE_START;
@@ -996,9 +1117,21 @@ static u16 GetMapSecIdAt(u16 x, u16 y)
     {
         return MAPSEC_NONE;
     }
-    y -= MAPCURSOR_Y_MIN;
-    x -= MAPCURSOR_X_MIN;
-    return sRegionMap_MapSectionLayout[y][x];
+
+    y += (GetGpuReg(REG_OFFSET_BG2Y_L)/0x800) - MAPCURSOR_Y_MIN;
+    x += (GetGpuReg(REG_OFFSET_BG2X_L)/0x800) - MAPCURSOR_X_MIN;
+
+    if (x >= MAP_WIDTH)
+    {
+        x -= MAP_WIDTH;
+    }
+
+    if (y >= MAP_HEIGHT)
+    {
+        y -= MAP_HEIGHT;
+    }
+
+    return sRegionMap_MapSectionLayout[y * MAP_WIDTH][x];
 }
 
 static void InitMapBasedOnPlayerLocation(void)
@@ -1887,7 +2020,7 @@ static void CreateFlyDestIcons(void)
     for (mapSecId = MAPSEC_LITTLEROOT_TOWN; mapSecId <= MAPSEC_EVER_GRANDE_CITY; mapSecId++)
     {
         GetMapSecDimensions(mapSecId, &x, &y, &width, &height);
-        x = (x + MAPCURSOR_X_MIN) * 8 + 4;
+        x = (x + MAPCURSOR_X_MIN - (GetGpuReg(REG_OFFSET_BG2X_L)/0x800)) * 8 + 4;
         y = (y + MAPCURSOR_Y_MIN) * 8 + 4;
 
         if (width == 2)
@@ -1986,6 +2119,7 @@ static void CB_FadeInFlyMap(void)
 
 static void CB_HandleFlyMapInput(void)
 {
+    RunTasks();
     if (sFlyMap->state == 0)
     {
         switch (DoRegionMapInputCallback())
