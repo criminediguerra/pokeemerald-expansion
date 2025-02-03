@@ -56,7 +56,7 @@
 #define ZOOMED_SPAN_SCROLL_Y            ZOOMED_MAXIMAL_SCROLL_Y-ZOOMED_MINIMAL_SCROLL_Y
 #define ADAPTED_MAXIMAL_SPAN_SCROLL_Y   ZOOMED_MINIMAL_SCROLL_Y + (2 * ZOOMED_SPAN_SCROLL_Y)
 
-#define INCREMENT                       4
+#define INCREMENT                       8
 #define MINIMAL_BACKGROUND_INCREMENT    0x0100
 #define BACKGROUND_INCREMENT            INCREMENT * MINIMAL_BACKGROUND_INCREMENT
 
@@ -65,6 +65,13 @@
 
 #define MINIMAL_OFFSET_SCROLL_Y 0x0000
 #define MAXIMAL_OFFSET_SCROLL_Y 0xF000
+
+#define MAP_SEC_INCREMENT               8
+#define INCREMENT_X_COUNT               (MAXIMAL_OFFSET_SCROLL_X/MINIMAL_BACKGROUND_INCREMENT)/MAP_SEC_INCREMENT
+#define INCREMENT_Y_COUNT               (MAXIMAL_OFFSET_SCROLL_Y/MINIMAL_BACKGROUND_INCREMENT)/MAP_SEC_INCREMENT
+
+#define SCROLLED_MAP_WIDTH              INCREMENT_X_COUNT + MAP_WIDTH
+#define SCROLLED_MAP_HEIGHT             INCREMENT_Y_COUNT + MAP_HEIGHT
 
 #define FLYDESTICON_RED_OUTLINE 6
 
@@ -859,7 +866,10 @@ static u8 MoveRegionMapCursor_Full(void)
         sRegionMap->cursorPosY--;
     }
 
-    mapSecId = GetMapSecIdAt(sRegionMap->cursorPosX, sRegionMap->cursorPosY);
+    u16 posX = sRegionMap->cursorPosX + GetGpuReg(REG_OFFSET_BG2X_L) / MINIMAL_BACKGROUND_INCREMENT / MAP_SEC_INCREMENT;
+    u16 posY = sRegionMap->cursorPosY + GetGpuReg(REG_OFFSET_BG2Y_L) / MINIMAL_BACKGROUND_INCREMENT / MAP_SEC_INCREMENT;
+
+    mapSecId = GetMapSecIdAt(posX, posY);
     sRegionMap->mapSecType = GetMapsecType(mapSecId);
     if (mapSecId != sRegionMap->mapSecId)
     {
