@@ -836,3 +836,14 @@ const struct Tileset gTileset_Memorial_Pillar =
     .metatileAttributes = gMetatileAttributes_Memorial_Pillar,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_GeneralStairs =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_GeneralStairs,
+    .palettes = gTilesetPalettes_GeneralStairs,
+    .metatiles = gMetatiles_GeneralStairs,
+    .metatileAttributes = gMetatileAttributes_GeneralStairs,
+    .callback = InitTilesetAnim_General,
+};

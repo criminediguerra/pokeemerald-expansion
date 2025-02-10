@@ -4446,7 +4446,7 @@
       "name": "VermilionCity_Layout",
       "width": 60,
       "height": 61,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Dewford",
       "border_filepath": "data/layouts/VermilionCity/border.bin",
       "blockdata_filepath": "data/layouts/VermilionCity/map.bin"
@@ -4476,7 +4476,7 @@
       "name": "Route11_Layout",
       "width": 76,
       "height": 59,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Dewford",
       "border_filepath": "data/layouts/Route11/border.bin",
       "blockdata_filepath": "data/layouts/Route11/map.bin"
@@ -4506,7 +4506,7 @@
       "name": "CeruleanCity_Layout",
       "width": 66,
       "height": 72,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/CeruleanCity/border.bin",
       "blockdata_filepath": "data/layouts/CeruleanCity/map.bin"
@@ -4516,7 +4516,7 @@
       "name": "Route24_Layout",
       "width": 40,
       "height": 32,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/Route24/border.bin",
       "blockdata_filepath": "data/layouts/Route24/map.bin"
@@ -4526,7 +4526,7 @@
       "name": "Route25_Layout",
       "width": 151,
       "height": 32,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/Route25/border.bin",
       "blockdata_filepath": "data/layouts/Route25/map.bin"
@@ -4536,7 +4536,7 @@
       "name": "Route9_Layout",
       "width": 100,
       "height": 33,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/Route9/border.bin",
       "blockdata_filepath": "data/layouts/Route9/map.bin"
@@ -4576,7 +4576,7 @@
       "name": "Route13_Layout",
       "width": 106,
       "height": 36,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/Route13/border.bin",
       "blockdata_filepath": "data/layouts/Route13/map.bin"
@@ -4586,7 +4586,7 @@
       "name": "Route14_Layout",
       "width": 31,
       "height": 56,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/Route14/border.bin",
       "blockdata_filepath": "data/layouts/Route14/map.bin"
@@ -4606,7 +4606,7 @@
       "name": "Route4_Layout",
       "width": 101,
       "height": 38,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/Route4/border.bin",
       "blockdata_filepath": "data/layouts/Route4/map.bin"
@@ -4646,7 +4646,7 @@
       "name": "CinnibarIsland_Layout",
       "width": 63,
       "height": 36,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/CinnibarIsland/border.bin",
       "blockdata_filepath": "data/layouts/CinnibarIsland/map.bin"
@@ -4686,7 +4686,7 @@
       "name": "ViridianCity_Layout",
       "width": 70,
       "height": 54,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/ViridianCity/border.bin",
       "blockdata_filepath": "data/layouts/ViridianCity/map.bin"
@@ -4716,7 +4716,7 @@
       "name": "Route16_Layout",
       "width": 64,
       "height": 36,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
       "border_filepath": "data/layouts/Route16/border.bin",
       "blockdata_filepath": "data/layouts/Route16/map.bin"
@@ -4726,7 +4726,7 @@
       "name": "CeladonCity_Layout",
       "width": 70,
       "height": 52,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/CeladonCity/border.bin",
       "blockdata_filepath": "data/layouts/CeladonCity/map.bin"
@@ -4736,7 +4736,7 @@
       "name": "Route7_Layout",
       "width": 31,
       "height": 38,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/Route7/border.bin",
       "blockdata_filepath": "data/layouts/Route7/map.bin"
@@ -4756,7 +4756,7 @@
       "name": "Route3_Layout",
       "width": 96,
       "height": 36,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
       "border_filepath": "data/layouts/Route3/border.bin",
       "blockdata_filepath": "data/layouts/Route3/map.bin"
@@ -4766,7 +4766,7 @@
       "name": "Route22_Layout",
       "width": 67,
       "height": 38,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
       "border_filepath": "data/layouts/Route22/border.bin",
       "blockdata_filepath": "data/layouts/Route22/map.bin"
@@ -4796,7 +4796,7 @@
       "name": "OlivineCity_Layout",
       "width": 67,
       "height": 50,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
       "border_filepath": "data/layouts/OlivineCity/border.bin",
       "blockdata_filepath": "data/layouts/OlivineCity/map.bin"
@@ -4836,7 +4836,7 @@
       "name": "Route47_Layout",
       "width": 95,
       "height": 64,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/Route47/border.bin",
       "blockdata_filepath": "data/layouts/Route47/map.bin"
@@ -4866,7 +4866,7 @@
       "name": "Route39_Layout",
       "width": 38,
       "height": 66,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/Route39/border.bin",
       "blockdata_filepath": "data/layouts/Route39/map.bin"
@@ -4876,7 +4876,7 @@
       "name": "Route38_Layout",
       "width": 66,
       "height": 37,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
       "border_filepath": "data/layouts/Route38/border.bin",
       "blockdata_filepath": "data/layouts/Route38/map.bin"
@@ -4906,7 +4906,7 @@
       "name": "Route8_Layout",
       "width": 68,
       "height": 28,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/Route8/border.bin",
       "blockdata_filepath": "data/layouts/Route8/map.bin"
@@ -4916,7 +4916,7 @@
       "name": "ViridianForest_Layout",
       "width": 65,
       "height": 76,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
       "border_filepath": "data/layouts/ViridianForest/border.bin",
       "blockdata_filepath": "data/layouts/ViridianForest/map.bin"
@@ -5026,7 +5026,7 @@
       "name": "RockTunnel_Layout",
       "width": 47,
       "height": 37,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_MeteorFalls",
       "border_filepath": "data/layouts/RockTunnel/border.bin",
       "blockdata_filepath": "data/layouts/RockTunnel/map.bin"
@@ -5036,7 +5036,7 @@
       "name": "RockTunnelF1_Layout",
       "width": 47,
       "height": 37,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_MeteorFalls",
       "border_filepath": "data/layouts/RockTunnelF1/border.bin",
       "blockdata_filepath": "data/layouts/RockTunnelF1/map.bin"
@@ -5046,7 +5046,7 @@
       "name": "EcruteakCity_Layout",
       "width": 74,
       "height": 52,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Sootopolis",
       "border_filepath": "data/layouts/EcruteakCity/border.bin",
       "blockdata_filepath": "data/layouts/EcruteakCity/map.bin"
@@ -5066,7 +5066,7 @@
       "name": "Route36_Layout",
       "width": 82,
       "height": 32,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
       "border_filepath": "data/layouts/Route36/border.bin",
       "blockdata_filepath": "data/layouts/Route36/map.bin"
@@ -5076,7 +5076,7 @@
       "name": "Route35_Layout",
       "width": 42,
       "height": 60,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
       "border_filepath": "data/layouts/Route35/border.bin",
       "blockdata_filepath": "data/layouts/Route35/map.bin"
@@ -5086,7 +5086,7 @@
       "name": "GoldenrodCity_Layout",
       "width": 70,
       "height": 68,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/GoldenrodCity/border.bin",
       "blockdata_filepath": "data/layouts/GoldenrodCity/map.bin"
@@ -5096,7 +5096,7 @@
       "name": "Route34_Layout",
       "width": 42,
       "height": 90,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/Route34/border.bin",
       "blockdata_filepath": "data/layouts/Route34/map.bin"
@@ -5115,9 +5115,9 @@
       "id": "LAYOUT_RUINSOF_ALPH",
       "name": "RuinsofAlph_Layout",
       "width": 36,
-      "height": 44,
+      "height": 52,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
+      "secondary_tileset": "gTileset_Memorial_Pillar",
       "border_filepath": "data/layouts/RuinsofAlph/border.bin",
       "blockdata_filepath": "data/layouts/RuinsofAlph/map.bin"
     },
@@ -5126,7 +5126,7 @@
       "name": "Route32_Layout",
       "width": 32,
       "height": 156,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/Route32/border.bin",
       "blockdata_filepath": "data/layouts/Route32/map.bin"
@@ -5146,7 +5146,7 @@
       "name": "Route33_Layout",
       "width": 30,
       "height": 26,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Route33/border.bin",
       "blockdata_filepath": "data/layouts/Route33/map.bin"
@@ -5156,7 +5156,7 @@
       "name": "AzaleaTown_Layout",
       "width": 60,
       "height": 36,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/AzaleaTown/border.bin",
       "blockdata_filepath": "data/layouts/AzaleaTown/map.bin"
@@ -5166,7 +5166,7 @@
       "name": "Route31_Layout",
       "width": 62,
       "height": 30,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
       "border_filepath": "data/layouts/Route31/border.bin",
       "blockdata_filepath": "data/layouts/Route31/map.bin"
@@ -5176,7 +5176,7 @@
       "name": "Route30_Layout",
       "width": 38,
       "height": 94,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
       "border_filepath": "data/layouts/Route30/border.bin",
       "blockdata_filepath": "data/layouts/Route30/map.bin"
@@ -5216,7 +5216,7 @@
       "name": "Route46_Layout",
       "width": 36,
       "height": 58,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
       "border_filepath": "data/layouts/Route46/border.bin",
       "blockdata_filepath": "data/layouts/Route46/map.bin"
@@ -5226,7 +5226,7 @@
       "name": "Route45_Layout",
       "width": 33,
       "height": 150,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/Route45/border.bin",
       "blockdata_filepath": "data/layouts/Route45/map.bin"
@@ -5236,7 +5236,7 @@
       "name": "BlackthornCity_Layout",
       "width": 59,
       "height": 61,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/BlackthornCity/border.bin",
       "blockdata_filepath": "data/layouts/BlackthornCity/map.bin"
@@ -5276,7 +5276,7 @@
       "name": "LakeofRage_Layout",
       "width": 76,
       "height": 64,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/LakeofRage/border.bin",
       "blockdata_filepath": "data/layouts/LakeofRage/map.bin"
@@ -5286,7 +5286,7 @@
       "name": "Route42_Layout",
       "width": 94,
       "height": 32,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
       "border_filepath": "data/layouts/Route42/border.bin",
       "blockdata_filepath": "data/layouts/Route42/map.bin"
@@ -5296,7 +5296,7 @@
       "name": "Route27_Layout",
       "width": 184,
       "height": 37,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
       "border_filepath": "data/layouts/Route27/border.bin",
       "blockdata_filepath": "data/layouts/Route27/map.bin"
@@ -5306,7 +5306,7 @@
       "name": "Route26_Layout",
       "width": 47,
       "height": 118,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/Route26/border.bin",
       "blockdata_filepath": "data/layouts/Route26/map.bin"
@@ -5316,7 +5316,7 @@
       "name": "MtSilverF1_Layout",
       "width": 66,
       "height": 38,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
       "border_filepath": "data/layouts/MtSilverF1/border.bin",
       "blockdata_filepath": "data/layouts/MtSilverF1/map.bin"
@@ -5326,7 +5326,7 @@
       "name": "MtSilverF2_Layout",
       "width": 33,
       "height": 35,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
       "border_filepath": "data/layouts/MtSilverF2/border.bin",
       "blockdata_filepath": "data/layouts/MtSilverF2/map.bin"
@@ -5376,7 +5376,7 @@
       "name": "MtMortarF2_Layout",
       "width": 73,
       "height": 79,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/MtMortarF2/border.bin",
       "blockdata_filepath": "data/layouts/MtMortarF2/map.bin"
@@ -5386,7 +5386,7 @@
       "name": "MtMortarF3_Layout",
       "width": 58,
       "height": 74,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/MtMortarF3/border.bin",
       "blockdata_filepath": "data/layouts/MtMortarF3/map.bin"
@@ -5446,7 +5446,7 @@
       "name": "DarkCave_Layout",
       "width": 66,
       "height": 60,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/DarkCave/border.bin",
       "blockdata_filepath": "data/layouts/DarkCave/map.bin"
@@ -5456,7 +5456,7 @@
       "name": "DarkCaveF1_Layout",
       "width": 64,
       "height": 62,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/DarkCaveF1/border.bin",
       "blockdata_filepath": "data/layouts/DarkCaveF1/map.bin"
@@ -5536,7 +5536,7 @@
       "name": "Route47F1_Layout",
       "width": 42,
       "height": 41,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/Route47F1/border.bin",
       "blockdata_filepath": "data/layouts/Route47F1/map.bin"
@@ -5596,7 +5596,7 @@
       "name": "CeruleanCaveF1_Layout",
       "width": 62,
       "height": 44,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/CeruleanCaveF1/border.bin",
       "blockdata_filepath": "data/layouts/CeruleanCaveF1/map.bin"
@@ -5606,7 +5606,7 @@
       "name": "CeruleanCaveF2_Layout",
       "width": 119,
       "height": 62,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/CeruleanCaveF2/border.bin",
       "blockdata_filepath": "data/layouts/CeruleanCaveF2/map.bin"
@@ -5616,7 +5616,7 @@
       "name": "CeruleanCaveF3_Layout",
       "width": 61,
       "height": 42,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/CeruleanCaveF3/border.bin",
       "blockdata_filepath": "data/layouts/CeruleanCaveF3/map.bin"
@@ -5656,7 +5656,7 @@
       "name": "SeafoamIslesF3_Layout",
       "width": 49,
       "height": 32,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/SeafoamIslesF3/border.bin",
       "blockdata_filepath": "data/layouts/SeafoamIslesF3/map.bin"
@@ -5696,7 +5696,7 @@
       "name": "KantoVictoryRoadF1_Layout",
       "width": 65,
       "height": 36,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/KantoVictoryRoadF1/border.bin",
       "blockdata_filepath": "data/layouts/KantoVictoryRoadF1/map.bin"
@@ -5716,7 +5716,7 @@
       "name": "KantoVictoryRoad_Layout",
       "width": 37,
       "height": 56,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/KantoVictoryRoad/border.bin",
       "blockdata_filepath": "data/layouts/KantoVictoryRoad/map.bin"
@@ -6016,7 +6016,7 @@
       "name": "WhirlF3_Layout",
       "width": 41,
       "height": 74,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/WhirlF3/border.bin",
       "blockdata_filepath": "data/layouts/WhirlF3/map.bin"
@@ -6106,7 +6106,7 @@
       "name": "JohtoSafariF6_Layout",
       "width": 30,
       "height": 26,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
       "border_filepath": "data/layouts/JohtoSafariF6/border.bin",
       "blockdata_filepath": "data/layouts/JohtoSafariF6/map.bin"
@@ -6156,7 +6156,7 @@
       "name": "MtSilverF3_Layout",
       "width": 57,
       "height": 53,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_NavelRock",
       "border_filepath": "data/layouts/MtSilverF3/border.bin",
       "blockdata_filepath": "data/layouts/MtSilverF3/map.bin"
@@ -7576,7 +7576,7 @@
       "name": "LavenderTowerF1_Layout",
       "width": 24,
       "height": 22,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/LavenderTowerF1/border.bin",
       "blockdata_filepath": "data/layouts/LavenderTowerF1/map.bin"
@@ -7626,7 +7626,7 @@
       "name": "BillsGarden_Layout",
       "width": 48,
       "height": 37,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_BikeShop",
       "border_filepath": "data/layouts/BillsGarden/border.bin",
       "blockdata_filepath": "data/layouts/BillsGarden/map.bin"
@@ -7696,7 +7696,7 @@
       "name": "Route25a_Layout",
       "width": 50,
       "height": 50,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/Route25a/border.bin",
       "blockdata_filepath": "data/layouts/Route25a/map.bin"
@@ -8946,7 +8946,7 @@
       "name": "Cydonia_Layout",
       "width": 70,
       "height": 55,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_MeteorFalls",
       "border_filepath": "data/layouts/Cydonia/border.bin",
       "blockdata_filepath": "data/layouts/Cydonia/map.bin"
@@ -9176,7 +9176,7 @@
       "name": "Route99Crypt_Layout",
       "width": 17,
       "height": 19,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_MirageTower",
       "border_filepath": "data/layouts/Route99Crypt/border.bin",
       "blockdata_filepath": "data/layouts/Route99Crypt/map.bin"
@@ -9346,7 +9346,7 @@
       "name": "CeruleanCaveF2a_Layout",
       "width": 119,
       "height": 58,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/CeruleanCaveF2a/border.bin",
       "blockdata_filepath": "data/layouts/CeruleanCaveF2a/map.bin"
