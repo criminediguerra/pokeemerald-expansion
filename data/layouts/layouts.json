@@ -7907,7 +7907,7 @@
       "width": 24,
       "height": 61,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Mauville",
+      "secondary_tileset": "gTileset_Memorial_Pillar",
       "border_filepath": "data/layouts/MemorialPillar/border.bin",
       "blockdata_filepath": "data/layouts/MemorialPillar/map.bin"
     },
@@ -8025,9 +8025,9 @@
       "id": "LAYOUT_TANOBY_RUINS",
       "name": "TanobyRuins_Layout",
       "width": 144,
-      "height": 20,
+      "height": 22,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lilycove",
+      "secondary_tileset": "gTileset_Memorial_Pillar",
       "border_filepath": "data/layouts/TanobyRuins/border.bin",
       "blockdata_filepath": "data/layouts/TanobyRuins/map.bin"
     },

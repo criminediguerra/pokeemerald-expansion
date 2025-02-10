@@ -25,7 +25,7 @@
   "warp_events": [
     {
       "x": 11,
-      "y": 5,
+      "y": 6,
       "elevation": 0,
       "dest_map": "MAP_VIAPOIS_CHAMBER",
       "dest_warp_id": "0"
@@ -39,7 +39,7 @@
     },
     {
       "x": 12,
-      "y": 14,
+      "y": 16,
       "elevation": 0,
       "dest_map": "MAP_RIXY_CHAMBER",
       "dest_warp_id": "0"
@@ -53,7 +53,7 @@
     },
     {
       "x": 44,
-      "y": 10,
+      "y": 11,
       "elevation": 0,
       "dest_map": "MAP_DILFORD_CHAMBER",
       "dest_warp_id": "0"
