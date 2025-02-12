@@ -66,6 +66,16 @@
 #define MINIMAL_OFFSET_SCROLL_Y 0x0000
 #define MAXIMAL_OFFSET_SCROLL_Y 0xF000
 
+#define ICON_MARGIN                     10
+#define SCREEN_SIZE_X                   0x1000
+#define SCREEN_SIZE_Y                   0x1000
+
+#define MINIMAL_PLAYER_ICON_POSITION_X  -ICON_MARGIN
+#define MAXIMAL_PLAYER_ICON_POSITION_X  SCREEN_SIZE_X + ICON_MARGIN
+
+#define MINIMAL_PLAYER_ICON_POSITION_Y  -ICON_MARGIN
+#define MAXIMAL_PLAYER_ICON_POSITION_Y  SCREEN_SIZE_Y + ICON_MARGIN
+
 #define MAP_SEC_INCREMENT               8
 #define INCREMENT_X_COUNT               (MAXIMAL_OFFSET_SCROLL_X/MINIMAL_BACKGROUND_INCREMENT)/MAP_SEC_INCREMENT
 #define INCREMENT_Y_COUNT               (MAXIMAL_OFFSET_SCROLL_Y/MINIMAL_BACKGROUND_INCREMENT)/MAP_SEC_INCREMENT
@@ -757,14 +767,45 @@ static bool8 ScrollMap(s16 unitX, s16 unitY)
 
 static void UpdateRegionMapPlayerIconPosition(void)
 {
-    s16 positionX = sRegionMap->playerIconSpritePosX * 8 + 4;
-    s16 positionY = sRegionMap->playerIconSpritePosY * 8 + 4;
+    u16 positionX = sRegionMap->playerIconSpritePosX * 8 + 4;
+    u16 positionY = sRegionMap->playerIconSpritePosY * 8 + 4;
 
     u16 scrollX = GetGpuReg(REG_OFFSET_BG2X_L) / MINIMAL_BACKGROUND_INCREMENT;
     u16 scrollY = GetGpuReg(REG_OFFSET_BG2Y_L) / MINIMAL_BACKGROUND_INCREMENT;
 
-    sRegionMap->playerIconSprite->x = positionX - scrollX;
-    sRegionMap->playerIconSprite->y = positionY - scrollY;
+    s16 adjustedPositionX;
+    s16 adjustedPositionY;
+
+    if (positionX > scrollX) {
+        adjustedPositionX = (s16)(positionX - scrollX);
+    }
+    else {
+        adjustedPositionX = -((s16)(scrollX - positionX));
+    }
+
+    if (positionY > scrollY) {
+        adjustedPositionY = (s16)(positionY - scrollY);
+    }
+    else {
+        adjustedPositionY = -((s16)(scrollY - positionY));
+    }
+
+    if (adjustedPositionX < MINIMAL_PLAYER_ICON_POSITION_X) {
+        adjustedPositionX = MINIMAL_PLAYER_ICON_POSITION_X;
+    }
+    else if (adjustedPositionX > MAXIMAL_PLAYER_ICON_POSITION_X) {
+        adjustedPositionX = MAXIMAL_PLAYER_ICON_POSITION_X;
+    }
+
+    if (adjustedPositionY < MINIMAL_PLAYER_ICON_POSITION_Y) {
+        adjustedPositionY = MINIMAL_PLAYER_ICON_POSITION_Y;
+    }
+    else if (adjustedPositionY > MAXIMAL_PLAYER_ICON_POSITION_Y) {
+        adjustedPositionY = MAXIMAL_PLAYER_ICON_POSITION_Y;
+    }
+
+    sRegionMap->playerIconSprite->x = adjustedPositionX;
+    sRegionMap->playerIconSprite->y = adjustedPositionY;
 }
 
 static u8 ProcessRegionMapInput_Full(void)
