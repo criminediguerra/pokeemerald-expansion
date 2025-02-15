@@ -22,11 +22,6 @@
       "map": "MAP_CYANWOOD_CITY",
       "offset": 6,
       "direction": "left"
-    },
-    {
-      "map": "MAP_ROUTE115B",
-      "offset": 87,
-      "direction": "left"
     }
   ],
   "object_events": [

@@ -2,8 +2,8 @@
   "id": "MAP_ROUTE99",
   "name": "Route99",
   "layout": "LAYOUT_ROUTE99",
-  "music": "MUS_ABANDONED_SHIP",
-  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "music": "MUS_ROUTE119",
+  "region_map_section": "MAPSEC_ROUTE_99",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_ROUTE",
@@ -14,19 +14,19 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_CHERRYGROVE_CITY",
-      "offset": 12,
-      "direction": "right"
+      "map": "MAP_ROUTE98",
+      "offset": -23,
+      "direction": "up"
     },
     {
-      "map": "MAP_ROUTE32",
-      "offset": -41,
+      "map": "MAP_LAROUSSE_CITY",
+      "offset": -2,
       "direction": "left"
     },
     {
-      "map": "MAP_ROUTE113",
-      "offset": -41,
-      "direction": "down"
+      "map": "MAP_ROUTE135",
+      "offset": 40,
+      "direction": "right"
     }
   ],
   "object_events": [
@@ -34,11 +34,32 @@
   ],
   "warp_events": [
     {
-      "x": 25,
-      "y": 11,
+      "x": 18,
+      "y": 6,
       "elevation": 0,
-      "dest_map": "MAP_ROUTE99CRYPT",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_DEWFORD_FOREST",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 40,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_DEWFORD_FOREST",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 17,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_DEWFORD_FOREST",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 39,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_DEWFORD_FOREST",
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [

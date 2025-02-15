@@ -24,12 +24,12 @@
       "direction": "up"
     },
     {
-      "map": "MAP_ROUTE98",
+      "map": "MAP_ROUTE50",
       "offset": 6,
       "direction": "down"
     },
     {
-      "map": "MAP_ROUTE99",
+      "map": "MAP_ROUTE49",
       "offset": -12,
       "direction": "left"
     }

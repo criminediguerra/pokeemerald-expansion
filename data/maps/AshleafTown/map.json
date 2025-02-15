@@ -1,0 +1,39 @@
+{
+  "id": "MAP_ASHLEAF_TOWN",
+  "name": "AshleafTown",
+  "layout": "LAYOUT_ASHLEAF_TOWN",
+  "music": "MUS_DEWFORD",
+  "region_map_section": "MAPSEC_ASHLEAF",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ROUTE115A",
+      "offset": 21,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_SILVER_STRAIT",
+      "offset": -59,
+      "direction": "left"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

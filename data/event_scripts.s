@@ -1781,9 +1781,9 @@ EventScript_VsSeekerChargingDone::
 
 	.include "data/maps/MahoganyCenter/scripts.inc"
 
-	.include "data/maps/Route99/scripts.inc"
+	.include "data/maps/Route49/scripts.inc"
 
-	.include "data/maps/Route98/scripts.inc"
+	.include "data/maps/Route50/scripts.inc"
 
 	.include "data/maps/LavenderTowerF1/scripts.inc"
 
@@ -1803,11 +1803,11 @@ EventScript_VsSeekerChargingDone::
 
 	.include "data/maps/BillsHouse/scripts.inc"
 
-	.include "data/maps/Route104a/scripts.inc"
+	.include "data/maps/Route137/scripts.inc"
+
+	.include "data/maps/Route137a/scripts.inc"
 
 	.include "data/maps/Route115a/scripts.inc"
-
-	.include "data/maps/Route115b/scripts.inc"
 
 	.include "data/maps/Route25a/scripts.inc"
 
@@ -2105,7 +2105,7 @@ EventScript_VsSeekerChargingDone::
 
 	.include "data/maps/RocketHideoutJohtoF4/scripts.inc"
 
-	.include "data/maps/Route99Crypt/scripts.inc"
+	.include "data/maps/Route49Crypt/scripts.inc"
 
 	.include "data/maps/GreenPathHouses/scripts.inc"
 
@@ -2216,3 +2216,31 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route74/scripts.inc"
 
 	.include "data/maps/Route75/scripts.inc"
+
+	.include "data/maps/Route98/scripts.inc"
+
+	.include "data/maps/Route99/scripts.inc"
+
+	.include "data/maps/LarousseCity/scripts.inc"
+
+	.include "data/maps/Route135/scripts.inc"
+
+	.include "data/maps/Route136/scripts.inc"
+
+	.include "data/maps/Route138/scripts.inc"
+
+	.include "data/maps/Route138a/scripts.inc"
+
+	.include "data/maps/OldrootWoods/scripts.inc"
+
+	.include "data/maps/DewfordForest/scripts.inc"
+
+	.include "data/maps/AshleafTown/scripts.inc"
+
+	.include "data/maps/WhitestoneCity/scripts.inc"
+
+	.include "data/maps/SilverStrait/scripts.inc"
+
+	.include "data/maps/CeruleanGSC/scripts.inc"
+
+	.include "data/maps/Route51/scripts.inc"

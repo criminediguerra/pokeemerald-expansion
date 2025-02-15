@@ -29,8 +29,13 @@
       "direction": "right"
     },
     {
-      "map": "MAP_ROUTE115A",
+      "map": "MAP_ROUTE137A",
       "offset": 0,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_ROUTE137",
+      "offset": 60,
       "direction": "left"
     }
   ],

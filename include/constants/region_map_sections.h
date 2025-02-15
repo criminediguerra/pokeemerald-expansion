@@ -270,6 +270,22 @@
 #define MAPSEC_TOHJO_FALLS                  0x010B
 #define MAPSEC_OLIVINE_LIGHTHOUSE           0x010C
 #define MAPSEC_WHIRL                        0x010D
+#define MAPSEC_ROUTE_98                     0x010E
+#define MAPSEC_ROUTE_99                     0x010F
+#define MAPSEC_ROUTE_135                    0x0110
+#define MAPSEC_ROUTE_136                    0x0111
+#define MAPSEC_ROUTE_137                    0x0112
+#define MAPSEC_ROUTE_138                    0x0113
+#define MAPSEC_LAROUSSE                     0x0114
+#define MAPSEC_ROUTE_49                     0x0115
+#define MAPSEC_ROUTE_50                     0x0116
+#define MAPSEC_COBALT_BEACH                 0x0117
+#define MAPSEC_ROUTE_139                    0x0118
+#define MAPSEC_OLDROOT                      0x0119
+#define MAPSEC_DEWFORD_FOREST               0x011A
+#define MAPSEC_ASHLEAF                      0x011B
+#define MAPSEC_WHITESTONE                   0x011C
+#define MAPSEC_SILVER_STRAIT                0x011D
 
 #define MAPSEC_NONE                         0xFFFC
 #define METLOC_SPECIAL_EGG                  0xFFFD

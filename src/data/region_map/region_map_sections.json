@@ -243,10 +243,10 @@
     {
       "map_section": "MAPSEC_ROUTE_115",
       "name": "ROUTE 115",
-      "x": 3,
-      "y": 22,
-      "width": 1,
-      "height": 3
+      "x": 1,
+      "y": 21,
+      "width": 3,
+      "height": 4
     },
     {
       "map_section": "MAPSEC_ROUTE_116",
@@ -401,6 +401,46 @@
       "height": 1
     },
     {
+      "map_section": "MAPSEC_ROUTE_135",
+      "name": "ROUTE 135",
+      "x": 6,
+      "y": 38,
+      "width": 5,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_ROUTE_136",
+      "name": "ROUTE 136",
+      "x": 11,
+      "y": 35,
+      "width": 5,
+      "height": 4
+    },
+    {
+      "map_section": "MAPSEC_ROUTE_137",
+      "name": "ROUTE 137",
+      "x": 1,
+      "y": 25,
+      "width": 2,
+      "height": 5
+    },
+    {
+      "map_section": "MAPSEC_ROUTE_138",
+      "name": "ROUTE 138",
+      "x": 4,
+      "y": 30,
+      "width": 3,
+      "height": 2
+    },
+    {
+      "map_section": "MAPSEC_ROUTE_139",
+      "name": "ROUTE 139",
+      "x": 1,
+      "y": 21,
+      "width": 2,
+      "height": 4
+    },
+    {
       "map_section": "MAPSEC_UNDERWATER_124",
       "name": "UNDERWATER",
       "x": 23,
@@ -459,7 +499,7 @@
     {
       "map_section": "MAPSEC_SAFARI_ZONE",
       "name": "SAFARI ZONE",
-      "x": 19,
+      "x": 20,
       "y": 22,
       "width": 1,
       "height": 1
@@ -477,6 +517,22 @@
       "name": "PETALBURG WOODS",
       "x": 3,
       "y": 28,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_OLDROOT",
+      "name": "OLDROOT WOODS",
+      "x": 4,
+      "y": 30,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_DEWFORD_FOREST",
+      "name": "DEWFORD FOREST",
+      "x": 5,
+      "y": 36,
       "width": 1,
       "height": 1
     },
@@ -1241,6 +1297,14 @@
       "height": 3
     },
     {
+      "map_section": "MAPSEC_COBALT_BEACH",
+      "name": "COBALT BEACH",
+      "x": 45,
+      "y": 24,
+      "width": 2,
+      "height": 2
+    },
+    {
       "map_section": "MAPSEC_OUTCAST_ISLAND",
       "name": "OUTCAST ISLAND",
       "x": 58,
@@ -1497,10 +1561,26 @@
       "height": 1
     },
     {
+      "map_section": "MAPSEC_ROUTE_98",
+      "name": "ROUTE 98",
+      "x": 5,
+      "y": 35,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_ROUTE_99",
+      "name": "ROUTE 99",
+      "x": 5,
+      "y": 36,
+      "width": 1,
+      "height": 1
+    },
+    {
       "map_section": "MAPSEC_ROUTE_100",
       "name": "ROUTE 100",
-      "x": 0,
-      "y": 0,
+      "x": 7,
+      "y": 32,
       "width": 1,
       "height": 1
     },
@@ -1511,6 +1591,14 @@
       "y": 33,
       "width": 1,
       "height": 1
+    },
+    {
+      "map_section": "MAPSEC_LAROUSSE",
+      "name": "LAROUSSE CITY",
+      "x": 6,
+      "y": 36,
+      "width": 1,
+      "height": 2
     },
     {
       "map_section": "MAPSEC_GATE",
@@ -1537,10 +1625,34 @@
       "height": 1
     },
     {
+      "map_section": "MAPSEC_WHITESTONE",
+      "name": "WHITESTONE CITY",
+      "x": 1,
+      "y": 11,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_SILVER_STRAIT",
+      "name": "SILVER STRAIT",
+      "x": 1,
+      "y": 11,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_ASHLEAF",
+      "name": "ASHLEAF TOWN",
+      "x": 1,
+      "y": 11,
+      "width": 1,
+      "height": 1
+    },
+    {
       "map_section": "MAPSEC_JOHTO_SAFARI",
       "name": "SAFARI ZONE",
       "x": 0,
-      "y": 0,
+      "y": 8,
       "width": 1,
       "height": 1
     },
@@ -1611,8 +1723,8 @@
     {
       "map_section": "MAPSEC_RUINS_OF_ALPH",
       "name": "RUINS OF ALPH",
-      "x": 0,
-      "y": 0,
+      "x": 13,
+      "y": 9,
       "width": 1,
       "height": 1
     },
@@ -1627,7 +1739,7 @@
     {
       "map_section": "MAPSEC_MTSILVER",
       "name": "MT. SILVER",
-      "x": 20,
+      "x": 23,
       "y": 8,
       "width": 2,
       "height": 2
@@ -1635,42 +1747,42 @@
     {
       "map_section": "MAPSEC_MTMORTAR",
       "name": "MT. MORTAR",
-      "x": 0,
+      "x": 13,
       "y": 0,
-      "width": 1,
-      "height": 1
+      "width": 2,
+      "height": 2
     },
     {
       "map_section": "MAPSEC_ICE_PATH",
       "name": "ICE PATH",
-      "x": 0,
-      "y": 0,
-      "width": 1,
+      "x": 19,
+      "y": 2,
+      "width": 2,
       "height": 1
     },
     {
       "map_section": "MAPSEC_DARK_CAVE",
       "name": "DARK CAVE",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
+      "x": 19,
+      "y": 7,
+      "width": 2,
+      "height": 3
     },
     {
       "map_section": "MAPSEC_UNION_CAVE",
       "name": "UNION CAVE",
-      "x": 0,
-      "y": 0,
+      "x": 14,
+      "y": 13,
       "width": 1,
-      "height": 1
+      "height": 2
     },
     {
       "map_section": "MAPSEC_ILEX_FOREST",
       "name": "ILEX FOREST",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
+      "x": 8,
+      "y": 14,
+      "width": 3,
+      "height": 2
     },
     {
       "map_section": "MAPSEC_ROUTE_26",
@@ -1865,74 +1977,90 @@
       "height": 1
     },
     {
+      "map_section": "MAPSEC_ROUTE_49",
+      "name": "ROUTE 49",
+      "x": 11,
+      "y": 13,
+      "width": 6,
+      "height": 7
+    },
+    {
+      "map_section": "MAPSEC_ROUTE_50",
+      "name": "ROUTE 50",
+      "x": 17,
+      "y": 14,
+      "width": 6,
+      "height": 6
+    },
+    {
       "map_section": "MAPSEC_NATIONAL_PARK",
       "name": "NATIONAL PARK",
-      "x": 0,
-      "y": 0,
+      "x": 8,
+      "y": 6,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_SLOWPOKE_WELL",
       "name": "SLOWPOKE WELL",
-      "x": 0,
-      "y": 0,
+      "x": 12,
+      "y": 14,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_SPROUTTOWER",
       "name": "SPROUT TOWER",
-      "x": 0,
-      "y": 0,
+      "x": 14,
+      "y": 6,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_BURNEDTOWER",
       "name": "BURNED TOWER",
-      "x": 0,
-      "y": 0,
+      "x": 11,
+      "y": 2,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_TOHJO_FALLS",
       "name": "TOHJO FALLS",
-      "x": 0,
-      "y": 0,
+      "x": 24,
+      "y": 13,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_OLIVINE_LIGHTHOUSE",
       "name": "OLVINE LIGHTHOUSE",
-      "x": 0,
-      "y": 0,
+      "x": 5,
+      "y": 5,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_WHIRL",
       "name": "WHIRL ISLANDS",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
+      "x": 3,
+      "y": 9,
+      "width": 2,
+      "height": 2
     },
     {
       "map_section": "MAPSEC_TINTOWER",
       "name": "TIN TOWER",
-      "x": 0,
-      "y": 0,
+      "x": 12,
+      "y": 2,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_DRAGONSDEN",
       "name": "DRAGON'S DEN",
-      "x": 0,
-      "y": 0,
+      "x": 21,
+      "y": 2,
       "width": 1,
       "height": 1
     },

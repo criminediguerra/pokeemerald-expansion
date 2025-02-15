@@ -213,3 +213,11 @@ const u16 gMetatileAttributes_Memorial_Pillar[] = INCBIN_U16("data/tilesets/seco
 
 const u16 gMetatiles_GeneralStairs[] = INCBIN_U16("data/tilesets/primary/general_stairs/metatiles.bin");
 const u16 gMetatileAttributes_GeneralStairs[] = INCBIN_U16("data/tilesets/primary/general_stairs/metatile_attributes.bin");
+
+const u16 gMetatiles_Silver_Rock_Island[] = INCBIN_U16("data/tilesets/primary/silver_rock_island/metatiles.bin");
+const u16 gMetatileAttributes_Silver_Rock_Island[] = INCBIN_U16("data/tilesets/primary/silver_rock_island/metatile_attributes.bin");
+const u16 gMetatiles_GSC[] = INCBIN_U16("data/tilesets/primary/gsc/metatiles.bin");
+const u16 gMetatileAttributes_GSC[] = INCBIN_U16("data/tilesets/primary/gsc/metatile_attributes.bin");
+
+const u16 gMetatiles_GSC_Secondary[] = INCBIN_U16("data/tilesets/secondary/gsc_secondary/metatiles.bin");
+const u16 gMetatileAttributes_GSC_Secondary[] = INCBIN_U16("data/tilesets/secondary/gsc_secondary/metatile_attributes.bin");
