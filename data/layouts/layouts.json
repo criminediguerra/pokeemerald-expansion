@@ -4817,7 +4817,7 @@
       "width": 62,
       "height": 104,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
+      "secondary_tileset": "gTileset_Sootopolis",
       "border_filepath": "data/layouts/Route41/border.bin",
       "blockdata_filepath": "data/layouts/Route41/map.bin"
     },
@@ -9837,7 +9837,7 @@
       "width": 70,
       "height": 65,
       "primary_tileset": "gTileset_Silver_Rock_Island",
-      "secondary_tileset": "gTileset_Sootopolis",
+      "secondary_tileset": "gTileset_Whitestone",
       "border_filepath": "data/layouts/WhitestoneCity/border.bin",
       "blockdata_filepath": "data/layouts/WhitestoneCity/map.bin"
     },
@@ -9864,12 +9864,42 @@
     {
       "id": "LAYOUT_ROUTE51",
       "name": "Route51_Layout",
-      "width": 40,
-      "height": 70,
+      "width": 70,
+      "height": 88,
       "primary_tileset": "gTileset_Silver_Rock_Island",
-      "secondary_tileset": "gTileset_Sootopolis",
+      "secondary_tileset": "gTileset_Whitestone",
       "border_filepath": "data/layouts/Route51/border.bin",
       "blockdata_filepath": "data/layouts/Route51/map.bin"
+    },
+    {
+      "id": "LAYOUT_KASADO_CITY",
+      "name": "KasadoCity_Layout",
+      "width": 68,
+      "height": 72,
+      "primary_tileset": "gTileset_Silver_Rock_Island",
+      "secondary_tileset": "gTileset_Whitestone",
+      "border_filepath": "data/layouts/KasadoCity/border.bin",
+      "blockdata_filepath": "data/layouts/KasadoCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE52",
+      "name": "Route52_Layout",
+      "width": 50,
+      "height": 64,
+      "primary_tileset": "gTileset_Silver_Rock_Island",
+      "secondary_tileset": "gTileset_Whitestone",
+      "border_filepath": "data/layouts/Route52/border.bin",
+      "blockdata_filepath": "data/layouts/Route52/map.bin"
+    },
+    {
+      "id": "LAYOUT_KUGA_TOWN",
+      "name": "KugaTown_Layout",
+      "width": 60,
+      "height": 50,
+      "primary_tileset": "gTileset_Silver_Rock_Island",
+      "secondary_tileset": "gTileset_Whitestone",
+      "border_filepath": "data/layouts/KugaTown/border.bin",
+      "blockdata_filepath": "data/layouts/KugaTown/map.bin"
     }
   ]
 }

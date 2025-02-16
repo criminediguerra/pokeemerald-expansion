@@ -2244,3 +2244,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/CeruleanGSC/scripts.inc"
 
 	.include "data/maps/Route51/scripts.inc"
+
+	.include "data/maps/KasadoCity/scripts.inc"
+
+	.include "data/maps/Route52/scripts.inc"
+
+	.include "data/maps/KugaTown/scripts.inc"

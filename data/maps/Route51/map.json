@@ -15,8 +15,18 @@
   "connections": [
     {
       "map": "MAP_WHITESTONE_CITY",
-      "offset": 6,
+      "offset": 22,
       "direction": "right"
+    },
+    {
+      "map": "MAP_KASADO_CITY",
+      "offset": -42,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_KUGA_TOWN",
+      "offset": 32,
+      "direction": "left"
     }
   ],
   "object_events": [

@@ -152,6 +152,17 @@ const struct Tileset gTileset_Sootopolis =
     .callback = InitTilesetAnim_Sootopolis,
 };
 
+const struct Tileset gTileset_Whitestone =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Whitestone,
+    .palettes = gTilesetPalettes_Whitestone,
+    .metatiles = gMetatiles_Whitestone,
+    .metatileAttributes = gMetatileAttributes_Whitestone,
+    .callback = InitTilesetAnim_Whitestone,
+};
+
 const struct Tileset gTileset_BattleFrontierOutsideWest =
 {
     .isCompressed = TRUE,

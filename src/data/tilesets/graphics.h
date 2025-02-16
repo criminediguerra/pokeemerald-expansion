@@ -284,6 +284,28 @@ const u16 gTilesetPalettes_Sootopolis[][16] =
     INCBIN_U16("data/tilesets/secondary/sootopolis/palettes/15.gbapal"),
 };
 
+const u32 gTilesetTiles_Whitestone[] = INCBIN_U32("data/tilesets/secondary/whitestone/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_Whitestone[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/whitestone/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/whitestone/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/whitestone/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/whitestone/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/whitestone/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/whitestone/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/whitestone/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/whitestone/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/whitestone/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/whitestone/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/whitestone/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/whitestone/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/whitestone/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/whitestone/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/whitestone/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/whitestone/palettes/15.gbapal"),
+};
+
 const u32 gTilesetTiles_BattleFrontierOutsideWest[] = INCBIN_U32("data/tilesets/secondary/battle_frontier_outside_west/tiles.4bpp.lz");
 
 const u16 gTilesetPalettes_BattleFrontierOutsideWest[][16] =

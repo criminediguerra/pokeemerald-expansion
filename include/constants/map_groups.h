@@ -125,6 +125,9 @@
 #define MAP_ROUTE48         (3 | (3 << 8))
 #define MAP_SILVER_STRAIT   (4 | (3 << 8))
 #define MAP_ROUTE51         (5 | (3 << 8))
+#define MAP_KASADO_CITY     (6 | (3 << 8))
+#define MAP_ROUTE52         (7 | (3 << 8))
+#define MAP_KUGA_TOWN       (8 | (3 << 8))
 
 // gMapGroup_TownsAndRoutesHoenn
 #define MAP_PETALBURG_CITY      (0 | (4 << 8))

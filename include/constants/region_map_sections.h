@@ -286,6 +286,10 @@
 #define MAPSEC_ASHLEAF                      0x011B
 #define MAPSEC_WHITESTONE                   0x011C
 #define MAPSEC_SILVER_STRAIT                0x011D
+#define MAPSEC_ROUTE_51                     0x011E
+#define MAPSEC_ROUTE_52                     0x011F
+#define MAPSEC_KASADO                       0x0120
+#define MAPSEC_KUGA                         0x0121
 
 #define MAPSEC_NONE                         0xFFFC
 #define METLOC_SPECIAL_EGG                  0xFFFD
