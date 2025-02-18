@@ -121,13 +121,13 @@
 // gMapGroup_TownsAndRoutesWhirl
 #define MAP_CYANWOOD_CITY   (0 | (3 << 8))
 #define MAP_WHITESTONE_CITY (1 | (3 << 8))
-#define MAP_ROUTE47         (2 | (3 << 8))
-#define MAP_ROUTE48         (3 | (3 << 8))
-#define MAP_SILVER_STRAIT   (4 | (3 << 8))
-#define MAP_ROUTE51         (5 | (3 << 8))
-#define MAP_KASADO_CITY     (6 | (3 << 8))
+#define MAP_KASADO_CITY     (2 | (3 << 8))
+#define MAP_KUGA_TOWN       (3 | (3 << 8))
+#define MAP_ROUTE47         (4 | (3 << 8))
+#define MAP_ROUTE48         (5 | (3 << 8))
+#define MAP_ROUTE51         (6 | (3 << 8))
 #define MAP_ROUTE52         (7 | (3 << 8))
-#define MAP_KUGA_TOWN       (8 | (3 << 8))
+#define MAP_SILVER_STRAIT   (8 | (3 << 8))
 
 // gMapGroup_TownsAndRoutesHoenn
 #define MAP_PETALBURG_CITY      (0 | (4 << 8))

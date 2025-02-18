@@ -2,8 +2,8 @@
   "id": "MAP_KASADO_CITY",
   "name": "KasadoCity",
   "layout": "LAYOUT_KASADO_CITY",
-  "music": "MUS_DUMMY",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "music": "CYANWOOD",
+  "region_map_section": "MAPSEC_KASADO",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",
@@ -33,7 +33,13 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 11,
+      "y": 28,
+      "elevation": 0,
+      "dest_map": "MAP_TEST_ROOM",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
 
