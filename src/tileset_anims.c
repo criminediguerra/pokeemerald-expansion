@@ -33,6 +33,7 @@ static void TilesetAnim_Lavaridge(u16);
 static void TilesetAnim_EverGrande(u16);
 static void TilesetAnim_Pacifidlog(u16);
 static void TilesetAnim_Sootopolis(u16);
+static void TilesetAnim_Whitestone(u16);
 static void TilesetAnim_BattleFrontierOutsideWest(u16);
 static void TilesetAnim_BattleFrontierOutsideEast(u16);
 static void TilesetAnim_Underwater(u16);
@@ -764,6 +765,13 @@ void InitTilesetAnim_Sootopolis(void)
     sSecondaryTilesetAnimCallback = TilesetAnim_Sootopolis;
 }
 
+void InitTilesetAnim_Whitestone(void)
+{
+    sSecondaryTilesetAnimCounter = 0;
+    sSecondaryTilesetAnimCounterMax = sPrimaryTilesetAnimCounterMax;
+    sSecondaryTilesetAnimCallback = TilesetAnim_Whitestone;
+}
+
 void InitTilesetAnim_BattleFrontierOutsideWest(void)
 {
     sSecondaryTilesetAnimCounter = 0;
@@ -926,6 +934,12 @@ static void TilesetAnim_Pacifidlog(u16 timer)
 }
 
 static void TilesetAnim_Sootopolis(u16 timer)
+{
+    if (timer % 16 == 0)
+        QueueAnimTiles_Sootopolis_StormyWater(timer / 16);
+}
+
+static void TilesetAnim_Whitestone(u16 timer)
 {
     if (timer % 16 == 0)
         QueueAnimTiles_Sootopolis_StormyWater(timer / 16);

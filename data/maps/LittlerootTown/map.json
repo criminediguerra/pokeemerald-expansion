@@ -24,11 +24,6 @@
       "direction": "down"
     },
     {
-      "map": "MAP_ROUTE137",
-      "offset": -3,
-      "direction": "left"
-    },
-    {
       "map": "MAP_ROUTE138",
       "offset": -3,
       "direction": "left"
@@ -51,7 +46,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
       "x": 17,
-      "y": 18,
+      "y": 19,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 2,
@@ -64,7 +59,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY_2",
       "x": 12,
-      "y": 21,
+      "y": 22,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 2,
@@ -248,7 +243,7 @@
     },
     {
       "x": 10,
-      "y": 19,
+      "y": 20,
       "elevation": 0,
       "dest_map": "MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB",
       "dest_warp_id": "0"
@@ -349,7 +344,7 @@
     {
       "type": "sign",
       "x": 14,
-      "y": 19,
+      "y": 20,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "LittlerootTown_EventScript_BirchsLabSign"
