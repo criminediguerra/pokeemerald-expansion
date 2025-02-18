@@ -2072,7 +2072,7 @@ static void CreateFlyDestIcons(void)
     u8 spriteId;
 
     canFlyFlag = FLAG_VISITED_LITTLEROOT_TOWN;
-    for (mapSecId = MAPSEC_LITTLEROOT_TOWN; mapSecId <= MAPSEC_EVER_GRANDE_CITY; mapSecId++)
+    for (mapSecId = MINIMAL_MAPSEC_FLYABLE_LOCATION; mapSecId <= MAXIMAL_MAPSEC_FLYABLE_LOCATION; mapSecId++)
     {
         GetMapSecDimensions(mapSecId, &x, &y, &width, &height);
         x = (x + MAPCURSOR_X_MIN - (GetGpuReg(REG_OFFSET_BG2X_L)/0x800)) * 8 + 4;
