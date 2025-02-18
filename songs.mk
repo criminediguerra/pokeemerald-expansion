@@ -423,6 +423,9 @@ $(MID_SUBDIR)/redbattle.s: %.s: %.mid
 $(MID_SUBDIR)/bluebattle.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G155 -V090
 
+$(MID_SUBDIR)/seviicenter.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G162 -V100
+
 $(MID_SUBDIR)/gsvictoryroad.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G155 -V090
 

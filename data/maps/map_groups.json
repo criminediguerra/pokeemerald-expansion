@@ -163,13 +163,13 @@
   "gMapGroup_TownsAndRoutesWhirl": [
     "CyanwoodCity",
     "WhitestoneCity",
+    "KasadoCity",
+    "KugaTown",
     "Route47",
     "Route48",
-    "SilverStrait",
     "Route51",
-    "KasadoCity",
     "Route52",
-    "KugaTown"
+    "SilverStrait"
   ],
   "gMapGroup_TownsAndRoutesHoenn": [
     "PetalburgCity",
