@@ -39,12 +39,15 @@
  *
  */
 
-#define MAP_WIDTH 28
-#define MAP_HEIGHT 15
+#define DISPLAYED_MAP_WIDTH 28
+#define DISPLAYED_MAP_HEIGHT 15
+
+#define MAP_WIDTH 63
+#define MAP_HEIGHT 39
 #define MAPCURSOR_X_MIN 1
 #define MAPCURSOR_Y_MIN 2
-#define MAPCURSOR_X_MAX (MAPCURSOR_X_MIN + MAP_WIDTH - 1)
-#define MAPCURSOR_Y_MAX (MAPCURSOR_Y_MIN + MAP_HEIGHT - 1)
+#define MAPCURSOR_X_MAX (MAPCURSOR_X_MIN + DISPLAYED_MAP_WIDTH - 1)
+#define MAPCURSOR_Y_MAX (MAPCURSOR_Y_MIN + DISPLAYED_MAP_HEIGHT - 1)
 
 #define ZOOMED_MINIMAL_SCROLL_X         -0x2C
 #define ZOOMED_MAXIMAL_SCROLL_X         0xAC
@@ -79,9 +82,6 @@
 #define MAP_SEC_INCREMENT               8
 #define INCREMENT_X_COUNT               (MAXIMAL_OFFSET_SCROLL_X/MINIMAL_BACKGROUND_INCREMENT)/MAP_SEC_INCREMENT
 #define INCREMENT_Y_COUNT               (MAXIMAL_OFFSET_SCROLL_Y/MINIMAL_BACKGROUND_INCREMENT)/MAP_SEC_INCREMENT
-
-#define SCROLLED_MAP_WIDTH              INCREMENT_X_COUNT + MAP_WIDTH
-#define SCROLLED_MAP_HEIGHT             INCREMENT_Y_COUNT + MAP_HEIGHT
 
 #define FLYDESTICON_RED_OUTLINE 6
 
@@ -1133,11 +1133,25 @@ void UpdateRegionMapVideoRegs(void)
         SetGpuReg(REG_OFFSET_BG2PB, sRegionMap->bg2pb);
         SetGpuReg(REG_OFFSET_BG2PC, sRegionMap->bg2pc);
         SetGpuReg(REG_OFFSET_BG2PD, sRegionMap->bg2pd);
-        SetGpuReg(REG_OFFSET_BG2X_L, sRegionMap->bg2x);
         SetGpuReg(REG_OFFSET_BG2X_H, sRegionMap->bg2x >> 16);
-        SetGpuReg(REG_OFFSET_BG2Y_L, sRegionMap->bg2y);
         SetGpuReg(REG_OFFSET_BG2Y_H, sRegionMap->bg2y >> 16);
         sRegionMap->needUpdateVideoRegs = FALSE;
+
+        u16 offsetX = 0;
+        u16 offsetY = 0;
+
+        while (sRegionMap->cursorPosX > MAPCURSOR_X_MAX) {
+            offsetX++;
+            sRegionMap->cursorPosX--;
+        }
+
+        while (sRegionMap->cursorPosY > MAPCURSOR_Y_MAX) {
+            offsetY++;
+            sRegionMap->cursorPosY--;
+        }
+
+        SetGpuReg(REG_OFFSET_BG2X_L, offsetX * BACKGROUND_INCREMENT);
+        SetGpuReg(REG_OFFSET_BG2Y_L, offsetY * BACKGROUND_INCREMENT);
     }
 }
 
@@ -1162,17 +1176,17 @@ static u16 GetMapSecIdAt(u16 x, u16 y)
     y += (GetGpuReg(REG_OFFSET_BG2Y_L)/0x800) - MAPCURSOR_Y_MIN;
     x += (GetGpuReg(REG_OFFSET_BG2X_L)/0x800) - MAPCURSOR_X_MIN;
 
-    if (x >= MAP_WIDTH)
+    if (x >= DISPLAYED_MAP_WIDTH)
     {
-        x -= MAP_WIDTH;
+        x -= DISPLAYED_MAP_WIDTH;
     }
 
-    if (y >= MAP_HEIGHT)
+    if (y >= DISPLAYED_MAP_HEIGHT)
     {
-        y -= MAP_HEIGHT;
+        y -= DISPLAYED_MAP_HEIGHT;
     }
 
-    return sRegionMap_MapSectionLayout[y * MAP_WIDTH][x];
+    return sRegionMap_MapSectionLayout[y * DISPLAYED_MAP_WIDTH][x];
 }
 
 static void InitMapBasedOnPlayerLocation(void)
