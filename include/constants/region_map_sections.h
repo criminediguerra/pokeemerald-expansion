@@ -18,7 +18,6 @@
 #define MAPSEC_MOSSDEEP_CITY                0x000D
 #define MAPSEC_SOOTOPOLIS_CITY              0x000E
 #define MAPSEC_EVER_GRANDE_CITY             0x000F
-#define MAPSEC_ROUTE_98                     0x010E
 #define MAPSEC_PALLET_TOWN                  0x0010
 #define MAPSEC_VIRIDIAN_CITY                0x0011
 #define MAPSEC_PEWTER_CITY                  0x0012
