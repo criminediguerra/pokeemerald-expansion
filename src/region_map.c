@@ -907,10 +907,7 @@ static u8 MoveRegionMapCursor_Full(void)
         sRegionMap->cursorPosY--;
     }
 
-    u16 posX = sRegionMap->cursorPosX + GetGpuReg(REG_OFFSET_BG2X_L) / MINIMAL_BACKGROUND_INCREMENT / MAP_SEC_INCREMENT;
-    u16 posY = sRegionMap->cursorPosY + GetGpuReg(REG_OFFSET_BG2Y_L) / MINIMAL_BACKGROUND_INCREMENT / MAP_SEC_INCREMENT;
-
-    mapSecId = GetMapSecIdAt(posX, posY);
+    mapSecId = GetMapSecIdAt(sRegionMap->cursorPosX, sRegionMap->cursorPosY);
     sRegionMap->mapSecType = GetMapsecType(mapSecId);
     if (mapSecId != sRegionMap->mapSecId)
     {
@@ -1168,25 +1165,20 @@ void PokedexAreaScreen_UpdateRegionMapVariablesAndVideoRegs(s16 x, s16 y)
 
 static u16 GetMapSecIdAt(u16 x, u16 y)
 {
-    if (y < MAPCURSOR_Y_MIN || y > MAPCURSOR_Y_MAX || x < MAPCURSOR_X_MIN || x > MAPCURSOR_X_MAX)
-    {
-        return MAPSEC_NONE;
-    }
-
     y += (GetGpuReg(REG_OFFSET_BG2Y_L)/0x800) - MAPCURSOR_Y_MIN;
     x += (GetGpuReg(REG_OFFSET_BG2X_L)/0x800) - MAPCURSOR_X_MIN;
 
-    if (x >= DISPLAYED_MAP_WIDTH)
+    while (x >= MAP_WIDTH)
     {
-        x -= DISPLAYED_MAP_WIDTH;
+        x -= MAP_WIDTH;
     }
 
-    if (y >= DISPLAYED_MAP_HEIGHT)
+    while (y >= MAP_HEIGHT)
     {
-        y -= DISPLAYED_MAP_HEIGHT;
+        y -= MAP_HEIGHT;
     }
 
-    return sRegionMap_MapSectionLayout[y * DISPLAYED_MAP_WIDTH][x];
+    return sRegionMap_MapSectionLayout[y][x];
 }
 
 static void InitMapBasedOnPlayerLocation(void)
