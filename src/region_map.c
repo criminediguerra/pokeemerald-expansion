@@ -1512,6 +1512,8 @@ static void GetPositionOfCursorWithinMapSec(void)
     u16 x;
     u16 y;
     u16 posWithinMapSec;
+    u16 scrollX = 0U;
+    u16 scrollY = 0U;
 
     if (sRegionMap->mapSecId == MAPSEC_NONE)
     {
@@ -1522,6 +1524,9 @@ static void GetPositionOfCursorWithinMapSec(void)
     {
         x = sRegionMap->cursorPosX;
         y = sRegionMap->cursorPosY;
+
+        scrollX = GetGpuReg(REG_OFFSET_BG2X_L) / MINIMAL_BACKGROUND_INCREMENT;
+        scrollY = GetGpuReg(REG_OFFSET_BG2Y_L) / MINIMAL_BACKGROUND_INCREMENT;
     }
     else
     {
@@ -1529,6 +1534,7 @@ static void GetPositionOfCursorWithinMapSec(void)
         y = sRegionMap->zoomedCursorPosY;
     }
     posWithinMapSec = 0;
+
     while (1)
     {
         if (x <= MAPCURSOR_X_MIN)
@@ -1546,7 +1552,7 @@ static void GetPositionOfCursorWithinMapSec(void)
         else
         {
             x--;
-            if (GetMapSecIdAt(x, y) == sRegionMap->mapSecId)
+            if (GetMapSecIdAt(x + scrollX, y + scrollY) == sRegionMap->mapSecId)
             {
                 posWithinMapSec++;
             }
