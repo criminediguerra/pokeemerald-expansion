@@ -192,7 +192,7 @@ static const struct {
     u16 species;
     u16 moves[MAX_MON_MOVES];
     u8 level;
-    u16 location;
+    u8 location;
 } sPokeOutbreakSpeciesList[] = {
     {
         .species = SPECIES_SEEDOT,
