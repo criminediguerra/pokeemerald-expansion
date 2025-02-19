@@ -140,12 +140,13 @@ struct PokemonSubstruct1
     u16 evolutionTracker1:5;
     u16 move2:11; // 2047 moves.
     u16 evolutionTracker2:5;
-    u16 move3:11; // 2047 moves.
-    u16 unused_04:5;
-    u16 move4:11; // 2047 moves.
-    u16 unused_06:3;
-    u16 hyperTrainedHP:1;
-    u16 hyperTrainedAttack:1;
+
+    u32 move3:11; // 2047 moves.
+    u32 move4:11; // 2047 moves.
+    u32 hyperTrainedHP:1;
+    u32 hyperTrainedAttack:1;
+    u32 pokerus:8;
+
     u8 pp1:7; // 127 PP.
     u8 hyperTrainedDefense:1;
     u8 pp2:7; // 127 PP.
@@ -174,8 +175,7 @@ struct PokemonSubstruct2
 
 struct PokemonSubstruct3
 {
-    u8 pokerus;
-    u8 metLocation;
+    u16 metLocation;
     u16 metLevel:7;
     u16 metGame:4;
     u16 dynamaxLevel:4;

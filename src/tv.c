@@ -192,7 +192,7 @@ static const struct {
     u16 species;
     u16 moves[MAX_MON_MOVES];
     u8 level;
-    u8 location;
+    u16 location;
 } sPokeOutbreakSpeciesList[] = {
     {
         .species = SPECIES_SEEDOT,
@@ -1656,7 +1656,6 @@ static void TryStartRandomMassOutbreak(void)
                 show->massOutbreak.moves[3] = sPokeOutbreakSpeciesList[outbreakIdx].moves[3];
                 show->massOutbreak.locationMapNum = sPokeOutbreakSpeciesList[outbreakIdx].location;
                 show->massOutbreak.locationMapGroup = 0;
-                show->massOutbreak.unused4 = 0;
                 show->massOutbreak.probability = 50;
                 show->massOutbreak.unused5 = 0;
                 show->massOutbreak.daysLeft = 1;
