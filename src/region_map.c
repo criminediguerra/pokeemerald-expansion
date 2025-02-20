@@ -39,15 +39,16 @@
  *
  */
 
-#define DISPLAYED_MAP_WIDTH 28
-#define DISPLAYED_MAP_HEIGHT 15
+#define MAP_WIDTH 63U
+#define MAP_HEIGHT 39U
 
-#define MAP_WIDTH 63
-#define MAP_HEIGHT 39
+const u16 DISPLAYED_MAP_WIDTH = 28U;
+const u16 DISPLAYED_MAP_HEIGHT = 15U;
+
 #define MAPCURSOR_X_MIN 1
 #define MAPCURSOR_Y_MIN 2
-#define MAPCURSOR_X_MAX (MAPCURSOR_X_MIN + DISPLAYED_MAP_WIDTH - 1)
-#define MAPCURSOR_Y_MAX (MAPCURSOR_Y_MIN + DISPLAYED_MAP_HEIGHT - 1)
+#define MAPCURSOR_X_MAX (MAPCURSOR_X_MIN + DISPLAYED_MAP_WIDTH)
+#define MAPCURSOR_Y_MAX (MAPCURSOR_Y_MIN + DISPLAYED_MAP_HEIGHT)
 
 #define ZOOMED_MINIMAL_SCROLL_X         -0x2C
 #define ZOOMED_MAXIMAL_SCROLL_X         0xAC
@@ -59,29 +60,23 @@
 #define ZOOMED_SPAN_SCROLL_Y            ZOOMED_MAXIMAL_SCROLL_Y-ZOOMED_MINIMAL_SCROLL_Y
 #define ADAPTED_MAXIMAL_SPAN_SCROLL_Y   ZOOMED_MINIMAL_SCROLL_Y + (2 * ZOOMED_SPAN_SCROLL_Y)
 
-#define INCREMENT                       8
-#define MINIMAL_BACKGROUND_INCREMENT    0x0100
-#define BACKGROUND_INCREMENT            INCREMENT * MINIMAL_BACKGROUND_INCREMENT
+const u16 INCREMENT = 8U;
+const u16 MINIMAL_BACKGROUND_INCREMENT = 0x0100U;
+const u32 BACKGROUND_INCREMENT = INCREMENT*MINIMAL_BACKGROUND_INCREMENT;
 
-#define MINIMAL_OFFSET_SCROLL_X 0x0000
-#define MAXIMAL_OFFSET_SCROLL_X 0xF000
+const u16 OFFSET_SCROLL_INCREMENT_X = MAP_WIDTH - DISPLAYED_MAP_WIDTH - 1;
+const u16 OFFSET_SCROLL_INCREMENT_Y = MAP_HEIGHT - DISPLAYED_MAP_HEIGHT - 1;
 
-#define MINIMAL_OFFSET_SCROLL_Y 0x0000
-#define MAXIMAL_OFFSET_SCROLL_Y 0xF000
+const u32 MINIMAL_OFFSET_SCROLL_X = 0x00000000U;
+const u32 MAXIMAL_OFFSET_SCROLL_X = (u32)(OFFSET_SCROLL_INCREMENT_X) * BACKGROUND_INCREMENT;
+const u32 MINIMAL_OFFSET_SCROLL_Y = 0x00000000U;
+const u32 MAXIMAL_OFFSET_SCROLL_Y = (u32)(OFFSET_SCROLL_INCREMENT_Y) * BACKGROUND_INCREMENT;
 
-#define ICON_MARGIN                     10
-#define SCREEN_SIZE_X                   0x1000
-#define SCREEN_SIZE_Y                   0x1000
+#define MINIMAL_PLAYER_ICON_POSITION_X  (-2*8+4)
+#define MAXIMAL_PLAYER_ICON_POSITION_X  (40*8+4)
 
-#define MINIMAL_PLAYER_ICON_POSITION_X  -ICON_MARGIN
-#define MAXIMAL_PLAYER_ICON_POSITION_X  SCREEN_SIZE_X + ICON_MARGIN
-
-#define MINIMAL_PLAYER_ICON_POSITION_Y  -ICON_MARGIN
-#define MAXIMAL_PLAYER_ICON_POSITION_Y  SCREEN_SIZE_Y + ICON_MARGIN
-
-#define MAP_SEC_INCREMENT               8
-#define INCREMENT_X_COUNT               (MAXIMAL_OFFSET_SCROLL_X/MINIMAL_BACKGROUND_INCREMENT)/MAP_SEC_INCREMENT
-#define INCREMENT_Y_COUNT               (MAXIMAL_OFFSET_SCROLL_Y/MINIMAL_BACKGROUND_INCREMENT)/MAP_SEC_INCREMENT
+#define MINIMAL_PLAYER_ICON_POSITION_Y  (-2*8+4)
+#define MAXIMAL_PLAYER_ICON_POSITION_Y  (40*8+4)
 
 #define FLYDESTICON_RED_OUTLINE 6
 
@@ -726,14 +721,17 @@ static bool8 ScrollMap(s16 unitX, s16 unitY)
 {
     bool8 deleteTask = FALSE;
 
-    u16 initialScrollX = GetGpuReg(REG_OFFSET_BG2X_L);
-    u16 initialScrollY = GetGpuReg(REG_OFFSET_BG2Y_L);
+    u32 initialScrollX = (((u32)GetGpuReg(REG_OFFSET_BG2X_L)) + (((u32)GetGpuReg(REG_OFFSET_BG2X_H)) << 16U));
+    u32 initialScrollY = (((u32)GetGpuReg(REG_OFFSET_BG2Y_L)) + (((u32)GetGpuReg(REG_OFFSET_BG2Y_H)) << 16U));
+
+    /*u16 initialScrollX = GetGpuReg(REG_OFFSET_BG2X_L);
+    u16 initialScrollY = GetGpuReg(REG_OFFSET_BG2Y_L);*/
 
     s16 incrementX = unitX * BACKGROUND_INCREMENT;
     s16 incrementY = unitY * BACKGROUND_INCREMENT;
 
-    u16 newScrollX = incrementX + initialScrollX;
-    u16 newScrollY = incrementY + initialScrollY;
+    u32 newScrollX = incrementX + initialScrollX;
+    u32 newScrollY = incrementY + initialScrollY;
 
     if (incrementX != 0) {
         if (((MAXIMAL_OFFSET_SCROLL_X - initialScrollX) <= incrementX) && (incrementX > 0)) {
@@ -757,8 +755,10 @@ static bool8 ScrollMap(s16 unitX, s16 unitY)
         }
     }
 
-    SetGpuReg(REG_OFFSET_BG2X_L, newScrollX);
-    SetGpuReg(REG_OFFSET_BG2Y_L, newScrollY);
+    SetGpuReg(REG_OFFSET_BG2X_H, (newScrollX >> 16U) & 0xFFFF);
+    SetGpuReg(REG_OFFSET_BG2X_L, newScrollX & 0xFFFF);
+    SetGpuReg(REG_OFFSET_BG2Y_H, (newScrollY >> 16U) & 0xFFFF);
+    SetGpuReg(REG_OFFSET_BG2Y_L, newScrollY & 0xFFFF);
 
     UpdateRegionMapPlayerIconPosition();
 
@@ -767,27 +767,90 @@ static bool8 ScrollMap(s16 unitX, s16 unitY)
 
 static void UpdateRegionMapPlayerIconPosition(void)
 {
-    u16 positionX = sRegionMap->playerIconSpritePosX * 8 + 4;
+    u16 scrollX = (u16)((((u32)GetGpuReg(REG_OFFSET_BG2X_L)) + (((u32)GetGpuReg(REG_OFFSET_BG2X_H)) << 16U)) / MINIMAL_BACKGROUND_INCREMENT);
+    u16 scrollY = (u16)((((u32)GetGpuReg(REG_OFFSET_BG2Y_L)) + (((u32)GetGpuReg(REG_OFFSET_BG2Y_H)) << 16U)) / MINIMAL_BACKGROUND_INCREMENT);
+
+    u16 screenPositionX, screenPositionY;
+
+    if (sRegionMap->playerIconSpritePosX > scrollX) {
+        screenPositionX = sRegionMap->playerIconSpritePosX - scrollX;
+
+        if (screenPositionX <= DISPLAYED_MAP_WIDTH) {
+            sRegionMap->playerIconSprite->x = screenPositionX * 8 + 4;
+        }
+        else {
+            // Hide
+            sRegionMap->playerIconSprite->x = MINIMAL_PLAYER_ICON_POSITION_X;
+        }
+    }
+    else {
+        // Hide
+        sRegionMap->playerIconSprite->x = MINIMAL_PLAYER_ICON_POSITION_X;
+    }
+
+    if (sRegionMap->playerIconSpritePosY > scrollY) {
+        screenPositionY = sRegionMap->playerIconSpritePosY - scrollY;
+
+        if (screenPositionY <= DISPLAYED_MAP_HEIGHT) {
+            sRegionMap->playerIconSprite->y = screenPositionY * 8 + 4;
+        }
+        else {
+            // Hide
+            sRegionMap->playerIconSprite->y = MINIMAL_PLAYER_ICON_POSITION_Y;
+        }
+    }
+    else {
+        // Hide
+        sRegionMap->playerIconSprite->y = MINIMAL_PLAYER_ICON_POSITION_Y;
+    }
+
+
+
+
+    /*u16 positionX = sRegionMap->playerIconSpritePosX * 8 + 4;
     u16 positionY = sRegionMap->playerIconSpritePosY * 8 + 4;
 
-    u16 scrollX = GetGpuReg(REG_OFFSET_BG2X_L) / MINIMAL_BACKGROUND_INCREMENT;
-    u16 scrollY = GetGpuReg(REG_OFFSET_BG2Y_L) / MINIMAL_BACKGROUND_INCREMENT;
+    // Compute if visible
+    // If visible
+        // Compute position on screen
+
+    u16 scrollX = (u16)((((u32)GetGpuReg(REG_OFFSET_BG2X_L)) + (((u32)GetGpuReg(REG_OFFSET_BG2X_H)) << 16U)) / MINIMAL_BACKGROUND_INCREMENT);
+    u16 scrollY = (u16)((((u32)GetGpuReg(REG_OFFSET_BG2Y_L)) + (((u32)GetGpuReg(REG_OFFSET_BG2Y_H)) << 16U)) / MINIMAL_BACKGROUND_INCREMENT);
+    //u16 scrollY = GetGpuReg(REG_OFFSET_BG2Y_L) / MINIMAL_BACKGROUND_INCREMENT;
 
     s16 adjustedPositionX;
     s16 adjustedPositionY;
 
+    u16 diffX, diffY;
+
     if (positionX > scrollX) {
-        adjustedPositionX = (s16)(positionX - scrollX);
+        diffX = positionX - scrollX;
+
+        if (diffX > MAXIMAL_PLAYER_ICON_POSITION_X) {
+            adjustedPositionX = MAXIMAL_PLAYER_ICON_POSITION_X;
+        }
+        else {
+            adjustedPositionX = (s16)diffX;
+        }
     }
     else {
-        adjustedPositionX = -((s16)(scrollX - positionX));
+        adjustedPositionX = MINIMAL_PLAYER_ICON_POSITION_X;
     }
 
     if (positionY > scrollY) {
-        adjustedPositionY = (s16)(positionY - scrollY);
+        diffY = positionY - scrollY;
+
+        if (diffY > MAXIMAL_PLAYER_ICON_POSITION_Y) {
+            adjustedPositionY = MAXIMAL_PLAYER_ICON_POSITION_Y;
+        }
+        else {
+            adjustedPositionY = (s16)diffY;
+        }
+
+        //adjustedPositionY = (s16)(positionY - scrollY);
     }
     else {
-        adjustedPositionY = -((s16)(scrollY - positionY));
+        adjustedPositionY = MINIMAL_PLAYER_ICON_POSITION_Y;
     }
 
     if (adjustedPositionX < MINIMAL_PLAYER_ICON_POSITION_X) {
@@ -805,7 +868,7 @@ static void UpdateRegionMapPlayerIconPosition(void)
     }
 
     sRegionMap->playerIconSprite->x = adjustedPositionX;
-    sRegionMap->playerIconSprite->y = adjustedPositionY;
+    sRegionMap->playerIconSprite->y = adjustedPositionY;*/
 }
 
 static u8 ProcessRegionMapInput_Full(void)
@@ -1130,25 +1193,30 @@ void UpdateRegionMapVideoRegs(void)
         SetGpuReg(REG_OFFSET_BG2PB, sRegionMap->bg2pb);
         SetGpuReg(REG_OFFSET_BG2PC, sRegionMap->bg2pc);
         SetGpuReg(REG_OFFSET_BG2PD, sRegionMap->bg2pd);
-        SetGpuReg(REG_OFFSET_BG2X_H, sRegionMap->bg2x >> 16);
-        SetGpuReg(REG_OFFSET_BG2Y_H, sRegionMap->bg2y >> 16);
+        /*SetGpuReg(REG_OFFSET_BG2X_H, sRegionMap->bg2x >> 16);
+        SetGpuReg(REG_OFFSET_BG2Y_H, sRegionMap->bg2y >> 16);*/
         sRegionMap->needUpdateVideoRegs = FALSE;
 
-        u16 offsetX = 0;
-        u16 offsetY = 0;
+        u16 incrementX = 0;
+        u16 incrementY = 0;
 
         while (sRegionMap->cursorPosX > MAPCURSOR_X_MAX) {
-            offsetX++;
+            incrementX++;
             sRegionMap->cursorPosX--;
         }
 
         while (sRegionMap->cursorPosY > MAPCURSOR_Y_MAX) {
-            offsetY++;
+            incrementY++;
             sRegionMap->cursorPosY--;
         }
 
-        SetGpuReg(REG_OFFSET_BG2X_L, offsetX * BACKGROUND_INCREMENT);
-        SetGpuReg(REG_OFFSET_BG2Y_L, offsetY * BACKGROUND_INCREMENT);
+        u32 offsetX = incrementX * BACKGROUND_INCREMENT;
+        u32 offsetY = incrementY * BACKGROUND_INCREMENT;
+
+        SetGpuReg(REG_OFFSET_BG2X_L, offsetX & 0xFFFF);
+        SetGpuReg(REG_OFFSET_BG2X_H, offsetX >> 16);
+        SetGpuReg(REG_OFFSET_BG2Y_L, offsetY & 0xFFFF);
+        SetGpuReg(REG_OFFSET_BG2Y_H, offsetX >> 16);
     }
 }
 
