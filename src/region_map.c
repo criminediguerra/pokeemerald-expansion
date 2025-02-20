@@ -724,9 +724,6 @@ static bool8 ScrollMap(s16 unitX, s16 unitY)
     u32 initialScrollX = (((u32)GetGpuReg(REG_OFFSET_BG2X_L)) + (((u32)GetGpuReg(REG_OFFSET_BG2X_H)) << 16U));
     u32 initialScrollY = (((u32)GetGpuReg(REG_OFFSET_BG2Y_L)) + (((u32)GetGpuReg(REG_OFFSET_BG2Y_H)) << 16U));
 
-    /*u16 initialScrollX = GetGpuReg(REG_OFFSET_BG2X_L);
-    u16 initialScrollY = GetGpuReg(REG_OFFSET_BG2Y_L);*/
-
     s16 incrementX = unitX * BACKGROUND_INCREMENT;
     s16 incrementY = unitY * BACKGROUND_INCREMENT;
 
@@ -767,15 +764,15 @@ static bool8 ScrollMap(s16 unitX, s16 unitY)
 
 static void UpdateRegionMapPlayerIconPosition(void)
 {
-    u16 scrollX = (u16)((((u32)GetGpuReg(REG_OFFSET_BG2X_L)) + (((u32)GetGpuReg(REG_OFFSET_BG2X_H)) << 16U)) / MINIMAL_BACKGROUND_INCREMENT);
-    u16 scrollY = (u16)((((u32)GetGpuReg(REG_OFFSET_BG2Y_L)) + (((u32)GetGpuReg(REG_OFFSET_BG2Y_H)) << 16U)) / MINIMAL_BACKGROUND_INCREMENT);
+    u16 scrollX = (u16)((((u32)GetGpuReg(REG_OFFSET_BG2X_L)) + (((u32)GetGpuReg(REG_OFFSET_BG2X_H)) << 16U)) / BACKGROUND_INCREMENT);
+    u16 scrollY = (u16)((((u32)GetGpuReg(REG_OFFSET_BG2Y_L)) + (((u32)GetGpuReg(REG_OFFSET_BG2Y_H)) << 16U)) / BACKGROUND_INCREMENT);
 
     u16 screenPositionX, screenPositionY;
 
     if (sRegionMap->playerIconSpritePosX > scrollX) {
         screenPositionX = sRegionMap->playerIconSpritePosX - scrollX;
 
-        if (screenPositionX <= DISPLAYED_MAP_WIDTH) {
+        if (screenPositionX <= DISPLAYED_MAP_WIDTH + MAPCURSOR_X_MIN) {
             sRegionMap->playerIconSprite->x = screenPositionX * 8 + 4;
         }
         else {
@@ -791,7 +788,7 @@ static void UpdateRegionMapPlayerIconPosition(void)
     if (sRegionMap->playerIconSpritePosY > scrollY) {
         screenPositionY = sRegionMap->playerIconSpritePosY - scrollY;
 
-        if (screenPositionY <= DISPLAYED_MAP_HEIGHT) {
+        if (screenPositionY <= DISPLAYED_MAP_HEIGHT + MAPCURSOR_Y_MIN) {
             sRegionMap->playerIconSprite->y = screenPositionY * 8 + 4;
         }
         else {
@@ -803,72 +800,6 @@ static void UpdateRegionMapPlayerIconPosition(void)
         // Hide
         sRegionMap->playerIconSprite->y = MINIMAL_PLAYER_ICON_POSITION_Y;
     }
-
-
-
-
-    /*u16 positionX = sRegionMap->playerIconSpritePosX * 8 + 4;
-    u16 positionY = sRegionMap->playerIconSpritePosY * 8 + 4;
-
-    // Compute if visible
-    // If visible
-        // Compute position on screen
-
-    u16 scrollX = (u16)((((u32)GetGpuReg(REG_OFFSET_BG2X_L)) + (((u32)GetGpuReg(REG_OFFSET_BG2X_H)) << 16U)) / MINIMAL_BACKGROUND_INCREMENT);
-    u16 scrollY = (u16)((((u32)GetGpuReg(REG_OFFSET_BG2Y_L)) + (((u32)GetGpuReg(REG_OFFSET_BG2Y_H)) << 16U)) / MINIMAL_BACKGROUND_INCREMENT);
-    //u16 scrollY = GetGpuReg(REG_OFFSET_BG2Y_L) / MINIMAL_BACKGROUND_INCREMENT;
-
-    s16 adjustedPositionX;
-    s16 adjustedPositionY;
-
-    u16 diffX, diffY;
-
-    if (positionX > scrollX) {
-        diffX = positionX - scrollX;
-
-        if (diffX > MAXIMAL_PLAYER_ICON_POSITION_X) {
-            adjustedPositionX = MAXIMAL_PLAYER_ICON_POSITION_X;
-        }
-        else {
-            adjustedPositionX = (s16)diffX;
-        }
-    }
-    else {
-        adjustedPositionX = MINIMAL_PLAYER_ICON_POSITION_X;
-    }
-
-    if (positionY > scrollY) {
-        diffY = positionY - scrollY;
-
-        if (diffY > MAXIMAL_PLAYER_ICON_POSITION_Y) {
-            adjustedPositionY = MAXIMAL_PLAYER_ICON_POSITION_Y;
-        }
-        else {
-            adjustedPositionY = (s16)diffY;
-        }
-
-        //adjustedPositionY = (s16)(positionY - scrollY);
-    }
-    else {
-        adjustedPositionY = MINIMAL_PLAYER_ICON_POSITION_Y;
-    }
-
-    if (adjustedPositionX < MINIMAL_PLAYER_ICON_POSITION_X) {
-        adjustedPositionX = MINIMAL_PLAYER_ICON_POSITION_X;
-    }
-    else if (adjustedPositionX > MAXIMAL_PLAYER_ICON_POSITION_X) {
-        adjustedPositionX = MAXIMAL_PLAYER_ICON_POSITION_X;
-    }
-
-    if (adjustedPositionY < MINIMAL_PLAYER_ICON_POSITION_Y) {
-        adjustedPositionY = MINIMAL_PLAYER_ICON_POSITION_Y;
-    }
-    else if (adjustedPositionY > MAXIMAL_PLAYER_ICON_POSITION_Y) {
-        adjustedPositionY = MAXIMAL_PLAYER_ICON_POSITION_Y;
-    }
-
-    sRegionMap->playerIconSprite->x = adjustedPositionX;
-    sRegionMap->playerIconSprite->y = adjustedPositionY;*/
 }
 
 static u8 ProcessRegionMapInput_Full(void)
@@ -1193,12 +1124,10 @@ void UpdateRegionMapVideoRegs(void)
         SetGpuReg(REG_OFFSET_BG2PB, sRegionMap->bg2pb);
         SetGpuReg(REG_OFFSET_BG2PC, sRegionMap->bg2pc);
         SetGpuReg(REG_OFFSET_BG2PD, sRegionMap->bg2pd);
-        /*SetGpuReg(REG_OFFSET_BG2X_H, sRegionMap->bg2x >> 16);
-        SetGpuReg(REG_OFFSET_BG2Y_H, sRegionMap->bg2y >> 16);*/
         sRegionMap->needUpdateVideoRegs = FALSE;
 
-        u16 incrementX = 0;
-        u16 incrementY = 0;
+        u32 incrementX = 0;
+        u32 incrementY = 0;
 
         while (sRegionMap->cursorPosX > MAPCURSOR_X_MAX) {
             incrementX++;
@@ -1214,9 +1143,11 @@ void UpdateRegionMapVideoRegs(void)
         u32 offsetY = incrementY * BACKGROUND_INCREMENT;
 
         SetGpuReg(REG_OFFSET_BG2X_L, offsetX & 0xFFFF);
-        SetGpuReg(REG_OFFSET_BG2X_H, offsetX >> 16);
+        SetGpuReg(REG_OFFSET_BG2X_H, (offsetX >> 16) & 0xFFFF);
         SetGpuReg(REG_OFFSET_BG2Y_L, offsetY & 0xFFFF);
-        SetGpuReg(REG_OFFSET_BG2Y_H, offsetX >> 16);
+        SetGpuReg(REG_OFFSET_BG2Y_H, (offsetY >> 16) & 0xFFFF);
+
+        UpdateRegionMapPlayerIconPosition();
     }
 }
 
@@ -1233,8 +1164,14 @@ void PokedexAreaScreen_UpdateRegionMapVariablesAndVideoRegs(s16 x, s16 y)
 
 static u16 GetMapSecIdAt(u16 x, u16 y)
 {
-    y += (GetGpuReg(REG_OFFSET_BG2Y_L)/0x800) - MAPCURSOR_Y_MIN;
-    x += (GetGpuReg(REG_OFFSET_BG2X_L)/0x800) - MAPCURSOR_X_MIN;
+    u32 offsetX = (((u32)GetGpuReg(REG_OFFSET_BG2X_L)) + (((u32)GetGpuReg(REG_OFFSET_BG2X_H)) << 16U));
+    u32 offsetY = (((u32)GetGpuReg(REG_OFFSET_BG2Y_L)) + (((u32)GetGpuReg(REG_OFFSET_BG2Y_H)) << 16U));
+
+    u16 scrollX = (u16)(offsetX / BACKGROUND_INCREMENT);
+    u16 scrollY = (u16)(offsetY / BACKGROUND_INCREMENT);
+
+    y += scrollY - MAPCURSOR_Y_MIN;
+    x += scrollX - MAPCURSOR_X_MIN;
 
     while (x >= MAP_WIDTH)
     {
