@@ -705,6 +705,17 @@ const struct Tileset gTileset_BattleFactory =
     .callback = NULL,
 };
 
+const struct Tileset gTileset_VanillaGate =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_VanillaGate,
+    .palettes = gTilesetPalettes_VanillaGate,
+    .metatiles = gMetatiles_VanillaGate,
+    .metatileAttributes = gMetatileAttributes_VanillaGate,
+    .callback = NULL,
+};
+
 const struct Tileset gTileset_BattlePike =
 {
     .isCompressed = TRUE,

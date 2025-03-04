@@ -46,13 +46,13 @@ Saffron_Abra_Text:
 	.string "ABRA: ..?$"
 
 SaffronCity_Warp1::
-	warp MAP_KANTO_GATES, 17, 1,
+	warp MAP_KANTO_GATES, 24, 1,
 	waitstate
 	release
 	end
 
 SaffronCity_Warp2::
-	warp MAP_KANTO_GATES, 4, 1,
+	warp MAP_KANTO_GATES, 5, 1,
 	waitstate
 	release
 	end

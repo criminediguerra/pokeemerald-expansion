@@ -2250,3 +2250,31 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route52/scripts.inc"
 
 	.include "data/maps/KugaTown/scripts.inc"
+
+	.include "data/maps/ShoalCave_LowTideExit/scripts.inc"
+
+	.include "data/maps/CinnibarIslandUnderwater/scripts.inc"
+
+	.include "data/maps/Route119a/scripts.inc"
+
+	.include "data/maps/Route119aUnderwater/scripts.inc"
+
+	.include "data/maps/CeruleanCityUnderwater/scripts.inc"
+
+	.include "data/maps/Route24Underwater/scripts.inc"
+
+	.include "data/maps/Route24UnderwaterCeruleanEntrance/scripts.inc"
+
+	.include "data/maps/CeruleanCaveF4Underwater/scripts.inc"
+
+	.include "data/maps/CeruleanCaveF4/scripts.inc"
+
+	.include "data/maps/CeruleanCaveF5/scripts.inc"
+
+	.include "data/maps/CeruleanCaveF6/scripts.inc"
+
+	.include "data/maps/CeruleanCaveF7/scripts.inc"
+
+	.include "data/maps/Route49Cave/scripts.inc"
+
+	.include "data/maps/Route50Cave/scripts.inc"

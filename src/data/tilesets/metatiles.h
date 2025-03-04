@@ -172,6 +172,9 @@ const u16 gMetatileAttributes_BattleDome[] = INCBIN_U16("data/tilesets/secondary
 const u16 gMetatiles_BattleFactory[] = INCBIN_U16("data/tilesets/secondary/battle_factory/metatiles.bin");
 const u16 gMetatileAttributes_BattleFactory[] = INCBIN_U16("data/tilesets/secondary/battle_factory/metatile_attributes.bin");
 
+const u16 gMetatiles_VanillaGate[] = INCBIN_U16("data/tilesets/secondary/vanilla_gate/metatiles.bin");
+const u16 gMetatileAttributes_VanillaGate[] = INCBIN_U16("data/tilesets/secondary/vanilla_gate/metatile_attributes.bin");
+
 const u16 gMetatiles_BattlePike[] = INCBIN_U16("data/tilesets/secondary/battle_pike/metatiles.bin");
 const u16 gMetatileAttributes_BattlePike[] = INCBIN_U16("data/tilesets/secondary/battle_pike/metatile_attributes.bin");
 

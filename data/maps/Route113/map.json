@@ -265,6 +265,13 @@
       "elevation": 0,
       "dest_map": "MAP_TERRA_CAVE_ENTRANCE",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 79,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE49CAVE",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

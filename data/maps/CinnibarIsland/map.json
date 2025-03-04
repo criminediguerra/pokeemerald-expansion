@@ -27,6 +27,16 @@
       "map": "MAP_ROUTE125",
       "offset": 14,
       "direction": "down"
+    },
+    {
+      "map": "MAP_ROUTE124",
+      "offset": -66,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_CINNIBAR_ISLAND_UNDERWATER",
+      "offset": 0,
+      "direction": "dive"
     }
   ],
   "object_events": [
@@ -217,6 +227,13 @@
       "y": 3,
       "elevation": 0,
       "dest_map": "MAP_CINNABAR_VOLCANO",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 44,
+      "y": 38,
+      "elevation": 0,
+      "dest_map": "MAP_SHOAL_CAVE_LOW_TIDE_EXIT",
       "dest_warp_id": "1"
     }
   ],

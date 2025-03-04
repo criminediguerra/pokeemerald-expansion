@@ -1,0 +1,41 @@
+{
+  "id": "MAP_ROUTE49CAVE",
+  "name": "Route49Cave",
+  "layout": "LAYOUT_ROUTE49CAVE",
+  "music": "ROUTE30",
+  "region_map_section": "MAPSEC_ROUTE_49",
+  "requires_flash": false,
+  "weather": "WEATHER_SHADE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 5,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE49",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 19,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE113",
+      "dest_warp_id": "3"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

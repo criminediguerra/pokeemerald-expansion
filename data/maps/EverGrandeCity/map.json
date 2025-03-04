@@ -22,7 +22,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_REPORTER_F",
-      "x": 3,
+      "x": 5,
       "y": 79,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -35,7 +35,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CAMERAMAN",
-      "x": 4,
+      "x": 6,
       "y": 79,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -48,7 +48,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_2",
-      "x": 19,
+      "x": 21,
       "y": 75,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -61,7 +61,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_3",
-      "x": 8,
+      "x": 10,
       "y": 85,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -74,7 +74,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_3",
-      "x": 29,
+      "x": 31,
       "y": 77,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -87,7 +87,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PSYCHIC_M",
-      "x": 16,
+      "x": 18,
       "y": 89,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -100,7 +100,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
-      "x": 31,
+      "x": 33,
       "y": 86,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -113,7 +113,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
-      "x": 35,
+      "x": 37,
       "y": 89,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -126,7 +126,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GAMEBOY_KID",
-      "x": 33,
+      "x": 35,
       "y": 81,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -139,7 +139,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GAMEBOY_KID",
-      "x": 33,
+      "x": 35,
       "y": 82,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
@@ -152,7 +152,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_OLD_WOMAN",
-      "x": 35,
+      "x": 37,
       "y": 63,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -165,7 +165,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_HEX_MANIAC",
-      "x": 7,
+      "x": 9,
       "y": 70,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -178,7 +178,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(PORYGON2)",
-      "x": 18,
+      "x": 20,
       "y": 75,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
@@ -192,28 +192,28 @@
   ],
   "warp_events": [
     {
-      "x": 18,
+      "x": 20,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_1F",
       "dest_warp_id": "0"
     },
     {
-      "x": 7,
+      "x": 9,
       "y": 76,
       "elevation": 0,
       "dest_map": "MAP_EVER_GRANDE_CITY_POKEMON_CENTER_1F",
       "dest_warp_id": "0"
     },
     {
-      "x": 18,
+      "x": 20,
       "y": 41,
       "elevation": 0,
       "dest_map": "MAP_VICTORY_ROAD_1F",
       "dest_warp_id": "0"
     },
     {
-      "x": 18,
+      "x": 20,
       "y": 27,
       "elevation": 0,
       "dest_map": "MAP_VICTORY_ROAD_1F",
@@ -223,7 +223,7 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 4,
+      "x": 6,
       "y": 83,
       "elevation": 1,
       "var": "VAR_TEMP_1",
@@ -232,26 +232,8 @@
     },
     {
       "type": "trigger",
-      "x": 3,
+      "x": 5,
       "y": 83,
-      "elevation": 1,
-      "var": "VAR_TEMP_1",
-      "var_value": "0",
-      "script": "EverGrandeCity_EventScript_SetVisitedEverGrande"
-    },
-    {
-      "type": "trigger",
-      "x": 36,
-      "y": 73,
-      "elevation": 1,
-      "var": "VAR_TEMP_1",
-      "var_value": "0",
-      "script": "EverGrandeCity_EventScript_SetVisitedEverGrande"
-    },
-    {
-      "type": "trigger",
-      "x": 37,
-      "y": 73,
       "elevation": 1,
       "var": "VAR_TEMP_1",
       "var_value": "0",
@@ -277,8 +259,8 @@
     },
     {
       "type": "trigger",
-      "x": 36,
-      "y": 74,
+      "x": 40,
+      "y": 73,
       "elevation": 1,
       "var": "VAR_TEMP_1",
       "var_value": "0",
@@ -286,8 +268,8 @@
     },
     {
       "type": "trigger",
-      "x": 37,
-      "y": 74,
+      "x": 41,
+      "y": 73,
       "elevation": 1,
       "var": "VAR_TEMP_1",
       "var_value": "0",
@@ -313,7 +295,25 @@
     },
     {
       "type": "trigger",
-      "x": 36,
+      "x": 40,
+      "y": 74,
+      "elevation": 1,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "EverGrandeCity_EventScript_SetVisitedEverGrande"
+    },
+    {
+      "type": "trigger",
+      "x": 41,
+      "y": 74,
+      "elevation": 1,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "EverGrandeCity_EventScript_SetVisitedEverGrande"
+    },
+    {
+      "type": "trigger",
+      "x": 38,
       "y": 75,
       "elevation": 1,
       "var": "VAR_TEMP_1",
@@ -324,7 +324,7 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 19,
+      "x": 21,
       "y": 43,
       "elevation": 5,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -332,7 +332,7 @@
     },
     {
       "type": "sign",
-      "x": 9,
+      "x": 11,
       "y": 76,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
@@ -340,7 +340,7 @@
     },
     {
       "type": "sign",
-      "x": 18,
+      "x": 20,
       "y": 52,
       "elevation": 5,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -348,7 +348,7 @@
     },
     {
       "type": "sign",
-      "x": 23,
+      "x": 25,
       "y": 15,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -356,7 +356,7 @@
     },
     {
       "type": "sign",
-      "x": 8,
+      "x": 10,
       "y": 76,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
@@ -364,7 +364,7 @@
     },
     {
       "type": "sign",
-      "x": 5,
+      "x": 7,
       "y": 79,
       "elevation": 5,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",

@@ -160,8 +160,8 @@
   ],
   "warp_events": [
     {
-      "x": 18,
-      "y": 65,
+      "x": 19,
+      "y": 63,
       "elevation": 0,
       "dest_map": "MAP_JOHTO_GATE",
       "dest_warp_id": "11"

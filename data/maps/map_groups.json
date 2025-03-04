@@ -87,7 +87,11 @@
     "Route23",
     "Route24",
     "Route25",
-    "Route25a"
+    "Route25a",
+    "CinnibarIslandUnderwater",
+    "CeruleanCityUnderwater",
+    "Route24Underwater",
+    "Route24UnderwaterCeruleanEntrance"
   ],
   "gMapGroup_TownsAndRoutesSevii": [
     "OneIsland",
@@ -214,6 +218,7 @@
     "Route117",
     "Route118",
     "Route119",
+    "Route119a",
     "Route120",
     "Route121",
     "Route122",
@@ -235,13 +240,14 @@
     "Route137a",
     "Route138",
     "Route138a",
+    "Underwater_Route105",
     "Underwater_Route124",
+    "Route119aUnderwater",
+    "Underwater_Route125",
     "Underwater_Route126",
     "Underwater_Route127",
     "Underwater_Route128",
-    "Underwater_Route129",
-    "Underwater_Route105",
-    "Underwater_Route125"
+    "Underwater_Route129"
   ],
   "gMapGroup_TownsAndRoutesFiore": [
     "RingTown",
@@ -719,6 +725,11 @@
     "CeruleanCaveF2",
     "CeruleanCaveF2a",
     "CeruleanCaveF3",
+    "CeruleanCaveF4",
+    "CeruleanCaveF4Underwater",
+    "CeruleanCaveF5",
+    "CeruleanCaveF6",
+    "CeruleanCaveF7",
     "PowerPlant",
     "SeafoamIslesF1",
     "SeafoamIslesF2",
@@ -852,7 +863,9 @@
     "RocketHideoutJohtoF2",
     "RocketHideoutFJohto3",
     "RocketHideoutJohtoF4",
-    "Route49Crypt"
+    "Route49Crypt",
+    "Route49Cave",
+    "Route50Cave"
   ],
   "gMapGroup_DungeonsWhirl": [
     "EmbeddedTowerF1",
@@ -925,6 +938,7 @@
     "ShoalCave_LowTideInnerRoom",
     "ShoalCave_LowTideStairsRoom",
     "ShoalCave_LowTideLowerRoom",
+    "ShoalCave_LowTideExit",
     "ShoalCave_HighTideEntranceRoom",
     "ShoalCave_HighTideInnerRoom",
     "NewMauville_Entrance",

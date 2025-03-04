@@ -296,6 +296,9 @@
 #define MAPSEC_ROUTE_52                     0x10F9
 #define MAPSEC_KASADO                       0x10FA
 #define MAPSEC_KUGA                         0x10FB
+#define MAPSEC_CINNABAR_UNDERWATER          0x10FC
+#define MAPSEC_ROUTE_119_UNDERWATER         0x10FD
+#define MAPSEC_ROUTE_24_UNDERWATER          0x10FE
 
 #define MAPSEC_NONE                         0xFFFC
 #define METLOC_SPECIAL_EGG                  0xFFFD

@@ -14,11 +14,6 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE119",
-      "offset": 11,
-      "direction": "down"
-    },
-    {
       "map": "MAP_CHERRYGROVE_CITY",
       "offset": -6,
       "direction": "up"
@@ -34,13 +29,13 @@
       "direction": "up"
     },
     {
-      "map": "MAP_ROUTE119",
-      "offset": 11,
+      "map": "MAP_ROUTE120",
+      "offset": 137,
       "direction": "down"
     },
     {
-      "map": "MAP_ROUTE120",
-      "offset": 137,
+      "map": "MAP_ROUTE119A",
+      "offset": 11,
       "direction": "down"
     }
   ],
@@ -73,7 +68,20 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 158,
+      "y": 28,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE50CAVE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 155,
+      "y": 26,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE50CAVE",
+      "dest_warp_id": "1"
+    }
   ],
   "coord_events": [
 

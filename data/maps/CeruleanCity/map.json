@@ -32,6 +32,11 @@
       "map": "MAP_ROUTE4",
       "offset": 19,
       "direction": "left"
+    },
+    {
+      "map": "MAP_CERULEAN_CITY_UNDERWATER",
+      "offset": 0,
+      "direction": "dive"
     }
   ],
   "object_events": [
