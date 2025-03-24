@@ -39,6 +39,20 @@
       "elevation": 0,
       "dest_map": "MAP_TEST_ROOM",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 35,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_KANTO_LEAGUE_GATE",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 34,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_KANTO_LEAGUE_GATE",
+      "dest_warp_id": "4"
     }
   ],
   "coord_events": [

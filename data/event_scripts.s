@@ -2278,3 +2278,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route49Cave/scripts.inc"
 
 	.include "data/maps/Route50Cave/scripts.inc"
+
+	.include "data/maps/LittlerootInteriors/scripts.inc"

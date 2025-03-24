@@ -5204,8 +5204,8 @@
     {
       "id": "LAYOUT_NEW_BARK_TOWN",
       "name": "NewBarkTown_Layout",
-      "width": 36,
-      "height": 26,
+      "width": 40,
+      "height": 32,
       "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/NewBarkTown/border.bin",
@@ -5294,7 +5294,7 @@
     {
       "id": "LAYOUT_ROUTE27",
       "name": "Route27_Layout",
-      "width": 184,
+      "width": 185,
       "height": 37,
       "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
@@ -5334,10 +5334,10 @@
     {
       "id": "LAYOUT_KANTO_LEAGUE_GATE",
       "name": "KantoLeagueGate_Layout",
-      "width": 104,
-      "height": 46,
+      "width": 65,
+      "height": 28,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_OceanicMuseum",
+      "secondary_tileset": "gTileset_VanillaGate",
       "border_filepath": "data/layouts/KantoLeagueGate/border.bin",
       "blockdata_filepath": "data/layouts/KantoLeagueGate/map.bin"
     },
@@ -10040,6 +10040,16 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/Route50Cave/border.bin",
       "blockdata_filepath": "data/layouts/Route50Cave/map.bin"
+    },
+    {
+      "id": "LAYOUT_LITTLEROOT_INTERIORS",
+      "name": "LittlerootInteriors_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/LittlerootInteriors/border.bin",
+      "blockdata_filepath": "data/layouts/LittlerootInteriors/map.bin"
     }
   ]
 }

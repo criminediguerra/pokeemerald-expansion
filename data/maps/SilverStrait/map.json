@@ -28,7 +28,13 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 47,
+      "y": 64,
+      "elevation": 0,
+      "dest_map": "MAP_KANTO_LEAGUE_GATE",
+      "dest_warp_id": "3"
+    }
   ],
   "coord_events": [
 

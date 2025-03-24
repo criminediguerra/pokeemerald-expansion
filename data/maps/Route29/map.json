@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_NEW_BARK_TOWN",
-      "offset": 4,
+      "offset": 2,
       "direction": "right"
     },
     {

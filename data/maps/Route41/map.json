@@ -60,6 +60,13 @@
       "elevation": 0,
       "dest_map": "MAP_WHIRL_F1",
       "dest_warp_id": "3"
+    },
+    {
+      "x": 14,
+      "y": 101,
+      "elevation": 0,
+      "dest_map": "MAP_KANTO_LEAGUE_GATE",
+      "dest_warp_id": "5"
     }
   ],
   "coord_events": [

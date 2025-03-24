@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_NEW_BARK_TOWN",
-      "offset": 4,
+      "offset": 0,
       "direction": "left"
     },
     {
@@ -32,7 +32,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_HIKER",
-      "x": 35,
+      "x": 36,
       "y": 19,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -46,21 +46,21 @@
   ],
   "warp_events": [
     {
-      "x": 36,
+      "x": 37,
       "y": 13,
       "elevation": 0,
       "dest_map": "MAP_TOHJO_FALLS",
       "dest_warp_id": "0"
     },
     {
-      "x": 51,
+      "x": 52,
       "y": 11,
       "elevation": 0,
       "dest_map": "MAP_TOHJO_FALLS",
       "dest_warp_id": "1"
     },
     {
-      "x": 48,
+      "x": 49,
       "y": 16,
       "elevation": 0,
       "dest_map": "MAP_ROUTE26HOUSE",
@@ -73,7 +73,7 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 35,
+      "x": 36,
       "y": 15,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -81,7 +81,7 @@
     },
     {
       "type": "sign",
-      "x": 53,
+      "x": 54,
       "y": 12,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",

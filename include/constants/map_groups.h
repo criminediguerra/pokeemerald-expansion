@@ -235,6 +235,7 @@
 #define MAP_ELM_LAB                              (8 | (7 << 8))
 #define MAP_NEWBARK_INTERIORS                    (9 | (7 << 8))
 #define MAP_NEWBARK_INTERIORS_F1                 (10 | (7 << 8))
+#define MAP_LITTLEROOT_INTERIORS                 (11 | (7 << 8))
 
 // gMapGroup_IndoorOldale
 #define MAP_OLDALE_TOWN_HOUSE1            (0 | (8 << 8))
