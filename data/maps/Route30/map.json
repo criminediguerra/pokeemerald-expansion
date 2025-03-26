@@ -3,7 +3,7 @@
   "name": "Route30",
   "layout": "LAYOUT_ROUTE30",
   "music": "ROUTE30",
-  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "region_map_section": "MAPSEC_ROUTE_30",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_ROUTE",
@@ -22,12 +22,17 @@
       "map": "MAP_ROUTE31",
       "offset": -30,
       "direction": "up"
+    },
+    {
+      "map": "MAP_ROUTE29",
+      "offset": 35,
+      "direction": "down"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
-      "x": 17,
+      "x": 18,
       "y": 7,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -40,7 +45,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_TWIN",
-      "x": 16,
+      "x": 17,
       "y": 75,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -53,7 +58,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER",
-      "x": 10,
+      "x": 11,
       "y": 45,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
@@ -66,7 +71,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
-      "x": 6,
+      "x": 7,
       "y": 45,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
@@ -79,7 +84,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(SPINARAK)",
-      "x": 9,
+      "x": 10,
       "y": 45,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
@@ -92,7 +97,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(RATICATE)",
-      "x": 7,
+      "x": 8,
       "y": 45,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
@@ -105,7 +110,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKEFAN_M",
-      "x": 17,
+      "x": 18,
       "y": 24,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -118,7 +123,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER",
-      "x": 9,
+      "x": 10,
       "y": 89,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -131,7 +136,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER",
-      "x": 6,
+      "x": 7,
       "y": 31,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
@@ -144,7 +149,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
-      "x": 10,
+      "x": 11,
       "y": 21,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
@@ -157,7 +162,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LASS",
-      "x": 10,
+      "x": 11,
       "y": 12,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
@@ -171,14 +176,14 @@
   ],
   "warp_events": [
     {
-      "x": 12,
+      "x": 13,
       "y": 66,
       "elevation": 0,
       "dest_map": "MAP_ROUTE30INDOORS",
       "dest_warp_id": "0"
     },
     {
-      "x": 24,
+      "x": 25,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_ROUTE30INDOORS",
@@ -191,7 +196,7 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 18,
+      "x": 19,
       "y": 44,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -199,7 +204,7 @@
     },
     {
       "type": "sign",
-      "x": 22,
+      "x": 23,
       "y": 5,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",

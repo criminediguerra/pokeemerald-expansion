@@ -3,7 +3,7 @@
   "name": "Route29",
   "layout": "LAYOUT_ROUTE29",
   "music": "ROUTE29",
-  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "region_map_section": "MAPSEC_ROUTE_29",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_ROUTE",
@@ -26,6 +26,11 @@
     {
       "map": "MAP_ROUTE46",
       "offset": 28,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_ROUTE30",
+      "offset": -35,
       "direction": "up"
     }
   ],

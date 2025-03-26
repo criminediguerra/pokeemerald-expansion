@@ -25,22 +25,22 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 50,
-      "y": 36,
+      "x": 53,
+      "y": 38,
       "elevation": 0,
       "dest_map": "MAP_BLACKTHORN_CITY",
       "dest_warp_id": "0"
     },
     {
-      "x": 50,
+      "x": 51,
       "y": 17,
       "elevation": 0,
       "dest_map": "MAP_ICE_PATH_F2",
       "dest_warp_id": "0"
     },
     {
-      "x": 50,
-      "y": 5,
+      "x": 51,
+      "y": 10,
       "elevation": 0,
       "dest_map": "MAP_ICE_PATH_F2",
       "dest_warp_id": "1"

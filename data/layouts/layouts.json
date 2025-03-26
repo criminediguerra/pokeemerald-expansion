@@ -5174,7 +5174,7 @@
     {
       "id": "LAYOUT_ROUTE30",
       "name": "Route30_Layout",
-      "width": 38,
+      "width": 39,
       "height": 94,
       "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
@@ -5184,8 +5184,8 @@
     {
       "id": "LAYOUT_CHERRYGROVE_CITY",
       "name": "CherrygroveCity_Layout",
-      "width": 64,
-      "height": 32,
+      "width": 65,
+      "height": 33,
       "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
       "border_filepath": "data/layouts/CherrygroveCity/border.bin",
@@ -5244,7 +5244,7 @@
     {
       "id": "LAYOUT_ROUTE44",
       "name": "Route44_Layout",
-      "width": 94,
+      "width": 95,
       "height": 34,
       "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Fortree",
@@ -5284,8 +5284,8 @@
     {
       "id": "LAYOUT_ROUTE42",
       "name": "Route42_Layout",
-      "width": 94,
-      "height": 32,
+      "width": 96,
+      "height": 35,
       "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
       "border_filepath": "data/layouts/Route42/border.bin",
@@ -5404,7 +5404,7 @@
     {
       "id": "LAYOUT_ICE_PATH_F1",
       "name": "IcePathF1_Layout",
-      "width": 54,
+      "width": 57,
       "height": 56,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
