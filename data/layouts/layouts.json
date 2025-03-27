@@ -5234,8 +5234,8 @@
     {
       "id": "LAYOUT_BLACKTHORN_CITY",
       "name": "BlackthornCity_Layout",
-      "width": 59,
-      "height": 61,
+      "width": 64,
+      "height": 64,
       "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/BlackthornCity/border.bin",
@@ -5404,10 +5404,10 @@
     {
       "id": "LAYOUT_ICE_PATH_F1",
       "name": "IcePathF1_Layout",
-      "width": 57,
+      "width": 59,
       "height": 56,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_CaveIce",
       "border_filepath": "data/layouts/IcePathF1/border.bin",
       "blockdata_filepath": "data/layouts/IcePathF1/map.bin"
     },
@@ -5415,9 +5415,9 @@
       "id": "LAYOUT_ICE_PATH_F2",
       "name": "IcePathF2_Layout",
       "width": 30,
-      "height": 43,
+      "height": 53,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_CaveIce",
       "border_filepath": "data/layouts/IcePathF2/border.bin",
       "blockdata_filepath": "data/layouts/IcePathF2/map.bin"
     },
@@ -5427,7 +5427,7 @@
       "width": 56,
       "height": 28,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_CaveIce",
       "border_filepath": "data/layouts/IcePathF3/border.bin",
       "blockdata_filepath": "data/layouts/IcePathF3/map.bin"
     },
@@ -5647,7 +5647,7 @@
       "width": 48,
       "height": 28,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_CaveIce",
       "border_filepath": "data/layouts/SeafoamIslesF2/border.bin",
       "blockdata_filepath": "data/layouts/SeafoamIslesF2/map.bin"
     },
@@ -5657,7 +5657,7 @@
       "width": 49,
       "height": 32,
       "primary_tileset": "gTileset_GeneralStairs",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_CaveIce",
       "border_filepath": "data/layouts/SeafoamIslesF3/border.bin",
       "blockdata_filepath": "data/layouts/SeafoamIslesF3/map.bin"
     },
@@ -5667,7 +5667,7 @@
       "width": 50,
       "height": 32,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_CaveIce",
       "border_filepath": "data/layouts/SeafoamIslesF4/border.bin",
       "blockdata_filepath": "data/layouts/SeafoamIslesF4/map.bin"
     },
@@ -5687,7 +5687,7 @@
       "width": 28,
       "height": 25,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_CaveIce",
       "border_filepath": "data/layouts/SeafoamIslesF6/border.bin",
       "blockdata_filepath": "data/layouts/SeafoamIslesF6/map.bin"
     },
@@ -8107,7 +8107,7 @@
       "width": 30,
       "height": 36,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_CaveIce",
       "border_filepath": "data/layouts/IcefallCaveF1/border.bin",
       "blockdata_filepath": "data/layouts/IcefallCaveF1/map.bin"
     },
@@ -8117,7 +8117,7 @@
       "width": 20,
       "height": 20,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_CaveIce",
       "border_filepath": "data/layouts/IcefallCaveF2/border.bin",
       "blockdata_filepath": "data/layouts/IcefallCaveF2/map.bin"
     },
@@ -8137,7 +8137,7 @@
       "width": 25,
       "height": 26,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_CaveIce",
       "border_filepath": "data/layouts/IcefallCaveF4/border.bin",
       "blockdata_filepath": "data/layouts/IcefallCaveF4/map.bin"
     },
@@ -10050,6 +10050,16 @@
       "secondary_tileset": "gTileset_BrendansMaysHouse",
       "border_filepath": "data/layouts/LittlerootInteriors/border.bin",
       "blockdata_filepath": "data/layouts/LittlerootInteriors/map.bin"
+    },
+    {
+      "id": "LAYOUT_ICE_PATH_F5",
+      "name": "IcePathF5_Layout",
+      "width": 50,
+      "height": 81,
+      "primary_tileset": "gTileset_GeneralSnow",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/IcePathF5/border.bin",
+      "blockdata_filepath": "data/layouts/IcePathF5/map.bin"
     }
   ]
 }

@@ -3,7 +3,7 @@
   "name": "MtSilverF4",
   "layout": "LAYOUT_MT_SILVER_F4",
   "music": "WHIRL",
-  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "region_map_section": "MAPSEC_MTSILVER",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",
   "map_type": "MAP_TYPE_UNDERGROUND",

@@ -3,7 +3,7 @@
   "name": "BurnedTowerF1",
   "layout": "LAYOUT_BURNED_TOWER_F1",
   "music": "BURNEDTOWER",
-  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "region_map_section": "MAPSEC_BURNEDTOWER",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",
   "map_type": "MAP_TYPE_UNDERGROUND",

@@ -2280,3 +2280,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route50Cave/scripts.inc"
 
 	.include "data/maps/LittlerootInteriors/scripts.inc"
+
+	.include "data/maps/IcePathF5/scripts.inc"

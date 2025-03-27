@@ -3,7 +3,7 @@
   "name": "IcePathF1",
   "layout": "LAYOUT_ICE_PATH_F1",
   "music": "DARKCAVE",
-  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "region_map_section": "MAPSEC_ICE_PATH",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",
   "map_type": "MAP_TYPE_UNDERGROUND",
@@ -25,25 +25,25 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 53,
+      "x": 55,
       "y": 38,
       "elevation": 0,
       "dest_map": "MAP_BLACKTHORN_CITY",
       "dest_warp_id": "0"
     },
     {
-      "x": 51,
+      "x": 53,
       "y": 17,
       "elevation": 0,
       "dest_map": "MAP_ICE_PATH_F2",
       "dest_warp_id": "0"
     },
     {
-      "x": 51,
+      "x": 53,
       "y": 10,
       "elevation": 0,
-      "dest_map": "MAP_ICE_PATH_F2",
-      "dest_warp_id": "1"
+      "dest_map": "MAP_ICE_PATH_F5",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

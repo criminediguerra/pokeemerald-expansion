@@ -229,3 +229,6 @@ const u16 gMetatiles_Whitestone[] = INCBIN_U16("data/tilesets/secondary/whitesto
 const u16 gMetatileAttributes_Whitestone[] = INCBIN_U16("data/tilesets/secondary/whitestone/metatile_attributes.bin");
 const u16 gMetatiles_GeneralSnow[] = INCBIN_U16("data/tilesets/primary/general_snow/metatiles.bin");
 const u16 gMetatileAttributes_GeneralSnow[] = INCBIN_U16("data/tilesets/primary/general_snow/metatile_attributes.bin");
+
+const u16 gMetatiles_CaveIce[] = INCBIN_U16("data/tilesets/secondary/cave_ice/metatiles.bin");
+const u16 gMetatileAttributes_CaveIce[] = INCBIN_U16("data/tilesets/secondary/cave_ice/metatile_attributes.bin");

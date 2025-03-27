@@ -1122,6 +1122,14 @@
     },
     {
       "map_section": "MAPSEC_ROCKET_HIDEOUT",
+      "name": "ROCKET HQ",
+      "x": 34,
+      "y": 10,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_JOHTO_ROCKET_HIDEOUT",
       "name": "ROCKET HIDEOUT",
       "x": 34,
       "y": 10,
@@ -2051,8 +2059,8 @@
     {
       "map_section": "MAPSEC_NATIONAL_PARK",
       "name": "NATIONAL PARK",
-      "x": 8,
-      "y": 6,
+      "x": 9,
+      "y": 7,
       "width": 1,
       "height": 1
     },
@@ -2060,7 +2068,7 @@
       "map_section": "MAPSEC_SLOWPOKE_WELL",
       "name": "SLOWPOKE WELL",
       "x": 12,
-      "y": 15,
+      "y": 16,
       "width": 1,
       "height": 1
     },

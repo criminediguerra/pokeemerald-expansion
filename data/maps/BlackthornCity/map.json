@@ -23,7 +23,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_GAMEBOY_KID",
       "x": 30,
-      "y": 32,
+      "y": 35,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 1,
@@ -36,7 +36,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_GAMEBOY_KID",
       "x": 31,
-      "y": 32,
+      "y": 35,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
@@ -49,7 +49,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_OLD_WOMAN",
       "x": 45,
-      "y": 39,
+      "y": 42,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
@@ -62,7 +62,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_TWIN",
       "x": 35,
-      "y": 26,
+      "y": 29,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
@@ -75,7 +75,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_3",
       "x": 49,
-      "y": 21,
+      "y": 24,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -88,7 +88,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(CHARIZARD)",
       "x": 49,
-      "y": 20,
+      "y": 23,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
       "movement_range_x": 0,
@@ -101,7 +101,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_4",
       "x": 26,
-      "y": 38,
+      "y": 41,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -114,7 +114,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(SALAMENCE)",
       "x": 27,
-      "y": 38,
+      "y": 41,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 0,
@@ -127,7 +127,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
       "x": 34,
-      "y": 47,
+      "y": 50,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -140,7 +140,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_LASS",
       "x": 21,
-      "y": 44,
+      "y": 47,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
@@ -153,7 +153,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
       "x": 18,
-      "y": 22,
+      "y": 25,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -166,7 +166,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
       "x": 3,
-      "y": 47,
+      "y": 50,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -179,7 +179,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(KANGASKHAN)",
       "x": 3,
-      "y": 48,
+      "y": 51,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_UP",
       "movement_range_x": 1,
@@ -193,56 +193,56 @@
   "warp_events": [
     {
       "x": 53,
-      "y": 13,
+      "y": 16,
       "elevation": 0,
       "dest_map": "MAP_ICE_PATH_F1",
       "dest_warp_id": "1"
     },
     {
       "x": 28,
-      "y": 4,
+      "y": 7,
       "elevation": 0,
       "dest_map": "MAP_DRAGONS_DEN",
       "dest_warp_id": "1"
     },
     {
       "x": 40,
-      "y": 37,
+      "y": 40,
       "elevation": 0,
       "dest_map": "MAP_JOHTO_SAFARI_INTERIORS",
       "dest_warp_id": "1"
     },
     {
       "x": 15,
-      "y": 34,
+      "y": 37,
       "elevation": 0,
       "dest_map": "MAP_JOHTO_SAFARI_INTERIORS",
       "dest_warp_id": "0"
     },
     {
       "x": 14,
-      "y": 45,
+      "y": 48,
       "elevation": 0,
       "dest_map": "MAP_JOHTO_SAFARI_INTERIORS",
       "dest_warp_id": "2"
     },
     {
       "x": 30,
-      "y": 45,
+      "y": 48,
       "elevation": 0,
       "dest_map": "MAP_BLACKTHORN_TEST",
       "dest_warp_id": "0"
     },
     {
       "x": 24,
-      "y": 45,
+      "y": 48,
       "elevation": 0,
       "dest_map": "MAP_BLACKTHORN_MART",
       "dest_warp_id": "0"
     },
     {
       "x": 24,
-      "y": 22,
+      "y": 25,
       "elevation": 0,
       "dest_map": "MAP_BLACKTHORN_GYM",
       "dest_warp_id": "0"
@@ -255,7 +255,7 @@
     {
       "type": "sign",
       "x": 47,
-      "y": 38,
+      "y": 41,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "NewBarkTown_Blackthorn_CitySign"
@@ -263,7 +263,7 @@
     {
       "type": "sign",
       "x": 20,
-      "y": 23,
+      "y": 26,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "NewBarkTown_Blackthorn_GymSign"
@@ -271,7 +271,7 @@
     {
       "type": "sign",
       "x": 31,
-      "y": 45,
+      "y": 48,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "Common_EventScript_ShowPokemonCenterSign"
@@ -279,7 +279,7 @@
     {
       "type": "sign",
       "x": 32,
-      "y": 45,
+      "y": 48,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "Common_EventScript_ShowPokemonCenterSign"
@@ -287,7 +287,7 @@
     {
       "type": "sign",
       "x": 25,
-      "y": 45,
+      "y": 48,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "Common_EventScript_ShowPokemartSign"
@@ -295,7 +295,7 @@
     {
       "type": "sign",
       "x": 26,
-      "y": 45,
+      "y": 48,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "Common_EventScript_ShowPokemartSign"
