@@ -425,7 +425,19 @@
 #define TRAINER_CLASS_PIKE_QUEEN     0x3f
 #define TRAINER_CLASS_PYRAMID_KING   0x40
 #define TRAINER_CLASS_RS_PROTAG      0x41
-#define TRAINER_CLASS_COUNT          0x42
+#define TRAINER_CLASS_TEAM_ROCKET    0x42
+#define TRAINER_CLASS_ROCKET_ADMIN   0x43
+#define TRAINER_CLASS_ROCKET_BOSS    0x44
+#define TRAINER_CLASS_SILPH          0x45
+#define TRAINER_CLASS_SILPH_CHIEF    0x46
+#define TRAINER_CLASS_CHANNELER      0x47
+#define TRAINER_CLASS_SAGE           0x48
+#define TRAINER_CLASS_ELDER          0x49
+#define TRAINER_CLASS_KIMONO_GIRL    0x50
+#define TRAINER_CLASS_BUSINESSMAN    0x51
+#define TRAINER_CLASS_RANCHER        0x52
+#define TRAINER_CLASS_POKEKID        0x53
+#define TRAINER_CLASS_COUNT          0x54
 
 #define TRAINER_ENCOUNTER_MUSIC_MALE         0 // standard male encounter music
 #define TRAINER_ENCOUNTER_MUSIC_FEMALE       1 // standard female encounter music

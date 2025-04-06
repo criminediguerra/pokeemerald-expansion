@@ -6605,7 +6605,7 @@
       "id": "LAYOUT_TEST_ROOM",
       "name": "TestRoom_Layout",
       "width": 30,
-      "height": 30,
+      "height": 32,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/TestRoom/border.bin",

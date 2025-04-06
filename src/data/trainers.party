@@ -4799,23 +4799,23 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Geodude
-Level: 12
+Level: 15
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Tackle
 - Defense Curl
 - Rock Throw
 - Rock Tomb
 
-Geodude
-Level: 12
+Larvitar
+Level: 16
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
+- Earthquake
 - Defense Curl
 - Rock Throw
 - Rock Tomb
 
 Nosepass @ Oran Berry
-Level: 15
+Level: 17
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Block
 - Harden
@@ -16873,3 +16873,487 @@ Double Battle: No
 Kyogre
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_BROCK_1 ===
+Name: BROCK
+Class: Leader
+Pic: Leader Brock
+Gender: Male
+Music: Male
+Items: Potion / Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Geodude
+Level: 15
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Tackle
+- Defense Curl
+- Rock Throw
+- Rock Tomb
+
+Rhyhorn
+Level: 16
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Fury Attack
+- Scary Face
+- Horn Drill
+- Earthquake
+
+Onix @ Oran Berry
+Level: 17
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Iron Tail
+- Earthquake
+- Sandstorm
+- Rock Slide
+
+=== TRAINER_BROCK_2 ===
+Name: BROCK
+Class: Leader
+Pic: Leader Brock
+Gender: Male
+Music: Male
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Bonsly @ Sitrus Berry
+Level: 18
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Magnitude
+- Dig
+- Flail
+- Rock Slide
+
+Geodude
+Level: 19
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Protect
+- Rollout
+- Magnitude
+- Explosion
+
+Rhyhorn
+Level: 20
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fury Attack
+- Scary Face
+- Horn Drill
+- Earthquake
+
+Onix @ Sitrus Berry
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Iron Tail
+- Bind
+- Sandstorm
+- Rock Slide
+
+=== TRAINER_BROCK_3 ===
+Name: BROCK
+Class: Leader
+Pic: Leader Brock
+Gender: Male
+Music: Male
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Sudowoodo @ Sitrus Berry
+Level: 24
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Mimic
+- Dig
+- Flail
+- Rock Slide
+
+Rhyhorn
+Level: 25
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fury Attack
+- Scary Face
+- Horn Drill
+- Earthquake
+
+Graveler
+Level: 25
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Protect
+- Rollout
+- Magnitude
+- Explosion
+
+Onix @ Sitrus Berry
+Level: 25
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Iron Tail
+- Bind
+- Sandstorm
+- Rock Slide
+
+=== TRAINER_BROCK_4 ===
+Name: BROCK
+Class: Leader
+Pic: Leader Brock
+Gender: Male
+Music: Male
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Sudowoodo @ Sitrus Berry
+Level: 30
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Mimic
+- Dig
+- Flail
+- Rock Slide
+
+Rhyhorn
+Level: 31
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fury Attack
+- Scary Face
+- Horn Drill
+- Earthquake
+
+Graveler
+Level: 32
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Protect
+- Rollout
+- Magnitude
+- Explosion
+
+Onix @ Sitrus Berry
+Level: 32
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Iron Tail
+- Bind
+- Sandstorm
+- Rock Slide
+
+=== TRAINER_BROCK_5 ===
+Name: BROCK
+Class: Leader
+Pic: Leader Brock
+Gender: Male
+Music: Male
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Sudowoodo @ Sitrus Berry
+Level: 34
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Mimic
+- Dig
+- Flail
+- Rock Slide
+
+Rhyhorn
+Level: 34
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fury Attack
+- Scary Face
+- Horn Drill
+- Earthquake
+
+Graveler
+Level: 35
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Protect
+- Rollout
+- Magnitude
+- Explosion
+
+Onix @ Sitrus Berry
+Level: 36
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Iron Tail
+- Bind
+- Sandstorm
+- Rock Slide
+
+=== TRAINER_BROCK_6 ===
+Name: BROCK
+Class: Leader
+Pic: Leader Brock
+Gender: Male
+Music: Male
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Sudowoodo @ Sitrus Berry
+Level: 37
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Mimic
+- Dig
+- Flail
+- Rock Slide
+
+Rhydon
+Level: 42
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fury Attack
+- Scary Face
+- Horn Drill
+- Earthquake
+
+Donphan
+Level: 38
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Iron Tail
+- Rollout
+- Iron Defense
+- Earthquake
+
+Golem
+Level: 39
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Protect
+- Rollout
+- Magnitude
+- Explosion
+
+Onix @ Sitrus Berry
+Level: 40
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Iron Tail
+- Explosion
+- Sandstorm
+- Rock Slide
+
+=== TRAINER_BROCK_7 ===
+Name: BROCK
+Class: Leader
+Pic: Leader Brock
+Gender: Male
+Music: Male
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Sudowoodo @ Sitrus Berry
+Level: 41
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Mimic
+- Dig
+- Flail
+- Rock Slide
+
+Marowak @ Sitrus Berry
+Level: 41
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Body Slam
+- Fissure
+- Bone Club
+- Submission
+
+Rhydon
+Level: 42
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fury Attack
+- Scary Face
+- Horn Drill
+- Earthquake
+
+Donphan
+Level: 42
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Iron Tail
+- Rollout
+- Iron Defense
+- Earthquake
+
+Golem
+Level: 41
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Protect
+- Rollout
+- Magnitude
+- Explosion
+
+Onix @ Sitrus Berry
+Level: 42
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Iron Tail
+- Bind
+- Sandstorm
+- Rock Slide
+
+=== TRAINER_BROCK_8 ===
+Name: BROCK
+Class: Leader
+Pic: Leader Brock
+Gender: Male
+Music: Male
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Sudowoodo @ Sitrus Berry
+Level: 41
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Mimic
+- Dig
+- Flail
+- Rock Slide
+
+Marowak @ Sitrus Berry
+Level: 42
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Body Slam
+- Fissure
+- Bone Club
+- Submission
+
+Rhyperior
+Level: 42
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fury Attack
+- Scary Face
+- Horn Drill
+- Earthquake
+
+Donphan
+Level: 42
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Iron Tail
+- Rollout
+- Iron Defense
+- Earthquake
+
+Golem
+Level: 43
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Protect
+- Rollout
+- Magnitude
+- Explosion
+
+Steelix @ Sitrus Berry
+Level: 45
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Iron Tail
+- Bind
+- Sandstorm
+- Rock Slide
+
+=== TRAINER_BROCK_9 ===
+Name: BROCK
+Class: Leader
+Pic: Leader Brock
+Gender: Male
+Music: Male
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Sudowoodo @ Sitrus Berry
+Level: 46
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Mimic
+- Dig
+- Flail
+- Rock Slide
+
+Marowak @ Sitrus Berry
+Level: 46
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Body Slam
+- Fissure
+- Bone Club
+- Submission
+
+Rhyperior
+Level: 47
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fury Attack
+- Scary Face
+- Horn Drill
+- Earthquake
+
+Donphan
+Level: 48
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Iron Tail
+- Rollout
+- Iron Defense
+- Earthquake
+
+Golem
+Level: 48
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Protect
+- Rollout
+- Magnitude
+- Explosion
+
+Steelix @ Sitrus Berry
+Level: 50
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Iron Tail
+- Bind
+- Sandstorm
+- Rock Slide
+
+=== TRAINER_BROCK_10 ===
+Name: BROCK
+Class: Leader
+Pic: Leader Brock
+Gender: Male
+Music: Male
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Sudowoodo @ Sitrus Berry
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Mimic
+- Dig
+- Flail
+- Rock Slide
+
+Marowak @ Sitrus Berry
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Body Slam
+- Fissure
+- Bone Club
+- Submission
+
+Rhyperior
+Level: 66
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fury Attack
+- Scary Face
+- Horn Drill
+- Earthquake
+
+Donphan
+Level: 67
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Iron Tail
+- Rollout
+- Iron Defense
+- Earthquake
+
+Golem
+Level: 68
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Protect
+- Rollout
+- Magnitude
+- Explosion
+
+Steelix @ Sitrus Berry
+Level: 70
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Iron Tail
+- Bind
+- Sandstorm
+- Rock Slide

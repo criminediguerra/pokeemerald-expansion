@@ -5749,8 +5749,54 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_MAGMA_ADMIN:
             return MUS_VS_AQUA_MAGMA;
         case TRAINER_CLASS_LEADER:
+        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(VERMILION_GYM) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(VERMILION_GYM))
+        return MUS_RG_VS_GYM_LEADER;
+               if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(SAFFRON_GYM) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(SAFFRON_GYM))
+        return MUS_RG_VS_GYM_LEADER;
+               if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(CELADON_GYM) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(CELADON_GYM))
+        return MUS_RG_VS_GYM_LEADER;
+               if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(FUCHSIA_GYM) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(FUCHSIA_GYM))
+        return MUS_RG_VS_GYM_LEADER;
+               if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(CINNABAR_GYM) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(CINNABAR_GYM))
+        return MUS_RG_VS_GYM_LEADER;
+               if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(CERULEAN_GYM) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(CERULEAN_GYM))
+        return MUS_RG_VS_GYM_LEADER;
+               if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(PEWTER_GYM) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(PEWTER_GYM))
+        return MUS_RG_VS_GYM_LEADER;
+               if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(VIRIDIAN_GYM) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(VIRIDIAN_GYM))
+        return MUS_RG_VS_GYM_LEADER;
+               if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(DOJO_KARATE) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(DOJO_KARATE))
+        return MUS_RG_VS_GYM_LEADER;
+              if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(VIOLET_GYM1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(VIOLET_GYM1))
+        return JOHTOGYMLEADER;
+              if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(AZALEA_GYM) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(AZALEA_GYM))
+        return JOHTOGYMLEADER;
+              if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(GOLDENROD_GYM) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(GOLDENROD_GYM))
+        return JOHTOGYMLEADER;
+              if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ECRUTEAK_GYM) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ECRUTEAK_GYM))
+        return JOHTOGYMLEADER;
+              if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(CYANWOOD_GYM) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(CYANWOOD_GYM))
+        return JOHTOGYMLEADER;
+              if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(OLIVINE_GYM) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(OLIVINE_GYM))
+        return JOHTOGYMLEADER;
+              if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAHOGANY_GYM) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAHOGANY_GYM))
+        return JOHTOGYMLEADER;
+              if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(BLACKTHORN_GYM) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(BLACKTHORN_GYM))
+        return JOHTOGYMLEADER;
+            else
             return MUS_VS_GYM_LEADER;
+            case TRAINER_CLASS_TEAM_ROCKET:
+            case TRAINER_CLASS_ROCKET_ADMIN:
+            case TRAINER_CLASS_ROCKET_BOSS:
+            case TRAINER_CLASS_SILPH:
+            case TRAINER_CLASS_SILPH_CHIEF:
+                return ROCKET;
         case TRAINER_CLASS_CHAMPION:
+        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(INDIGO_PLATEAU_F11) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(INDIGO_PLATEAU_F11))
+        return MUS_RG_VS_CHAMPION;
+            if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(INDIGO_PLATEAU_F13) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(INDIGO_PLATEAU_F13))
+        return REDBATTLE;
+            else
             return MUS_VS_CHAMPION;
         case TRAINER_CLASS_RIVAL:
             if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
@@ -5759,7 +5805,60 @@ u16 GetBattleBGM(void)
                 return MUS_VS_TRAINER;
             return MUS_VS_RIVAL;
         case TRAINER_CLASS_ELITE_FOUR:
+        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(INDIGO_PLATEAU_F3) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(INDIGO_PLATEAU_F3))
+        return KANTOELITE;
+               if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(INDIGO_PLATEAU_F5) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(INDIGO_PLATEAU_F5))
+        return KANTOELITE;
+               if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(INDIGO_PLATEAU_F7) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(INDIGO_PLATEAU_F7))
+        return KANTOELITE;
+               if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(INDIGO_PLATEAU_F9) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(INDIGO_PLATEAU_F9))
+        return KANTOELITE;
+            else
             return MUS_VS_ELITE_FOUR;
+            case TRAINER_CLASS_PKMN_TRAINER_1:
+            if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MT_SILVER_F10) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MT_SILVER_F10))
+      return REDBATTLE;
+            if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MT_MOON_ROOF) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MT_MOON_ROOF))
+      return MUS_RG_VS_CHAMPION;
+            if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(PETALBURG_GYM_F1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(PETALBURG_GYM_F1))
+      return SEVIITRAINER;
+            if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(PETALBURG_GYM_F8) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(PETALBURG_GYM_F8))
+      return SEVIITRAINER;
+            if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(PETALBURG_GYM_F3) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(PETALBURG_GYM_F3))
+      return MUS_RG_VS_TRAINER;
+            if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(BERRY_FOREST) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(BERRY_FOREST))
+      return BLUEBATTLE;
+            if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(NAVEL_ROCK_TOP) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(NAVEL_ROCK_TOP))
+      return BLUEBATTLE;
+          else
+      return MUS_VS_TRAINER;
+      case TRAINER_CLASS_COLLECTOR:
+            if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE109) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE109))
+      return MUS_VS_ELITE_FOUR;
+          else
+      return MUS_VS_TRAINER;
+      case TRAINER_CLASS_POKEFAN:
+            if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(PETALBURG_GYM_F2) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(PETALBURG_GYM_F2))
+      return JOHTOTRAINER;
+          else
+      return MUS_VS_TRAINER;
+      case TRAINER_CLASS_LADY:
+            if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(LILYCOVE_CITY_LILYCOVE_MUSEUM_1F) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(LILYCOVE_CITY_LILYCOVE_MUSEUM_1F))
+      return MUS_VS_ELITE_FOUR;
+          else
+      return MUS_VS_TRAINER;
+      case TRAINER_CLASS_GENTLEMAN:
+            if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(BURNED_TOWER_F1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(BURNED_TOWER_F1))
+      return EUSINE;
+            if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(GOLDENROD_RADIO_F1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(GOLDENROD_RADIO_F1))
+      return JOHTOTRAINER;
+          else
+      return MUS_VS_TRAINER;
+      case TRAINER_CLASS_BEAUTY:
+            if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(FOUR_ISLAND_HOUSES) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(FOUR_ISLAND_HOUSES))
+      return KANTOELITE;
+          else
+      return MUS_VS_TRAINER;
         case TRAINER_CLASS_SALON_MAIDEN:
         case TRAINER_CLASS_DOME_ACE:
         case TRAINER_CLASS_PALACE_MAVEN:
@@ -5772,6 +5871,434 @@ u16 GetBattleBGM(void)
             return MUS_VS_TRAINER;
         }
     }
+    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(PALLET_TOWN) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(PALLET_TOWN))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(VIRIDIAN_CITY) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(VIRIDIAN_CITY))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(CERULEAN_CITY) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(CERULEAN_CITY))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(VERMILION_CITY) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(VERMILION_CITY))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(CELADON_CITY) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(CELADON_CITY))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(FUCHSIA_CITY) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(FUCHSIA_CITY))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(CINNIBAR_ISLAND) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(CINNIBAR_ISLAND))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(FUCHSIA_CITY) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(FUCHSIA_CITY))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(NEW_BARK_TOWN) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(NEW_BARK_TOWN))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(CHERRYGROVE_CITY) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(CHERRYGROVE_CITY))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(VIOLET_CITY) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(VIOLET_CITY))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ECRUTEAK_CITY) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ECRUTEAK_CITY))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(OLIVINE_CITY) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(OLIVINE_CITY))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(CYANWOOD_CITY) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(CYANWOOD_CITY))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(BLACKTHORN_CITY) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(BLACKTHORN_CITY))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(BILLS_GARDEN) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(BILLS_GARDEN))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(LAKEOF_RAGE) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(LAKEOF_RAGE))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(RUINSOF_ALPH) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(RUINSOF_ALPH))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(NATIONAL_PARK) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(NATIONAL_PARK))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ONE_ISLAND) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ONE_ISLAND))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(FOUR_ISLAND) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(FOUR_ISLAND))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(FIVE_ISLAND) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(FIVE_ISLAND))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(TREASURE_BEACH) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(TREASURE_BEACH))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(CAPE_BRINK) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(CAPE_BRINK))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(KINDLE_ROAD) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(KINDLE_ROAD))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(THREE_ISLAND_PORT) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(THREE_ISLAND_PORT))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(BOND_BRIDGE) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(BOND_BRIDGE))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(FIVE_ISLE_MEADOW) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(FIVE_ISLE_MEADOW))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MEMORIAL_PILLAR) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MEMORIAL_PILLAR))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(WATER_LABYRINTH) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(WATER_LABYRINTH))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(RESORT_GORGEOUS) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(RESORT_GORGEOUS))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(WATER_PATH) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(WATER_PATH))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(RUIN_VALLEY) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(RUIN_VALLEY))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(GREEN_PATH) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(GREEN_PATH))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(OUTCAST_ISLAND) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(OUTCAST_ISLAND))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(TRAINER_TOWER) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(TRAINER_TOWER))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(CANYON_ENTRANCE) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(CANYON_ENTRANCE))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(SEAVAULT_CANYON) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(SEAVAULT_CANYON))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(TANOBY_RUINS) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(TANOBY_RUINS))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(COBALT_BAY) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(COBALT_BAY))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(COBALT_BEACHA) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(COBALT_BEACHA))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MT_EMBER_F1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MT_EMBER_F1))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MT_EMBER2) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MT_EMBER2))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MT_EMBER_F3) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MT_EMBER_F3))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MT_EMBER_F4) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MT_EMBER_F4))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(BERRY_FOREST) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(BERRY_FOREST))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(THREE_ISLAND_TUNNEL) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(THREE_ISLAND_TUNNEL))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(PATTERN_BUSH) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(PATTERN_BUSH))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ICEFALL_CAVE_F1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ICEFALL_CAVE_F1))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ICEFALL_CAVE_F2) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ICEFALL_CAVE_F2))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ICEFALL_CAVE_F3) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ICEFALL_CAVE_F3))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ICEFALL_CAVE_F4) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ICEFALL_CAVE_F4))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(PATTERN_BUSH_F1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(PATTERN_BUSH_F1))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(PATTERN_BUSH_F2) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(PATTERN_BUSH_F2))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(DOTTED_HOLE_F1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(DOTTED_HOLE_F1))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(DOTTED_HOLE_F2) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(DOTTED_HOLE_F2))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(DOTTED_HOLE_F3) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(DOTTED_HOLE_F3))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(DOTTED_HOLE_F4) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(DOTTED_HOLE_F4))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(DOTTED_HOLE_F5) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(DOTTED_HOLE_F5))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ALTERING_CAVE_SEVII) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ALTERING_CAVE_SEVII))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(LOST_CAVE) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(LOST_CAVE))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(LOST_CAVE_F1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(LOST_CAVE_F1))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(TANOBY_KEY) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(TANOBY_KEY))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(TANOBY_KEY_F1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(TANOBY_KEY_F1))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(BIRTH_ISLAND_LAB) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(BIRTH_ISLAND_LAB))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(BIRTH_ISLAND_LAB_F1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(BIRTH_ISLAND_LAB_F1))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(BIRTH_ISLAND_LAB_F2) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(BIRTH_ISLAND_LAB_F2))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(BIRTH_ISLAND_LAB_F3) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(BIRTH_ISLAND_LAB_F3))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MONEAN_CHAMBER) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MONEAN_CHAMBER))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(LIPTOO_CHAMBER) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(LIPTOO_CHAMBER))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(WEEPTH_CHAMBER) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(WEEPTH_CHAMBER))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(DILFORD_CHAMBER) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(DILFORD_CHAMBER))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(SCUFIB_CHAMBER) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(SCUFIB_CHAMBER))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(RIXY_CHAMBER) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(RIXY_CHAMBER))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(VIAPOIS_CHAMBER) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(VIAPOIS_CHAMBER))
+    return SEVIIWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(VIRIDIAN_FOREST) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(VIRIDIAN_FOREST))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(DIGLETT_CAVE) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(DIGLETT_CAVE))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(DIGLETT_CAVE1F) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(DIGLETT_CAVE1F))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MT_MOON) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MT_MOON))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MT_MOON_F1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MT_MOON_F1))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MT_MOON_F2) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MT_MOON_F2))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MT_MOON_F3) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MT_MOON_F3))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MT_MOON_ROOF) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MT_MOON_ROOF))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROCK_TUNNEL) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROCK_TUNNEL))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROCK_TUNNEL_F1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROCK_TUNNEL_F1))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(CERULEAN_CAVE_F1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(CERULEAN_CAVE_F1))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(CERULEAN_CAVE_F2) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(CERULEAN_CAVE_F2))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(CERULEAN_CAVE_F2A) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(CERULEAN_CAVE_F2A))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(CERULEAN_CAVE_F3) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(CERULEAN_CAVE_F3))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(POWER_PLANT) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(POWER_PLANT))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(SEAFOAM_ISLES_F1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(SEAFOAM_ISLES_F1))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(SEAFOAM_ISLES_F2) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(SEAFOAM_ISLES_F2))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(SEAFOAM_ISLES_F3) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(SEAFOAM_ISLES_F3))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(SEAFOAM_ISLES_F4) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(SEAFOAM_ISLES_F4))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(SEAFOAM_ISLES_F5) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(SEAFOAM_ISLES_F5))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(SEAFOAM_ISLES_F6) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(SEAFOAM_ISLES_F6))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(KANTO_VICTORY_ROAD) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(KANTO_VICTORY_ROAD))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(KANTO_VICTORY_ROAD_F1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(KANTO_VICTORY_ROAD_F1))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(KANTO_VICTORY_ROAD_F2) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(KANTO_VICTORY_ROAD_F2))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(CINNABAR_VOLCANO) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(CINNABAR_VOLCANO))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(LAVENDER_TOWER) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(LAVENDER_TOWER))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(POKEMON_MANSION_F1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(POKEMON_MANSION_F1))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(POKEMON_MANSION_F2) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(POKEMON_MANSION_F2))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(POKEMON_MANSION_F3) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(POKEMON_MANSION_F3))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(POKEMON_MANSION_F4) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(POKEMON_MANSION_F4))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(KANTO_SAFARI_F1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(KANTO_SAFARI_F1))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(KANTO_SAFARI_F2) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(KANTO_SAFARI_F2))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(KANTO_SAFARI_F3) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(KANTO_SAFARI_F3))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(KANTO_SAFARI_F4) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(KANTO_SAFARI_F4))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(FAR_OFF_CAVE) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(FAR_OFF_CAVE))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MT_MORTAR_F1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MT_MORTAR_F1))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MT_MORTAR_F2) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MT_MORTAR_F2))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MT_MORTAR_F3) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MT_MORTAR_F3))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MT_MORTAR_F4) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MT_MORTAR_F4))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ICE_PATH_F1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ICE_PATH_F1))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ICE_PATH_F2) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ICE_PATH_F2))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ICE_PATH_F3) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ICE_PATH_F3))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ICE_PATH_F4) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ICE_PATH_F4))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(DARK_CAVE) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(DARK_CAVE))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(DARK_CAVE_F1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(DARK_CAVE_F1))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(UNION_CAVE) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(UNION_CAVE))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(UNION_CAVE_F1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(UNION_CAVE_F1))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(UNION_CAVE_F2) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(UNION_CAVE_F2))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(RUINSOF_ALPH_F1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(RUINSOF_ALPH_F1))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(RUINSOF_ALPH_F2) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(RUINSOF_ALPH_F2))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(RUINSOF_ALPH_F3) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(RUINSOF_ALPH_F3))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ILEX_FOREST) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ILEX_FOREST))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE47F1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE47F1))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE47F2) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE47F2))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(SLOWPOKEWELL) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(SLOWPOKEWELL))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(DRAGONS_DEN) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(DRAGONS_DEN))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(DRAGONS_DEN_F1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(DRAGONS_DEN_F1))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(SPROUT_TOWER) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(SPROUT_TOWER))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(BURNED_TOWER) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(BURNED_TOWER))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(BURNED_TOWER_F1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(BURNED_TOWER_F1))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(TIN_TOWER) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(TIN_TOWER))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(TIN_TOWER_F1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(TIN_TOWER_F1))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(TIN_TOWER_F2) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(TIN_TOWER_F2))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(TIN_TOWER_F3) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(TIN_TOWER_F3))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(WHIRL_F1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(WHIRL_F1))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(WHIRL_F2) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(WHIRL_F2))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(WHIRL_F3) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(WHIRL_F3))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(WHIRL_F4) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(WHIRL_F4))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(WHIRL_F5) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(WHIRL_F5))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(TOHJO_FALLS) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(TOHJO_FALLS))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(JOHTO_SAFARI_F1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(JOHTO_SAFARI_F1))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(JOHTO_SAFARI_F2) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(JOHTO_SAFARI_F2))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(JOHTO_SAFARI_F3) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(JOHTO_SAFARI_F3))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(JOHTO_SAFARI_F4) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(JOHTO_SAFARI_F4))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(JOHTO_SAFARI_F5) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(JOHTO_SAFARI_F5))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(JOHTO_SAFARI_F6) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(JOHTO_SAFARI_F6))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(JOHTO_SAFARI_F7) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(JOHTO_SAFARI_F7))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(JOHTO_SAFARI_F8) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(JOHTO_SAFARI_F8))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(JOHTO_SAFARI_F9) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(JOHTO_SAFARI_F9))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MT_SILVER_F1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MT_SILVER_F1))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MT_SILVER_F2) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MT_SILVER_F2))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MT_SILVER_F3) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MT_SILVER_F3))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MT_SILVER_F4) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MT_SILVER_F4))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MT_SILVER_F5) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MT_SILVER_F5))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MT_SILVER_F6) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MT_SILVER_F6))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MT_SILVER_F7) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MT_SILVER_F7))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MT_SILVER_F8) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MT_SILVER_F8))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MT_SILVER_F9) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MT_SILVER_F9))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MT_SILVER_F10) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MT_SILVER_F10))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE1))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE2) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE2))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE3) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE3))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE4) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE4))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE5) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE5))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE6) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE6))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE7) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE7))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE8) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE8))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE9) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE9))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE10) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE10))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE11) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE11))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE12) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE12))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE13) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE13))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE14) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE14))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE15) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE15))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE16) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE16))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE17) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE17))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE18) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE18))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE19) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE19))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE20) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE20))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE21) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE21))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE22) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE22))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE23) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE23))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE24) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE24))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE25) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE25))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE25A) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE25A))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE26) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE26))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE27) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE27))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE29) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE29))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE30) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE30))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE31) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE31))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE32) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE32))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE33) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE33))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE34) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE34))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE35) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE35))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE36) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE36))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE37) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE37))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE38) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE38))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE39) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE39))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE40) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE40))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE41) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE41))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE42) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE42))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE43) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE43))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE44) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE44))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE45) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE45))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE46) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE46))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE47) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE47))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE48) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE48))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE49) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE49))
+    return JOHTOWILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE49CRYPT) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE49CRYPT))
+    return JOHTOWILD;
     else
     {
         return MUS_VS_WILD;

@@ -2,51 +2,56 @@ TestRoom_MapScripts::
 	.byte 0
 
 Testroom_EventScript_Time_Progression_1::
+	clearflag FLAG_TIME_PROGRESSION_1
+	end
+
+Testroom_EventScript_Time_Progression_2::
 	setflag FLAG_TIME_PROGRESSION_1
 	clearflag FLAG_TIME_PROGRESSION_2
 	end
 
-Testroom_EventScript_Time_Progression_2::
+Testroom_EventScript_Time_Progression_3::
 	setflag FLAG_TIME_PROGRESSION_2
 	clearflag FLAG_TIME_PROGRESSION_3
 	end
 
-Testroom_EventScript_Time_Progression_3::
+Testroom_EventScript_Time_Progression_4::
 	setflag FLAG_TIME_PROGRESSION_3
 	clearflag FLAG_TIME_PROGRESSION_4
 	end
 
-Testroom_EventScript_Time_Progression_4::
+Testroom_EventScript_Time_Progression_5::
 	setflag FLAG_TIME_PROGRESSION_4
 	clearflag FLAG_TIME_PROGRESSION_5
 	end
 
-Testroom_EventScript_Time_Progression_5::
+Testroom_EventScript_Time_Progression_6::
 	setflag FLAG_TIME_PROGRESSION_5
 	clearflag FLAG_TIME_PROGRESSION_6
 	end
 
-Testroom_EventScript_Time_Progression_6::
+Testroom_EventScript_Time_Progression_7::
 	setflag FLAG_TIME_PROGRESSION_6
 	clearflag FLAG_TIME_PROGRESSION_7
 	end
 
-Testroom_EventScript_Time_Progression_7::
+Testroom_EventScript_Time_Progression_8::
 	setflag FLAG_TIME_PROGRESSION_7
 	clearflag FLAG_TIME_PROGRESSION_8
 	end
 
-Testroom_EventScript_Time_Progression_8::
+Testroom_EventScript_Time_Progression_9::
 	setflag FLAG_TIME_PROGRESSION_8
-	setvar VAR_HOENN_LEAGUE_REMATCH, 1
-	setflag FLAG_SYS_GAME_CLEAR
+	clearflag FLAG_SYS_GAME_CLEAR
+	setvar VAR_LEAGUE_REMATCH, 1
 	clearflag FLAG_TIME_PROGRESSION_9
 	end
 
-Testroom_EventScript_Time_Progression_KantoLeauge::
-	setflag FLAG_KANTO_LEAGUE_1
-	setvar VAR_KANTO_LEAGUE_REMATCH, 1
-	clearflag FLAG_KANTO_LEAGUE_2
+Testroom_EventScript_Time_Progression_9_alt::
+	setflag FLAG_TIME_PROGRESSION_8
+	clearflag FLAG_SYS_GAME_CLEAR
+	setvar VAR_LEAGUE_REMATCH, 2
+	clearflag FLAG_TIME_PROGRESSION_9
 	end
 
 Testroom_EventScript_MossdeepRocket_Event::
