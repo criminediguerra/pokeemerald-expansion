@@ -24,7 +24,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "FortreeCity_House3_EventScript_SchoolKidM",
+      "script": "Cinnabar_EventScript_StudiousGuy",
       "flag": "0"
     },
     {
@@ -37,7 +37,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LilycoveCity_CoveLilyMotel_2F_EventScript_Woman",
+      "script": "Cinnabar_EventScript_StudiousGuySister",
       "flag": "0"
     },
     {
@@ -50,7 +50,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "MauvilleCity_EventScript_Boy",
+      "script": "Cinnabar_EventScript_FatMan",
       "flag": "0"
     },
     {
@@ -63,7 +63,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LilycoveCity_CoveLilyMotel_2F_EventScript_GameBoyKid",
+      "script": "Cinnabar_EventScript_GameboyGuy",
       "flag": "0"
     },
     {
@@ -77,6 +77,32 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Cinnabar_Growlithe",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
+      "x": 1,
+      "y": 16,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Cinnabar_EventScript_FarmerWife",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(POLIWAG)",
+      "x": 2,
+      "y": 16,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Vermilion_Poliwag",
       "flag": "0"
     }
   ],
@@ -108,6 +134,20 @@
       "elevation": 0,
       "dest_map": "MAP_CINNIBAR_ISLAND",
       "dest_warp_id": "4"
+    },
+    {
+      "x": 4,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_CINNIBAR_ISLAND",
+      "dest_warp_id": "11"
+    },
+    {
+      "x": 3,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_CINNIBAR_ISLAND",
+      "dest_warp_id": "11"
     }
   ],
   "coord_events": [

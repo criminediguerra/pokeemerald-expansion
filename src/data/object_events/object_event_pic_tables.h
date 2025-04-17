@@ -952,8 +952,68 @@ static const struct SpriteFrameImage sPicTable_Clipboard[] = {
     obj_frame_tiles(gObjectEventPic_Clipboard),
 };
 
+static const struct SpriteFrameImage sPicTable_Drum_Kit[] = {
+    obj_frame_tiles(gObjectEventPic_Drum_Kit),
+};
+
 static const struct SpriteFrameImage sPicTable_Gamecube[] = {
     obj_frame_tiles(gObjectEventPic_Gamecube),
+};
+
+static const struct SpriteFrameImage sPicTable_Whitneyposter_1[] = {
+    obj_frame_tiles(gObjectEventPic_Whitneyposter_1),
+};
+
+static const struct SpriteFrameImage sPicTable_Whitneyposter_2[] = {
+    obj_frame_tiles(gObjectEventPic_Whitneyposter_2),
+};
+
+static const struct SpriteFrameImage sPicTable_Whitneyposter_3[] = {
+    obj_frame_tiles(gObjectEventPic_Whitneyposter_3),
+};
+
+static const struct SpriteFrameImage sPicTable_Whitneyposter_4[] = {
+    obj_frame_tiles(gObjectEventPic_Whitneyposter_4),
+};
+
+static const struct SpriteFrameImage sPicTable_CuttableBarrier[] = {
+    overworld_ascending_frames(gObjectEventPic_CuttableBarrier, 2, 2),
+};
+
+static const struct SpriteFrameImage sPicTable_Painting_Threefriends[] = {
+    obj_frame_tiles(gObjectEventPic_Painting_Threefriends),
+};
+
+static const struct SpriteFrameImage sPicTable_Painting_LadyQuilava[] = {
+    obj_frame_tiles(gObjectEventPic_Painting_LadyQuilava),
+};
+
+static const struct SpriteFrameImage sPicTable_Painting_PkmnYellow[] = {
+    obj_frame_tiles(gObjectEventPic_Painting_PkmnYellow),
+};
+
+static const struct SpriteFrameImage sPicTable_Painting_HoOh[] = {
+    obj_frame_tiles(gObjectEventPic_Painting_HoOh),
+};
+
+static const struct SpriteFrameImage sPicTable_Painting_Woman[] = {
+    obj_frame_tiles(gObjectEventPic_Painting_Woman),
+};
+
+static const struct SpriteFrameImage sPicTable_TuberFSwimming[] = {
+    overworld_frame(gObjectEventPic_TuberFSwimming, 2, 2, 0),
+    overworld_frame(gObjectEventPic_TuberFSwimming, 2, 2, 1),
+    overworld_frame(gObjectEventPic_TuberFSwimming, 2, 2, 2),
+    overworld_frame(gObjectEventPic_TuberFSwimming, 2, 2, 3),
+    overworld_frame(gObjectEventPic_TuberFSwimming, 2, 2, 4),
+    overworld_frame(gObjectEventPic_TuberFSwimming, 2, 2, 5),
+    overworld_frame(gObjectEventPic_TuberFSwimming, 2, 2, 6),
+    overworld_frame(gObjectEventPic_TuberFSwimming, 2, 2, 7),
+    overworld_frame(gObjectEventPic_TuberFSwimming, 2, 2, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_Soldier[] = {
+    overworld_ascending_frames(gObjectEventPic_Soldier, 2, 4),
 };
 
 static const struct SpriteFrameImage sPicTable_BrendanFieldMove[] = {

@@ -1132,6 +1132,18 @@ static bool16 IsInfiltratedWeatherInstitute(struct WarpData *warp)
         return FALSE;
 }
 
+static bool16 CinnabarLabMusic(struct WarpData *warp)
+{
+    if (VarGet(VAR_CINNABAR_LAB_MUSIC))
+        return FALSE;
+    else if (warp->mapGroup != MAP_GROUP(CINNABAR_LAB))
+        return FALSE;
+    else if (warp->mapNum == MAP_NUM(CINNABAR_LAB))
+        return TRUE;
+    else
+        return FALSE;
+}
+
 static bool16 IsInflitratedSpaceCenter(struct WarpData *warp)
 {
     if (VarGet(VAR_MOSSDEEP_CITY_STATE) == 0)
@@ -1156,6 +1168,8 @@ u16 GetLocationMusic(struct WarpData *warp)
         return MUS_ENCOUNTER_MAGMA;
     else if (IsInfiltratedWeatherInstitute(warp) == TRUE)
         return MUS_MT_CHIMNEY;
+        else if (CinnabarLabMusic(warp) == TRUE)
+        return MUS_RG_CINNABAR;
     else
         return Overworld_GetMapHeaderByGroupAndId(warp->mapGroup, warp->mapNum)->music;
 }

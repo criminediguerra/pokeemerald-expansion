@@ -17,7 +17,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_MEWTWO_STATUE",
       "x": 5,
-      "y": 8,
+      "y": 5,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -29,7 +29,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MEWTWO_STATUE",
-      "x": 27,
+      "x": 29,
       "y": 14,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -39,26 +39,39 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Mewtwo_Statue",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_PAINTING_WOMAN",
+      "x": 8,
+      "y": 13,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
     }
   ],
   "warp_events": [
     {
-      "x": 9,
-      "y": 34,
+      "x": 8,
+      "y": 33,
       "elevation": 0,
       "dest_map": "MAP_CINNIBAR_ISLAND",
       "dest_warp_id": "1"
     },
     {
-      "x": 36,
-      "y": 34,
+      "x": 39,
+      "y": 28,
       "elevation": 0,
       "dest_map": "MAP_POKEMON_MANSION_F4",
       "dest_warp_id": "0"
     },
     {
-      "x": 11,
-      "y": 13,
+      "x": 14,
+      "y": 14,
       "elevation": 0,
       "dest_map": "MAP_POKEMON_MANSION_F2",
       "dest_warp_id": "0"
@@ -71,11 +84,18 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 8,
+      "x": 6,
       "y": 34,
       "elevation": 0,
       "dest_map": "MAP_CINNIBAR_ISLAND",
       "dest_warp_id": "2"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_CINNIBAR_ISLAND",
+      "dest_warp_id": "12"
     }
   ],
   "coord_events": [

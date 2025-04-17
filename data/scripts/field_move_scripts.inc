@@ -1,4 +1,31 @@
 @ Interact with cuttable tree
+
+EventScript_CutBarrier::
+	lockall
+	goto_if_unset FLAG_BADGE01_GET, EventScript_CheckBarrierCantCut
+	checkpartymove MOVE_CUT
+	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CheckBarrierCantCut
+	setfieldeffectargument 0, VAR_RESULT
+	bufferpartymonnick STR_VAR_1, VAR_RESULT
+	buffermovename STR_VAR_2, MOVE_CUT
+	msgbox Text_WantToCutBarrier, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, EventScript_CancelCut
+	msgbox Text_MonUsedFieldMove, MSGBOX_DEFAULT
+	closemessage
+EventScript_CutBarrierCommon:
+	isfollowerfieldmoveuser VAR_0x8004
+	setfieldeffectargument 3, VAR_0x8004 @ skip pose if so
+	dofieldeffect FLDEFF_USE_CUT_ON_TREE
+	waitstate
+EventScript_CutBarrierDown:: @ fallthrough
+	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
+	call_if_eq VAR_0x8004, TRUE, EventScript_FollowerFieldMove
+	applymovement VAR_LAST_TALKED, Movement_CutTreeDown
+	waitmovement 0
+	removeobject VAR_LAST_TALKED
+	releaseall
+	end
+
 EventScript_CutTree::
 	lockall
 	goto_if_unset FLAG_BADGE01_GET, EventScript_CheckTreeCantCut
@@ -44,9 +71,19 @@ EventScript_CancelCut::
 	releaseall
 	end
 
+EventScript_CheckBarrierCantCut::
+	msgbox Text_BarrierCantCut, MSGBOX_DEFAULT
+	releaseall
+	end
+
 Text_WantToCut:
 	.string "This tree looks like it can be\n"
 	.string "CUT down!\p"
+	.string "Would you like to CUT it?$"
+
+Text_WantToCutBarrier:
+	.string "This barrier looks like it can\n"
+	.string "be CUT down!\p"
 	.string "Would you like to CUT it?$"
 
 Text_MonUsedFieldMove:
@@ -55,6 +92,10 @@ Text_MonUsedFieldMove:
 Text_CantCut:
 	.string "This tree looks like it can be\n"
 	.string "CUT down!$"
+
+Text_BarrierCantCut:
+	.string "This barrier looks like it can\n"
+	.string "be CUT down!$"
 
 @ Use rock smash from party menu
 EventScript_UseRockSmash::

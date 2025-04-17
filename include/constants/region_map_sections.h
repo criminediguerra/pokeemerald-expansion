@@ -38,7 +38,9 @@
 #define MAPSEC_CYANWOOD                     0x0026
 #define MAPSEC_ECRUTEAK                     0x0027
 #define MAPSEC_MAHOGANY                     0x0028
-#define MAPSEC_BLACKTHORN                   0x0029 // Re-order once all locations have been reviewed as flyable
+#define MAPSEC_LAROUSSE                     0x0029
+#define MAPSEC_ASHLEAF                      0x0030
+#define MAPSEC_BLACKTHORN                   0x0031 // Re-order once all locations have been reviewed as flyable
 
 #define MINIMAL_MAPSEC_FLYABLE_LOCATION     MAPSEC_LITTLEROOT_TOWN
 #define MAXIMAL_MAPSEC_FLYABLE_LOCATION     MAPSEC_BLACKTHORN // Update to latest flyable locations
@@ -282,14 +284,14 @@
 #define MAPSEC_ROUTE_136                    0x10EB
 #define MAPSEC_ROUTE_137                    0x10EC
 #define MAPSEC_ROUTE_138                    0x10ED
-#define MAPSEC_LAROUSSE                     0x10EE
+#define MAPSEC_CINNABAR_LAB                 0x10EE
 #define MAPSEC_ROUTE_49                     0x10EF
 #define MAPSEC_ROUTE_50                     0x10F0
 #define MAPSEC_COBALT_BEACH                 0x10F1
 #define MAPSEC_ROUTE_139                    0x10F2
 #define MAPSEC_OLDROOT                      0x10F3
 #define MAPSEC_DEWFORD_FOREST               0x10F4
-#define MAPSEC_ASHLEAF                      0x10F5
+#define MAPSEC_CINNABAR_VOLCANO             0x10F5
 #define MAPSEC_WHITESTONE                   0x10F6
 #define MAPSEC_SILVER_STRAIT                0x10F7
 #define MAPSEC_ROUTE_51                     0x10F8

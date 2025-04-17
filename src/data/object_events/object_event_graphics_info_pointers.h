@@ -88,6 +88,19 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Emeraldwall
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Old_Amber;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Clipboard;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Gamecube;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Whitneyposter_1;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Whitneyposter_2;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Whitneyposter_3;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Whitneyposter_4;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Painting_Threefriends;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Painting_LadyQuilava;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Painting_PkmnYellow;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Painting_HoOh;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Painting_Woman;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Drum_Kit;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CuttableBarrier;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TuberFSwimming;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Soldier;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MewtwoStatue;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BellsproutStatue;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BellsproutPainting;
@@ -436,6 +449,19 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_EMERALDWALL] =              &gObjectEventGraphicsInfo_Emerald,
     [OBJ_EVENT_GFX_OLD_AMBER] =                &gObjectEventGraphicsInfo_Old_Amber,
     [OBJ_EVENT_GFX_CLIPBOARD] =                &gObjectEventGraphicsInfo_Clipboard,
+    [OBJ_EVENT_GFX_WHITNEY_POSTER_1] =         &gObjectEventGraphicsInfo_Whitneyposter_1,
+    [OBJ_EVENT_GFX_WHITNEY_POSTER_2] =         &gObjectEventGraphicsInfo_Whitneyposter_2,
+    [OBJ_EVENT_GFX_WHITNEY_POSTER_3] =         &gObjectEventGraphicsInfo_Whitneyposter_3,
+    [OBJ_EVENT_GFX_WHITNEY_POSTER_4] =         &gObjectEventGraphicsInfo_Whitneyposter_4,
+    [OBJ_EVENT_GFX_PAINTING_THREEFRIENDS] =    &gObjectEventGraphicsInfo_Painting_Threefriends,
+    [OBJ_EVENT_GFX_PAINTING_LADYQUILAVA] =     &gObjectEventGraphicsInfo_Painting_LadyQuilava,
+    [OBJ_EVENT_GFX_PAINTING_PKMNYELLOW] =      &gObjectEventGraphicsInfo_Painting_PkmnYellow,
+    [OBJ_EVENT_GFX_PAINTING_HO_OH] =           &gObjectEventGraphicsInfo_Painting_HoOh,
+    [OBJ_EVENT_GFX_PAINTING_WOMAN] =           &gObjectEventGraphicsInfo_Painting_Woman,
+    [OBJ_EVENT_GFX_DRUM_KIT] =                 &gObjectEventGraphicsInfo_Drum_Kit,
+    [OBJ_EVENT_GFX_CUTTABLE_BARRIER] =         &gObjectEventGraphicsInfo_CuttableBarrier,
+    [OBJ_EVENT_GFX_TUBER_F_SWIMMING] =         &gObjectEventGraphicsInfo_TuberFSwimming,
+    [OBJ_EVENT_GFX_SOLDIER] =                  &gObjectEventGraphicsInfo_Soldier,
     [OBJ_EVENT_GFX_GIRL_2] =                   &gObjectEventGraphicsInfo_Girl2,
     [OBJ_EVENT_GFX_LITTLE_BOY] =               &gObjectEventGraphicsInfo_LittleBoy,
     [OBJ_EVENT_GFX_LITTLE_GIRL] =              &gObjectEventGraphicsInfo_LittleGirl,

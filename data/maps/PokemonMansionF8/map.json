@@ -1,0 +1,40 @@
+{
+  "id": "MAP_POKEMON_MANSION_F8",
+  "name": "PokemonMansionF8",
+  "layout": "LAYOUT_POKEMON_MANSION_F8",
+  "music": "MUS_UNDERWATER",
+  "region_map_section": "MAPSEC_CINNABAR_UNDERWATER",
+  "requires_flash": false,
+  "weather": "WEATHER_UNDERWATER_BUBBLES",
+  "map_type": "MAP_TYPE_UNDERWATER",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_POKEMON_MANSION_F7",
+      "offset": 0,
+      "direction": "emerge"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 15,
+      "y": 47,
+      "elevation": 0,
+      "dest_map": "MAP_CINNIBAR_ISLAND_UNDERWATER",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

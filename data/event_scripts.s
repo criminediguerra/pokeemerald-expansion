@@ -2282,3 +2282,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/LittlerootInteriors/scripts.inc"
 
 	.include "data/maps/IcePathF5/scripts.inc"
+
+	.include "data/maps/PokemonMansionF6/scripts.inc"
+
+	.include "data/maps/PokemonMansionF7/scripts.inc"
+
+	.include "data/maps/PokemonMansionF8/scripts.inc"

@@ -326,6 +326,7 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_RANCHER] = { _("RANCHER"), 6 },
     [TRAINER_CLASS_POKEKID] = { _("POKéKID"), 4 },
     [TRAINER_CLASS_CHANNELER] = { _("CHANNELER"), 6 },
+    [TRAINER_CLASS_SOLDIER] = { _("SOLDIER"), 6 },
     [TRAINER_CLASS_SAGE] = { _("SAGE"), 6 },
     [TRAINER_CLASS_ELDER] = { _("ELDER"), 10 },
     [TRAINER_CLASS_KIMONO_GIRL] = { _("KIMONO GIRL"), 15 },

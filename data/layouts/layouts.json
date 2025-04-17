@@ -4644,8 +4644,8 @@
     {
       "id": "LAYOUT_CINNIBAR_ISLAND",
       "name": "CinnibarIsland_Layout",
-      "width": 63,
-      "height": 42,
+      "width": 67,
+      "height": 44,
       "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/CinnibarIsland/border.bin",
@@ -4654,7 +4654,7 @@
     {
       "id": "LAYOUT_ROUTE21",
       "name": "Route21_Layout",
-      "width": 65,
+      "width": 70,
       "height": 96,
       "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Lilycove",
@@ -5345,7 +5345,7 @@
       "id": "LAYOUT_ROUTE23",
       "name": "Route23_Layout",
       "width": 28,
-      "height": 160,
+      "height": 164,
       "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
       "border_filepath": "data/layouts/Route23/border.bin",
@@ -5355,9 +5355,9 @@
       "id": "LAYOUT_INDIGO_PLATEAU",
       "name": "IndigoPlateau_Layout",
       "width": 29,
-      "height": 30,
+      "height": 34,
       "primary_tileset": "gTileset_GeneralStairs",
-      "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
+      "secondary_tileset": "gTileset_IndigoPlateau",
       "border_filepath": "data/layouts/IndigoPlateau/border.bin",
       "blockdata_filepath": "data/layouts/IndigoPlateau/map.bin"
     },
@@ -5764,10 +5764,10 @@
     {
       "id": "LAYOUT_POKEMON_MANSION_F1",
       "name": "PokemonMansionF1_Layout",
-      "width": 40,
+      "width": 42,
       "height": 35,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_InsideShip",
+      "secondary_tileset": "gTileset_PokemonMansion",
       "border_filepath": "data/layouts/PokemonMansionF1/border.bin",
       "blockdata_filepath": "data/layouts/PokemonMansionF1/map.bin"
     },
@@ -6865,7 +6865,7 @@
       "id": "LAYOUT_CINNABAR_INDOORS",
       "name": "CinnabarIndoors_Layout",
       "width": 28,
-      "height": 7,
+      "height": 19,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/CinnabarIndoors/border.bin",
@@ -6894,9 +6894,9 @@
     {
       "id": "LAYOUT_CINNABAR_LAB",
       "name": "CinnabarLab_Layout",
-      "width": 48,
-      "height": 15,
-      "primary_tileset": "gTileset_General",
+      "width": 65,
+      "height": 41,
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/CinnabarLab/border.bin",
       "blockdata_filepath": "data/layouts/CinnabarLab/map.bin"
@@ -6905,8 +6905,8 @@
       "id": "LAYOUT_CINNABAR_GYM",
       "name": "CinnabarGym_Layout",
       "width": 36,
-      "height": 41,
-      "primary_tileset": "gTileset_General",
+      "height": 42,
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/CinnabarGym/border.bin",
       "blockdata_filepath": "data/layouts/CinnabarGym/map.bin"
@@ -9324,8 +9324,8 @@
     {
       "id": "LAYOUT_POKEMON_MANSION_F5",
       "name": "PokemonMansionF5_Layout",
-      "width": 18,
-      "height": 16,
+      "width": 48,
+      "height": 25,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_OceanicMuseum",
       "border_filepath": "data/layouts/PokemonMansionF5/border.bin",
@@ -9914,8 +9914,8 @@
     {
       "id": "LAYOUT_CINNIBAR_ISLAND_UNDERWATER",
       "name": "CinnibarIslandUnderwater_Layout",
-      "width": 70,
-      "height": 50,
+      "width": 74,
+      "height": 52,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Underwater",
       "border_filepath": "data/layouts/CinnibarIslandUnderwater/border.bin",
@@ -10060,6 +10060,36 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/IcePathF5/border.bin",
       "blockdata_filepath": "data/layouts/IcePathF5/map.bin"
+    },
+    {
+      "id": "LAYOUT_POKEMON_MANSION_F6",
+      "name": "PokemonMansionF6_Layout",
+      "width": 42,
+      "height": 91,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BikeShop",
+      "border_filepath": "data/layouts/PokemonMansionF6/border.bin",
+      "blockdata_filepath": "data/layouts/PokemonMansionF6/map.bin"
+    },
+    {
+      "id": "LAYOUT_POKEMON_MANSION_F7",
+      "name": "PokemonMansionF7_Layout",
+      "width": 30,
+      "height": 51,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BikeShop",
+      "border_filepath": "data/layouts/PokemonMansionF7/border.bin",
+      "blockdata_filepath": "data/layouts/PokemonMansionF7/map.bin"
+    },
+    {
+      "id": "LAYOUT_POKEMON_MANSION_F8",
+      "name": "PokemonMansionF8_Layout",
+      "width": 30,
+      "height": 52,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/PokemonMansionF8/border.bin",
+      "blockdata_filepath": "data/layouts/PokemonMansionF8/map.bin"
     }
   ]
 }

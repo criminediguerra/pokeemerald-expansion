@@ -6049,6 +6049,16 @@ u16 GetBattleBGM(void)
     return MUS_RG_VS_WILD;
           if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(CERULEAN_CAVE_F3) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(CERULEAN_CAVE_F3))
     return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(CERULEAN_CAVE_F4) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(CERULEAN_CAVE_F3))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(CERULEAN_CAVE_F4UNDERWATER) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(CERULEAN_CAVE_F3))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(CERULEAN_CAVE_F5) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(CERULEAN_CAVE_F3))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(CERULEAN_CAVE_F6) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(CERULEAN_CAVE_F3))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(CERULEAN_CAVE_F7) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(CERULEAN_CAVE_F3))
+    return MUS_RG_VS_WILD;
           if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(POWER_PLANT) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(POWER_PLANT))
     return MUS_RG_VS_WILD;
           if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(SEAFOAM_ISLES_F1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(SEAFOAM_ISLES_F1))
@@ -6080,6 +6090,20 @@ u16 GetBattleBGM(void)
           if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(POKEMON_MANSION_F3) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(POKEMON_MANSION_F3))
     return MUS_RG_VS_WILD;
           if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(POKEMON_MANSION_F4) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(POKEMON_MANSION_F4))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(POKEMON_MANSION_F5) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(POKEMON_MANSION_F4))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(POKEMON_MANSION_F6) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(POKEMON_MANSION_F4))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(POKEMON_MANSION_F7) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(POKEMON_MANSION_F4))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(CERULEAN_CITY_UNDERWATER) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(POKEMON_MANSION_F4))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(CINNIBAR_ISLAND_UNDERWATER) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(POKEMON_MANSION_F4))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE24UNDERWATER) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(POKEMON_MANSION_F4))
+    return MUS_RG_VS_WILD;
+    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE24UNDERWATER_CERULEAN_ENTRANCE) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(POKEMON_MANSION_F4))
     return MUS_RG_VS_WILD;
           if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(KANTO_SAFARI_F1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(KANTO_SAFARI_F1))
     return MUS_RG_VS_WILD;

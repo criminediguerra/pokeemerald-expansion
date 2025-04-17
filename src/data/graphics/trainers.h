@@ -454,6 +454,9 @@ const u32 gTrainerPalette_Giovanni[] = INCBIN_U32("graphics/trainers/front_pics/
 const u32 gTrainerFrontPic_Channeler[] = INCBIN_U32("graphics/trainers/front_pics/channeler.4bpp.lz");
 const u32 gTrainerPalette_Channeler[] = INCBIN_U32("graphics/trainers/front_pics/channeler.gbapal.lz");
 
+const u32 gTrainerFrontPic_Soldier[] = INCBIN_U32("graphics/trainers/front_pics/soldier.4bpp.lz");
+const u32 gTrainerPalette_Soldier[] = INCBIN_U32("graphics/trainers/front_pics/soldier.gbapal.lz");
+
 const u32 gTrainerFrontPic_Blue[] = INCBIN_U32("graphics/trainers/front_pics/blue.4bpp.lz");
 const u32 gTrainerPalette_Blue[] = INCBIN_U32("graphics/trainers/front_pics/blue.gbapal.lz");
 
@@ -618,6 +621,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_EUSINE, gTrainerFrontPic_Eusine, gTrainerPalette_Eusine),
     TRAINER_SPRITE(TRAINER_PIC_EARL, gTrainerFrontPic_Earl, gTrainerPalette_Earl),
     TRAINER_SPRITE(TRAINER_PIC_CHANNELER, gTrainerFrontPic_Channeler, gTrainerPalette_Channeler),
+    TRAINER_SPRITE(TRAINER_PIC_SOLDIER, gTrainerFrontPic_Soldier, gTrainerPalette_Soldier),
     TRAINER_SPRITE(TRAINER_PIC_SAGE, gTrainerFrontPic_Sage, gTrainerPalette_Sage),
     TRAINER_SPRITE(TRAINER_PIC_ELDER, gTrainerFrontPic_Elder, gTrainerPalette_Elder),
     TRAINER_SPRITE(TRAINER_PIC_KIMONO_BLACK, gTrainerFrontPic_Kimono_Black, gTrainerPalette_Kimono_Black),

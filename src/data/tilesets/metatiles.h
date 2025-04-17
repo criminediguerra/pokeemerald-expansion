@@ -232,3 +232,15 @@ const u16 gMetatileAttributes_GeneralSnow[] = INCBIN_U16("data/tilesets/primary/
 
 const u16 gMetatiles_CaveIce[] = INCBIN_U16("data/tilesets/secondary/cave_ice/metatiles.bin");
 const u16 gMetatileAttributes_CaveIce[] = INCBIN_U16("data/tilesets/secondary/cave_ice/metatile_attributes.bin");
+
+const u16 gMetatiles_IndigoPlateau[] = INCBIN_U16("data/tilesets/secondary/indigo_plateau/metatiles.bin");
+const u16 gMetatileAttributes_IndigoPlateau[] = INCBIN_U16("data/tilesets/secondary/indigo_plateau/metatile_attributes.bin");
+
+const u16 gMetatiles_PokemonMansion[] = INCBIN_U16("data/tilesets/secondary/pokemon_mansion/metatiles.bin");
+const u16 gMetatileAttributes_PokemonMansion[] = INCBIN_U16("data/tilesets/secondary/pokemon_mansion/metatile_attributes.bin");
+
+const u16 gMetatiles_SSAnne[] = INCBIN_U16("data/tilesets/secondary/ssanne/metatiles.bin");
+const u16 gMetatileAttributes_SSAnne[] = INCBIN_U16("data/tilesets/secondary/ssanne/metatile_attributes.bin");
+
+const u16 gMetatiles_PewterMuseum[] = INCBIN_U16("data/tilesets/secondary/pewter_museum/metatiles.bin");
+const u16 gMetatileAttributes_PewterMuseum[] = INCBIN_U16("data/tilesets/secondary/pewter_museum/metatile_attributes.bin");

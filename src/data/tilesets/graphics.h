@@ -1809,3 +1809,79 @@ const u16 gTilesetPalettes_CaveIce[][16] =
 };
 
 const u32 gTilesetTiles_CaveIce[] = INCBIN_U32("data/tilesets/secondary/cave_ice/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_IndigoPlateau[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/indigo_plateau/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/indigo_plateau/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/indigo_plateau/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/indigo_plateau/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/indigo_plateau/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/indigo_plateau/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/indigo_plateau/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/indigo_plateau/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/indigo_plateau/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/indigo_plateau/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/indigo_plateau/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/indigo_plateau/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/indigo_plateau/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_IndigoPlateau[] = INCBIN_U32("data/tilesets/secondary/indigo_plateau/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_PokemonMansion[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/pokemon_mansion/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_mansion/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_mansion/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_mansion/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_mansion/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_mansion/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_mansion/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_mansion/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_mansion/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_mansion/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_mansion/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_mansion/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_mansion/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_PokemonMansion[] = INCBIN_U32("data/tilesets/secondary/pokemon_mansion/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_SSAnne[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/ssanne/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ssanne/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ssanne/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ssanne/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ssanne/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ssanne/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ssanne/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ssanne/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ssanne/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ssanne/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ssanne/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ssanne/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ssanne/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_SSAnne[] = INCBIN_U32("data/tilesets/secondary/ssanne/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_PewterMuseum[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/pewter_museum/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pewter_museum/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pewter_museum/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pewter_museum/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pewter_museum/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pewter_museum/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pewter_museum/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pewter_museum/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pewter_museum/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pewter_museum/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pewter_museum/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pewter_museum/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pewter_museum/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_PewterMuseum[] = INCBIN_U32("data/tilesets/secondary/pewter_museum/tiles.4bpp.lz");

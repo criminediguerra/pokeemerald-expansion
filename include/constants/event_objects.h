@@ -332,11 +332,23 @@
 #define OBJ_EVENT_GFX_DREW                       328
 #define OBJ_EVENT_GFX_HARLEY                     329
 #define OBJ_EVENT_GFX_MARINA                     330
+#define OBJ_EVENT_GFX_WHITNEY_POSTER_1           331
+#define OBJ_EVENT_GFX_DRUM_KIT                   332
+#define OBJ_EVENT_GFX_WHITNEY_POSTER_2           333
+#define OBJ_EVENT_GFX_WHITNEY_POSTER_3           334
+#define OBJ_EVENT_GFX_WHITNEY_POSTER_4           335
+#define OBJ_EVENT_GFX_PAINTING_THREEFRIENDS      336
+#define OBJ_EVENT_GFX_PAINTING_LADYQUILAVA       337
+#define OBJ_EVENT_GFX_PAINTING_PKMNYELLOW        338
+#define OBJ_EVENT_GFX_PAINTING_HO_OH             339
+#define OBJ_EVENT_GFX_PAINTING_WOMAN             340
+#define OBJ_EVENT_GFX_CUTTABLE_BARRIER           341
+#define OBJ_EVENT_GFX_SOLDIER                    342
 
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        331
+#define NUM_OBJ_EVENT_GFX                        343
 
 
 // These are dynamic object gfx ids.

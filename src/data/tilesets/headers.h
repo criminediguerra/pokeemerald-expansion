@@ -923,3 +923,47 @@ const struct Tileset gTileset_CaveIce =
     .metatileAttributes = gMetatileAttributes_CaveIce,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_IndigoPlateau =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_IndigoPlateau,
+    .palettes = gTilesetPalettes_IndigoPlateau,
+    .metatiles = gMetatiles_IndigoPlateau,
+    .metatileAttributes = gMetatileAttributes_IndigoPlateau,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_PokemonMansion =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_PokemonMansion,
+    .palettes = gTilesetPalettes_PokemonMansion,
+    .metatiles = gMetatiles_PokemonMansion,
+    .metatileAttributes = gMetatileAttributes_PokemonMansion,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_SSAnne =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_SSAnne,
+    .palettes = gTilesetPalettes_SSAnne,
+    .metatiles = gMetatiles_SSAnne,
+    .metatileAttributes = gMetatileAttributes_SSAnne,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_PewterMuseum =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_PewterMuseum,
+    .palettes = gTilesetPalettes_PewterMuseum,
+    .metatiles = gMetatiles_PewterMuseum,
+    .metatileAttributes = gMetatileAttributes_PewterMuseum,
+    .callback = NULL,
+};

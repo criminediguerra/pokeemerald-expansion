@@ -11,8 +11,8 @@ IndigoPlateauF10_EventScript_TurnPlayerNorth::
 	end
 
 IndigoPlateauF10_Wich_ChampionsRoom::
-	call_if_eq VAR_KANTO_LEAGUE_REMATCH, 0, IndigoPlateauF10_Champion_Leaf_Room
-	call_if_eq VAR_KANTO_LEAGUE_REMATCH, 1, IndigoPlateauF10_Champion_Lance_Room
+	call_if_eq VAR_LEAGUE_REMATCH, 0, IndigoPlateauF10_Champion_Leaf_Room
+	call_if_eq VAR_LEAGUE_REMATCH, 1, IndigoPlateauF10_Champion_Lance_Room
 	end
 
 IndigoPlateauF10_Champion_Leaf_Room::

@@ -105,6 +105,19 @@ Cerulean_Milotic::
 Cerulean_Milotic_Text:
 	.string "MILOTIC: Uooooh!!$"
 
+Cerulean_Magmar::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MAGMAR, CRY_MODE_NORMAL
+	msgbox Cerulean_Magmar_Text, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Cerulean_Magmar_Text:
+	.string "MAGMAR: Blobob!$"
+
 Cerulean_Kangaskhan::
 	lock
 	faceplayer

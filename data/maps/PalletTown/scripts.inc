@@ -51,8 +51,8 @@ PalletTown_Viridian_Text_TownSign:
 	.string "“The City of Evergreen!”$"
 
 PalletTown_Viridian_GymSign::
-	call_if_eq VAR_KANTO_LEAGUE_REMATCH, 0, PalletTown_Viridian_GymSignCain
-	call_if_eq VAR_KANTO_LEAGUE_REMATCH, 1, PalletTown_Viridian_GymSignDaisy
+	call_if_eq VAR_LEAGUE_REMATCH, 0, PalletTown_Viridian_GymSignCain
+	call_if_eq VAR_LEAGUE_REMATCH, 1, PalletTown_Viridian_GymSignDaisy
 	end
 
 PalletTown_Viridian_GymSignCain::
@@ -274,8 +274,8 @@ PalletTown_Fuchsia_Text_TownSign:
 	.string "“Happening and Passing City!”$"
 
 PalletTown_Fuchsia_GymSign::
-	call_if_eq VAR_KANTO_LEAGUE_REMATCH, 0, PalletTown_Fuchsia_GymSignKoga
-	call_if_eq VAR_KANTO_LEAGUE_REMATCH, 1, PalletTown_Fuchsia_GymSignJanine
+	call_if_eq VAR_LEAGUE_REMATCH, 0, PalletTown_Fuchsia_GymSignKoga
+	call_if_eq VAR_LEAGUE_REMATCH, 1, PalletTown_Fuchsia_GymSignJanine
 	end
 
 PalletTown_Fuchsia_GymSignKoga::
@@ -389,14 +389,14 @@ PalletTown_Cinnabar_LabSign::
 	end
 
 PalletTown_Cinnabar_Text_LabSign:
-	.string "CINNIBAR POKéMON LAB$"
+	.string "CINNABAR POKéMON LAB$"
 
 PalletTown_Cinnabar_VolcanoSign::
 	msgbox PalletTown_Cinnabar_Text_VolcanoSign, MSGBOX_SIGN
 	end
 
 PalletTown_Cinnabar_Text_VolcanoSign:
-	.string "“CINNIBAR VOLCANO”$"
+	.string "“CINNABAR VOLCANO”$"
 
 PalletTown_Route1Sign::
 	msgbox PalletTown_Route1SignText, MSGBOX_SIGN

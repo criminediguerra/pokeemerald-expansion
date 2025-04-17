@@ -271,8 +271,8 @@
 #define VAR_GIVE_TEA                                     0x40FB // Unused Var
 #define VAR_OAKPARCEL                                    0x40FC // Unused Var
 #define VAR_RED_TEAM                                     0x40FD // Unused Var
-#define VAR_LEAGUE_REMATCH                         0x40FE // Unused Var
-#define VAR_KANTO_LEAGUE_REMATCH                         0x40FF // Unused Var
+#define VAR_LEAGUE_REMATCH                               0x40FE // Unused Var
+#define VAR_CINNABAR_LAB_MUSIC                           0x40FF // Unused Var
 
 #define VARS_END                                         0x40FF
 #define VARS_COUNT                                       (VARS_END - VARS_START + 1)
