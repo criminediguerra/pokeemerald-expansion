@@ -85,15 +85,15 @@
       "x": 9,
       "y": 16,
       "elevation": 3,
-      "dest_map": "MAP_ROUTE111",
-      "dest_warp_id": "4"
+      "dest_map": "MAP_DYNAMIC",
+      "dest_warp_id": "WARP_ID_DYNAMIC"
     },
     {
       "x": 10,
       "y": 16,
       "elevation": 3,
-      "dest_map": "MAP_ROUTE111",
-      "dest_warp_id": "4"
+      "dest_map": "MAP_DYNAMIC",
+      "dest_warp_id": "WARP_ID_DYNAMIC"
     },
     {
       "x": 9,

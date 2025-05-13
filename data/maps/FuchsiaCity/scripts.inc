@@ -86,6 +86,19 @@ Fuchsia_Ivysaur::
 Fuchsia_Ivysaur_Text:
 	.string "IVYSAUR: Iiiiivy!$"
 
+Fuchsia_Spearow::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_SPEAROW, CRY_MODE_NORMAL
+	msgbox Fuchsia_Spearow_Text, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Fuchsia_Spearow_Text:
+	.string "SPEAROW: Pew pew!$"
+
 Fuchsia_Fearow::
 	lock
 	faceplayer

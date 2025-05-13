@@ -711,7 +711,7 @@
 #define FLAG_ICE_PATH_BOULDER_APP_2      0x298 // Unused Flag
 #define FLAG_ICE_PATH_BOULDER_APP_3      0x299 // Unused Flag
 #define FLAG_ICE_PATH_BOULDER_APP_4      0x29A // Unused Flag
-#define FLAG_UNUSED_0x29B                0x29B // Unused Flag
+#define FLAG_ITEM_HYDROPLANT_LEFTOVERS   0x29B // Unused Flag
 #define FLAG_UNUSED_0x29C                0x29C // Unused Flag
 #define FLAG_UNUSED_0x29D                0x29D // Unused Flag
 #define FLAG_UNUSED_0x29E                0x29E // Unused Flag

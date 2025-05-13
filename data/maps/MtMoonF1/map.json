@@ -5,7 +5,7 @@
   "music": "MUS_RG_MT_MOON",
   "region_map_section": "MAPSEC_MT_MOON",
   "requires_flash": false,
-  "weather": "WEATHER_NONE",
+  "weather": "WEATHER_SHADE",
   "map_type": "MAP_TYPE_UNDERGROUND",
   "allow_cycling": true,
   "allow_escaping": true,
@@ -18,29 +18,29 @@
   ],
   "warp_events": [
     {
-      "x": 31,
-      "y": 16,
+      "x": 58,
+      "y": 22,
       "elevation": 0,
       "dest_map": "MAP_MT_MOON_F2",
       "dest_warp_id": "5"
     },
     {
-      "x": 5,
-      "y": 6,
+      "x": 9,
+      "y": 11,
       "elevation": 0,
       "dest_map": "MAP_MT_MOON_F2",
       "dest_warp_id": "7"
     },
     {
-      "x": 19,
-      "y": 14,
+      "x": 45,
+      "y": 18,
       "elevation": 0,
       "dest_map": "MAP_MT_MOON_F2",
       "dest_warp_id": "9"
     },
     {
-      "x": 18,
-      "y": 37,
+      "x": 26,
+      "y": 40,
       "elevation": 0,
       "dest_map": "MAP_ROUTE3",
       "dest_warp_id": "0"
@@ -52,8 +52,8 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 19,
-      "y": 26,
+      "x": 25,
+      "y": 28,
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "PetalburgWoods_EventScript_Sign2"

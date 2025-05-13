@@ -57,8 +57,9 @@
     "CeladonCity",
     "LavenderTown",
     "FuchsiaCity",
-    "CinnibarIsland",
+    "CinnabarIsland",
     "IndigoPlateau",
+    "ViridianLake",
     "BillsGarden",
     "MtMoonRoof",
     "Route1",
@@ -79,6 +80,7 @@
     "Route15",
     "Route16",
     "Route17",
+    "Route17a",
     "Route18",
     "Route19",
     "Route20",
@@ -88,10 +90,11 @@
     "Route24",
     "Route25",
     "Route25a",
-    "CinnibarIslandUnderwater",
+    "CinnabarIslandUnderwater",
     "CeruleanCityUnderwater",
     "Route24Underwater",
-    "Route24UnderwaterCeruleanEntrance"
+    "Route24UnderwaterCeruleanEntrance",
+    "ViridianLakeUnderwater"
   ],
   "gMapGroup_TownsAndRoutesSevii": [
     "OneIsland",
@@ -338,8 +341,10 @@
     "ViridianMart",
     "ViridianSchool",
     "ViridianInteriors",
+    "ViridianTempleInteriors",
     "ViridianGym",
     "ViridianGymF1",
+    "ViridianGymF2",
     "MahoganyGym",
     "MahoganyMart",
     "MahoganyCenter"
@@ -583,7 +588,8 @@
     "OlivineIndoors",
     "OlivineContest",
     "OlivineContestF1",
-    "OlivineGym"
+    "OlivineGym",
+    "OlivinePlayerOldHouse"
   ],
   "gMapGroup_IndoorMossdeep": [
     "MossdeepCity_Gym",
@@ -672,7 +678,9 @@
     "KantoSafariHouses",
     "Route15Interiors",
     "Route18CyclingHouse",
-    "Route16CyclingHouse"
+    "Route16CyclingHouse",
+    "ViridianLakeHydroelectricPlant",
+    "ViridianLakeHouses"
   ],
   "gMapGroup_IndoorRoute111": [
     "Route111_WinstrateFamilysHouse",
@@ -720,6 +728,8 @@
     "MtMoonF1",
     "MtMoonF2",
     "MtMoonF3",
+    "MtMoonF4",
+    "MtMoonF5",
     "RockTunnel",
     "RockTunnelF1",
     "CeruleanCaveF1",
@@ -767,7 +777,10 @@
     "RocketHideoutF4",
     "RocketHideoutF5",
     "SilverRoom",
-    "FarOffCave"
+    "FarOffCave",
+    "ViridianLakeUnderwaterTunnel",
+    "MistyCave",
+    "LunarTunnels"
   ],
   "gMapGroup_DungeonsSevii": [
     "EmberSpa",

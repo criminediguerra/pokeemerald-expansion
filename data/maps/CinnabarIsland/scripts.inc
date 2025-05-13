@@ -1,10 +1,48 @@
-CinnibarIsland_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, CinnibarIsland_OnTransition
+CinnabarIsland_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, CinnabarIsland_OnTransition
 	.byte 0
 
-CinnibarIsland_OnTransition:
+CinnabarIsland_OnTransition:
 	setflag FLAG_VISITED_CINNABAR
 	end
+
+Cinnabar_Island_TownSign::
+	msgbox Cinnabar_Island_Text_TownSign, MSGBOX_SIGN
+	end
+
+Cinnabar_Island_Text_TownSign:
+	.string "CINNABAR ISLAND\n"
+	.string "“The Fiery Town of Burning Desire!”$"
+
+Cinnabar_Island_GymSign::
+	msgbox Cinnabar_Island_Text_GymSign, MSGBOX_SIGN
+	end
+
+Cinnabar_Island_Text_GymSign:
+	.string "CINNABAR ISLAND POKéMON GYM\n"
+	.string "LEADER: COLEMAN\l"
+	.string "“The Hotheaded General!”$"
+
+Cinnabar_Island_MansionSign::
+	msgbox Cinnabar_Island_Text_MansionSign, MSGBOX_SIGN
+	end
+
+Cinnabar_Island_Text_MansionSign:
+	.string "FUJI MANSION$"
+
+Cinnabar_Island_LabSign::
+	msgbox Cinnabar_Island_Text_LabSign, MSGBOX_SIGN
+	end
+
+Cinnabar_Island_Text_LabSign:
+	.string "CINNABAR POKéMON LAB$"
+
+Cinnabar_Island_VolcanoSign::
+	msgbox Cinnabar_Island_Text_VolcanoSign, MSGBOX_SIGN
+	end
+
+Cinnabar_Island_Text_VolcanoSign:
+	.string "“CINNABAR VOLCANO”$"
 
 Cinnabar_Growlithe::
 	lock

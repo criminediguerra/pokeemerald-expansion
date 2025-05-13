@@ -5,6 +5,10 @@ Mewtwo_Statue::
 	msgbox Mewtwo_Statue_Text, MSGBOX_SIGN
 	end
 
+Mewtwo_Statue_Text::
+    .string "It's a POKéMON statue.\n"
+    .string "It gives the shivers.$"
+
 Mewtwo_Journal_1::
 	msgbox Mewtwo_Journal_1_Text, MSGBOX_SIGN
 	end
@@ -40,10 +44,6 @@ Deoxys_Journal_4::
 Deoxys_Journal_5::
 	msgbox Deoxys_Journal_5_Text, MSGBOX_SIGN
 	end
-
-Mewtwo_Statue_Text::
-    .string "It's a POKéMON statue.\n"
-    .string "It gives the shivers.$"
 
 Mewtwo_Journal_1_Text::
     .string "Diary: July 5\n"

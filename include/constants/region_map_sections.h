@@ -40,7 +40,9 @@
 #define MAPSEC_MAHOGANY                     0x0028
 #define MAPSEC_LAROUSSE                     0x0029
 #define MAPSEC_ASHLEAF                      0x0030
-#define MAPSEC_BLACKTHORN                   0x0031 // Re-order once all locations have been reviewed as flyable
+#define MAPSEC_KASADO                       0x0031
+#define MAPSEC_KUGA                         0x0032
+#define MAPSEC_BLACKTHORN                   0x0033 // Re-order once all locations have been reviewed as flyable
 
 #define MINIMAL_MAPSEC_FLYABLE_LOCATION     MAPSEC_LITTLEROOT_TOWN
 #define MAXIMAL_MAPSEC_FLYABLE_LOCATION     MAPSEC_BLACKTHORN // Update to latest flyable locations
@@ -296,12 +298,13 @@
 #define MAPSEC_SILVER_STRAIT                0x10F7
 #define MAPSEC_ROUTE_51                     0x10F8
 #define MAPSEC_ROUTE_52                     0x10F9
-#define MAPSEC_KASADO                       0x10FA
-#define MAPSEC_KUGA                         0x10FB
+#define MAPSEC_VIRIDIAN_LAKE                0x10FA
+#define MAPSEC_VIRIDIAN_LAKE_UNDERWATER     0x10FB
 #define MAPSEC_CINNABAR_UNDERWATER          0x10FC
 #define MAPSEC_ROUTE_119_UNDERWATER         0x10FD
 #define MAPSEC_ROUTE_24_UNDERWATER          0x10FE
 #define MAPSEC_JOHTO_ROCKET_HIDEOUT         0x10FF
+#define MAPSEC_MISTY_CAVE                   0x1100
 
 #define MAPSEC_NONE                         0xFFFC
 #define METLOC_SPECIAL_EGG                  0xFFFD

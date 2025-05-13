@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_ROUTE17",
-      "offset": 0,
+      "offset": -2,
       "direction": "down"
     },
     {
@@ -27,8 +27,8 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
-      "x": 46,
-      "y": 12,
+      "x": 40,
+      "y": 10,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -133,10 +133,17 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 33,
-      "y": 5,
+      "x": 35,
+      "y": 6,
       "elevation": 0,
       "dest_map": "MAP_ROUTE16SECRET_HOUSE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 35,
+      "y": 34,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE16",
       "dest_warp_id": "0"
     }
   ],

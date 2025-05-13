@@ -16,10 +16,10 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(NIDORAN_F)",
-      "x": 26,
-      "y": 4,
+      "x": 1,
+      "y": 17,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -30,27 +30,27 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_POKEFAN_M",
       "x": 4,
-      "y": 4,
+      "y": 18,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SlateportCity_House_EventScript_PokefanM",
+      "script": "ViridianCity_EventScript_VictoryRoadDad",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
       "x": 7,
-      "y": 4,
+      "y": 18,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "FortreeCity_House1_EventScript_ExpertF",
+      "script": "ViridianCity_EventScript_VictoryRoadGirl",
       "flag": "0"
     },
     {
@@ -63,7 +63,189 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "FortreeCity_Mart_EventScript_Boy",
+      "script": "ViridianCity_EventScript_KidFlowers",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
+      "x": 48,
+      "y": 16,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ViridianCity_EventScript_Maximo",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GIRL_2",
+      "x": 26,
+      "y": 18,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ViridianCity_EventScript_FlowerGirl",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(POLIWRATH)",
+      "x": 45,
+      "y": 18,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Celadon_Poliwrath",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RATTATA)",
+      "x": 25,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Vermilion_Rattata",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HEX_MANIAC",
+      "x": 58,
+      "y": 15,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ViridianCity_EventScript_AgathaGranddaughter",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_KAREN",
+      "x": 53,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ViridianCity_EventScript_Karen",
+      "flag": "FLAG_SYS_GAME_CLEAR"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_TWIN",
+      "x": 51,
+      "y": 17,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ViridianCity_EventScript_KarenSister",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(UMBREON)",
+      "x": 55,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Cherrygrove_Umbreon",
+      "flag": "FLAG_SYS_GAME_CLEAR"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SAGE",
+      "x": 5,
+      "y": 37,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ViridianCity_EventScript_Sage",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BELLSPROUT_STATUE",
+      "x": 5,
+      "y": 30,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Mewtwo_Statue",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BELLSPROUT_STATUE",
+      "x": 7,
+      "y": 30,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Mewtwo_Statue",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BELLSPROUT_PAINTING",
+      "x": 6,
+      "y": 28,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
+      "x": 4,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ViridianCity_EventScript_OldManCooking",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_EXPERT_F",
+      "x": 8,
+      "y": 2,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ViridianCity_EventScript_OldLadyCooking",
       "flag": "0"
     }
   ],
@@ -95,6 +277,83 @@
       "elevation": 0,
       "dest_map": "MAP_VIRIDIAN_CITY",
       "dest_warp_id": "4"
+    },
+    {
+      "x": 45,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_VIRIDIAN_CITY",
+      "dest_warp_id": "6"
+    },
+    {
+      "x": 44,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_VIRIDIAN_CITY",
+      "dest_warp_id": "6"
+    },
+    {
+      "x": 23,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_VIRIDIAN_CITY",
+      "dest_warp_id": "7"
+    },
+    {
+      "x": 22,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_VIRIDIAN_CITY",
+      "dest_warp_id": "7"
+    },
+    {
+      "x": 4,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_VIRIDIAN_CITY",
+      "dest_warp_id": "8"
+    },
+    {
+      "x": 3,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_VIRIDIAN_CITY",
+      "dest_warp_id": "8"
+    },
+    {
+      "x": 53,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_VIRIDIAN_INTERIORS",
+      "dest_warp_id": "11"
+    },
+    {
+      "x": 53,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_VIRIDIAN_INTERIORS",
+      "dest_warp_id": "10"
+    },
+    {
+      "x": 6,
+      "y": 40,
+      "elevation": 0,
+      "dest_map": "MAP_VIRIDIAN_CITY",
+      "dest_warp_id": "9"
+    },
+    {
+      "x": 5,
+      "y": 40,
+      "elevation": 0,
+      "dest_map": "MAP_VIRIDIAN_CITY",
+      "dest_warp_id": "9"
+    },
+    {
+      "x": 6,
+      "y": 29,
+      "elevation": 0,
+      "dest_map": "MAP_VIRIDIAN_TEMPLE_INTERIORS",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

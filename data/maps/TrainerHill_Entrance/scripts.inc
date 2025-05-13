@@ -49,6 +49,22 @@ TrainerHill_Entrance_OnLoad:
 	call_if_eq VAR_TEMP_D, 17, TrainerHill_Entrance_EventScript_OpenCounterDoor
 	end
 
+TrainerHill_Entrance_EventScript_DynamicWarp::
+	call_if_eq VAR_WHICH_TRAINER_HILL, 0, TrainerHill_Entrance_EventScript_DynamicWarpKanto
+	call_if_eq VAR_WHICH_TRAINER_HILL, 1, TrainerHill_Entrance_EventScript_DynamicWarpHoenn
+	release
+	end
+
+TrainerHill_Entrance_EventScript_DynamicWarpHoenn::
+	setdynamicwarp MAP_ROUTE111, 31, 113
+	release
+	end
+
+TrainerHill_Entrance_EventScript_DynamicWarpKanto::
+	setdynamicwarp MAP_ROUTE3, 56, 10
+	release
+	end
+
 TrainerHill_Entrance_EventScript_OpenCounterDoor::
 	setmetatile 17, 10, METATILE_TrainerHill_GreenFloorTile, FALSE
 	return

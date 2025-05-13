@@ -876,6 +876,10 @@ static const struct SpriteFrameImage sPicTable_Duplica[] = {
     overworld_frame(gObjectEventPic_Duplica, 2, 4, 8),
 };
 
+static const struct SpriteFrameImage sPicTable_Primo[] = {
+    overworld_ascending_frames(gObjectEventPic_Primo, 2, 4),
+};
+
 static const struct SpriteFrameImage sPicTable_Ritchie[] = {
     overworld_frame(gObjectEventPic_Ritchie, 2, 4, 0),
     overworld_frame(gObjectEventPic_Ritchie, 2, 4, 1),
@@ -890,6 +894,14 @@ static const struct SpriteFrameImage sPicTable_Ritchie[] = {
 
 static const struct SpriteFrameImage sPicTable_MewtwoStatue[] = {
     obj_frame_tiles(gObjectEventPic_MewtwoStatue),
+};
+
+static const struct SpriteFrameImage sPicTable_Grave[] = {
+    obj_frame_tiles(gObjectEventPic_Grave),
+};
+
+static const struct SpriteFrameImage sPicTable_GraveWorn[] = {
+    obj_frame_tiles(gObjectEventPic_GraveWorn),
 };
 
 static const struct SpriteFrameImage sPicTable_BellsproutStatue[] = {
@@ -914,6 +926,10 @@ static const struct SpriteFrameImage sPicTable_HoOhStatue[] = {
 
 static const struct SpriteFrameImage sPicTable_BellsproutPainting[] = {
     obj_frame_tiles(gObjectEventPic_BellsproutPainting),
+};
+
+static const struct SpriteFrameImage sPicTable_Drunk_Old_Man[] = {
+    obj_frame_tiles(gObjectEventPic_Drunk_Old_Man),
 };
 
 static const struct SpriteFrameImage sPicTable_Egg[] = {
@@ -986,6 +1002,10 @@ static const struct SpriteFrameImage sPicTable_Painting_Threefriends[] = {
 
 static const struct SpriteFrameImage sPicTable_Painting_LadyQuilava[] = {
     obj_frame_tiles(gObjectEventPic_Painting_LadyQuilava),
+};
+
+static const struct SpriteFrameImage sPicTable_Painting_SchoolOfAthens[] = {
+    obj_frame_tiles(gObjectEventPic_Painting_SchoolOfAthens),
 };
 
 static const struct SpriteFrameImage sPicTable_Painting_PkmnYellow[] = {

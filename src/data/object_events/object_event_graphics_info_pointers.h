@@ -62,6 +62,8 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Will;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Janine;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Ritchie;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Duplica;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Primo;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Drunk_Old_Man;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Casey;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dario;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Infernando;
@@ -97,10 +99,13 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Painting_La
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Painting_PkmnYellow;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Painting_HoOh;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Painting_Woman;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Painting_SchoolOfAthens;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Drum_Kit;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CuttableBarrier;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TuberFSwimming;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Soldier;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Grave;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GraveWorn;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MewtwoStatue;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BellsproutStatue;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BellsproutPainting;
@@ -415,6 +420,8 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_JANINE] =                   &gObjectEventGraphicsInfo_Janine,
     [OBJ_EVENT_GFX_RITCHIE] =                  &gObjectEventGraphicsInfo_Ritchie,
     [OBJ_EVENT_GFX_DUPLICA] =                  &gObjectEventGraphicsInfo_Duplica,
+    [OBJ_EVENT_GFX_DRUNK_OLD_MAN] =            &gObjectEventGraphicsInfo_Drunk_Old_Man,
+    [OBJ_EVENT_GFX_PRIMO] =                    &gObjectEventGraphicsInfo_Primo,
     [OBJ_EVENT_GFX_CASEY] =                    &gObjectEventGraphicsInfo_Casey,
     [OBJ_EVENT_GFX_DARIO] =                    &gObjectEventGraphicsInfo_Dario,
     [OBJ_EVENT_GFX_INFERNANDO] =               &gObjectEventGraphicsInfo_Infernando,
@@ -432,6 +439,8 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_OAK] =                      &gObjectEventGraphicsInfo_Oak,
     [OBJ_EVENT_GFX_FUJI] =                     &gObjectEventGraphicsInfo_Fuji,
     [OBJ_EVENT_GFX_CELIO] =                    &gObjectEventGraphicsInfo_Celio,
+    [OBJ_EVENT_GFX_GRAVE] =                    &gObjectEventGraphicsInfo_Grave,
+    [OBJ_EVENT_GFX_GRAVE_WORN] =               &gObjectEventGraphicsInfo_GraveWorn,
     [OBJ_EVENT_GFX_MEWTWO_STATUE] =            &gObjectEventGraphicsInfo_MewtwoStatue,
     [OBJ_EVENT_GFX_BELLSPROUT_STATUE] =        &gObjectEventGraphicsInfo_BellsproutStatue,
     [OBJ_EVENT_GFX_ENTEI_STATUE] =             &gObjectEventGraphicsInfo_EnteiStatue,
@@ -458,6 +467,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_PAINTING_PKMNYELLOW] =      &gObjectEventGraphicsInfo_Painting_PkmnYellow,
     [OBJ_EVENT_GFX_PAINTING_HO_OH] =           &gObjectEventGraphicsInfo_Painting_HoOh,
     [OBJ_EVENT_GFX_PAINTING_WOMAN] =           &gObjectEventGraphicsInfo_Painting_Woman,
+    [OBJ_EVENT_GFX_PAINTING_SCHOOLOFATHENS] =  &gObjectEventGraphicsInfo_Painting_SchoolOfAthens,
     [OBJ_EVENT_GFX_DRUM_KIT] =                 &gObjectEventGraphicsInfo_Drum_Kit,
     [OBJ_EVENT_GFX_CUTTABLE_BARRIER] =         &gObjectEventGraphicsInfo_CuttableBarrier,
     [OBJ_EVENT_GFX_TUBER_F_SWIMMING] =         &gObjectEventGraphicsInfo_TuberFSwimming,

@@ -101,7 +101,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_4",
       "x": 26,
-      "y": 41,
+      "y": 42,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -114,7 +114,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(SALAMENCE)",
       "x": 27,
-      "y": 41,
+      "y": 42,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 0,
@@ -206,14 +206,14 @@
       "dest_warp_id": "1"
     },
     {
-      "x": 40,
+      "x": 41,
       "y": 40,
       "elevation": 0,
       "dest_map": "MAP_JOHTO_SAFARI_INTERIORS",
       "dest_warp_id": "1"
     },
     {
-      "x": 15,
+      "x": 18,
       "y": 37,
       "elevation": 0,
       "dest_map": "MAP_JOHTO_SAFARI_INTERIORS",

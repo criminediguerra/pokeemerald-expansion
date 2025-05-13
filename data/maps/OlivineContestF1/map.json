@@ -3,7 +3,7 @@
   "name": "OlivineContestF1",
   "layout": "LAYOUT_OLIVINE_CONTEST_F1",
   "music": "MUS_CONTEST_LOBBY",
-  "region_map_section": "MAPSEC_OLIVINE",
+  "region_map_section": "MAPSEC_GOLDENROD",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",

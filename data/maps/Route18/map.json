@@ -20,7 +20,7 @@
     },
     {
       "map": "MAP_ROUTE17",
-      "offset": -7,
+      "offset": -9,
       "direction": "up"
     }
   ],
@@ -41,14 +41,14 @@
   ],
   "warp_events": [
     {
-      "x": 36,
+      "x": 31,
       "y": 11,
       "elevation": 0,
       "dest_map": "MAP_ROUTE18CYCLING_HOUSE",
       "dest_warp_id": "0"
     },
     {
-      "x": 28,
+      "x": 23,
       "y": 11,
       "elevation": 0,
       "dest_map": "MAP_ROUTE18CYCLING_HOUSE",

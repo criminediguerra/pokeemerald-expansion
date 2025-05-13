@@ -20,7 +20,7 @@
     },
     {
       "map": "MAP_ROUTE3",
-      "offset": 2,
+      "offset": -6,
       "direction": "left"
     }
   ],

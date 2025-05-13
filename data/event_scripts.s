@@ -1199,7 +1199,7 @@ EventScript_VsSeekerChargingDone::
 
 	.include "data/maps/Route20/scripts.inc"
 
-	.include "data/maps/CinnibarIsland/scripts.inc"
+	.include "data/maps/CinnabarIsland/scripts.inc"
 
 	.include "data/maps/Route21/scripts.inc"
 
@@ -2253,7 +2253,7 @@ EventScript_VsSeekerChargingDone::
 
 	.include "data/maps/ShoalCave_LowTideExit/scripts.inc"
 
-	.include "data/maps/CinnibarIslandUnderwater/scripts.inc"
+	.include "data/maps/CinnabarIslandUnderwater/scripts.inc"
 
 	.include "data/maps/Route119a/scripts.inc"
 
@@ -2288,3 +2288,28 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/PokemonMansionF7/scripts.inc"
 
 	.include "data/maps/PokemonMansionF8/scripts.inc"
+
+	.include "data/maps/ViridianLake/scripts.inc"
+
+	.include "data/maps/ViridianLakeUnderwater/scripts.inc"
+
+	.include "data/maps/ViridianLakeUnderwaterTunnel/scripts.inc"
+
+	.include "data/maps/ViridianGymF2/scripts.inc"
+
+	.include "data/maps/ViridianTempleInteriors/scripts.inc"
+
+	.include "data/maps/OlivinePlayerOldHouse/scripts.inc"
+
+	.include "data/maps/MtMoonF4/scripts.inc"
+
+	.include "data/maps/MtMoonF5/scripts.inc"
+	.include "data/maps/ViridianLakeHydroelectricPlant/scripts.inc"
+
+	.include "data/maps/ViridianLakeHouses/scripts.inc"
+
+	.include "data/maps/Route17a/scripts.inc"
+
+	.include "data/maps/MistyCave/scripts.inc"
+
+	.include "data/maps/LunarTunnels/scripts.inc"

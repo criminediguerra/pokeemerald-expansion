@@ -273,8 +273,9 @@
 #define VAR_RED_TEAM                                     0x40FD // Unused Var
 #define VAR_LEAGUE_REMATCH                               0x40FE // Unused Var
 #define VAR_CINNABAR_LAB_MUSIC                           0x40FF // Unused Var
+#define VAR_WHICH_TRAINER_HILL                           0x4100 // Unused Var
 
-#define VARS_END                                         0x40FF
+#define VARS_END                                         0x4100
 #define VARS_COUNT                                       (VARS_END - VARS_START + 1)
 
 #define SPECIAL_VARS_START            0x8000

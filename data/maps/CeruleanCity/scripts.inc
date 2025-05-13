@@ -118,6 +118,19 @@ Cerulean_Magmar::
 Cerulean_Magmar_Text:
 	.string "MAGMAR: Blobob!$"
 
+Cerulean_Drowzee::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_DROWZEE, CRY_MODE_NORMAL
+	msgbox Cerulean_Drowzee_Text, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Cerulean_Drowzee_Text:
+	.string "DROWZEE: Huahu!$"
+
 Cerulean_Kangaskhan::
 	lock
 	faceplayer

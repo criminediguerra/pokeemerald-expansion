@@ -235,45 +235,6 @@ NewBarkTown_Ecruteak_BurnedSign::
 NewBarkTown_Ecruteak_Text_BurnedSign:
 	.string "BRASS TOWER$"
 
-NewBarkTown_Olivine_TownSign::
-	msgbox NewBarkTown_Olivine_Text_TownSign, MSGBOX_SIGN
-	end
-
-NewBarkTown_Olivine_Text_TownSign:
-	.string "OLIVINE CITY\n"
-	.string "“The Port Closest to Foreign Lands!”$"
-
-NewBarkTown_Olivine_GymSign::
-	msgbox NewBarkTown_Olivine_Text_GymSign, MSGBOX_SIGN
-	end
-
-NewBarkTown_Olivine_Text_GymSign:
-	.string "OLIVINE CITY POKéMON GYM\n"
-	.string "LEADER: JASMINE\l"
-	.string "“The Steel-Clad Defense Girl!”$"
-
-NewBarkTown_OlivineLighthouseSign::
-	msgbox NewBarkTown_OlivineLighthouseSignText, MSGBOX_SIGN
-	end
-
-NewBarkTown_OlivineLighthouseSignText:
-	.string "OLIVINE CITY LIGHTHOUSE$"
-
-NewBarkTown_Olivine_HarborSign::
-	msgbox NewBarkTown_Olivine_Text_HarborSign, MSGBOX_SIGN
-	end
-
-NewBarkTown_Olivine_Text_HarborSign:
-	.string "OLIVINE HARBOR$"
-
-PalletTown_Olivine_AquariumSign::
-	msgbox PalletTown_Olivine_AquariumSignText, MSGBOX_SIGN
-	end
-
-PalletTown_Olivine_AquariumSignText:
-	.string "Come see the GREAT AQUARIUM of\n"
-	.string "CIANWOOD CITY!$"
-
 NewBarkTown_Cianwood_TownSign::
 	msgbox NewBarkTown_Cianwood_Text_TownSign, MSGBOX_SIGN
 	end

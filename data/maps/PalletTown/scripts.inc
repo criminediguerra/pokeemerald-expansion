@@ -42,37 +42,6 @@ PalletTown_OakLabSign::
 PalletTown_Text_OakLabSign:
 	.string "PROF. OAK'S POKéMON LAB$"
 
-PalletTown_Viridian_TownSign::
-	msgbox PalletTown_Viridian_Text_TownSign, MSGBOX_SIGN
-	end
-
-PalletTown_Viridian_Text_TownSign:
-	.string "VIRIDIAN CITY\n"
-	.string "“The City of Evergreen!”$"
-
-PalletTown_Viridian_GymSign::
-	call_if_eq VAR_LEAGUE_REMATCH, 0, PalletTown_Viridian_GymSignCain
-	call_if_eq VAR_LEAGUE_REMATCH, 1, PalletTown_Viridian_GymSignDaisy
-	end
-
-PalletTown_Viridian_GymSignCain::
-	msgbox PalletTown_Viridian_Text_GymSignCain, MSGBOX_SIGN
-	end
-
-PalletTown_Viridian_GymSignDaisy::
-	msgbox PalletTown_Viridian_Text_GymSignDaisy, MSGBOX_SIGN
-	end
-
-PalletTown_Viridian_Text_GymSignCain:
-	.string "VIRIDIAN CITY POKéMON GYM\n"
-	.string "LEADER: GIOVANNI\l"
-	.string "“The strongest TRAINER in the WORLD!”$"
-
-PalletTown_Viridian_Text_GymSignDaisy:
-	.string "Viridian CITY POKéMON GYM\n"
-	.string "LEADER: DAISY\l"
-	.string "“The sand lady!”$"
-
 PalletTown_Pewter_TownSign::
 	msgbox PalletTown_Pewter_Text_TownSign, MSGBOX_SIGN
 	end
@@ -549,21 +518,6 @@ PalletTown_VictoryRoadSign::
 PalletTown_VictoryRoadSignText:
 	.string "VICTORY ROAD\n"
 	.string "Tunnel entrance$"
-
-PalletTown_RockTunnelSign::
-	msgbox PalletTown_RockTunnelSignText, MSGBOX_SIGN
-	end
-
-PalletTown_RockTunnelSignText:
-	.string "ROCK TUNNEL\n"
-	.string "Detour to LAVENDER TOWN$"
-
-PalletTown_RockTunnelSign1::
-	msgbox PalletTown_RockTunnelSign1Text, MSGBOX_SIGN
-	end
-
-PalletTown_RockTunnelSign1Text:
-	.string "ROCK TUNNEL$"
 
 PalletTown_PowerPlantSign::
 	msgbox PalletTown_PowerPlantSignText, MSGBOX_SIGN

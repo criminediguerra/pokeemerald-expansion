@@ -5883,7 +5883,7 @@ u16 GetBattleBGM(void)
     return MUS_RG_VS_WILD;
           if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(FUCHSIA_CITY) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(FUCHSIA_CITY))
     return MUS_RG_VS_WILD;
-          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(CINNIBAR_ISLAND) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(CINNIBAR_ISLAND))
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(CINNABAR_ISLAND) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(CINNABAR_ISLAND))
     return MUS_RG_VS_WILD;
           if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(FUCHSIA_CITY) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(FUCHSIA_CITY))
     return MUS_RG_VS_WILD;
@@ -6073,6 +6073,10 @@ u16 GetBattleBGM(void)
     return MUS_RG_VS_WILD;
           if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(SEAFOAM_ISLES_F6) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(SEAFOAM_ISLES_F6))
     return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(VIRIDIAN_TEMPLE_INTERIORS) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(VIRIDIAN_TEMPLE_INTERIORS))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(VIRIDIAN_LAKE) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(VIRIDIAN_LAKE))
+    return MUS_RG_VS_WILD;
           if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(KANTO_VICTORY_ROAD) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(KANTO_VICTORY_ROAD))
     return MUS_RG_VS_WILD;
           if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(KANTO_VICTORY_ROAD_F1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(KANTO_VICTORY_ROAD_F1))
@@ -6099,7 +6103,7 @@ u16 GetBattleBGM(void)
     return MUS_RG_VS_WILD;
           if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(CERULEAN_CITY_UNDERWATER) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(POKEMON_MANSION_F4))
     return MUS_RG_VS_WILD;
-          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(CINNIBAR_ISLAND_UNDERWATER) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(POKEMON_MANSION_F4))
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(CINNABAR_ISLAND_UNDERWATER) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(POKEMON_MANSION_F4))
     return MUS_RG_VS_WILD;
           if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE24UNDERWATER) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(POKEMON_MANSION_F4))
     return MUS_RG_VS_WILD;

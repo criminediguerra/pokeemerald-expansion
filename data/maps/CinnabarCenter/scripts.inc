@@ -4,7 +4,7 @@ CinnabarCenter_MapScripts::
 	.byte 0
 
 	CinnabarCenter_OnTransition:
-	setrespawn HEAL_LOCATION_CINNIBAR_ISLAND
+	setrespawn HEAL_LOCATION_CINNABAR_ISLAND
 	end
 
 	CinnabarCenter_MapScripts_EventScript_Nurse::

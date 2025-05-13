@@ -14,3 +14,17 @@ Goldenrod_Clefairy::
 
 Goldenrod_Clefairy_Text:
 	.string "CLEFAIRY: Pippi!$"
+
+Goldenrod_Clefable::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_CLEFABLE, CRY_MODE_NORMAL
+	msgbox Goldenrod_Clefable_Text, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+
+Goldenrod_Clefable_Text:
+	.string "CLEFABLE: Pippi!$"

@@ -92,7 +92,7 @@
       "y": 4,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "PalletTown_RockTunnelSign"
+      "script": "Route_10_RockTunnelSign"
     },
     {
       "type": "sign",
@@ -100,7 +100,7 @@
       "y": 45,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "PalletTown_RockTunnelSign1"
+      "script": "Route_10_RockTunnelSign1"
     },
     {
       "type": "sign",

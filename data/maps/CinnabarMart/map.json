@@ -59,14 +59,14 @@
       "x": 4,
       "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_CINNIBAR_ISLAND",
+      "dest_map": "MAP_CINNABAR_ISLAND",
       "dest_warp_id": "6"
     },
     {
       "x": 3,
       "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_CINNIBAR_ISLAND",
+      "dest_map": "MAP_CINNABAR_ISLAND",
       "dest_warp_id": "6"
     }
   ],

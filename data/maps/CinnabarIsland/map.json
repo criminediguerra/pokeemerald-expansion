@@ -1,7 +1,7 @@
 {
-  "id": "MAP_CINNIBAR_ISLAND",
-  "name": "CinnibarIsland",
-  "layout": "LAYOUT_CINNIBAR_ISLAND",
+  "id": "MAP_CINNABAR_ISLAND",
+  "name": "CinnabarIsland",
+  "layout": "LAYOUT_CINNABAR_ISLAND",
   "music": "MUS_RG_CINNABAR",
   "region_map_section": "MAPSEC_CINNABAR_ISLAND",
   "requires_flash": false,
@@ -34,7 +34,7 @@
       "direction": "down"
     },
     {
-      "map": "MAP_CINNIBAR_ISLAND_UNDERWATER",
+      "map": "MAP_CINNABAR_ISLAND_UNDERWATER",
       "offset": 0,
       "direction": "dive"
     }
@@ -321,7 +321,7 @@
       "y": 26,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "PalletTown_Cinnabar_TownSign"
+      "script": "Cinnabar_Island_TownSign"
     },
     {
       "type": "sign",
@@ -329,7 +329,7 @@
       "y": 4,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "PalletTown_Cinnabar_GymSign"
+      "script": "Cinnabar_Island_GymSign"
     },
     {
       "type": "sign",
@@ -337,7 +337,7 @@
       "y": 4,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "PalletTown_Cinnabar_VolcanoSign"
+      "script": "Cinnabar_Island_VolcanoSign"
     },
     {
       "type": "sign",
@@ -345,7 +345,7 @@
       "y": 15,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "PalletTown_Cinnabar_LabSign"
+      "script": "Cinnabar_Island_LabSign"
     },
     {
       "type": "sign",
@@ -353,7 +353,7 @@
       "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "PalletTown_Cinnabar_MansionSign"
+      "script": "Cinnabar_Island_MansionSign"
     },
     {
       "type": "sign",
