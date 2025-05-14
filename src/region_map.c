@@ -145,6 +145,8 @@ static void LoadFlyDestIcons(void);
 static void CreateFlyDestIcons(void);
 static void TryCreateRedOutlineFlyDestIcons(void);
 static void SpriteCB_FlyDestIcon(struct Sprite *sprite);
+static void SpriteCB_NotFlyableDestIcon(struct Sprite *sprite);
+static void UpdateFlyDestinationIconPosition(struct Sprite *sprite);
 static void CB_FadeInFlyMap(void);
 static void CB_HandleFlyMapInput(void);
 static void CB_ExitFlyMap(void);
@@ -2096,7 +2098,10 @@ static void CreateFlyDestIcons(void)
             if (FlagGet(canFlyFlag))
                 gSprites[spriteId].callback = SpriteCB_FlyDestIcon;
             else
+            {
                 shape += 3;
+                gSprites[spriteId].callback = SpriteCB_NotFlyableDestIcon;
+            }
 
             StartSpriteAnim(&gSprites[spriteId], shape);
             gSprites[spriteId].sIconMapSec = mapSecId;
@@ -2137,6 +2142,10 @@ static void TryCreateRedOutlineFlyDestIcons(void)
     }
 }
 
+static void SpriteCB_NotFlyableDestIcon(struct Sprite *sprite) {
+    UpdateFlyDestinationIconPosition(sprite);
+}
+
 // Flickers fly destination icon color (by hiding the fly icon sprite) if the cursor is currently on it
 static void SpriteCB_FlyDestIcon(struct Sprite *sprite)
 {
@@ -2153,6 +2162,28 @@ static void SpriteCB_FlyDestIcon(struct Sprite *sprite)
         sprite->sFlickerTimer = 16;
         sprite->invisible = FALSE;
     }
+
+    UpdateFlyDestinationIconPosition(sprite);
+}
+
+static void UpdateFlyDestinationIconPosition(struct Sprite *sprite) {
+    u16 x;
+    u16 y;
+    u16 width;
+    u16 height;
+
+    GetMapSecDimensions(sprite->sIconMapSec, &x, &y, &width, &height);
+    x = (x + MAPCURSOR_X_MIN) * 8 + 4;
+    y = (y + MAPCURSOR_Y_MIN) * 8 + 4;
+
+    u32 scrollX = (((u32)GetGpuReg(REG_OFFSET_BG2X_L)) + (((u32)GetGpuReg(REG_OFFSET_BG2X_H)) << 16U));
+    u32 scrollY = (((u32)GetGpuReg(REG_OFFSET_BG2Y_L)) + (((u32)GetGpuReg(REG_OFFSET_BG2Y_H)) << 16U));
+
+    x -= scrollX / MINIMAL_BACKGROUND_INCREMENT;
+    y -= scrollY / MINIMAL_BACKGROUND_INCREMENT;
+
+    sprite->x = x;
+    sprite->y = y;
 }
 
 #undef sIconMapSec
