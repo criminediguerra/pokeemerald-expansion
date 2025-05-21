@@ -1727,6 +1727,10 @@ static u8 TrySetupObjectEventSprite(const struct ObjectEventTemplate *objectEven
 
     SetObjectSubpriorityByElevation(objectEvent->previousElevation, sprite, 1);
     UpdateObjectEventVisibility(objectEvent, sprite);
+    if (objectEvent->graphicsId == OBJ_EVENT_GFX_WHIRLPOOL){
+        objectEvent->fixedPriority = TRUE;
+        sprite->subpriority = 0xFF;
+    }
     return objectEventId;
 }
 

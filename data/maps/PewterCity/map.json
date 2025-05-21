@@ -132,9 +132,9 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(KANGASKHAN)",
       "x": 51,
-      "y": 21,
+      "y": 22,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WALK_RIGHT_AND_LEFT",
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 6,
       "trainer_type": "TRAINER_TYPE_NONE",

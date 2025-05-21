@@ -1,3 +1,5 @@
+.equ LOCALID_WHIRLPOOL, 12
+
 PalletTown_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, PalletTown_OnTransition
 	.byte 0

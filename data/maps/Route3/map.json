@@ -22,6 +22,11 @@
       "map": "MAP_ROUTE4",
       "offset": 6,
       "direction": "right"
+    },
+    {
+      "map": "MAP_ROUTE16",
+      "offset": 0,
+      "direction": "down"
     }
   ],
   "object_events": [
@@ -299,7 +304,7 @@
       "x": 38,
       "y": 45,
       "elevation": 0,
-      "dest_map": "MAP_LUNAR_TUNNELS",
+      "dest_map": "MAP_MT_MOON_F6",
       "dest_warp_id": "0"
     }
   ],
@@ -354,6 +359,14 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route111_EventScript_TrainerHillSign"
+    },
+    {
+      "type": "sign",
+      "x": 37,
+      "y": 46,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "PalletTown_MtMoonSign"
     }
   ]
 }

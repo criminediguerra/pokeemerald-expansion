@@ -106,6 +106,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TuberFSwimm
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Soldier;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Grave;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GraveWorn;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Whirlpool;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MewtwoStatue;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BellsproutStatue;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BellsproutPainting;
@@ -441,6 +442,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_CELIO] =                    &gObjectEventGraphicsInfo_Celio,
     [OBJ_EVENT_GFX_GRAVE] =                    &gObjectEventGraphicsInfo_Grave,
     [OBJ_EVENT_GFX_GRAVE_WORN] =               &gObjectEventGraphicsInfo_GraveWorn,
+    [OBJ_EVENT_GFX_WHIRLPOOL] =                &gObjectEventGraphicsInfo_Whirlpool,
     [OBJ_EVENT_GFX_MEWTWO_STATUE] =            &gObjectEventGraphicsInfo_MewtwoStatue,
     [OBJ_EVENT_GFX_BELLSPROUT_STATUE] =        &gObjectEventGraphicsInfo_BellsproutStatue,
     [OBJ_EVENT_GFX_ENTEI_STATUE] =             &gObjectEventGraphicsInfo_EnteiStatue,

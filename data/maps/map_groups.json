@@ -69,6 +69,7 @@
     "Route5",
     "Route6",
     "Route7",
+    "Route7a",
     "Route8",
     "Route9",
     "Route10",
@@ -730,6 +731,7 @@
     "MtMoonF3",
     "MtMoonF4",
     "MtMoonF5",
+    "MtMoonF6",
     "RockTunnel",
     "RockTunnelF1",
     "CeruleanCaveF1",
@@ -779,8 +781,7 @@
     "SilverRoom",
     "FarOffCave",
     "ViridianLakeUnderwaterTunnel",
-    "MistyCave",
-    "LunarTunnels"
+    "MistyCave"
   ],
   "gMapGroup_DungeonsSevii": [
     "EmberSpa",

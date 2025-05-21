@@ -2312,4 +2312,6 @@ EventScript_VsSeekerChargingDone::
 
 	.include "data/maps/MistyCave/scripts.inc"
 
-	.include "data/maps/LunarTunnels/scripts.inc"
+	.include "data/maps/MtMoonF6/scripts.inc"
+
+	.include "data/maps/Route7a/scripts.inc"

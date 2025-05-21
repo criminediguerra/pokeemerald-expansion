@@ -44,6 +44,13 @@
       "elevation": 0,
       "dest_map": "MAP_ROUTE3",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 53,
+      "y": 38,
+      "elevation": 0,
+      "dest_map": "MAP_MT_MOON_F6",
+      "dest_warp_id": "6"
     }
   ],
   "coord_events": [

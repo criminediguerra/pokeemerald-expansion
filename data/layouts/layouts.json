@@ -4614,8 +4614,8 @@
     {
       "id": "LAYOUT_FUCHSIA_CITY",
       "name": "FuchsiaCity_Layout",
-      "width": 61,
-      "height": 56,
+      "width": 65,
+      "height": 58,
       "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/FuchsiaCity/border.bin",
@@ -4624,7 +4624,7 @@
     {
       "id": "LAYOUT_ROUTE19",
       "name": "Route19_Layout",
-      "width": 34,
+      "width": 40,
       "height": 68,
       "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Slateport",
@@ -4695,8 +4695,8 @@
       "id": "LAYOUT_ROUTE18",
       "name": "Route18_Layout",
       "width": 51,
-      "height": 36,
-      "primary_tileset": "gTileset_General",
+      "height": 38,
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/Route18/border.bin",
       "blockdata_filepath": "data/layouts/Route18/map.bin"
@@ -4704,8 +4704,8 @@
     {
       "id": "LAYOUT_ROUTE17",
       "name": "Route17_Layout",
-      "width": 62,
-      "height": 118,
+      "width": 60,
+      "height": 79,
       "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Saffron",
       "border_filepath": "data/layouts/Route17/border.bin",
@@ -4714,18 +4714,18 @@
     {
       "id": "LAYOUT_ROUTE16",
       "name": "Route16_Layout",
-      "width": 64,
-      "height": 36,
+      "width": 68,
+      "height": 85,
       "primary_tileset": "gTileset_GeneralStairs",
-      "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
+      "secondary_tileset": "gTileset_Saffron",
       "border_filepath": "data/layouts/Route16/border.bin",
       "blockdata_filepath": "data/layouts/Route16/map.bin"
     },
     {
       "id": "LAYOUT_CELADON_CITY",
       "name": "CeladonCity_Layout",
-      "width": 70,
-      "height": 52,
+      "width": 72,
+      "height": 74,
       "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/CeladonCity/border.bin",
@@ -5014,7 +5014,7 @@
     {
       "id": "LAYOUT_MT_MOON_F3",
       "name": "MtMoonF3_Layout",
-      "width": 69,
+      "width": 74,
       "height": 73,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
@@ -10212,14 +10212,24 @@
       "blockdata_filepath": "data/layouts/MistyCave/map.bin"
     },
     {
-      "id": "LAYOUT_LUNAR_TUNNELS",
-      "name": "LunarTunnels_Layout",
-      "width": 90,
-      "height": 80,
+      "id": "LAYOUT_MT_MOON_F6",
+      "name": "MtMoonF6_Layout",
+      "width": 82,
+      "height": 90,
       "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/LunarTunnels/border.bin",
-      "blockdata_filepath": "data/layouts/LunarTunnels/map.bin"
+      "border_filepath": "data/layouts/MtMoonF6/border.bin",
+      "blockdata_filepath": "data/layouts/MtMoonF6/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE7A",
+      "name": "Route7a_Layout",
+      "width": 37,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/Route7a/border.bin",
+      "blockdata_filepath": "data/layouts/Route7a/map.bin"
     }
   ]
 }

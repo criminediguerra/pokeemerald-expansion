@@ -78,6 +78,7 @@ const u32 gObjectEventPic_Celio[] = INCBIN_U32("graphics/object_events/pics/peop
 const u32 gObjectEventPic_MewtwoStatue[] = INCBIN_U32("graphics/object_events/pics/misc/mewtwostatue.4bpp");
 const u32 gObjectEventPic_Grave[] = INCBIN_U32("graphics/object_events/pics/misc/grave.4bpp");
 const u32 gObjectEventPic_GraveWorn[] = INCBIN_U32("graphics/object_events/pics/misc/graveworn.4bpp");
+const u32 gObjectEventPic_Whirlpool[] = INCBIN_U32("graphics/object_events/pics/misc/whirlpool.4bpp");
 const u32 gObjectEventPic_BellsproutStatue[] = INCBIN_U32("graphics/object_events/pics/misc/bellsproutstatue.4bpp");
 const u32 gObjectEventPic_EnteiStatue[] = INCBIN_U32("graphics/object_events/pics/misc/enteistatue.4bpp");
 const u32 gObjectEventPic_RaikouStatue[] = INCBIN_U32("graphics/object_events/pics/misc/raikoustatue.4bpp");
