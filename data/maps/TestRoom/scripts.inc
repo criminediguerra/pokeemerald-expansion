@@ -87,6 +87,8 @@ Testroom_EventScript_Groudon::
 	giveitem ITEM_HM06
 	giveitem ITEM_HM07
 	giveitem ITEM_HM08
+	giveitem ITEM_HM09
+	giveitem ITEM_HM10
 	release
 	end
 

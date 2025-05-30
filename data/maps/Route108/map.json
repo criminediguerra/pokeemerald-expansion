@@ -22,6 +22,11 @@
       "map": "MAP_ROUTE109",
       "offset": -40,
       "direction": "right"
+    },
+    {
+      "map": "MAP_CROSSGATE_TOWN",
+      "offset": -52,
+      "direction": "up"
     }
   ],
   "object_events": [

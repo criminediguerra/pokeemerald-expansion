@@ -11888,6 +11888,36 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_DIVE,
     },
 
+    [ITEM_HM09] =
+    {
+        .name = _("HM09"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "Traps the foe in a\n"
+            "whirlpool for a\n"
+            "number of turns."),
+        .importance = 1,
+        .pocket = POCKET_TM_HM,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .secondaryId = MOVE_WHIRLPOOL,
+    },
+
+    [ITEM_HM10] =
+    {
+        .name = _("HM10"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A charging attack,\n"
+            "may confuse the\n"
+            "foe."),
+        .importance = 1,
+        .pocket = POCKET_TM_HM,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .secondaryId = MOVE_ROCK_CLIMB,
+    },
+
 
 // Charms
 
