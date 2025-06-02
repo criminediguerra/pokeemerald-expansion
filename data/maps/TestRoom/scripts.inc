@@ -128,6 +128,9 @@ Testroom_EventScript_Fly::
 	setflag FLAG_VISITED_FIVEISLAND
 	setflag FLAG_VISITED_SIXISLAND
 	setflag FLAG_VISITED_SEVENISLAND
+	setflag FLAG_VISITED_WHITESTONE
+	setflag FLAG_VISITED_KASADO
+	setflag FLAG_VISITED_KUGA
 end
 
 Testroom_EventScript_FlyHoenn::

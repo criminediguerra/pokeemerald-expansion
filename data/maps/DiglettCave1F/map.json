@@ -18,15 +18,15 @@
   ],
   "warp_events": [
     {
-      "x": 34,
-      "y": 54,
+      "x": 58,
+      "y": 89,
       "elevation": 0,
       "dest_map": "MAP_DIGLETT_CAVE",
       "dest_warp_id": "1"
     },
     {
       "x": 10,
-      "y": 5,
+      "y": 3,
       "elevation": 0,
       "dest_map": "MAP_DIGLETT_CAVE",
       "dest_warp_id": "0"

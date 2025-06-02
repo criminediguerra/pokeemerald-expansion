@@ -56,6 +56,20 @@
       "elevation": 0,
       "dest_map": "MAP_MT_MOON_F5",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 91,
+      "y": 67,
+      "elevation": 0,
+      "dest_map": "MAP_MT_MOON_F7",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 86,
+      "y": 57,
+      "elevation": 0,
+      "dest_map": "MAP_MT_MOON_F7",
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [

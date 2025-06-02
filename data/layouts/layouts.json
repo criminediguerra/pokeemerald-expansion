@@ -4,7 +4,7 @@
     {
       "id": "LAYOUT_PETALBURG_CITY",
       "name": "PetalburgCity_Layout",
-      "width": 30,
+      "width": 34,
       "height": 34,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
@@ -4764,10 +4764,10 @@
     {
       "id": "LAYOUT_ROUTE22",
       "name": "Route22_Layout",
-      "width": 67,
+      "width": 71,
       "height": 38,
       "primary_tileset": "gTileset_GeneralStairs",
-      "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
+      "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/Route22/border.bin",
       "blockdata_filepath": "data/layouts/Route22/map.bin"
     },
@@ -4954,8 +4954,8 @@
     {
       "id": "LAYOUT_DIGLETT_CAVE",
       "name": "DiglettCave_Layout",
-      "width": 30,
-      "height": 8,
+      "width": 38,
+      "height": 47,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/DiglettCave/border.bin",
@@ -4964,8 +4964,8 @@
     {
       "id": "LAYOUT_DIGLETT_CAVE1F",
       "name": "DiglettCave1F_Layout",
-      "width": 41,
-      "height": 60,
+      "width": 65,
+      "height": 99,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/DiglettCave1F/border.bin",
@@ -5064,8 +5064,8 @@
     {
       "id": "LAYOUT_ROUTE36",
       "name": "Route36_Layout",
-      "width": 82,
-      "height": 32,
+      "width": 84,
+      "height": 38,
       "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
       "border_filepath": "data/layouts/Route36/border.bin",
@@ -5134,8 +5134,8 @@
     {
       "id": "LAYOUT_VIOLET_CITY",
       "name": "VioletCity_Layout",
-      "width": 70,
-      "height": 70,
+      "width": 78,
+      "height": 82,
       "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/VioletCity/border.bin",
@@ -5317,7 +5317,7 @@
       "width": 66,
       "height": 38,
       "primary_tileset": "gTileset_GeneralStairs",
-      "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
+      "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/MtSilverF1/border.bin",
       "blockdata_filepath": "data/layouts/MtSilverF1/map.bin"
     },
@@ -5344,10 +5344,10 @@
     {
       "id": "LAYOUT_ROUTE23",
       "name": "Route23_Layout",
-      "width": 28,
+      "width": 34,
       "height": 164,
       "primary_tileset": "gTileset_GeneralStairs",
-      "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
+      "secondary_tileset": "gTileset_IndigoPlateau",
       "border_filepath": "data/layouts/Route23/border.bin",
       "blockdata_filepath": "data/layouts/Route23/map.bin"
     },
@@ -6044,8 +6044,8 @@
     {
       "id": "LAYOUT_TOHJO_FALLS",
       "name": "TohjoFalls_Layout",
-      "width": 50,
-      "height": 37,
+      "width": 64,
+      "height": 45,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/TohjoFalls/border.bin",
@@ -10095,7 +10095,7 @@
       "id": "LAYOUT_VIRIDIAN_LAKE",
       "name": "ViridianLake_Layout",
       "width": 58,
-      "height": 106,
+      "height": 95,
       "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/ViridianLake/border.bin",
@@ -10105,7 +10105,7 @@
       "id": "LAYOUT_VIRIDIAN_LAKE_UNDERWATER",
       "name": "ViridianLakeUnderwater_Layout",
       "width": 58,
-      "height": 58,
+      "height": 47,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Underwater",
       "border_filepath": "data/layouts/ViridianLakeUnderwater/border.bin",
@@ -10154,7 +10154,7 @@
     {
       "id": "LAYOUT_MT_MOON_F4",
       "name": "MtMoonF4_Layout",
-      "width": 75,
+      "width": 100,
       "height": 75,
       "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Cave",
@@ -10205,7 +10205,7 @@
       "id": "LAYOUT_MISTY_CAVE",
       "name": "MistyCave_Layout",
       "width": 82,
-      "height": 75,
+      "height": 66,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/MistyCave/border.bin",
@@ -10230,6 +10230,16 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/Route7a/border.bin",
       "blockdata_filepath": "data/layouts/Route7a/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_MOON_F7",
+      "name": "MtMoonF7_Layout",
+      "width": 100,
+      "height": 65,
+      "primary_tileset": "gTileset_GeneralStairs",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/MtMoonF7/border.bin",
+      "blockdata_filepath": "data/layouts/MtMoonF7/map.bin"
     }
   ]
 }

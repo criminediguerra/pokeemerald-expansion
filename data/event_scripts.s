@@ -2315,3 +2315,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/MtMoonF6/scripts.inc"
 
 	.include "data/maps/Route7a/scripts.inc"
+
+	.include "data/maps/MtMoonF7/scripts.inc"

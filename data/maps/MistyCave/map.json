@@ -25,8 +25,8 @@
       "dest_warp_id": "1"
     },
     {
-      "x": 70,
-      "y": 64,
+      "x": 79,
+      "y": 55,
       "elevation": 0,
       "dest_map": "MAP_MISTY_CAVE",
       "dest_warp_id": "0"
@@ -39,22 +39,22 @@
       "dest_warp_id": "3"
     },
     {
-      "x": 42,
-      "y": 72,
+      "x": 51,
+      "y": 63,
       "elevation": 0,
       "dest_map": "MAP_MISTY_CAVE",
       "dest_warp_id": "2"
     },
     {
-      "x": 28,
-      "y": 67,
+      "x": 37,
+      "y": 58,
       "elevation": 0,
       "dest_map": "MAP_MISTY_CAVE",
       "dest_warp_id": "5"
     },
     {
-      "x": 48,
-      "y": 12,
+      "x": 36,
+      "y": 8,
       "elevation": 0,
       "dest_map": "MAP_MISTY_CAVE",
       "dest_warp_id": "4"
@@ -67,15 +67,15 @@
       "dest_warp_id": "4"
     },
     {
-      "x": 6,
-      "y": 60,
+      "x": 3,
+      "y": 51,
       "elevation": 0,
       "dest_map": "MAP_VIRIDIAN_LAKE",
       "dest_warp_id": "5"
     },
     {
-      "x": 48,
-      "y": 64,
+      "x": 57,
+      "y": 55,
       "elevation": 0,
       "dest_map": "MAP_VIRIDIAN_LAKE",
       "dest_warp_id": "6"

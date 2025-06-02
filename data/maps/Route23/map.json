@@ -15,17 +15,17 @@
   "connections": [
     {
       "map": "MAP_INDIGO_PLATEAU",
-      "offset": 1,
+      "offset": 3,
       "direction": "up"
     },
     {
       "map": "MAP_ROUTE22",
-      "offset": 10,
+      "offset": 12,
       "direction": "down"
     },
     {
       "map": "MAP_MT_SILVER_F1",
-      "offset": -56,
+      "offset": -54,
       "direction": "down"
     }
   ],
@@ -34,14 +34,14 @@
   ],
   "warp_events": [
     {
-      "x": 9,
+      "x": 11,
       "y": 32,
       "elevation": 0,
       "dest_map": "MAP_KANTO_VICTORY_ROAD",
       "dest_warp_id": "0"
     },
     {
-      "x": 22,
+      "x": 24,
       "y": 32,
       "elevation": 0,
       "dest_map": "MAP_KANTO_VICTORY_ROAD_F2",
@@ -54,7 +54,7 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 20,
+      "x": 22,
       "y": 145,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -62,7 +62,7 @@
     },
     {
       "type": "sign",
-      "x": 7,
+      "x": 9,
       "y": 35,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",

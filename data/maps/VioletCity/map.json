@@ -20,19 +20,19 @@
     },
     {
       "map": "MAP_ROUTE36",
-      "offset": 10,
+      "offset": 5,
       "direction": "left"
     },
     {
       "map": "MAP_ROUTE31",
-      "offset": 38,
+      "offset": 50,
       "direction": "right"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_GIRL_2",
-      "x": 33,
+      "x": 41,
       "y": 23,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -45,7 +45,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(SLOWPOKE)",
-      "x": 34,
+      "x": 42,
       "y": 23,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
@@ -58,8 +58,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(MURKROW)",
-      "x": 54,
-      "y": 54,
+      "x": 62,
+      "y": 66,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 0,
@@ -71,8 +71,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_3",
-      "x": 53,
-      "y": 54,
+      "x": 61,
+      "y": 66,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -84,8 +84,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY_3",
-      "x": 44,
-      "y": 42,
+      "x": 52,
+      "y": 54,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
@@ -97,8 +97,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LASS",
-      "x": 42,
-      "y": 60,
+      "x": 50,
+      "y": 72,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
@@ -110,8 +110,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_4",
-      "x": 32,
-      "y": 41,
+      "x": 40,
+      "y": 53,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
@@ -122,9 +122,9 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
-      "x": 20,
-      "y": 39,
+      "graphics_id": "OBJ_EVENT_GFX_OLD_MAN",
+      "x": 26,
+      "y": 49,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -136,8 +136,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY_1",
-      "x": 25,
-      "y": 54,
+      "x": 33,
+      "y": 66,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -149,8 +149,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(FARFETCHD)",
-      "x": 23,
-      "y": 54,
+      "x": 31,
+      "y": 66,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
       "movement_range_x": 0,
@@ -162,7 +162,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BELLSPROUT_STATUE",
-      "x": 41,
+      "x": 49,
       "y": 12,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -175,7 +175,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BELLSPROUT_STATUE",
-      "x": 37,
+      "x": 45,
       "y": 12,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -188,7 +188,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_TEENGOLD",
-      "x": 41,
+      "x": 49,
       "y": 19,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
@@ -201,7 +201,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(CYNDAQUIL)",
-      "x": 41,
+      "x": 49,
       "y": 18,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
@@ -211,82 +211,212 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Cherrygrove_Cyndaquil",
       "flag": "FLAG_TIME_PROGRESSION_9"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
+      "x": 62,
+      "y": 56,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_CutTree",
+      "flag": "FLAG_TEMP_11"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER",
+      "x": 53,
+      "y": 45,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "MauvilleCity_EventScript_Boy",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
+      "x": 59,
+      "y": 45,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "RustboroCity_EventScript_Man2",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SCYTHER)",
+      "x": 55,
+      "y": 45,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Cherrygrove_Scyther",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(KADABRA)",
+      "x": 57,
+      "y": 45,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Cherrygrove_Kadabra",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
+      "x": 29,
+      "y": 74,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_CutTree",
+      "flag": "FLAG_TEMP_10"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HO_OH_STATUE",
+      "x": 16,
+      "y": 25,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SAGE",
+      "x": 15,
+      "y": 33,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SAGE",
+      "x": 17,
+      "y": 33,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
+      "x": 16,
+      "y": 29,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
     }
   ],
   "warp_events": [
     {
       "x": 5,
-      "y": 29,
+      "y": 30,
       "elevation": 0,
       "dest_map": "MAP_JOHTO_GATE",
       "dest_warp_id": "19"
     },
     {
-      "x": 67,
-      "y": 51,
+      "x": 75,
+      "y": 63,
       "elevation": 0,
       "dest_map": "MAP_JOHTO_GATE",
       "dest_warp_id": "20"
     },
     {
-      "x": 39,
+      "x": 47,
       "y": 11,
       "elevation": 0,
       "dest_map": "MAP_SPROUT_TOWER",
       "dest_warp_id": "0"
     },
     {
-      "x": 48,
-      "y": 52,
+      "x": 56,
+      "y": 64,
       "elevation": 0,
       "dest_map": "MAP_VIOLET_CENTER",
       "dest_warp_id": "0"
     },
     {
-      "x": 21,
-      "y": 38,
+      "x": 27,
+      "y": 48,
       "elevation": 0,
       "dest_map": "MAP_VIOLET_MART",
       "dest_warp_id": "0"
     },
     {
-      "x": 48,
-      "y": 38,
+      "x": 56,
+      "y": 50,
       "elevation": 0,
       "dest_map": "MAP_VIOLET_SCHOOL",
       "dest_warp_id": "0"
     },
     {
-      "x": 39,
-      "y": 57,
+      "x": 47,
+      "y": 69,
       "elevation": 0,
       "dest_map": "MAP_VIOLET_INTERIORS",
       "dest_warp_id": "0"
     },
     {
-      "x": 35,
-      "y": 57,
+      "x": 43,
+      "y": 69,
       "elevation": 0,
       "dest_map": "MAP_VIOLET_INTERIORS",
       "dest_warp_id": "1"
     },
     {
-      "x": 11,
-      "y": 36,
+      "x": 16,
+      "y": 48,
       "elevation": 0,
       "dest_map": "MAP_VIOLET_INTERIORS",
       "dest_warp_id": "2"
     },
     {
-      "x": 15,
-      "y": 52,
+      "x": 21,
+      "y": 64,
       "elevation": 0,
       "dest_map": "MAP_VIOLET_INTERIORS",
       "dest_warp_id": "3"
     },
     {
-      "x": 30,
-      "y": 39,
+      "x": 38,
+      "y": 48,
       "elevation": 0,
       "dest_map": "MAP_VIOLET_GYM",
       "dest_warp_id": "0"
@@ -298,23 +428,23 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 44,
-      "y": 39,
+      "x": 52,
+      "y": 51,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "RustboroCity_EventScript_TrainersSchoolSign"
     },
     {
       "type": "sign",
-      "x": 41,
-      "y": 44,
+      "x": 49,
+      "y": 56,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "NewBarkTown_Violet_TownSign"
     },
     {
       "type": "sign",
-      "x": 38,
+      "x": 46,
       "y": 13,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -322,40 +452,40 @@
     },
     {
       "type": "sign",
-      "x": 33,
-      "y": 39,
+      "x": 41,
+      "y": 51,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "NewBarkTown_Violet_GymSign"
     },
     {
       "type": "sign",
-      "x": 49,
-      "y": 52,
+      "x": 57,
+      "y": 64,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "Common_EventScript_ShowPokemonCenterSign"
     },
     {
       "type": "sign",
-      "x": 50,
-      "y": 52,
+      "x": 58,
+      "y": 64,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "Common_EventScript_ShowPokemonCenterSign"
     },
     {
       "type": "sign",
-      "x": 22,
-      "y": 38,
+      "x": 28,
+      "y": 48,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "Common_EventScript_ShowPokemartSign"
     },
     {
       "type": "sign",
-      "x": 23,
-      "y": 38,
+      "x": 29,
+      "y": 48,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "Common_EventScript_ShowPokemartSign"

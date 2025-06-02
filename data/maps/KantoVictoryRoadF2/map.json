@@ -3,7 +3,7 @@
   "name": "KantoVictoryRoadF2",
   "layout": "LAYOUT_KANTO_VICTORY_ROAD_F2",
   "music": "GSVICTORYROAD",
-  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "region_map_section": "MAPSEC_KANTO_VICTORY_ROAD",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERGROUND",

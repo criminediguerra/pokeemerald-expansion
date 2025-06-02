@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_VIRIDIAN_LAKE",
-      "offset": -70,
+      "offset": -59,
       "direction": "left"
     },
     {
