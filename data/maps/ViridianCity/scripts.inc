@@ -335,11 +335,33 @@ ViridianCity_EventScript_ChannelerWestwood::
 	end
 
 ViridianCity_Text_ChannelerWestwood:
-	.string "PROF. WESTWOOD...\n"
-	.string "the man who first dared to trap life in\l"
+	.string "The man who dared to trap life in\n"
 	.string "a sphere...\p"
-	.string "Someone says his invention bound more\n"
+	.string "Someone says invention bound more\n"
 	.string "than just POKéMON.\p"
-	.string "His grave lies quiet, but the air around\n"
-	.string "it hums like something’s still trying to\l"
+	.string "The grave lies quiet, but air around\n"
+	.string "it hums like something’s trying to\l"
 	.string "get out.$"
+
+ViridianCity_EventScript_GameboyKid1::
+	msgbox ViridianCity_Text_GameboyKid1, MSGBOX_NPC
+	end
+
+ViridianCity_Text_GameboyKid1:
+	.string "Shhh...\n"
+	.string "if I save right here and walk into\p"
+	.string "the corner just right, weird stuff\n"
+	.string "happens.\p"
+	.string "My cousin says it’s how he caught a\n"
+	.string "‘missing’ POKéMON...$"
+
+ViridianCity_EventScript_GameboyKid2::
+	msgbox ViridianCity_Text_GameboyKid2, MSGBOX_NPC
+	end
+
+ViridianCity_Text_GameboyKid2:
+	.string "Hang on, I’m about to evolve my\n"
+	.string "DODUO!\p"
+	.string "If I do it right, it learns a move\n"
+	.string "it normally can’t...\l"
+	.string "I think.$"
