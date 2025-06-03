@@ -21,6 +21,7 @@
   ],
   "object_events": [
     {
+      "local_id": "LOCALID_SOUTHERN_ISLAND_SAILOR",
       "graphics_id": "OBJ_EVENT_GFX_SAILOR",
       "x": 32,
       "y": 22,
@@ -34,6 +35,7 @@
       "flag": "0"
     },
     {
+      "local_id": "LOCALID_SOUTHERN_ISLAND_SS_TIDAL",
       "graphics_id": "OBJ_EVENT_GFX_SS_TIDAL",
       "x": 31,
       "y": 21,
