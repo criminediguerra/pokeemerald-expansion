@@ -15,7 +15,7 @@
     {
       "id": "HEAL_LOCATION_PETALBURG_CITY",
       "map": "MAP_PETALBURG_CITY",
-      "x": 20,
+      "x": 24,
       "y": 17
     },
     {
@@ -131,6 +131,282 @@
       "map": "MAP_BATTLE_FRONTIER_OUTSIDE_EAST",
       "x": 3,
       "y": 52
+    },
+    {
+      "id": "HEAL_LOCATION_ASHLEAF_TOWN",
+      "map": "MAP_ASHLEAF_TOWN",
+      "x": 19,
+      "y": 40
+    },
+    {
+      "id": "HEAL_LOCATION_AZALEA_TOWN",
+      "map": "MAP_AZALEA_TOWN",
+      "x": 25,
+      "y": 14
+    },
+    {
+      "id": "HEAL_LOCATION_BLACKTHORN_CITY",
+      "map": "MAP_BLACKTHORN_CITY",
+      "x": 30,
+      "y": 49
+    },
+    {
+      "id": "HEAL_LOCATION_CELADON_CITY",
+      "map": "MAP_CELADON_CITY",
+      "x": 51,
+      "y": 14
+    },
+    {
+      "id": "HEAL_LOCATION_CERULEAN_CITY",
+      "map": "MAP_CERULEAN_CITY",
+      "x": 27,
+      "y": 11
+    },
+    {
+      "id": "HEAL_LOCATION_CERULEAN_GSC",
+      "map": "MAP_CERULEAN_GSC",
+      "x": 19,
+      "y": 23
+    },
+    {
+      "id": "HEAL_LOCATION_CHERRYGROVE_CITY",
+      "map": "MAP_CHERRYGROVE_CITY",
+      "x": 52,
+      "y": 6
+    },
+    {
+      "id": "HEAL_LOCATION_CINNABAR_ISLAND",
+      "map": "MAP_CINNABAR_ISLAND",
+      "x": 17,
+      "y": 27
+    },
+    {
+      "id": "HEAL_LOCATION_CROSSGATE_TOWN",
+      "map": "MAP_CROSSGATE_TOWN",
+      "x": 50,
+      "y": 24
+    },
+    {
+      "id": "HEAL_LOCATION_CYANWOOD_CITY",
+      "map": "MAP_CYANWOOD_CITY",
+      "x": 28,
+      "y": 42
+    },
+    {
+      "id": "HEAL_LOCATION_ECRUTEAK_CITY",
+      "map": "MAP_ECRUTEAK_CITY",
+      "x": 46,
+      "y": 44
+    },
+    {
+      "id": "HEAL_LOCATION_FALL_CITY",
+      "map": "MAP_FALL_CITY",
+      "x": 16,
+      "y": 31
+    },
+    {
+      "id": "HEAL_LOCATION_FIVE_ISLAND",
+      "map": "MAP_FIVE_ISLAND",
+      "x": 17,
+      "y": 7
+    },
+    {
+      "id": "HEAL_LOCATION_FOUR_ISLAND",
+      "map": "MAP_FOUR_ISLAND",
+      "x": 17,
+      "y": 21
+    },
+    {
+      "id": "HEAL_LOCATION_FUCHSIA_CITY",
+      "map": "MAP_FUCHSIA_CITY",
+      "x": 10,
+      "y": 46
+    },
+    {
+      "id": "HEAL_LOCATION_GOLDENROD_CITY",
+      "map": "MAP_GOLDENROD_CITY",
+      "x": 23,
+      "y": 47
+    },
+    {
+      "id": "HEAL_LOCATION_INDIGO_PLATEAU",
+      "map": "MAP_INDIGO_PLATEAU",
+      "x": 14,
+      "y": 10
+    },
+    {
+      "id": "HEAL_LOCATION_JOHTO_BATTLE_TOWER",
+      "map": "MAP_JOHTO_BATTLE_TOWER",
+      "x": 13,
+      "y": 7
+    },
+    {
+      "id": "HEAL_LOCATION_JOHTO_SAFARI",
+      "map": "MAP_JOHTO_SAFARI",
+      "x": 8,
+      "y": 16
+    },
+    {
+      "id": "HEAL_LOCATION_KASADO_CITY",
+      "map": "MAP_KASADO_CITY",
+      "x": 11,
+      "y": 29
+    },
+    {
+      "id": "HEAL_LOCATION_KUGA_TOWN",
+      "map": "MAP_KUGA_TOWN",
+      "x": 51,
+      "y": 27
+    },
+    {
+      "id": "HEAL_LOCATION_LAKEOF_RAGE",
+      "map": "MAP_LAKEOF_RAGE",
+      "x": 47,
+      "y": 62
+    },
+    {
+      "id": "HEAL_LOCATION_LAROUSSE_CITY",
+      "map": "MAP_LAROUSSE_CITY",
+      "x": 36,
+      "y": 11
+    },
+    {
+      "id": "HEAL_LOCATION_LAVENDER_TOWN",
+      "map": "MAP_LAVENDER_TOWN",
+      "x": 9,
+      "y": 8
+    },
+    {
+      "id": "HEAL_LOCATION_MAHOGANY_TOWN",
+      "map": "MAP_MAHOGANY_TOWN",
+      "x": 22,
+      "y": 19
+    },
+    {
+      "id": "HEAL_LOCATION_MT_SILVER_F2",
+      "map": "MAP_MT_SILVER_F2",
+      "x": 20,
+      "y": 12
+    },
+    {
+      "id": "HEAL_LOCATION_NEW_BARK_TOWN",
+      "map": "MAP_NEW_BARK_TOWN",
+      "x": 16,
+      "y": 8
+    },
+    {
+      "id": "HEAL_LOCATION_OLIVINE_CITY",
+      "map": "MAP_OLIVINE_CITY",
+      "x": 19,
+      "y": 31
+    },
+    {
+      "id": "HEAL_LOCATION_ONE_ISLAND",
+      "map": "MAP_ONE_ISLAND",
+      "x": 15,
+      "y": 6
+    },
+    {
+      "id": "HEAL_LOCATION_PALLET_TOWN",
+      "map": "MAP_PALLET_TOWN",
+      "x": 28,
+      "y": 32
+    },
+    {
+      "id": "HEAL_LOCATION_PEWTER_CITY",
+      "map": "MAP_PEWTER_CITY",
+      "x": 27,
+      "y": 38
+    },
+    {
+      "id": "HEAL_LOCATION_RING_TOWN",
+      "map": "MAP_RING_TOWN",
+      "x": 27,
+      "y": 23
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE10",
+      "map": "MAP_ROUTE10",
+      "x": 17,
+      "y": 4
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE3",
+      "map": "MAP_ROUTE3",
+      "x": 78,
+      "y": 21
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE32",
+      "map": "MAP_ROUTE32",
+      "x": 19,
+      "y": 129
+    },
+    {
+      "id": "HEAL_LOCATION_SAFFRON_CITY",
+      "map": "MAP_SAFFRON_CITY",
+      "x": 16,
+      "y": 42
+    },
+    {
+      "id": "HEAL_LOCATION_SEVEN_ISLAND",
+      "map": "MAP_SEVEN_ISLAND",
+      "x": 12,
+      "y": 4
+    },
+    {
+      "id": "HEAL_LOCATION_SIX_ISLAND",
+      "map": "MAP_SIX_ISLAND",
+      "x": 10,
+      "y": 12
+    },
+    {
+      "id": "HEAL_LOCATION_SUMMERLAND",
+      "map": "MAP_SUMMERLAND",
+      "x": 44,
+      "y": 11
+    },
+    {
+      "id": "HEAL_LOCATION_THREE_ISLAND",
+      "map": "MAP_THREE_ISLAND",
+      "x": 13,
+      "y": 28
+    },
+    {
+      "id": "HEAL_LOCATION_TWO_ISLAND",
+      "map": "MAP_TWO_ISLAND",
+      "x": 21,
+      "y": 8
+    },
+    {
+      "id": "HEAL_LOCATION_VERMILION_CITY",
+      "map": "MAP_VERMILION_CITY",
+      "x": 20,
+      "y": 5
+    },
+    {
+      "id": "HEAL_LOCATION_VIOLET_CITY",
+      "map": "MAP_VIOLET_CITY",
+      "x": 56,
+      "y": 65
+    },
+    {
+      "id": "HEAL_LOCATION_VIRIDIAN_CITY",
+      "map": "MAP_VIRIDIAN_CITY",
+      "x": 41,
+      "y": 44
+    },
+    {
+      "id": "HEAL_LOCATION_WHITESTONE_CITY",
+      "map": "MAP_WHITESTONE_CITY",
+      "x": 16,
+      "y": 44
+    },
+    {
+      "id": "HEAL_LOCATION_WINTOWN",
+      "map": "MAP_WINTOWN",
+      "x": 27,
+      "y": 28
     }
   ]
 }

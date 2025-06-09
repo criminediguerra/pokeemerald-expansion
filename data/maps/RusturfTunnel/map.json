@@ -12,7 +12,7 @@
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": null,
   "object_events": [
     {
       "local_id": "LOCALID_RUSTURF_TUNNEL_WANDAS_BF",
@@ -82,6 +82,7 @@
       "flag": "FLAG_HIDE_RUSTURF_TUNNEL_BRINEY"
     },
     {
+      "local_id": "LOCALID_RUSTURF_TUNNEL_GRUNT",
       "graphics_id": "OBJ_EVENT_GFX_ROCKET",
       "x": 14,
       "y": 5,
@@ -219,7 +220,5 @@
       "script": "RusturfTunnel_EventScript_TunnelBlockagePos3"
     }
   ],
-  "bg_events": [
-
-  ]
+  "bg_events": []
 }

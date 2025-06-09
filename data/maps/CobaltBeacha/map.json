@@ -89,7 +89,5 @@
       "script": "CobaltBeacha_Warp"
     }
   ],
-  "bg_events": [
-
-  ]
+  "bg_events": []
 }

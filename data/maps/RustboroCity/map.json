@@ -161,6 +161,7 @@
       "flag": "FLAG_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE_1"
     },
     {
+      "local_id": "LOCALID_RUSTBORO_GRUNT",
       "graphics_id": "OBJ_EVENT_GFX_ROCKET",
       "x": 13,
       "y": 21,

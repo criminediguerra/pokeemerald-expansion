@@ -100,9 +100,7 @@
       "dest_warp_id": "29"
     }
   ],
-  "coord_events": [
-
-  ],
+  "coord_events": [],
   "bg_events": [
     {
       "type": "sign",

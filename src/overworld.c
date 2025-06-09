@@ -1151,9 +1151,9 @@ static bool16 CinnabarLabMusic(struct WarpData *warp)
 {
     if (VarGet(VAR_CINNABAR_LAB_MUSIC))
         return FALSE;
-    else if (warp->mapGroup != MAP_GROUP(CINNABAR_LAB))
+    else if (warp->mapGroup != MAP_GROUP(MAP_CINNABAR_LAB))
         return FALSE;
-    else if (warp->mapNum == MAP_NUM(CINNABAR_LAB))
+    else if (warp->mapNum == MAP_NUM(MAP_CINNABAR_LAB))
         return TRUE;
     else
         return FALSE;

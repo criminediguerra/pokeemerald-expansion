@@ -118,7 +118,6 @@ void SetRegionMapDataForZoom(void);
 
 //Pokenav Fly funcs
 u32 FilterFlyDestination(struct RegionMap* regionMap);
-void SetFlyDestination(struct RegionMap* regionMap);
 
 extern const struct RegionMapLocation gRegionMapEntries[];
 

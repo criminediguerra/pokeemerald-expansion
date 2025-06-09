@@ -5,6 +5,10 @@
 // DO NOT MODIFY THIS FILE! It is auto-generated from data/maps/map_groups.json
 //
 
+//
+// DO NOT MODIFY THIS FILE! It is auto-generated from data/maps/map_groups.json
+//
+
 // gMapGroup_TownsAndRoutesKanto
 #define MAP_PALLET_TOWN                         (0 | (0 << 8))
 #define MAP_VIRIDIAN_CITY                       (1 | (0 << 8))

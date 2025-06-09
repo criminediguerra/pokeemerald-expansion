@@ -3,7 +3,7 @@
   "name": "WeepthChamber",
   "layout": "LAYOUT_WEEPTH_CHAMBER",
   "music": "ALPHDEEP",
-  "region_map_section": "MAPSEC_TANOBY_CHAMBERS",
+  "region_map_section": "MAPSEC_WEEPTH_CHAMBER",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERGROUND",
@@ -12,10 +12,8 @@
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
-  "object_events": [
-
-  ],
+  "connections": null,
+  "object_events": [],
   "warp_events": [
     {
       "x": 16,
@@ -32,10 +30,6 @@
       "dest_warp_id": "5"
     }
   ],
-  "coord_events": [
-
-  ],
-  "bg_events": [
-
-  ]
+  "coord_events": [],
+  "bg_events": []
 }

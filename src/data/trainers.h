@@ -42179,7 +42179,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 16877
-    [TRAINER_BROCK_1] =
+    [DIFFICULTY_NORMAL][TRAINER_BROCK_1] =
     {
 #line 16878
         .trainerName = _("BROCK"),
@@ -42193,7 +42193,7 @@ F_TRAINER_FEMALE |
 #line 16883
         .items = { ITEM_POTION, ITEM_POTION },
 #line 16884
-        .doubleBattle = FALSE,
+        .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 16885
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 3,
@@ -42258,7 +42258,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 16911
-    [TRAINER_BROCK_2] =
+    [DIFFICULTY_NORMAL][TRAINER_BROCK_2] =
     {
 #line 16912
         .trainerName = _("BROCK"),
@@ -42272,7 +42272,7 @@ F_TRAINER_FEMALE |
 #line 16917
         .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
 #line 16918
-        .doubleBattle = FALSE,
+        .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 16919
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 4,
@@ -42357,7 +42357,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 16953
-    [TRAINER_BROCK_3] =
+    [DIFFICULTY_NORMAL][TRAINER_BROCK_3] =
     {
 #line 16954
         .trainerName = _("BROCK"),
@@ -42371,7 +42371,7 @@ F_TRAINER_FEMALE |
 #line 16959
         .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
 #line 16960
-        .doubleBattle = FALSE,
+        .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 16961
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 4,
@@ -42456,7 +42456,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 16995
-    [TRAINER_BROCK_4] =
+    [DIFFICULTY_NORMAL][TRAINER_BROCK_4] =
     {
 #line 16996
         .trainerName = _("BROCK"),
@@ -42470,7 +42470,7 @@ F_TRAINER_FEMALE |
 #line 17001
         .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
 #line 17002
-        .doubleBattle = FALSE,
+        .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 17003
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 4,
@@ -42555,7 +42555,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 17037
-    [TRAINER_BROCK_5] =
+    [DIFFICULTY_NORMAL][TRAINER_BROCK_5] =
     {
 #line 17038
         .trainerName = _("BROCK"),
@@ -42569,7 +42569,7 @@ F_TRAINER_FEMALE |
 #line 17043
         .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
 #line 17044
-        .doubleBattle = FALSE,
+        .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 17045
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 4,
@@ -42654,7 +42654,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 17079
-    [TRAINER_BROCK_6] =
+    [DIFFICULTY_NORMAL][TRAINER_BROCK_6] =
     {
 #line 17080
         .trainerName = _("BROCK"),
@@ -42668,7 +42668,7 @@ F_TRAINER_FEMALE |
 #line 17085
         .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
 #line 17086
-        .doubleBattle = FALSE,
+        .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 17087
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 5,
@@ -42771,7 +42771,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 17129
-    [TRAINER_BROCK_7] =
+    [DIFFICULTY_NORMAL][TRAINER_BROCK_7] =
     {
 #line 17130
         .trainerName = _("BROCK"),
@@ -42785,7 +42785,7 @@ F_TRAINER_FEMALE |
 #line 17135
         .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
 #line 17136
-        .doubleBattle = FALSE,
+        .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 17137
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 6,
@@ -42908,7 +42908,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 17187
-    [TRAINER_BROCK_8] =
+    [DIFFICULTY_NORMAL][TRAINER_BROCK_8] =
     {
 #line 17188
         .trainerName = _("BROCK"),
@@ -42922,7 +42922,7 @@ F_TRAINER_FEMALE |
 #line 17193
         .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
 #line 17194
-        .doubleBattle = FALSE,
+        .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 17195
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 6,
@@ -43045,7 +43045,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 17245
-    [TRAINER_BROCK_9] =
+    [DIFFICULTY_NORMAL][TRAINER_BROCK_9] =
     {
 #line 17246
         .trainerName = _("BROCK"),
@@ -43059,7 +43059,7 @@ F_TRAINER_FEMALE |
 #line 17251
         .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
 #line 17252
-        .doubleBattle = FALSE,
+        .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 17253
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 6,
@@ -43182,7 +43182,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 17303
-    [TRAINER_BROCK_10] =
+    [DIFFICULTY_NORMAL][TRAINER_BROCK_10] =
     {
 #line 17304
         .trainerName = _("BROCK"),
@@ -43196,7 +43196,7 @@ F_TRAINER_FEMALE |
 #line 17309
         .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
 #line 17310
-        .doubleBattle = FALSE,
+        .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 17311
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 6,

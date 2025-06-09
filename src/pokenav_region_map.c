@@ -502,7 +502,6 @@ static u32 LoopedTask_TreatAsPokeNavFlyMap(s32 taskState)
     case 0:
         PlaySE(SE_SELECT);
         struct RegionMap* regionMap = GetSubstructPtr(POKENAV_SUBSTRUCT_REGION_MAP);
-        SetFlyDestination(regionMap);
         gSkipShowMonAnim = TRUE;
         ReturnToFieldFromFlyMapSelect();
 

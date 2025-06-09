@@ -65,13 +65,7 @@
       "flag": "FLAG_RECEIVED_HM_DIVE"
     }
   ],
-  "warp_events": [
-
-  ],
-  "coord_events": [
-
-  ],
-  "bg_events": [
-
-  ]
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": []
 }

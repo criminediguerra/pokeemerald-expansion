@@ -101,9 +101,7 @@
       "flag": "FLAG_HIDE_ROUTE_119_KECLEON_1"
     }
   ],
-  "warp_events": [
-
-  ],
+  "warp_events": [],
   "coord_events": [
     {
       "type": "weather",

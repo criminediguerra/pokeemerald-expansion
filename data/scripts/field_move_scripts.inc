@@ -1,4 +1,45 @@
 @ Interact with cuttable tree
+
+EventScript_CutBarrier::
+	lockall
+	goto_if_unset FLAG_BADGE01_GET, EventScript_CheckBarrierCantCut
+	checkpartymove MOVE_CUT
+	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CheckBarrierCantCut
+	setfieldeffectargument 0, VAR_RESULT
+	bufferpartymonnick STR_VAR_1, VAR_RESULT
+	buffermovename STR_VAR_2, MOVE_CUT
+	msgbox Text_WantToCutBarrier, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, EventScript_CancelCut
+	msgbox Text_MonUsedFieldMove, MSGBOX_DEFAULT
+	closemessage
+EventScript_CutBarrierCommon:
+	isfollowerfieldmoveuser VAR_0x8004
+	setfieldeffectargument 3, VAR_0x8004 @ skip pose if so
+	dofieldeffect FLDEFF_USE_CUT_ON_TREE
+	waitstate
+EventScript_CutBarrierDown:: @ fallthrough
+	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
+	call_if_eq VAR_0x8004, TRUE, EventScript_FollowerFieldMove
+	applymovement VAR_LAST_TALKED, Movement_CutTreeDown
+	waitmovement 0
+	removeobject VAR_LAST_TALKED
+	releaseall
+	end
+
+EventScript_CheckBarrierCantCut::
+	msgbox Text_BarrierCantCut, MSGBOX_DEFAULT
+	releaseall
+	end
+
+Text_WantToCutBarrier:
+	.string "This barrier looks like it can\n"
+	.string "be CUT down!\p"
+	.string "Would you like to CUT it?$"
+
+Text_BarrierCantCut:
+	.string "This barrier looks like it can\n"
+	.string "be CUT down!$"
+
 EventScript_CutTree::
 	lockall
 	goto_if_unset FLAG_BADGE01_GET, EventScript_CheckTreeCantCut
@@ -444,3 +485,105 @@ EventScript_UseDefog::
 	waitstate
 	releaseall
 	end
+
+@ Interact with Whirlpool
+EventScript_Whirlpool::
+	lockall
+	goto_if_unset FLAG_BADGE08_GET, EventScript_CantWhirlpool
+	checkpartymove MOVE_WHIRLPOOL
+	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantWhirlpool
+	setfieldeffectargument 0, VAR_RESULT
+	bufferpartymonnick STR_VAR_1, VAR_RESULT
+	buffermovename STR_VAR_2, MOVE_WHIRLPOOL
+	msgbox Text_WantToWhirlpool, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, EventScript_CancelWhirlpool
+	msgbox Text_MonUsedFieldMove, MSGBOX_DEFAULT
+	closemessage
+	dofieldeffect FLDEFF_USE_WATERFALL
+	waitstate
+	goto EventScript_DoWhirlpool
+	end
+
+EventScript_WhirlpoolMovement_North::
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_WhirlpoolMovement_North
+	waitmovement 0
+	end
+
+Movement_WhirlpoolMovement_North:
+	walk_up
+	walk_up
+	walk_up
+	step_end
+
+EventScript_WhirlpoolMovement_South::
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_WhirlpoolMovement_South
+	waitmovement 0
+	end
+
+Movement_WhirlpoolMovement_South:
+	walk_down
+	walk_down
+	walk_down
+	step_end
+
+EventScript_WhirlpoolMovement_Left::
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_WhirlpoolMovement_Left
+	waitmovement 0
+	end
+
+Movement_WhirlpoolMovement_Left:
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
+EventScript_WhirlpoolMovement_Right::
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_WhirlpoolMovement_Right
+	waitmovement 0
+	end
+
+Movement_WhirlpoolMovement_Right:
+	walk_right
+	walk_right
+	walk_right
+	step_end
+
+EventScript_CantWhirlpool::
+	msgbox Text_CantWhirlpool, MSGBOX_DEFAULT
+	releaseall
+	end
+
+EventScript_CancelWhirlpool::
+	closemessage
+	releaseall
+	end
+
+@ Use rock smash from party menu
+EventScript_UseWhirlpool::
+	lockall
+	dofieldeffect FLDEFF_USE_WATERFALL
+	waitstate
+	goto EventScript_DoWhirlpool
+	end
+
+EventScript_DoWhirlpool::
+	goto_if_eq VAR_FACING, DIR_NORTH, EventScript_WhirlpoolMovement_North
+	goto_if_eq VAR_FACING, DIR_SOUTH, EventScript_WhirlpoolMovement_South
+	goto_if_eq VAR_FACING, DIR_WEST, EventScript_WhirlpoolMovement_Left
+	goto_if_eq VAR_FACING, DIR_EAST, EventScript_WhirlpoolMovement_Right
+	goto_if_eq VAR_RESULT, FALSE, EventScript_EndWhirlpool
+	waitstate
+	releaseall
+	end
+
+EventScript_EndWhirlpool::
+	releaseall
+	end
+
+Text_WantToWhirlpool:
+	.string "It's a huge swirl of water.\n"
+	.string "Would you like to use WHIRLPOOL?$"
+
+Text_CantWhirlpool:
+	.string "It's a huge swirl of water.\n"
+	.string "a POKéMON may be able to cross it.$"
