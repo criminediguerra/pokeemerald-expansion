@@ -216,8 +216,8 @@
       "x": 7,
       "y": 5,
       "elevation": 0,
-      "dest_map": "MAP_CINNABAR_ISLAND",
-      "dest_warp_id": "10"
+      "dest_map": "MAP_MT_CHIMNEY",
+      "dest_warp_id": "0"
     },
     {
       "x": 10,
