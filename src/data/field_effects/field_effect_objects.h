@@ -1200,6 +1200,14 @@ static const struct SpriteFrameImage sPicTable_HotSpringsWater[] = {
     obj_frame_tiles(gFieldEffectObjectPic_HotSpringsWater),
 };
 
+static const struct SpriteFrameImage sPicTable_SnowHeap[] = {
+    obj_frame_tiles(gFieldEffectObjectPic_SnowHeap),
+};
+
+static const struct SpriteFrameImage sPicTable_SwampMud[] = {
+    obj_frame_tiles(gFieldEffectObjectPic_SwampMud),
+};
+
 static const union AnimCmd sAnim_HotSpringsWater[] =
 {
     ANIMCMD_FRAME(0, 4),
@@ -1220,6 +1228,30 @@ const struct SpriteTemplate gFieldEffectObjectTemplate_HotSpringsWater = {
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = UpdateHotSpringsWaterFieldEffect,
 };
+
+const struct SpriteTemplate gFieldEffectObjectTemplate_SnowHeap = {
+    .tileTag = TAG_NONE,
+    .paletteTag = FLDEFF_PAL_TAG_SNOW_HEAP,
+    .oam = &gObjectEventBaseOam_16x16,
+    .anims = sAnimTable_HotSpringsWater,
+    .images = sPicTable_SnowHeap,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = UpdateHotSpringsWaterFieldEffect,
+};
+
+const struct SpritePalette gSpritePalette_SnowHeap = {gFieldEffectObjectPalette_SnowHeap, FLDEFF_PAL_TAG_SNOW_HEAP};
+
+const struct SpriteTemplate gFieldEffectObjectTemplate_SwampMud = {
+    .tileTag = TAG_NONE,
+    .paletteTag = FLDEFF_PAL_TAG_SWAMP_MUD,
+    .oam = &gObjectEventBaseOam_16x16,
+    .anims = sAnimTable_HotSpringsWater,
+    .images = sPicTable_SwampMud,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = UpdateHotSpringsWaterFieldEffect,
+};
+
+const struct SpritePalette gSpritePalette_SwampMud = {gFieldEffectObjectPalette_SwampMud, FLDEFF_PAL_TAG_SWAMP_MUD};
 
 static const struct SpriteFrameImage sPicTable_AshPuff[] = {
     overworld_frame(gFieldEffectObjectPic_AshPuff, 2, 2, 0),

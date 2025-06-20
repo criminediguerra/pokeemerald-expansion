@@ -81,6 +81,8 @@ gFieldEffectScriptPointers::
 	.4byte gFieldEffectScript_TracksSpot                @ FLDEFF_TRACKS_SPOT
 	.4byte gFieldEffectScript_CaveDust                  @ FLDEFF_CAVE_DUST
 	.4byte gFieldEffectScript_Defog                     @ FLDEFF_DEFOG
+	.4byte gFieldEffectScript_SwampMud		            @ FLDEFF_SWAMP_MUD
+	.4byte gFieldEffectScript_SnowHeap		            @ FLDEFF_SNOW_HEAP
 
 gFieldEffectScript_ExclamationMarkIcon1::
 	field_eff_callnative FldEff_ExclamationMarkIcon
@@ -384,3 +386,11 @@ gFieldEffectScript_CaveDust::
 gFieldEffectScript_Defog::
     field_eff_callnative FldEff_Defog
     field_eff_end
+
+gFieldEffectScript_SwampMud::
+	field_eff_loadfadedpal_callnative gSpritePalette_SwampMud, FldEff_SwampMud
+	field_eff_end
+
+gFieldEffectScript_SnowHeap::
+	field_eff_loadfadedpal_callnative gSpritePalette_SnowHeap, FldEff_SnowHeap
+	field_eff_end

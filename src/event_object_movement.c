@@ -10208,6 +10208,11 @@ void GroundEffect_ShortGrass(struct ObjectEvent *objEvent, struct Sprite *sprite
 
 void GroundEffect_HotSprings(struct ObjectEvent *objEvent, struct Sprite *sprite)
 {
+  if  (VarGet(VAR_MUD_OR_SNOW) == 1)
+    StartFieldEffectForObjectEvent(FLDEFF_SWAMP_MUD, objEvent);
+  else if  (VarGet(VAR_MUD_OR_SNOW) == 2)
+    StartFieldEffectForObjectEvent(FLDEFF_SNOW_HEAP, objEvent);
+  else
     StartFieldEffectForObjectEvent(FLDEFF_HOT_SPRINGS_WATER, objEvent);
 }
 

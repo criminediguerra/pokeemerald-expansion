@@ -134,44 +134,7 @@
       "dest_warp_id": "2"
     }
   ],
-  "coord_events": [
-    {
-      "type": "trigger",
-      "x": 27,
-      "y": 57,
-      "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "Route34_Gate"
-    },
-    {
-      "type": "trigger",
-      "x": 26,
-      "y": 57,
-      "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "Route34_Gate"
-    },
-    {
-      "type": "trigger",
-      "x": 25,
-      "y": 57,
-      "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "Route34_Gate"
-    },
-    {
-      "type": "trigger",
-      "x": 28,
-      "y": 57,
-      "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "Route34_Gate"
-    }
-  ],
+  "coord_events": [],
   "bg_events": [
     {
       "type": "sign",

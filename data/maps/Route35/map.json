@@ -178,8 +178,8 @@
       "dest_warp_id": "3"
     },
     {
-      "x": 9,
-      "y": 59,
+      "x": 4,
+      "y": 58,
       "elevation": 0,
       "dest_map": "MAP_JOHTO_GATE",
       "dest_warp_id": "3"
@@ -199,35 +199,7 @@
       "dest_warp_id": "10"
     }
   ],
-  "coord_events": [
-    {
-      "type": "trigger",
-      "x": 10,
-      "y": 59,
-      "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "Route35_Gate"
-    },
-    {
-      "type": "trigger",
-      "x": 9,
-      "y": 59,
-      "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "Route35_Gate"
-    },
-    {
-      "type": "trigger",
-      "x": 11,
-      "y": 59,
-      "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "Route35_Gate"
-    }
-  ],
+  "coord_events": [],
   "bg_events": [
     {
       "type": "sign",

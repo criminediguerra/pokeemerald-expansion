@@ -15,6 +15,7 @@
 #include "constants/field_effects.h"
 #include "constants/rgb.h"
 #include "constants/songs.h"
+#include "event_data.h"
 
 #define OBJ_EVENT_PAL_TAG_NONE 0x11FF // duplicate of define in event_object_movement.c
 #define PAL_TAG_REFLECTION_OFFSET 0x2000 // reflection tag value is paletteTag + 0x2000
@@ -1007,12 +1008,55 @@ u32 FldEff_HotSpringsWater(void)
     return 0;
 }
 
+u32 FldEff_SwampMud(void)
+{
+    u8 objectEventId = GetObjectEventIdByLocalIdAndMap(gFieldEffectArguments[0], gFieldEffectArguments[1], gFieldEffectArguments[2]);
+    struct ObjectEvent *objectEvent = &gObjectEvents[objectEventId];
+    u8 spriteId = CreateSpriteAtEnd(gFieldEffectObjectTemplatePointers[FLDEFFOBJ_SWAMP_MUD], 0, 0, 0);
+    if (spriteId != MAX_SPRITES)
+    {
+        struct Sprite *sprite = &gSprites[spriteId];
+        sprite->coordOffsetEnabled = TRUE;
+        sprite->oam.priority = gSprites[objectEvent->spriteId].oam.priority;
+        sprite->sLocalId = gFieldEffectArguments[0];
+        sprite->sMapNum = gFieldEffectArguments[1];
+        sprite->sMapGroup = gFieldEffectArguments[2];
+        sprite->sPrevX = gSprites[objectEvent->spriteId].x; // Unused
+        sprite->sPrevY = gSprites[objectEvent->spriteId].y; // Unused
+    }
+    return 0;
+}
+
+u32 FldEff_SnowHeap(void)
+{
+    u8 objectEventId = GetObjectEventIdByLocalIdAndMap(gFieldEffectArguments[0], gFieldEffectArguments[1], gFieldEffectArguments[2]);
+    struct ObjectEvent *objectEvent = &gObjectEvents[objectEventId];
+    u8 spriteId = CreateSpriteAtEnd(gFieldEffectObjectTemplatePointers[FLDEFFOBJ_SNOW_HEAP], 0, 0, 0);
+    if (spriteId != MAX_SPRITES)
+    {
+        struct Sprite *sprite = &gSprites[spriteId];
+        sprite->coordOffsetEnabled = TRUE;
+        sprite->oam.priority = gSprites[objectEvent->spriteId].oam.priority;
+        sprite->sLocalId = gFieldEffectArguments[0];
+        sprite->sMapNum = gFieldEffectArguments[1];
+        sprite->sMapGroup = gFieldEffectArguments[2];
+        sprite->sPrevX = gSprites[objectEvent->spriteId].x; // Unused
+        sprite->sPrevY = gSprites[objectEvent->spriteId].y; // Unused
+    }
+    return 0;
+}
+
 void UpdateHotSpringsWaterFieldEffect(struct Sprite *sprite)
 {
     u8 objectEventId;
 
     if (TryGetObjectEventIdByLocalIdAndMap(sprite->sLocalId, sprite->sMapNum, sprite->sMapGroup, &objectEventId) || !gObjectEvents[objectEventId].inHotSprings)
     {
+      if  (VarGet(VAR_MUD_OR_SNOW) == 1)
+        FieldEffectStop(sprite, FLDEFF_SWAMP_MUD);
+      else if  (VarGet(VAR_MUD_OR_SNOW) == 2)
+        FieldEffectStop(sprite, FLDEFF_SNOW_HEAP);
+      else
         FieldEffectStop(sprite, FLDEFF_HOT_SPRINGS_WATER);
     }
     else

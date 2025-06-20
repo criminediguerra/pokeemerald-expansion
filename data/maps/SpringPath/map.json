@@ -1,0 +1,31 @@
+{
+  "id": "MAP_SPRING_PATH",
+  "name": "SpringPath",
+  "layout": "LAYOUT_SPRING_PATH",
+  "music": "MUS_SEALED_CHAMBER",
+  "region_map_section": "MAPSEC_MYSTERY_ZONE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ROUTE214",
+      "offset": -54,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_SENDOFF_SPRING",
+      "offset": 14,
+      "direction": "up"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": []
+}

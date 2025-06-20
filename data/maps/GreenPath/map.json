@@ -24,9 +24,7 @@
       "direction": "up"
     }
   ],
-  "object_events": [
-
-  ],
+  "object_events": [],
   "warp_events": [
     {
       "x": 64,
@@ -95,7 +93,5 @@
       "script": "GreenPath_PatternOut"
     }
   ],
-  "bg_events": [
-
-  ]
+  "bg_events": []
 }

@@ -172,6 +172,13 @@
       "elevation": 0,
       "dest_map": "MAP_JOHTO_GATE",
       "dest_warp_id": "12"
+    },
+    {
+      "x": 18,
+      "y": 63,
+      "elevation": 0,
+      "dest_map": "MAP_JOHTO_GATE",
+      "dest_warp_id": "11"
     }
   ],
   "coord_events": [],

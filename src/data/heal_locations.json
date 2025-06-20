@@ -407,6 +407,12 @@
       "map": "MAP_WINTOWN",
       "x": 27,
       "y": 28
+    },
+    {
+      "id": "HEAL_LOCATION_SINNOH_LEAGUE",
+      "map": "MAP_SINNOH_LEAGUE",
+      "x": 16,
+      "y": 14
     }
   ]
 }
