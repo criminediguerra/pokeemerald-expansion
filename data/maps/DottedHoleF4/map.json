@@ -4,8 +4,8 @@
   "layout": "LAYOUT_DOTTED_HOLE_F4",
   "music": "MUS_MT_PYRE",
   "region_map_section": "MAPSEC_DOTTED_HOLE",
-  "requires_flash": false,
-  "weather": "WEATHER_NONE",
+  "requires_flash": true,
+  "weather": "WEATHER_SHADE",
   "map_type": "MAP_TYPE_UNDERGROUND",
   "allow_cycling": true,
   "allow_escaping": true,
@@ -19,9 +19,7 @@
       "direction": "dive"
     }
   ],
-  "object_events": [
-
-  ],
+  "object_events": [],
   "warp_events": [
     {
       "x": 14,
@@ -42,7 +40,5 @@
       "script": "DottedHole_WarpF4"
     }
   ],
-  "bg_events": [
-
-  ]
+  "bg_events": []
 }

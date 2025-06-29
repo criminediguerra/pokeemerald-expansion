@@ -47,3 +47,12 @@ DottedHole_Right_4::
 DottedHoleF1_OnResume:
 	setdivewarp MAP_DOTTED_HOLE_F2, 36, 59
 	end
+
+DottedHoleF1_Fire::
+	msgbox DottedHoleF1_Text_Fire, MSGBOX_SIGN
+	end
+
+DottedHoleF1_Text_Fire:
+	.string "This brazier looks very old...\n"
+	.string "It looks like the POKéMON that crawls\l"
+	.string "these ruins are taking care of it.$"
