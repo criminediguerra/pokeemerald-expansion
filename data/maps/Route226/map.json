@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_SURVIVAL_AREA",
-      "offset": 0,
+      "offset": -2,
       "direction": "left"
     },
     {

@@ -67,7 +67,7 @@
 #define FLAG_VISITED_LAKEOFRAGE          0x35 // Unused Flag
 #define FLAG_VISITED_BLACKTHORN          0x36 // Unused Flag
 #define FLAG_VISITED_JOHTOBATTLETOWER    0x37 // Unused Flag
-#define FLAG_VISITED_JOHTOSAFARI         0x38 // Unused Flag
+#define FLAG_VISITED_BLUEFIN         0x38 // Unused Flag
 #define FLAG_VISITED_SAFFRON             0x39 // Unused Flag
 #define FLAG_VISITED_ROUTE3              0x3A // Unused Flag
 #define FLAG_VISITED_ROUTE10             0x3B // Unused Flag
@@ -715,8 +715,8 @@
 #define FLAG_VISITED_WHITESTONE          0x29C // Unused Flag
 #define FLAG_VISITED_KASADO              0x29D // Unused Flag
 #define FLAG_VISITED_KUGA                0x29E // Unused Flag
-#define FLAG_UNUSED_0x29F                0x29F // Unused Flag
-#define FLAG_UNUSED_0x2A0                0x2A0 // Unused Flag
+#define FLAG_VISITED_LAROUSSE            0x29F // Unused Flag
+#define FLAG_VISITED_ASHLEAF             0x2A0 // Unused Flag
 #define FLAG_UNUSED_0x2A1                0x2A1 // Unused Flag
 #define FLAG_UNUSED_0x2A2                0x2A2 // Unused Flag
 #define FLAG_UNUSED_0x2A3                0x2A3 // Unused Flag

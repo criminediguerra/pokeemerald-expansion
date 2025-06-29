@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_ROUTE13",
-      "offset": 2,
+      "offset": -2,
       "direction": "up"
     },
     {
@@ -91,13 +91,7 @@
       "flag": "0"
     }
   ],
-  "warp_events": [
-
-  ],
-  "coord_events": [
-
-  ],
-  "bg_events": [
-
-  ]
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": []
 }

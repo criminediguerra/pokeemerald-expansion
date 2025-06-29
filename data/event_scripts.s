@@ -2404,3 +2404,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/FuegoIronworks/scripts.inc"
 
 	.include "data/maps/MtStarkF1/scripts.inc"
+
+	.include "data/maps/DottedHoleF6/scripts.inc"
+
+	.include "data/maps/DottedHoleF7/scripts.inc"
+
+	.include "data/maps/CyanwoodCenterF1/scripts.inc"

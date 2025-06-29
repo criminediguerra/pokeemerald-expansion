@@ -1121,7 +1121,7 @@ const struct Tileset gTileset_Tropical =
     .palettes = gTilesetPalettes_Tropical,
     .metatiles = gMetatiles_Tropical,
     .metatileAttributes = gMetatileAttributes_Tropical,
-    .callback = NULL,
+    .callback = InitTilesetAnim_General,
 };
 
 const struct Tileset gTileset_MtStark =

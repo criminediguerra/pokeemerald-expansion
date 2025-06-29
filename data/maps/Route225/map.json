@@ -20,12 +20,27 @@
     },
     {
       "map": "MAP_SURVIVAL_AREA",
-      "offset": 0,
+      "offset": -2,
       "direction": "right"
     }
   ],
   "object_events": [],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 23,
+      "y": 90,
+      "elevation": 0,
+      "dest_map": "MAP_FIGHT_AREA",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 22,
+      "y": 90,
+      "elevation": 0,
+      "dest_map": "MAP_FIGHT_AREA",
+      "dest_warp_id": "2"
+    }
+  ],
   "coord_events": [],
   "bg_events": []
 }

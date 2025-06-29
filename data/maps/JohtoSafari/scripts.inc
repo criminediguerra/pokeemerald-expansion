@@ -3,5 +3,5 @@ JohtoSafari_MapScripts::
 	.byte 0
 
 JohtoSafari_OnTransition:
-	setflag FLAG_VISITED_JOHTOSAFARI
+	setflag FLAG_VISITED_BLUEFIN
 	end

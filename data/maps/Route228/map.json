@@ -20,12 +20,20 @@
     },
     {
       "map": "MAP_ROUTE229",
-      "offset": 2,
+      "offset": 4,
       "direction": "down"
     }
   ],
   "object_events": [],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 22,
+      "y": 93,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE229",
+      "dest_warp_id": "0"
+    }
+  ],
   "coord_events": [],
   "bg_events": []
 }

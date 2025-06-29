@@ -216,8 +216,8 @@
       "x": 7,
       "y": 5,
       "elevation": 0,
-      "dest_map": "MAP_PASTORIA_CITY",
-      "dest_warp_id": "1"
+      "dest_map": "MAP_FIGHT_AREA",
+      "dest_warp_id": "0"
     },
     {
       "x": 10,
