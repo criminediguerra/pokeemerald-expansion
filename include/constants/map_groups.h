@@ -130,16 +130,18 @@
 #define MAP_ROUTE50            (36 | (2 << 8))
 
 // gMapGroup_TownsAndRoutesWhirl
-#define MAP_CYANWOOD_CITY   (0 | (3 << 8))
-#define MAP_JOHTO_SAFARI    (1 | (3 << 8))
-#define MAP_WHITESTONE_CITY (2 | (3 << 8))
-#define MAP_KASADO_CITY     (3 | (3 << 8))
-#define MAP_KUGA_TOWN       (4 | (3 << 8))
-#define MAP_ROUTE47         (5 | (3 << 8))
-#define MAP_ROUTE48         (6 | (3 << 8))
-#define MAP_ROUTE51         (7 | (3 << 8))
-#define MAP_ROUTE52         (8 | (3 << 8))
-#define MAP_SILVER_STRAIT   (9 | (3 << 8))
+#define MAP_CYANWOOD_CITY            (0 | (3 << 8))
+#define MAP_JOHTO_SAFARI             (1 | (3 << 8))
+#define MAP_WHITESTONE_CITY          (2 | (3 << 8))
+#define MAP_KASADO_CITY              (3 | (3 << 8))
+#define MAP_KUGA_TOWN                (4 | (3 << 8))
+#define MAP_ROUTE47                  (5 | (3 << 8))
+#define MAP_ROUTE48                  (6 | (3 << 8))
+#define MAP_ROUTE51                  (7 | (3 << 8))
+#define MAP_ROUTE52                  (8 | (3 << 8))
+#define MAP_SILVER_STRAIT            (9 | (3 << 8))
+#define MAP_SILVER_STRAIT_UNDERWATER (10 | (3 << 8))
+#define MAP_ASHLEAF_TOWN_UNDERWATER  (11 | (3 << 8))
 
 // gMapGroup_TownsAndRoutesHoenn
 #define MAP_PETALBURG_CITY       (0 | (4 << 8))
@@ -337,8 +339,9 @@
 #define MAP_CYANWOOD_CENTER_TEST           (10 | (10 << 8))
 #define MAP_CYANWOOD_SEASHORE              (11 | (10 << 8))
 #define MAP_CYANWOOD_AQUARIUM              (12 | (10 << 8))
-#define MAP_CYANWOOD_INTERIORS             (13 | (10 << 8))
-#define MAP_CYANWOOD_GYM                   (14 | (10 << 8))
+#define MAP_CYANWOOD_AQUARIUM_F1           (13 | (10 << 8))
+#define MAP_CYANWOOD_INTERIORS             (14 | (10 << 8))
+#define MAP_CYANWOOD_GYM                   (15 | (10 << 8))
 
 // gMapGroup_IndoorLavaridge
 #define MAP_LAVARIDGE_TOWN_HERB_SHOP         (0 | (11 << 8))

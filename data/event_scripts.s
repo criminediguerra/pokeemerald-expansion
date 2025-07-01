@@ -2410,3 +2410,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/DottedHoleF7/scripts.inc"
 
 	.include "data/maps/CyanwoodCenterF1/scripts.inc"
+
+	.include "data/maps/CyanwoodAquariumF1/scripts.inc"
+
+	.include "data/maps/SilverStraitUnderwater/scripts.inc"
+
+	.include "data/maps/AshleafTownUnderwater/scripts.inc"

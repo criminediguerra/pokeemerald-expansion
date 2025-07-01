@@ -499,7 +499,7 @@ EventScript_Whirlpool::
 	goto_if_eq VAR_RESULT, NO, EventScript_CancelWhirlpool
 	msgbox Text_MonUsedFieldMove, MSGBOX_DEFAULT
 	closemessage
-	dofieldeffect FLDEFF_USE_WATERFALL
+	dofieldeffect FLDEFF_USE_WHIRLPOOL
 	waitstate
 	goto EventScript_DoWhirlpool
 	end
@@ -534,7 +534,6 @@ EventScript_WhirlpoolMovement_Left::
 Movement_WhirlpoolMovement_Left:
 	walk_left
 	walk_left
-	walk_left
 	step_end
 
 EventScript_WhirlpoolMovement_Right::
@@ -543,7 +542,6 @@ EventScript_WhirlpoolMovement_Right::
 	end
 
 Movement_WhirlpoolMovement_Right:
-	walk_right
 	walk_right
 	walk_right
 	step_end
@@ -561,7 +559,7 @@ EventScript_CancelWhirlpool::
 @ Use rock smash from party menu
 EventScript_UseWhirlpool::
 	lockall
-	dofieldeffect FLDEFF_USE_WATERFALL
+	dofieldeffect FLDEFF_USE_WHIRLPOOL
 	waitstate
 	goto EventScript_DoWhirlpool
 	end

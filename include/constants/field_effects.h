@@ -79,6 +79,7 @@
 #define FLDEFF_DEFOG                     74
 #define FLDEFF_SWAMP_MUD                 75
 #define FLDEFF_SNOW_HEAP                 76
+#define FLDEFF_USE_WHIRLPOOL             77
 
 #define FLDEFFOBJ_SHADOW_S              0
 #define FLDEFFOBJ_SHADOW_M              1

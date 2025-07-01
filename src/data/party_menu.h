@@ -832,6 +832,7 @@ struct
     [FIELD_MOVE_SWEET_SCENT]  = {SetUpFieldMove_SweetScent,  PARTY_MSG_CANT_USE_HERE},
 #if OW_DEFOG_FIELD_MOVE == TRUE
     [FIELD_MOVE_DEFOG]        = {SetUpFieldMove_Defog,       PARTY_MSG_CANT_USE_HERE},
+    [FIELD_MOVE_WHIRLPOOL]    = {SetUpFieldMove_Whirlpool,       PARTY_MSG_CANT_USE_HERE},
 #endif
 };
 

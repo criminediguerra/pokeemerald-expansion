@@ -83,6 +83,7 @@ gFieldEffectScriptPointers::
 	.4byte gFieldEffectScript_Defog                     @ FLDEFF_DEFOG
 	.4byte gFieldEffectScript_SwampMud		            @ FLDEFF_SWAMP_MUD
 	.4byte gFieldEffectScript_SnowHeap		            @ FLDEFF_SNOW_HEAP
+	.4byte gFieldEffectScript_UseWhirlpool		            @ FLDEFF_USE_WHIRLPOOL
 
 gFieldEffectScript_ExclamationMarkIcon1::
 	field_eff_callnative FldEff_ExclamationMarkIcon
@@ -393,4 +394,8 @@ gFieldEffectScript_SwampMud::
 
 gFieldEffectScript_SnowHeap::
 	field_eff_loadfadedpal_callnative gSpritePalette_SnowHeap, FldEff_SnowHeap
+	field_eff_end
+
+gFieldEffectScript_UseWhirlpool::
+	field_eff_callnative FldEff_UseWhirlpool
 	field_eff_end

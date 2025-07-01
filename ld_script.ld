@@ -241,6 +241,7 @@ SECTIONS {
         src/starter_choose.o(.text);
         src/wallclock.o(.text);
         src/fldeff_rocksmash.o(.text);
+        src/FldEff_UseWhirlpool.o(.text);
         src/fldeff_dig.o(.text);
         src/pokeblock.o(.text);
         src/fldeff_flash.o(.text);

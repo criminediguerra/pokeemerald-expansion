@@ -6036,7 +6036,7 @@
       "name": "WhirlF5_Layout",
       "width": 29,
       "height": 39,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/WhirlF5/border.bin",
       "blockdata_filepath": "data/layouts/WhirlF5/map.bin"
@@ -6235,7 +6235,7 @@
       "id": "LAYOUT_OLIVINE_LIGHTHOUSE_F1",
       "name": "OlivineLighthouseF1_Layout",
       "width": 21,
-      "height": 27,
+      "height": 26,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_OceanicMuseum",
       "border_filepath": "data/layouts/OlivineLighthouseF1/border.bin",
@@ -7434,7 +7434,7 @@
     {
       "id": "LAYOUT_CYANWOOD_AQUARIUM",
       "name": "CyanwoodAquarium_Layout",
-      "width": 65,
+      "width": 28,
       "height": 26,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_OceanicMuseum",
@@ -9845,7 +9845,7 @@
       "id": "LAYOUT_SILVER_STRAIT",
       "name": "SilverStrait_Layout",
       "width": 50,
-      "height": 70,
+      "height": 74,
       "primary_tileset": "gTileset_Silver_Rock_Island",
       "secondary_tileset": "gTileset_Sootopolis",
       "border_filepath": "data/layouts/SilverStrait/border.bin",
@@ -11040,6 +11040,36 @@
       "secondary_tileset": "gTileset_PokemonCenter",
       "border_filepath": "data/layouts/CyanwoodCenterF1/border.bin",
       "blockdata_filepath": "data/layouts/CyanwoodCenterF1/map.bin"
+    },
+    {
+      "id": "LAYOUT_CYANWOOD_AQUARIUM_F1",
+      "name": "CyanwoodAquariumF1_Layout",
+      "width": 28,
+      "height": 22,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_OceanicMuseum",
+      "border_filepath": "data/layouts/CyanwoodAquariumF1/border.bin",
+      "blockdata_filepath": "data/layouts/CyanwoodAquariumF1/map.bin"
+    },
+    {
+      "id": "LAYOUT_SILVER_STRAIT_UNDERWATER",
+      "name": "SilverStraitUnderwater_Layout",
+      "width": 52,
+      "height": 74,
+      "primary_tileset": "gTileset_GeneralStairs",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/SilverStraitUnderwater/border.bin",
+      "blockdata_filepath": "data/layouts/SilverStraitUnderwater/map.bin"
+    },
+    {
+      "id": "LAYOUT_ASHLEAF_TOWN_UNDERWATER",
+      "name": "AshleafTownUnderwater_Layout",
+      "width": 64,
+      "height": 60,
+      "primary_tileset": "gTileset_GeneralStairs",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/AshleafTownUnderwater/border.bin",
+      "blockdata_filepath": "data/layouts/AshleafTownUnderwater/map.bin"
     }
   ]
 }

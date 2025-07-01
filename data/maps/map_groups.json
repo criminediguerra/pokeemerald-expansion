@@ -179,7 +179,9 @@
     "Route48",
     "Route51",
     "Route52",
-    "SilverStrait"
+    "SilverStrait",
+    "SilverStraitUnderwater",
+    "AshleafTownUnderwater"
   ],
   "gMapGroup_TownsAndRoutesHoenn": [
     "PetalburgCity",
@@ -377,6 +379,7 @@
     "CyanwoodCenterTest",
     "CyanwoodSeashore",
     "CyanwoodAquarium",
+    "CyanwoodAquariumF1",
     "CyanwoodInteriors",
     "CyanwoodGym"
   ],

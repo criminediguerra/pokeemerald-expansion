@@ -55,4 +55,8 @@ bool8 FldEff_UseRockSmash(void);
 bool8 SetUpFieldMove_Defog(void);
 bool8 FldEff_Defog(void);
 
+// whirlpool
+bool8 SetUpFieldMove_Whirlpool(void);
+bool8 FldEff_UseWhirlpool(void);
+
 #endif // GUARD_FLDEFF_H

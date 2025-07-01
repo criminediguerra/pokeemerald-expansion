@@ -3,7 +3,7 @@
   "name": "WhirlF1",
   "layout": "LAYOUT_WHIRL_F1",
   "music": "WHIRL",
-  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "region_map_section": "MAPSEC_WHIRL",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",
   "map_type": "MAP_TYPE_UNDERGROUND",
