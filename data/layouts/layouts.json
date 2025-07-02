@@ -6757,17 +6757,17 @@
       "width": 28,
       "height": 26,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_OceanicMuseum",
+      "secondary_tileset": "gTileset_PewterMuseum",
       "border_filepath": "data/layouts/PewterMuseum/border.bin",
       "blockdata_filepath": "data/layouts/PewterMuseum/map.bin"
     },
     {
       "id": "LAYOUT_PEWTER_GYM",
       "name": "PewterGym_Layout",
-      "width": 11,
-      "height": 18,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Facility",
+      "width": 23,
+      "height": 29,
+      "primary_tileset": "gTileset_GeneralStairs",
+      "secondary_tileset": "gTileset_Veilstone",
       "border_filepath": "data/layouts/PewterGym/border.bin",
       "blockdata_filepath": "data/layouts/PewterGym/map.bin"
     },

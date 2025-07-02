@@ -178,7 +178,7 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 30,
+      "x": 34,
       "y": 10,
       "elevation": 0,
       "dest_map": "MAP_PALLET_INTERIORS",
@@ -219,7 +219,7 @@
     },
     {
       "type": "sign",
-      "x": 26,
+      "x": 30,
       "y": 10,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
