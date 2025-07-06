@@ -50,22 +50,35 @@ const u16 DISPLAYED_MAP_HEIGHT = 15U;
 #define MAPCURSOR_X_MAX (MAPCURSOR_X_MIN + DISPLAYED_MAP_WIDTH)
 #define MAPCURSOR_Y_MAX (MAPCURSOR_Y_MIN + DISPLAYED_MAP_HEIGHT)
 
-#define ZOOMED_MINIMAL_SCROLL_X         -0x2C
+/*#define ZOOMED_MINIMAL_SCROLL_X         -0x2C
 #define ZOOMED_MAXIMAL_SCROLL_X         0xAC
 #define ZOOMED_SPAN_SCROLL_X            ZOOMED_MAXIMAL_SCROLL_X-ZOOMED_MINIMAL_SCROLL_X
-#define ADAPTED_MAXIMAL_SPAN_SCROLL_X   ZOOMED_MINIMAL_SCROLL_X + (2 * ZOOMED_SPAN_SCROLL_X)
 
 #define ZOOMED_MINIMAL_SCROLL_Y         -0x34
 #define ZOOMED_MAXIMAL_SCROLL_Y         0x3C
-#define ZOOMED_SPAN_SCROLL_Y            ZOOMED_MAXIMAL_SCROLL_Y-ZOOMED_MINIMAL_SCROLL_Y
-#define ADAPTED_MAXIMAL_SPAN_SCROLL_Y   ZOOMED_MINIMAL_SCROLL_Y + (2 * ZOOMED_SPAN_SCROLL_Y)
+#define ZOOMED_SPAN_SCROLL_Y            ZOOMED_MAXIMAL_SCROLL_Y-ZOOMED_MINIMAL_SCROLL_Y*/
+
+const u16 ZOOMED_DISPLAYED_MAP_WIDTH = 7U;
+const u16 ZOOMED_DISPLAYED_MAP_HEIGHT = 7U;
+
+#define ZOOMED_MAPCURSOR_X_MIN          0
+#define ZOOMED_MAPCURSOR_X_MAX          ZOOMED_MAPCURSOR_X_MIN + ZOOMED_DISPLAYED_MAP_WIDTH
+
+#define ZOOMED_MAPCURSOR_Y_MIN          0
+#define ZOOMED_MAPCURSOR_Y_MAX          ZOOMED_MAPCURSOR_Y_MIN + ZOOMED_DISPLAYED_MAP_HEIGHT
+
+/*#define ZOOMED_MINIMAL_SCROLL_X         0
+#define ZOOMED_MAXIMAL_SCROLL_X         12*/
 
 const u16 INCREMENT = 8U;
 const u16 MINIMAL_BACKGROUND_INCREMENT = 0x0100U;
-const u32 BACKGROUND_INCREMENT = INCREMENT*MINIMAL_BACKGROUND_INCREMENT;
+const u16 MINIMAL_ZOOMED_BACKGROUND_INCREMENT = 0x0040U;
 
-const u16 OFFSET_SCROLL_INCREMENT_X = MAP_WIDTH - DISPLAYED_MAP_WIDTH - 1;
-const u16 OFFSET_SCROLL_INCREMENT_Y = MAP_HEIGHT - DISPLAYED_MAP_HEIGHT - 1;
+const u32 BACKGROUND_INCREMENT = INCREMENT*MINIMAL_BACKGROUND_INCREMENT;
+const u32 ZOOMED_BACKGROUND_INCREMENT = INCREMENT*MINIMAL_ZOOMED_BACKGROUND_INCREMENT;
+
+const u16 OFFSET_SCROLL_INCREMENT_X = MAP_WIDTH - ZOOMED_DISPLAYED_MAP_WIDTH;
+const u16 OFFSET_SCROLL_INCREMENT_Y = MAP_HEIGHT - ZOOMED_DISPLAYED_MAP_HEIGHT;
 
 const u32 MINIMAL_OFFSET_SCROLL_X = 0x00000000U;
 const u32 MAXIMAL_OFFSET_SCROLL_X = (u32)(OFFSET_SCROLL_INCREMENT_X) * BACKGROUND_INCREMENT;
@@ -150,7 +163,8 @@ static void UpdateFlyDestinationIconPosition(struct Sprite *sprite);
 static void CB_FadeInFlyMap(void);
 static void CB_HandleFlyMapInput(void);
 static void CB_ExitFlyMap(void);
-static bool8 ScrollMap(s16 unitX, s16 unitY);
+static void ScrollMap(s16 unitX, s16 unitY);
+static void ScrollMapZoomed(s16 unitX, s16 unitY);
 static void UpdateRegionMapPlayerIconPosition(void);
 
 static const u16 sRegionMapCursorPal[] = INCBIN_U16("graphics/pokenav/region_map/cursor.gbapal");
@@ -719,10 +733,8 @@ u8 DoRegionMapInputCallback(void)
     return sRegionMap->inputCallback();
 }
 
-static bool8 ScrollMap(s16 unitX, s16 unitY)
+static void ScrollMap(s16 unitX, s16 unitY)
 {
-    bool8 deleteTask = FALSE;
-
     u32 initialScrollX = (((u32)GetGpuReg(REG_OFFSET_BG2X_L)) + (((u32)GetGpuReg(REG_OFFSET_BG2X_H)) << 16U));
     u32 initialScrollY = (((u32)GetGpuReg(REG_OFFSET_BG2Y_L)) + (((u32)GetGpuReg(REG_OFFSET_BG2Y_H)) << 16U));
 
@@ -735,22 +747,18 @@ static bool8 ScrollMap(s16 unitX, s16 unitY)
     if (incrementX != 0) {
         if (((MAXIMAL_OFFSET_SCROLL_X - initialScrollX) <= incrementX) && (incrementX > 0)) {
             newScrollX = MAXIMAL_OFFSET_SCROLL_X;
-            deleteTask = TRUE;
         }
         else if (((initialScrollX - MINIMAL_OFFSET_SCROLL_X) <= -incrementX) && (incrementX < 0)) {
             newScrollX = MINIMAL_OFFSET_SCROLL_X;
-            deleteTask = TRUE;
         }
     }
     
     if (incrementY != 0) {
         if (((MAXIMAL_OFFSET_SCROLL_Y - initialScrollY) <= incrementY) && (incrementY > 0)) {
             newScrollY = MAXIMAL_OFFSET_SCROLL_Y;
-            deleteTask = TRUE;
         }
         else if (((initialScrollY - MINIMAL_OFFSET_SCROLL_Y) <= -incrementY) && (incrementY < 0)) {
             newScrollY = MINIMAL_OFFSET_SCROLL_Y;
-            deleteTask = TRUE;
         }
     }
 
@@ -760,8 +768,6 @@ static bool8 ScrollMap(s16 unitX, s16 unitY)
     SetGpuReg(REG_OFFSET_BG2Y_L, newScrollY & 0xFFFF);
 
     UpdateRegionMapPlayerIconPosition();
-
-    return deleteTask;
 }
 
 static void UpdateRegionMapPlayerIconPosition(void)
@@ -779,12 +785,12 @@ static void UpdateRegionMapPlayerIconPosition(void)
         }
         else {
             // Hide
-            sRegionMap->playerIconSprite->x = MINIMAL_PLAYER_ICON_POSITION_X;
+            sRegionMap->playerIconSprite->x = 200;
         }
     }
     else {
         // Hide
-        sRegionMap->playerIconSprite->x = MINIMAL_PLAYER_ICON_POSITION_X;
+        sRegionMap->playerIconSprite->x = 200;
     }
 
     if (sRegionMap->playerIconSpritePosY > scrollY) {
@@ -795,13 +801,49 @@ static void UpdateRegionMapPlayerIconPosition(void)
         }
         else {
             // Hide
-            sRegionMap->playerIconSprite->y = MINIMAL_PLAYER_ICON_POSITION_Y;
+            sRegionMap->playerIconSprite->y = 200;
         }
     }
     else {
         // Hide
-        sRegionMap->playerIconSprite->y = MINIMAL_PLAYER_ICON_POSITION_Y;
+        sRegionMap->playerIconSprite->y = 200;
     }
+}
+
+static void UpdateRegionMapPlayerIconPositionZoomed(void)
+{
+    u16 scrollX = (u16)((((u32)GetGpuReg(REG_OFFSET_BG2X_L)) + (((u32)GetGpuReg(REG_OFFSET_BG2X_H)) << 16U)) / (2 * MINIMAL_ZOOMED_BACKGROUND_INCREMENT));
+    u16 scrollY = (u16)((((u32)GetGpuReg(REG_OFFSET_BG2Y_L)) + (((u32)GetGpuReg(REG_OFFSET_BG2Y_H)) << 16U)) / (2 * MINIMAL_ZOOMED_BACKGROUND_INCREMENT));
+
+    u16 screenPositionX, screenPositionY;
+
+    screenPositionX = sRegionMap->playerIconSpritePosX * 16 + 0x8;
+    screenPositionY = sRegionMap->playerIconSpritePosY * 16 + 0x27;
+
+    if (screenPositionX > scrollX) {
+        screenPositionX -= scrollX;
+
+        if (screenPositionX > (9 * 16)) {
+            screenPositionX = 200;
+        }
+    }
+    else {
+        screenPositionX = 200;
+    }
+
+    if (screenPositionY > scrollY) {
+        screenPositionY -= scrollY;
+
+        if (screenPositionY > (9 * 16)) {
+            screenPositionY = 200;
+        }
+    }
+    else {
+        screenPositionY = 200;
+    }
+
+    sRegionMap->playerIconSprite->x = screenPositionX;
+    sRegionMap->playerIconSprite->y = screenPositionY;
 }
 
 static u8 ProcessRegionMapInput_Full(void)
@@ -815,36 +857,35 @@ static u8 ProcessRegionMapInput_Full(void)
     {
         if (sRegionMap->cursorPosY > MAPCURSOR_Y_MIN) {
             sRegionMap->cursorDeltaY = -1;
-            input = MAP_INPUT_MOVE_START;
         }
         else {
             ScrollMap(0, -1);
-            input = MAP_INPUT_MOVE_START;
         }
-        
+
+        input = MAP_INPUT_MOVE_START;
     }
     if (JOY_HELD(DPAD_DOWN))
     {
         if (sRegionMap->cursorPosY < MAPCURSOR_Y_MAX) {
             sRegionMap->cursorDeltaY = +1;
-            input = MAP_INPUT_MOVE_START;
         }
         else {
             ScrollMap(0, 1);
-            input = MAP_INPUT_MOVE_START;
         }
+
+        input = MAP_INPUT_MOVE_START;
     }
     if (JOY_HELD(DPAD_LEFT))
     {
         if (sRegionMap->cursorPosX > MAPCURSOR_X_MIN)
         {
             sRegionMap->cursorDeltaX = -1;
-            input = MAP_INPUT_MOVE_START;
         }
         else {
             ScrollMap(-1, 0);
-            input = MAP_INPUT_MOVE_START;
         }
+
+        input = MAP_INPUT_MOVE_START;
     }
 
     if (JOY_HELD(DPAD_RIGHT))
@@ -852,13 +893,12 @@ static u8 ProcessRegionMapInput_Full(void)
         if (sRegionMap->cursorPosX < MAPCURSOR_X_MAX)
         {
             sRegionMap->cursorDeltaX = +1;
-            input = MAP_INPUT_MOVE_START;
         }
         else {
             ScrollMap(1, 0);
-            input = MAP_INPUT_MOVE_START;
         }
         
+        input = MAP_INPUT_MOVE_START;
     }
     if (JOY_NEW(A_BUTTON))
     {
@@ -913,6 +953,43 @@ static u8 MoveRegionMapCursor_Full(void)
     GetPositionOfCursorWithinMapSec();
     sRegionMap->inputCallback = ProcessRegionMapInput_Full;
     return MAP_INPUT_MOVE_END;
+}
+
+static void ScrollMapZoomed(s16 unitX, s16 unitY)
+{
+    u32 initialScrollX = (((u32)GetGpuReg(REG_OFFSET_BG2X_L)) + (((u32)GetGpuReg(REG_OFFSET_BG2X_H)) << 16U));
+    u32 initialScrollY = (((u32)GetGpuReg(REG_OFFSET_BG2Y_L)) + (((u32)GetGpuReg(REG_OFFSET_BG2Y_H)) << 16U));
+
+    s16 incrementX = unitX * ZOOMED_BACKGROUND_INCREMENT;
+    s16 incrementY = unitY * ZOOMED_BACKGROUND_INCREMENT;
+
+    u32 newScrollX = incrementX + initialScrollX;
+    u32 newScrollY = incrementY + initialScrollY;
+
+    if (incrementX != 0) {
+        if (((MAXIMAL_OFFSET_SCROLL_X - initialScrollX) <= incrementX) && (incrementX > 0)) {
+            newScrollX = MAXIMAL_OFFSET_SCROLL_X;
+        }
+        else if (((initialScrollX - MINIMAL_OFFSET_SCROLL_X) <= -incrementX) && (incrementX < 0)) {
+            newScrollX = MINIMAL_OFFSET_SCROLL_X;
+        }
+    }
+    
+    if (incrementY != 0) {
+        if (((MAXIMAL_OFFSET_SCROLL_Y - initialScrollY) <= incrementY) && (incrementY > 0)) {
+            newScrollY = MAXIMAL_OFFSET_SCROLL_Y;
+        }
+        else if (((initialScrollY - MINIMAL_OFFSET_SCROLL_Y) <= -incrementY) && (incrementY < 0)) {
+            newScrollY = MINIMAL_OFFSET_SCROLL_Y;
+        }
+    }
+
+    SetGpuReg(REG_OFFSET_BG2X_H, (newScrollX >> 16U) & 0xFFFF);
+    SetGpuReg(REG_OFFSET_BG2X_L, newScrollX & 0xFFFF);
+    SetGpuReg(REG_OFFSET_BG2Y_H, (newScrollY >> 16U) & 0xFFFF);
+    SetGpuReg(REG_OFFSET_BG2Y_L, newScrollY & 0xFFFF);
+
+    UpdateRegionMapPlayerIconPositionZoomed();
 }
 
 static u8 ProcessRegionMapInput_Zoomed(void)
@@ -1702,8 +1779,7 @@ void CreateRegionMapPlayerIcon(u16 tileTag, u16 paletteTag)
     }
     else
     {
-        sRegionMap->playerIconSprite->x = sRegionMap->playerIconSpritePosX * 16 - 0x30;
-        sRegionMap->playerIconSprite->y = sRegionMap->playerIconSpritePosY * 16 - 0x42;
+        UpdateRegionMapPlayerIconPositionZoomed();
         sRegionMap->playerIconSprite->callback = SpriteCB_PlayerIconMapZoomed;
     }
 }
@@ -1723,8 +1799,8 @@ static void UnhideRegionMapPlayerIcon(void)
     {
         if (sRegionMap->zoomed == TRUE)
         {
-            sRegionMap->playerIconSprite->x = sRegionMap->playerIconSpritePosX * 16 - 0x30;
-            sRegionMap->playerIconSprite->y = sRegionMap->playerIconSpritePosY * 16 - 0x42;
+            UpdateRegionMapPlayerIconPositionZoomed();
+
             sRegionMap->playerIconSprite->callback = SpriteCB_PlayerIconMapZoomed;
             sRegionMap->playerIconSprite->invisible = FALSE;
         }
@@ -1747,19 +1823,7 @@ static void UnhideRegionMapPlayerIcon(void)
 
 static void SpriteCB_PlayerIconMapZoomed(struct Sprite *sprite)
 {
-    sprite->x2 = -2 * sRegionMap->scrollX;
-    sprite->y2 = -2 * sRegionMap->scrollY;
-    sprite->sY = sprite->y + sprite->y2 + sprite->centerToCornerVecY;
-    sprite->sX = sprite->x + sprite->x2 + sprite->centerToCornerVecX;
-    if (sprite->sY < -8 || sprite->sY > DISPLAY_HEIGHT + 8 || sprite->sX < -8 || sprite->sX > DISPLAY_WIDTH + 8)
-        sprite->sVisible = FALSE;
-    else
-        sprite->sVisible = TRUE;
-
-    if (sprite->sVisible == TRUE)
-        SpriteCB_PlayerIcon(sprite);
-    else
-        sprite->invisible = TRUE;
+    SpriteCB_PlayerIcon(sprite);
 }
 
 static void SpriteCB_PlayerIconMapFull(struct Sprite *sprite)
