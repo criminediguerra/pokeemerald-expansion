@@ -999,24 +999,56 @@ static u8 ProcessRegionMapInput_Zoomed(void)
     input = MAP_INPUT_NONE;
     sRegionMap->zoomedCursorDeltaX = 0;
     sRegionMap->zoomedCursorDeltaY = 0;
-    if (JOY_HELD(DPAD_UP) && sRegionMap->scrollY > ZOOMED_MINIMAL_SCROLL_Y)
+    if (JOY_HELD(DPAD_UP))
     {
-        sRegionMap->zoomedCursorDeltaY = -1;
+        /*if (sRegionMap->scrollY > ZOOMED_MAPCURSOR_Y_MIN) {
+            sRegionMap->zoomedCursorDeltaY = -1;
+        }
+        else {
+            ScrollMapZoomed(0, -1);
+        }*/
+
+        ScrollMapZoomed(0, -1);
+
         input = MAP_INPUT_MOVE_START;
     }
-    if (JOY_HELD(DPAD_DOWN) && sRegionMap->scrollY < ADAPTED_MAXIMAL_SPAN_SCROLL_Y)
+    if (JOY_HELD(DPAD_DOWN))
     {
-        sRegionMap->zoomedCursorDeltaY = +1;
+        /*if (sRegionMap->scrollY < ZOOMED_MAPCURSOR_Y_MAX) {
+            sRegionMap->zoomedCursorDeltaY = 1;
+        }
+        else {
+            ScrollMapZoomed(0, 1);
+        }*/
+
+        ScrollMapZoomed(0, 1);
+
         input = MAP_INPUT_MOVE_START;
     }
-    if (JOY_HELD(DPAD_LEFT) && sRegionMap->scrollX > ZOOMED_MINIMAL_SCROLL_X)
+    if (JOY_HELD(DPAD_LEFT))
     {
-        sRegionMap->zoomedCursorDeltaX = -1;
+        /*if (sRegionMap->scrollX > ZOOMED_MAPCURSOR_X_MIN) {
+            sRegionMap->zoomedCursorDeltaX = -1;
+        }
+        else {
+            ScrollMapZoomed(-1, 0);
+        }*/
+
+        ScrollMapZoomed(-1, 0);
+
         input = MAP_INPUT_MOVE_START;
     }
-    if (JOY_HELD(DPAD_RIGHT) && sRegionMap->scrollX < ADAPTED_MAXIMAL_SPAN_SCROLL_X)
+    if (JOY_HELD(DPAD_RIGHT))
     {
-        sRegionMap->zoomedCursorDeltaX = +1;
+        /*if (sRegionMap->scrollX < ZOOMED_MAPCURSOR_X_MAX) {
+            sRegionMap->zoomedCursorDeltaX = 1;
+        }
+        else {
+            ScrollMapZoomed(1, 0);
+        }*/
+
+        ScrollMapZoomed(1, 0);
+
         input = MAP_INPUT_MOVE_START;
     }
     if (JOY_NEW(A_BUTTON))
@@ -1037,36 +1069,9 @@ static u8 ProcessRegionMapInput_Zoomed(void)
 
 static u8 MoveRegionMapCursor_Zoomed(void)
 {
-    u16 x;
-    u16 y;
-    u16 mapSecId;
+    sRegionMap->inputCallback = ProcessRegionMapInput_Zoomed;
 
-    sRegionMap->scrollY += sRegionMap->zoomedCursorDeltaY;
-    sRegionMap->scrollX += sRegionMap->zoomedCursorDeltaX;
-    RegionMap_SetBG2XAndBG2Y(sRegionMap->scrollX, sRegionMap->scrollY);
-    sRegionMap->zoomedCursorMovementFrameCounter++;
-    if (sRegionMap->zoomedCursorMovementFrameCounter == 8)
-    {
-        x = (sRegionMap->scrollX + 0x2c) / 8 + 1;
-        y = (sRegionMap->scrollY + 0x34) / 8 + 2;
-        if (x != sRegionMap->zoomedCursorPosX || y != sRegionMap->zoomedCursorPosY)
-        {
-            sRegionMap->zoomedCursorPosX = x;
-            sRegionMap->zoomedCursorPosY = y;
-            mapSecId = GetMapSecIdAt(x, y);
-            sRegionMap->mapSecType = GetMapsecType(mapSecId);
-            if (mapSecId != sRegionMap->mapSecId)
-            {
-                sRegionMap->mapSecId = mapSecId;
-                GetMapName(sRegionMap->mapSecName, sRegionMap->mapSecId, MAP_NAME_LENGTH);
-            }
-            GetPositionOfCursorWithinMapSec();
-        }
-        sRegionMap->zoomedCursorMovementFrameCounter = 0;
-        sRegionMap->inputCallback = ProcessRegionMapInput_Zoomed;
-        return MAP_INPUT_MOVE_END;
-    }
-    return MAP_INPUT_MOVE_CONT;
+    return MAP_INPUT_MOVE_END;
 }
 
 void SetRegionMapDataForZoom(void)
