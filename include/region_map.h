@@ -53,8 +53,8 @@ struct RegionMap {
     /*0x05e*/ s16 scrollY;
     /*0x060*/ s16 unk_060;
     /*0x062*/ s16 unk_062;
-    /*0x064*/ u16 zoomedCursorPosX;
-    /*0x066*/ u16 zoomedCursorPosY;
+    /*0x064*/ s16 zoomedCursorPosX;
+    /*0x066*/ s16 zoomedCursorPosY;
     /*0x068*/ s16 zoomedCursorDeltaY;
     /*0x06a*/ s16 zoomedCursorDeltaX;
     /*0x06c*/ u16 zoomedCursorMovementFrameCounter;

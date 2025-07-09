@@ -50,25 +50,16 @@ const u16 DISPLAYED_MAP_HEIGHT = 15U;
 #define MAPCURSOR_X_MAX (MAPCURSOR_X_MIN + DISPLAYED_MAP_WIDTH)
 #define MAPCURSOR_Y_MAX (MAPCURSOR_Y_MIN + DISPLAYED_MAP_HEIGHT)
 
-/*#define ZOOMED_MINIMAL_SCROLL_X         -0x2C
-#define ZOOMED_MAXIMAL_SCROLL_X         0xAC
-#define ZOOMED_SPAN_SCROLL_X            ZOOMED_MAXIMAL_SCROLL_X-ZOOMED_MINIMAL_SCROLL_X
+const u16 ZOOMED_DISPLAYED_MAP_WIDTH = 9U;
+const u16 ZOOMED_DISPLAYED_MAP_HEIGHT = 10U;
 
-#define ZOOMED_MINIMAL_SCROLL_Y         -0x34
-#define ZOOMED_MAXIMAL_SCROLL_Y         0x3C
-#define ZOOMED_SPAN_SCROLL_Y            ZOOMED_MAXIMAL_SCROLL_Y-ZOOMED_MINIMAL_SCROLL_Y*/
+const u16 TILE_SIZE = 8U;
 
-const u16 ZOOMED_DISPLAYED_MAP_WIDTH = 7U;
-const u16 ZOOMED_DISPLAYED_MAP_HEIGHT = 7U;
+#define ZOOMED_MAPCURSOR_X_MIN          -22
+#define ZOOMED_MAPCURSOR_X_MAX          ZOOMED_MAPCURSOR_X_MIN + (ZOOMED_DISPLAYED_MAP_WIDTH * TILE_SIZE / 2)
 
-#define ZOOMED_MAPCURSOR_X_MIN          0
-#define ZOOMED_MAPCURSOR_X_MAX          ZOOMED_MAPCURSOR_X_MIN + ZOOMED_DISPLAYED_MAP_WIDTH
-
-#define ZOOMED_MAPCURSOR_Y_MIN          0
-#define ZOOMED_MAPCURSOR_Y_MAX          ZOOMED_MAPCURSOR_Y_MIN + ZOOMED_DISPLAYED_MAP_HEIGHT
-
-/*#define ZOOMED_MINIMAL_SCROLL_X         0
-#define ZOOMED_MAXIMAL_SCROLL_X         12*/
+#define ZOOMED_MAPCURSOR_Y_MIN          14
+#define ZOOMED_MAPCURSOR_Y_MAX          ZOOMED_MAPCURSOR_Y_MIN + (ZOOMED_DISPLAYED_MAP_HEIGHT * TILE_SIZE / 2)
 
 const u16 INCREMENT = 8U;
 const u16 MINIMAL_BACKGROUND_INCREMENT = 0x0100U;
@@ -1001,53 +992,57 @@ static u8 ProcessRegionMapInput_Zoomed(void)
     sRegionMap->zoomedCursorDeltaY = 0;
     if (JOY_HELD(DPAD_UP))
     {
-        /*if (sRegionMap->scrollY > ZOOMED_MAPCURSOR_Y_MIN) {
+        if (sRegionMap->zoomedCursorPosY > ZOOMED_MAPCURSOR_Y_MIN) {
             sRegionMap->zoomedCursorDeltaY = -1;
         }
         else {
             ScrollMapZoomed(0, -1);
-        }*/
+        }
 
-        ScrollMapZoomed(0, -1);
+        /*ScrollMapZoomed(0, -1);
+        sRegionMap->zoomedCursorDeltaY = -1;*/
 
         input = MAP_INPUT_MOVE_START;
     }
     if (JOY_HELD(DPAD_DOWN))
     {
-        /*if (sRegionMap->scrollY < ZOOMED_MAPCURSOR_Y_MAX) {
+        if (sRegionMap->zoomedCursorPosY < ZOOMED_MAPCURSOR_Y_MAX) {
             sRegionMap->zoomedCursorDeltaY = 1;
         }
         else {
             ScrollMapZoomed(0, 1);
-        }*/
+        }
 
-        ScrollMapZoomed(0, 1);
+        /*ScrollMapZoomed(0, 1);
+        sRegionMap->zoomedCursorDeltaY = 1;*/
 
         input = MAP_INPUT_MOVE_START;
     }
     if (JOY_HELD(DPAD_LEFT))
     {
-        /*if (sRegionMap->scrollX > ZOOMED_MAPCURSOR_X_MIN) {
+        if (sRegionMap->zoomedCursorPosX > ZOOMED_MAPCURSOR_X_MIN) {
             sRegionMap->zoomedCursorDeltaX = -1;
         }
         else {
             ScrollMapZoomed(-1, 0);
-        }*/
+        }
 
-        ScrollMapZoomed(-1, 0);
+        /*ScrollMapZoomed(-1, 0);
+        sRegionMap->zoomedCursorDeltaX = -1;*/
 
         input = MAP_INPUT_MOVE_START;
     }
     if (JOY_HELD(DPAD_RIGHT))
     {
-        /*if (sRegionMap->scrollX < ZOOMED_MAPCURSOR_X_MAX) {
+        if (sRegionMap->zoomedCursorPosX < ZOOMED_MAPCURSOR_X_MAX) {
             sRegionMap->zoomedCursorDeltaX = 1;
         }
         else {
             ScrollMapZoomed(1, 0);
-        }*/
+        }
 
-        ScrollMapZoomed(1, 0);
+        /*ScrollMapZoomed(1, 0);
+        sRegionMap->zoomedCursorDeltaX = 1;*/
 
         input = MAP_INPUT_MOVE_START;
     }
@@ -1059,6 +1054,10 @@ static u8 ProcessRegionMapInput_Zoomed(void)
     {
         input = MAP_INPUT_B_BUTTON;
     }
+
+    sRegionMap->zoomedCursorPosX += sRegionMap->zoomedCursorDeltaX;
+    sRegionMap->zoomedCursorPosY += sRegionMap->zoomedCursorDeltaY;
+
     if (input == MAP_INPUT_MOVE_START)
     {
         sRegionMap->inputCallback = MoveRegionMapCursor_Zoomed;
@@ -1621,6 +1620,9 @@ static void GetPositionOfCursorWithinMapSec(void)
     {
         x = sRegionMap->zoomedCursorPosX;
         y = sRegionMap->zoomedCursorPosY;
+
+        scrollX = GetGpuReg(REG_OFFSET_BG2X_L) / MINIMAL_ZOOMED_BACKGROUND_INCREMENT;
+        scrollY = GetGpuReg(REG_OFFSET_BG2Y_L) / MINIMAL_ZOOMED_BACKGROUND_INCREMENT;
     }
     posWithinMapSec = 0;
 
@@ -1680,6 +1682,8 @@ static void SpriteCB_CursorMapFull(struct Sprite *sprite)
 
 static void SpriteCB_CursorMapZoomed(struct Sprite *sprite)
 {
+    sprite->x += sRegionMap->zoomedCursorDeltaX;
+    sprite->y += sRegionMap->zoomedCursorDeltaY;
 
 }
 
