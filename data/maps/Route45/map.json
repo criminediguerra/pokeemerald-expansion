@@ -89,6 +89,45 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "RustboroCity_EventScript_Man2",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_APRICORN_SAPLING",
+      "x": 28,
+      "y": 131,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "APRICORN_TREE_ROUTE45_BLUE_SAPLING",
+      "script": "ApricornTreeScript",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_APRICORN_SAPLING",
+      "x": 18,
+      "y": 128,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "APRICORN_TREE_ROUTE45_YELLOW_SAPLING",
+      "script": "ApricornTreeScript",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_APRICORN_TREE",
+      "x": 26,
+      "y": 135,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "APRICORN_TREE_ROUTE45_RED_TREE",
+      "script": "ApricornTreeScript",
+      "flag": "0"
     }
   ],
   "warp_events": [

@@ -1,6 +1,7 @@
 ApricornTreeScript::
 	special ObjectEventInteractionGetApricornTreeData
 	goto_if_gt VAR_0x8005, 0, ApricornTree_EventScript_WantToPick
+	goto ApricornTree_EventScript_NoApricorns
 	end
 
 ApricornTree_EventScript_WantToPick::
@@ -47,6 +48,13 @@ ApricornTree_EventScript_CancelPickingApricorn::
 	release
 	end
 
+ApricornTree_EventScript_NoApricorns::
+	message ApricornTree_Text_NoApricorns
+	waitmessage
+	waitbuttonpress
+	release
+	end
+
 ApricornTree_Text_WantToPick:
 	.string "You found {STR_VAR_2} {STR_VAR_1}!\p"
 	.string "Do you want to pick the\n"
@@ -68,3 +76,6 @@ ApricornTree_Text_PocketFull:
 ApricornTree_Text_ApricornLeftUnpicked:
 	.string "{PLAYER} left the {STR_VAR_1}\n"
 	.string "unpicked.$"
+
+ApricornTree_Text_NoApricorns:
+	.string "There are no more APRICORNS...$"

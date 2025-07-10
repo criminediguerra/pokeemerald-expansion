@@ -355,7 +355,7 @@
 #define OBJ_EVENT_GFX_WHIRLPOOL                  348
 #define OBJ_EVENT_GFX_LIGHT_SPRITE               349
 #define OBJ_EVENT_GFX_APRICORN_TREE              350
-#define OBJ_EVENT_GFX_APRICORN_SAPLING           251
+#define OBJ_EVENT_GFX_APRICORN_SAPLING           351
 
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit

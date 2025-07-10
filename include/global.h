@@ -199,13 +199,6 @@ struct UCoords32
     u32 y;
 };
 
-struct SaveBlock3
-{
-    u8 apricornTrees[NUM_APRICORN_TREE_BYTES];
-};
-
-extern struct SaveBlock3 *gSaveBlock3Ptr;
-
 struct Time
 {
     /*0x00*/ s16 days;
@@ -244,6 +237,9 @@ struct NPCFollower
 
 struct SaveBlock3
 {
+
+    u8 apricornTrees[NUM_APRICORN_TREE_BYTES];
+
 #if OW_USE_FAKE_RTC
     struct SiiRtcInfo fakeRTC;
 #endif

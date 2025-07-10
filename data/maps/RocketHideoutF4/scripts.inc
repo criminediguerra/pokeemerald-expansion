@@ -25,6 +25,8 @@ RocketHideoutF4_Text_Lifter:
 	.string "It needs a KEY$"
 
 RocketHideoutF4_EventScript_Guard::
+	lock
+	faceplayer
 	msgbox RocketHideoutF4_Text_Guard, MSGBOX_DEFAULT
 	closemessage
 	release
