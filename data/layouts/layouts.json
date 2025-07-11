@@ -6784,10 +6784,10 @@
     {
       "id": "LAYOUT_VIRIDIAN_CENTER",
       "name": "ViridianCenter_Layout",
-      "width": 14,
-      "height": 9,
+      "width": 16,
+      "height": 13,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonCenter",
+      "secondary_tileset": "gTileset_AltPokecenter",
       "border_filepath": "data/layouts/ViridianCenter/border.bin",
       "blockdata_filepath": "data/layouts/ViridianCenter/map.bin"
     },

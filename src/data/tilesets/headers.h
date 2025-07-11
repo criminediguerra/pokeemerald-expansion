@@ -971,17 +971,6 @@ const struct Tileset gTileset_PokemonMansion =
     .callback = NULL,
 };
 
-const struct Tileset gTileset_SSAnne =
-{
-    .isCompressed = TRUE,
-    .isSecondary = TRUE,
-    .tiles = gTilesetTiles_SSAnne,
-    .palettes = gTilesetPalettes_SSAnne,
-    .metatiles = gMetatiles_SSAnne,
-    .metatileAttributes = gMetatileAttributes_SSAnne,
-    .callback = NULL,
-};
-
 const struct Tileset gTileset_PewterMuseum =
 {
     .isCompressed = TRUE,
@@ -1132,5 +1121,16 @@ const struct Tileset gTileset_MtStark =
     .palettes = gTilesetPalettes_MtStark,
     .metatiles = gMetatiles_MtStark,
     .metatileAttributes = gMetatileAttributes_MtStark,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_AltPokecenter =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AltPokecenter,
+    .palettes = gTilesetPalettes_AltPokecenter,
+    .metatiles = gMetatiles_AltPokecenter,
+    .metatileAttributes = gMetatileAttributes_AltPokecenter,
     .callback = NULL,
 };

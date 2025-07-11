@@ -242,9 +242,6 @@ const u16 gMetatileAttributes_IndigoPlateau[] = INCBIN_U16("data/tilesets/second
 const u16 gMetatiles_PokemonMansion[] = INCBIN_U16("data/tilesets/secondary/pokemon_mansion/metatiles.bin");
 const u16 gMetatileAttributes_PokemonMansion[] = INCBIN_U16("data/tilesets/secondary/pokemon_mansion/metatile_attributes.bin");
 
-const u16 gMetatiles_SSAnne[] = INCBIN_U16("data/tilesets/secondary/ssanne/metatiles.bin");
-const u16 gMetatileAttributes_SSAnne[] = INCBIN_U16("data/tilesets/secondary/ssanne/metatile_attributes.bin");
-
 const u16 gMetatiles_PewterMuseum[] = INCBIN_U16("data/tilesets/secondary/pewter_museum/metatiles.bin");
 const u16 gMetatileAttributes_PewterMuseum[] = INCBIN_U16("data/tilesets/secondary/pewter_museum/metatile_attributes.bin");
 
@@ -285,3 +282,6 @@ const u16 gMetatileAttributes_Tropical[] = INCBIN_U16("data/tilesets/primary/tro
 
 const u16 gMetatiles_MtStark[] = INCBIN_U16("data/tilesets/secondary/mt_stark/metatiles.bin");
 const u16 gMetatileAttributes_MtStark[] = INCBIN_U16("data/tilesets/secondary/mt_stark/metatile_attributes.bin");
+
+const u16 gMetatiles_AltPokecenter[] = INCBIN_U16("data/tilesets/secondary/alt_pokecenter/metatiles.bin");
+const u16 gMetatileAttributes_AltPokecenter[] = INCBIN_U16("data/tilesets/secondary/alt_pokecenter/metatile_attributes.bin");
