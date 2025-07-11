@@ -42,13 +42,13 @@
 #define MAP_WIDTH 63U
 #define MAP_HEIGHT 39U
 
-const u16 DISPLAYED_MAP_WIDTH = 28U;
-const u16 DISPLAYED_MAP_HEIGHT = 15U;
+const u16 DISPLAYED_MAP_WIDTH = 30U;
+const u16 DISPLAYED_MAP_HEIGHT = 18U;
 
 #define MAPCURSOR_X_MIN 1
 #define MAPCURSOR_Y_MIN 2
-#define MAPCURSOR_X_MAX (MAPCURSOR_X_MIN + DISPLAYED_MAP_WIDTH)
-#define MAPCURSOR_Y_MAX (MAPCURSOR_Y_MIN + DISPLAYED_MAP_HEIGHT)
+#define MAPCURSOR_X_MAX (MAPCURSOR_X_MIN + DISPLAYED_MAP_WIDTH - 2U)
+#define MAPCURSOR_Y_MAX (MAPCURSOR_Y_MIN + DISPLAYED_MAP_HEIGHT - 3U)
 
 const u16 ZOOMED_DISPLAYED_MAP_WIDTH = 9U;
 const u16 ZOOMED_DISPLAYED_MAP_HEIGHT = 10U;
@@ -763,42 +763,38 @@ static void ScrollMap(s16 unitX, s16 unitY)
 
 static void UpdateRegionMapPlayerIconPosition(void)
 {
-    u16 scrollX = (u16)((((u32)GetGpuReg(REG_OFFSET_BG2X_L)) + (((u32)GetGpuReg(REG_OFFSET_BG2X_H)) << 16U)) / BACKGROUND_INCREMENT);
-    u16 scrollY = (u16)((((u32)GetGpuReg(REG_OFFSET_BG2Y_L)) + (((u32)GetGpuReg(REG_OFFSET_BG2Y_H)) << 16U)) / BACKGROUND_INCREMENT);
+    u16 scrollX = (u16)((((u32)GetGpuReg(REG_OFFSET_BG2X_L)) + (((u32)GetGpuReg(REG_OFFSET_BG2X_H)) << 16U)) / (MINIMAL_BACKGROUND_INCREMENT));
+    u16 scrollY = (u16)((((u32)GetGpuReg(REG_OFFSET_BG2Y_L)) + (((u32)GetGpuReg(REG_OFFSET_BG2Y_H)) << 16U)) / (MINIMAL_BACKGROUND_INCREMENT));
 
     u16 screenPositionX, screenPositionY;
 
-    if (sRegionMap->playerIconSpritePosX > scrollX) {
-        screenPositionX = sRegionMap->playerIconSpritePosX - scrollX;
+    screenPositionX = sRegionMap->playerIconSpritePosX * 8 + 4;
+    screenPositionY = sRegionMap->playerIconSpritePosY * 8 + 4;
 
-        if (screenPositionX <= DISPLAYED_MAP_WIDTH + MAPCURSOR_X_MIN) {
-            sRegionMap->playerIconSprite->x = screenPositionX * 8 + 4;
-        }
-        else {
-            // Hide
-            sRegionMap->playerIconSprite->x = 200;
+    if (screenPositionX > scrollX) {
+        screenPositionX -= scrollX;
+
+        if (screenPositionX > (DISPLAYED_MAP_WIDTH * 8)) {
+            screenPositionX = 200;
         }
     }
     else {
-        // Hide
-        sRegionMap->playerIconSprite->x = 200;
+        screenPositionX = 200;
     }
 
-    if (sRegionMap->playerIconSpritePosY > scrollY) {
-        screenPositionY = sRegionMap->playerIconSpritePosY - scrollY;
+    if (screenPositionY > scrollY) {
+        screenPositionY -= scrollY;
 
-        if (screenPositionY <= DISPLAYED_MAP_HEIGHT + MAPCURSOR_Y_MIN) {
-            sRegionMap->playerIconSprite->y = screenPositionY * 8 + 4;
-        }
-        else {
-            // Hide
-            sRegionMap->playerIconSprite->y = 200;
+        if (screenPositionY > (DISPLAYED_MAP_HEIGHT * 8)) {
+            screenPositionY = 200;
         }
     }
     else {
-        // Hide
-        sRegionMap->playerIconSprite->y = 200;
+        screenPositionY = 200;
     }
+
+    sRegionMap->playerIconSprite->x = screenPositionX;
+    sRegionMap->playerIconSprite->y = screenPositionY;
 }
 
 static void UpdateRegionMapPlayerIconPositionZoomed(void)
@@ -814,7 +810,7 @@ static void UpdateRegionMapPlayerIconPositionZoomed(void)
     if (screenPositionX > scrollX) {
         screenPositionX -= scrollX;
 
-        if (screenPositionX > (9 * 16)) {
+        if (screenPositionX > (ZOOMED_DISPLAYED_MAP_WIDTH * 16)) {
             screenPositionX = 200;
         }
     }
@@ -825,7 +821,7 @@ static void UpdateRegionMapPlayerIconPositionZoomed(void)
     if (screenPositionY > scrollY) {
         screenPositionY -= scrollY;
 
-        if (screenPositionY > (9 * 16)) {
+        if (screenPositionY > (ZOOMED_DISPLAYED_MAP_HEIGHT * 16)) {
             screenPositionY = 200;
         }
     }

@@ -61,8 +61,8 @@ struct RegionMap {
     /*0x06e*/ u16 unk_06e;
     /*0x070*/ u16 playerIconTileTag;
     /*0x072*/ u16 playerIconPaletteTag;
-    /*0x074*/ u16 playerIconSpritePosX;
-    /*0x076*/ u16 playerIconSpritePosY;
+    /*0x074*/ s16 playerIconSpritePosX;
+    /*0x076*/ s16 playerIconSpritePosY;
     /*0x078*/ bool8 zoomed;
     /*0x079*/ u8 initStep;
     /*0x07a*/ s8 cursorMovementFrameCounter;
