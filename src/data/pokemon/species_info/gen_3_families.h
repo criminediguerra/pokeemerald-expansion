@@ -11619,7 +11619,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
             "When BELDUM gather in a swarm, they move\n"
             "in perfect unison as if they were but one\n"
             "POKéMON. They communicate with each other\n"
-            "using brain waves.")
+            "using brain waves."),
         .pokemonScale = 414,
         .pokemonOffset = -1,
         .trainerScale = 256,
