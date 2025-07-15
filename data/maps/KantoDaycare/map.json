@@ -1,7 +1,7 @@
 {
   "id": "MAP_KANTO_DAYCARE",
   "name": "KantoDaycare",
-  "layout": "LAYOUT_KANTO_DAYCARE",
+  "layout": "LAYOUT_ROUTE117_POKEMON_DAY_CARE",
   "music": "MUS_RG_ROUTE3",
   "region_map_section": "MAPSEC_ROUTE_5",
   "requires_flash": false,

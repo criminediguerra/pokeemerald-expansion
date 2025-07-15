@@ -604,10 +604,10 @@
     {
       "id": "LAYOUT_POKEMON_CENTER_1F",
       "name": "PokemonCenter_1F_Layout",
-      "width": 14,
-      "height": 9,
+      "width": 16,
+      "height": 13,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonCenter",
+      "secondary_tileset": "gTileset_AltPokecenter",
       "border_filepath": "data/layouts/PokemonCenter_1F/border.bin",
       "blockdata_filepath": "data/layouts/PokemonCenter_1F/map.bin"
     },
@@ -904,8 +904,8 @@
     {
       "id": "LAYOUT_MAUVILLE_CITY_GAME_CORNER",
       "name": "MauvilleCity_GameCorner_Layout",
-      "width": 22,
-      "height": 11,
+      "width": 24,
+      "height": 13,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_MauvilleGameCorner",
       "border_filepath": "data/layouts/MauvilleCity_GameCorner/border.bin",
@@ -5882,16 +5882,6 @@
       "blockdata_filepath": "data/layouts/SilphF2/map.bin"
     },
     {
-      "id": "LAYOUT_SILPH_ELEVATOR",
-      "name": "SilphElevator_Layout",
-      "width": 5,
-      "height": 6,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BattleFrontier",
-      "border_filepath": "data/layouts/SilphElevator/border.bin",
-      "blockdata_filepath": "data/layouts/SilphElevator/map.bin"
-    },
-    {
       "id": "LAYOUT_KANTO_STATION",
       "name": "KantoStation_Layout",
       "width": 13,
@@ -5900,16 +5890,6 @@
       "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/KantoStation/border.bin",
       "blockdata_filepath": "data/layouts/KantoStation/map.bin"
-    },
-    {
-      "id": "LAYOUT_JOHTO_STATION",
-      "name": "JohtoStation_Layout",
-      "width": 13,
-      "height": 12,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Facility",
-      "border_filepath": "data/layouts/JohtoStation/border.bin",
-      "blockdata_filepath": "data/layouts/JohtoStation/map.bin"
     },
     {
       "id": "LAYOUT_RUINSOF_ALPH_F3",
@@ -6312,26 +6292,6 @@
       "blockdata_filepath": "data/layouts/VermilionContestHall/map.bin"
     },
     {
-      "id": "LAYOUT_VERMILION_MART",
-      "name": "VermilionMart_Layout",
-      "width": 11,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/VermilionMart/border.bin",
-      "blockdata_filepath": "data/layouts/VermilionMart/map.bin"
-    },
-    {
-      "id": "LAYOUT_VERMILION_CENTER",
-      "name": "VermilionCenter_Layout",
-      "width": 14,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonCenter",
-      "border_filepath": "data/layouts/VermilionCenter/border.bin",
-      "blockdata_filepath": "data/layouts/VermilionCenter/map.bin"
-    },
-    {
       "id": "LAYOUT_VERMILION_GYM",
       "name": "VermilionGym_Layout",
       "width": 11,
@@ -6340,16 +6300,6 @@
       "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/VermilionGym/border.bin",
       "blockdata_filepath": "data/layouts/VermilionGym/map.bin"
-    },
-    {
-      "id": "LAYOUT_CROSSGATE_CENTER",
-      "name": "CrossgateCenter_Layout",
-      "width": 14,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonCenter",
-      "border_filepath": "data/layouts/CrossgateCenter/border.bin",
-      "blockdata_filepath": "data/layouts/CrossgateCenter/map.bin"
     },
     {
       "id": "LAYOUT_CROSSGATE_INDOORS",
@@ -6372,16 +6322,6 @@
       "blockdata_filepath": "data/layouts/CrossgateFisherman/map.bin"
     },
     {
-      "id": "LAYOUT_CROSSGATE_MART",
-      "name": "CrossgateMart_Layout",
-      "width": 11,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/CrossgateMart/border.bin",
-      "blockdata_filepath": "data/layouts/CrossgateMart/map.bin"
-    },
-    {
       "id": "LAYOUT_SAFFRON_INDOORS",
       "name": "SaffronIndoors_Layout",
       "width": 56,
@@ -6390,26 +6330,6 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/SaffronIndoors/border.bin",
       "blockdata_filepath": "data/layouts/SaffronIndoors/map.bin"
-    },
-    {
-      "id": "LAYOUT_SAFFRON_CENTER",
-      "name": "SaffronCenter_Layout",
-      "width": 14,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonCenter",
-      "border_filepath": "data/layouts/SaffronCenter/border.bin",
-      "blockdata_filepath": "data/layouts/SaffronCenter/map.bin"
-    },
-    {
-      "id": "LAYOUT_SAFFRON_MART",
-      "name": "SaffronMart_Layout",
-      "width": 11,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/SaffronMart/border.bin",
-      "blockdata_filepath": "data/layouts/SaffronMart/map.bin"
     },
     {
       "id": "LAYOUT_SAFFRON_GYM",
@@ -6430,16 +6350,6 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/DojoKarate/border.bin",
       "blockdata_filepath": "data/layouts/DojoKarate/map.bin"
-    },
-    {
-      "id": "LAYOUT_CELADON_CASINO",
-      "name": "CeladonCasino_Layout",
-      "width": 24,
-      "height": 13,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_MauvilleGameCorner",
-      "border_filepath": "data/layouts/CeladonCasino/border.bin",
-      "blockdata_filepath": "data/layouts/CeladonCasino/map.bin"
     },
     {
       "id": "LAYOUT_ROCKET_HIDEOUT_F1",
@@ -6492,16 +6402,6 @@
       "blockdata_filepath": "data/layouts/CeladonCasinoF1/map.bin"
     },
     {
-      "id": "LAYOUT_CELADON_CENTER",
-      "name": "CeladonCenter_Layout",
-      "width": 14,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonCenter",
-      "border_filepath": "data/layouts/CeladonCenter/border.bin",
-      "blockdata_filepath": "data/layouts/CeladonCenter/map.bin"
-    },
-    {
       "id": "LAYOUT_CELADON_CASINO_F2",
       "name": "CeladonCasinoF2_Layout",
       "width": 18,
@@ -6520,76 +6420,6 @@
       "secondary_tileset": "gTileset_PokemonSchool",
       "border_filepath": "data/layouts/CeladonCasinoF4/border.bin",
       "blockdata_filepath": "data/layouts/CeladonCasinoF4/map.bin"
-    },
-    {
-      "id": "LAYOUT_CELADON_DEPT_F1",
-      "name": "CeladonDeptF1_Layout",
-      "width": 18,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/CeladonDeptF1/border.bin",
-      "blockdata_filepath": "data/layouts/CeladonDeptF1/map.bin"
-    },
-    {
-      "id": "LAYOUT_CELADON_DEPT_F2",
-      "name": "CeladonDeptF2_Layout",
-      "width": 18,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/CeladonDeptF2/border.bin",
-      "blockdata_filepath": "data/layouts/CeladonDeptF2/map.bin"
-    },
-    {
-      "id": "LAYOUT_CELADON_DEPT",
-      "name": "CeladonDept_Layout",
-      "width": 18,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/CeladonDept/border.bin",
-      "blockdata_filepath": "data/layouts/CeladonDept/map.bin"
-    },
-    {
-      "id": "LAYOUT_CELADON_DEPT_F4",
-      "name": "CeladonDeptF4_Layout",
-      "width": 18,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/CeladonDeptF4/border.bin",
-      "blockdata_filepath": "data/layouts/CeladonDeptF4/map.bin"
-    },
-    {
-      "id": "LAYOUT_CELADON_DEPT_F5",
-      "name": "CeladonDeptF5_Layout",
-      "width": 18,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/CeladonDeptF5/border.bin",
-      "blockdata_filepath": "data/layouts/CeladonDeptF5/map.bin"
-    },
-    {
-      "id": "LAYOUT_CELADON_DEPT_F6",
-      "name": "CeladonDeptF6_Layout",
-      "width": 18,
-      "height": 12,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/CeladonDeptF6/border.bin",
-      "blockdata_filepath": "data/layouts/CeladonDeptF6/map.bin"
-    },
-    {
-      "id": "LAYOUT_CELADON_DEPT_ELEVATOR",
-      "name": "CeladonDeptElevator_Layout",
-      "width": 5,
-      "height": 6,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BattleFrontier",
-      "border_filepath": "data/layouts/CeladonDeptElevator/border.bin",
-      "blockdata_filepath": "data/layouts/CeladonDeptElevator/map.bin"
     },
     {
       "id": "LAYOUT_CELADON_GYM",
@@ -6612,16 +6442,6 @@
       "blockdata_filepath": "data/layouts/TestRoom/map.bin"
     },
     {
-      "id": "LAYOUT_FUCHSIA_CENTER",
-      "name": "FuchsiaCenter_Layout",
-      "width": 14,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonCenter",
-      "border_filepath": "data/layouts/FuchsiaCenter/border.bin",
-      "blockdata_filepath": "data/layouts/FuchsiaCenter/map.bin"
-    },
-    {
       "id": "LAYOUT_FUCHSIA_GUARDIAN_HOUSE",
       "name": "FuchsiaGuardianHouse_Layout",
       "width": 50,
@@ -6632,26 +6452,6 @@
       "blockdata_filepath": "data/layouts/FuchsiaGuardianHouse/map.bin"
     },
     {
-      "id": "LAYOUT_FUCHSIA_MART",
-      "name": "FuchsiaMart_Layout",
-      "width": 11,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/FuchsiaMart/border.bin",
-      "blockdata_filepath": "data/layouts/FuchsiaMart/map.bin"
-    },
-    {
-      "id": "LAYOUT_LAVENDER_CENTER",
-      "name": "LavenderCenter_Layout",
-      "width": 14,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonCenter",
-      "border_filepath": "data/layouts/LavenderCenter/border.bin",
-      "blockdata_filepath": "data/layouts/LavenderCenter/map.bin"
-    },
-    {
       "id": "LAYOUT_FUCHSIA_GYM",
       "name": "FuchsiaGym_Layout",
       "width": 16,
@@ -6660,16 +6460,6 @@
       "secondary_tileset": "gTileset_MossdeepGym",
       "border_filepath": "data/layouts/FuchsiaGym/border.bin",
       "blockdata_filepath": "data/layouts/FuchsiaGym/map.bin"
-    },
-    {
-      "id": "LAYOUT_LAVENDER_MART",
-      "name": "LavenderMart_Layout",
-      "width": 11,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/LavenderMart/border.bin",
-      "blockdata_filepath": "data/layouts/LavenderMart/map.bin"
     },
     {
       "id": "LAYOUT_LAVENDER_ORPHANAGE",
@@ -6692,26 +6482,6 @@
       "blockdata_filepath": "data/layouts/CeruleanBikeShop/map.bin"
     },
     {
-      "id": "LAYOUT_CERULEAN_MART",
-      "name": "CeruleanMart_Layout",
-      "width": 11,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/CeruleanMart/border.bin",
-      "blockdata_filepath": "data/layouts/CeruleanMart/map.bin"
-    },
-    {
-      "id": "LAYOUT_CERULEAN_CENTER",
-      "name": "CeruleanCenter_Layout",
-      "width": 14,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonCenter",
-      "border_filepath": "data/layouts/CeruleanCenter/border.bin",
-      "blockdata_filepath": "data/layouts/CeruleanCenter/map.bin"
-    },
-    {
       "id": "LAYOUT_CERULEAN_INDOOR",
       "name": "CeruleanIndoor_Layout",
       "width": 47,
@@ -6730,26 +6500,6 @@
       "secondary_tileset": "gTileset_BikeShop",
       "border_filepath": "data/layouts/CeruleanGym/border.bin",
       "blockdata_filepath": "data/layouts/CeruleanGym/map.bin"
-    },
-    {
-      "id": "LAYOUT_PEWTER_CENTER",
-      "name": "PewterCenter_Layout",
-      "width": 14,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonCenter",
-      "border_filepath": "data/layouts/PewterCenter/border.bin",
-      "blockdata_filepath": "data/layouts/PewterCenter/map.bin"
-    },
-    {
-      "id": "LAYOUT_PEWTER_MART",
-      "name": "PewterMart_Layout",
-      "width": 11,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/PewterMart/border.bin",
-      "blockdata_filepath": "data/layouts/PewterMart/map.bin"
     },
     {
       "id": "LAYOUT_PEWTER_MUSEUM",
@@ -6780,26 +6530,6 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/PewterIndoors/border.bin",
       "blockdata_filepath": "data/layouts/PewterIndoors/map.bin"
-    },
-    {
-      "id": "LAYOUT_VIRIDIAN_CENTER",
-      "name": "ViridianCenter_Layout",
-      "width": 16,
-      "height": 13,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_AltPokecenter",
-      "border_filepath": "data/layouts/ViridianCenter/border.bin",
-      "blockdata_filepath": "data/layouts/ViridianCenter/map.bin"
-    },
-    {
-      "id": "LAYOUT_VIRIDIAN_MART",
-      "name": "ViridianMart_Layout",
-      "width": 11,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/ViridianMart/border.bin",
-      "blockdata_filepath": "data/layouts/ViridianMart/map.bin"
     },
     {
       "id": "LAYOUT_VIRIDIAN_SCHOOL",
@@ -6872,26 +6602,6 @@
       "blockdata_filepath": "data/layouts/CinnabarIndoors/map.bin"
     },
     {
-      "id": "LAYOUT_CINNABAR_MART",
-      "name": "CinnabarMart_Layout",
-      "width": 11,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/CinnabarMart/border.bin",
-      "blockdata_filepath": "data/layouts/CinnabarMart/map.bin"
-    },
-    {
-      "id": "LAYOUT_CINNABAR_CENTER",
-      "name": "CinnabarCenter_Layout",
-      "width": 14,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonCenter",
-      "border_filepath": "data/layouts/CinnabarCenter/border.bin",
-      "blockdata_filepath": "data/layouts/CinnabarCenter/map.bin"
-    },
-    {
       "id": "LAYOUT_CINNABAR_LAB",
       "name": "CinnabarLab_Layout",
       "width": 65,
@@ -6942,26 +6652,6 @@
       "blockdata_filepath": "data/layouts/NewbarkInteriorsF1/map.bin"
     },
     {
-      "id": "LAYOUT_CHERRYGROVE_MART",
-      "name": "CherrygroveMart_Layout",
-      "width": 11,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/CherrygroveMart/border.bin",
-      "blockdata_filepath": "data/layouts/CherrygroveMart/map.bin"
-    },
-    {
-      "id": "LAYOUT_CHERRYGROVE_CENTER",
-      "name": "CherrygroveCenter_Layout",
-      "width": 14,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonCenter",
-      "border_filepath": "data/layouts/CherrygroveCenter/border.bin",
-      "blockdata_filepath": "data/layouts/CherrygroveCenter/map.bin"
-    },
-    {
       "id": "LAYOUT_CHERRYGROVE_INDOOR",
       "name": "CherrygroveIndoor_Layout",
       "width": 30,
@@ -6970,26 +6660,6 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/CherrygroveIndoor/border.bin",
       "blockdata_filepath": "data/layouts/CherrygroveIndoor/map.bin"
-    },
-    {
-      "id": "LAYOUT_VIOLET_CENTER",
-      "name": "VioletCenter_Layout",
-      "width": 14,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonCenter",
-      "border_filepath": "data/layouts/VioletCenter/border.bin",
-      "blockdata_filepath": "data/layouts/VioletCenter/map.bin"
-    },
-    {
-      "id": "LAYOUT_VIOLET_MART",
-      "name": "VioletMart_Layout",
-      "width": 11,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/VioletMart/border.bin",
-      "blockdata_filepath": "data/layouts/VioletMart/map.bin"
     },
     {
       "id": "LAYOUT_VIOLET_SCHOOL",
@@ -7022,26 +6692,6 @@
       "blockdata_filepath": "data/layouts/VioletGym/map.bin"
     },
     {
-      "id": "LAYOUT_AZALEA_CENTER",
-      "name": "AzaleaCenter_Layout",
-      "width": 14,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonCenter",
-      "border_filepath": "data/layouts/AzaleaCenter/border.bin",
-      "blockdata_filepath": "data/layouts/AzaleaCenter/map.bin"
-    },
-    {
-      "id": "LAYOUT_AZALEA_MART",
-      "name": "AzaleaMart_Layout",
-      "width": 11,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/AzaleaMart/border.bin",
-      "blockdata_filepath": "data/layouts/AzaleaMart/map.bin"
-    },
-    {
       "id": "LAYOUT_AZALEA_INTERIORS",
       "name": "AzaleaInteriors_Layout",
       "width": 26,
@@ -7062,16 +6712,6 @@
       "blockdata_filepath": "data/layouts/AzaleaGym/map.bin"
     },
     {
-      "id": "LAYOUT_GOLDENROD_CENTER",
-      "name": "GoldenrodCenter_Layout",
-      "width": 25,
-      "height": 25,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonCenter",
-      "border_filepath": "data/layouts/GoldenrodCenter/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenrodCenter/map.bin"
-    },
-    {
       "id": "LAYOUT_GOLDENROD_RADIO_F1",
       "name": "GoldenrodRadioF1_Layout",
       "width": 56,
@@ -7090,66 +6730,6 @@
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/GoldenrodShopF1/border.bin",
       "blockdata_filepath": "data/layouts/GoldenrodShopF1/map.bin"
-    },
-    {
-      "id": "LAYOUT_GOLDENROD_SHOP_F2",
-      "name": "GoldenrodShopF2_Layout",
-      "width": 18,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/GoldenrodShopF2/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenrodShopF2/map.bin"
-    },
-    {
-      "id": "LAYOUT_GOLDENROD_F3",
-      "name": "GoldenrodF3_Layout",
-      "width": 18,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/GoldenrodF3/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenrodF3/map.bin"
-    },
-    {
-      "id": "LAYOUT_GOLDENROD_SHOP_F4",
-      "name": "GoldenrodShopF4_Layout",
-      "width": 18,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/GoldenrodShopF4/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenrodShopF4/map.bin"
-    },
-    {
-      "id": "LAYOUT_GOLDENROD_SHOP_F5",
-      "name": "GoldenrodShopF5_Layout",
-      "width": 18,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/GoldenrodShopF5/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenrodShopF5/map.bin"
-    },
-    {
-      "id": "LAYOUT_GOLDENROD_SHOP_F6",
-      "name": "GoldenrodShopF6_Layout",
-      "width": 18,
-      "height": 12,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/GoldenrodShopF6/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenrodShopF6/map.bin"
-    },
-    {
-      "id": "LAYOUT_GOLDENROD_SHOP_LIFTER",
-      "name": "GoldenrodShopLifter_Layout",
-      "width": 5,
-      "height": 6,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BattleFrontier",
-      "border_filepath": "data/layouts/GoldenrodShopLifter/border.bin",
-      "blockdata_filepath": "data/layouts/GoldenrodShopLifter/map.bin"
     },
     {
       "id": "LAYOUT_GOLDENROD_GAME_CORNER",
@@ -7272,26 +6852,6 @@
       "blockdata_filepath": "data/layouts/GoldenrodInteriors/map.bin"
     },
     {
-      "id": "LAYOUT_ECRUTEAK_CENTER",
-      "name": "EcruteakCenter_Layout",
-      "width": 14,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonCenter",
-      "border_filepath": "data/layouts/EcruteakCenter/border.bin",
-      "blockdata_filepath": "data/layouts/EcruteakCenter/map.bin"
-    },
-    {
-      "id": "LAYOUT_ECRUTEAK_MART",
-      "name": "EcruteakMart_Layout",
-      "width": 11,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/EcruteakMart/border.bin",
-      "blockdata_filepath": "data/layouts/EcruteakMart/map.bin"
-    },
-    {
       "id": "LAYOUT_KIMONOGIRL",
       "name": "Kimonogirl_Layout",
       "width": 20,
@@ -7330,16 +6890,6 @@
       "secondary_tileset": "gTileset_PokemonCenter",
       "border_filepath": "data/layouts/OlivineCenter/border.bin",
       "blockdata_filepath": "data/layouts/OlivineCenter/map.bin"
-    },
-    {
-      "id": "LAYOUT_OLIVINE_MART",
-      "name": "OlivineMart_Layout",
-      "width": 11,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/OlivineMart/border.bin",
-      "blockdata_filepath": "data/layouts/OlivineMart/map.bin"
     },
     {
       "id": "LAYOUT_OLIVINE_INDOORS",
@@ -7392,16 +6942,6 @@
       "blockdata_filepath": "data/layouts/CyanwoodCenter/map.bin"
     },
     {
-      "id": "LAYOUT_CYANWOOD_MART",
-      "name": "CyanwoodMart_Layout",
-      "width": 11,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/CyanwoodMart/border.bin",
-      "blockdata_filepath": "data/layouts/CyanwoodMart/map.bin"
-    },
-    {
       "id": "LAYOUT_CYANWOOD_FLORAL_SHOPPE",
       "name": "CyanwoodFloralShoppe_Layout",
       "width": 11,
@@ -7410,16 +6950,6 @@
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/CyanwoodFloralShoppe/border.bin",
       "blockdata_filepath": "data/layouts/CyanwoodFloralShoppe/map.bin"
-    },
-    {
-      "id": "LAYOUT_CYANWOOD_CENTER_TEST",
-      "name": "CyanwoodCenterTest_Layout",
-      "width": 14,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonCenter",
-      "border_filepath": "data/layouts/CyanwoodCenterTest/border.bin",
-      "blockdata_filepath": "data/layouts/CyanwoodCenterTest/map.bin"
     },
     {
       "id": "LAYOUT_CYANWOOD_SEASHORE",
@@ -7492,26 +7022,6 @@
       "blockdata_filepath": "data/layouts/BlackthornCenter/map.bin"
     },
     {
-      "id": "LAYOUT_BLACKTHORN_MART",
-      "name": "BlackthornMart_Layout",
-      "width": 11,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/BlackthornMart/border.bin",
-      "blockdata_filepath": "data/layouts/BlackthornMart/map.bin"
-    },
-    {
-      "id": "LAYOUT_BLACKTHORN_TEST",
-      "name": "BlackthornTest_Layout",
-      "width": 14,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonCenter",
-      "border_filepath": "data/layouts/BlackthornTest/border.bin",
-      "blockdata_filepath": "data/layouts/BlackthornTest/map.bin"
-    },
-    {
       "id": "LAYOUT_BLACKTHORN_GYM",
       "name": "BlackthornGym_Layout",
       "width": 90,
@@ -7540,16 +7050,6 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/MahoganyMart/border.bin",
       "blockdata_filepath": "data/layouts/MahoganyMart/map.bin"
-    },
-    {
-      "id": "LAYOUT_MAHOGANY_CENTER",
-      "name": "MahoganyCenter_Layout",
-      "width": 14,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonCenter",
-      "border_filepath": "data/layouts/MahoganyCenter/border.bin",
-      "blockdata_filepath": "data/layouts/MahoganyCenter/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE49",
@@ -8172,66 +7672,6 @@
       "blockdata_filepath": "data/layouts/PokmonNetworkCenter/map.bin"
     },
     {
-      "id": "LAYOUT_TWO_ISLAND_CENTER",
-      "name": "TwoIslandCenter_Layout",
-      "width": 14,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonCenter",
-      "border_filepath": "data/layouts/TwoIslandCenter/border.bin",
-      "blockdata_filepath": "data/layouts/TwoIslandCenter/map.bin"
-    },
-    {
-      "id": "LAYOUT_THREE_ISLAND_CENTER",
-      "name": "ThreeIslandCenter_Layout",
-      "width": 14,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonCenter",
-      "border_filepath": "data/layouts/ThreeIslandCenter/border.bin",
-      "blockdata_filepath": "data/layouts/ThreeIslandCenter/map.bin"
-    },
-    {
-      "id": "LAYOUT_FOUR_ISLAND_CENTER",
-      "name": "FourIslandCenter_Layout",
-      "width": 14,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonCenter",
-      "border_filepath": "data/layouts/FourIslandCenter/border.bin",
-      "blockdata_filepath": "data/layouts/FourIslandCenter/map.bin"
-    },
-    {
-      "id": "LAYOUT_FIVE_ISLAND_CENTER",
-      "name": "FiveIslandCenter_Layout",
-      "width": 14,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonCenter",
-      "border_filepath": "data/layouts/FiveIslandCenter/border.bin",
-      "blockdata_filepath": "data/layouts/FiveIslandCenter/map.bin"
-    },
-    {
-      "id": "LAYOUT_SIX_ISLAND_CENTER",
-      "name": "SixIslandCenter_Layout",
-      "width": 14,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonCenter",
-      "border_filepath": "data/layouts/SixIslandCenter/border.bin",
-      "blockdata_filepath": "data/layouts/SixIslandCenter/map.bin"
-    },
-    {
-      "id": "LAYOUT_SEVEN_ISLAND_CENTER",
-      "name": "SevenIslandCenter_Layout",
-      "width": 14,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonCenter",
-      "border_filepath": "data/layouts/SevenIslandCenter/border.bin",
-      "blockdata_filepath": "data/layouts/SevenIslandCenter/map.bin"
-    },
-    {
       "id": "LAYOUT_DOTTED_HOLE_F1",
       "name": "DottedHoleF1_Layout",
       "width": 37,
@@ -8300,16 +7740,6 @@
       "secondary_tileset": "gTileset_CableClub",
       "border_filepath": "data/layouts/NetworkCenterF2/border.bin",
       "blockdata_filepath": "data/layouts/NetworkCenterF2/map.bin"
-    },
-    {
-      "id": "LAYOUT_NETWORK_CENTER_F3",
-      "name": "NetworkCenterF3_Layout",
-      "width": 20,
-      "height": 10,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_CableClub",
-      "border_filepath": "data/layouts/NetworkCenterF3/border.bin",
-      "blockdata_filepath": "data/layouts/NetworkCenterF3/map.bin"
     },
     {
       "id": "LAYOUT_EMBEDDED_TOWER_F1",
@@ -8552,26 +7982,6 @@
       "blockdata_filepath": "data/layouts/ThreeIslandMarket/map.bin"
     },
     {
-      "id": "LAYOUT_FOUR_ISLAND_DAY_CARE",
-      "name": "FourIslandDayCare_Layout",
-      "width": 12,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonDayCare",
-      "border_filepath": "data/layouts/FourIslandDayCare/border.bin",
-      "blockdata_filepath": "data/layouts/FourIslandDayCare/map.bin"
-    },
-    {
-      "id": "LAYOUT_FOUR_ISLAND_MART",
-      "name": "FourIslandMart_Layout",
-      "width": 11,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/FourIslandMart/border.bin",
-      "blockdata_filepath": "data/layouts/FourIslandMart/map.bin"
-    },
-    {
       "id": "LAYOUT_FOUR_ISLAND_MANSION",
       "name": "FourIslandMansion_Layout",
       "width": 21,
@@ -8590,36 +8000,6 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/FourIslandHouses/border.bin",
       "blockdata_filepath": "data/layouts/FourIslandHouses/map.bin"
-    },
-    {
-      "id": "LAYOUT_FIVE_ISLAND_MART",
-      "name": "FiveIslandMart_Layout",
-      "width": 11,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/FiveIslandMart/border.bin",
-      "blockdata_filepath": "data/layouts/FiveIslandMart/map.bin"
-    },
-    {
-      "id": "LAYOUT_SIX_ISLAND_MART",
-      "name": "SixIslandMart_Layout",
-      "width": 11,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/SixIslandMart/border.bin",
-      "blockdata_filepath": "data/layouts/SixIslandMart/map.bin"
-    },
-    {
-      "id": "LAYOUT_SEVEN_ISLAND_MART",
-      "name": "SevenIslandMart_Layout",
-      "width": 11,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/SevenIslandMart/border.bin",
-      "blockdata_filepath": "data/layouts/SevenIslandMart/map.bin"
     },
     {
       "id": "LAYOUT_FIVE_ISLAND_HOUSES",
@@ -8802,16 +8182,6 @@
       "blockdata_filepath": "data/layouts/Route2House/map.bin"
     },
     {
-      "id": "LAYOUT_KANTO_DAYCARE",
-      "name": "KantoDaycare_Layout",
-      "width": 12,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonDayCare",
-      "border_filepath": "data/layouts/KantoDaycare/border.bin",
-      "blockdata_filepath": "data/layouts/KantoDaycare/map.bin"
-    },
-    {
       "id": "LAYOUT_ROUTE12FISHER_HOUSE",
       "name": "Route12FisherHouse_Layout",
       "width": 30,
@@ -8842,32 +8212,12 @@
       "blockdata_filepath": "data/layouts/Route19GameCorner/map.bin"
     },
     {
-      "id": "LAYOUT_ROUTE3CENTER",
-      "name": "Route3Center_Layout",
-      "width": 14,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonCenter",
-      "border_filepath": "data/layouts/Route3Center/border.bin",
-      "blockdata_filepath": "data/layouts/Route3Center/map.bin"
-    },
-    {
-      "id": "LAYOUT_ROUTE10CENTER",
-      "name": "Route10Center_Layout",
-      "width": 14,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonCenter",
-      "border_filepath": "data/layouts/Route10Center/border.bin",
-      "blockdata_filepath": "data/layouts/Route10Center/map.bin"
-    },
-    {
       "id": "LAYOUT_ROUTE32CENTER",
       "name": "Route32Center_Layout",
-      "width": 14,
-      "height": 9,
+      "width": 16,
+      "height": 13,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonCenter",
+      "secondary_tileset": "gTileset_AltPokecenter",
       "border_filepath": "data/layouts/Route32Center/border.bin",
       "blockdata_filepath": "data/layouts/Route32Center/map.bin"
     },
@@ -9534,10 +8884,10 @@
     {
       "id": "LAYOUT_ROUTE28CENTER",
       "name": "Route28Center_Layout",
-      "width": 14,
-      "height": 9,
+      "width": 16,
+      "height": 13,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonCenter",
+      "secondary_tileset": "gTileset_AltPokecenter",
       "border_filepath": "data/layouts/Route28Center/border.bin",
       "blockdata_filepath": "data/layouts/Route28Center/map.bin"
     },

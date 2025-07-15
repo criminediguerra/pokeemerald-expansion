@@ -1,7 +1,7 @@
 {
   "id": "MAP_CELADON_CASINO",
   "name": "CeladonCasino",
-  "layout": "LAYOUT_CELADON_CASINO",
+  "layout": "LAYOUT_MAUVILLE_CITY_GAME_CORNER",
   "music": "MUS_RG_GAME_CORNER",
   "region_map_section": "MAPSEC_CELADON_CITY",
   "requires_flash": false,
@@ -12,7 +12,7 @@
   "allow_running": true,
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": null,
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_GAMEBOY_KID",
@@ -253,9 +253,7 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [
-
-  ],
+  "coord_events": [],
   "bg_events": [
     {
       "type": "sign",
