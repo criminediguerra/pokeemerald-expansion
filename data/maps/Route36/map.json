@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_ROUTE37",
-      "offset": 18,
+      "offset": 12,
       "direction": "up"
     },
     {
@@ -25,7 +25,7 @@
     },
     {
       "map": "MAP_VIOLET_CITY",
-      "offset": -5,
+      "offset": -7,
       "direction": "right"
     },
     {

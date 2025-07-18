@@ -1134,3 +1134,14 @@ const struct Tileset gTileset_AltPokecenter =
     .metatileAttributes = gMetatileAttributes_AltPokecenter,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Ecruteak =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Ecruteak,
+    .palettes = gTilesetPalettes_Ecruteak,
+    .metatiles = gMetatiles_Ecruteak,
+    .metatileAttributes = gMetatileAttributes_Ecruteak,
+    .callback = NULL,
+};

@@ -4877,7 +4877,7 @@
       "width": 66,
       "height": 37,
       "primary_tileset": "gTileset_GeneralStairs",
-      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "secondary_tileset": "gTileset_Ecruteak",
       "border_filepath": "data/layouts/Route38/border.bin",
       "blockdata_filepath": "data/layouts/Route38/map.bin"
     },
@@ -5044,20 +5044,20 @@
     {
       "id": "LAYOUT_ECRUTEAK_CITY",
       "name": "EcruteakCity_Layout",
-      "width": 74,
-      "height": 52,
+      "width": 76,
+      "height": 58,
       "primary_tileset": "gTileset_GeneralStairs",
-      "secondary_tileset": "gTileset_Sootopolis",
+      "secondary_tileset": "gTileset_Ecruteak",
       "border_filepath": "data/layouts/EcruteakCity/border.bin",
       "blockdata_filepath": "data/layouts/EcruteakCity/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE37",
       "name": "Route37_Layout",
-      "width": 26,
+      "width": 32,
       "height": 32,
       "primary_tileset": "gTileset_GeneralStairs",
-      "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
+      "secondary_tileset": "gTileset_Ecruteak",
       "border_filepath": "data/layouts/Route37/border.bin",
       "blockdata_filepath": "data/layouts/Route37/map.bin"
     },
@@ -5135,7 +5135,7 @@
       "id": "LAYOUT_VIOLET_CITY",
       "name": "VioletCity_Layout",
       "width": 78,
-      "height": 82,
+      "height": 84,
       "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/VioletCity/border.bin",
@@ -5255,7 +5255,7 @@
       "id": "LAYOUT_MAHOGANY_TOWN",
       "name": "MahoganyTown_Layout",
       "width": 34,
-      "height": 28,
+      "height": 32,
       "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/MahoganyTown/border.bin",
@@ -5287,7 +5287,7 @@
       "width": 96,
       "height": 35,
       "primary_tileset": "gTileset_GeneralStairs",
-      "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
+      "secondary_tileset": "gTileset_Ecruteak",
       "border_filepath": "data/layouts/Route42/border.bin",
       "blockdata_filepath": "data/layouts/Route42/map.bin"
     },
@@ -5967,7 +5967,7 @@
       "width": 32,
       "height": 42,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Dewford",
+      "secondary_tileset": "gTileset_Ecruteak",
       "border_filepath": "data/layouts/TinTowerF3/border.bin",
       "blockdata_filepath": "data/layouts/TinTowerF3/map.bin"
     },
@@ -7970,16 +7970,6 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/ThreeIslandHouses/border.bin",
       "blockdata_filepath": "data/layouts/ThreeIslandHouses/map.bin"
-    },
-    {
-      "id": "LAYOUT_THREE_ISLAND_MARKET",
-      "name": "ThreeIslandMarket_Layout",
-      "width": 11,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/ThreeIslandMarket/border.bin",
-      "blockdata_filepath": "data/layouts/ThreeIslandMarket/map.bin"
     },
     {
       "id": "LAYOUT_FOUR_ISLAND_MANSION",

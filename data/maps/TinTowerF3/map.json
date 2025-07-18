@@ -12,11 +12,11 @@
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": null,
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_HOOH",
-      "x": 16,
+      "x": 17,
       "y": 11,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -29,8 +29,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_HO_OH_STATUE",
-      "x": 14,
-      "y": 28,
+      "x": 15,
+      "y": 29,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -42,8 +42,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_HO_OH_STATUE",
-      "x": 18,
-      "y": 28,
+      "x": 19,
+      "y": 29,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -55,7 +55,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_HO_OH_STATUE",
-      "x": 14,
+      "x": 15,
       "y": 22,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -68,7 +68,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_HO_OH_STATUE",
-      "x": 18,
+      "x": 19,
       "y": 22,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -81,8 +81,21 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_HO_OH_STATUE",
-      "x": 14,
-      "y": 28,
+      "x": 15,
+      "y": 36,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Mewtwo_Statue",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HO_OH_STATUE",
+      "x": 19,
+      "y": 36,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -95,7 +108,7 @@
   ],
   "warp_events": [
     {
-      "x": 18,
+      "x": 19,
       "y": 32,
       "elevation": 0,
       "dest_map": "MAP_TIN_TOWER_F2",
@@ -105,18 +118,18 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 16,
+      "x": 17,
       "y": 18,
       "elevation": 3,
       "var": "VAR_TEMP_1",
       "var_value": "0",
-      "script": "NULL"
+      "script": "NavelRock_Top_EventScript_HoOh"
     }
   ],
   "bg_events": [
     {
       "type": "hidden_item",
-      "x": 16,
+      "x": 17,
       "y": 17,
       "elevation": 3,
       "item": "ITEM_SACRED_ASH",

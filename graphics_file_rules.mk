@@ -55,6 +55,9 @@ $(TILESETGFXDIR)/secondary/pacifidlog/tiles.4bpp: %.4bpp: %.png
 $(TILESETGFXDIR)/secondary/sootopolis/tiles.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 328 -Wnum_tiles
 
+$(TILESETGFXDIR)/secondary/ecruteak/tiles.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -num_tiles 328 -Wnum_tiles
+
 $(TILESETGFXDIR)/secondary/battle_frontier_outside_west/tiles.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 508 -Wnum_tiles
 

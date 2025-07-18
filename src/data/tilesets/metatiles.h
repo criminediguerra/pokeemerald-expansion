@@ -285,3 +285,6 @@ const u16 gMetatileAttributes_MtStark[] = INCBIN_U16("data/tilesets/secondary/mt
 
 const u16 gMetatiles_AltPokecenter[] = INCBIN_U16("data/tilesets/secondary/alt_pokecenter/metatiles.bin");
 const u16 gMetatileAttributes_AltPokecenter[] = INCBIN_U16("data/tilesets/secondary/alt_pokecenter/metatile_attributes.bin");
+
+const u16 gMetatiles_Ecruteak[] = INCBIN_U16("data/tilesets/secondary/ecruteak/metatiles.bin");
+const u16 gMetatileAttributes_Ecruteak[] = INCBIN_U16("data/tilesets/secondary/ecruteak/metatile_attributes.bin");
