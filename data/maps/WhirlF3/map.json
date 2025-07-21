@@ -4,13 +4,13 @@
   "layout": "LAYOUT_WHIRL_F3",
   "music": "WHIRL",
   "region_map_section": "MAPSEC_WHIRL",
-  "requires_flash": false,
+  "requires_flash": true,
   "weather": "WEATHER_SHADE",
   "map_type": "MAP_TYPE_UNDERGROUND",
   "allow_cycling": true,
   "allow_escaping": true,
   "allow_running": true,
-  "show_map_name": true,
+  "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
   "object_events": [],
@@ -23,14 +23,14 @@
       "dest_warp_id": "6"
     },
     {
-      "x": 14,
-      "y": 24,
+      "x": 13,
+      "y": 19,
       "elevation": 0,
       "dest_map": "MAP_WHIRL_F2",
       "dest_warp_id": "7"
     },
     {
-      "x": 16,
+      "x": 15,
       "y": 28,
       "elevation": 0,
       "dest_map": "MAP_WHIRL_F4",

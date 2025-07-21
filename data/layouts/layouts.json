@@ -6005,7 +6005,7 @@
       "id": "LAYOUT_WHIRL_F4",
       "name": "WhirlF4_Layout",
       "width": 29,
-      "height": 19,
+      "height": 21,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/WhirlF4/border.bin",
@@ -10410,6 +10410,16 @@
       "secondary_tileset": "gTileset_Underwater",
       "border_filepath": "data/layouts/AshleafTownUnderwater/border.bin",
       "blockdata_filepath": "data/layouts/AshleafTownUnderwater/map.bin"
+    },
+    {
+      "id": "LAYOUT_WHIRL_F6",
+      "name": "WhirlF6_Layout",
+      "width": 13,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleArena",
+      "border_filepath": "data/layouts/WhirlF6/border.bin",
+      "blockdata_filepath": "data/layouts/WhirlF6/map.bin"
     }
   ]
 }

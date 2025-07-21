@@ -936,6 +936,7 @@
 #define MAP_WHIRL_F3          (15 | (34 << 8))
 #define MAP_WHIRL_F4          (16 | (34 << 8))
 #define MAP_WHIRL_F5          (17 | (34 << 8))
+#define MAP_WHIRL_F6          (18 | (34 << 8))
 
 // gMapGroup_DungeonsHoenn
 #define MAP_METEOR_FALLS_1F_1R                       (0 | (35 << 8))

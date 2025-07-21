@@ -4,7 +4,7 @@
   "layout": "LAYOUT_WHIRL_F2",
   "music": "WHIRL",
   "region_map_section": "MAPSEC_WHIRL",
-  "requires_flash": false,
+  "requires_flash": true,
   "weather": "WEATHER_SHADE",
   "map_type": "MAP_TYPE_UNDERGROUND",
   "allow_cycling": true,
@@ -17,7 +17,7 @@
   "warp_events": [
     {
       "x": 8,
-      "y": 4,
+      "y": 3,
       "elevation": 0,
       "dest_map": "MAP_WHIRL_F1",
       "dest_warp_id": "4"
@@ -31,28 +31,28 @@
     },
     {
       "x": 57,
-      "y": 4,
+      "y": 2,
       "elevation": 0,
       "dest_map": "MAP_WHIRL_F1",
       "dest_warp_id": "6"
     },
     {
       "x": 14,
-      "y": 50,
+      "y": 48,
       "elevation": 0,
       "dest_map": "MAP_WHIRL_F1",
       "dest_warp_id": "7"
     },
     {
       "x": 32,
-      "y": 50,
+      "y": 49,
       "elevation": 0,
       "dest_map": "MAP_WHIRL_F1",
       "dest_warp_id": "8"
     },
     {
-      "x": 52,
-      "y": 47,
+      "x": 51,
+      "y": 45,
       "elevation": 0,
       "dest_map": "MAP_WHIRL_F1",
       "dest_warp_id": "9"

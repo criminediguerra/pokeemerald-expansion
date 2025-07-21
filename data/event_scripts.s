@@ -2419,3 +2419,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/AshleafTownUnderwater/scripts.inc"
 
     .include "data/scripts/apricorn_tree.inc"
+
+	.include "data/maps/WhirlF6/scripts.inc"
