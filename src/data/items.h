@@ -7081,7 +7081,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_DEEP_SEA_SCALE] =
     {
-        .name = _("Deep Sea Scale"),
+        .name = _("DEEP SEA SCALE"),
         .price = (I_PRICE >= GEN_7) ? 2000 : 200,
         .holdEffect = HOLD_EFFECT_DEEP_SEA_SCALE,
         .description = COMPOUND_STRING(
@@ -7099,8 +7099,8 @@ const struct Item gItemsInfo[] =
 
     [ITEM_DEEP_SEA_TOOTH] =
     {
-        .name = _("Deep Sea Tooth"),
-        .pluralName = _("Deep Sea Teeth"),
+        .name = _("DEEP SEA TOOTH"),
+        .pluralName = _("DEEP SEA TEETH"),
         .price = (I_PRICE >= GEN_7) ? 2000 : 200,
         .holdEffect = HOLD_EFFECT_DEEP_SEA_TOOTH,
         .description = COMPOUND_STRING(
@@ -13068,7 +13068,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_Gem,
-        .iconPalette = gItemIconPalette_SalacBerry,
+        .iconPalette = gItemIconPalette_GrassiumZ,
     },
 
     [ITEM_SAPPHIRE] =
@@ -13645,13 +13645,13 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_BlackAugurite,
     },
 
-    [ITEM_LINKING_CORD] =
+    [ITEM_BERSERK_GENE] =
     {
-        .name = _("LINKING CORD"),
+        .name = _("BERSERK GENE"),
         .price = 8000,
         .description = COMPOUND_STRING(
-            "A mysterious string\n"
-            "that makes some\n"
+            "A serum from SILPH\n"
+            "CO. that makes some\n"
             "POKéMON evolve."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
@@ -13679,9 +13679,9 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_PeatBlock,
     },
 
-    [ITEM_BERSERK_GENE] =
+    [ITEM_STRANGE_COMPOUND] =
     {
-        .name = _("BERSERK GENE"),
+        .name = _("STRANGE COMPOUND"),
         .price = 20,
         .holdEffect = HOLD_EFFECT_BERSERK_GENE,
         .description = COMPOUND_STRING(

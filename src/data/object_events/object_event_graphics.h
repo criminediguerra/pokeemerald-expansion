@@ -177,6 +177,7 @@ const u16 gObjectEventPal_Npc3[] = INCBIN_U16("graphics/object_events/palettes/n
 const u16 gObjectEventPal_Npc4[] = INCBIN_U16("graphics/object_events/palettes/npc_4.gbapal");
 const u16 gObjectEventPal_Rocket[] = INCBIN_U16("graphics/object_events/palettes/rocket.gbapal");
 const u16 gObjectEventPal_Surge[] = INCBIN_U16("graphics/object_events/palettes/surge.gbapal");
+const u16 gObjectEventPal_Rayquaza[] = INCBIN_U16("graphics/object_events/palettes/rayquaza.gbapal");
 const u16 gObjectEventPal_Egg[] = INCBIN_U16("graphics/object_events/palettes/egg.gbapal");
 const u16 gObjectEventPal_BellsproutStatue[] = INCBIN_U16("graphics/object_events/palettes/bellsproutstatue.gbapal");
 const u16 gObjectEventPal_HoohStatue[] = INCBIN_U16("graphics/object_events/palettes/hoohstatue.gbapal");

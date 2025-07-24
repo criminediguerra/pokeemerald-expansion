@@ -209,22 +209,22 @@
       "x": 20,
       "y": 18,
       "elevation": 0,
-      "dest_map": "MAP_NEW_BARK_TOWN",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_MAGMA_HIDEOUT_4F",
+      "dest_warp_id": "1"
     },
     {
       "x": 7,
       "y": 5,
       "elevation": 0,
-      "dest_map": "MAP_FIGHT_AREA",
+      "dest_map": "MAP_SKY_PILLAR_TOP",
       "dest_warp_id": "0"
     },
     {
       "x": 10,
       "y": 21,
       "elevation": 0,
-      "dest_map": "MAP_ROUTE216",
-      "dest_warp_id": "1"
+      "dest_map": "MAP_SEAFLOOR_CAVERN_ROOM9",
+      "dest_warp_id": "0"
     },
     {
       "x": 25,

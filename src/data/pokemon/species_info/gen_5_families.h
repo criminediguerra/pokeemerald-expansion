@@ -2384,7 +2384,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sBoldoreLevelUpLearnset,
         .teachableLearnset = sBoldoreTeachableLearnset,
         .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_GIGALITH},
-                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GIGALITH}),
+                                {EVO_ITEM, ITEM_BERSERK_GENE, SPECIES_GIGALITH}),
     },
 
     [SPECIES_GIGALITH] =
@@ -3056,7 +3056,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sGurdurrLevelUpLearnset,
         .teachableLearnset = sGurdurrTeachableLearnset,
         .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_CONKELDURR},
-                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_CONKELDURR}),
+                                {EVO_ITEM, ITEM_BERSERK_GENE, SPECIES_CONKELDURR}),
     },
 
     [SPECIES_CONKELDURR] =
@@ -8758,17 +8758,17 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_2),
         .abilities = { ABILITY_HEALER, ABILITY_HYDRATION, ABILITY_REGENERATOR },
         .bodyColor = BODY_COLOR_PINK,
-        .speciesName = _("Alomomola"),
+        .speciesName = _("ALOMOMOLA"),
         .cryId = CRY_ALOMOMOLA,
         .natDexNum = NATIONAL_DEX_ALOMOMOLA,
-        .categoryName = _("Caring"),
+        .categoryName = _("CARING"),
         .height = 12,
         .weight = 316,
         .description = COMPOUND_STRING(
-            "When they find a wounded Pokémon,\n"
+            "When they find a wounded POKéMON,\n"
             "they embrace it and bring it to shore.\n"
             "The special membrane enveloping\n"
-            "Alomomola has the ability to heal wounds."),
+            "ALOMOMOLA has the ability to heal wounds."),
         .pokemonScale = 282,
         .pokemonOffset = 4,
         .trainerScale = 256,

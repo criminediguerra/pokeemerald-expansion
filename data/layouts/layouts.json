@@ -612,16 +612,6 @@
       "blockdata_filepath": "data/layouts/PokemonCenter_1F/map.bin"
     },
     {
-      "id": "LAYOUT_POKEMON_CENTER_2F",
-      "name": "PokemonCenter_2F_Layout",
-      "width": 14,
-      "height": 10,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonCenter",
-      "border_filepath": "data/layouts/PokemonCenter_2F/border.bin",
-      "blockdata_filepath": "data/layouts/PokemonCenter_2F/map.bin"
-    },
-    {
       "id": "LAYOUT_MART",
       "name": "Mart_Layout",
       "width": 11,
@@ -6555,7 +6545,7 @@
       "id": "LAYOUT_VIRIDIAN_GYM",
       "name": "ViridianGym_Layout",
       "width": 24,
-      "height": 43,
+      "height": 37,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/ViridianGym/border.bin",
@@ -6964,10 +6954,10 @@
     {
       "id": "LAYOUT_CYANWOOD_AQUARIUM",
       "name": "CyanwoodAquarium_Layout",
-      "width": 28,
-      "height": 26,
+      "width": 31,
+      "height": 57,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_OceanicMuseum",
+      "secondary_tileset": "gTileset_PewterMuseum",
       "border_filepath": "data/layouts/CyanwoodAquarium/border.bin",
       "blockdata_filepath": "data/layouts/CyanwoodAquarium/map.bin"
     },
@@ -10384,9 +10374,9 @@
     {
       "id": "LAYOUT_CYANWOOD_AQUARIUM_F1",
       "name": "CyanwoodAquariumF1_Layout",
-      "width": 28,
-      "height": 22,
-      "primary_tileset": "gTileset_Building",
+      "width": 14,
+      "height": 20,
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_OceanicMuseum",
       "border_filepath": "data/layouts/CyanwoodAquariumF1/border.bin",
       "blockdata_filepath": "data/layouts/CyanwoodAquariumF1/map.bin"
@@ -10420,6 +10410,46 @@
       "secondary_tileset": "gTileset_BattleArena",
       "border_filepath": "data/layouts/WhirlF6/border.bin",
       "blockdata_filepath": "data/layouts/WhirlF6/map.bin"
+    },
+    {
+      "id": "LAYOUT_CYANWOOD_AQUARIUM_F8",
+      "name": "CyanwoodAquariumF8_Layout",
+      "width": 14,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_OceanicMuseum",
+      "border_filepath": "data/layouts/CyanwoodAquariumF8/border.bin",
+      "blockdata_filepath": "data/layouts/CyanwoodAquariumF8/map.bin"
+    },
+    {
+      "id": "LAYOUT_CYANWOOD_AQUARIUM_F7",
+      "name": "CyanwoodAquariumF7_Layout",
+      "width": 14,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_OceanicMuseum",
+      "border_filepath": "data/layouts/CyanwoodAquariumF7/border.bin",
+      "blockdata_filepath": "data/layouts/CyanwoodAquariumF7/map.bin"
+    },
+    {
+      "id": "LAYOUT_CYANWOOD_AQUARIUM_F12",
+      "name": "CyanwoodAquariumF12_Layout",
+      "width": 14,
+      "height": 20,
+      "primary_tileset": "gTileset_GeneralStairs",
+      "secondary_tileset": "gTileset_OceanicMuseum",
+      "border_filepath": "data/layouts/CyanwoodAquariumF12/border.bin",
+      "blockdata_filepath": "data/layouts/CyanwoodAquariumF12/map.bin"
+    },
+    {
+      "id": "LAYOUT_CYANWOOD_AQUARIUM_F14",
+      "name": "CyanwoodAquariumF14_Layout",
+      "width": 16,
+      "height": 12,
+      "primary_tileset": "gTileset_GeneralStairs",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/CyanwoodAquariumF14/border.bin",
+      "blockdata_filepath": "data/layouts/CyanwoodAquariumF14/map.bin"
     }
   ]
 }
