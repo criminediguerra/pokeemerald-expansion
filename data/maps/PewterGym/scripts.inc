@@ -2,16 +2,16 @@ PewterGym_MapScripts::
 	.byte 0
 
 PewterGym_EventScript_Brock::
-	goto_if_set TRAINER_FLAGS_START+855, PewterGym_EventScript_DefeatedTxt
-	goto_if_set TRAINER_FLAGS_START+856, PewterGym_EventScript_DefeatedTxt
-	goto_if_set TRAINER_FLAGS_START+857, PewterGym_EventScript_DefeatedTxt
-	goto_if_set TRAINER_FLAGS_START+858, PewterGym_EventScript_DefeatedTxt
-	goto_if_set TRAINER_FLAGS_START+859, PewterGym_EventScript_DefeatedTxt
-	goto_if_set TRAINER_FLAGS_START+860, PewterGym_EventScript_DefeatedTxt
-	goto_if_set TRAINER_FLAGS_START+861, PewterGym_EventScript_DefeatedTxt
-	goto_if_set TRAINER_FLAGS_START+862, PewterGym_EventScript_DefeatedTxt
-	goto_if_set TRAINER_FLAGS_START+863, PewterGym_EventScript_DefeatedTxt
-	goto_if_set TRAINER_FLAGS_START+864, PewterGym_EventScript_DefeatedTxt
+	goto_if_set TRAINER_FLAGS_START+855, PewterGym_EventScript_BrockDefeatedTxt
+	goto_if_set TRAINER_FLAGS_START+856, PewterGym_EventScript_BrockDefeatedTxt
+	goto_if_set TRAINER_FLAGS_START+857, PewterGym_EventScript_BrockDefeatedTxt
+	goto_if_set TRAINER_FLAGS_START+858, PewterGym_EventScript_BrockDefeatedTxt
+	goto_if_set TRAINER_FLAGS_START+859, PewterGym_EventScript_BrockDefeatedTxt
+	goto_if_set TRAINER_FLAGS_START+860, PewterGym_EventScript_BrockDefeatedTxt
+	goto_if_set TRAINER_FLAGS_START+861, PewterGym_EventScript_BrockDefeatedTxt
+	goto_if_set TRAINER_FLAGS_START+862, PewterGym_EventScript_BrockDefeatedTxt
+	goto_if_set TRAINER_FLAGS_START+863, PewterGym_EventScript_BrockDefeatedTxt
+	goto_if_set TRAINER_FLAGS_START+864, PewterGym_EventScript_BrockDefeatedTxt
 	goto PewterGym_EventScript_Brock_Check_1
 	end
 
@@ -129,7 +129,7 @@ PewterGym_EventScript_BrockDefeated::
 	release
 	end
 
-PewterGym_EventScript_DefeatedTxt::
+PewterGym_EventScript_BrockDefeatedTxt::
 	msgbox PewterGym_Text_BrockPostBattle, MSGBOX_DEFAULT
 	release
 	end

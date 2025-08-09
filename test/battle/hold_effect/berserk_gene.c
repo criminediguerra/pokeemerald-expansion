@@ -6,7 +6,7 @@ ASSUMPTIONS
     ASSUME(gItemsInfo[ITEM_STRANGE_COMPOUND].holdEffect == HOLD_EFFECT_BERSERK_GENE);
 }
 
-SINGLE_BATTLE_TEST("Berserk Gene sharply raises attack at the start of a single battle", s16 damage)
+SINGLE_BATTLE_TEST("STRANGE COMPOUND sharply raises attack at the start of a single battle", s16 damage)
 {
     u16 item;
     PARAMETRIZE { item = ITEM_NONE; }
@@ -31,7 +31,7 @@ SINGLE_BATTLE_TEST("Berserk Gene sharply raises attack at the start of a single 
     }
 }
 
-DOUBLE_BATTLE_TEST("Berserk Gene sharply raises attack at the start of a double battle", s16 damage)
+DOUBLE_BATTLE_TEST("STRANGE COMPOUND sharply raises attack at the start of a double battle", s16 damage)
 {
     u16 item;
     PARAMETRIZE { item = ITEM_NONE; }
@@ -58,7 +58,7 @@ DOUBLE_BATTLE_TEST("Berserk Gene sharply raises attack at the start of a double 
     }
 }
 
-SINGLE_BATTLE_TEST("Berserk Gene activates on switch in", s16 damage)
+SINGLE_BATTLE_TEST("STRANGE COMPOUND activates on switch in", s16 damage)
 {
     u16 item;
     PARAMETRIZE { item = ITEM_NONE; }
@@ -75,9 +75,9 @@ SINGLE_BATTLE_TEST("Berserk Gene activates on switch in", s16 damage)
         if (item == ITEM_STRANGE_COMPOUND)
         {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-            MESSAGE("Using Berserk Gene, the Attack of Wobbuffet sharply rose!");
+            MESSAGE("Using STRANGE COMPOUND, the ATTACK of WOBBUFFET sharply rose!");
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_CONFUSION, player);
-            MESSAGE("Wobbuffet became confused!");
+            MESSAGE("WOBBUFFET became confused!");
         }
         HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
@@ -85,7 +85,7 @@ SINGLE_BATTLE_TEST("Berserk Gene activates on switch in", s16 damage)
     }
 }
 
-SINGLE_BATTLE_TEST("Berserk Gene does not confuse a Pokemon with Own Tempo but still raises attack sharply in a single battle", s16 damage)
+SINGLE_BATTLE_TEST("STRANGE COMPOUND does not confuse a POKéMON with Own Tempo but still raises attack sharply in a single battle", s16 damage)
 {
     u16 item;
     PARAMETRIZE { item = ITEM_NONE; }
@@ -102,18 +102,18 @@ SINGLE_BATTLE_TEST("Berserk Gene does not confuse a Pokemon with Own Tempo but s
         if (item == ITEM_STRANGE_COMPOUND)
         {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-            MESSAGE("Using Berserk Gene, the Attack of Slowbro sharply rose!");
+            MESSAGE("Using STRANGE COMPOUND, the ATTACK of SLOWBRO sharply rose!");
             ABILITY_POPUP(player, ABILITY_OWN_TEMPO);
-            MESSAGE("Slowbro's Own Tempo prevents confusion!");
+            MESSAGE("SLOWBRO's Own Tempo prevents confusion!");
         }
         HP_BAR(opponent, captureDamage: &results[i].damage);
-        NOT MESSAGE("Slowbro became confused!");
+        NOT MESSAGE("SLOWBRO became confused!");
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(2.0), results[1].damage);
     }
 }
 
-DOUBLE_BATTLE_TEST("Berserk Gene does not confuse a Pokemon with Own Tempo but still raises attack sharply in a double battle", s16 damage)
+DOUBLE_BATTLE_TEST("STRANGE COMPOUND does not confuse a POKéMON with Own Tempo but still raises attack sharply in a double battle", s16 damage)
 {
     u16 item;
     bool8 positionLeft = FALSE;
@@ -140,12 +140,12 @@ DOUBLE_BATTLE_TEST("Berserk Gene does not confuse a Pokemon with Own Tempo but s
         if (item == ITEM_STRANGE_COMPOUND)
         {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, (positionLeft != 0) ? playerLeft : playerRight);
-            MESSAGE("Using Berserk Gene, the Attack of Slowbro sharply rose!");
+            MESSAGE("Using STRANGE COMPOUND, the Attack of SLOWBRO sharply rose!");
             ABILITY_POPUP((positionLeft != 0) ? playerLeft : playerRight, ABILITY_OWN_TEMPO);
-            MESSAGE("Slowbro's Own Tempo prevents confusion!");
+            MESSAGE("SLOWBRO's Own Tempo prevents confusion!");
         }
         HP_BAR(opponentLeft, captureDamage: &results[i].damage);
-        NOT MESSAGE("Slowbro became confused!");
+        NOT MESSAGE("SLOWBRO became confused!");
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(2.0), results[1].damage);
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(2.0), results[2].damage);
@@ -153,7 +153,7 @@ DOUBLE_BATTLE_TEST("Berserk Gene does not confuse a Pokemon with Own Tempo but s
     }
 }
 
-SINGLE_BATTLE_TEST("Berserk Gene does not confuse on Misty Terrain but still raises attack sharply")
+SINGLE_BATTLE_TEST("STRANGE COMPOUND does not confuse on Misty Terrain but still raises attack sharply")
 {
     GIVEN {
         ASSUME(GetMoveCategory(MOVE_SCRATCH) == DAMAGE_CATEGORY_PHYSICAL);
@@ -165,12 +165,12 @@ SINGLE_BATTLE_TEST("Berserk Gene does not confuse on Misty Terrain but still rai
         }
     } SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        MESSAGE("Using Berserk Gene, the Attack of Tapu Fini sharply rose!");
-        NOT MESSAGE("Tapu Fini became confused!");
+        MESSAGE("Using STRANGE COMPOUND, the ATTACK of TAPU FINI sharply rose!");
+        NOT MESSAGE("TAPU FINI became confused!");
     }
 }
 
-SINGLE_BATTLE_TEST("Berserk Gene does not confuse when Safeguard is active")
+SINGLE_BATTLE_TEST("STRANGE COMPOUND does not confuse when Safeguard is active")
 {
     GIVEN {
         PLAYER(SPECIES_WYNAUT);
@@ -181,13 +181,13 @@ SINGLE_BATTLE_TEST("Berserk Gene does not confuse when Safeguard is active")
         TURN { SWITCH(player, 1); }
     } SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        MESSAGE("Using Berserk Gene, the Attack of Wobbuffet sharply rose!");
-        MESSAGE("Wobbuffet is protected by Safeguard!");
-        NOT MESSAGE("Wobbuffet became confused!");
+        MESSAGE("Using STRANGE COMPOUND, the ATTACK of WOBBUFFET sharply rose!");
+        MESSAGE("WOBBUFFET is protected by Safeguard!");
+        NOT MESSAGE("WOBBUFFET became confused!");
     }
 }
 
-SINGLE_BATTLE_TEST("Berserk Gene causes confusion for more than 5 turns") // how else would be check for infinite?
+SINGLE_BATTLE_TEST("STRANGE COMPOUND causes confusion for more than 5 turns") // how else would be check for infinite?
 {
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_STRANGE_COMPOUND); }
@@ -200,11 +200,11 @@ SINGLE_BATTLE_TEST("Berserk Gene causes confusion for more than 5 turns") // how
         TURN {}
         TURN {}
     } SCENE {
-        NOT MESSAGE("Wobbuffet snapped out of confusion!");
+        NOT MESSAGE("WOBBUFFET snapped out of confusion!");
     }
 }
 
-SINGLE_BATTLE_TEST("Berserk Gene causes infinite confusion") // check if bit is set
+SINGLE_BATTLE_TEST("STRANGE COMPOUND causes infinite confusion") // check if bit is set
 {
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_STRANGE_COMPOUND); }
@@ -217,7 +217,7 @@ SINGLE_BATTLE_TEST("Berserk Gene causes infinite confusion") // check if bit is 
     }
 }
 
-SINGLE_BATTLE_TEST("Berserk Gene causes confusion timer to not tick down", u32 status2)
+SINGLE_BATTLE_TEST("STRANGE COMPOUND causes confusion timer to not tick down", u32 status2)
 {
     u32 turns;
     PARAMETRIZE { turns = 1; }
@@ -237,7 +237,7 @@ SINGLE_BATTLE_TEST("Berserk Gene causes confusion timer to not tick down", u32 s
     }
 }
 
-SINGLE_BATTLE_TEST("Berserk Gene does not cause an infinite loop")
+SINGLE_BATTLE_TEST("STRANGE COMPOUND does not cause an infinite loop")
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_BESTOW) == EFFECT_BESTOW);
@@ -249,6 +249,6 @@ SINGLE_BATTLE_TEST("Berserk Gene does not cause an infinite loop")
         TURN { MOVE(player, MOVE_BESTOW); }
     } SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-        MESSAGE("Using Berserk Gene, the Attack of the opposing Wobbuffet sharply rose!");
+        MESSAGE("Using STRANGE COMPOUND, the ATTACK of the opposing WOBBUFFET sharply rose!");
     }
 }

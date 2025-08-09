@@ -114,6 +114,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EnteiStatue
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RaikouStatue;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SuicuneStatue;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_HoOhStatue;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Red_Gyarados;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Egg;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Girl2;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LittleBoy;
@@ -451,6 +452,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_RAIKOU_STATUE] =            &gObjectEventGraphicsInfo_RaikouStatue,
     [OBJ_EVENT_GFX_SUICUNE_STATUE] =           &gObjectEventGraphicsInfo_SuicuneStatue,
     [OBJ_EVENT_GFX_HO_OH_STATUE] =             &gObjectEventGraphicsInfo_HoOhStatue,
+    [OBJ_EVENT_GFX_RED_GYARADOS] =             &gObjectEventGraphicsInfo_Red_Gyarados,
     [OBJ_EVENT_GFX_BELLSPROUT_PAINTING] =      &gObjectEventGraphicsInfo_BellsproutPainting,
     [OBJ_EVENT_GFX_GAMECUBE] =                 &gObjectEventGraphicsInfo_Gamecube,
     [OBJ_EVENT_GFX_EGG] =                      &gObjectEventGraphicsInfo_Egg,

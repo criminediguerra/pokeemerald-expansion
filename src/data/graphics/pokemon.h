@@ -2707,6 +2707,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
+#if P_GENDER_DIFFERENCES
+    const u32 gMonFrontPic_MachokeF[] = INCBIN_U32("graphics/pokemon/machoke/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_MachokeF[] = INCBIN_U32("graphics/pokemon/machoke/backf.4bpp.lz");
+#if P_CUSTOM_GENDER_DIFF_ICONS
+    const u8 gMonIcon_MachokeF[] = INCBIN_U8("graphics/pokemon/machoke/iconf.4bpp");
+#endif //P_CUSTOM_GENDER_DIFF_ICONS
+#if OW_POKEMON_OBJECT_EVENTS
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u32 gObjectEventPic_MachokeF[] = INCBIN_COMP("graphics/pokemon/machoke/overworldf.4bpp");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+#endif //P_GENDER_DIFFERENCES
+
 #if !P_GBA_STYLE_SPECIES_GFX
     const u32 gMonFrontPic_Machamp[] = INCBIN_U32("graphics/pokemon/machamp/anim_front.4bpp.lz");
     const u16 gMonPalette_Machamp[] = INCBIN_U16("graphics/pokemon/machamp/normal.gbapal");
@@ -2734,6 +2747,18 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
+#if P_GENDER_DIFFERENCES
+    const u32 gMonFrontPic_MachampF[] = INCBIN_U32("graphics/pokemon/machamp/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_MachampF[] = INCBIN_U32("graphics/pokemon/machamp/backf.4bpp.lz");
+#if P_CUSTOM_GENDER_DIFF_ICONS
+    const u8 gMonIcon_MachampF[] = INCBIN_U8("graphics/pokemon/machamp/iconf.4bpp");
+#endif //P_CUSTOM_GENDER_DIFF_ICONS
+#if OW_POKEMON_OBJECT_EVENTS
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u32 gObjectEventPic_MachampF[] = INCBIN_COMP("graphics/pokemon/machamp/overworldf.4bpp");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+#endif //P_GENDER_DIFFERENCES
 #if P_GIGANTAMAX_FORMS
     const u32 gMonFrontPic_MachampGmax[] = INCBIN_U32("graphics/pokemon/machamp/gmax/front.4bpp.lz");
     const u32 gMonBackPic_MachampGmax[] = INCBIN_U32("graphics/pokemon/machamp/gmax/back.4bpp.lz");
@@ -6504,8 +6529,15 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #if P_GENDER_DIFFERENCES
     const u32 gMonFrontPic_MeganiumF[] = INCBIN_U32("graphics/pokemon/meganium/anim_frontf.4bpp.lz");
     const u32 gMonBackPic_MeganiumF[] = INCBIN_U32("graphics/pokemon/meganium/backf.4bpp.lz");
+    const u16 gMonPalette_MeganiumF[] = INCBIN_U16("graphics/pokemon/meganium/normalf.gbapal");
+    const u16 gMonShinyPalette_MeganiumF[] = INCBIN_U16("graphics/pokemon/meganium/shinyf.gbapal");
+#if P_CUSTOM_GENDER_DIFF_ICONS
+    const u8 gMonIcon_MeganiumF[] = INCBIN_U8("graphics/pokemon/meganium/iconf.4bpp");
+#endif
 #if OW_POKEMON_OBJECT_EVENTS
+   const u16 gOverworldPalette_MeganiumF[] = INCBIN_U16("graphics/pokemon/meganium/overworldf.gbapal");
     const u32 gObjectEventPic_MeganiumF[] = INCBIN_COMP("graphics/pokemon/meganium/overworldf.4bpp");
+    const u16 gShinyOverworldPalette_MeganiumF[] = INCBIN_U16("graphics/pokemon/meganium/overworld_shinyf.gbapal");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 #endif //P_FAMILY_CHIKORITA
@@ -11646,6 +11678,9 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #if P_GENDER_DIFFERENCES
     const u32 gMonFrontPic_RoseliaF[] = INCBIN_U32("graphics/pokemon/roselia/anim_frontf.4bpp.lz");
     const u32 gMonBackPic_RoseliaF[] = INCBIN_U32("graphics/pokemon/roselia/backf.4bpp.lz");
+#if P_CUSTOM_GENDER_DIFF_ICONS
+    const u8 gMonIcon_RoseliaF[] = INCBIN_U8("graphics/pokemon/roselia/iconf.4bpp");
+#endif
 #if OW_POKEMON_OBJECT_EVENTS
     const u32 gObjectEventPic_RoseliaF[] = INCBIN_COMP("graphics/pokemon/roselia/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
@@ -11671,6 +11706,9 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #if P_GENDER_DIFFERENCES
     const u32 gMonFrontPic_RoseradeF[] = INCBIN_U32("graphics/pokemon/roserade/anim_frontf.4bpp.lz");
     const u32 gMonBackPic_RoseradeF[] = INCBIN_U32("graphics/pokemon/roserade/backf.4bpp.lz");
+#if P_CUSTOM_GENDER_DIFF_ICONS
+    const u8 gMonIcon_RoseradeF[] = INCBIN_U8("graphics/pokemon/roserade/iconf.4bpp");
+#endif
 #if OW_POKEMON_OBJECT_EVENTS
     const u32 gObjectEventPic_RoseradeF[] = INCBIN_COMP("graphics/pokemon/roserade/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS

@@ -621,7 +621,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_CALM] =
     {
-        .name = COMPOUND_STRING("CaCALMlm"),
+        .name = COMPOUND_STRING("CALM"),
         .statUp = STAT_SPDEF,
         .statDown = STAT_ATK,
         .backAnim = 1,

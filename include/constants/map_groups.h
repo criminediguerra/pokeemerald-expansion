@@ -356,6 +356,7 @@
 #define MAP_CYANWOOD_AQUARIUM_F12          (25 | (10 << 8))
 #define MAP_CYANWOOD_AQUARIUM_F13          (26 | (10 << 8))
 #define MAP_CYANWOOD_AQUARIUM_F14          (27 | (10 << 8))
+#define MAP_CYANWOOD_AQUARIUM_F15          (28 | (10 << 8))
 
 // gMapGroup_IndoorLavaridge
 #define MAP_LAVARIDGE_TOWN_HERB_SHOP         (0 | (11 << 8))

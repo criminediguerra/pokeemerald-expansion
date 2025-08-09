@@ -17357,3 +17357,487 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Bind
 - Sandstorm
 - Rock Slide
+
+=== TRAINER_CAIN_1 ===
+Name: CAIN
+Class: Leader
+Pic: Leader Cain
+Gender: Male
+Music: Male
+Items: Potion / Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+SPECIES_FARFETCHD_GALAR 
+Level: 15
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Leaf Blade
+- Brutal Swing
+- Aerial Ace
+- Brick Break
+
+Doduo
+Level: 16
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Drill Peck
+- Swords Dance
+- Substitute
+- Acrobatics
+
+Spearow @ Oran Berry
+Level: 17
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Wing Attack
+- Roost
+- Fury Attack
+- Steel Wing
+
+=== TRAINER_CAIN_2 ===
+Name: CAIN
+Class: Leader
+Pic: Leader Cain
+Gender: Male
+Music: Male
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Zubat 
+Level: 18
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Leech Life
+- Poison Fang
+- Confuse Ray
+- Air Cutter
+
+SPECIES_FARFETCHD_GALAR @ Sitrus Berry
+Level: 19
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Leaf Blade
+- Brutal Swing
+- Aerial Ace
+- Brick Break
+
+Doduo
+Level: 20
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Drill Peck
+- Swords Dance
+- Substitute
+- Acrobatics
+
+Spearow @ Sitrus Berry
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Wing Attack
+- Roost
+- Fury Attack
+- Steel Wing
+
+=== TRAINER_CAIN_3 ===
+Name: CAIN
+Class: Leader
+Pic: Leader Cain
+Gender: Male
+Music: Male
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Golbat
+Level: 24
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Leech Life
+- Poison Fang
+- Confuse Ray
+- Air Cutter
+
+SPECIES_FARFETCHD_GALAR @ Sitrus Berry
+Level: 25
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Leaf Blade
+- Brutal Swing
+- Aerial Ace
+- Brick Break
+
+Doduo
+Level: 25
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Drill Peck
+- Swords Dance
+- Substitute
+- Acrobatics
+
+Fearow @ Sitrus Berry
+Level: 25
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Drill Peck
+- Roost
+- Fly
+- Steel Wing
+
+=== TRAINER_CAIN_4 ===
+Name: CAIN
+Class: Leader
+Pic: Leader Cain
+Gender: Male
+Music: Male
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Golbat 
+Level: 30
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Leech Life
+- Poison Fang
+- Confuse Ray
+- Air Cutter
+
+SPECIES_FARFETCHD_GALAR @ Sitrus Berry
+Level: 31
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Leaf Blade
+- Brutal Swing
+- Aerial Ace
+- Brick Break
+
+Doduo
+Level: 32
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Drill Peck
+- Swords Dance
+- Substitute
+- Acrobatics
+
+Fearow @ Sitrus Berry
+Level: 32
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Drill Peck
+- Roost
+- Fly
+- Steel Wing
+
+=== TRAINER_CAIN_5 ===
+Name: CAIN
+Class: Leader
+Pic: Leader Cain
+Gender: Male
+Music: Male
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Golbat 
+Level: 34
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Leech Life
+- Poison Fang
+- Confuse Ray
+- Air Cutter
+
+SPECIES_SIRFETCHD @ Sitrus Berry
+Level: 34
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Leaf Blade
+- Swords Dance
+- Aerial Ace
+- Meteor Assault
+
+Dodrio
+Level: 35
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Drill Peck
+- Tri Attack
+- Substitute
+- Hyper Beam
+
+Fearow @ Sitrus Berry
+Level: 36
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Drill Peck
+- Roost
+- Fly
+- Steel Wing
+
+=== TRAINER_CAIN_6 ===
+Name: CAIN
+Class: Leader
+Pic: Leader Cain
+Gender: Male
+Music: Male
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Crobat
+Level: 37
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Leech Life
+- Cross Poison
+- Confuse Ray
+- Air Cutter
+
+SPECIES_SIRFETCHD @ Sitrus Berry
+Level: 42
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Leaf Blade
+- Swords Dance
+- Aerial Ace
+- Meteor Assault
+
+Aerodactyl
+Level: 38
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Crunch
+- Fly
+- Stone Edge
+- Rock Slide
+
+Dodrio
+Level: 39
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Drill Peck
+- Tri Attack
+- Substitute
+- Hyper Beam
+
+Fearow @ Sitrus Berry
+Level: 40
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Drill Peck
+- Roost
+- Fly
+- Steel Wing
+
+=== TRAINER_CAIN_7 ===
+Name: CAIN
+Class: Leader
+Pic: Leader Cain
+Gender: Male
+Music: Male
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Crobat
+Level: 41
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Leech Life
+- Cross Poison
+- Confuse Ray
+- Air Cutter
+
+Scyther 
+Level: 41
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Air Slash
+- X-Scissor
+- Fly
+- Air Cutter
+
+SPECIES_SIRFETCHD @ Sitrus Berry
+Level: 42
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Leaf Blade
+- Swords Dance
+- Aerial Ace
+- Meteor Assault
+
+Aerodactyl
+Level: 42
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Crunch
+- Fly
+- Stone Edge
+- Rock Slide
+
+Dodrio @ Sitrus Berry
+Level: 41
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Drill Peck
+- Tri Attack
+- Substitute
+- Hyper Beam
+
+Fearow @ Sitrus Berry
+Level: 42
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Drill Peck
+- Roost
+- Fly
+- Steel Wing
+
+=== TRAINER_CAIN_8 ===
+Name: CAIN
+Class: Leader
+Pic: Leader Cain
+Gender: Male
+Music: Male
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Crobat
+Level: 41
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Leech Life
+- Cross Poison
+- Confuse Ray
+- Air Cutter
+
+SPECIES_SIRFETCHD @ Sitrus Berry
+Level: 42
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Leaf Blade
+- Swords Dance
+- Aerial Ace
+- Meteor Assault
+
+Scyther
+Level: 42
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Air Slash
+- X-Scissor
+- Fly
+- Air Cutter
+
+Aerodactyl @ Sitrus Berry
+Level: 42
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Crunch
+- Fly
+- Stone Edge
+- Rock Slide
+
+Dodrio
+Level: 43
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Drill Peck
+- Tri Attack
+- Substitute
+- Hyper Beam
+
+Fearow @ Sitrus Berry
+Level: 45
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Drill Peck
+- Roost
+- Fly
+- Steel Wing
+
+=== TRAINER_CAIN_9 ===
+Name: CAIN
+Class: Leader
+Pic: Leader Cain
+Gender: Male
+Music: Male
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Crobat
+Level: 46
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Leech Life
+- Cross Poison
+- Confuse Ray
+- Air Cutter
+
+Scyther
+Level: 46
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Air Slash
+- X-Scissor
+- Fly
+- Air Cutter
+
+SPECIES_SIRFETCHD @ Sitrus Berry
+Level: 47
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Leaf Blade
+- Swords Dance
+- Aerial Ace
+- Meteor Assault
+
+Aerodactyl
+Level: 48
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Crunch
+- Fly
+- Stone Edge
+- Rock Slide
+
+Dodrio @ Sitrus Berry
+Level: 48
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Drill Peck
+- Tri Attack
+- Substitute
+- Hyper Beam
+
+Fearow @ Sitrus Berry
+Level: 50
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Drill Peck
+- Roost
+- Fly
+- Steel Wing
+
+=== TRAINER_DAISY_OAK ===
+Name: DAISY
+Class: Leader
+Pic: Daisy
+Gender: Female
+Music: Female
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Sandslash @ Sitrus Berry
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dig
+- Slash
+- Sand Attack
+- Poison Sting
+
+Dugtrio
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Earthquake
+- Rock Slide
+- Dig
+- Sandstorm
+
+Tauros @ Sitrus Berry
+Level: 66
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Take Down
+- Protect
+- Fire Blast
+- Earthquake
+
+Gliscor
+Level: 67
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fly
+- Hyper Beam
+- U-Turn
+- Earth Power
+
+Rhyperior
+Level: 68
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fury Attack
+- Earthquake
+- Scary Face
+- Horn Drill
+
+Claydol @ Sitrus Berry
+Level: 70
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Earthquake
+- Ancient Power
+- Psychic
+- Light Screen

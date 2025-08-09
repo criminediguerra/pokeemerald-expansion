@@ -2430,3 +2430,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/CyanwoodAquariumF13/scripts.inc"
 
 	.include "data/maps/CyanwoodAquariumF14/scripts.inc"
+
+	.include "data/maps/CyanwoodAquariumF15/scripts.inc"

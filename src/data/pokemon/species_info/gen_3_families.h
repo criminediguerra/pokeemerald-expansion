@@ -6046,6 +6046,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .frontPicSizeFemale = MON_COORDS_SIZE(56, 48),
         .backPicFemale = gMonBackPic_RoseliaF,
         .backPicSizeFemale = MON_COORDS_SIZE(64, 56),
+        .iconSpriteFemale = gMonIcon_RoseliaF,
+        .iconPalIndexFemale = P_GBA_STYLE_SPECIES_ICONS ? 0 : 4,
 #endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
         SHADOW(-2, 3, SHADOW_SIZE_S)
@@ -6138,6 +6140,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .frontPicSizeFemale = MON_COORDS_SIZE(48, 56),
         .backPicFemale = gMonBackPic_RoseradeF,
         .backPicSizeFemale = MON_COORDS_SIZE(64, 56),
+        .iconSpriteFemale = gMonIcon_RoseradeF,
+        .iconPalIndexFemale = 0,
 #endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 6, SHADOW_SIZE_S)
@@ -9116,7 +9120,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Milotic)
         OVERWORLD(
             sPicTable_Milotic,
-            SIZE_32x32,
+            SIZE_64x64,
             SHADOW_SIZE_M,
             TRACKS_SLITHER,
             sAnimTable_Following,
@@ -9125,7 +9129,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         OVERWORLD_FEMALE(
             sPicTable_MiloticF,
-            SIZE_32x32,
+            SIZE_64x64,
             SHADOW_SIZE_M,
             TRACKS_SLITHER,
             sAnimTable_Following

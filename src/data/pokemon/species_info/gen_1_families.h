@@ -8714,6 +8714,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .shinyPalette = gMonShinyPalette_Machoke,
         .iconSprite = gMonIcon_Machoke,
         .iconPalIndex = 2,
+#if P_GENDER_DIFFERENCES
+        .frontPicFemale = gMonFrontPic_MachokeF,
+        .frontPicSizeFemale = MON_COORDS_SIZE(64, 56),
+        .backPicFemale = gMonBackPic_MachokeF,
+        .backPicSizeFemale = MON_COORDS_SIZE(64, 56),
+        .iconSpriteFemale = gMonIcon_MachokeF,
+        .iconPalIndexFemale = 2,
+#endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 9, SHADOW_SIZE_M)
         FOOTPRINT(Machoke)
@@ -8725,6 +8733,13 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             sAnimTable_Following,
             gOverworldPalette_Machoke,
             gShinyOverworldPalette_Machoke
+        )
+        OVERWORLD_FEMALE(
+            sPicTable_MachokeF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following
         )
         .levelUpLearnset = sMachokeLevelUpLearnset,
         .teachableLearnset = sMachokeTeachableLearnset,
@@ -8801,6 +8816,13 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_Machamp,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+#if P_GENDER_DIFFERENCES
+        .frontPicFemale = gMonFrontPic_MachampF,
+        .frontPicSizeFemale = MON_COORDS_SIZE(64, 64),
+        .backPicFemale = gMonBackPic_MachampF,
+        .backPicSizeFemale = MON_COORDS_SIZE(48, 56),
+        .iconSpriteFemale = gMonIcon_MachampF,
+        .iconPalIndexFemale = 0,
         SHADOW(7, 13, SHADOW_SIZE_L)
         FOOTPRINT(Machamp)
         OVERWORLD(
@@ -8812,11 +8834,19 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             gOverworldPalette_Machamp,
             gShinyOverworldPalette_Machamp
         )
+   OVERWORLD_FEMALE(
+            sPicTable_MachampF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following
+        )
         .levelUpLearnset = sMachampLevelUpLearnset,
         .teachableLearnset = sMachampTeachableLearnset,
         .formSpeciesIdTable = sMachampFormSpeciesIdTable,
         .formChangeTable = sMachampFormChangeTable,
     },
+#endif
 
 #if P_GIGANTAMAX_FORMS
     [SPECIES_MACHAMP_GMAX] =
@@ -12097,7 +12127,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Onix)
         OVERWORLD(
             sPicTable_Onix,
-            SIZE_32x32,
+            SIZE_64x64,
             SHADOW_SIZE_M,
             TRACKS_SLITHER,
             sAnimTable_Following,
@@ -17226,7 +17256,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Gyarados)
         OVERWORLD(
             sPicTable_Gyarados,
-            SIZE_32x32,
+            SIZE_64x64,
             SHADOW_SIZE_M,
             TRACKS_SLITHER,
             sAnimTable_Following,
@@ -17235,7 +17265,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         OVERWORLD_FEMALE(
             sPicTable_GyaradosF,
-            SIZE_32x32,
+            SIZE_64x64,
             SHADOW_SIZE_M,
             TRACKS_SLITHER,
             sAnimTable_Following
@@ -18004,7 +18034,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .palette = gMonPalette_Espeon,
         .shinyPalette = gMonShinyPalette_Espeon,
         .iconSprite = gMonIcon_Espeon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(2, 4, SHADOW_SIZE_M)
         FOOTPRINT(Espeon)

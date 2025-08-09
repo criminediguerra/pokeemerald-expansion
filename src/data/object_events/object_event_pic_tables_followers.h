@@ -573,8 +573,14 @@ static const struct SpriteFrameImage sPicTable_Machop[] = {
 static const struct SpriteFrameImage sPicTable_Machoke[] = {
     overworld_ascending_frames(gObjectEventPic_Machoke, 4, 4),
 };
+static const struct SpriteFrameImage sPicTable_MachokeF[] = {
+    overworld_ascending_frames(gObjectEventPic_MachokeF, 4, 4),
+};
 static const struct SpriteFrameImage sPicTable_Machamp[] = {
     overworld_ascending_frames(gObjectEventPic_Machamp, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_MachampF[] = {
+    overworld_ascending_frames(gObjectEventPic_MachampF, 4, 4),
 };
 #if P_GIGANTAMAX_FORMS
 /*static const struct SpriteFrameImage sPicTable_MachampGmax[] = {
@@ -788,7 +794,7 @@ static const struct SpriteFrameImage sPicTable_GengarMega[] = {
 
 #if P_FAMILY_ONIX
 static const struct SpriteFrameImage sPicTable_Onix[] = {
-    overworld_ascending_frames(gObjectEventPic_Onix, 4, 4),
+    overworld_ascending_frames(gObjectEventPic_Onix, 8, 8),
 };
 #if P_GEN_2_CROSS_EVOS
 static const struct SpriteFrameImage sPicTable_Steelix[] = {
@@ -796,7 +802,7 @@ static const struct SpriteFrameImage sPicTable_Steelix[] = {
 };
 #if P_GENDER_DIFFERENCES
 static const struct SpriteFrameImage sPicTable_SteelixF[] = {
-    overworld_ascending_frames(gObjectEventPic_SteelixF, 4, 4),
+    overworld_ascending_frames(gObjectEventPic_SteelixF, 8, 8),
 };
 #endif //P_GENDER_DIFFERENCES
 #if OW_BATTLE_ONLY_FORMS
@@ -1178,11 +1184,11 @@ static const struct SpriteFrameImage sPicTable_MagikarpF[] = {
 };
 #endif //P_GENDER_DIFFERENCES
 static const struct SpriteFrameImage sPicTable_Gyarados[] = {
-    overworld_ascending_frames(gObjectEventPic_Gyarados, 4, 4),
+    overworld_ascending_frames(gObjectEventPic_Gyarados, 8, 8),
 };
 #if P_GENDER_DIFFERENCES
 static const struct SpriteFrameImage sPicTable_GyaradosF[] = {
-    overworld_ascending_frames(gObjectEventPic_GyaradosF, 4, 4),
+    overworld_ascending_frames(gObjectEventPic_GyaradosF, 8, 8),
 };
 #endif //P_GENDER_DIFFERENCES
 #if OW_BATTLE_ONLY_FORMS
@@ -2778,11 +2784,11 @@ static const struct SpriteFrameImage sPicTable_Feebas[] = {
     overworld_ascending_frames(gObjectEventPic_Feebas, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Milotic[] = {
-    overworld_ascending_frames(gObjectEventPic_Milotic, 4, 4),
+    overworld_ascending_frames(gObjectEventPic_Milotic, 8, 8),
 };
 #if P_GENDER_DIFFERENCES
 static const struct SpriteFrameImage sPicTable_MiloticF[] = {
-    overworld_ascending_frames(gObjectEventPic_MiloticF, 4, 4),
+    overworld_ascending_frames(gObjectEventPic_MiloticF, 8, 8),
 };
 #endif //P_GENDER_DIFFERENCES
 #endif //P_FAMILY_FEEBAS

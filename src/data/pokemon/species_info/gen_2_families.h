@@ -197,12 +197,16 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .palette = gMonPalette_Meganium,
         .shinyPalette = gMonShinyPalette_Meganium,
         .iconSprite = gMonIcon_Meganium,
-        .iconPalIndex = 1,
+        .iconPalIndex = 4,
 #if P_GENDER_DIFFERENCES
         .frontPicFemale = gMonFrontPic_MeganiumF,
         .frontPicSizeFemale = MON_COORDS_SIZE(48, 64),
         .backPicFemale = gMonBackPic_MeganiumF,
         .backPicSizeFemale = MON_COORDS_SIZE(56, 64),
+        .paletteFemale = gMonPalette_MeganiumF,
+        .shinyPaletteFemale = gMonShinyPalette_MeganiumF,
+        .iconSpriteFemale = gMonIcon_MeganiumF,
+        .iconPalIndexFemale = 1,
 #endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 13, SHADOW_SIZE_M)
@@ -221,7 +225,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
-            sAnimTable_Following
+            sAnimTable_Following,
+            gOverworldPalette_MeganiumF,
+            gShinyOverworldPalette_MeganiumF
         )
         .levelUpLearnset = sMeganiumLevelUpLearnset,
         .teachableLearnset = sMeganiumTeachableLearnset,
