@@ -7130,6 +7130,30 @@ static const struct LevelUpMove sLinooneLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
+static const struct LevelUpMove sObstagoonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 0, MOVE_OBSTRUCT),
+    LEVEL_UP_MOVE( 1, MOVE_OBSTRUCT),
+    LEVEL_UP_MOVE( 1, MOVE_WIDE_GUARD),
+    LEVEL_UP_MOVE( 1, MOVE_LOW_KICK),
+    LEVEL_UP_MOVE( 1, MOVE_LEER),
+    LEVEL_UP_MOVE( 1, MOVE_FOCUS_ENERGY),
+    LEVEL_UP_MOVE( 1, MOVE_REVENGE),
+    LEVEL_UP_MOVE(12, MOVE_LOW_SWEEP),
+    LEVEL_UP_MOVE(15, MOVE_HONE_CLAWS),
+    LEVEL_UP_MOVE(16, MOVE_KNOCK_OFF),
+    LEVEL_UP_MOVE(18, MOVE_FURY_SWIPES),
+    LEVEL_UP_MOVE(20, MOVE_SCARY_FACE),
+    LEVEL_UP_MOVE(24, MOVE_VITAL_THROW),
+    LEVEL_UP_MOVE(31, MOVE_STRENGTH),
+    LEVEL_UP_MOVE(36, MOVE_DUAL_CHOP),
+    LEVEL_UP_MOVE(42, MOVE_BULK_UP),
+    LEVEL_UP_MOVE(48, MOVE_SEISMIC_TOSS),
+    LEVEL_UP_MOVE(54, MOVE_DYNAMIC_PUNCH),
+    LEVEL_UP_MOVE(60, MOVE_CROSS_CHOP),
+    LEVEL_UP_MOVE(66, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_END
+};
+
 #if P_GALARIAN_FORMS
 static const struct LevelUpMove sZigzagoonGalarLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
@@ -7172,7 +7196,7 @@ static const struct LevelUpMove sLinooneGalarLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sObstagoonLevelUpLearnset[] = {
+static const struct LevelUpMove sObstagoonGalarLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_OBSTRUCT),
     LEVEL_UP_MOVE( 1, MOVE_OBSTRUCT),
     LEVEL_UP_MOVE( 1, MOVE_CROSS_CHOP),

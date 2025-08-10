@@ -17,6 +17,11 @@
       "map": "MAP_GREEN_PATH",
       "offset": 0,
       "direction": "down"
+    },
+    {
+      "map": "MAP_BIRTH_ISLAND",
+      "offset": -10,
+      "direction": "up"
     }
   ],
   "object_events": [],

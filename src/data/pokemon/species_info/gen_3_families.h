@@ -1228,6 +1228,74 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sLinooneLevelUpLearnset,
         .teachableLearnset = sLinooneTeachableLearnset,
         .formSpeciesIdTable = sLinooneFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_OBSTAGOON},
+                                {EVO_ITEM, ITEM_BERSERK_GENE, SPECIES_OBSTAGOON}),
+    },
+
+    [SPECIES_OBSTAGOON] =
+    {
+        .baseHP        = 93,
+        .baseAttack    = 90,
+        .baseDefense   = 101,
+        .baseSpeed     = 95,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 81,
+        .types = MON_TYPES(TYPE_FIGHTING, TYPE_NORMAL),
+        .catchRate = 45,
+        .expYield = 260,
+        .evYield_Defense = 3,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        .abilities = { ABILITY_RECKLESS, ABILITY_GUTS, ABILITY_DEFIANT },
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("OBSTAGOON"),
+        .cryId = CRY_OBSTAGOON,
+        .natDexNum = NATIONAL_DEX_OBSTAGOON,
+        .categoryName = _("BLOCKING"),
+        .height = 16,
+        .weight = 460,
+        .description = COMPOUND_STRING(
+            "Its voice is staggering in volume.\n"
+            "OBSTAGOON has a tendency to take on a\n"
+            "threatening posture and shout--this move\n"
+            "is known as OBSTRUCT."),
+        .pokemonScale = 259,
+        .pokemonOffset = 1,
+        .trainerScale = 296,
+        .trainerOffset = 1,
+        .frontPic = gMonFrontPic_Obstagoon,
+        .frontPicSize = MON_COORDS_SIZE(56, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 20),
+            ANIMCMD_FRAME(0, 20),
+        ),
+        .frontAnimId = ANIM_GROW_VIBRATE,
+        .backPic = gMonBackPic_Obstagoon,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 1,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_Obstagoon,
+        .shinyPalette = gMonShinyPalette_Obstagoon,
+        .iconSprite = gMonIcon_Obstagoon,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(2, 13, SHADOW_SIZE_M)
+        FOOTPRINT(Obstagoon)
+        OVERWORLD(
+            sPicTable_Obstagoon,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Obstagoon,
+            gShinyOverworldPalette_Obstagoon
+        )
+        .levelUpLearnset = sObstagoonLevelUpLearnset,
+        .teachableLearnset = sObstagoonTeachableLearnset,
     },
 
 #if P_GALARIAN_FORMS
@@ -1361,10 +1429,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sLinooneGalarLevelUpLearnset,
         .teachableLearnset = sLinooneGalarTeachableLearnset,
         .formSpeciesIdTable = sLinooneFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_OBSTAGOON, CONDITIONS({IF_TIME, TIME_NIGHT})}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_OBSTAGOON_GALAR, CONDITIONS({IF_TIME, TIME_NIGHT})}),
     },
 
-    [SPECIES_OBSTAGOON] =
+    [SPECIES_OBSTAGOON_GALAR] =
     {
         .baseHP        = 93,
         .baseAttack    = 90,
@@ -1398,32 +1466,32 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 1,
         .trainerScale = 296,
         .trainerOffset = 1,
-        .frontPic = gMonFrontPic_Obstagoon,
+        .frontPic = gMonFrontPic_ObstagoonGalar,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Obstagoon,
+        .backPic = gMonBackPic_ObstagoonGalar,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 1,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_Obstagoon,
-        .shinyPalette = gMonShinyPalette_Obstagoon,
-        .iconSprite = gMonIcon_Obstagoon,
+        .palette = gMonPalette_ObstagoonGalar,
+        .shinyPalette = gMonShinyPalette_ObstagoonGalar,
+        .iconSprite = gMonIcon_ObstagoonGalar,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(2, 13, SHADOW_SIZE_M)
         FOOTPRINT(Obstagoon)
         OVERWORLD(
-            sPicTable_Obstagoon,
+            sPicTable_ObstagoonGalar,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Obstagoon,
-            gShinyOverworldPalette_Obstagoon
+            gOverworldPalette_ObstagoonGalar,
+            gShinyOverworldPalette_ObstagoonGalar
         )
-        .levelUpLearnset = sObstagoonLevelUpLearnset,
+        .levelUpLearnset = sObstagoonGalarLevelUpLearnset,
         .teachableLearnset = sObstagoonTeachableLearnset,
     },
 #endif //P_GALARIAN_FORMS
@@ -2787,6 +2855,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .shinyPalette = gMonShinyPalette_Kirlia,
         .iconSprite = gMonIcon_Kirlia,
         .iconPalIndex = 1,
+#if P_GENDER_DIFFERENCES
+        .frontPicFemale = gMonFrontPic_KirliaF,
+        .frontPicSizeFemale = MON_COORDS_SIZE(64, 56),
+        .backPicFemale = gMonBackPic_KirliaF,
+        .backPicSizeFemale = MON_COORDS_SIZE(64, 56),
+        .iconSpriteFemale = gMonIcon_KirliaF,
+        .iconPalIndexFemale = 1,
+#endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(-2, 7, SHADOW_SIZE_S)
         FOOTPRINT(Kirlia)
@@ -2799,10 +2875,17 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
             gOverworldPalette_Kirlia,
             gShinyOverworldPalette_Kirlia
         )
+        OVERWORLD_FEMALE(
+            sPicTable_KirliaF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following
+        )
         .levelUpLearnset = sKirliaLevelUpLearnset,
         .teachableLearnset = sKirliaTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_GARDEVOIR},
-                                {EVO_ITEM, ITEM_DAWN_STONE, SPECIES_GALLADE, CONDITIONS({IF_GENDER, MON_MALE})}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_GARDEVOIR, CONDITIONS({IF_GENDER, MON_FEMALE})},
+                                {EVO_LEVEL, 30, SPECIES_GALLADE, CONDITIONS({IF_GENDER, MON_MALE})}),
     },
 
     [SPECIES_GARDEVOIR] =
@@ -5929,7 +6012,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 56 : 68,
         .evYield_SpAttack = 1,
         .itemRare = ITEM_POISON_BARB,
-        .genderRatio = PERCENT_FEMALE(50),
+        .genderRatio = PERCENT_FEMALE(70),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
@@ -6001,7 +6084,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 140 : 152,
         .evYield_SpAttack = (P_UPDATED_EVS >= GEN_4) ? 2 : 1,
         .itemRare = ITEM_POISON_BARB,
-        .genderRatio = PERCENT_FEMALE(50),
+        .genderRatio = PERCENT_FEMALE(70),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
@@ -6096,7 +6179,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     #endif
         .evYield_SpAttack = 3,
         .itemRare = ITEM_POISON_BARB,
-        .genderRatio = PERCENT_FEMALE(50),
+        .genderRatio = PERCENT_FEMALE(70),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
@@ -8982,7 +9065,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 40 : 61,
         .evYield_Speed = 1,
-        .genderRatio = PERCENT_FEMALE(50),
+        .genderRatio = PERCENT_FEMALE(70),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_ERRATIC,
@@ -9061,7 +9144,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .catchRate = 60,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 189 : 213,
         .evYield_SpDefense = 2,
-        .genderRatio = PERCENT_FEMALE(50),
+        .genderRatio = PERCENT_FEMALE(70),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_ERRATIC,
@@ -12996,6 +13079,77 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #endif //P_FAMILY_JIRACHI
 
 #if P_FAMILY_DEOXYS
+    [SPECIES_NEBYTE] =
+    {
+        .baseHP        = 60,
+        .baseAttack    = 75,
+        .baseDefense   = 85,
+        .baseSpeed     = 115,
+        .baseSpAttack  = 100,
+        .baseSpDefense = P_UPDATED_STATS >= GEN_2 ? 85 : 100,
+        .types = MON_TYPES(TYPE_PSYCHIC),
+        .catchRate = 60,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 182 : 207,
+        .evYield_Speed = 2,
+        .itemCommon = ITEM_STARDUST,
+        .itemRare = ITEM_STAR_PIECE,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
+        .abilities = { ABILITY_ILLUMINATE, ABILITY_NATURAL_CURE, ABILITY_ANALYTIC },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("NEBYTE"),
+        .cryId = CRY_PARASECT,
+        .natDexNum = NATIONAL_DEX_NEBYTE,
+        .categoryName = _("VIRUS"),
+        .height = 11,
+        .weight = 800,
+        .description = COMPOUND_STRING(
+            "NEBYTE emerged from a virus that came\n"
+            "from space. It is highly intelligent and\n"
+            "can shoot lasers from the crystalline\n"
+            "organ on its chest."),
+        .pokemonScale = 301,
+        .pokemonOffset = 3,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Nebyte,
+        .frontPicSize = MON_COORDS_SIZE(56, 56),
+        .frontPicYOffset = 6,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 11),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 20),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = ANIM_TWIST,
+        .backPic = gMonBackPic_Nebyte,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 40) : MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 14 : 4,
+        .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
+        .palette = gMonPalette_Nebyte,
+        .shinyPalette = gMonShinyPalette_Nebyte,
+        .iconSprite = gMonIcon_Nebyte,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(0, 7, SHADOW_SIZE_L)
+        FOOTPRINT(Starmie)
+        OVERWORLD(
+            sPicTable_Nebyte,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Nebyte,
+            gShinyOverworldPalette_Nebyte
+        )
+        .levelUpLearnset = sDeoxysNormalLevelUpLearnset,
+        .teachableLearnset = sDeoxysNormalTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_DEOXYS}),
+    },
 #if P_UPDATED_EXP_YIELDS >= GEN_8
     #define DEOXYS_EXP_YIELD 300
 #elif P_UPDATED_EXP_YIELDS >= GEN_5
@@ -13040,11 +13194,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = ANIM_FRAMES(
-            ANIMCMD_FRAME(0, 16),
-            ANIMCMD_FRAME(1, 16),
-            ANIMCMD_FRAME(0, 26),
-            ANIMCMD_FRAME(1, 16),
-            ANIMCMD_FRAME(0, 16),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 20),
         ),
         .frontAnimId = ANIM_GROW_VIBRATE,
         .backPic = gMonBackPic_DeoxysNormal,

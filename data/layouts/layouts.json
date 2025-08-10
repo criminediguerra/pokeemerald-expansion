@@ -7467,7 +7467,7 @@
       "width": 24,
       "height": 80,
       "primary_tileset": "gTileset_Tropical",
-      "secondary_tileset": "gTileset_NavelRock",
+      "secondary_tileset": "gTileset_Dewford",
       "border_filepath": "data/layouts/OutcastIsland/border.bin",
       "blockdata_filepath": "data/layouts/OutcastIsland/map.bin"
     },
@@ -8034,7 +8034,7 @@
     {
       "id": "LAYOUT_BIRTH_ISLAND",
       "name": "BirthIsland_Layout",
-      "width": 30,
+      "width": 40,
       "height": 30,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Dewford",

@@ -8654,7 +8654,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sMachopLevelUpLearnset,
         .teachableLearnset = sMachopTeachableLearnset,
         .eggMoveLearnset = sMachopEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_MACHOKE}),
+        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_MACHOKE},
+                                {EVO_ITEM, ITEM_BERSERK_GENE, SPECIES_MACHOKE}),
     },
 
     [SPECIES_MACHOKE] =
@@ -8743,8 +8744,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sMachokeLevelUpLearnset,
         .teachableLearnset = sMachokeTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_MACHAMP},
-                                {EVO_ITEM, ITEM_BERSERK_GENE, SPECIES_MACHAMP}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_MACHAMP}),
     },
 
 #if P_UPDATED_EXP_YIELDS >= GEN_8
@@ -20168,9 +20168,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .speciesName = _("MEW"),
         .cryId = CRY_MEW,
         .natDexNum = NATIONAL_DEX_MEW,
-        .categoryName = _("NEW SPECIES"),
+        .categoryName = _("GENESIS"),
         .height = 4,
-        .weight = 40,
+        .weight = 230,
         .description = COMPOUND_STRING(
             "A MEW is said to possess the genes of all\n"
             "POKéMON. It is capable of making itself\n"
@@ -20215,6 +20215,78 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sMewLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_MEWLING},
+                                {EVO_ITEM, ITEM_BERSERK_GENE, SPECIES_MEWLING}),
+    },
+    [SPECIES_MEWLING] =
+    {
+        .baseHP        = 90,
+        .baseAttack    = 90,
+        .baseDefense   = 90,
+        .baseSpeed     = 120,
+        .baseSpAttack  = 135,
+        .baseSpDefense = ALAKAZAM_SP_DEF,
+        .types = MON_TYPES(TYPE_PSYCHIC),
+        .catchRate = 3,
+        .expYield = 340,
+        .evYield_SpAttack = 3,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 120,
+        .friendship = 0,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_SYNCHRONIZE, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_PINK,
+        .speciesName = _("MEWLING"),
+        .cryId = CRY_PARAS,
+        .natDexNum = NATIONAL_DEX_MEWLING,
+        .categoryName = _("NEW SPECIES"),
+        .height = 20,
+        .weight = 1220,
+        .description = COMPOUND_STRING(
+            "MEWLING's genetic code is an harmonious\n"
+            "blend of ancient power and modern\n"
+            "adaptation.\n"
+            "Its temperament is calm and inquisitive."),
+        .pokemonScale = 354,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Mewling,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 20),
+        ),
+        .frontAnimId = ANIM_GROW_VIBRATE,
+        .backPic = gMonBackPic_Mewling,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 48) : MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 8 : 0,
+        .backAnimId = BACK_ANIM_GROW_STUTTER,
+        .palette = gMonPalette_Mewling,
+        .shinyPalette = gMonShinyPalette_Mewling,
+        .iconSprite = gMonIcon_Mewling,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(6, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Mewtwo)
+        OVERWORLD(
+            sPicTable_Mewling,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Mewling,
+            gShinyOverworldPalette_Mewling
+        )
+        .isLegendary = TRUE,
+        .isFrontierBanned = TRUE,
+        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sMewtwoLevelUpLearnset,
+        .teachableLearnset = sMewtwoTeachableLearnset,
+        .formSpeciesIdTable = sMewtwoFormSpeciesIdTable,
+        .formChangeTable = sMewtwoFormChangeTable,
     },
 #endif //P_FAMILY_MEW
 

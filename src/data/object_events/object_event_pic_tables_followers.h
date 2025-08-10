@@ -1394,6 +1394,9 @@ static const struct SpriteFrameImage sPicTable_MewtwoMegaY[] = {
 static const struct SpriteFrameImage sPicTable_Mew[] = {
     overworld_ascending_frames(gObjectEventPic_Mew, 4, 4),
 };
+static const struct SpriteFrameImage sPicTable_Mewling[] = {
+    overworld_ascending_frames(gObjectEventPic_Mewling, 4, 4),
+};
 #endif //P_FAMILY_MEW
 
 #if P_FAMILY_CHIKORITA
@@ -2230,6 +2233,9 @@ static const struct SpriteFrameImage sPicTable_Zigzagoon[] = {
 static const struct SpriteFrameImage sPicTable_Linoone[] = {
     overworld_ascending_frames(gObjectEventPic_Linoone, 4, 4),
 };
+static const struct SpriteFrameImage sPicTable_Obstagoon[] = {
+    overworld_ascending_frames(gObjectEventPic_Obstagoon, 4, 4),
+};
 #if P_GALARIAN_FORMS
 static const struct SpriteFrameImage sPicTable_ZigzagoonGalar[] = {
     overworld_ascending_frames(gObjectEventPic_ZigzagoonGalar, 4, 4),
@@ -2237,8 +2243,8 @@ static const struct SpriteFrameImage sPicTable_ZigzagoonGalar[] = {
 static const struct SpriteFrameImage sPicTable_LinooneGalar[] = {
     overworld_ascending_frames(gObjectEventPic_LinooneGalar, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_Obstagoon[] = {
-    overworld_ascending_frames(gObjectEventPic_Obstagoon, 4, 4),
+static const struct SpriteFrameImage sPicTable_ObstagoonGalar[] = {
+    overworld_ascending_frames(gObjectEventPic_ObstagoonGalar, 4, 4),
 };
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_ZIGZAGOON
@@ -2334,6 +2340,9 @@ static const struct SpriteFrameImage sPicTable_Ralts[] = {
 };
 static const struct SpriteFrameImage sPicTable_Kirlia[] = {
     overworld_ascending_frames(gObjectEventPic_Kirlia, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_KirliaF[] = {
+    overworld_ascending_frames(gObjectEventPic_KirliaF, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Gardevoir[] = {
     overworld_ascending_frames(gObjectEventPic_Gardevoir, 4, 4),
@@ -3065,6 +3074,9 @@ static const struct SpriteFrameImage sPicTable_Jirachi[] = {
 #endif //P_FAMILY_JIRACHI
 
 #if P_FAMILY_DEOXYS
+static const struct SpriteFrameImage sPicTable_Nebyte[] = {
+    overworld_ascending_frames(gObjectEventPic_Nebyte, 4, 4),
+};
 static const struct SpriteFrameImage sPicTable_DeoxysNormal[] = {
     overworld_ascending_frames(gObjectEventPic_DeoxysNormal, 4, 4),
 };
