@@ -10639,7 +10639,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sMagnetonLevelUpLearnset,
         .teachableLearnset = sMagnetonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_MAGNEZONE, CONDITIONS({IF_IN_MAPSEC, MAPSEC_NEW_MAUVILLE})},
+        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_MAGNEZONE, CONDITIONS({IF_IN_MAPSEC, MAPSEC_EMBER_SPA})},
                                 {EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_MAGNEZONE}),
     },
 
@@ -20241,8 +20241,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .cryId = CRY_PARAS,
         .natDexNum = NATIONAL_DEX_MEWLING,
         .categoryName = _("NEW SPECIES"),
-        .height = 20,
-        .weight = 1220,
+        .height = 16,
+        .weight = 460,
         .description = COMPOUND_STRING(
             "MEWLING's genetic code is an harmonious\n"
             "blend of ancient power and modern\n"
@@ -20285,8 +20285,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sMewtwoLevelUpLearnset,
         .teachableLearnset = sMewtwoTeachableLearnset,
-        .formSpeciesIdTable = sMewtwoFormSpeciesIdTable,
-        .formChangeTable = sMewtwoFormChangeTable,
     },
 #endif //P_FAMILY_MEW
 

@@ -1255,8 +1255,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .cryId = CRY_OBSTAGOON,
         .natDexNum = NATIONAL_DEX_OBSTAGOON,
         .categoryName = _("BLOCKING"),
-        .height = 16,
-        .weight = 460,
+        .height = 23,
+        .weight = 1270,
         .description = COMPOUND_STRING(
             "Its voice is staggering in volume.\n"
             "OBSTAGOON has a tendency to take on a\n"

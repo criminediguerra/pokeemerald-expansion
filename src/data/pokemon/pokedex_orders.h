@@ -2161,8 +2161,7 @@ const u16 gPokedexOrder_Weight[] =
     NATIONAL_DEX_TAPU_BULU,
     // 101.4 lbs / 46.0 kg
     NATIONAL_DEX_VOLCARONA,
-    NATIONAL_DEX_OBSTAGOON,
-    //NATIONAL_DEX_OBSTAGOON_GALARIAN,
+    //NATIONAL_DEX_VOLCARONA,
     // 102.5 lbs / 46.5 kg
     NATIONAL_DEX_VIGOROTH,
     // 103.2 lbs / 46.8 kg
@@ -2620,6 +2619,7 @@ const u16 gPokedexOrder_Weight[] =
     NATIONAL_DEX_TYPE_NULL,
     // 269.0 lbs / 122.0 kg
     NATIONAL_DEX_MEWTWO,
+    NATIONAL_DEX_OBSTAGOON,
     // 275.6 lbs / 125.0 kg
     //NATIONAL_DEX_SCIZOR_MEGA,
     NATIONAL_DEX_IRON_LEAVES,
