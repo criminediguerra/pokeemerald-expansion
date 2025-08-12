@@ -3669,6 +3669,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Cloyster[] = INCBIN_U16("graphics/pokemon/cloyster/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
+
+    const u32 gMonFrontPic_Turban[] = INCBIN_U32("graphics/pokemon/turban/anim_front.4bpp.lz");
+    const u16 gMonPalette_Turban[] = INCBIN_U16("graphics/pokemon/turban/normal.gbapal");
+    const u32 gMonBackPic_Turban[] = INCBIN_U32("graphics/pokemon/turban/back.4bpp.lz");
+    const u16 gMonShinyPalette_Turban[] = INCBIN_U16("graphics/pokemon/turban/shiny.gbapal");
+    const u8 gMonIcon_Turban[] = INCBIN_U8("graphics/pokemon/turban/icon.4bpp");
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_Turban[] = INCBIN_COMP("graphics/pokemon/turban/overworld.4bpp");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u16 gOverworldPalette_Turban[] = INCBIN_U16("graphics/pokemon/turban/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Turban[] = INCBIN_U16("graphics/pokemon/turban/overworld_shiny.gbapal");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+
 #endif //P_FAMILY_SHELLDER
 
 #if P_FAMILY_GASTLY
@@ -14408,6 +14422,33 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //P_FAMILY_KRICKETOT
 
 #if P_FAMILY_SHINX
+
+    const u32 gMonFrontPic_Kotora[] = INCBIN_U32("graphics/pokemon/kotora/anim_front.4bpp.lz");
+    const u16 gMonPalette_Kotora[] = INCBIN_U16("graphics/pokemon/kotora/normal.gbapal");
+    const u32 gMonBackPic_Kotora[] = INCBIN_U32("graphics/pokemon/kotora/back.4bpp.lz");
+    const u16 gMonShinyPalette_Kotora[] = INCBIN_U16("graphics/pokemon/kotora/shiny.gbapal");
+    const u8 gMonIcon_Kotora[] = INCBIN_U8("graphics/pokemon/kotora/icon.4bpp");
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_Kotora[] = INCBIN_COMP("graphics/pokemon/kotora/overworld.4bpp");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u16 gOverworldPalette_Kotora[] = INCBIN_U16("graphics/pokemon/kotora/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Kotora[] = INCBIN_U16("graphics/pokemon/kotora/overworld_shiny.gbapal");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+
+    const u32 gMonFrontPic_Raitora[] = INCBIN_U32("graphics/pokemon/raitora/anim_front.4bpp.lz");
+    const u16 gMonPalette_Raitora[] = INCBIN_U16("graphics/pokemon/raitora/normal.gbapal");
+    const u32 gMonBackPic_Raitora[] = INCBIN_U32("graphics/pokemon/raitora/back.4bpp.lz");
+    const u16 gMonShinyPalette_Raitora[] = INCBIN_U16("graphics/pokemon/raitora/shiny.gbapal");
+    const u8 gMonIcon_Raitora[] = INCBIN_U8("graphics/pokemon/raitora/icon.4bpp");
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_Raitora[] = INCBIN_COMP("graphics/pokemon/raitora/overworld.4bpp");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u16 gOverworldPalette_Raitora[] = INCBIN_U16("graphics/pokemon/raitora/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Raitora[] = INCBIN_U16("graphics/pokemon/raitora/overworld_shiny.gbapal");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+
     const u32 gMonFrontPic_Shinx[] = INCBIN_U32("graphics/pokemon/shinx/anim_front.4bpp.lz");
     const u16 gMonPalette_Shinx[] = INCBIN_U16("graphics/pokemon/shinx/normal.gbapal");
     const u32 gMonBackPic_Shinx[] = INCBIN_U32("graphics/pokemon/shinx/back.4bpp.lz");

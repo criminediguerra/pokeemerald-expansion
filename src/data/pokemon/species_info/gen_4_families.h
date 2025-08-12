@@ -1276,6 +1276,145 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #endif //P_FAMILY_KRICKETOT
 
 #if P_FAMILY_SHINX
+
+    [SPECIES_KOTORA] =
+    {
+        .baseHP        = 35,
+        .baseAttack    = 55,
+        .baseDefense   = P_UPDATED_STATS >= GEN_6 ? 40 : 30,
+        .baseSpeed     = 90,
+        .baseSpAttack  = 50,
+        .baseSpDefense = P_UPDATED_STATS >= GEN_6 || P_UPDATED_STATS == GEN_1 ? 50 : 40,
+        .types = MON_TYPES(TYPE_ELECTRIC),
+        .catchRate = 190,
+        .expYield = PIKACHU_EXP_YIELD,
+        .evYield_Speed = 2,
+        .itemRare = ITEM_LIGHT_BALL,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 10,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        .abilities = { ABILITY_RIVALRY, ABILITY_INTIMIDATE, ABILITY_GUTS },
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("KOTORA"),
+        .cryId = CRY_BLITZLE,
+        .natDexNum = NATIONAL_DEX_KOTORA,
+        .categoryName = _("TIGER"),
+        .height = 9,
+        .weight = 305,
+        .description = COMPOUND_STRING(
+            "Generates electricity by contracting\n"
+            "its muscles. Excited trembling is a\n"
+            "sign that KOTORA is generating a\n"
+            "tremendous amount of electricity."),
+        .pokemonScale = 338,
+        .pokemonOffset = 10,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Kotora,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 56) : MON_COORDS_SIZE(48, 48),
+        .frontPicYOffset = 9,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 60),
+            ANIMCMD_FRAME(1, 20),
+            ANIMCMD_FRAME(0, 1),
+        ),
+        .frontAnimId = ANIM_FLASH_YELLOW,
+        .frontAnimDelay = P_GBA_STYLE_SPECIES_GFX ? 0 : 25,
+        .backPic = gMonBackPic_Kotora,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 56) : MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 7 : 4,
+        .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
+        .palette = gMonPalette_Kotora,
+        .shinyPalette = gMonShinyPalette_Kotora,
+        .iconSprite = gMonIcon_Kotora,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
+        SHADOW(-3, 5, SHADOW_SIZE_M)
+        OVERWORLD(
+            sPicTable_Kotora,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Kotora,
+            gShinyOverworldPalette_Kotora
+        )
+        FOOTPRINT(Shinx)
+        .levelUpLearnset = sShinxLevelUpLearnset,
+        .teachableLearnset = sShinxTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAITORA}),
+    },
+[SPECIES_RAITORA] =
+    {
+        .baseHP        = 60,
+        .baseAttack    = 90,
+        .baseDefense   = 55,
+        .baseSpeed     = RAICHU_SPEED,
+        .baseSpAttack  = 90,
+        .baseSpDefense = P_UPDATED_STATS >= GEN_2 ? 80 : 90,
+        .types = MON_TYPES(TYPE_ELECTRIC),
+        .catchRate = 75,
+        .expYield = RAICHU_EXP_YIELD,
+        .evYield_Speed = 3,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 10,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_FAIRY),
+        .abilities = { ABILITY_STATIC, ABILITY_NONE, ABILITY_LIGHTNING_ROD },
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("RAITORA"),
+        .cryId = CRY_ZEBSTRIKA,
+        .natDexNum = NATIONAL_DEX_RAITORA,
+        .categoryName = _("TIGER"),
+        .height = 14,
+        .weight = 420,
+        .description = COMPOUND_STRING(
+            "Upon encountering an opponent, RAITORA\n"
+            "prepares for battle by extending its\n"
+            "claws, which can put out 1,000,000 volts\n"
+            "of electricity."),
+        .pokemonScale = 265,
+        .pokemonOffset = 2,
+        .trainerScale = 262,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Raitora,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 56) : MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 4 : 3,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 60),
+            ANIMCMD_FRAME(1, 20),
+            ANIMCMD_FRAME(0, 1),
+        ),
+        .frontAnimId = ANIM_FLASH_YELLOW,
+        .backPic = gMonBackPic_Raitora,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 48) : MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 8 : 6,
+        .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
+        .palette = gMonPalette_Raitora,
+        .shinyPalette = gMonShinyPalette_Raitora,
+        .iconSprite = gMonIcon_Raitora,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(2, 10, SHADOW_SIZE_M)
+        FOOTPRINT(Luxio)
+        OVERWORLD(
+            sPicTable_Raitora,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Raitora,
+            gShinyOverworldPalette_Raitora
+        )
+        .levelUpLearnset = sLuxioLevelUpLearnset,
+        .teachableLearnset = sLuxioTeachableLearnset,
+    },
+
     [SPECIES_SHINX] =
     {
         .baseHP        = 45,

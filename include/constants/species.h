@@ -1640,9 +1640,12 @@
 #define SPECIES_OBSTAGOON_GALAR                         1524
 #define SPECIES_MEWLING                                 1525
 #define SPECIES_NEBYTE                                  1526
+#define SPECIES_TURBAN                                  1527
+#define SPECIES_KOTORA                                  1528
+#define SPECIES_RAITORA                                 1529
 
 
-#define SPECIES_EGG                                     (SPECIES_NEBYTE + 1)
+#define SPECIES_EGG                                     (SPECIES_RAITORA + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

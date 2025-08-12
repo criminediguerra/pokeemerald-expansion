@@ -766,6 +766,9 @@ static const struct SpriteFrameImage sPicTable_Shellder[] = {
 static const struct SpriteFrameImage sPicTable_Cloyster[] = {
     overworld_ascending_frames(gObjectEventPic_Cloyster, 4, 4),
 };
+static const struct SpriteFrameImage sPicTable_Turban[] = {
+    overworld_ascending_frames(gObjectEventPic_Turban, 4, 4),
+};
 #endif //P_FAMILY_SHELLDER
 
 #if P_FAMILY_GASTLY
@@ -3193,6 +3196,14 @@ static const struct SpriteFrameImage sPicTable_KricketuneF[] = {
 #endif //P_FAMILY_KRICKETOT
 
 #if P_FAMILY_SHINX
+static const struct SpriteFrameImage sPicTable_Kotora[] = {
+    overworld_ascending_frames(gObjectEventPic_Kotora, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Raitora[] = {
+    overworld_ascending_frames(gObjectEventPic_Raitora, 4, 4),
+};
+
 static const struct SpriteFrameImage sPicTable_Shinx[] = {
     overworld_ascending_frames(gObjectEventPic_Shinx, 4, 4),
 };

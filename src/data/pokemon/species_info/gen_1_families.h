@@ -3913,12 +3913,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 4 : 3,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 60),
             ANIMCMD_FRAME(1, 20),
-            ANIMCMD_FRAME(0, 15),
-            ANIMCMD_FRAME(1, 20),
-            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(0, 1),
         ),
-        .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_V_STRETCH : ANIM_GROW_VIBRATE,
+        .frontAnimId = ANIM_FLASH_YELLOW,
         .backPic = gMonBackPic_Raichu,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 48) : MON_COORDS_SIZE(64, 56),
         .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 8 : 6,
@@ -11709,6 +11708,78 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sCloysterLevelUpLearnset,
         .teachableLearnset = sCloysterTeachableLearnset,
+    },
+    [SPECIES_TURBAN] =
+    {
+        .baseHP        = 50,
+        .baseAttack    = 95,
+        .baseDefense   = 180,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 85,
+        .baseSpDefense = P_UPDATED_STATS >= GEN_2 ? 45 : 85,
+        .types = MON_TYPES(TYPE_WATER, TYPE_DRAGON),
+        .catchRate = 60,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 184 : 203,
+        .evYield_Defense = 2,
+        .itemCommon = ITEM_PEARL,
+        .itemRare = ITEM_BIG_PEARL,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
+    #if P_UPDATED_ABILITIES >= GEN_4
+        .abilities = { ABILITY_SHELL_ARMOR, ABILITY_SKILL_LINK, ABILITY_OVERCOAT },
+    #else
+        .abilities = { ABILITY_SHELL_ARMOR, ABILITY_NONE, ABILITY_OVERCOAT },
+    #endif
+        .bodyColor = BODY_COLOR_PURPLE,
+        .speciesName = _("TURBAN"),
+        .cryId = CRY_CLOYSTER,
+        .natDexNum = NATIONAL_DEX_TURBAN,
+        .categoryName = _("CERITH"),
+        .height = 15,
+        .weight = 1325,
+        .description = COMPOUND_STRING(
+            "This Pokémon clamps tightly onto a\n"
+            "SLOWPOKE's tail, feeding on its host's\n"
+            "natural fluids. it rarely lets go."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 269,
+        .trainerOffset = 1,
+        .frontPic = gMonFrontPic_Turban,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 56) : MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 5 : 3,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 32),
+            ANIMCMD_FRAME(0, 14),
+            ANIMCMD_FRAME(1, 18),
+            ANIMCMD_FRAME(0, 1),
+        ),
+        .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_H_SLIDE_WOBBLE : ANIM_V_SHAKE_TWICE,
+        .backPic = gMonBackPic_Turban,
+        .backPicSize = MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 6 : 7,
+        .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
+        .palette = gMonPalette_Turban,
+        .shinyPalette = gMonShinyPalette_Turban,
+        .iconSprite = gMonIcon_Turban,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(4, 8, SHADOW_SIZE_M)
+        FOOTPRINT(Cloyster)
+        OVERWORLD(
+            sPicTable_Turban,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_NONE,
+            sAnimTable_Following,
+            gOverworldPalette_Turban,
+            gShinyOverworldPalette_Turban
+        )
+        .levelUpLearnset = sDracovishLevelUpLearnset,
+        .teachableLearnset = sDracovishTeachableLearnset,
     },
 #endif //P_FAMILY_SHELLDER
 
