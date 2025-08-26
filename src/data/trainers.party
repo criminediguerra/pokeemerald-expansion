@@ -17368,7 +17368,7 @@ Items: Potion / Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-SPECIES_FARFETCHD_GALAR 
+Farfetchd
 Level: 15
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Leaf Blade
@@ -17410,7 +17410,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Confuse Ray
 - Air Cutter
 
-SPECIES_FARFETCHD_GALAR @ Sitrus Berry
+Farfetchd @ Sitrus Berry
 Level: 19
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Leaf Blade
@@ -17452,7 +17452,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Confuse Ray
 - Air Cutter
 
-SPECIES_FARFETCHD_GALAR @ Sitrus Berry
+Farfetchd @ Sitrus Berry
 Level: 25
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Leaf Blade
@@ -17494,7 +17494,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Confuse Ray
 - Air Cutter
 
-SPECIES_FARFETCHD_GALAR @ Sitrus Berry
+Farfetchd @ Sitrus Berry
 Level: 31
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Leaf Blade

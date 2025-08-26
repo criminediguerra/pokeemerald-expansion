@@ -43341,7 +43341,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 17371
-            .species = SPECIES_FARFETCHD_GALAR,
+            .species = SPECIES_FARFETCHD,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 17373
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -43438,7 +43438,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 17413
-            .species = SPECIES_FARFETCHD_GALAR,
+            .species = SPECIES_FARFETCHD,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 17413
             .heldItem = ITEM_SITRUS_BERRY,
@@ -43537,7 +43537,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 17455
-            .species = SPECIES_FARFETCHD_GALAR,
+            .species = SPECIES_FARFETCHD,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 17455
             .heldItem = ITEM_SITRUS_BERRY,
@@ -43636,7 +43636,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 17497
-            .species = SPECIES_FARFETCHD_GALAR,
+            .species = SPECIES_FARFETCHD,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 17497
             .heldItem = ITEM_SITRUS_BERRY,

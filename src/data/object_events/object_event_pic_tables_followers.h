@@ -1824,7 +1824,7 @@ static const struct SpriteFrameImage sPicTable_DudunsparceTwoSegment[] = {
     overworld_ascending_frames(gObjectEventPic_DudunsparceTwoSegment, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_DudunsparceThreeSegment[] = {
-    overworld_ascending_frames(gObjectEventPic_DudunsparceThreeSegment, 8, 8),
+    overworld_ascending_frames(gObjectEventPic_DudunsparceThreeSegment, 4, 4),
 };
 
 

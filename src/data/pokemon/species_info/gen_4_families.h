@@ -7188,10 +7188,10 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FAIRY),
         .abilities = { ABILITY_HYDRATION, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Phione"),
+        .speciesName = _("PHIONE"),
         .cryId = CRY_PHIONE,
         .natDexNum = NATIONAL_DEX_PHIONE,
-        .categoryName = _("Sea Drifter"),
+        .categoryName = _("SEA DRIFTER"),
         .height = 4,
         .weight = 31,
         .description = COMPOUND_STRING(
@@ -7265,17 +7265,17 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FAIRY),
         .abilities = { ABILITY_HYDRATION, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Manaphy"),
+        .speciesName = _("MANAPHY"),
         .cryId = CRY_MANAPHY,
         .natDexNum = NATIONAL_DEX_MANAPHY,
-        .categoryName = _("Seafaring"),
+        .categoryName = _("SEAFARING"),
         .height = 3,
         .weight = 14,
         .description = COMPOUND_STRING(
             "Water makes up 80% of its body.\n"
             "It starts its life with a wondrous power\n"
             "that permits it to bond with any kind\n"
-            "of Pokémon."),
+            "of POKéMON."),
         .pokemonScale = 530,
         .pokemonOffset = 13,
         .trainerScale = 256,
