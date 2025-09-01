@@ -1643,9 +1643,11 @@
 #define SPECIES_TURBAN                                  1527
 #define SPECIES_KOTORA                                  1528
 #define SPECIES_RAITORA                                 1529
+#define SPECIES_RAIDEN                                  1530
+#define SPECIES_MODO                                    1531
 
 
-#define SPECIES_EGG                                     (SPECIES_RAITORA + 1)
+#define SPECIES_EGG                                     (SPECIES_MODO + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

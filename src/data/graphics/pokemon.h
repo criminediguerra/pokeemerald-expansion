@@ -3404,6 +3404,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //P_FAMILY_FARFETCHD
 
 #if P_FAMILY_DODUO
+
+    const u32 gMonFrontPic_Modo[] = INCBIN_U32("graphics/pokemon/modo/anim_front.4bpp.lz");
+    const u16 gMonPalette_Modo[] = INCBIN_U16("graphics/pokemon/modo/normal.gbapal");
+    const u32 gMonBackPic_Modo[] = INCBIN_U32("graphics/pokemon/modo/back.4bpp.lz");
+    const u16 gMonShinyPalette_Modo[] = INCBIN_U16("graphics/pokemon/modo/shiny.gbapal");
+    const u8 gMonIcon_Modo[] = INCBIN_U8("graphics/pokemon/modo/icon.4bpp");
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_Modo[] = INCBIN_COMP("graphics/pokemon/modo/overworld.4bpp");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u16 gOverworldPalette_Modo[] = INCBIN_U16("graphics/pokemon/modo/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Modo[] = INCBIN_U16("graphics/pokemon/modo/overworld_shiny.gbapal");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+
 #if !P_GBA_STYLE_SPECIES_GFX
     const u32 gMonFrontPic_Doduo[] = INCBIN_U32("graphics/pokemon/doduo/anim_front.4bpp.lz");
     const u16 gMonPalette_Doduo[] = INCBIN_U16("graphics/pokemon/doduo/normal.gbapal");
@@ -17881,6 +17895,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //P_FAMILY_DEERLING
 
 #if P_FAMILY_EMOLGA
+
+    const u32 gMonFrontPic_Raiden[] = INCBIN_U32("graphics/pokemon/raiden/anim_front.4bpp.lz");
+    const u16 gMonPalette_Raiden[] = INCBIN_U16("graphics/pokemon/raiden/normal.gbapal");
+    const u32 gMonBackPic_Raiden[] = INCBIN_U32("graphics/pokemon/raiden/back.4bpp.lz");
+    const u16 gMonShinyPalette_Raiden[] = INCBIN_U16("graphics/pokemon/raiden/shiny.gbapal");
+    const u8 gMonIcon_Raiden[] = INCBIN_U8("graphics/pokemon/raiden/icon.4bpp");
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_Raiden[] = INCBIN_COMP("graphics/pokemon/raiden/overworld.4bpp");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u16 gOverworldPalette_Raiden[] = INCBIN_U16("graphics/pokemon/raiden/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Raiden[] = INCBIN_U16("graphics/pokemon/raiden/overworld_shiny.gbapal");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+
     const u32 gMonFrontPic_Emolga[] = INCBIN_U32("graphics/pokemon/emolga/anim_front.4bpp.lz");
     const u16 gMonPalette_Emolga[] = INCBIN_U16("graphics/pokemon/emolga/normal.gbapal");
     const u32 gMonBackPic_Emolga[] = INCBIN_U32("graphics/pokemon/emolga/back.4bpp.lz");

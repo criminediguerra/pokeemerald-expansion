@@ -715,6 +715,9 @@ static const struct SpriteFrameImage sPicTable_Sirfetchd[] = {
 #endif //P_FAMILY_FARFETCHD
 
 #if P_FAMILY_DODUO
+static const struct SpriteFrameImage sPicTable_Modo[] = {
+    overworld_ascending_frames(gObjectEventPic_Modo, 4, 4),
+};
 static const struct SpriteFrameImage sPicTable_Doduo[] = {
     overworld_ascending_frames(gObjectEventPic_Doduo, 4, 4),
 };
@@ -4216,6 +4219,11 @@ static const struct SpriteFrameImage sPicTable_SawsbuckWinter[] = {
 #endif //P_FAMILY_DEERLING
 
 #if P_FAMILY_EMOLGA
+
+static const struct SpriteFrameImage sPicTable_Raiden[] = {
+    overworld_ascending_frames(gObjectEventPic_Raiden, 4, 4),
+};
+
 static const struct SpriteFrameImage sPicTable_Emolga[] = {
     overworld_ascending_frames(gObjectEventPic_Emolga, 4, 4),
 };

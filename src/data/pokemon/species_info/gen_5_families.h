@@ -8203,14 +8203,84 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #endif //P_FAMILY_DEERLING
 
 #if P_FAMILY_EMOLGA
-    [SPECIES_EMOLGA] =
+    [SPECIES_RAIDEN] =
     {
         .baseHP        = 55,
-        .baseAttack    = 75,
+        .baseAttack    = 63,
         .baseDefense   = 60,
         .baseSpeed     = 103,
         .baseSpAttack  = 75,
         .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_FLYING, TYPE_DARK),
+        .catchRate = 180,
+        .expYield = 152,
+        .evYield_Attack = 2,
+        .itemRare = ITEM_SMOKE_BALL,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 10,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_FAIRY),
+        .abilities = { ABILITY_INFILTRATOR, ABILITY_MISTY_SURGE, ABILITY_POISON_POINT },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("RAIDEN"),
+        .cryId = CRY_AXEW,
+        .natDexNum = NATIONAL_DEX_RAIDEN,
+        .categoryName = _("SKY SQUIRREL"),
+        .height = 3,
+        .weight = 33,
+        .description = COMPOUND_STRING(
+            "RAIDEN lurks in the canopy, blending\n"
+            "seamlessly with leaves and shadows.\n"
+            "It waits in silence before dropping\n"
+            "down onto its prey with precision."),
+        .pokemonScale = 530,
+        .pokemonOffset = 13,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Raiden,
+        .frontPicSize = MON_COORDS_SIZE(40, 40),
+        .frontPicYOffset = 9,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 25),
+            ANIMCMD_FRAME(0, 30),
+        ),
+        .frontAnimId = ANIM_BACK_AND_LUNGE,
+        .backPic = gMonBackPic_Raiden,
+        .backPicSize = MON_COORDS_SIZE(64, 48),
+        .backPicYOffset = 13,
+        .backAnimId = BACK_ANIM_GROW_STUTTER,
+        .palette = gMonPalette_Raiden,
+        .shinyPalette = gMonShinyPalette_Raiden,
+        .iconSprite = gMonIcon_Raiden,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
+        SHADOW(-1, 4, SHADOW_SIZE_S)
+        FOOTPRINT(Emolga)
+        OVERWORLD(
+            sPicTable_Raiden,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Raiden,
+            gShinyOverworldPalette_Raiden
+        )
+        .levelUpLearnset = sRaidenLevelUpLearnset,
+        .teachableLearnset = sEmolgaTeachableLearnset,
+        .eggMoveLearnset = sEmolgaEggMoveLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_EMOLGA}),
+    },
+
+    [SPECIES_EMOLGA] =
+    {
+        .baseHP        = 65,
+        .baseAttack    = 98,
+        .baseDefense   = 75,
+        .baseSpeed     = 116,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 73,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_FLYING),
         .catchRate = 200,
         .expYield = 150,
@@ -8220,7 +8290,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_STATIC, ABILITY_NONE, ABILITY_MOTOR_DRIVE },
+        .abilities = { ABILITY_STATIC, ABILITY_MISTY_SURGE, ABILITY_POISON_POINT },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("EMOLGA"),
         .cryId = CRY_EMOLGA,
@@ -8241,12 +8311,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .frontPicSize = MON_COORDS_SIZE(64, 48),
         .frontPicYOffset = 17,
         .frontAnimFrames = ANIM_FRAMES(
-            ANIMCMD_FRAME(0, 21),
-            ANIMCMD_FRAME(1, 45),
-            ANIMCMD_FRAME(1, 10),
             ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 25),
+            ANIMCMD_FRAME(0, 30),
         ),
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
+        .frontAnimId = ANIM_BACK_AND_LUNGE,
         .enemyMonElevation = 19,
         .backPic = gMonBackPic_Emolga,
         .backPicSize = MON_COORDS_SIZE(56, 40),

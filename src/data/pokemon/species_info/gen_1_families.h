@@ -11028,11 +11028,84 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_FAMILY_FARFETCHD
 
 #if P_FAMILY_DODUO
-    [SPECIES_DODUO] =
+    [SPECIES_MODO] =
     {
         .baseHP        = 35,
-        .baseAttack    = 85,
+        .baseAttack    = 30,
         .baseDefense   = 45,
+        .baseSpeed     = 15,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 20,
+        .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
+        .catchRate = 170,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 42 : 39,
+        .evYield_HP = 1,
+        .itemRare = ITEM_SHARP_BEAK,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 10,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
+        .abilities = { ABILITY_RUN_AWAY, ABILITY_EARLY_BIRD, ABILITY_TANGLED_FEET },
+        .bodyColor = BODY_COLOR_BROWN,
+        .noFlip = TRUE,
+        .speciesName = _("MODO"),
+        .cryId = CRY_DODUO,
+        .natDexNum = NATIONAL_DEX_MODO,
+        .categoryName = _("LONE BIRD"),
+        .height = 3,
+        .weight = 10,
+        .description = COMPOUND_STRING(
+            "MODO is unable to fly, but it runs swiftly\n"
+            "on its strong legs.\n"
+            "It relies on its sharp eyesight to spot\n"
+            "danger from afar."),
+        .pokemonScale = 530,
+        .pokemonOffset = 13,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Modo,
+        .frontPicSize = MON_COORDS_SIZE(40, 40),
+        .frontPicYOffset = 10,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 20),
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 20),
+            ANIMCMD_FRAME(0, 15),
+        ),
+        .frontAnimId = ANIM_SWING_CONCAVE_FAST,
+        .backPic = gMonBackPic_Modo,
+        .backPicSize = MON_COORDS_SIZE(48, 48),
+        .backPicYOffset = 10,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
+        .palette = gMonPalette_Modo,
+        .shinyPalette = gMonShinyPalette_Modo,
+        .iconSprite = gMonIcon_Modo,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
+        SHADOW(0, -3, SHADOW_SIZE_S)
+        FOOTPRINT(Rattata)
+        OVERWORLD(
+            sPicTable_Modo,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Modo,
+            gShinyOverworldPalette_Modo
+        )
+        .levelUpLearnset = sDoduoLevelUpLearnset,
+        .teachableLearnset = sDoduoTeachableLearnset,
+        .eggMoveLearnset = sDoduoEggMoveLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_DODUO, CONDITIONS({IF_MIN_FRIENDSHIP, FRIENDSHIP_EVO_THRESHOLD})}),
+    },
+
+    [SPECIES_DODUO] =
+    {
+        .baseHP        = 90,
+        .baseAttack    = 85,
+        .baseDefense   = 15,
         .baseSpeed     = 75,
         .baseSpAttack  = 35,
         .baseSpDefense = 35,
@@ -11049,7 +11122,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_RUN_AWAY, ABILITY_EARLY_BIRD, ABILITY_TANGLED_FEET },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("DODUO"),
-        .cryId = CRY_DODUO,
+        .cryId = CRY_DIGLETT,
         .natDexNum = NATIONAL_DEX_DODUO,
         .categoryName = _("TWIN BIRD"),
         .height = 14,

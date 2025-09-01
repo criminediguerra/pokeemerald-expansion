@@ -4412,7 +4412,6 @@ static const u16 sDoduoTeachableLearnset[] = {
     MOVE_DOUBLE_TEAM,
     MOVE_ENDURE,
     MOVE_FACADE,
-    MOVE_FLY,
     MOVE_MUD_SLAP,
     MOVE_PROTECT,
     MOVE_RAIN_DANCE,
