@@ -5806,7 +5806,7 @@
       "name": "KantoSafariF1_Layout",
       "width": 57,
       "height": 38,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_Tropical",
       "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/KantoSafariF1/border.bin",
       "blockdata_filepath": "data/layouts/KantoSafariF1/map.bin"
@@ -5816,7 +5816,7 @@
       "name": "KantoSafariF2_Layout",
       "width": 54,
       "height": 37,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_Tropical",
       "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/KantoSafariF2/border.bin",
       "blockdata_filepath": "data/layouts/KantoSafariF2/map.bin"
@@ -5826,7 +5826,7 @@
       "name": "KantoSafariF3_Layout",
       "width": 57,
       "height": 40,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_Tropical",
       "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/KantoSafariF3/border.bin",
       "blockdata_filepath": "data/layouts/KantoSafariF3/map.bin"
@@ -5836,7 +5836,7 @@
       "name": "KantoSafariF4_Layout",
       "width": 49,
       "height": 36,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_Tropical",
       "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/KantoSafariF4/border.bin",
       "blockdata_filepath": "data/layouts/KantoSafariF4/map.bin"
@@ -8626,7 +8626,7 @@
       "name": "RingTown_Layout",
       "width": 44,
       "height": 28,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/RingTown/border.bin",
       "blockdata_filepath": "data/layouts/RingTown/map.bin"
@@ -8636,7 +8636,7 @@
       "name": "Route69_Layout",
       "width": 140,
       "height": 40,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/Route69/border.bin",
       "blockdata_filepath": "data/layouts/Route69/map.bin"
@@ -8876,7 +8876,7 @@
       "name": "RingLake_Layout",
       "width": 90,
       "height": 40,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/RingLake/border.bin",
       "blockdata_filepath": "data/layouts/RingLake/map.bin"
@@ -8886,7 +8886,7 @@
       "name": "FallCity_Layout",
       "width": 60,
       "height": 80,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/FallCity/border.bin",
       "blockdata_filepath": "data/layouts/FallCity/map.bin"
@@ -8896,7 +8896,7 @@
       "name": "Route70_Layout",
       "width": 40,
       "height": 40,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/Route70/border.bin",
       "blockdata_filepath": "data/layouts/Route70/map.bin"
@@ -8966,7 +8966,7 @@
       "name": "Route71_Layout",
       "width": 38,
       "height": 33,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Route71/border.bin",
       "blockdata_filepath": "data/layouts/Route71/map.bin"
@@ -8976,7 +8976,7 @@
       "name": "Wintown_Layout",
       "width": 60,
       "height": 38,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/Wintown/border.bin",
       "blockdata_filepath": "data/layouts/Wintown/map.bin"
@@ -8986,7 +8986,7 @@
       "name": "Route72_Layout",
       "width": 85,
       "height": 69,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Route72/border.bin",
       "blockdata_filepath": "data/layouts/Route72/map.bin"
@@ -8996,7 +8996,7 @@
       "name": "Route73_Layout",
       "width": 85,
       "height": 62,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Route73/border.bin",
       "blockdata_filepath": "data/layouts/Route73/map.bin"
@@ -9006,7 +9006,7 @@
       "name": "MtSekra_Layout",
       "width": 85,
       "height": 65,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
       "border_filepath": "data/layouts/MtSekra/border.bin",
       "blockdata_filepath": "data/layouts/MtSekra/map.bin"
@@ -9016,7 +9016,7 @@
       "name": "OliveJungle_Layout",
       "width": 101,
       "height": 74,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/OliveJungle/border.bin",
       "blockdata_filepath": "data/layouts/OliveJungle/map.bin"
@@ -9026,7 +9026,7 @@
       "name": "Summerland_Layout",
       "width": 78,
       "height": 50,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Pacifidlog",
       "border_filepath": "data/layouts/Summerland/border.bin",
       "blockdata_filepath": "data/layouts/Summerland/map.bin"
@@ -9036,7 +9036,7 @@
       "name": "OliveJungleF1_Layout",
       "width": 101,
       "height": 56,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/OliveJungleF1/border.bin",
       "blockdata_filepath": "data/layouts/OliveJungleF1/map.bin"
@@ -9046,7 +9046,7 @@
       "name": "Route74_Layout",
       "width": 50,
       "height": 40,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/Route74/border.bin",
       "blockdata_filepath": "data/layouts/Route74/map.bin"
@@ -9056,7 +9056,7 @@
       "name": "Route75_Layout",
       "width": 82,
       "height": 70,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/Route75/border.bin",
       "blockdata_filepath": "data/layouts/Route75/map.bin"
@@ -9747,7 +9747,7 @@
       "width": 64,
       "height": 30,
       "primary_tileset": "gTileset_GeneralStairs",
-      "secondary_tileset": "gTileset_Rustboro",
+      "secondary_tileset": "gTileset_Jubilife",
       "border_filepath": "data/layouts/Route203/border.bin",
       "blockdata_filepath": "data/layouts/Route203/map.bin"
     },
