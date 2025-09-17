@@ -7334,6 +7334,289 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #endif //P_FAMILY_HOUNDOUR
 
 #if P_FAMILY_PHANPY
+    [SPECIES_WOLFMAN] =
+    {
+        .baseHP        = 50,
+        .baseAttack    = 50,
+        .baseDefense   = 50,
+        .baseSpeed     = 50,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 50,
+        .types = MON_TYPES(TYPE_ICE, TYPE_STEEL),
+        .catchRate = 190,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 60 : 74,
+        .evYield_HP = 1,
+        .itemRare = ITEM_SNOWBALL,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_MINERAL),
+    #if P_UPDATED_ABILITIES >= GEN_4
+        .abilities = { ABILITY_INNER_FOCUS, ABILITY_ICE_BODY, ABILITY_MOODY },
+    #else
+        .abilities = { ABILITY_INNER_FOCUS, ABILITY_NONE, ABILITY_MOODY },
+    #endif
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("WOLFMAN"),
+        .cryId = CRY_RIOLU,
+        .natDexNum = NATIONAL_DEX_WOLFMAN,
+        .categoryName = _("FUR SUIT"),
+        .height = 7,
+        .weight = 168,
+        .description = COMPOUND_STRING(
+            "The pelt WOLFMAN wears once belonged\n"
+            "to a defeated WARTHUG. If torn, it\n"
+            "will patch it with ice until it finds\n"
+            "a new one."),
+        .pokemonScale = 380,
+        .pokemonOffset = 15,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Wolfman,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(40, 48) : MON_COORDS_SIZE(32, 40),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 11 : 12,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 20),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = ANIM_V_SHAKE,
+        .frontAnimDelay = 20,
+        .backPic = gMonBackPic_Wolfman,
+        .backPicSize = MON_COORDS_SIZE(56, 48),
+        .backPicYOffset = 10,
+        .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
+        .palette = gMonPalette_Wolfman,
+        .shinyPalette = gMonShinyPalette_Wolfman,
+        .iconSprite = gMonIcon_Wolfman,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
+        SHADOW(1, 2, SHADOW_SIZE_S)
+        FOOTPRINT(Growlithe)
+        OVERWORLD(
+            sPicTable_Wolfman,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Wolfman,
+            gShinyOverworldPalette_Wolfman
+        )
+        .levelUpLearnset = sSandshrewAlolaLevelUpLearnset,
+        .teachableLearnset = sSandshrewAlolaTeachableLearnset,
+        .eggMoveLearnset = sSandshrewAlolaEggMoveLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_WEHRWOLF}),
+    },
+
+    [SPECIES_WEHRWOLF] =
+    {
+        .baseHP        = 80,
+        .baseAttack    = 80,
+        .baseDefense   = 80,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_ICE, TYPE_STEEL),
+        .catchRate = 75,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 168 : 187,
+        .evYield_HP = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_MINERAL),
+    #if P_UPDATED_ABILITIES >= GEN_4
+        .abilities = { ABILITY_INNER_FOCUS, ABILITY_ICE_BODY, ABILITY_MOODY },
+    #else
+        .abilities = { ABILITY_INNER_FOCUS, ABILITY_NONE, ABILITY_MOODY },
+    #endif
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("WEHRWOLF"),
+        .cryId = CRY_HOUNDOOM,
+        .natDexNum = NATIONAL_DEX_WEHRWOLF,
+        .categoryName = _("FUR SUIT"),
+        .height = 15,
+        .weight = 2565,
+        .description = COMPOUND_STRING(
+            "The cursed pelt it wears has become\n"
+            "part of its body. With each battle,\n"
+            "its fur thickens, and its strengh\n"
+            "deepen."),
+        .pokemonScale = 256,
+        .pokemonOffset = 3,
+        .trainerScale = 344,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Wehrwolf,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 48) : MON_COORDS_SIZE(56, 56),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 10 : 8,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 25),
+            ANIMCMD_FRAME(0, 30),
+        ),
+        .frontAnimId = ANIM_BACK_AND_LUNGE,
+        .enemyMonElevation = 12,
+        .backPic = gMonBackPic_Wehrwolf,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 40) : MON_COORDS_SIZE(64, 48),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 12 : 10,
+        .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
+        .palette = gMonPalette_Wehrwolf,
+        .shinyPalette = gMonShinyPalette_Wehrwolf,
+        .iconSprite = gMonIcon_Wehrwolf,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(1, 15, SHADOW_SIZE_M)
+        FOOTPRINT(Arcanine)
+        OVERWORLD(
+            sPicTable_Wehrwolf,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Wehrwolf,
+            gShinyOverworldPalette_Wehrwolf
+        )
+        .levelUpLearnset = sSandslashAlolaLevelUpLearnset,
+        .teachableLearnset = sSandslashAlolaTeachableLearnset,
+    },
+    [SPECIES_WARTHUG] =
+    {
+        .baseHP        = 90,
+        .baseAttack    = 60,
+        .baseDefense   = 60,
+        .baseSpeed     = 40,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 40,
+        .types = MON_TYPES(TYPE_NORMAL),
+        .catchRate = 120,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 66 : 124,
+        .evYield_HP = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        .abilities = { ABILITY_PICKUP, ABILITY_NONE, ABILITY_SAND_VEIL },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("WARTHUG"),
+        .cryId = CRY_RAMPARDOS,
+        .natDexNum = NATIONAL_DEX_WARTHUG,
+        .categoryName = _("WARTHOG"),
+        .height = 5,
+        .weight = 335,
+        .description = COMPOUND_STRING(
+            "WARTHUG roams endlessly across wide\n"
+            "plains, leaving winding furrows in\n"
+            "the soil as it digs."),
+        .pokemonScale = 465,
+        .pokemonOffset = 21,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Warthug,
+        .frontPicSize = MON_COORDS_SIZE(40, 32),
+        .frontPicYOffset = 16,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 12),
+            ANIMCMD_FRAME(1, 12),
+            ANIMCMD_FRAME(1, 12),
+            ANIMCMD_FRAME(1, 12),
+            ANIMCMD_FRAME(0, 8),
+        ),
+        .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_LUNGE_GROW : ANIM_V_STRETCH,
+        .backPic = gMonBackPic_Warthug,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 40) : MON_COORDS_SIZE(56, 40),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 14 : 12,
+        .backAnimId = BACK_ANIM_JOLT_RIGHT,
+        .palette = gMonPalette_Warthug,
+        .shinyPalette = gMonShinyPalette_Warthug,
+        .iconSprite = gMonIcon_Warthug,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
+        SHADOW(3, -2, SHADOW_SIZE_M)
+        FOOTPRINT(Oinkologne)
+        OVERWORLD(
+            sPicTable_Warthug,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Warthug,
+            gShinyOverworldPalette_Warthug
+        )
+        .levelUpLearnset = sBidoofLevelUpLearnset,
+        .teachableLearnset = sBidoofTeachableLearnset,
+        .eggMoveLearnset = sPhanpyEggMoveLearnset,
+        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_WARTUSK, CONDITIONS({IF_HOLD_ITEM, ITEM_PROTECTOR})},
+                                {EVO_ITEM, ITEM_PROTECTOR, SPECIES_WARTUSK}),
+    },
+
+    [SPECIES_WARTUSK] =
+    {
+        .baseHP        = 90,
+        .baseAttack    = 120,
+        .baseDefense   = 120,
+        .baseSpeed     = 50,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_NORMAL),
+        .catchRate = 60,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 175 : 189,
+        .evYield_Attack = 1,
+        .evYield_Defense = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        .abilities = { ABILITY_STURDY, ABILITY_NONE, ABILITY_SAND_VEIL },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("WARTUSK"),
+        .cryId = CRY_ENTEI,
+        .natDexNum = NATIONAL_DEX_WARTUSK,
+        .categoryName = _("WONDERNOSE"),
+        .height = 11,
+        .weight = 1200,
+        .description = COMPOUND_STRING(
+            "The deep grooves carved by WARTUSK's\n"
+            "tusks while foraging are often mistaken\n"
+            "for ancient pathways. When threatened,\n"
+            "it unleashes a thunderous bellow."),
+        .pokemonScale = 313,
+        .pokemonOffset = 9,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Wartusk,
+        .frontPicSize = MON_COORDS_SIZE(64, 48),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 8 : 9,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 25),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_V_SHAKE_TWICE : ANIM_ROTATE_UP_SLAM_DOWN,
+        .backPic = gMonBackPic_Wartusk,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 40) : MON_COORDS_SIZE(64, 48),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 13 : 9,
+        .backAnimId = BACK_ANIM_V_SHAKE_LOW,
+        .palette = gMonPalette_Wartusk,
+        .shinyPalette = gMonShinyPalette_Wartusk,
+        .iconSprite = gMonIcon_Wartusk,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(7, 2, SHADOW_SIZE_L)
+        FOOTPRINT(Donphan)
+        OVERWORLD(
+            sPicTable_Wartusk,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Wartusk,
+            gShinyOverworldPalette_Wartusk
+        )
+        .levelUpLearnset = sBibarelLevelUpLearnset,
+        .teachableLearnset = sBibarelTeachableLearnset,
+    },
     [SPECIES_PHANPY] =
     {
         .baseHP        = 90,

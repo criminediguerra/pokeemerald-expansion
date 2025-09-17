@@ -711,6 +711,9 @@ static const struct SpriteFrameImage sPicTable_FarfetchdGalar[] = {
 static const struct SpriteFrameImage sPicTable_Sirfetchd[] = {
     overworld_ascending_frames(gObjectEventPic_Sirfetchd, 4, 4),
 };
+static const struct SpriteFrameImage sPicTable_Madame[] = {
+    overworld_ascending_frames(gObjectEventPic_Madame, 4, 4),
+};
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_FARFETCHD
 
@@ -2060,6 +2063,18 @@ static const struct SpriteFrameImage sPicTable_HoundoomMega[] = {
 #endif //P_FAMILY_HOUNDOUR
 
 #if P_FAMILY_PHANPY
+static const struct SpriteFrameImage sPicTable_Wolfman[] = {
+    overworld_ascending_frames(gObjectEventPic_Wolfman, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Wehrwolf[] = {
+    overworld_ascending_frames(gObjectEventPic_Wehrwolf, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Warthug[] = {
+    overworld_ascending_frames(gObjectEventPic_Warthug, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Wartusk[] = {
+    overworld_ascending_frames(gObjectEventPic_Wartusk, 4, 4),
+};
 static const struct SpriteFrameImage sPicTable_Phanpy[] = {
     overworld_ascending_frames(gObjectEventPic_Phanpy, 4, 4),
 };

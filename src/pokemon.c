@@ -219,6 +219,7 @@ static const u16 sHoennToNationalOrder[HOENN_DEX_COUNT - 1] =
     HOENN_TO_NATIONAL(MAGNEMITE),
     HOENN_TO_NATIONAL(MAGNETON),
     HOENN_TO_NATIONAL(FARFETCHD),
+    HOENN_TO_NATIONAL(MADAME),
     HOENN_TO_NATIONAL(SIRFETCHD),
     HOENN_TO_NATIONAL(SEEL),
     HOENN_TO_NATIONAL(DEWGONG),
@@ -430,6 +431,10 @@ static const u16 sHoennToNationalOrder[HOENN_DEX_COUNT - 1] =
     HOENN_TO_NATIONAL(RAITORA),
     HOENN_TO_NATIONAL(PANCHAM),
     HOENN_TO_NATIONAL(PANGORO),
+    HOENN_TO_NATIONAL(WOLFMAN),
+    HOENN_TO_NATIONAL(WEHRWOLF),
+    HOENN_TO_NATIONAL(WARTHUG),
+    HOENN_TO_NATIONAL(WARTUSK),
     HOENN_TO_NATIONAL(STANTLER),
     HOENN_TO_NATIONAL(WYRDEER),
     HOENN_TO_NATIONAL(TAUROS),
@@ -4765,7 +4770,7 @@ bool32 DoesMonMeetAdditionalConditions(struct Pokemon *mon, const struct Evoluti
         {
         // Gen 2
         case IF_GENDER:
-            if (gender == GetMonGender(mon))
+            if (gender == params[i].arg1)
                 currentCondition = TRUE;
             break;
         case IF_MIN_FRIENDSHIP:

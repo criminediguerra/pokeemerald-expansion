@@ -1645,9 +1645,14 @@
 #define SPECIES_RAITORA                                 1529
 #define SPECIES_RAIDEN                                  1530
 #define SPECIES_MODO                                    1531
+#define SPECIES_WARTHUG                                 1532
+#define SPECIES_WARTUSK                                 1533
+#define SPECIES_WOLFMAN                                 1534
+#define SPECIES_WEHRWOLF                                1535
+#define SPECIES_MADAME                                  1536
 
 
-#define SPECIES_EGG                                     (SPECIES_MODO + 1)
+#define SPECIES_EGG                                     (SPECIES_MADAME + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

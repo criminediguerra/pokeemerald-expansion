@@ -2906,7 +2906,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .expYield = 208,
     #endif
         .evYield_SpAttack = 3,
-        .genderRatio = PERCENT_FEMALE(50),
+        .genderRatio = PERCENT_FEMALE(100),
         .eggCycles = 20,
         .friendship = 35,
         .growthRate = GROWTH_SLOW,

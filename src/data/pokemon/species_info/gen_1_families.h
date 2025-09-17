@@ -10884,6 +10884,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sFarfetchdTeachableLearnset,
         .eggMoveLearnset = sFarfetchdEggMoveLearnset,
         .formSpeciesIdTable = sFarfetchdFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_MADAME, CONDITIONS({IF_GENDER, MON_FEMALE})},
+                                {EVO_LEVEL, 25, SPECIES_SIRFETCHD, CONDITIONS({IF_GENDER, MON_MALE})}),
     },
 
 #if P_GALARIAN_FORMS
@@ -10963,12 +10965,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 65,
         .baseSpAttack  = 68,
         .baseSpDefense = 82,
-        .types = MON_TYPES(TYPE_FIGHTING),
+        .types = MON_TYPES(TYPE_FIGHTING, TYPE_FLYING),
         .catchRate = 45,
         .expYield = 177,
         .evYield_Attack = 2,
         .itemRare = ITEM_LEEK,
-        .genderRatio = PERCENT_FEMALE(50),
+        .genderRatio = PERCENT_FEMALE(0),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
@@ -11023,6 +11025,75 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sSirfetchdLevelUpLearnset,
         .teachableLearnset = sSirfetchdTeachableLearnset,
+    },
+    [SPECIES_MADAME] =
+    {
+        .baseHP        = 62,
+        .baseAttack    = 68,
+        .baseDefense   = 82,
+        .baseSpeed     = 65,
+        .baseSpAttack  = 135,
+        .baseSpDefense = 95,
+        .types = MON_TYPES(TYPE_PSYCHIC, TYPE_FLYING),
+        .catchRate = 45,
+        .expYield = 177,
+        .evYield_Attack = 2,
+        .itemRare = ITEM_LEEK,
+        .genderRatio = PERCENT_FEMALE(100),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING, EGG_GROUP_FIELD),
+        .abilities = { ABILITY_STEADFAST, ABILITY_NONE, ABILITY_SCRAPPY },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("MA'DAME"),
+        .cryId = CRY_SPEAROW,
+        .natDexNum = NATIONAL_DEX_MADAME,
+        .categoryName = _("WILD DUCK"),
+        .height = 8,
+        .weight = 1170,
+        .description = COMPOUND_STRING(
+            "MA'DAME wields its leek like a divining\n"
+            "staff, channeling psychic energy through\n"
+            "every motion. Legends say it can glimpse\n"
+            "fragments of the future in ripples of wind."),
+        .pokemonScale = 366,
+        .pokemonOffset = 7,
+        .trainerScale = 257,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Madame,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 5),
+            ANIMCMD_FRAME(1, 25),
+            ANIMCMD_FRAME(0, 5),
+        ),
+        .frontAnimId = ANIM_H_VIBRATE,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_Madame,
+        .backPicSize = MON_COORDS_SIZE(64, 48),
+        .backPicYOffset = 8,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_Madame,
+        .shinyPalette = gMonShinyPalette_Madame,
+        .iconSprite = gMonIcon_Madame,
+        .iconPalIndex = 1,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(1, 11, SHADOW_SIZE_L)
+        FOOTPRINT(Sirfetchd)
+        OVERWORLD(
+            sPicTable_Madame,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Madame,
+            gShinyOverworldPalette_Madame
+        )
+        .levelUpLearnset = sArticunoGalarLevelUpLearnset,
+        .teachableLearnset = sArticunoGalarTeachableLearnset,
     },
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_FARFETCHD

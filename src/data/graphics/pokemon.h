@@ -3401,6 +3401,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GALARIAN_FORMS
+
+    const u32 gMonFrontPic_Madame[] = INCBIN_U32("graphics/pokemon/madame/front.4bpp.lz");
+    const u16 gMonPalette_Madame[] = INCBIN_U16("graphics/pokemon/madame/normal.gbapal");
+    const u32 gMonBackPic_Madame[] = INCBIN_U32("graphics/pokemon/madame/back.4bpp.lz");
+    const u16 gMonShinyPalette_Madame[] = INCBIN_U16("graphics/pokemon/madame/shiny.gbapal");
+    const u8 gMonIcon_Madame[] = INCBIN_U8("graphics/pokemon/madame/icon.4bpp");
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_Madame[] = INCBIN_COMP("graphics/pokemon/madame/overworld.4bpp");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u16 gOverworldPalette_Madame[] = INCBIN_U16("graphics/pokemon/madame/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Madame[] = INCBIN_U16("graphics/pokemon/madame/overworld_shiny.gbapal");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+
 #endif //P_FAMILY_FARFETCHD
 
 #if P_FAMILY_DODUO
@@ -9182,6 +9196,59 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //P_FAMILY_HOUNDOUR
 
 #if P_FAMILY_PHANPY
+
+    const u32 gMonFrontPic_Wolfman[] = INCBIN_U32("graphics/pokemon/wolfman/front.4bpp.lz");
+    const u16 gMonPalette_Wolfman[] = INCBIN_U16("graphics/pokemon/wolfman/normal.gbapal");
+    const u32 gMonBackPic_Wolfman[] = INCBIN_U32("graphics/pokemon/wolfman/back.4bpp.lz");
+    const u16 gMonShinyPalette_Wolfman[] = INCBIN_U16("graphics/pokemon/wolfman/shiny.gbapal");
+    const u8 gMonIcon_Wolfman[] = INCBIN_U8("graphics/pokemon/wolfman/icon.4bpp");
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_Wolfman[] = INCBIN_COMP("graphics/pokemon/wolfman/overworld.4bpp");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u16 gOverworldPalette_Wolfman[] = INCBIN_U16("graphics/pokemon/wolfman/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Wolfman[] = INCBIN_U16("graphics/pokemon/wolfman/overworld_shiny.gbapal");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+
+    const u32 gMonFrontPic_Wehrwolf[] = INCBIN_U32("graphics/pokemon/wehrwolf/front.4bpp.lz");
+    const u16 gMonPalette_Wehrwolf[] = INCBIN_U16("graphics/pokemon/wehrwolf/normal.gbapal");
+    const u32 gMonBackPic_Wehrwolf[] = INCBIN_U32("graphics/pokemon/wehrwolf/back.4bpp.lz");
+    const u16 gMonShinyPalette_Wehrwolf[] = INCBIN_U16("graphics/pokemon/wehrwolf/shiny.gbapal");
+    const u8 gMonIcon_Wehrwolf[] = INCBIN_U8("graphics/pokemon/wehrwolf/icon.4bpp");
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_Wehrwolf[] = INCBIN_COMP("graphics/pokemon/wehrwolf/overworld.4bpp");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u16 gOverworldPalette_Wehrwolf[] = INCBIN_U16("graphics/pokemon/wehrwolf/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Wehrwolf[] = INCBIN_U16("graphics/pokemon/wehrwolf/overworld_shiny.gbapal");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+
+    const u32 gMonFrontPic_Warthug[] = INCBIN_U32("graphics/pokemon/warthug/front.4bpp.lz");
+    const u16 gMonPalette_Warthug[] = INCBIN_U16("graphics/pokemon/warthug/normal.gbapal");
+    const u32 gMonBackPic_Warthug[] = INCBIN_U32("graphics/pokemon/warthug/back.4bpp.lz");
+    const u16 gMonShinyPalette_Warthug[] = INCBIN_U16("graphics/pokemon/warthug/shiny.gbapal");
+    const u8 gMonIcon_Warthug[] = INCBIN_U8("graphics/pokemon/warthug/icon.4bpp");
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_Warthug[] = INCBIN_COMP("graphics/pokemon/warthug/overworld.4bpp");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u16 gOverworldPalette_Warthug[] = INCBIN_U16("graphics/pokemon/warthug/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Warthug[] = INCBIN_U16("graphics/pokemon/warthug/overworld_shiny.gbapal");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+
+    const u32 gMonFrontPic_Wartusk[] = INCBIN_U32("graphics/pokemon/wartusk/front.4bpp.lz");
+    const u16 gMonPalette_Wartusk[] = INCBIN_U16("graphics/pokemon/wartusk/normal.gbapal");
+    const u32 gMonBackPic_Wartusk[] = INCBIN_U32("graphics/pokemon/wartusk/back.4bpp.lz");
+    const u16 gMonShinyPalette_Wartusk[] = INCBIN_U16("graphics/pokemon/wartusk/shiny.gbapal");
+    const u8 gMonIcon_Wartusk[] = INCBIN_U8("graphics/pokemon/wartusk/icon.4bpp");
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_Wartusk[] = INCBIN_COMP("graphics/pokemon/wartusk/overworld.4bpp");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u16 gOverworldPalette_Wartusk[] = INCBIN_U16("graphics/pokemon/wartusk/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Wartusk[] = INCBIN_U16("graphics/pokemon/wartusk/overworld_shiny.gbapal");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+
 #if !P_GBA_STYLE_SPECIES_GFX
     const u32 gMonFrontPic_Phanpy[] = INCBIN_U32("graphics/pokemon/phanpy/anim_front.4bpp.lz");
     const u16 gMonPalette_Phanpy[] = INCBIN_U16("graphics/pokemon/phanpy/normal.gbapal");
