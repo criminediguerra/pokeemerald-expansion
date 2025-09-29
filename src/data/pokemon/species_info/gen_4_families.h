@@ -1314,7 +1314,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Kotora,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 56) : MON_COORDS_SIZE(48, 48),
-        .frontPicYOffset = 9,
+        .frontPicYOffset = 4,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 15),
             ANIMCMD_FRAME(1, 60),

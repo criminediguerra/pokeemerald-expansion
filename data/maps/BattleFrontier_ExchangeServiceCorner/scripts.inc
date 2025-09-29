@@ -392,7 +392,7 @@ BattleFrontier_ExchangeServiceCorner_EventScript_KingsRock::
 	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmKingsRock, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseHoldItem
 	setvar VAR_0x8008, 64
-	setvar VAR_0x8009, ITEM_KINGS_ROCK
+	setvar VAR_0x8009, ITEM_ANCESTORS_REMAINS
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
 	end
 

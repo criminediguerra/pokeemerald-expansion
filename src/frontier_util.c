@@ -413,7 +413,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
             },
             {
                 .species = SPECIES_SUICUNE,
-                .heldItem = ITEM_KINGS_ROCK,
+                .heldItem = ITEM_ANCESTORS_REMAINS,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_HASTY,
                 .evs = {252, 0, 252, 6, 0, 0},

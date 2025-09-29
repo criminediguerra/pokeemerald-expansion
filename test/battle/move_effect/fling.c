@@ -210,7 +210,7 @@ SINGLE_BATTLE_TEST("Fling applies special effects when throwing specific Items")
     PARAMETRIZE {item = ITEM_POISON_BARB; }
     PARAMETRIZE {item = ITEM_TOXIC_ORB; }
     PARAMETRIZE {item = ITEM_RAZOR_FANG; }
-    PARAMETRIZE {item = ITEM_KINGS_ROCK; }
+    PARAMETRIZE {item = ITEM_ANCESTORS_REMAINS; }
 
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { Item(item); }
@@ -248,7 +248,7 @@ SINGLE_BATTLE_TEST("Fling applies special effects when throwing specific Items")
             }
             break;
         case ITEM_RAZOR_FANG:
-        case ITEM_KINGS_ROCK:
+        case ITEM_ANCESTORS_REMAINS:
             {
                 MESSAGE("The opposing Wobbuffet flinched and couldn't move!");
             }
@@ -266,7 +266,7 @@ SINGLE_BATTLE_TEST("Fling's secondary effects are blocked by Shield Dust")
     PARAMETRIZE {item = ITEM_POISON_BARB; }
     PARAMETRIZE {item = ITEM_TOXIC_ORB; }
     PARAMETRIZE {item = ITEM_RAZOR_FANG; }
-    PARAMETRIZE {item = ITEM_KINGS_ROCK; }
+    PARAMETRIZE {item = ITEM_ANCESTORS_REMAINS; }
 
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { Item(item); }
@@ -316,7 +316,7 @@ SINGLE_BATTLE_TEST("Fling's secondary effects are blocked by Shield Dust")
             }
             break;
         case ITEM_RAZOR_FANG:
-        case ITEM_KINGS_ROCK:
+        case ITEM_ANCESTORS_REMAINS:
             {
                 NONE_OF {
                     MESSAGE("The opposing Wobbuffet flinched and couldn't move!");
@@ -326,7 +326,7 @@ SINGLE_BATTLE_TEST("Fling's secondary effects are blocked by Shield Dust")
                     case ITEM_RAZOR_FANG:
                         MESSAGE("The Razor Fang was used up…");
                         break;
-                    case ITEM_KINGS_ROCK:
+                    case ITEM_ANCESTORS_REMAINS:
                         MESSAGE("The King's Rock was used up…");
                         break;
                 }

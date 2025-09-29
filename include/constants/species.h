@@ -1650,9 +1650,20 @@
 #define SPECIES_WOLFMAN                                 1534
 #define SPECIES_WEHRWOLF                                1535
 #define SPECIES_MADAME                                  1536
+#define SPECIES_GELANLA                                 1537
+#define SPECIES_TANGRIP                                 1538
+#define SPECIES_CUBONE_SKULLESS                         1539
+#define SPECIES_CUBONE_SKULLESS_ALOLA                   1540
+#define SPECIES_GUARDIA                                 1541
+#define SPECIES_GUARDIA_ALOLA                           1542
+#define SPECIES_OHMEGA                                  1543
+#define SPECIES_OHMEGA_ALOLA                            1544
+#define SPECIES_CUBONE_ALOLA                            1545
+#define SPECIES_BAISEN                                  1546
+#define SPECIES_BUHI                                    1547
 
 
-#define SPECIES_EGG                                     (SPECIES_MADAME + 1)
+#define SPECIES_EGG                                     (SPECIES_BUHI + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

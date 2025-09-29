@@ -956,7 +956,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                     [1] =
                     {
                         .species = SPECIES_DODRIO,
-                        .heldItem = ITEM_KINGS_ROCK,
+                        .heldItem = ITEM_ANCESTORS_REMAINS,
                         .moves = {MOVE_HAZE, MOVE_TRI_ATTACK, MOVE_TAUNT, MOVE_TORMENT},
                         .hpEV = 252,
                         .speedEV = 252,
@@ -2825,7 +2825,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                     [4] =
                                         {
                                             .species = SPECIES_RAPIDASH,
-                                            .heldItem = ITEM_KINGS_ROCK,
+                                            .heldItem = ITEM_ANCESTORS_REMAINS,
                                             .moves = {MOVE_FIRE_BLAST, MOVE_BOUNCE, MOVE_QUICK_ATTACK, MOVE_SUNNY_DAY},
                                             .speedEV = 255,
                                             .spAttackEV = 255,
@@ -3339,7 +3339,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                     [2] =
                                         {
                                             .species = SPECIES_ELEKID,
-                                            .heldItem = ITEM_KINGS_ROCK,
+                                            .heldItem = ITEM_ANCESTORS_REMAINS,
                                             .moves = {MOVE_FIRE_PUNCH, MOVE_THUNDER, MOVE_ICE_PUNCH, MOVE_THUNDER_WAVE},
                                             .hpEV = 6,
                                             .speedEV = 252,
@@ -4156,7 +4156,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                     [1] =
                                         {
                                             .species = SPECIES_ALAKAZAM,
-                                            .heldItem = ITEM_KINGS_ROCK,
+                                            .heldItem = ITEM_ANCESTORS_REMAINS,
                                             .moves = {MOVE_PSYCHIC, MOVE_ICE_PUNCH, MOVE_ATTRACT, MOVE_SWAGGER},
                                             .hpEV = 6,
                                             .speedEV = 252,
@@ -4323,7 +4323,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                     [2] =
                                         {
                                             .species = SPECIES_CROBAT,
-                                            .heldItem = ITEM_KINGS_ROCK,
+                                            .heldItem = ITEM_ANCESTORS_REMAINS,
                                             .moves = {MOVE_MEAN_LOOK, MOVE_CONFUSE_RAY, MOVE_AERIAL_ACE, MOVE_TOXIC},
                                             .hpEV = 250,
                                             .defenseEV = 130,
@@ -4455,7 +4455,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                     [2] =
                                         {
                                             .species = SPECIES_ALTARIA,
-                                            .heldItem = ITEM_KINGS_ROCK,
+                                            .heldItem = ITEM_ANCESTORS_REMAINS,
                                             .moves = {MOVE_PERISH_SONG, MOVE_PROTECT, MOVE_DRAGON_CLAW, MOVE_FIRE_BLAST},
                                             .hpEV = 252,
                                             .spAttackEV = 6,

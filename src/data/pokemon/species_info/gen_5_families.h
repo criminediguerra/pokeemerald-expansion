@@ -8312,10 +8312,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .frontPicYOffset = 17,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 10),
-            ANIMCMD_FRAME(1, 25),
+            ANIMCMD_FRAME(1, 30),
             ANIMCMD_FRAME(0, 30),
         ),
-        .frontAnimId = ANIM_BACK_AND_LUNGE,
+        .frontAnimId = ANIM_BACK_FLIP,
         .enemyMonElevation = 19,
         .backPic = gMonBackPic_Emolga,
         .backPicSize = MON_COORDS_SIZE(56, 40),

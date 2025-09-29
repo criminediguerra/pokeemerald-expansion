@@ -1977,7 +1977,7 @@ const struct TrainerMon gVerdanturfBattleTentMons[NUM_VERDANTURF_TENT_MONS] =
     [VERDANTURF_TENT_MON_GOLDEEN_2] = {
         .species = SPECIES_GOLDEEN,
         .moves = {MOVE_PECK, MOVE_SUPERSONIC, MOVE_PSYBEAM, MOVE_RAIN_DANCE},
-        .heldItem = ITEM_KINGS_ROCK,
+        .heldItem = ITEM_ANCESTORS_REMAINS,
         .ev = TRAINER_PARTY_EVS(170, 0, 0, 170, 170, 0),
         .nature = NATURE_GENTLE
     },
@@ -2005,7 +2005,7 @@ const struct TrainerMon gVerdanturfBattleTentMons[NUM_VERDANTURF_TENT_MONS] =
     [VERDANTURF_TENT_MON_MIGHTYENA] = {
         .species = SPECIES_MIGHTYENA,
         .moves = {MOVE_HOWL, MOVE_TAKE_DOWN, MOVE_ODOR_SLEUTH, MOVE_SAND_ATTACK},
-        .heldItem = ITEM_KINGS_ROCK,
+        .heldItem = ITEM_ANCESTORS_REMAINS,
         .ev = TRAINER_PARTY_EVS(170, 170, 170, 0, 0, 0),
         .nature = NATURE_QUIRKY
     },
@@ -2858,7 +2858,7 @@ const struct TrainerMon gFallarborBattleTentMons[NUM_FALLARBOR_TENT_MONS] =
     [FALLARBOR_TENT_MON_MIGHTYENA] = {
         .species = SPECIES_MIGHTYENA,
         .moves = {MOVE_SAND_ATTACK, MOVE_HOWL, MOVE_SWAGGER, MOVE_SECRET_POWER},
-        .heldItem = ITEM_KINGS_ROCK,
+        .heldItem = ITEM_ANCESTORS_REMAINS,
         .ev = TRAINER_PARTY_EVS(170, 170, 0, 170, 0, 0),
         .nature = NATURE_JOLLY
     },
@@ -2907,7 +2907,7 @@ const struct TrainerMon gFallarborBattleTentMons[NUM_FALLARBOR_TENT_MONS] =
     [FALLARBOR_TENT_MON_WAILMER] = {
         .species = SPECIES_WAILMER,
         .moves = {MOVE_WATER_PULSE, MOVE_RAIN_DANCE, MOVE_SPLASH, MOVE_CURSE},
-        .heldItem = ITEM_KINGS_ROCK,
+        .heldItem = ITEM_ANCESTORS_REMAINS,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 0, 252, 0),
         .nature = NATURE_QUIET
     },

@@ -8325,9 +8325,9 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_MentalHerb,
     },
 
-    [ITEM_KINGS_ROCK] =
+    [ITEM_ANCESTORS_REMAINS] =
     {
-        .name = _("KING'S ROCK"),
+        .name = _("ANCESTOR'S REMAINS"),
         .price = (I_PRICE >= GEN_9) ? 10000 : ((I_PRICE >= GEN_7) ? 5000 : 100),
         .holdEffect = HOLD_EFFECT_FLINCH,
         .holdEffectParam = 10,

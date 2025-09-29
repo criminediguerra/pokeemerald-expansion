@@ -1364,10 +1364,25 @@ $(POKEMONGFXDIR)/exeggcute/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/exeggutor/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
+$(POKEMONGFXDIR)/cubone/skulless/overworld.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
 $(POKEMONGFXDIR)/cubone/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/marowak/overworld.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(POKEMONGFXDIR)/baisen/overworld.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(POKEMONGFXDIR)/guardia/overworld.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(POKEMONGFXDIR)/buhi/overworld.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(POKEMONGFXDIR)/ohmega/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/hitmonlee/overworld.4bpp: %.4bpp: %.png
@@ -2909,7 +2924,10 @@ $(POKEMONGFXDIR)/rhyperior/overworldf.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/tangrowth/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/tangrowth/overworldf.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/gelanla/overworld.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(POKEMONGFXDIR)/tangrip/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/electivire/overworld.4bpp: %.4bpp: %.png
@@ -4721,7 +4739,19 @@ $(POKEMONGFXDIR)/muk/alola/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/exeggutor/alola/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 8 -mheight 8
 
+$(POKEMONGFXDIR)/cubone/alola/overworld.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(POKEMONGFXDIR)/cubone/alola/skulless/overworld.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
 $(POKEMONGFXDIR)/marowak/alola/overworld.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(POKEMONGFXDIR)/guardia/alola/overworld.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(POKEMONGFXDIR)/ohmega/alola/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/wooper/paldea/overworld.4bpp: %.4bpp: %.png
