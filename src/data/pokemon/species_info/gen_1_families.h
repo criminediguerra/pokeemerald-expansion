@@ -13627,9 +13627,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sCuboneLevelUpLearnset,
         .teachableLearnset = sCuboneTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_MAROWAK},
-                                {EVO_NONE, 0, SPECIES_MAROWAK_ALOLA},
-                                {EVO_NONE, 0, SPECIES_MAROWAK_ALOLA_TOTEM}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_MAROWAK}),
     },
 
     [SPECIES_MAROWAK] =
@@ -13866,7 +13864,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("BUHI"),
-        .cryId = CRY_HAUNTER,
+        .cryId = CRY_POLITOED,
         .natDexNum = NATIONAL_DEX_BUHI,
         .categoryName = _("SPECTRAL"),
         .height = 9,
@@ -14143,9 +14141,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .isAlolanForm = TRUE,
         .levelUpLearnset = sFuecocoLevelUpLearnset,
         .teachableLearnset = sFuecocoTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_MAROWAK},
-                                {EVO_NONE, 0, SPECIES_MAROWAK_ALOLA},
-                                {EVO_NONE, 0, SPECIES_MAROWAK_ALOLA_TOTEM}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_MAROWAK}),
     },
     [SPECIES_MAROWAK_ALOLA] =
     {
@@ -15857,6 +15853,79 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_FAMILY_TANGELA
 
 #if P_FAMILY_KANGASKHAN
+    [SPECIES_KANGASKID] =
+    {
+        .baseHP        = 50,
+        .baseAttack    = 50,
+        .baseDefense   = 95,
+        .baseSpeed     = 35,
+        .baseSpAttack  = 40,
+        .baseSpDefense = P_UPDATED_STATS >= GEN_2 ? 50 : 40,
+        .types = MON_TYPES(TYPE_NORMAL),
+        .catchRate = 190,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 64 : 87,
+        .evYield_Defense = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
+        .abilities = { ABILITY_ROCK_HEAD, ABILITY_LIGHTNING_ROD, ABILITY_BATTLE_ARMOR },
+        .bodyColor = BODY_COLOR_PURPLE,
+        .speciesName = _("KANGASKID"),
+        .cryId = CRY_KAKUNA,
+        .natDexNum = NATIONAL_DEX_KANGASKID,
+        .categoryName = _("KID"),
+        .height = 4,
+        .weight = 65,
+        .description = COMPOUND_STRING(
+            "Though small and timid, it's quick to\n"
+            "mimic its mother's movements and can\n"
+            "throw surprisingly strong punches when\n"
+            "threatened."),
+        .pokemonScale = 545,
+        .pokemonOffset = 21,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Kangaskid,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(40, 40) : MON_COORDS_SIZE(56, 40),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 9 : 13,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 6),
+            ANIMCMD_FRAME(0, 6),
+            ANIMCMD_LOOP(1),
+            ANIMCMD_FRAME(0, 12),
+            ANIMCMD_FRAME(1, 32),
+            ANIMCMD_FRAME(0, 1),
+        ),
+        .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_BOUNCE_ROTATE_TO_SIDES_SMALL : ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimDelay = P_GBA_STYLE_SPECIES_GFX ? 0 : 30,
+        .backPic = gMonBackPic_Kangaskid,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 48) : MON_COORDS_SIZE(56, 48),
+        .backPicYOffset = 11,
+        .backAnimId = BACK_ANIM_JOLT_RIGHT,
+        .palette = gMonPalette_Kangaskid,
+        .shinyPalette = gMonShinyPalette_Kangaskid,
+        .iconSprite = gMonIcon_Kangaskid,
+        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 5 : 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
+        SHADOW(1, 0, SHADOW_SIZE_S)
+        FOOTPRINT(Cubone)
+        OVERWORLD(
+            sPicTable_Kangaskid,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Kangaskid,
+            gShinyOverworldPalette_Kangaskid
+        )
+        .levelUpLearnset = sKangaskhanLevelUpLearnset,
+        .teachableLearnset = sKangaskhanTeachableLearnset,
+        .eggMoveLearnset = sKangaskhanEggMoveLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_KANGASKHAN_CHILDLESS, CONDITIONS({IF_GENDER, MON_FEMALE})},
+                                {EVO_LEVEL, 25, SPECIES_KANGASKHAN_MALE, CONDITIONS({IF_GENDER, MON_MALE})}),
+    },
     [SPECIES_KANGASKHAN] =
     {
         .baseHP        = 105,
@@ -15923,9 +15992,147 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sKangaskhanLevelUpLearnset,
         .teachableLearnset = sKangaskhanTeachableLearnset,
-        .eggMoveLearnset = sKangaskhanEggMoveLearnset,
         .formSpeciesIdTable = sKangaskhanFormSpeciesIdTable,
         .formChangeTable = sKangaskhanFormChangeTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_KANGASKHAN_CHILDLESS, CONDITIONS({IF_MIN_OVERWORLD_STEPS, 1000})},
+                                {EVO_SPLIT_FROM_EVO, SPECIES_KANGASKHAN_CHILDLESS, SPECIES_KANGASKID}),
+    },
+    [SPECIES_KANGASKHAN_CHILDLESS] =
+    {
+        .baseHP        = 105,
+        .baseAttack    = 95,
+        .baseDefense   = 80,
+        .baseSpeed     = 90,
+        .baseSpAttack  = 40,
+        .baseSpDefense = P_UPDATED_STATS >= GEN_2 ? 80 : 40,
+        .types = MON_TYPES(TYPE_NORMAL),
+        .catchRate = 45,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 172 : 175,
+        .evYield_HP = 2,
+        .genderRatio = MON_FEMALE,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
+        .abilities = { ABILITY_EARLY_BIRD, ABILITY_SCRAPPY, ABILITY_INNER_FOCUS },
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("KANGASKHAN"),
+        .cryId = CRY_KANGASKHAN,
+        .natDexNum = NATIONAL_DEX_KANGASKHAN,
+        .categoryName = _("PARENT"),
+        .height = 22,
+        .weight = 800,
+        .description = COMPOUND_STRING(
+            "If you come across a young KANGASKHAN\n"
+            "playing by itself, never try to catch it.\n"
+            "The baby's parent is sure to be in the area,\n"
+            "and it will become violently enraged."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 387,
+        .trainerOffset = 8,
+        .frontPic = gMonFrontPic_KangaskhanChildless,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 0 : 1,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 20),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = ANIM_V_STRETCH,
+        .backPic = gMonBackPic_KangaskhanChildless,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 56) : MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 5 : 6,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
+        .palette = gMonPalette_KangaskhanChildless,
+        .shinyPalette = gMonShinyPalette_KangaskhanChildless,
+        .iconSprite = gMonIcon_KangaskhanChildless,
+        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 1 : 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(0, 11, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Kangaskhan)
+        OVERWORLD(
+            sPicTable_KangaskhanChildless,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_KangaskhanChildless,
+            gShinyOverworldPalette_KangaskhanChildless
+        )
+        .levelUpLearnset = sKangaskhanLevelUpLearnset,
+        .teachableLearnset = sKangaskhanTeachableLearnset,
+        .formSpeciesIdTable = sKangaskhanFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_KANGASKHAN_CHILDLESS, CONDITIONS({IF_MIN_OVERWORLD_STEPS, 1000}, {IF_SPECIES_IN_PARTY, SPECIES_KANGASKHAN_MALE})}),
+    },
+    [SPECIES_KANGASKHAN_MALE] =
+    {
+        .baseHP        = 105,
+        .baseAttack    = 95,
+        .baseDefense   = 80,
+        .baseSpeed     = 90,
+        .baseSpAttack  = 40,
+        .baseSpDefense = P_UPDATED_STATS >= GEN_2 ? 80 : 40,
+        .types = MON_TYPES(TYPE_NORMAL),
+        .catchRate = 45,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 172 : 175,
+        .evYield_HP = 2,
+        .genderRatio = MON_MALE,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
+        .abilities = { ABILITY_EARLY_BIRD, ABILITY_SCRAPPY, ABILITY_INNER_FOCUS },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("KANGASKHAN"),
+        .cryId = CRY_KANGASKHAN,
+        .natDexNum = NATIONAL_DEX_KANGASKHAN,
+        .categoryName = _("PARENT"),
+        .height = 22,
+        .weight = 800,
+        .description = COMPOUND_STRING(
+            "If you come across a young KANGASKHAN\n"
+            "playing by itself, never try to catch it.\n"
+            "The baby's parent is sure to be in the area,\n"
+            "and it will become violently enraged."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 387,
+        .trainerOffset = 8,
+        .frontPic = gMonFrontPic_KangaskhanMale,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 0 : 1,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 20),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = ANIM_V_STRETCH,
+        .backPic = gMonBackPic_KangaskhanMale,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 56) : MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 5 : 6,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
+        .palette = gMonPalette_KangaskhanMale,
+        .shinyPalette = gMonShinyPalette_KangaskhanMale,
+        .iconSprite = gMonIcon_KangaskhanMale,
+        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 5 : 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(0, 11, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Kangaskhan)
+        OVERWORLD(
+            sPicTable_KangaskhanMale,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_KangaskhanMale,
+            gShinyOverworldPalette_KangaskhanMale
+        )
+        .levelUpLearnset = sKangaskhanLevelUpLearnset,
+        .teachableLearnset = sKangaskhanTeachableLearnset,
+        .formSpeciesIdTable = sKangaskhanFormSpeciesIdTable,
     },
 
 #if P_MEGA_EVOLUTIONS

@@ -1661,9 +1661,12 @@
 #define SPECIES_CUBONE_ALOLA                            1545
 #define SPECIES_BAISEN                                  1546
 #define SPECIES_BUHI                                    1547
+#define SPECIES_KANGASKHAN_CHILDLESS                    1548
+#define SPECIES_KANGASKHAN_MALE                         1549
+#define SPECIES_KANGASKID                               1550
 
 
-#define SPECIES_EGG                                     (SPECIES_BUHI + 1)
+#define SPECIES_EGG                                     (SPECIES_KANGASKID + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

@@ -1032,6 +1032,15 @@ static const struct SpriteFrameImage sPicTable_Gelanla[] = {
 static const struct SpriteFrameImage sPicTable_Kangaskhan[] = {
     overworld_ascending_frames(gObjectEventPic_Kangaskhan, 4, 4),
 };
+static const struct SpriteFrameImage sPicTable_KangaskhanChildless[] = {
+    overworld_ascending_frames(gObjectEventPic_KangaskhanChildless, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_KangaskhanMale[] = {
+    overworld_ascending_frames(gObjectEventPic_KangaskhanMale, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Kangaskid[] = {
+    overworld_ascending_frames(gObjectEventPic_Kangaskid, 4, 4),
+};
 #if OW_BATTLE_ONLY_FORMS
 #if P_MEGA_EVOLUTIONS
 static const struct SpriteFrameImage sPicTable_KangaskhanMega[] = {

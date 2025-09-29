@@ -4899,6 +4899,45 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
+    const u32 gMonFrontPic_KangaskhanChildless[] = INCBIN_U32("graphics/pokemon/kangaskhan/childless/anim_front.4bpp.lz");
+    const u16 gMonPalette_KangaskhanChildless[] = INCBIN_U16("graphics/pokemon/kangaskhan/childless/normal.gbapal");
+    const u32 gMonBackPic_KangaskhanChildless[] = INCBIN_U32("graphics/pokemon/kangaskhan/childless/back.4bpp.lz");
+    const u16 gMonShinyPalette_KangaskhanChildless[] = INCBIN_U16("graphics/pokemon/kangaskhan/childless/shiny.gbapal");
+    const u8 gMonIcon_KangaskhanChildless[] = INCBIN_U8("graphics/pokemon/kangaskhan/childless/icon.4bpp");
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_KangaskhanChildless[] = INCBIN_COMP("graphics/pokemon/kangaskhan/childless/overworld.4bpp");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u16 gOverworldPalette_KangaskhanChildless[] = INCBIN_U16("graphics/pokemon/kangaskhan/childless/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_KangaskhanChildless[] = INCBIN_U16("graphics/pokemon/kangaskhan/childless/overworld_shiny.gbapal");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+
+    const u32 gMonFrontPic_KangaskhanMale[] = INCBIN_U32("graphics/pokemon/kangaskhan/male/anim_front.4bpp.lz");
+    const u16 gMonPalette_KangaskhanMale[] = INCBIN_U16("graphics/pokemon/kangaskhan/male/normal.gbapal");
+    const u32 gMonBackPic_KangaskhanMale[] = INCBIN_U32("graphics/pokemon/kangaskhan/male/back.4bpp.lz");
+    const u16 gMonShinyPalette_KangaskhanMale[] = INCBIN_U16("graphics/pokemon/kangaskhan/male/shiny.gbapal");
+    const u8 gMonIcon_KangaskhanMale[] = INCBIN_U8("graphics/pokemon/kangaskhan/male/icon.4bpp");
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_KangaskhanMale[] = INCBIN_COMP("graphics/pokemon/kangaskhan/male/overworld.4bpp");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u16 gOverworldPalette_KangaskhanMale[] = INCBIN_U16("graphics/pokemon/kangaskhan/male/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_KangaskhanMale[] = INCBIN_U16("graphics/pokemon/kangaskhan/male/overworld_shiny.gbapal");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+
+    const u32 gMonFrontPic_Kangaskid[] = INCBIN_U32("graphics/pokemon/kangaskid/anim_front.4bpp.lz");
+    const u16 gMonPalette_Kangaskid[] = INCBIN_U16("graphics/pokemon/kangaskid/normal.gbapal");
+    const u32 gMonBackPic_Kangaskid[] = INCBIN_U32("graphics/pokemon/kangaskid/back.4bpp.lz");
+    const u16 gMonShinyPalette_Kangaskid[] = INCBIN_U16("graphics/pokemon/kangaskid/shiny.gbapal");
+    const u8 gMonIcon_Kangaskid[] = INCBIN_U8("graphics/pokemon/kangaskid/icon.4bpp");
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_Kangaskid[] = INCBIN_COMP("graphics/pokemon/kangaskid/overworld.4bpp");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u16 gOverworldPalette_Kangaskid[] = INCBIN_U16("graphics/pokemon/kangaskid/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Kangaskid[] = INCBIN_U16("graphics/pokemon/kangaskid/overworld_shiny.gbapal");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+
 #if P_MEGA_EVOLUTIONS
     const u32 gMonFrontPic_KangaskhanMega[] = INCBIN_U32("graphics/pokemon/kangaskhan/mega/front.4bpp.lz");
     const u16 gMonPalette_KangaskhanMega[] = INCBIN_U16("graphics/pokemon/kangaskhan/mega/normal.gbapal");
