@@ -5787,17 +5787,17 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Rotom"),
+        .speciesName = _("ROTOM"),
         .cryId = CRY_ROTOM,
         .natDexNum = NATIONAL_DEX_ROTOM,
-        .categoryName = _("Plasma"),
+        .categoryName = _("PLASMA"),
         .height = 3,
         .weight = 3,
         .description = COMPOUND_STRING(
             "Its body is composed of plasma and loves\n"
             "to surprise others. One boy's invention led\n"
             "to the development of many machines that\n"
-            "can use of Rotom's unique capabilities."),
+            "can use of ROTOM's unique capabilities."),
         .pokemonScale = 530,
         .pokemonOffset = 13,
         .trainerScale = 256,
@@ -5868,15 +5868,15 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Rotom"),
+        .speciesName = _("ROTOM"),
         .cryId = CRY_ROTOM,
         .natDexNum = NATIONAL_DEX_ROTOM,
-        .categoryName = _("Plasma"),
+        .categoryName = _("PLASMA"),
         .height = 3,
         .weight = 3,
         .description = COMPOUND_STRING(
             "If the convection microwave oven is\n"
-            "not working properly, then the Rotom\n"
+            "not working properly, then the ROTOM\n"
             "inhabiting it will become lethargic. It\n"
             "makes mischief by turning up the heat."),
         .pokemonScale = 530,
@@ -5940,16 +5940,16 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_RED,
         .noFlip = TRUE,
-        .speciesName = _("Rotom"),
+        .speciesName = _("ROTOM"),
         .cryId = CRY_ROTOM,
         .natDexNum = NATIONAL_DEX_ROTOM,
-        .categoryName = _("Plasma"),
+        .categoryName = _("PLASMA"),
         .height = 3,
         .weight = 3,
         .description = COMPOUND_STRING(
             "It enjoys coming up with water-based\n"
             "pranks. The model of washing machine that\n"
-            "Rotom can inspirit has been discontinued,\n"
+            "ROTOM can inspirit has been discontinued,\n"
             "so they are now traded at high prices."),
         .pokemonScale = 530,
         .pokemonOffset = 13,
@@ -6011,14 +6011,14 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Rotom"),
+        .speciesName = _("ROTOM"),
         .cryId = CRY_ROTOM,
         .natDexNum = NATIONAL_DEX_ROTOM,
-        .categoryName = _("Plasma"),
+        .categoryName = _("PLASMA"),
         .height = 3,
         .weight = 3,
         .description = COMPOUND_STRING(
-            "In this form, Rotom likes to play freezing\n"
+            "In this form, ROTOM likes to play freezing\n"
             "cold pranks. You may find it's turned the\n"
             "bath you just filled to solid ice!\n"
             "It battles by spewing cold air."),
@@ -6081,14 +6081,14 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Rotom"),
+        .speciesName = _("ROTOM"),
         .cryId = CRY_ROTOM,
         .natDexNum = NATIONAL_DEX_ROTOM,
-        .categoryName = _("Plasma"),
+        .categoryName = _("PLASMA"),
         .height = 3,
         .weight = 3,
         .description = COMPOUND_STRING(
-            "The first appliance developed that Rotom\n"
+            "The first appliance developed that ROTOM\n"
             "coud inspirit was the electric fan. It uses\n"
             "its power over wind in its pranks, happily\n"
             "blowing any important documents it finds."),
@@ -6176,15 +6176,15 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Rotom"),
+        .speciesName = _("ROTOM"),
         .cryId = CRY_ROTOM,
         .natDexNum = NATIONAL_DEX_ROTOM,
-        .categoryName = _("Plasma"),
+        .categoryName = _("PLASMA"),
         .height = 3,
         .weight = 3,
         .description = COMPOUND_STRING(
             "The lawn mower is an appliance that led to\n"
-            "the development of the Rotom Dex. It will\n"
+            "the development of the ROTOM Dex. It will\n"
             "mow down grass and flowers, then swagger\n"
             "around with pride at its accomplishments."),
         .pokemonScale = 530,

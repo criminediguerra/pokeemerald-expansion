@@ -16,7 +16,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_3",
-      "x": 9,
+      "x": 7,
       "y": 4,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
@@ -29,7 +29,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
-      "x": 12,
+      "x": 10,
       "y": 4,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
@@ -43,14 +43,14 @@
   ],
   "warp_events": [
     {
-      "x": 6,
+      "x": 4,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_RUSTBORO_CITY",
       "dest_warp_id": "1"
     },
     {
-      "x": 7,
+      "x": 5,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_RUSTBORO_CITY",
