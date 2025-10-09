@@ -88,6 +88,36 @@ Route118_EventScript_StevenTrigger2::
 	goto Route118_EventScript_StevenTrigger
 	end
 
+Route118_EventScript_StevenTrigger3::
+	lockall
+	setvar VAR_0x8008, 3
+	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
+	waitmovement 0
+	applymovement LOCALID_ROUTE118_STEVEN2, Route118_Movement_StevenApproachLedge3
+	waitmovement 0
+	goto Route118_EventScript_StevenTriggerRinshin
+	end
+
+Route118_EventScript_StevenTrigger4::
+	lockall
+	setvar VAR_0x8008, 4
+	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
+	waitmovement 0
+	applymovement LOCALID_ROUTE118_STEVEN2, Route118_Movement_StevenApproachLedge4
+	waitmovement 0
+	goto Route118_EventScript_StevenTriggerRinshin
+	end
+
+Route118_EventScript_StevenTrigger5::
+	lockall
+	setvar VAR_0x8008, 5
+	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
+	waitmovement 0
+	applymovement LOCALID_ROUTE118_STEVEN2, Route118_Movement_StevenApproachLedge5
+	waitmovement 0
+	goto Route118_EventScript_StevenTriggerRinshin
+	end
+
 Route118_EventScript_StevenTrigger::
 	playse SE_LEDGE
 	applymovement LOCALID_ROUTE118_STEVEN, Route118_Movement_StevenJumpLedge
@@ -100,6 +130,19 @@ Route118_EventScript_StevenTrigger::
 	call_if_eq VAR_0x8008, 2, Route118_EventScript_StevenExit2
 	setvar VAR_ROUTE118_STATE, 1
 	removeobject LOCALID_ROUTE118_STEVEN
+	removeobject LOCALID_ROUTE118_STEVEN2
+	releaseall
+	end
+
+Route118_EventScript_StevenTriggerRinshin::
+	msgbox Route118_Text_StevenQuestions, MSGBOX_DEFAULT
+	closemessage
+	call_if_eq VAR_0x8008, 3, Route118_EventScript_StevenExit3
+	call_if_eq VAR_0x8008, 4, Route118_EventScript_StevenExit4
+	call_if_eq VAR_0x8008, 5, Route118_EventScript_StevenExit5
+	setvar VAR_ROUTE118_STATE, 1
+	removeobject LOCALID_ROUTE118_STEVEN
+	removeobject LOCALID_ROUTE118_STEVEN2
 	releaseall
 	end
 
@@ -121,6 +164,21 @@ Route118_EventScript_StevenExit2::
 	waitmovement 0
 	return
 
+Route118_EventScript_StevenExit3::
+	applymovement LOCALID_ROUTE118_STEVEN2, Route118_Movement_StevenExit3
+	waitmovement 0
+	return
+
+Route118_EventScript_StevenExit4::
+	applymovement LOCALID_ROUTE118_STEVEN2, Route118_Movement_StevenExit4
+	waitmovement 0
+	return
+
+Route118_EventScript_StevenExit5::
+	applymovement LOCALID_ROUTE118_STEVEN2, Route118_Movement_StevenExit5
+	waitmovement 0
+	return
+
 Route118_Movement_PlayerWatchStevenExit:
 	delay_16
 	walk_in_place_faster_right
@@ -132,6 +190,29 @@ Route118_Movement_StevenApproachLedge0:
 
 Route118_Movement_StevenApproachLedge2:
 	walk_right
+	step_end
+
+Route118_Movement_StevenApproachLedge3:
+	walk_left
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	step_end
+
+Route118_Movement_StevenApproachLedge4:
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	step_end
+
+Route118_Movement_StevenApproachLedge5:
+	walk_right
+	walk_down
+	walk_down
+	walk_down
+	walk_down
 	step_end
 
 Route118_Movement_StevenJumpLedge:
@@ -174,6 +255,32 @@ Route118_Movement_StevenExit2:
 	walk_right
 	walk_right
 	walk_right
+	step_end
+
+Route118_Movement_StevenExit3:
+	walk_right
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	step_end
+
+Route118_Movement_StevenExit4:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	step_end
+
+Route118_Movement_StevenExit5:
+	walk_left
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
 	step_end
 
 Route118_EventScript_Rose::

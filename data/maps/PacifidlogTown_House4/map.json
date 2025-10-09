@@ -1,7 +1,7 @@
 {
   "id": "MAP_PACIFIDLOG_TOWN_HOUSE4",
   "name": "PacifidlogTown_House4",
-  "layout": "LAYOUT_PACIFIDLOG_TOWN_HOUSE2",
+  "layout": "LAYOUT_PACIFIDLOG_TOWN_HOUSE1",
   "music": "MUS_LILYCOVE",
   "region_map_section": "MAPSEC_PACIFIDLOG_TOWN",
   "requires_flash": false,
@@ -12,14 +12,14 @@
   "allow_running": true,
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": null,
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
       "x": 3,
-      "y": 4,
+      "y": 16,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -29,7 +29,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LITTLE_GIRL",
-      "x": 7,
+      "x": 3,
       "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -43,9 +43,9 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY_1",
       "x": 7,
-      "y": 4,
+      "y": 14,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -56,24 +56,20 @@
   ],
   "warp_events": [
     {
-      "x": 4,
-      "y": 8,
+      "x": 5,
+      "y": 19,
       "elevation": 0,
       "dest_map": "MAP_PACIFIDLOG_TOWN",
       "dest_warp_id": "4"
     },
     {
-      "x": 5,
-      "y": 8,
+      "x": 6,
+      "y": 19,
       "elevation": 0,
       "dest_map": "MAP_PACIFIDLOG_TOWN",
       "dest_warp_id": "4"
     }
   ],
-  "coord_events": [
-
-  ],
-  "bg_events": [
-
-  ]
+  "coord_events": [],
+  "bg_events": []
 }

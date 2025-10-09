@@ -133,6 +133,7 @@ Testroom_EventScript_Fly::
 	setflag FLAG_VISITED_KUGA
 	setflag FLAG_VISITED_ASHLEAF
 	setflag FLAG_VISITED_LAROUSSE
+	setflag FLAG_VISITED_RINSHIN_CITY
 end
 
 Testroom_EventScript_FlyHoenn::

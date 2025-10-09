@@ -27,6 +27,11 @@
       "map": "MAP_ROUTE123",
       "offset": 0,
       "direction": "right"
+    },
+    {
+      "map": "MAP_ROUTE97",
+      "offset": 40,
+      "direction": "down"
     }
   ],
   "object_events": [
@@ -74,7 +79,7 @@
       "x": 64,
       "y": 10,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
@@ -309,6 +314,20 @@
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Route118_EventScript_Deandre",
       "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_ROUTE118_STEVEN2",
+      "graphics_id": "OBJ_EVENT_GFX_STEVEN",
+      "x": 68,
+      "y": 13,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_ROUTE_118_STEVEN"
     }
   ],
   "warp_events": [
@@ -354,6 +373,33 @@
       "var": "VAR_ROUTE118_STATE",
       "var_value": "0",
       "script": "Route118_EventScript_StevenTrigger2"
+    },
+    {
+      "type": "trigger",
+      "x": 67,
+      "y": 18,
+      "elevation": 3,
+      "var": "VAR_ROUTE118_STATE",
+      "var_value": "0",
+      "script": "Route118_EventScript_StevenTrigger3"
+    },
+    {
+      "type": "trigger",
+      "x": 68,
+      "y": 18,
+      "elevation": 3,
+      "var": "VAR_ROUTE118_STATE",
+      "var_value": "0",
+      "script": "Route118_EventScript_StevenTrigger4"
+    },
+    {
+      "type": "trigger",
+      "x": 69,
+      "y": 18,
+      "elevation": 3,
+      "var": "VAR_ROUTE118_STATE",
+      "var_value": "0",
+      "script": "Route118_EventScript_StevenTrigger5"
     }
   ],
   "bg_events": [

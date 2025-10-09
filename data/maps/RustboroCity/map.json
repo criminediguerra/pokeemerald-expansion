@@ -215,7 +215,7 @@
     },
     {
       "local_id": "LOCALID_RUSTBORO_RIVAL",
-      "graphics_id": "OBJ_EVENT_GFX_VAR_0",
+      "graphics_id": "OBJ_EVENT_GFX_LINK_RS_MAY",
       "x": 16,
       "y": 50,
       "elevation": 3,
@@ -472,6 +472,32 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "LIGHT_TYPE_BALL",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_BARRIER",
+      "x": 7,
+      "y": 24,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_CutBarrier",
+      "flag": "FLAG_TEMP_10"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
+      "x": 18,
+      "y": 38,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "LIGHT_TYPE_PKMN_CENTER_SIGN",
       "script": "NULL",
       "flag": "0"
     }

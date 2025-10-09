@@ -717,8 +717,8 @@
 #define FLAG_VISITED_KUGA                0x29E // Unused Flag
 #define FLAG_VISITED_LAROUSSE            0x29F // Unused Flag
 #define FLAG_VISITED_ASHLEAF             0x2A0 // Unused Flag
-#define FLAG_UNUSED_0x2A1                0x2A1 // Unused Flag
-#define FLAG_UNUSED_0x2A2                0x2A2 // Unused Flag
+#define FLAG_OUTFIT_RUBY                 0x2A1 // Unused Flag
+#define FLAG_VISITED_RINSHIN_CITY        0x2A2 // Unused Flag
 #define FLAG_UNUSED_0x2A3                0x2A3 // Unused Flag
 #define FLAG_UNUSED_0x2A4                0x2A4 // Unused Flag
 #define FLAG_UNUSED_0x2A5                0x2A5 // Unused Flag

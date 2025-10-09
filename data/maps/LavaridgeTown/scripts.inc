@@ -47,14 +47,12 @@ LavaridgeTown_EventScript_RivalGiveGoGoggles::
 	call_if_eq VAR_0x8008, 9, LavaridgeTown_EventScript_RivalNoticePlayer
 	call_if_ne VAR_0x8008, 9, LavaridgeTown_EventScript_RivalExitHerbShop
 	delay 20
-	checkplayergender
-	call_if_eq VAR_RESULT, MALE, LavaridgeTown_EventScript_PlayMayMusic
-	call_if_eq VAR_RESULT, FEMALE, LavaridgeTown_EventScript_PlayBrendanMusic
+	playbgm MUS_ENCOUNTER_MAY, TRUE
 	call_if_eq VAR_0x8008, 9, LavaridgeTown_EventScript_RivalApproachPlayer1
 	call_if_ne VAR_0x8008, 9, LavaridgeTown_EventScript_RivalApproachPlayer2
 	checkplayergender
 	goto_if_eq VAR_RESULT, MALE, LavaridgeTown_EventScript_MayGiveGoGoggles
-	goto_if_eq VAR_RESULT, FEMALE, LavaridgeTown_EventScript_BrendanGiveGoGoggles
+	goto_if_eq VAR_RESULT, FEMALE, LavaridgeTown_EventScript_MayGiveGoGoggles
 	end
 
 LavaridgeTown_EventScript_MayGiveGoGoggles::
@@ -62,14 +60,6 @@ LavaridgeTown_EventScript_MayGiveGoGoggles::
 	giveitem ITEM_GO_GOGGLES
 	setflag FLAG_RECEIVED_GO_GOGGLES
 	msgbox LavaridgeTown_Text_MayExplainGoGogglesChallengeDad, MSGBOX_DEFAULT
-	goto LavaridgeTown_EventScript_RivalExit
-	end
-
-LavaridgeTown_EventScript_BrendanGiveGoGoggles::
-	msgbox LavaridgeTown_Text_BrendanNiceBadgesTakeThis, MSGBOX_DEFAULT
-	giveitem ITEM_GO_GOGGLES
-	setflag FLAG_RECEIVED_GO_GOGGLES
-	msgbox LavaridgeTown_Text_BrendanExplainGoGogglesChallengeDad, MSGBOX_DEFAULT
 	goto LavaridgeTown_EventScript_RivalExit
 	end
 
@@ -87,14 +77,6 @@ LavaridgeTown_EventScript_RivalExit::
 	fadedefaultbgm
 	releaseall
 	end
-
-LavaridgeTown_EventScript_PlayMayMusic::
-	playbgm MUS_ENCOUNTER_MAY, TRUE
-	return
-
-LavaridgeTown_EventScript_PlayBrendanMusic::
-	playbgm MUS_ENCOUNTER_BRENDAN, TRUE
-	return
 
 LavaridgeTown_EventScript_RivalNoticePlayer::
 	applymovement LOCALID_LAVARIDGE_RIVAL, Common_Movement_WalkInPlaceFasterUp
@@ -294,28 +276,6 @@ LavaridgeTown_Text_MayExplainGoGogglesChallengeDad:
 	.string "{PLAYER}{KUN}, I think I should challenge\n"
 	.string "your dad in PETALBURG GYM.\p"
 	.string "See you again!$"
-
-LavaridgeTown_Text_BrendanNiceBadgesTakeThis:
-	.string "BRENDAN: {PLAYER}, hey, it's been a while.\n"
-	.string "How's it going?\p"
-	.string "Hmm…\n"
-	.string "That's a decent collection of BADGES.\p"
-	.string "All right, then.\n"
-	.string "You may as well have this.$"
-
-LavaridgeTown_Text_BrendanExplainGoGogglesChallengeDad:
-	.string "BRENDAN: Keep those with you if you're\n"
-	.string "planning on going into that desert near\l"
-	.string "ROUTE 111.\p"
-	.string "There should be some POKéMON that\n"
-	.string "are exclusively desert-dwellers.\l"
-	.string "You might look around for those.\p"
-	.string "As for me…\n"
-	.string "I'm considering challenging NORMAN,\l"
-	.string "the GYM LEADER of PETALBURG.\p"
-	.string "Unlike you, {PLAYER}, your dad looks like\n"
-	.string "he really is tough.\p"
-	.string "See you around!$"
 
 LavaridgeTown_Text_HaveEggWillYouTakeIt:
 	.string "I have here an EGG.\p"

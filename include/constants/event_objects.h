@@ -356,11 +356,27 @@
 #define OBJ_EVENT_GFX_LIGHT_SPRITE               349
 #define OBJ_EVENT_GFX_APRICORN_TREE              350
 #define OBJ_EVENT_GFX_APRICORN_SAPLING           351
+#define OBJ_EVENT_GFX_LINK_RS_BRENDAN_MACH_BIKE            352
+#define OBJ_EVENT_GFX_LINK_RS_BRENDAN_ACRO_BIKE            353
+#define OBJ_EVENT_GFX_LINK_RS_BRENDAN_SURFING            354
+#define OBJ_EVENT_GFX_LINK_RS_BRENDAN_UNDERWATER            355
+#define OBJ_EVENT_GFX_LINK_RS_BRENDAN_FIELD_MOVE            356
+#define OBJ_EVENT_GFX_LINK_RS_BRENDAN_FISHING            357
+#define OBJ_EVENT_GFX_LINK_RS_BRENDAN_WATERING            358
+#define OBJ_EVENT_GFX_LINK_RS_BRENDAN_DECORATING            359
+#define OBJ_EVENT_GFX_LINK_RS_MAY_MACH_BIKE            360
+#define OBJ_EVENT_GFX_LINK_RS_MAY_ACRO_BIKE            361
+#define OBJ_EVENT_GFX_LINK_RS_MAY_SURFING            362
+#define OBJ_EVENT_GFX_LINK_RS_MAY_UNDERWATER            363
+#define OBJ_EVENT_GFX_LINK_RS_MAY_FIELD_MOVE            364
+#define OBJ_EVENT_GFX_LINK_RS_MAY_FISHING            365
+#define OBJ_EVENT_GFX_LINK_RS_MAY_WATERING            366
+#define OBJ_EVENT_GFX_LINK_RS_MAY_DECORATING            367
 
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        352
+#define NUM_OBJ_EVENT_GFX                        368
 
 
 // These are dynamic object gfx ids.

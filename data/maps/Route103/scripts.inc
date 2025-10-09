@@ -21,7 +21,7 @@ Route103_EventScript_Rival::
 	lockall
 	checkplayergender
 	goto_if_eq VAR_RESULT, MALE, Route103_EventScript_RivalMay
-	goto_if_eq VAR_RESULT, FEMALE, Route103_EventScript_RivalBrendan
+	goto_if_eq VAR_RESULT, FEMALE, Route103_EventScript_RivalMay
 	end
 
 Route103_EventScript_RivalMay::
@@ -41,23 +41,6 @@ Route103_EventScript_RivalMay::
 	case 2, Route103_EventScript_StartMayBattleMudkip
 	end
 
-Route103_EventScript_RivalBrendan::
-	msgbox Route103_Text_BrendanRoute103Pokemon, MSGBOX_DEFAULT
-	closemessage
-	playbgm MUS_ENCOUNTER_BRENDAN, TRUE
-	applymovement LOCALID_ROUTE103_RIVAL, Common_Movement_FacePlayer
-	waitmovement 0
-	applymovement LOCALID_ROUTE103_RIVAL, Common_Movement_ExclamationMark
-	waitmovement 0
-	applymovement LOCALID_ROUTE103_RIVAL, Common_Movement_Delay48
-	waitmovement 0
-	msgbox Route103_Text_BrendanLetsBattle, MSGBOX_DEFAULT
-	switch VAR_STARTER_MON
-	case 0, Route103_EventScript_StartBrendanBattleTreecko
-	case 1, Route103_EventScript_StartBrendanBattleTorchic
-	case 2, Route103_EventScript_StartBrendanBattleMudkip
-	end
-
 Route103_EventScript_StartMayBattleTreecko::
 	trainerbattle_no_intro TRAINER_MAY_ROUTE_103_TREECKO, Route103_Text_MayDefeated
 	goto Route103_EventScript_AfterMayBattle
@@ -73,28 +56,8 @@ Route103_EventScript_StartMayBattleMudkip::
 	goto Route103_EventScript_AfterMayBattle
 	end
 
-Route103_EventScript_StartBrendanBattleTreecko::
-	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_103_TREECKO, Route103_Text_BrendanDefeated
-	goto Route103_EventScript_AfterBrendanBattle
-	end
-
-Route103_EventScript_StartBrendanBattleTorchic::
-	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_103_TORCHIC, Route103_Text_BrendanDefeated
-	goto Route103_EventScript_AfterBrendanBattle
-	end
-
-Route103_EventScript_StartBrendanBattleMudkip::
-	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_103_MUDKIP, Route103_Text_BrendanDefeated
-	goto Route103_EventScript_AfterBrendanBattle
-	end
-
 Route103_EventScript_AfterMayBattle::
 	msgbox Route103_Text_MayTimeToHeadBack, MSGBOX_DEFAULT
-	goto Route103_EventScript_RivalExit
-	end
-
-Route103_EventScript_AfterBrendanBattle::
-	msgbox Route103_Text_BrendanTimeToHeadBack, MSGBOX_DEFAULT
 	goto Route103_EventScript_RivalExit
 	end
 
@@ -312,31 +275,6 @@ Route103_Text_MayTimeToHeadBack:
 	.string "kind of POKéMON easily.\p"
 	.string "Well, it's time to head back to\n"
 	.string "the LAB.$"
-
-Route103_Text_BrendanRoute103Pokemon:
-	.string "BRENDAN: Okay, so it's this one and\n"
-	.string "that one that live on ROUTE 103…$"
-
-Route103_Text_BrendanLetsBattle:
-	.string "Hey, it's {PLAYER}!\p"
-	.string "…Oh, yeah, Dad gave you a POKéMON.\p"
-	.string "Since we're here, how about a little\n"
-	.string "battle?\p"
-	.string "I'll teach you what being a TRAINER's\n"
-	.string "about!$"
-
-Route103_Text_BrendanDefeated:
-	.string "Huh, {PLAYER}, you're not too shabby.$"
-
-Route103_Text_BrendanTimeToHeadBack:
-	.string "BRENDAN: I think I get it.\n"
-	.string "I think I know why my dad has his eye\l"
-	.string "out for you now.\p"
-	.string "Look, your POKéMON already likes you,\n"
-	.string "even though you just got it.\p"
-	.string "{PLAYER}, I get the feeling that you\n"
-	.string "could befriend any POKéMON with ease.\p"
-	.string "We should head back to the LAB.$"
 
 Route103_Text_ShouldHaveBroughtPotion:
 	.string "My POKéMON is staggeringly tired…\n"

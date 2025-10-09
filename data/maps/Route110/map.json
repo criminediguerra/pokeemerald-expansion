@@ -27,6 +27,16 @@
       "map": "MAP_ROUTE103",
       "offset": 60,
       "direction": "left"
+    },
+    {
+      "map": "MAP_ROUTE110A",
+      "offset": 37,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_ROUTE110B",
+      "offset": 7,
+      "direction": "right"
     }
   ],
   "object_events": [
@@ -384,7 +394,7 @@
     },
     {
       "local_id": "LOCALID_ROUTE110_RIVAL",
-      "graphics_id": "OBJ_EVENT_GFX_VAR_0",
+      "graphics_id": "OBJ_EVENT_GFX_LINK_RS_MAY",
       "x": 34,
       "y": 54,
       "elevation": 3,
@@ -398,7 +408,7 @@
     },
     {
       "local_id": "LOCALID_ROUTE110_RIVAL_ON_BIKE",
-      "graphics_id": "OBJ_EVENT_GFX_VAR_3",
+      "graphics_id": "OBJ_EVENT_GFX_LINK_RS_MAY_MACH_BIKE",
       "x": 34,
       "y": 54,
       "elevation": 3,

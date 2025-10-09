@@ -163,12 +163,6 @@
       "y": 11
     },
     {
-      "id": "HEAL_LOCATION_CERULEAN_GSC",
-      "map": "MAP_CERULEAN_GSC",
-      "x": 19,
-      "y": 23
-    },
-    {
       "id": "HEAL_LOCATION_CHERRYGROVE_CITY",
       "map": "MAP_CHERRYGROVE_CITY",
       "x": 52,
@@ -413,6 +407,18 @@
       "map": "MAP_SINNOH_LEAGUE",
       "x": 16,
       "y": 14
+    },
+    {
+      "id": "HEAL_LOCATION_SOOTOPOLIS_CITY_2",
+      "map": "MAP_SOOTOPOLIS_CITY",
+      "x": 30,
+      "y": 28
+    },
+    {
+      "id": "HEAL_LOCATION_RINSHIN_CITY",
+      "map": "MAP_RINSHIN_CITY",
+      "x": 25,
+      "y": 53
     }
   ]
 }

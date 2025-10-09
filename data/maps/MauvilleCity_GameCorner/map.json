@@ -173,14 +173,14 @@
   ],
   "warp_events": [
     {
-      "x": 11,
+      "x": 12,
       "y": 12,
       "elevation": 3,
       "dest_map": "MAP_MAUVILLE_CITY",
       "dest_warp_id": "5"
     },
     {
-      "x": 12,
+      "x": 11,
       "y": 12,
       "elevation": 3,
       "dest_map": "MAP_MAUVILLE_CITY",

@@ -2230,8 +2230,6 @@ EventScript_VsSeekerChargingDone::
 
 	.include "data/maps/SilverStrait/scripts.inc"
 
-	.include "data/maps/CeruleanGSC/scripts.inc"
-
 	.include "data/maps/Route51/scripts.inc"
 
 	.include "data/maps/KasadoCity/scripts.inc"
@@ -2433,3 +2431,11 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/CyanwoodAquariumF14/scripts.inc"
 
 	.include "data/maps/CyanwoodAquariumF15/scripts.inc"
+
+	.include "data/maps/RinshinCity/scripts.inc"
+
+	.include "data/maps/Route110a/scripts.inc"
+
+	.include "data/maps/Route110b/scripts.inc"
+
+	.include "data/maps/Route97/scripts.inc"

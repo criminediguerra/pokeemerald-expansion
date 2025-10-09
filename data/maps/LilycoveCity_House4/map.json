@@ -1,7 +1,7 @@
 {
   "id": "MAP_LILYCOVE_CITY_HOUSE4",
   "name": "LilycoveCity_House4",
-  "layout": "LAYOUT_HOUSE1",
+  "layout": "LAYOUT_HOUSE4",
   "music": "MUS_LILYCOVE",
   "region_map_section": "MAPSEC_LILYCOVE_CITY",
   "requires_flash": false,
@@ -12,14 +12,14 @@
   "allow_running": true,
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": null,
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_4",
-      "x": 1,
-      "y": 4,
+      "x": 5,
+      "y": 13,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -29,10 +29,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_1",
-      "x": 7,
-      "y": 4,
+      "x": 3,
+      "y": 16,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -43,24 +43,20 @@
   ],
   "warp_events": [
     {
-      "x": 3,
-      "y": 8,
+      "x": 5,
+      "y": 19,
       "elevation": 0,
       "dest_map": "MAP_LILYCOVE_CITY",
       "dest_warp_id": "11"
     },
     {
       "x": 4,
-      "y": 8,
+      "y": 19,
       "elevation": 0,
       "dest_map": "MAP_LILYCOVE_CITY",
       "dest_warp_id": "11"
     }
   ],
-  "coord_events": [
-
-  ],
-  "bg_events": [
-
-  ]
+  "coord_events": [],
+  "bg_events": []
 }

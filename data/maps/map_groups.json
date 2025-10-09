@@ -200,12 +200,14 @@
     "FallarborTown",
     "VerdanturfTown",
     "PacifidlogTown",
+    "RinshinCity",
     "LarousseCity",
     "CrossgateTown",
     "AshleafTown",
     "BattleFrontier_OutsideWest",
     "BattleFrontier_OutsideEast",
     "SouthernIsland_Exterior",
+    "Route97",
     "Route98",
     "Route99",
     "Route100",
@@ -219,6 +221,8 @@
     "Route108",
     "Route109",
     "Route110",
+    "Route110a",
+    "Route110b",
     "Route111",
     "Route112",
     "Route113",
@@ -336,7 +340,6 @@
     "Route230"
   ],
   "gMapGroup_TownsAndRoutesSuperGSC": [
-    "CeruleanGSC"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

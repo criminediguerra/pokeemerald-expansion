@@ -14,6 +14,12 @@ NewMauville_Entrance_EventScript_CloseDoor::
 	setmetatile 3, 1, METATILE_Facility_NewMauvilleDoor_Closed_Tile3, TRUE
 	setmetatile 4, 1, METATILE_Facility_NewMauvilleDoor_Closed_Tile4, TRUE
 	setmetatile 5, 1, METATILE_Facility_NewMauvilleDoor_Closed_Tile5, TRUE
+	setmetatile 17, 0, METATILE_Facility_NewMauvilleDoor_Closed_Tile0, TRUE
+	setmetatile 18, 0, METATILE_Facility_NewMauvilleDoor_Closed_Tile1, TRUE
+	setmetatile 19, 0, METATILE_Facility_NewMauvilleDoor_Closed_Tile2, TRUE
+	setmetatile 17, 1, METATILE_Facility_NewMauvilleDoor_Closed_Tile3, TRUE
+	setmetatile 18, 1, METATILE_Facility_NewMauvilleDoor_Closed_Tile4, TRUE
+	setmetatile 19, 1, METATILE_Facility_NewMauvilleDoor_Closed_Tile5, TRUE
 	return
 
 NewMauville_Entrance_OnTransition:
@@ -36,6 +42,12 @@ NewMauville_Entrance_EventScript_Door::
 	setmetatile 3, 1, METATILE_Facility_NewMauvilleDoor_Open_Tile3, TRUE
 	setmetatile 4, 1, METATILE_Facility_NewMauvilleDoor_Open_Tile4, FALSE
 	setmetatile 5, 1, METATILE_Facility_NewMauvilleDoor_Open_Tile5, TRUE
+	setmetatile 17, 0, METATILE_Facility_NewMauvilleDoor_Open_Tile0, FALSE
+	setmetatile 18, 0, METATILE_Facility_NewMauvilleDoor_Open_Tile1, FALSE
+	setmetatile 19, 0, METATILE_Facility_NewMauvilleDoor_Open_Tile2, FALSE
+	setmetatile 17, 1, METATILE_Facility_NewMauvilleDoor_Open_Tile3, TRUE
+	setmetatile 18, 1, METATILE_Facility_NewMauvilleDoor_Open_Tile4, FALSE
+	setmetatile 19, 1, METATILE_Facility_NewMauvilleDoor_Open_Tile5, TRUE
 	special DrawWholeMapView
 	playse SE_BANG
 	setvar VAR_NEW_MAUVILLE_STATE, 1

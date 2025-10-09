@@ -81,6 +81,14 @@
       "height": 1
     },
     {
+      "id": "MAPSEC_RINSHIN_CITY",
+      "name": "RINSHIN CITY",
+      "x": 13,
+      "y": 28,
+      "width": 1,
+      "height": 2
+    },
+    {
       "id": "MAPSEC_RUSTBORO_CITY",
       "name": "RUSTBORO CITY",
       "x": 3,
@@ -205,7 +213,7 @@
       "name": "ROUTE 110",
       "x": 11,
       "y": 28,
-      "width": 1,
+      "width": 2,
       "height": 3
     },
     {
@@ -1628,6 +1636,14 @@
       "name": "NAVEL ROCK",
       "x": 47,
       "y": 29,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_ROUTE_97",
+      "name": "ROUTE 97",
+      "x": 14,
+      "y": 28,
       "width": 1,
       "height": 1
     },

@@ -905,27 +905,6 @@ const struct Tileset gTileset_Silver_Rock_Island =
     .metatileAttributes = gMetatileAttributes_Silver_Rock_Island,
     .callback = InitTilesetAnim_General,
 };
-const struct Tileset gTileset_GSC =
-{
-    .isCompressed = TRUE,
-    .isSecondary = FALSE,
-    .tiles = gTilesetTiles_GSC,
-    .palettes = gTilesetPalettes_GSC,
-    .metatiles = gMetatiles_GSC,
-    .metatileAttributes = gMetatileAttributes_GSC,
-    .callback = NULL,
-};
-
-const struct Tileset gTileset_GSC_Secondary =
-{
-    .isCompressed = TRUE,
-    .isSecondary = TRUE,
-    .tiles = gTilesetTiles_GSC_Secondary,
-    .palettes = gTilesetPalettes_GSC_Secondary,
-    .metatiles = gMetatiles_GSC_Secondary,
-    .metatileAttributes = gMetatileAttributes_GSC_Secondary,
-    .callback = NULL,
-};
 
 const struct Tileset gTileset_GeneralSnow =
 {

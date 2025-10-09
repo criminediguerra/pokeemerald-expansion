@@ -1,27 +1,7 @@
 LittlerootTown_MaysHouse_1F_MapScripts::
-	map_script MAP_SCRIPT_ON_LOAD, LittlerootTown_MaysHouse_1F_OnLoad
 	map_script MAP_SCRIPT_ON_TRANSITION, LittlerootTown_MaysHouse_1F_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, LittlerootTown_MaysHouse_1F_OnFrame
 	.byte 0
-
-LittlerootTown_MaysHouse_1F_OnLoad:
-	call_if_lt VAR_LITTLEROOT_INTRO_STATE, 6, LittlerootTown_MaysHouse_1F_EventScript_SetMovingBoxes
-	call_if_set FLAG_RECEIVED_RUNNING_SHOES, LittlerootTown_MaysHouse_1F_EventScript_CheckShowShoesManual
-	end
-
-LittlerootTown_MaysHouse_1F_EventScript_SetMovingBoxes::
-	setmetatile 5, 4, METATILE_BrendansMaysHouse_MovingBox_Open, TRUE
-	setmetatile 5, 2, METATILE_BrendansMaysHouse_MovingBox_Closed, TRUE
-	return
-
-LittlerootTown_MaysHouse_1F_EventScript_CheckShowShoesManual::
-	checkplayergender
-	goto_if_eq VAR_RESULT, FEMALE, LittlerootTown_MaysHouse_1F_EventScript_ShowRunningShoesManual
-	return
-
-LittlerootTown_MaysHouse_1F_EventScript_ShowRunningShoesManual::
-	setmetatile 6, 7, METATILE_BrendansMaysHouse_BookOnTable, TRUE
-	return
 
 LittlerootTown_MaysHouse_1F_OnTransition:
 	call_if_eq VAR_LITTLEROOT_INTRO_STATE, 3, LittlerootTown_MaysHouse_1F_EventScript_MoveMomToDoor
@@ -46,42 +26,9 @@ LittlerootTown_MaysHouse_1F_EventScript_MoveMomToDoor::
 
 @ Many of the below scripts have no gender check because they assume youre in the correct house
 LittlerootTown_MaysHouse_1F_OnFrame:
-	map_script_2 VAR_LITTLEROOT_INTRO_STATE, 3, LittlerootTown_MaysHouse_1F_EventScript_EnterHouseMovingIn
-	map_script_2 VAR_LITTLEROOT_INTRO_STATE, 5, LittlerootTown_MaysHouse_1F_EventScript_GoUpstairsToSetClock
-	map_script_2 VAR_LITTLEROOT_INTRO_STATE, 6, LittlerootTown_MaysHouse_1F_EventScript_PetalburgGymReport
 	map_script_2 VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 1, LittlerootTown_MaysHouse_1F_EventScript_YoureNewNeighbor
 	map_script_2 VAR_LITTLEROOT_HOUSES_STATE_MAY, 3, PlayersHouse_1F_EventScript_GetSSTicketAndSeeLatiTV
 	.2byte 0
-
-LittlerootTown_MaysHouse_1F_EventScript_GoUpstairsToSetClock::
-	lockall
-	msgbox PlayersHouse_1F_Text_GoSetTheClock, MSGBOX_DEFAULT
-	closemessage
-	applymovement LOCALID_PLAYER, LittlerootTown_MaysHouse_1F_Movement_PushTowardStairs
-	applymovement LOCALID_PLAYERS_HOUSE_1F_MOM, LittlerootTown_MaysHouse_1F_Movement_PushTowardStairs
-	waitmovement 0
-	warp MAP_LITTLEROOT_TOWN_MAYS_HOUSE_2F, 1, 1
-	waitstate
-	releaseall
-	end
-
-LittlerootTown_MaysHouse_1F_Movement_PushTowardStairs:
-	walk_up
-	step_end
-
-LittlerootTown_MaysHouse_1F_EventScript_EnterHouseMovingIn::
-	lockall
-	setvar VAR_0x8004, LOCALID_PLAYERS_HOUSE_1F_MOM
-	setvar VAR_0x8005, FEMALE
-	goto PlayersHouse_1F_EventScript_EnterHouseMovingIn
-	end
-
-LittlerootTown_MaysHouse_1F_EventScript_PetalburgGymReport::
-	lockall
-	setvar VAR_0x8004, FEMALE
-	setvar VAR_0x8005, LOCALID_PLAYERS_HOUSE_1F_MOM
-	goto PlayersHouse_1F_EventScript_PetalburgGymReportFemale
-	end
 
 LittlerootTown_MaysHouse_1F_EventScript_YoureNewNeighbor::
 	lockall
