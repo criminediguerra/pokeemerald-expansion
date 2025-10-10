@@ -6551,7 +6551,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphireBrenda
     .tracks = TRACKS_FOOT,
     .oam = &gObjectEventBaseOam_32x32,
     .subspriteTables = sOamTables_32x32,
-    .anims = sAnimTable_Standard,
+    .anims = sAnimTable_AcroBike,
     .images = sPicTable_RubySapphireBrendanAcroBike,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
@@ -6570,7 +6570,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphireBrenda
     .tracks = TRACKS_FOOT,
     .oam = &gObjectEventBaseOam_32x32,
     .subspriteTables = sOamTables_32x32,
-    .anims = sAnimTable_Standard,
+    .anims = sAnimTable_Surfing,
     .images = sPicTable_RubySapphireBrendanSurfing,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
@@ -6608,7 +6608,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphireBrenda
     .tracks = TRACKS_FOOT,
     .oam = &gObjectEventBaseOam_32x32,
     .subspriteTables = sOamTables_32x32,
-    .anims = sAnimTable_Standard,
+    .anims = sAnimTable_FieldMove,
     .images = sPicTable_RubySapphireBrendanFieldMove,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
@@ -6627,7 +6627,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphireBrenda
     .tracks = TRACKS_FOOT,
     .oam = &gObjectEventBaseOam_32x32,
     .subspriteTables = sOamTables_32x32,
-    .anims = sAnimTable_Standard,
+    .anims = sAnimTable_Fishing,
     .images = sPicTable_RubySapphireBrendanFishing,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
@@ -6665,7 +6665,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphireBrenda
     .tracks = TRACKS_FOOT,
     .oam = &gObjectEventBaseOam_32x32,
     .subspriteTables = sOamTables_32x32,
-    .anims = sAnimTable_Standard,
+    .anims = sAnimTable_Inanimate,
     .images = sPicTable_RubySapphireBrendanDecorating,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
@@ -6722,7 +6722,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphireMayAcr
     .tracks = TRACKS_FOOT,
     .oam = &gObjectEventBaseOam_32x32,
     .subspriteTables = sOamTables_32x32,
-    .anims = sAnimTable_Standard,
+    .anims = sAnimTable_AcroBike,
     .images = sPicTable_RubySapphireMayAcroBike,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
@@ -6741,7 +6741,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphireMaySur
     .tracks = TRACKS_FOOT,
     .oam = &gObjectEventBaseOam_32x32,
     .subspriteTables = sOamTables_32x32,
-    .anims = sAnimTable_Standard,
+    .anims = sAnimTable_Surfing,
     .images = sPicTable_RubySapphireMaySurfing,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
@@ -6779,7 +6779,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphireMayFie
     .tracks = TRACKS_FOOT,
     .oam = &gObjectEventBaseOam_32x32,
     .subspriteTables = sOamTables_32x32,
-    .anims = sAnimTable_Standard,
+    .anims = sAnimTable_FieldMove,
     .images = sPicTable_RubySapphireMayFieldMove,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
@@ -6798,7 +6798,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphireMayFis
     .tracks = TRACKS_FOOT,
     .oam = &gObjectEventBaseOam_32x32,
     .subspriteTables = sOamTables_32x32,
-    .anims = sAnimTable_Standard,
+    .anims = sAnimTable_Fishing,
     .images = sPicTable_RubySapphireMayFishing,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
@@ -6836,7 +6836,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphireMayDec
     .tracks = TRACKS_FOOT,
     .oam = &gObjectEventBaseOam_32x32,
     .subspriteTables = sOamTables_32x32,
-    .anims = sAnimTable_Standard,
+    .anims = sAnimTable_Inanimate,
     .images = sPicTable_RubySapphireMayDecorating,
     .affineAnims = gDummySpriteAffineAnimTable,
 };

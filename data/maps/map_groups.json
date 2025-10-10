@@ -339,13 +339,13 @@
     "Route229",
     "Route230"
   ],
-  "gMapGroup_TownsAndRoutesSuperGSC": [
-  ],
+  "gMapGroup_TownsAndRoutesSuperGSC": [],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
     "LittlerootTown_BrendansHouse_2F",
     "LittlerootTown_MaysHouse_1F",
     "LittlerootTown_MaysHouse_2F",
+    "MayBrendanToilets",
     "LittlerootTown_ProfessorBirchsLab",
     "TestRoom",
     "PalletInteriors",

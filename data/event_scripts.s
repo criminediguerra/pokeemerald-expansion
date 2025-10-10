@@ -2439,3 +2439,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route110b/scripts.inc"
 
 	.include "data/maps/Route97/scripts.inc"
+
+	.include "data/maps/MayBrendanToilets/scripts.inc"

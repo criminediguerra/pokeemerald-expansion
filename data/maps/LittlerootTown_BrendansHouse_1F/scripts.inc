@@ -119,6 +119,13 @@ LittlerootTown_BrendansHouse_1F_EventScript_GoSeeRoom::
 	goto PlayersHouse_1F_EventScript_MomGoSeeRoom
 	end
 
+LittlerootTown_BrendansHouse_1F_EventScript_GoSeeRoom1::
+	lockall
+	setvar VAR_0x8004, LOCALID_PLAYERS_HOUSE_1F_MOM
+	setvar VAR_0x8005, MALE
+	goto PlayersHouse_1F_EventScript_MomGoSeeRoom1
+	end
+
 LittlerootTown_BrendansHouse_1F_EventScript_MeetRival0::
 	lockall
 	setvar VAR_0x8008, 0
