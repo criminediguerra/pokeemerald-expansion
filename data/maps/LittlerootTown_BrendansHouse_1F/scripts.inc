@@ -79,6 +79,7 @@ LittlerootTown_BrendansHouse_1F_EventScript_EnterHouseMovingIn::
 
 LittlerootTown_BrendansHouse_1F_EventScript_PetalburgGymReport::
 	lockall
+	special TurnOnTVScreen
 	setvar VAR_0x8004, MALE
 	setvar VAR_0x8005, LOCALID_PLAYERS_HOUSE_1F_MOM
 	goto PlayersHouse_1F_EventScript_PetalburgGymReportMale

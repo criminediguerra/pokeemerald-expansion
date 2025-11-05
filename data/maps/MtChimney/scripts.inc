@@ -440,11 +440,23 @@ MtChimney_EventScript_BusyMagmaGrunt6::
 	end
 
 MtChimney_EventScript_MagmaPoochyena::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_NUMEL, CRY_MODE_NORMAL
 	msgbox MtChimney_Text_Bufoh, MSGBOX_SIGN
+	waitmoncry
+	release
 	end
 
 MtChimney_EventScript_AquaPoochyena::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_FERALIGATR, CRY_MODE_NORMAL
 	msgbox MtChimney_Text_Bushaa, MSGBOX_SIGN
+	waitmoncry
+	release
 	end
 
 MtChimney_EventScript_MeteoriteMachine::
@@ -663,7 +675,7 @@ MtChimney_Text_KeepMakingMoreLand:
 	.string "We're going to keep making more land!$"
 
 MtChimney_Text_Bufoh:
-	.string "Bufoh!$"
+	.string "NUMEL: Bufoh!$"
 
 MtChimney_Text_ArchieGoStopTeamMagma:
 	.string "ARCHIE: Grr, {PLAYER}!\n"
@@ -709,7 +721,7 @@ MtChimney_Text_MagmasNameSimilar:
 	.string "a confusing name!$"
 
 MtChimney_Text_Bushaa:
-	.string "Bushaa!$"
+	.string "FERALIGATR: Bushaa!$"
 
 MtChimney_Text_LavaCookiesJust200:
 	.string "LAVA COOKIES are MT. CHIMNEY's local\n"

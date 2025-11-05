@@ -112,6 +112,32 @@ Fuchsia_Fearow::
 Fuchsia_Fearow_Text:
 	.string "FEAROW: Piiiiii!$"
 
+Fuchsia_Poochyena::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_POOCHYENA, CRY_MODE_NORMAL
+	msgbox Fuchsia_Poochyena_Text, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Fuchsia_Poochyena_Text:
+	.string "POOCHYENA: Bufoh!$"
+
+Fuchsia_Taillow::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_TAILLOW, CRY_MODE_NORMAL
+	msgbox Fuchsia_Taillow_Text, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Fuchsia_Taillow_Text:
+	.string "TAILLOW: Bushaa!$"
+
 Fuchsia_Magikarp::
 	lock
 	faceplayer
