@@ -26,6 +26,7 @@
 #include "text_window.h"
 #include "trainer_pokemon_sprites.h"
 #include "grid_menu.h"
+#include "event_data.h"
 #include "constants/rgb.h"
 #include "constants/songs.h"
 #include "constants/trainers.h"
@@ -1020,4 +1021,14 @@ bool8 IsPlayerWearingOutfit(u16 id)
 u32 GetOutfitPrice(u16 id)
 {
     return gOutfits[id].prices[gSaveBlock2Ptr->playerGender];
+}
+
+void SetCurrentOutfitGfxIntoVar(struct ScriptContext *ctx)
+{
+    u32 varId = ScriptReadHalfword(ctx);
+    u32 state = ScriptReadHalfword(ctx);
+    u32 gfxId = GetPlayerAvatarGraphicsIdByOutfitStateIdAndGender(
+        gSaveBlock2Ptr->currOutfitId, state, gSaveBlock2Ptr->playerGender);
+
+    VarSet(varId, gfxId);
 }
