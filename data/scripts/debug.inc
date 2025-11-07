@@ -270,6 +270,12 @@ Debug_ShowExpansionVersion::
 Debug_ExpansionVersion:
 	.string "pokeemerald-expansion {STR_VAR_1}$"
 
+Debug_EventScript_Mining_Minigame::
+    fadescreen FADE_TO_BLACK
+    special StartMining
+	release
+	end
+
 Debug_EventScript_Steven_Multi::
 	call MossdeepCity_SpaceCenter_2F_EventScript_ChoosePartyForMultiBattle
 	release
