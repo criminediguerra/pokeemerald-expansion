@@ -141,8 +141,9 @@ u32 BattlePalace_TryEscapeStatus(u8 battler)
                     // Wake up from Uproar
                     gBattleMons[battler].status1 &= ~(STATUS1_SLEEP);
                     gBattleMons[battler].status2 &= ~(STATUS2_NIGHTMARE);
+                    BattleScriptPushCursor();
                     gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_WOKE_UP_UPROAR;
-                    BattleScriptCall(BattleScript_MoveUsedWokeUp);
+                    gBattlescriptCurrInstr = BattleScript_MoveUsedWokeUp;
                     effect = 2;
                 }
                 else
@@ -170,8 +171,9 @@ u32 BattlePalace_TryEscapeStatus(u8 battler)
                     {
                         // Wake up
                         gBattleMons[battler].status2 &= ~(STATUS2_NIGHTMARE);
+                        BattleScriptPushCursor();
                         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_WOKE_UP;
-                        BattleScriptCall(BattleScript_MoveUsedWokeUp);
+                        gBattlescriptCurrInstr = BattleScript_MoveUsedWokeUp;
                         effect = 2;
                     }
                 }
@@ -190,7 +192,8 @@ u32 BattlePalace_TryEscapeStatus(u8 battler)
                 {
                     // Unfreeze
                     gBattleMons[battler].status1 &= ~(STATUS1_FREEZE);
-                    BattleScriptCall(BattleScript_MoveUsedUnfroze);
+                    BattleScriptPushCursor();
+                    gBattlescriptCurrInstr = BattleScript_MoveUsedUnfroze;
                     gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_DEFROSTED;
                 }
                 effect = 2;
