@@ -362,10 +362,10 @@ static void CreateHatchedMon(struct Pokemon *egg, struct Pokemon *temp)
 static void AddHatchedMonToParty(u8 id)
 {
     u8 isEgg = 0x46; // ?
-    enum NationalDexOrder species;
+    u16 species;
     u8 name[POKEMON_NAME_LENGTH + 1];
     u16 metLevel;
-    metloc_u8_t metLocation;
+    u8 metLocation;
     struct Pokemon *mon = &gPlayerParty[id];
 
     CreateHatchedMon(mon, &gEnemyParty[0]);

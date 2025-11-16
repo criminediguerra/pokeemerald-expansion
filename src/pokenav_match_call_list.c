@@ -308,7 +308,7 @@ struct PokenavMatchCallEntry *GetMatchCallList(void)
     return state->matchCallEntries;
 }
 
-mapsec_u16_t GetMatchCallMapSec(int index)
+u16 GetMatchCallMapSec(int index)
 {
     struct Pokenav_MatchCallMenu *state = GetSubstructPtr(POKENAV_SUBSTRUCT_MATCH_CALL_MAIN);
     return state->matchCallEntries[index].mapSec;
@@ -410,7 +410,7 @@ void BufferMatchCallNameAndDesc(struct PokenavMatchCallEntry *matchCallEntry, u8
     {
         int index = GetTrainerIdxByRematchIdx(matchCallEntry->headerId);
         const struct Trainer *trainer = GetTrainerStructFromId(index);
-        enum TrainerClassID class = trainer->trainerClass;
+        int class = trainer->trainerClass;
         className = gTrainerClasses[class].name;
         trainerName = trainer->trainerName;
     }
@@ -430,7 +430,7 @@ void BufferMatchCallNameAndDesc(struct PokenavMatchCallEntry *matchCallEntry, u8
     }
 }
 
-mapsec_u8_t GetMatchTableMapSectionId(int rematchIndex)
+u8 GetMatchTableMapSectionId(int rematchIndex)
 {
     int mapGroup = gRematchTable[rematchIndex].mapGroup;
     int mapNum = gRematchTable[rematchIndex].mapNum;

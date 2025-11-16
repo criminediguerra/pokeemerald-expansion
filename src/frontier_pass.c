@@ -107,7 +107,7 @@ enum {
 
 struct FrontierPassData
 {
-    MainCallback callback;
+    void (*callback)(void);
     u16 state;
     u16 battlePoints;
     s16 cursorX;
@@ -138,14 +138,14 @@ struct FrontierPassGfx
 
 struct FrontierPassSaved
 {
-    MainCallback callback;
+    void (*callback)(void);
     s16 cursorX;
     s16 cursorY;
 };
 
 struct FrontierMapData
 {
-    MainCallback callback;
+    void (*callback)(void);
     struct Sprite *cursorSprite;
     struct Sprite *playerHeadSprite;
     struct Sprite *mapIndicatorSprite;
@@ -161,8 +161,8 @@ static EWRAM_DATA struct FrontierPassGfx *sPassGfx = NULL;
 static EWRAM_DATA struct FrontierMapData *sMapData = NULL;
 static EWRAM_DATA struct FrontierPassSaved sSavedPassData = {0};
 
-static u32 AllocateFrontierPassData(MainCallback callback);
-static void ShowFrontierMap(MainCallback callback);
+static u32 AllocateFrontierPassData(void (*callback)(void));
+static void ShowFrontierMap(void (*callback)(void));
 static void CB2_InitFrontierPass(void);
 static void DrawFrontierPassBg(void);
 static void FreeCursorAndSymbolSprites(void);
@@ -594,11 +594,9 @@ static void LeaveFrontierPass(void)
     FreeFrontierPassData();
 }
 
-static u32 AllocateFrontierPassData(MainCallback callback)
+static u32 AllocateFrontierPassData(void (*callback)(void))
 {
-    // This variable is a MAPSEC initially, but is recycled as a 
-    // bare integer near the end of the function.
-    mapsec_u8_t i;
+    u16 i;
 
     if (sPassData != NULL)
         return ERR_ALREADY_DONE;
@@ -909,12 +907,12 @@ static void CB2_ReturnFromRecord(void)
     sPassData->cursorX = sSavedPassData.cursorX;
     sPassData->cursorY = sSavedPassData.cursorY;
     memset(&sSavedPassData, 0, sizeof(sSavedPassData));
-    switch (CurrentBattlePyramidLocation())
+    switch (InBattlePyramid())
     {
-    case PYRAMID_LOCATION_FLOOR:
+    case 1:
         PlayBGM(MUS_B_PYRAMID);
         break;
-    case PYRAMID_LOCATION_TOP:
+    case 2:
         PlayBGM(MUS_B_PYRAMID_TOP);
         break;
     default:
@@ -1355,7 +1353,7 @@ static void PrintOnFrontierMap(void);
 static void InitFrontierMapSprites(void);
 static void HandleFrontierMapCursorMove(u8 direction);
 
-static void ShowFrontierMap(MainCallback callback)
+static void ShowFrontierMap(void (*callback)(void))
 {
     if (sMapData != NULL)
         SetMainCallback2(callback); // This line doesn't make sense at all, since it gets overwritten later anyway.

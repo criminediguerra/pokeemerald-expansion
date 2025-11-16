@@ -4,6 +4,7 @@
 ASSUMPTIONS
 {
     ASSUME(GetMoveEffect(MOVE_DRAGON_DARTS) == EFFECT_DRAGON_DARTS);
+    ASSUME(gSpeciesInfo[SPECIES_CLEFAIRY].types[0] == TYPE_FAIRY || gSpeciesInfo[SPECIES_CLEFAIRY].types[1] == TYPE_FAIRY);
 }
 
 SINGLE_BATTLE_TEST("Dragon Darts strikes twice")
@@ -71,13 +72,13 @@ DOUBLE_BATTLE_TEST("Dragon Darts strikes an opponent twice if the other one is F
     struct BattlePokemon *chosenTarget = NULL;
     struct BattlePokemon *finalTarget = NULL;
     u32 speciesLeft, speciesRight;
-    PARAMETRIZE { chosenTarget = opponentLeft;  finalTarget = opponentRight; speciesLeft = SPECIES_FIDOUGH;   speciesRight = SPECIES_WOBBUFFET; }
-    PARAMETRIZE { chosenTarget = opponentRight; finalTarget = opponentRight; speciesLeft = SPECIES_FIDOUGH;   speciesRight = SPECIES_WOBBUFFET; }
-    PARAMETRIZE { chosenTarget = opponentLeft;  finalTarget = opponentLeft;  speciesLeft = SPECIES_WOBBUFFET; speciesRight = SPECIES_FIDOUGH; }
-    PARAMETRIZE { chosenTarget = opponentRight; finalTarget = opponentLeft;  speciesLeft = SPECIES_WOBBUFFET; speciesRight = SPECIES_FIDOUGH; }
+    PARAMETRIZE { chosenTarget = opponentLeft;  finalTarget = opponentRight; speciesLeft = SPECIES_CLEFAIRY;  speciesRight = SPECIES_WOBBUFFET; }
+    PARAMETRIZE { chosenTarget = opponentRight; finalTarget = opponentRight; speciesLeft = SPECIES_CLEFAIRY;  speciesRight = SPECIES_WOBBUFFET; }
+    PARAMETRIZE { chosenTarget = opponentLeft;  finalTarget = opponentLeft;  speciesLeft = SPECIES_WOBBUFFET; speciesRight = SPECIES_CLEFAIRY; }
+    PARAMETRIZE { chosenTarget = opponentRight; finalTarget = opponentLeft;  speciesLeft = SPECIES_WOBBUFFET; speciesRight = SPECIES_CLEFAIRY; }
 
     GIVEN {
-        ASSUME(GetSpeciesType(SPECIES_FIDOUGH, 0) == TYPE_FAIRY || GetSpeciesType(SPECIES_FIDOUGH, 1) == TYPE_FAIRY);
+        ASSUME(gSpeciesInfo[SPECIES_CLEFAIRY].types[0] == TYPE_FAIRY || gSpeciesInfo[SPECIES_CLEFAIRY].types[1] == TYPE_FAIRY);
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(speciesLeft);
@@ -256,6 +257,7 @@ DOUBLE_BATTLE_TEST("Dragon Darts strikes right ally twice if one strike misses")
 DOUBLE_BATTLE_TEST("Dragon Darts strikes will be both redirected to Follow Me user")
 {
     GIVEN {
+        ASSUME(gSpeciesInfo[SPECIES_CLEFAIRY].types[0] == TYPE_FAIRY || gSpeciesInfo[SPECIES_CLEFAIRY].types[1] == TYPE_FAIRY);
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
@@ -271,14 +273,14 @@ DOUBLE_BATTLE_TEST("Dragon Darts strikes will be both redirected to Follow Me us
     }
 }
 
-DOUBLE_BATTLE_TEST("Dragon Darts fails to strike any target if under a Fairy-type follow me user")
+DOUBLE_BATTLE_TEST("Dragon Darts fails to strike any target if under a fairy type follow me user")
 {
     GIVEN {
-        ASSUME(GetSpeciesType(SPECIES_FIDOUGH, 0) == TYPE_FAIRY || GetSpeciesType(SPECIES_FIDOUGH, 1) == TYPE_FAIRY);
+        ASSUME(gSpeciesInfo[SPECIES_CLEFAIRY].types[0] == TYPE_FAIRY || gSpeciesInfo[SPECIES_CLEFAIRY].types[1] == TYPE_FAIRY);
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_FIDOUGH);
+        OPPONENT(SPECIES_CLEFAIRY);
     } WHEN {
         TURN { MOVE(opponentRight, MOVE_FOLLOW_ME); MOVE(playerLeft, MOVE_DRAGON_DARTS, target: opponentLeft); }
     } SCENE {
@@ -293,6 +295,7 @@ DOUBLE_BATTLE_TEST("Dragon Darts fails to strike any target if under a Fairy-typ
 DOUBLE_BATTLE_TEST("Dragon Darts fails to strike the second target if first target fainted and follow me was active")
 {
     GIVEN {
+        ASSUME(gSpeciesInfo[SPECIES_CLEFAIRY].types[0] == TYPE_FAIRY || gSpeciesInfo[SPECIES_CLEFAIRY].types[1] == TYPE_FAIRY);
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);

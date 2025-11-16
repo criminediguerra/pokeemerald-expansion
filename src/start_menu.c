@@ -323,7 +323,7 @@ static void BuildStartMenuActions(void)
     {
         BuildBattlePikeStartMenu();
     }
-    else if (CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE)
+    else if (InBattlePyramid())
     {
         BuildBattlePyramidStartMenu();
     }
@@ -872,7 +872,7 @@ static bool8 StartMenuPlayerNameCallback(void)
 
 static bool8 StartMenuSaveCallback(void)
 {
-    if (CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE)
+    if (InBattlePyramid())
         RemoveExtraStartMenuWindows();
 
     gMenuCallback = SaveStartCallback; // Display save menu
@@ -1154,7 +1154,7 @@ static u8 SaveConfirmSaveCallback(void)
     RemoveStartMenuWindow();
     ShowSaveInfoWindow();
 
-    if (CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE)
+    if (InBattlePyramid())
     {
         ShowSaveMessage(gText_BattlePyramidConfirmRest, SaveYesNoCallback);
     }

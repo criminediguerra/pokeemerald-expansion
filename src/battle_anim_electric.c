@@ -10,7 +10,7 @@ static void AnimLightning(struct Sprite *);
 static void AnimLightning_Step(struct Sprite *);
 static void AnimUnusedSpinningFist(struct Sprite *);
 static void AnimUnusedSpinningFist_Step(struct Sprite *);
-static void AnimCirclingElectricShock(struct Sprite *);
+static void AnimUnusedCirclingShock(struct Sprite *);
 static void AnimZapCannonSpark_Step(struct Sprite *);
 static void AnimThunderboltOrb(struct Sprite *);
 static void AnimThunderboltOrb_Step(struct Sprite *);
@@ -83,9 +83,7 @@ static const struct SpriteTemplate sUnusedSpinningFistSpriteTemplate =
     .callback = AnimUnusedSpinningFist,
 };
 
-// Previously an unused function named sAnim_CirclingElectricShock
-// Now used for Tera Blast Electric
-static const union AnimCmd sAnim_CirclingElectricShock[] =
+static const union AnimCmd sAnim_UnusedCirclingShock[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(16, 5),
@@ -96,24 +94,21 @@ static const union AnimCmd sAnim_CirclingElectricShock[] =
     ANIMCMD_JUMP(0),
 };
 
-// Previously an unused function named sAnims_UnusedCirclingShock
-// Now used for Tera Blast Electric
-const union AnimCmd *const sAnims_CirclingElectricShock[] =
+static const union AnimCmd *const sAnims_UnusedCirclingShock[] =
 {
-    sAnim_CirclingElectricShock,
+    sAnim_UnusedCirclingShock,
 };
 
-// Previously named sUnusedCirclingShockSpriteTemplate
-// Still unused, but renamed for consistency
-static const struct SpriteTemplate sCirclingElectricShockSpriteTemplate =
+// Unused
+static const struct SpriteTemplate sUnusedCirclingShockSpriteTemplate =
 {
     .tileTag = ANIM_TAG_SHOCK,
     .paletteTag = ANIM_TAG_SHOCK,
     .oam = &gOamData_AffineOff_ObjNormal_32x32,
-    .anims = sAnims_CirclingElectricShock,
+    .anims = sAnims_UnusedCirclingShock,
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimCirclingElectricShock,
+    .callback = AnimUnusedCirclingShock,
 };
 
 const struct SpriteTemplate gSparkElectricitySpriteTemplate =
@@ -639,7 +634,7 @@ static void AnimUnusedSpinningFist_Step(struct Sprite *sprite)
         DestroySpriteAndMatrix(sprite);
 }
 
-static void AnimCirclingElectricShock(struct Sprite *sprite)
+static void AnimUnusedCirclingShock(struct Sprite *sprite)
 {
     sprite->x = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2);
     sprite->y = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET);

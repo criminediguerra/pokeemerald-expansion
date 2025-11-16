@@ -52,9 +52,8 @@ SINGLE_BATTLE_TEST("Slush Rush doesn't double speed if Cloud Nine/Air Lock is on
 SINGLE_BATTLE_TEST("Slush Rush doesn't prevent non-Ice types from taking damage in Hail")
 {
     GIVEN {
-        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 0) != TYPE_ICE);
-        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 1) != TYPE_ICE);
-        ASSUME(GetMoveEffect(MOVE_HAIL) == EFFECT_HAIL);
+        ASSUME(gSpeciesInfo[SPECIES_WOBBUFFET].types[0] != TYPE_ICE);
+        ASSUME(gSpeciesInfo[SPECIES_WOBBUFFET].types[1] != TYPE_ICE);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_CETITAN) { Ability(ABILITY_SLUSH_RUSH); }
     } WHEN {

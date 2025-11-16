@@ -43,10 +43,7 @@ const u16 gBattleAnimSpritePal_AlphaSymbol[] = INCBIN_U16("graphics/battle_anims
 const u32 gBattleAnimSpriteGfx_OmegaSymbol[] = INCBIN_U32("graphics/battle_anims/sprites/omega_symbol.4bpp.lz");
 const u16 gBattleAnimSpritePal_OmegaSymbol[] = INCBIN_U16("graphics/battle_anims/sprites/omega_symbol.gbapal");
 
-const u32 gBattleAnimSpriteGfx_TeraSymbol[] = INCBIN_U32("graphics/battle_anims/sprites/tera_symbol.4bpp.smol");
-const u16 gBattleAnimSpritePal_TeraSymbol[] = INCBIN_U16("graphics/battle_anims/sprites/tera_symbol.gbapal");
-
-const u32 gBattleAnimSpriteGfx_FlashCannonBall[] = INCBIN_U32("graphics/battle_anims/sprites/flash_cannon_ball.4bpp.smol");
+const u32 gBattleAnimSpriteGfx_FlashCannonBall[] = INCBIN_U32("graphics/battle_anims/sprites/flash_cannon_ball.4bpp.lz");
 const u16 gBattleAnimSpritePal_FlashCannonBall[] = INCBIN_U16("graphics/battle_anims/sprites/flash_cannon_ball.gbapal");
 
 const u32 gBattleAnimSpriteGfx_WaterGun[] = INCBIN_U32("graphics/battle_anims/sprites/water_gun.4bpp.lz");
@@ -784,15 +781,6 @@ const u32 gBattleAnimSpriteGfx_BlueFlames[] = INCBIN_U32("graphics/battle_anims/
 const u16 gBattleAnimSpritePal_BlueFlames[] = INCBIN_U16("graphics/battle_anims/sprites/blue_flames.gbapal");
 
 const u32 gBattleAnimSpriteGfx_BlueFlames2[] = INCBIN_U32("graphics/battle_anims/sprites/blue_flames_2.4bpp.lz");
-
-const u32 gBattleAnimSpriteGfx_TatsugiriCurly[] = INCBIN_U32("graphics/battle_anims/sprites/tatsugiri_curly.4bpp.smol");
-const u16 gBattleAnimSpritePal_TatsugiriCurly[] = INCBIN_U16("graphics/battle_anims/sprites/tatsugiri_curly.gbapal");
-
-const u32 gBattleAnimSpriteGfx_TatsugiriDroopy[] = INCBIN_U32("graphics/battle_anims/sprites/tatsugiri_droopy.4bpp.smol");
-const u16 gBattleAnimSpritePal_TatsugiriDroopy[] = INCBIN_U16("graphics/battle_anims/sprites/tatsugiri_droopy.gbapal");
-
-const u32 gBattleAnimSpriteGfx_TatsugiriStretchy[] = INCBIN_U32("graphics/battle_anims/sprites/tatsugiri_stretchy.4bpp.smol");
-const u16 gBattleAnimSpritePal_TatsugiriStretchy[] = INCBIN_U16("graphics/battle_anims/sprites/tatsugiri_stretchy.gbapal");
 
 // Contest
 const u32 gJPContestGfx1[] = INCBIN_U32("graphics/contest/japanese/composite_1.4bpp.lz");
@@ -2101,9 +2089,9 @@ const u32 gTitleScreenPressStartGfx[]      = INCBIN_U32("graphics/title_screen/p
 const u32 gTitleScreenPokemonLogoTilemap[] = INCBIN_U32("graphics/title_screen/pokemon_logo.bin.lz");
 
 const u16 gFrontierPassBg_Pal[][16]                      = INCBIN_U16("graphics/frontier_pass/bg.gbapal"); // 8 x 16
-const u32 gFrontierPassBg_Gfx[]                          = INCBIN_U32("graphics/frontier_pass/bg.4bpp.smol");
-const u32 gFrontierPassMapAndCard_Gfx[]                  = INCBIN_U32("graphics/frontier_pass/map_and_card.8bpp.smol");
-const u32 gFrontierPassBg_Tilemap[]                      = INCBIN_U32("graphics/frontier_pass/bg.bin.smolTM");
+const u32 gFrontierPassBg_Gfx[]                          = INCBIN_U32("graphics/frontier_pass/bg.4bpp.lz");
+const u32 gFrontierPassMapAndCard_Gfx[]                  = INCBIN_U32("graphics/frontier_pass/map_and_card.8bpp.lz");
+const u32 gFrontierPassBg_Tilemap[]                      = INCBIN_U32("graphics/frontier_pass/bg.bin.lz");
 const u32 gFrontierPassCancelButton_Tilemap[]            = INCBIN_U32("graphics/frontier_pass/cancel.bin");
 const u32 gFrontierPassCancelButtonHighlighted_Tilemap[] = INCBIN_U32("graphics/frontier_pass/cancel_highlighted.bin");
 

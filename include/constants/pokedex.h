@@ -3,8 +3,7 @@
 
 // National Pokédex order
 // These constants are NOT disabled by P_GEN_X_POKEMON to keep pokedex_orders.h clean.
-enum NationalDexOrder
-{
+enum {
     NATIONAL_DEX_NONE,
     // Kanto
     NATIONAL_DEX_BULBASAUR,
@@ -1086,8 +1085,7 @@ enum NationalDexOrder
 #define POKEMON_SLOTS_NUMBER (NATIONAL_DEX_COUNT + 1)
 
 // Hoenn Pokédex order
-enum HoennDexOrder
-{
+enum {
     HOENN_DEX_NONE,
 // Kanto
     HOENN_DEX_BULBASAUR,
