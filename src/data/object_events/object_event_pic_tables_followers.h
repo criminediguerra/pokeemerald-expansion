@@ -18,6 +18,14 @@ static const struct SpriteFrameImage sPicTable_VenusaurF[] = {
     overworld_ascending_frames(gObjectEventPic_VenusaurF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
+static const struct SpriteFrameImage sPicTable_Venustor[] = {
+    overworld_ascending_frames(gObjectEventPic_Venustor, 4, 4),
+};
+#if P_GENDER_DIFFERENCES
+static const struct SpriteFrameImage sPicTable_VenustorF[] = {
+    overworld_ascending_frames(gObjectEventPic_VenustorF, 4, 4),
+};
+#endif //P_GENDER_DIFFERENCES
 #if OW_BATTLE_ONLY_FORMS
 #if P_MEGA_EVOLUTIONS
 static const struct SpriteFrameImage sPicTable_VenusaurMega[] = {
@@ -42,6 +50,11 @@ static const struct SpriteFrameImage sPicTable_Charmeleon[] = {
 static const struct SpriteFrameImage sPicTable_Charizard[] = {
     overworld_ascending_frames(gObjectEventPic_Charizard, 4, 4),
 };
+#if P_GENDER_DIFFERENCES
+static const struct SpriteFrameImage sPicTable_CharizardF[] = {
+    overworld_ascending_frames(gObjectEventPic_CharizardF, 4, 4),
+};
+#endif //P_GENDER_DIFFERENCES
 #if OW_BATTLE_ONLY_FORMS
 #if P_MEGA_EVOLUTIONS
 static const struct SpriteFrameImage sPicTable_CharizardMegaX[] = {
@@ -69,6 +82,11 @@ static const struct SpriteFrameImage sPicTable_Wartortle[] = {
 static const struct SpriteFrameImage sPicTable_Blastoise[] = {
     overworld_ascending_frames(gObjectEventPic_Blastoise, 4, 4),
 };
+#if P_GENDER_DIFFERENCES
+static const struct SpriteFrameImage sPicTable_BlastoiseF[] = {
+    overworld_ascending_frames(gObjectEventPic_BlastoiseF, 4, 4),
+};
+#endif //P_GENDER_DIFFERENCES
 #if OW_BATTLE_ONLY_FORMS
 #if P_MEGA_EVOLUTIONS
 static const struct SpriteFrameImage sPicTable_BlastoiseMega[] = {
@@ -564,6 +582,23 @@ static const struct SpriteFrameImage sPicTable_AlakazamMega[] = {
 };
 #endif // P_MEGA_EVOLUTIONS
 #endif // OW_BATTLE_ONLY_FORMS
+#if P_ALOLAN_FORMS
+static const struct SpriteFrameImage sPicTable_AbraAlola[] = {
+    overworld_ascending_frames(gObjectEventPic_AbraAlola, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_KadabraAlola[] = {
+    overworld_ascending_frames(gObjectEventPic_KadabraAlola, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_KadabraAlolaF[] = {
+    overworld_ascending_frames(gObjectEventPic_KadabraAlolaF, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_AlakazamAlola[] = {
+    overworld_ascending_frames(gObjectEventPic_AlakazamAlola, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_AlakazamAlolaF[] = {
+    overworld_ascending_frames(gObjectEventPic_AlakazamAlolaF, 4, 4),
+};
+#endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_ABRA
 
 #if P_FAMILY_MACHOP
@@ -870,6 +905,9 @@ static const struct SpriteFrameImage sPicTable_ElectrodeHisui[] = {
 #endif //P_FAMILY_VOLTORB
 
 #if P_FAMILY_EXEGGCUTE
+static const struct SpriteFrameImage sPicTable_Exegg[] = {
+    overworld_ascending_frames(gObjectEventPic_Exegg, 4, 4),
+};
 static const struct SpriteFrameImage sPicTable_Exeggcute[] = {
     overworld_ascending_frames(gObjectEventPic_Exeggcute, 4, 4),
 };

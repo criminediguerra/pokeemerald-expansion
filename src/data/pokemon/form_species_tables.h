@@ -229,10 +229,29 @@ static const u16 sArcanineFormSpeciesIdTable[] = {
 #endif //P_FAMILY_GROWLITHE
 
 #if P_FAMILY_ABRA
+static const u16 sAbraFormSpeciesIdTable[] = {
+    SPECIES_ABRA,
+#if P_ALOLAN_FORMS
+    SPECIES_ABRA_ALOLA,
+#endif
+    FORM_SPECIES_END,
+};
+
+static const u16 sKadabraFormSpeciesIdTable[] = {
+    SPECIES_KADABRA,
+#if P_ALOLAN_FORMS
+    SPECIES_KADABRA_ALOLA,
+#endif
+    FORM_SPECIES_END,
+};
+
 static const u16 sAlakazamFormSpeciesIdTable[] = {
     SPECIES_ALAKAZAM,
 #if P_MEGA_EVOLUTIONS
     SPECIES_ALAKAZAM_MEGA,
+#endif
+#if P_ALOLAN_FORMS
+    SPECIES_ALAKAZAM_ALOLA,
 #endif
     FORM_SPECIES_END,
 };

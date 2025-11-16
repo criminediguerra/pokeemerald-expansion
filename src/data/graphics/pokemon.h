@@ -108,6 +108,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 
+    const u32 gMonFrontPic_Venustor[] = INCBIN_U32("graphics/pokemon/venustor/anim_front.4bpp.lz");
+    const u16 gMonPalette_Venustor[] = INCBIN_U16("graphics/pokemon/venustor/normal.gbapal");
+    const u32 gMonBackPic_Venustor[] = INCBIN_U32("graphics/pokemon/venustor/back.4bpp.lz");
+    const u16 gMonShinyPalette_Venustor[] = INCBIN_U16("graphics/pokemon/venustor/shiny.gbapal");
+    const u8 gMonIcon_Venustor[] = INCBIN_U8("graphics/pokemon/venustor/icon.4bpp");
+    const u32 gObjectEventPic_Venustor[] = INCBIN_COMP("graphics/pokemon/venustor/overworld.4bpp");
+    const u16 gOverworldPalette_Venustor[] = INCBIN_U16("graphics/pokemon/venustor/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Venustor[] = INCBIN_U16("graphics/pokemon/venustor/overworld_shiny.gbapal");
+
+    const u32 gMonFrontPic_VenustorF[] = INCBIN_U32("graphics/pokemon/venustor/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_VenustorF[] = INCBIN_U32("graphics/pokemon/venustor/backf.4bpp.lz");
+    const u32 gObjectEventPic_VenustorF[] = INCBIN_COMP("graphics/pokemon/venustor/overworldf.4bpp");
+
 #if P_MEGA_EVOLUTIONS
     const u32 gMonFrontPic_VenusaurMega[] = INCBIN_U32("graphics/pokemon/venusaur/mega/front.4bpp.lz");
     const u16 gMonPalette_VenusaurMega[] = INCBIN_U16("graphics/pokemon/venusaur/mega/normal.gbapal");
@@ -220,6 +233,11 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Charizard[] = INCBIN_U16("graphics/pokemon/charizard/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
+
+    const u32 gMonFrontPic_CharizardF[] = INCBIN_U32("graphics/pokemon/charizard/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_CharizardF[] = INCBIN_U32("graphics/pokemon/charizard/backf.4bpp.lz");
+    const u32 gObjectEventPic_CharizardF[] = INCBIN_COMP("graphics/pokemon/charizard/overworldf.4bpp");
+    const u8 gMonIcon_CharizardF[] = INCBIN_U8("graphics/pokemon/charizard/iconf.4bpp");
 
 #if P_MEGA_EVOLUTIONS
     const u32 gMonFrontPic_CharizardMegaX[] = INCBIN_U32("graphics/pokemon/charizard/mega_x/front.4bpp.lz");
@@ -346,6 +364,11 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Blastoise[] = INCBIN_U16("graphics/pokemon/blastoise/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
+
+    const u32 gMonFrontPic_BlastoiseF[] = INCBIN_U32("graphics/pokemon/blastoise/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_BlastoiseF[] = INCBIN_U32("graphics/pokemon/blastoise/backf.4bpp.lz");
+    const u32 gObjectEventPic_BlastoiseF[] = INCBIN_COMP("graphics/pokemon/blastoise/overworldf.4bpp");
+    const u8 gMonIcon_BlastoiseF[] = INCBIN_U8("graphics/pokemon/blastoise/iconf.4bpp");
 
 #if P_MEGA_EVOLUTIONS
     const u32 gMonFrontPic_BlastoiseMega[] = INCBIN_U32("graphics/pokemon/blastoise/mega/front.4bpp.lz");
@@ -2636,6 +2659,43 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 
+    const u32 gMonFrontPic_AbraAlola[] = INCBIN_U32("graphics/pokemon/abra/alola/anim_front.4bpp.lz");
+    const u16 gMonPalette_AbraAlola[] = INCBIN_U16("graphics/pokemon/abra/alola/normal.gbapal");
+    const u32 gMonBackPic_AbraAlola[] = INCBIN_U32("graphics/pokemon/abra/alola/back.4bpp.lz");
+    const u16 gMonShinyPalette_AbraAlola[] = INCBIN_U16("graphics/pokemon/abra/alola/shiny.gbapal");
+    const u8 gMonIcon_AbraAlola[] = INCBIN_U8("graphics/pokemon/abra/alola/icon.4bpp");
+    const u32 gObjectEventPic_AbraAlola[] = INCBIN_COMP("graphics/pokemon/abra/alola/overworld.4bpp");
+    const u16 gOverworldPalette_AbraAlola[] = INCBIN_U16("graphics/pokemon/abra/alola/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_AbraAlola[] = INCBIN_U16("graphics/pokemon/abra/alola/overworld_shiny.gbapal");
+
+
+    const u32 gMonFrontPic_KadabraAlola[] = INCBIN_U32("graphics/pokemon/kadabra/alola/anim_front.4bpp.lz");
+    const u16 gMonPalette_KadabraAlola[] = INCBIN_U16("graphics/pokemon/kadabra/alola/normal.gbapal");
+    const u32 gMonBackPic_KadabraAlola[] = INCBIN_U32("graphics/pokemon/kadabra/alola/back.4bpp.lz");
+    const u16 gMonShinyPalette_KadabraAlola[] = INCBIN_U16("graphics/pokemon/kadabra/alola/shiny.gbapal");
+    const u8 gMonIcon_KadabraAlola[] = INCBIN_U8("graphics/pokemon/kadabra/alola/icon.4bpp");
+    const u32 gObjectEventPic_KadabraAlola[] = INCBIN_COMP("graphics/pokemon/kadabra/alola/overworld.4bpp");
+    const u16 gOverworldPalette_KadabraAlola[] = INCBIN_U16("graphics/pokemon/kadabra/alola/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_KadabraAlola[] = INCBIN_U16("graphics/pokemon/kadabra/alola/overworld_shiny.gbapal");
+
+
+    const u32 gMonFrontPic_KadabraAlolaF[] = INCBIN_U32("graphics/pokemon/kadabra/alola/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_KadabraAlolaF[] = INCBIN_U32("graphics/pokemon/kadabra/alola/backf.4bpp.lz");
+    const u32 gObjectEventPic_KadabraAlolaF[] = INCBIN_COMP("graphics/pokemon/kadabra/alola/overworldf.4bpp");
+
+    const u32 gMonFrontPic_AlakazamAlola[] = INCBIN_U32("graphics/pokemon/alakazam/alola/anim_front.4bpp.lz");
+    const u16 gMonPalette_AlakazamAlola[] = INCBIN_U16("graphics/pokemon/alakazam/alola/normal.gbapal");
+    const u32 gMonBackPic_AlakazamAlola[] = INCBIN_U32("graphics/pokemon/alakazam/alola/back.4bpp.lz");
+    const u16 gMonShinyPalette_AlakazamAlola[] = INCBIN_U16("graphics/pokemon/alakazam/alola/shiny.gbapal");
+    const u8 gMonIcon_AlakazamAlola[] = INCBIN_U8("graphics/pokemon/alakazam/alola/icon.4bpp");
+    const u32 gObjectEventPic_AlakazamAlola[] = INCBIN_COMP("graphics/pokemon/alakazam/alola/overworld.4bpp");
+    const u16 gOverworldPalette_AlakazamAlola[] = INCBIN_U16("graphics/pokemon/alakazam/alola/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_AlakazamAlola[] = INCBIN_U16("graphics/pokemon/alakazam/alola/overworld_shiny.gbapal");
+
+    const u32 gMonFrontPic_AlakazamAlolaF[] = INCBIN_U32("graphics/pokemon/alakazam/alola/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_AlakazamAlolaF[] = INCBIN_U32("graphics/pokemon/alakazam/alola/backf.4bpp.lz");
+    const u32 gObjectEventPic_AlakazamAlolaF[] = INCBIN_COMP("graphics/pokemon/alakazam/alola/overworldf.4bpp");
+
 #if P_MEGA_EVOLUTIONS
     const u32 gMonFrontPic_AlakazamMega[] = INCBIN_U32("graphics/pokemon/alakazam/mega/front.4bpp.lz");
     const u16 gMonPalette_AlakazamMega[] = INCBIN_U16("graphics/pokemon/alakazam/mega/normal.gbapal");
@@ -4127,6 +4187,16 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //P_FAMILY_VOLTORB
 
 #if P_FAMILY_EXEGGCUTE
+
+    const u32 gMonFrontPic_Exegg[] = INCBIN_U32("graphics/pokemon/exegg/anim_front.4bpp.lz");
+    const u16 gMonPalette_Exegg[] = INCBIN_U16("graphics/pokemon/exegg/normal.gbapal");
+    const u32 gMonBackPic_Exegg[] = INCBIN_U32("graphics/pokemon/exegg/back.4bpp.lz");
+    const u16 gMonShinyPalette_Exegg[] = INCBIN_U16("graphics/pokemon/exegg/shiny.gbapal");
+    const u8 gMonIcon_Exegg[] = INCBIN_U8("graphics/pokemon/exegg/icon.4bpp");
+    const u32 gObjectEventPic_Exegg[] = INCBIN_COMP("graphics/pokemon/exegg/overworld.4bpp");
+    const u16 gOverworldPalette_Exegg[] = INCBIN_U16("graphics/pokemon/exegg/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Exegg[] = INCBIN_U16("graphics/pokemon/exegg/overworld_shiny.gbapal");
+
 #if !P_GBA_STYLE_SPECIES_GFX
     const u32 gMonFrontPic_Exeggcute[] = INCBIN_U32("graphics/pokemon/exeggcute/anim_front.4bpp.lz");
     const u16 gMonPalette_Exeggcute[] = INCBIN_U16("graphics/pokemon/exeggcute/normal.gbapal");

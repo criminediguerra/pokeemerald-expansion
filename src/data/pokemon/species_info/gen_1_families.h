@@ -139,7 +139,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sIvysaurLevelUpLearnset,
         .teachableLearnset = sIvysaurTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_VENUSAUR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_VENUSAUR},
+        {EVO_ITEM, ITEM_BERSERK_GENE, SPECIES_VENUSTOR},
+        {EVO_SPLIT_FROM_EVO, SPECIES_VENUSAUR, SPECIES_EXEGG},
+        {EVO_SPLIT_FROM_EVO, SPECIES_VENUSTOR, SPECIES_EXEGG}),
     },
 
     [SPECIES_VENUSAUR] =
@@ -229,6 +232,89 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sVenusaurTeachableLearnset,
         .formSpeciesIdTable = sVenusaurFormSpeciesIdTable,
         .formChangeTable = sVenusaurFormChangeTable,
+    },
+
+    [SPECIES_VENUSTOR] =
+    {
+        .baseHP        = 80,
+        .baseAttack    = 82,
+        .baseDefense   = 83,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 100,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_PSYCHIC),
+        .catchRate = 45,
+        .expYield = 263,
+        .evYield_SpAttack = 2,
+        .evYield_SpDefense = 1,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_GRASS),
+        .abilities = { ABILITY_DROUGHT, ABILITY_NONE, ABILITY_CHLOROPHYLL },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("VENUSTOR"),
+        .cryId = CRY_VENUSAUR,
+        .natDexNum = NATIONAL_DEX_VENUSTOR,
+        .categoryName = _("PARASITE"),
+        .height = 20,
+        .weight = 1000,
+        .description = COMPOUND_STRING(
+            "the bloom on VENUSTOR back slowly takes\n"
+            "control of its body, using it as a mobile\n"
+            "host while its roots fuse with the host's\n"
+            "nervous system."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 388,
+        .trainerOffset = 6,
+        .frontPic = gMonFrontPic_Venustor,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 3,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 25),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = ANIM_ROTATE_UP_SLAM_DOWN,
+        .backPic = gMonBackPic_Venustor,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 56) : MON_COORDS_SIZE(64, 48),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 7 : 10,
+        .backAnimId = BACK_ANIM_H_SHAKE,
+        .palette = gMonPalette_Venustor,
+        .shinyPalette = gMonShinyPalette_Venustor,
+        .iconSprite = gMonIcon_Venustor,
+        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 1 : 4,
+#if P_GENDER_DIFFERENCES
+        .frontPicFemale = gMonFrontPic_VenustorF,
+        .frontPicSizeFemale = MON_COORDS_SIZE(64, 64),
+        .backPicFemale = gMonBackPic_VenustorF,
+        .backPicSizeFemale = MON_COORDS_SIZE(64, 48),
+#endif //P_GENDER_DIFFERENCES
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(2, 6, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Venusaur)
+        OVERWORLD(
+            sPicTable_Venustor,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Venustor,
+            gShinyOverworldPalette_Venustor
+        )
+        OVERWORLD_FEMALE(
+            sPicTable_VenustorF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following
+        )
+        .levelUpLearnset = sExeggutorLevelUpLearnset,
+        .teachableLearnset = sVenusaurTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_VENUSTOR, CONDITIONS({IF_MIN_OVERWORLD_STEPS, 500})},
+                                {EVO_SPLIT_FROM_EVO, SPECIES_VENUSTOR, SPECIES_EXEGG}),
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -557,6 +643,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .shinyPalette = gMonShinyPalette_Charizard,
         .iconSprite = gMonIcon_Charizard,
         .iconPalIndex = 0,
+#if P_GENDER_DIFFERENCES
+        .frontPicFemale = gMonFrontPic_CharizardF,
+        .frontPicSizeFemale = MON_COORDS_SIZE(64, 56),
+        .backPicFemale = gMonBackPic_CharizardF,
+        .backPicSizeFemale = MON_COORDS_SIZE(64, 48),
+        .iconSpriteFemale = gMonIcon_CharizardF,
+        .iconPalIndexFemale  = 0,
+#endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(2, 13, SHADOW_SIZE_L)
         FOOTPRINT(Charizard)
@@ -568,6 +662,13 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             sAnimTable_Following,
             gOverworldPalette_Charizard,
             gShinyOverworldPalette_Charizard
+        )
+        OVERWORLD_FEMALE(
+            sPicTable_CharizardF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_NONE,
+            sAnimTable_Following
         )
         .levelUpLearnset = sCharizardLevelUpLearnset,
         .teachableLearnset = sCharizardTeachableLearnset,
@@ -971,6 +1072,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .shinyPalette = gMonShinyPalette_Blastoise,
         .iconSprite = gMonIcon_Blastoise,
         .iconPalIndex = 2,
+#if P_GENDER_DIFFERENCES
+        .frontPicFemale = gMonFrontPic_BlastoiseF,
+        .frontPicSizeFemale = MON_COORDS_SIZE(64, 56),
+        .backPicFemale = gMonBackPic_BlastoiseF,
+        .backPicSizeFemale = MON_COORDS_SIZE(64, 48),
+        .iconSpriteFemale = gMonIcon_BlastoiseF,
+        .iconPalIndexFemale  = 2,
+#endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(1, 7, SHADOW_SIZE_L)
         FOOTPRINT(Blastoise)
@@ -982,6 +1091,13 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             sAnimTable_Following,
             gOverworldPalette_Blastoise,
             gShinyOverworldPalette_Blastoise
+        )
+        OVERWORLD_FEMALE(
+            sPicTable_BlastoiseF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_NONE,
+            sAnimTable_Following
         )
         .levelUpLearnset = sBlastoiseLevelUpLearnset,
         .teachableLearnset = sBlastoiseTeachableLearnset,
@@ -8559,6 +8675,257 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formChangeTable = sAlakazamFormChangeTable,
     },
 
+    [SPECIES_ABRA_ALOLA] =
+    {
+        .baseHP        = 25,
+        .baseAttack    = 20,
+        .baseDefense   = 15,
+        .baseSpeed     = 90,
+        .baseSpAttack  = 105,
+        .baseSpDefense = P_UPDATED_STATS >= GEN_2 ? 55 : 105,
+        .types = MON_TYPES(TYPE_PSYCHIC, TYPE_ELECTRIC),
+        .catchRate = 200,
+        .expYield = 75,
+        .evYield_SpAttack = 1,
+        .itemRare = ITEM_TWISTED_SPOON,
+        .genderRatio = PERCENT_FEMALE(25),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
+        .abilities = { ABILITY_SYNCHRONIZE, ABILITY_INNER_FOCUS, ABILITY_MAGIC_GUARD },
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("ABRA"),
+        .cryId = CRY_ABRA,
+        .natDexNum = NATIONAL_DEX_ABRA,
+        .categoryName = _("PSI"),
+        .height = 9,
+        .weight = 195,
+        .description = COMPOUND_STRING(
+            "A POKéMON that sleeps 18 hours a day.\n"
+            "Observation revealed that it uses\n"
+            "TELEPORT to change its location once\n"
+            "every hour."),
+        .pokemonScale = 363,
+        .pokemonOffset = 14,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_AbraAlola,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 48) : MON_COORDS_SIZE(56, 48),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 11 : 10,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 7),
+            ANIMCMD_FRAME(1, 21),
+            ANIMCMD_FRAME(0, 13),
+            ANIMCMD_FRAME(1, 21),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_H_JUMPS : ANIM_H_VIBRATE,
+        .backPic = gMonBackPic_AbraAlola,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 48) : MON_COORDS_SIZE(56, 48),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 11 : 12,
+        .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
+        .palette = gMonPalette_AbraAlola,
+        .shinyPalette = gMonShinyPalette_AbraAlola,
+        .iconSprite = gMonIcon_AbraAlola,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(0, 0, SHADOW_SIZE_L)
+        FOOTPRINT(Abra)
+        OVERWORLD(
+            sPicTable_AbraAlola,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_NONE,
+            sAnimTable_Following,
+            gOverworldPalette_AbraAlola,
+            gShinyOverworldPalette_AbraAlola
+        )
+        .isAlolanForm = TRUE,
+        .levelUpLearnset = sAbraAlolaLevelUpLearnset,
+        .teachableLearnset = sAbraTeachableLearnset,
+        .eggMoveLearnset = sAbraEggMoveLearnset,
+        .formSpeciesIdTable = sAbraFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_KADABRA_ALOLA}),
+    },
+
+    [SPECIES_KADABRA_ALOLA] =
+    {
+        .baseHP        = 40,
+        .baseAttack    = 35,
+        .baseDefense   = 30,
+        .baseSpeed     = 105,
+        .baseSpAttack  = 120,
+        .baseSpDefense = P_UPDATED_STATS >= GEN_2 ? 70 : 120,
+        .types = MON_TYPES(TYPE_PSYCHIC, TYPE_ELECTRIC),
+        .catchRate = 100,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 140 : 145,
+        .evYield_SpAttack = 2,
+        .itemRare = ITEM_TWISTED_SPOON,
+        .genderRatio = PERCENT_FEMALE(25),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
+        .abilities = { ABILITY_SYNCHRONIZE, ABILITY_INNER_FOCUS, ABILITY_MAGIC_GUARD },
+        .bodyColor = BODY_COLOR_BROWN,
+        .noFlip = TRUE,
+        .speciesName = _("KADABRA"),
+        .cryId = CRY_KADABRA,
+        .natDexNum = NATIONAL_DEX_KADABRA,
+        .categoryName = _("PSI"),
+        .height = 13,
+        .weight = 565,
+        .description = COMPOUND_STRING(
+            "It is rumored that a boy with psychic\n"
+            "abilities suddenly transformed into\n"
+            "KADABRA while he was assisting research\n"
+            "into extrasensory powers."),
+        .pokemonScale = 256,
+        .pokemonOffset = 3,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_KadabraAlola,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 56) : MON_COORDS_SIZE(64, 56),
+        .frontPicYOffset = 5,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 12),
+            ANIMCMD_FRAME(1, 45),
+            ANIMCMD_FRAME(0, 15),
+        ),
+        .frontAnimId = ANIM_GROW_VIBRATE,
+        .backPic = gMonBackPic_KadabraAlola,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 48) : MON_COORDS_SIZE(64, 48),
+        .backPicYOffset = 8,
+        .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
+        .palette = gMonPalette_KadabraAlola,
+        .shinyPalette = gMonShinyPalette_KadabraAlola,
+        .iconSprite = gMonIcon_KadabraAlola,
+        .iconPalIndex = 2,
+#if P_GENDER_DIFFERENCES
+        .frontPicFemale = gMonFrontPic_KadabraAlolaF,
+        .frontPicSizeFemale = MON_COORDS_SIZE(64, 56),
+        .backPicFemale = gMonBackPic_KadabraAlolaF,
+        .backPicSizeFemale = MON_COORDS_SIZE(64, 48),
+#endif //P_GENDER_DIFFERENCES
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(1, 6, SHADOW_SIZE_L)
+        FOOTPRINT(Kadabra)
+        OVERWORLD(
+            sPicTable_KadabraAlola,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_NONE,
+            sAnimTable_Following,
+            gOverworldPalette_KadabraAlola,
+            gShinyOverworldPalette_KadabraAlola
+        )
+        OVERWORLD_FEMALE(
+            sPicTable_KadabraAlolaF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_NONE,
+            sAnimTable_Following
+        )
+        .isAlolanForm = TRUE,
+        .levelUpLearnset = sKadabraAlolaLevelUpLearnset,
+        .teachableLearnset = sKadabraTeachableLearnset,
+        .formSpeciesIdTable = sKadabraFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_ALAKAZAM_ALOLA},
+                                {EVO_ITEM, ITEM_BERSERK_GENE, SPECIES_ALAKAZAM_ALOLA}),
+    },
+
+    [SPECIES_ALAKAZAM_ALOLA] =
+    {
+        .baseHP        = 55,
+        .baseAttack    = 50,
+        .baseDefense   = 45,
+        .baseSpeed     = 120,
+        .baseSpAttack  = 135,
+        .baseSpDefense = ALAKAZAM_SP_DEF,
+        .types = MON_TYPES(TYPE_PSYCHIC, TYPE_ELECTRIC),
+        .catchRate = 50,
+    #if P_UPDATED_EXP_YIELDS >= GEN_8
+        .expYield = 250,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_7
+        .expYield = 225,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 221,
+    #else
+        .expYield = 186,
+    #endif
+        .evYield_SpAttack = 3,
+        .itemRare = ITEM_TWISTED_SPOON,
+        .genderRatio = PERCENT_FEMALE(25),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
+        .abilities = { ABILITY_SYNCHRONIZE, ABILITY_INNER_FOCUS, ABILITY_MAGIC_GUARD },
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("ALAKAZAM"),
+        .cryId = CRY_ALAKAZAM,
+        .natDexNum = NATIONAL_DEX_ALAKAZAM,
+        .categoryName = _("PSI"),
+        .height = 15,
+        .weight = 480,
+        .description = COMPOUND_STRING(
+            "While it has strong psychic abilities and\n"
+            "high intelligence, an ALAKAZAM's muscles\n"
+            "are very weak. It uses psychic power to\n"
+            "move its body."),
+        .pokemonScale = 256,
+        .pokemonOffset = 3,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_AlakazamAlola,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 56) : MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 4 : 2,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 9),
+            ANIMCMD_FRAME(1, 54),
+            ANIMCMD_FRAME(0, 15),
+        ),
+        .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_V_STRETCH : ANIM_GROW_VIBRATE,
+        .backPic = gMonBackPic_AlakazamAlola,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 56) : MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 5 : 6,
+        .backAnimId = BACK_ANIM_GROW_STUTTER,
+        .palette = gMonPalette_AlakazamAlola,
+        .shinyPalette = gMonShinyPalette_AlakazamAlola,
+        .iconSprite = gMonIcon_AlakazamAlola,
+        .iconPalIndex = 2,
+#if P_GENDER_DIFFERENCES
+        .frontPicFemale = gMonFrontPic_AlakazamAlolaF,
+        .frontPicSizeFemale = MON_COORDS_SIZE(64, 64),
+        .backPicFemale = gMonBackPic_AlakazamAlolaF,
+        .backPicSizeFemale = MON_COORDS_SIZE(64, 56),
+#endif //P_GENDER_DIFFERENCES
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-1, 9, SHADOW_SIZE_L)
+        FOOTPRINT(Alakazam)
+        OVERWORLD(
+            sPicTable_AlakazamAlola,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_NONE,
+            sAnimTable_Following,
+            gOverworldPalette_AlakazamAlola,
+            gShinyOverworldPalette_AlakazamAlola
+        )
+        OVERWORLD_FEMALE(
+            sPicTable_AlakazamAlolaF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_NONE,
+            sAnimTable_Following
+        )
+        .isAlolanForm = TRUE,
+        .levelUpLearnset = sAlakazamAlolaLevelUpLearnset,
+        .teachableLearnset = sAlakazamTeachableLearnset,
+        .formSpeciesIdTable = sAlakazamFormSpeciesIdTable,
+    },
+
 #if P_MEGA_EVOLUTIONS
     [SPECIES_ALAKAZAM_MEGA] =
     {
@@ -11070,11 +11437,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             ANIMCMD_FRAME(1, 25),
             ANIMCMD_FRAME(0, 5),
         ),
-        .frontAnimId = ANIM_H_VIBRATE,
+        .frontAnimId = ANIM_GLOW_PURPLE,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_Madame,
         .backPicSize = MON_COORDS_SIZE(64, 48),
-        .backPicYOffset = 8,
+        .backPicYOffset = 10,
         //.backAnimId = BACK_ANIM_NONE,
         .palette = gMonPalette_Madame,
         .shinyPalette = gMonShinyPalette_Madame,
@@ -13254,6 +13621,81 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_FAMILY_VOLTORB
 
 #if P_FAMILY_EXEGGCUTE
+    [SPECIES_EXEGG] =
+    {
+        .baseHP        = 60,
+        .baseAttack    = 30,
+        .baseDefense   = 15,
+        .baseSpeed     = 15,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 20,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_PSYCHIC),
+        .catchRate = 90,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 65 : 98,
+        .evYield_Defense = 1,
+        .itemRare = ITEM_PSYCHIC_SEED,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS),
+        .abilities = { ABILITY_CHLOROPHYLL, ABILITY_NONE, ABILITY_HARVEST },
+        .bodyColor = BODY_COLOR_PINK,
+        .speciesName = _("EXEGG"),
+        .cryId = CRY_EXEGGCUTE,
+        .natDexNum = NATIONAL_DEX_EXEGG,
+        .categoryName = _("EGG"),
+        .height = 4,
+        .weight = 25,
+        .description = COMPOUND_STRING(
+            "During certain seasonal blooms, VENUSAUR\n"
+            "releases clusters of spore-seeds infused\n"
+            "with psychic energy. These seeds once\n"
+            "together will form an EXEGGCUTE cluster."),
+        .pokemonScale = 489,
+        .pokemonOffset = -4,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Exegg,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 56) : MON_COORDS_SIZE(56, 40),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 14 : 12,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = ANIM_H_SLIDE_SLOW,
+        .backPic = gMonBackPic_Exegg,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 40) : MON_COORDS_SIZE(64, 32),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 18 : 18,
+        .backAnimId = BACK_ANIM_H_SLIDE,
+        .palette = gMonPalette_Exegg,
+        .shinyPalette = gMonShinyPalette_Exegg,
+        .iconSprite = gMonIcon_Exegg,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
+        SHADOW(0, -5, SHADOW_SIZE_L)
+        FOOTPRINT(Exeggcute)
+        OVERWORLD(
+            sPicTable_Exegg,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_SPOT,
+            sAnimTable_Following,
+            gOverworldPalette_Exegg,
+            gShinyOverworldPalette_Exegg
+        )
+        .levelUpLearnset = sExeggcuteLevelUpLearnset,
+        .teachableLearnset = sExeggcuteTeachableLearnset,
+        .eggMoveLearnset = sExeggcuteEggMoveLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_EXEGGCUTE, CONDITIONS({IF_MIN_FRIENDSHIP, FRIENDSHIP_EVO_THRESHOLD})}),
+    },
     [SPECIES_EXEGGCUTE] =
     {
         .baseHP        = 60,
@@ -13326,7 +13768,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sExeggcuteLevelUpLearnset,
         .teachableLearnset = sExeggcuteTeachableLearnset,
-        .eggMoveLearnset = sExeggcuteEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_EXEGGUTOR},
                                 {EVO_NONE, 0, SPECIES_EXEGGUTOR_ALOLA}),
     },
@@ -13973,7 +14414,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .backPic = gMonBackPic_Ohmega,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 12,
-        .backAnimId = BACK_ANIM_V_SHAKE,
+        .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
         .palette = gMonPalette_Ohmega,
         .shinyPalette = gMonShinyPalette_Ohmega,
         .iconSprite = gMonIcon_Ohmega,
@@ -15995,7 +16436,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formSpeciesIdTable = sKangaskhanFormSpeciesIdTable,
         .formChangeTable = sKangaskhanFormChangeTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_KANGASKHAN_CHILDLESS, CONDITIONS({IF_MIN_OVERWORLD_STEPS, 1000})},
-                                {EVO_SPLIT_FROM_EVO, SPECIES_KANGASKHAN_CHILDLESS, SPECIES_KANGASKID}),
+                                {EVO_SPLIT_FROM_EVO, SPECIES_KANGASKHAN, SPECIES_KANGASKID}),
     },
     [SPECIES_KANGASKHAN_CHILDLESS] =
     {

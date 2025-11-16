@@ -1908,8 +1908,8 @@ static bool8 Mining_LoadBgGraphics(void)
                     for (j = 0; j<32; j++)
                         OverwriteTileDataInTilemapBuffer(0, i, j, tilemapBuf, 2);
                 }
-                DecompressDataWithHeaderWram(gStressLevelAndTerrainTilemap, sMiningUiState->sBg2TilemapBuffer);
-                DecompressDataWithHeaderWram(sUiTilemap, sMiningUiState->sBg3TilemapBuffer);
+                LZDecompressWram(gStressLevelAndTerrainTilemap, sMiningUiState->sBg2TilemapBuffer);
+                LZDecompressWram(sUiTilemap, sMiningUiState->sBg3TilemapBuffer);
                 sMiningUiState->loadGameState++;
             }
             break;

@@ -57,10 +57,12 @@ FallarborTown_PokemonCenter_1F_Movement_LanetteExitNorth:
 	walk_right
 	walk_down
 	walk_down
+	walk_down
 	walk_left
 	walk_left
 	walk_left
 	walk_left
+	walk_down
 	walk_down
 	walk_down
 	walk_down
@@ -71,9 +73,11 @@ FallarborTown_PokemonCenter_1F_Movement_LanetteExitNorth:
 FallarborTown_PokemonCenter_1F_Movement_LanetteExitWest:
 	walk_down
 	walk_down
+	walk_down
 	walk_left
 	walk_left
 	walk_left
+	walk_down
 	walk_down
 	walk_down
 	walk_down

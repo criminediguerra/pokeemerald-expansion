@@ -1664,9 +1664,14 @@
 #define SPECIES_KANGASKHAN_CHILDLESS                    1548
 #define SPECIES_KANGASKHAN_MALE                         1549
 #define SPECIES_KANGASKID                               1550
+#define SPECIES_ABRA_ALOLA                              1551
+#define SPECIES_KADABRA_ALOLA                           1552
+#define SPECIES_ALAKAZAM_ALOLA                          1553
+#define SPECIES_VENUSTOR                                1554
+#define SPECIES_EXEGG                                   1555
 
 
-#define SPECIES_EGG                                     (SPECIES_KANGASKID + 1)
+#define SPECIES_EGG                                     (SPECIES_EXEGG + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 
