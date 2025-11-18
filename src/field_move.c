@@ -158,6 +158,14 @@ const struct FieldMoveInfo gFieldMoveInfo[FIELD_MOVES_COUNT] =
         .partyMsgID = PARTY_MSG_CANT_USE_HERE,
     },
 
+    [FIELD_MOVE_WHIRLPOOL] =
+    {
+        .fieldMoveFunc = SetUpFieldMove_Whirlpool,
+        .isUnlockedFunc = IsFieldMoveUnlocked_Dive,
+        .moveID = MOVE_WHIRLPOOL,
+        .partyMsgID = PARTY_MSG_CANT_USE_HERE,
+    },
+
     [FIELD_MOVE_TELEPORT] =
     {
         .fieldMoveFunc = SetUpFieldMove_Teleport,

@@ -96,7 +96,7 @@ static void Task_DoFieldMove_RunFunc(u8 taskId)
 
 // Called when Rock Smash is used from the party menu
 // For interacting with a smashable rock in the field, see EventScript_RockSmash
-bool8 SetUpFieldMove_Whirlpool(void)
+bool32 SetUpFieldMove_Whirlpool(void)
 {
      if (CheckObjectGraphicsInFrontOfPlayer(OBJ_EVENT_GFX_WHIRLPOOL) == TRUE)
     {

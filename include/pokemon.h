@@ -180,6 +180,7 @@ struct PokemonSubstruct2
 
 struct PokemonSubstruct3
 {
+    u8 pokerus;
     u16 metLocation;
     u16 metLevel:7;
     u16 metGame:4;
