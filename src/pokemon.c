@@ -2822,7 +2822,7 @@ u32 GetBoxMonData3(struct BoxPokemon *boxMon, s32 field, u8 *data)
             retVal = IsEggOrBadEgg(boxMon);
             break;
         case MON_DATA_ABILITY_NUM:
-            retVal = GetSubstruct3(boxMon)->abilityNum;
+            retVal = GetSubstruct0(boxMon)->abilityNum;
             break;
         case MON_DATA_COOL_RIBBON:
             retVal = GetSubstruct3(boxMon)->coolRibbon;
@@ -2982,10 +2982,10 @@ u32 GetBoxMonData3(struct BoxPokemon *boxMon, s32 field, u8 *data)
             retVal = GetSubstruct3(boxMon)->isShadow;
             break;
         case MON_DATA_DYNAMAX_LEVEL:
-            retVal = GetSubstruct3(boxMon)->dynamaxLevel;
+            retVal = GetSubstruct0(boxMon)->dynamaxLevel;
             break;
         case MON_DATA_GIGANTAMAX_FACTOR:
-            retVal = GetSubstruct3(boxMon)->gigantamaxFactor;
+            retVal = GetSubstruct0(boxMon)->gigantamaxFactor;
             break;
         case MON_DATA_TERA_TYPE:
             {
@@ -3332,7 +3332,7 @@ void SetBoxMonData(struct BoxPokemon *boxMon, s32 field, const void *dataArg)
             SET8(boxMon->isEgg);
             break;
         case MON_DATA_ABILITY_NUM:
-            SET8(GetSubstruct3(boxMon)->abilityNum);
+            SET16(GetSubstruct0(boxMon)->abilityNum);
             break;
         case MON_DATA_COOL_RIBBON:
             SET8(GetSubstruct3(boxMon)->coolRibbon);
@@ -3423,10 +3423,10 @@ void SetBoxMonData(struct BoxPokemon *boxMon, s32 field, const void *dataArg)
             SET8(GetSubstruct3(boxMon)->isShadow);
             break;
         case MON_DATA_DYNAMAX_LEVEL:
-            SET8(GetSubstruct3(boxMon)->dynamaxLevel);
+            SET16(GetSubstruct0(boxMon)->dynamaxLevel);
             break;
         case MON_DATA_GIGANTAMAX_FACTOR:
-            SET8(GetSubstruct3(boxMon)->gigantamaxFactor);
+            SET16(GetSubstruct0(boxMon)->gigantamaxFactor);
             break;
         case MON_DATA_TERA_TYPE:
             SET8(GetSubstruct0(boxMon)->teraType);
