@@ -1,4 +1,5 @@
 #include "global.h"
+#include "decompress.h"
 #include "main.h"
 #include "text.h"
 #include "menu.h"
