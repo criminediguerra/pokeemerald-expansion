@@ -138,7 +138,7 @@ struct PokemonSubstruct0
     u8 friendship;          // [72-79]
     u16 pokeball:6;         // [80-85] 63 balls.
     u16 nickname12:8;       // [86-93] 12th character of nickname.
-    u32 abilityNum:2;       // [94-95]
+    u16 abilityNum:2;       // [94-95]
 };
 
 struct PokemonSubstruct1
