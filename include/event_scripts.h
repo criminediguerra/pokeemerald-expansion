@@ -436,6 +436,8 @@ extern const u8 GiddyText_LyingBackInTheGreenGrass[];
 extern const u8 GiddyText_SecretBasesAreSoWonderful[];
 
 // Mauville Old Man (storyteller)
+extern const u8 LittlerootTown_BrendansHouse_2F_EventScript_PC[];
+extern const u8 LittlerootTown_MaysHouse_2F_EventScript_PC[];
 extern const u8 MauvilleCity_PokemonCenter_1F_Text_SavedGameTitle[];
 extern const u8 MauvilleCity_PokemonCenter_1F_Text_SavedGameAction[];
 extern const u8 MauvilleCity_PokemonCenter_1F_Text_SavedGameStory[];
@@ -573,6 +575,7 @@ extern const u8 EventScript_UseWaterfall[];
 extern const u8 EventScript_CannotUseWaterfall[];
 extern const u8 EventScript_UseDive[];
 extern const u8 EventScript_UseDiveUnderwater[];
+extern const u8 EventScript_UseRockClimb[];
 extern const u8 EventScript_FallDownHole[];
 extern const u8 EventScript_FieldPoison[];
 extern const u8 EventScript_EggHatch[];

@@ -10,7 +10,7 @@ static void AnimLightning(struct Sprite *);
 static void AnimLightning_Step(struct Sprite *);
 static void AnimUnusedSpinningFist(struct Sprite *);
 static void AnimUnusedSpinningFist_Step(struct Sprite *);
-static void AnimUnusedCirclingShock(struct Sprite *);
+static void AnimCirclingElectricShock(struct Sprite *);
 static void AnimZapCannonSpark_Step(struct Sprite *);
 static void AnimThunderboltOrb(struct Sprite *);
 static void AnimThunderboltOrb_Step(struct Sprite *);
@@ -83,7 +83,9 @@ static const struct SpriteTemplate sUnusedSpinningFistSpriteTemplate =
     .callback = AnimUnusedSpinningFist,
 };
 
-static const union AnimCmd sAnim_UnusedCirclingShock[] =
+// Previously an unused function named sAnim_CirclingElectricShock
+// Now used for Tera Blast Electric
+static const union AnimCmd sAnim_CirclingElectricShock[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(16, 5),
@@ -94,21 +96,24 @@ static const union AnimCmd sAnim_UnusedCirclingShock[] =
     ANIMCMD_JUMP(0),
 };
 
-static const union AnimCmd *const sAnims_UnusedCirclingShock[] =
+// Previously an unused function named sAnims_UnusedCirclingShock
+// Now used for Tera Blast Electric
+const union AnimCmd *const sAnims_CirclingElectricShock[] =
 {
-    sAnim_UnusedCirclingShock,
+    sAnim_CirclingElectricShock,
 };
 
-// Unused
-static const struct SpriteTemplate sUnusedCirclingShockSpriteTemplate =
+// Previously named sUnusedCirclingShockSpriteTemplate
+// Still unused, but renamed for consistency
+static const struct SpriteTemplate sCirclingElectricShockSpriteTemplate =
 {
     .tileTag = ANIM_TAG_SHOCK,
     .paletteTag = ANIM_TAG_SHOCK,
     .oam = &gOamData_AffineOff_ObjNormal_32x32,
-    .anims = sAnims_UnusedCirclingShock,
+    .anims = sAnims_CirclingElectricShock,
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimUnusedCirclingShock,
+    .callback = AnimCirclingElectricShock,
 };
 
 const struct SpriteTemplate gSparkElectricitySpriteTemplate =
@@ -343,6 +348,19 @@ static const union AffineAnimCmd sAffineAnim_GrowingElectricOrb_2[] =
     AFFINEANIMCMD_END,
 };
 
+static const union AffineAnimCmd sAffineAnim_GrowingElectricOrb_3[] =
+{
+    AFFINEANIMCMD_FRAME(0x10, 0x10, 0, 0),
+    AFFINEANIMCMD_FRAME(0x4, 0x4, 0, 60),
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 0, 0),
+    AFFINEANIMCMD_LOOP(0),
+    AFFINEANIMCMD_FRAME(0xFFFC, 0xFFFC, 0, 5),
+    AFFINEANIMCMD_FRAME(0x4, 0x4, 0, 5),
+    AFFINEANIMCMD_LOOP(10),
+    AFFINEANIMCMD_FRAME(-4, -4, 0, 60),
+    AFFINEANIMCMD_END,
+};
+
 static const union AffineAnimCmd sAffineAnim_GrowingElectricOrb_4[] =
 {
     AFFINEANIMCMD_FRAME(5, 5, 0, 0),
@@ -368,6 +386,11 @@ const union AffineAnimCmd *const gAffineAnims_GrowingElectricOrb2[] =
     sAffineAnim_GrowingElectricOrb_4,
 };
 
+const union AffineAnimCmd *const gAffineAnims_GrowingElectricOrb3[] =
+{
+    sAffineAnim_GrowingElectricOrb_3,
+};
+
 const struct SpriteTemplate gGrowingChargeOrbSpriteTemplate =
 {
     .tileTag = ANIM_TAG_CIRCLE_OF_LIGHT,
@@ -388,6 +411,18 @@ const struct SpriteTemplate gGrowingChargeOrb2SpriteTemplate =
     .anims = gDummySpriteAnimTable,
     .images = NULL,
     .affineAnims = gAffineAnims_GrowingElectricOrb2,
+    .callback = AnimGrowingChargeOrb,
+};
+
+// For Dynamax Cannon - orb gets smaller at the end
+const struct SpriteTemplate gGrowingChargeOrb3SpriteTemplate =
+{
+    .tileTag = ANIM_TAG_CIRCLE_OF_LIGHT,
+    .paletteTag = ANIM_TAG_CIRCLE_OF_LIGHT,
+    .oam = &gOamData_AffineNormal_ObjBlend_64x64,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gAffineAnims_GrowingElectricOrb3,
     .callback = AnimGrowingChargeOrb,
 };
 
@@ -634,7 +669,7 @@ static void AnimUnusedSpinningFist_Step(struct Sprite *sprite)
         DestroySpriteAndMatrix(sprite);
 }
 
-static void AnimUnusedCirclingShock(struct Sprite *sprite)
+static void AnimCirclingElectricShock(struct Sprite *sprite)
 {
     sprite->x = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2);
     sprite->y = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET);

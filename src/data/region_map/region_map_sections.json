@@ -1513,11 +1513,7 @@
     },
     {
       "id": "MAPSEC_SPECIAL_AREA",
-      "name": "SPECIAL AREA",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
+      "name": "SPECIAL AREA"
     },
     {
       "id": "MAPSEC_AQUA_HIDEOUT",
@@ -1569,27 +1565,15 @@
     },
     {
       "id": "MAPSEC_MARINE_CAVE",
-      "name": "MARINE CAVE",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
+      "name": "MARINE CAVE"
     },
     {
       "id": "MAPSEC_UNDERWATER_MARINE_CAVE",
-      "name": "UNDERWATER",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
+      "name": "UNDERWATER"
     },
     {
       "id": "MAPSEC_TERRA_CAVE",
-      "name": "TERRA CAVE",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
+      "name": "TERRA CAVE"
     },
     {
       "id": "MAPSEC_UNDERWATER_105",

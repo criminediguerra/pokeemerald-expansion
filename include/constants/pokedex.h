@@ -3,7 +3,8 @@
 
 // National Pokédex order
 // These constants are NOT disabled by P_GEN_X_POKEMON to keep pokedex_orders.h clean.
-enum {
+enum NationalDexOrder
+{
     NATIONAL_DEX_NONE,
     // Kanto
     NATIONAL_DEX_BULBASAUR,
@@ -1085,7 +1086,8 @@ enum {
 #define POKEMON_SLOTS_NUMBER (NATIONAL_DEX_COUNT + 1)
 
 // Hoenn Pokédex order
-enum {
+enum HoennDexOrder
+{
     HOENN_DEX_NONE,
 // Kanto
     HOENN_DEX_BULBASAUR,
@@ -1185,6 +1187,7 @@ enum {
     HOENN_DEX_SLOWKING_GALAR,
     HOENN_DEX_MAGNEMITE,
     HOENN_DEX_MAGNETON,
+    HOENN_DEX_MAGNEZONE,
     HOENN_DEX_FARFETCHD,
     HOENN_DEX_MADAME,
     HOENN_DEX_SIRFETCHD,
@@ -1395,6 +1398,7 @@ enum {
     HOENN_DEX_PILOSWINE,
     HOENN_DEX_MAMOSWINE,
     HOENN_DEX_CORSOLA,
+    HOENN_DEX_CURSOLA,
     HOENN_DEX_REMORAID,
     HOENN_DEX_OCTILLERY,
     HOENN_DEX_DELIBIRD,

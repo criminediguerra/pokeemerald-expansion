@@ -32,7 +32,7 @@ struct Pokenav_MainMenu
 // Needed to match LoadLeftHeaderGfxForSubMenu.
 struct CompressedSpriteSheetNoSize
 {
-    const u32 *data;  // LZ77 compressed palette data
+    const u32 *data;  // Compressed sprite data
     u32 tag;
 };
 
@@ -685,7 +685,7 @@ static void LoadLeftHeaderGfxForMenu(u32 menuGfxId)
     tag = sMenuLeftHeaderSpriteSheets[menuGfxId].tag;
     size = GetDecompressedDataSize(sMenuLeftHeaderSpriteSheets[menuGfxId].data);
     LoadPalette(&gPokenavLeftHeader_Pal[tag * 16], OBJ_PLTT_ID(IndexOfSpritePaletteTag(1)), PLTT_SIZE_4BPP);
-    LZDecompressWram(sMenuLeftHeaderSpriteSheets[menuGfxId].data, menu->leftHeaderMenuBuffer);
+    DecompressDataWithHeaderVram(sMenuLeftHeaderSpriteSheets[menuGfxId].data, menu->leftHeaderMenuBuffer);
     RequestDma3Copy(menu->leftHeaderMenuBuffer, (void *)OBJ_VRAM0 + (GetSpriteTileStartByTag(2) * 32), size, 1);
     menu->leftHeaderSprites[1]->oam.tileNum = GetSpriteTileStartByTag(2) + sMenuLeftHeaderSpriteSheets[menuGfxId].size;
 
@@ -707,7 +707,7 @@ static void LoadLeftHeaderGfxForSubMenu(u32 menuGfxId)
     tag = sPokenavSubMenuLeftHeaderSpriteSheets[menuGfxId].tag;
     size = GetDecompressedDataSize(sPokenavSubMenuLeftHeaderSpriteSheets[menuGfxId].data);
     LoadPalette(&gPokenavLeftHeader_Pal[tag * 16], OBJ_PLTT_ID(IndexOfSpritePaletteTag(2)), PLTT_SIZE_4BPP);
-    LZDecompressWram(sPokenavSubMenuLeftHeaderSpriteSheets[menuGfxId].data, menu->leftHeaderSubMenuBuffer);
+    DecompressDataWithHeaderVram(sPokenavSubMenuLeftHeaderSpriteSheets[menuGfxId].data, menu->leftHeaderSubMenuBuffer);
     RequestDma3Copy(menu->leftHeaderSubMenuBuffer, (void *)OBJ_VRAM0 + 0x800 + (GetSpriteTileStartByTag(2) * 32), size, 1);
 }
 

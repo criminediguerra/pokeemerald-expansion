@@ -27,6 +27,7 @@
 #include "overworld.h"
 #include "walda_phrase.h"
 #include "main.h"
+#include "decompress.h"
 #include "constants/event_objects.h"
 #include "constants/rgb.h"
 
@@ -1389,45 +1390,13 @@ static void NamingScreen_NoIcon(void)
 
 }
 
-/*
- * @note:
- * If you were using the player naming screen somewhere else besides the birch
- * speech, uncomment the codes in the function below.
- * This will make this function to use the monPersonality param in DoNamingScreen as
- * the specified outfit id to be used to show the correct obj for the player.
- * 
- * So, for example, if you want it to show the player's current outfit instead of
- * DEFAULT_OUTFIT, change this:
- * DoNamingScreen(NAMING_SCREEN_PLAYER,
- *                gSaveBlock2Ptr->playerName,
- *                gSaveBlock2Ptr->playerGender,
- *                0, 
- *                0,
- *                CB2_NewGameBirchSpeech_ReturnFromNamingScreen);
- * To this:
- * DoNamingScreen(NAMING_SCREEN_PLAYER,
- *                gSaveBlock2Ptr->playerName,
- *                gSaveBlock2Ptr->playerGender,
- *                0, 
- *                gSaveBlock2Ptr->currOutfitId,
- *                CB2_NewGameBirchSpeech_ReturnFromNamingScreen);
- * 
- * You can specify a specific outfit too, like so:
- * DoNamingScreen(NAMING_SCREEN_PLAYER,
- *                gSaveBlock2Ptr->playerName,
- *                gSaveBlock2Ptr->playerGender,
- *                0, 
- *                OUTFIT_UNUSUAL_RED,
- *                CB2_NewGameBirchSpeech_ReturnFromNamingScreen);
- */
 static void NamingScreen_CreatePlayerIcon(void)
 {
-    u16 gfxId = GetPlayerAvatarGraphicsIdByOutfitStateIdAndGender(DEFAULT_OUTFIT, PLAYER_AVATAR_STATE_NORMAL, gSaveBlock2Ptr->playerGender);
+    u16 rivalGfxId;
     u8 spriteId;
-    // u32 outfit = sNamingScreen->monPersonality;
 
-    // gfxId = GetPlayerAvatarGraphicsIdByOutfitStateIdAndGender(outfit, PLAYER_AVATAR_STATE_NORMAL, gSaveBlock2Ptr->playerGender);
-    spriteId = CreateObjectGraphicsSprite(gfxId, SpriteCallbackDummy, 56, 37, 0);
+    rivalGfxId = GetRivalAvatarGraphicsIdByStateIdAndGender(PLAYER_AVATAR_STATE_NORMAL, sNamingScreen->monSpecies);
+    spriteId = CreateObjectGraphicsSprite(rivalGfxId, SpriteCallbackDummy, 56, 37, 0);
     gSprites[spriteId].oam.priority = 3;
     StartSpriteAnim(&gSprites[spriteId], ANIM_STD_GO_SOUTH);
 }
@@ -1918,7 +1887,7 @@ static void SaveInputText(void)
 
 static void LoadGfx(void)
 {
-    LZ77UnCompWram(gNamingScreenMenu_Gfx, sNamingScreen->tileBuffer);
+    DecompressDataWithHeaderWram(gNamingScreenMenu_Gfx, sNamingScreen->tileBuffer);
     LoadBgTiles(1, sNamingScreen->tileBuffer, sizeof(sNamingScreen->tileBuffer), 0);
     LoadBgTiles(2, sNamingScreen->tileBuffer, sizeof(sNamingScreen->tileBuffer), 0);
     LoadBgTiles(3, sNamingScreen->tileBuffer, sizeof(sNamingScreen->tileBuffer), 0);
@@ -2651,5 +2620,3 @@ static const struct SpritePalette sSpritePalettes[] =
     {gNamingScreenMenu_Pal[4], PALTAG_OK_BUTTON},
     {}
 };
-
-

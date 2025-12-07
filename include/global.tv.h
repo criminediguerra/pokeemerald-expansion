@@ -506,7 +506,7 @@ struct GabbyAndTyData
     /*2BA6*/ u16 mon2;
     /*2BA8*/ u16 lastMove;
     /*2BAA*/ u16 quote[1];
-    /*2BAC*/ u8 mapnum;
+    /*2BAC*/ mapsec_u16_t mapnum;
     /*2BAD*/ u8 battleNum;
     /*2BAE*/ u8 battleTookMoreThanOneTurn:1;
              u8 playerLostAMon:1;

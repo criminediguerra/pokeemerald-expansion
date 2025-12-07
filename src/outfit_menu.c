@@ -462,8 +462,8 @@ static bool32 SetupOutfitMenu_Graphics(void)
     case 1:
         if (FreeTempTileDataBuffersIfPossible() != TRUE)
         {
-            LZDecompressWram(sTilemap, sOutfitMenu->tilemapBuffers[0]);
-            LZDecompressWram(sScrollingBG_Tilemap, sOutfitMenu->tilemapBuffers[1]);
+            DecompressDataWithHeaderVram(sTilemap, sOutfitMenu->tilemapBuffers[0]);
+            DecompressDataWithHeaderVram(sScrollingBG_Tilemap, sOutfitMenu->tilemapBuffers[1]);
             sOutfitMenu->gfxState++;
         }
         break;
@@ -648,7 +648,7 @@ static void ForEachCB_PopulateOutfitOverworlds(u32 idx, u32 col, u32 row)
     if (i >= OUTFIT_COUNT || idx >= sOutfitMenu->listCount)
         return;
 
-    gfx = GetPlayerAvatarGraphicsIdByOutfitStateIdAndGender(i, PLAYER_AVATAR_STATE_NORMAL, gSaveBlock2Ptr->playerGender);
+    gfx = GetRivalAvatarGraphicsIdByStateIdAndGender(PLAYER_AVATAR_STATE_NORMAL, gSaveBlock2Ptr->playerGender);
     x = ((col % GRID_COLS) < ARRAY_COUNT(sGridPosX)) ? sGridPosX[col] : sGridPosX[0];
     y = ((row % GRID_ROWS) < ARRAY_COUNT(sGridPosY)) ? sGridPosY[row] : sGridPosY[0];
 
@@ -1027,8 +1027,7 @@ void SetCurrentOutfitGfxIntoVar(struct ScriptContext *ctx)
 {
     u32 varId = ScriptReadHalfword(ctx);
     u32 state = ScriptReadHalfword(ctx);
-    u32 gfxId = GetPlayerAvatarGraphicsIdByOutfitStateIdAndGender(
-        gSaveBlock2Ptr->currOutfitId, state, gSaveBlock2Ptr->playerGender);
+    u32 gfxId = GetRivalAvatarGraphicsIdByStateIdAndGender(state, gSaveBlock2Ptr->playerGender);
 
     VarSet(varId, gfxId);
 }

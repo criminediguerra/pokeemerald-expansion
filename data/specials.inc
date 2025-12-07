@@ -565,4 +565,4 @@ gSpecials::
 	def_special GetCodeFeedback
 	def_special ObjectEventInteractionGetApricornTreeData
 	def_special ObjectEventInteractionPickApricornTree
-    def_special StartMining
+	def_special SetHiddenNature
