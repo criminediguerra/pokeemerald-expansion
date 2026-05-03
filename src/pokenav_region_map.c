@@ -44,7 +44,7 @@ struct Pokenav_RegionMapGfx
 
 struct CityMapEntry
 {
-    mapsec_u16_t mapSecId;
+    u16 mapSecId;
     u16 index;
     const u32 *tilemap;
 };
@@ -66,8 +66,8 @@ static bool32 IsDma3ManagerBusyWithBgCopy_(struct Pokenav_RegionMapGfx *);
 static void ChangeBgYForZoom(bool32);
 static bool32 IsChangeBgYForZoomActive(void);
 static void CreateCityZoomTextSprites(void);
-static void DrawCityMap(struct Pokenav_RegionMapGfx *, mapsec_s32_t, int);
-static void PrintLandmarkNames(struct Pokenav_RegionMapGfx *, mapsec_s32_t, int);
+static void DrawCityMap(struct Pokenav_RegionMapGfx *, u16, int);
+static void PrintLandmarkNames(struct Pokenav_RegionMapGfx *, u16, int);
 static void SetCityZoomTextInvisibility(bool32);
 static void Task_ChangeBgYForZoom(u8 taskId);
 static void UpdateCityZoomTextPosition(void);
@@ -82,7 +82,7 @@ extern const u16 gRegionMapCityZoomTiles_Pal[];
 extern const u32 gRegionMapCityZoomText_Gfx[];
 
 static const u16 sMapSecInfoWindow_Pal[] = INCBIN_U16("graphics/pokenav/region_map/info_window.gbapal");
-static const u32 sRegionMapCityZoomTiles_Gfx[] = INCBIN_U32("graphics/pokenav/region_map/zoom_tiles.4bpp.smol");
+static const u32 sRegionMapCityZoomTiles_Gfx[] = INCBIN_U32("graphics/pokenav/region_map/zoom_tiles.4bpp.lz");
 
 #include "data/region_map/city_map_tilemaps.h"
 
@@ -502,7 +502,6 @@ static u32 LoopedTask_TreatAsPokeNavFlyMap(s32 taskState)
     case 0:
         PlaySE(SE_SELECT);
         struct RegionMap* regionMap = GetSubstructPtr(POKENAV_SUBSTRUCT_REGION_MAP);
-        SetFlyDestination(regionMap);
         gSkipShowMonAnim = TRUE;
         ReturnToFieldFromFlyMapSelect();
 
@@ -657,14 +656,14 @@ static u32 LoopedTask_DecompressCityMaps(s32 taskState)
     struct Pokenav_RegionMapGfx *state = GetSubstructPtr(POKENAV_SUBSTRUCT_REGION_MAP_ZOOM);
     if (taskState < NUM_CITY_MAPS)
     {
-        DecompressDataWithHeaderWram(sPokenavCityMaps[taskState].tilemap, state->cityZoomPics[taskState]);
+        LZ77UnCompWram(sPokenavCityMaps[taskState].tilemap, state->cityZoomPics[taskState]);
         return LT_INC_AND_CONTINUE;
     }
 
     return LT_FINISH;
 }
 
-static void DrawCityMap(struct Pokenav_RegionMapGfx *state, mapsec_s32_t mapSecId, int pos)
+static void DrawCityMap(struct Pokenav_RegionMapGfx *state, u16 mapSecId, int pos)
 {
     int i;
     for (i = 0; i < NUM_CITY_MAPS && (sPokenavCityMaps[i].mapSecId != mapSecId || sPokenavCityMaps[i].index != pos); i++)
@@ -677,7 +676,7 @@ static void DrawCityMap(struct Pokenav_RegionMapGfx *state, mapsec_s32_t mapSecI
     CopyToBgTilemapBufferRect(1, state->cityZoomPics[i], 18, 6, 10, 10);
 }
 
-static void PrintLandmarkNames(struct Pokenav_RegionMapGfx *state, mapsec_s32_t mapSecId, int pos)
+static void PrintLandmarkNames(struct Pokenav_RegionMapGfx *state, u16 mapSecId, int pos)
 {
     int i = 0;
     while (1)

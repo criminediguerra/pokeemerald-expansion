@@ -10,6 +10,7 @@
 #include "link.h"
 #include "link_rfu.h"
 #include "m4a.h"
+#include "main.h"
 #include "palette.h"
 #include "minigame_countdown.h"
 #include "random.h"
@@ -222,7 +223,7 @@ struct DodrioGame_ScoreResults
 
 struct DodrioGame
 {
-    /*0x0000*/ MainCallback exitCallback;
+    /*0x0000*/ void (*exitCallback)(void);
     /*0x0004*/ u8 ALIGNED(4) taskId;
     /*0x0008*/ u8 ALIGNED(4) playersReceived;
     /*0x000C*/ u8 ALIGNED(4) startState;
@@ -660,7 +661,7 @@ static void (*const sMemberFuncs[])(void) =
     [FUNC_WAIT_END_GAME]  = WaitEndGame_Member
 };
 
-void StartDodrioBerryPicking(u16 partyId, MainCallback exitCallback)
+void StartDodrioBerryPicking(u16 partyId, void (*exitCallback)(void))
 {
     sExitingGame = FALSE;
 
@@ -3097,7 +3098,6 @@ struct ReadyToStartPacket
 {
     u8 id;
     bool8 ALIGNED(4) ready;
-    u32 unused; // Put here, so that packet has the same size as gRfu.packet(12 bytes).
 };
 
 static void SendPacket_ReadyToStart(bool32 ready)
@@ -3302,7 +3302,6 @@ struct PickStatePacket
 {
     u8 id;
     u8 ALIGNED(4) pickState;
-    u32 unused; // Put here, so that packet has the same size as gRfu.packet(12 bytes).
 };
 
 static void SendPacket_PickState(u8 pickState)
@@ -3334,7 +3333,6 @@ struct ReadyToEndPacket
 {
     u8 id;
     bool32 ready;
-    u32 unused; // Put here, so that packet has the same size as gRfu.packet(12 bytes).
 };
 
 static void SendPacket_ReadyToEnd(bool32 ready)

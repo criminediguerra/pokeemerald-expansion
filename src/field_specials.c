@@ -19,16 +19,14 @@
 #include "field_weather.h"
 #include "graphics.h"
 #include "international_string_util.h"
-#include "item.h"
 #include "item_icon.h"
 #include "link.h"
-#include "list_menu.h"
 #include "load_save.h"
+#include "list_menu.h"
 #include "main.h"
+#include "mystery_gift.h"
 #include "match_call.h"
 #include "menu.h"
-#include "metatile_behavior.h"
-#include "mystery_gift.h"
 #include "overworld.h"
 #include "party_menu.h"
 #include "pokeblock.h"
@@ -61,6 +59,7 @@
 #include "constants/field_specials.h"
 #include "constants/items.h"
 #include "constants/heal_locations.h"
+#include "constants/map_types.h"
 #include "constants/mystery_gift.h"
 #include "constants/slot_machine.h"
 #include "constants/songs.h"
@@ -189,10 +188,13 @@ void Special_BeginCyclingRoadChallenge(void)
 
 u16 GetPlayerAvatarBike(void)
 {
-    if (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_ACRO_BIKE))
-        return 1;
-    if (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_MACH_BIKE))
-        return 2;
+    if (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_BIKE))
+    {
+        if (gSaveBlock2Ptr->playerBike != MACH_BIKE)
+            return 1;
+        else
+            return 2;
+    }
     return 0;
 }
 
@@ -533,7 +535,7 @@ void SpawnLinkPartnerObjectEvent(void)
     };
     u8 myLinkPlayerNumber;
     u8 playerFacingDirection;
-    u8 linkSpriteId;
+    u16 linkSpriteId;
     u8 i;
 
     myLinkPlayerNumber = GetMultiplayerId();
@@ -573,16 +575,14 @@ void SpawnLinkPartnerObjectEvent(void)
                     linkSpriteId = OBJ_EVENT_GFX_LINK_RS_MAY;
                 break;
             case VERSION_EMERALD:
-                if (gLinkPlayers[i].gender == 0)
-                    linkSpriteId = OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL;
-                else
-                    linkSpriteId = OBJ_EVENT_GFX_RIVAL_MAY_NORMAL;
-                break;
             default:
-                if (gLinkPlayers[i].gender == 0)
-                    linkSpriteId = OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL;
+            {
+                u8 outfit = gLinkPlayers[i].currOutfitId, gender = gLinkPlayers[i].gender;
+                if (outfit < OUTFIT_COUNT)
+                    linkSpriteId = GetLinkPlayerAvatarGraphicsIdByStateIdLinkIdAndGender(PLAYER_AVATAR_STATE_NORMAL, i, gender);
                 else
-                    linkSpriteId = OBJ_EVENT_GFX_RIVAL_MAY_NORMAL;
+                    linkSpriteId = (gender == 0) ? OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL : OBJ_EVENT_GFX_RIVAL_MAY_NORMAL;
+            }
                 break;
             }
             SpawnSpecialObjectEventParameterized(linkSpriteId, movementTypes[j], LOCALID_BERRY_BLENDER_PLAYER_END - i, coordOffsets[j][0] + x + MAP_OFFSET, coordOffsets[j][1] + y + MAP_OFFSET, 0);
@@ -596,37 +596,26 @@ void SpawnLinkPartnerObjectEvent(void)
 
 static void LoadLinkPartnerObjectEventSpritePalette(u16 graphicsId, u8 localEventId, u8 paletteNum)
 {
-    u8 adjustedPaletteNum;
-    // Note: This temp var is necessary; paletteNum += 6 doesn't match.
-    adjustedPaletteNum = paletteNum + 6;
-    if (graphicsId == OBJ_EVENT_GFX_LINK_RS_BRENDAN ||
-        graphicsId == OBJ_EVENT_GFX_LINK_RS_MAY ||
-        graphicsId == OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL ||
-        graphicsId == OBJ_EVENT_GFX_RIVAL_MAY_NORMAL)
-    {
-        u8 obj = GetObjectEventIdByLocalIdAndMap(localEventId, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup);
-        if (obj != OBJECT_EVENTS_COUNT)
-        {
-            u8 spriteId = gObjectEvents[obj].spriteId;
-            struct Sprite *sprite = &gSprites[spriteId];
-            sprite->oam.paletteNum = adjustedPaletteNum;
+    u32 i = 0;
+    u8 outfit = 0;
+    u8 gender = 0;
+    u8 adjustedPaletteNum = paletteNum + 6;
+    u8 obj = GetObjectEventIdByLocalIdAndMap(localEventId, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup);
+    u16 gfx = 0;
+    u8 spriteId = gObjectEvents[obj].spriteId;
+    struct Sprite *sprite = &gSprites[spriteId];
 
-            switch (graphicsId)
-            {
-            case OBJ_EVENT_GFX_LINK_RS_BRENDAN:
-                LoadPalette(gObjectEventPal_RubySapphireBrendan, OBJ_PLTT_ID(adjustedPaletteNum), PLTT_SIZE_4BPP);
-                break;
-            case OBJ_EVENT_GFX_LINK_RS_MAY:
-                LoadPalette(gObjectEventPal_RubySapphireMay, OBJ_PLTT_ID(adjustedPaletteNum), PLTT_SIZE_4BPP);
-                break;
-            case OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL:
-                LoadPalette(gObjectEventPal_Brendan, OBJ_PLTT_ID(adjustedPaletteNum), PLTT_SIZE_4BPP);
-                break;
-            case OBJ_EVENT_GFX_RIVAL_MAY_NORMAL:
-                LoadPalette(gObjectEventPal_May, OBJ_PLTT_ID(adjustedPaletteNum), PLTT_SIZE_4BPP);
-                break;
-            }
+    while (i < MAX_LINK_PLAYERS)
+    {
+        gender = gLinkPlayers[i].gender;
+        outfit = gLinkPlayers[i].currOutfitId;
+        gfx = GetPlayerAvatarGraphicsIdByOutfitStateIdAndGender(outfit, PLAYER_AVATAR_STATE_NORMAL, gender);
+        if (graphicsId == gfx && obj != OBJECT_EVENTS_COUNT)
+        {
+            sprite->oam.paletteNum = adjustedPaletteNum;
+            PatchObjectPalette(GetObjectEventGraphicsInfo(graphicsId)->paletteTag, adjustedPaletteNum);
         }
+        i++;
     }
 }
 
@@ -681,10 +670,10 @@ void MauvilleGymSetDefaultBarriers(void)
                 MapGridSetMetatileIdAt(x, y, METATILE_MauvilleGym_GreenBeamH2_On);
                 break;
             case METATILE_MauvilleGym_GreenBeamH3_Off:
-                MapGridSetMetatileIdAt(x, y, METATILE_MauvilleGym_GreenBeamH3_On | MAPGRID_IMPASSABLE);
+                MapGridSetMetatileIdAt(x, y, METATILE_MauvilleGym_GreenBeamH3_On | MAPGRID_COLLISION_MASK);
                 break;
             case METATILE_MauvilleGym_GreenBeamH4_Off:
-                MapGridSetMetatileIdAt(x, y, METATILE_MauvilleGym_GreenBeamH4_On | MAPGRID_IMPASSABLE);
+                MapGridSetMetatileIdAt(x, y, METATILE_MauvilleGym_GreenBeamH4_On | MAPGRID_COLLISION_MASK);
                 break;
             case METATILE_MauvilleGym_RedBeamH1_On:
                 MapGridSetMetatileIdAt(x, y, METATILE_MauvilleGym_RedBeamH1_Off);
@@ -705,37 +694,37 @@ void MauvilleGymSetDefaultBarriers(void)
                 MapGridSetMetatileIdAt(x, y, METATILE_MauvilleGym_RedBeamH2_On);
                 break;
             case METATILE_MauvilleGym_RedBeamH3_Off:
-                MapGridSetMetatileIdAt(x, y, METATILE_MauvilleGym_RedBeamH3_On | MAPGRID_IMPASSABLE);
+                MapGridSetMetatileIdAt(x, y, METATILE_MauvilleGym_RedBeamH3_On | MAPGRID_COLLISION_MASK);
                 break;
             case METATILE_MauvilleGym_RedBeamH4_Off:
-                MapGridSetMetatileIdAt(x, y, METATILE_MauvilleGym_RedBeamH4_On | MAPGRID_IMPASSABLE);
+                MapGridSetMetatileIdAt(x, y, METATILE_MauvilleGym_RedBeamH4_On | MAPGRID_COLLISION_MASK);
                 break;
             case METATILE_MauvilleGym_GreenBeamV1_On:
-                MapGridSetMetatileIdAt(x, y, METATILE_MauvilleGym_PoleBottom_On | MAPGRID_IMPASSABLE);
+                MapGridSetMetatileIdAt(x, y, METATILE_MauvilleGym_PoleBottom_On | MAPGRID_COLLISION_MASK);
                 break;
             case METATILE_MauvilleGym_GreenBeamV2_On:
                 MapGridSetMetatileIdAt(x, y, METATILE_MauvilleGym_FloorTile);
                 break;
             case METATILE_MauvilleGym_RedBeamV1_On:
-                MapGridSetMetatileIdAt(x, y, METATILE_MauvilleGym_PoleBottom_Off | MAPGRID_IMPASSABLE);
+                MapGridSetMetatileIdAt(x, y, METATILE_MauvilleGym_PoleBottom_Off | MAPGRID_COLLISION_MASK);
                 break;
             case METATILE_MauvilleGym_RedBeamV2_On:
                 MapGridSetMetatileIdAt(x, y, METATILE_MauvilleGym_FloorTile);
                 break;
             case METATILE_MauvilleGym_PoleBottom_On:
-                MapGridSetMetatileIdAt(x, y, METATILE_MauvilleGym_GreenBeamV1_On | MAPGRID_IMPASSABLE);
+                MapGridSetMetatileIdAt(x, y, METATILE_MauvilleGym_GreenBeamV1_On | MAPGRID_COLLISION_MASK);
                 break;
             case METATILE_MauvilleGym_FloorTile:
                 if (MapGridGetMetatileIdAt(x, y - 1) == METATILE_MauvilleGym_GreenBeamV1_On)
-                    MapGridSetMetatileIdAt(x, y, METATILE_MauvilleGym_GreenBeamV2_On | MAPGRID_IMPASSABLE);
+                    MapGridSetMetatileIdAt(x, y, METATILE_MauvilleGym_GreenBeamV2_On | MAPGRID_COLLISION_MASK);
                 else
-                    MapGridSetMetatileIdAt(x, y, METATILE_MauvilleGym_RedBeamV2_On | MAPGRID_IMPASSABLE);
+                    MapGridSetMetatileIdAt(x, y, METATILE_MauvilleGym_RedBeamV2_On | MAPGRID_COLLISION_MASK);
                 break;
             case METATILE_MauvilleGym_PoleBottom_Off:
-                MapGridSetMetatileIdAt(x, y, METATILE_MauvilleGym_RedBeamV1_On | MAPGRID_IMPASSABLE);
+                MapGridSetMetatileIdAt(x, y, METATILE_MauvilleGym_RedBeamV1_On | MAPGRID_COLLISION_MASK);
                 break;
             case METATILE_MauvilleGym_PoleTop_Off:
-                MapGridSetMetatileIdAt(x, y, METATILE_MauvilleGym_PoleTop_On | MAPGRID_IMPASSABLE);
+                MapGridSetMetatileIdAt(x, y, METATILE_MauvilleGym_PoleTop_On | MAPGRID_COLLISION_MASK);
                 break;
             case METATILE_MauvilleGym_PoleTop_On:
                 MapGridSetMetatileIdAt(x, y, METATILE_MauvilleGym_PoleTop_Off);
@@ -786,10 +775,10 @@ void MauvilleGymDeactivatePuzzle(void)
                 MapGridSetMetatileIdAt(x, y, METATILE_MauvilleGym_RedBeamH4_Off);
                 break;
             case METATILE_MauvilleGym_GreenBeamV1_On:
-                MapGridSetMetatileIdAt(x, y, METATILE_MauvilleGym_PoleBottom_On | MAPGRID_IMPASSABLE);
+                MapGridSetMetatileIdAt(x, y, METATILE_MauvilleGym_PoleBottom_On | MAPGRID_COLLISION_MASK);
                 break;
             case METATILE_MauvilleGym_RedBeamV1_On:
-                MapGridSetMetatileIdAt(x, y, METATILE_MauvilleGym_PoleBottom_Off | MAPGRID_IMPASSABLE);
+                MapGridSetMetatileIdAt(x, y, METATILE_MauvilleGym_PoleBottom_Off | MAPGRID_COLLISION_MASK);
                 break;
             case METATILE_MauvilleGym_GreenBeamV2_On:
             case METATILE_MauvilleGym_RedBeamV2_On:
@@ -898,8 +887,8 @@ static void PetalburgGymSetDoorMetatiles(u8 roomNumber, u16 metatileId)
     }
     for (i = 0; i < nDoors; i++)
     {
-        MapGridSetMetatileIdAt(doorCoordsX[i] + MAP_OFFSET, doorCoordsY[i] + MAP_OFFSET, metatileId | MAPGRID_IMPASSABLE);
-        MapGridSetMetatileIdAt(doorCoordsX[i] + MAP_OFFSET, doorCoordsY[i] + MAP_OFFSET + 1, (metatileId + METATILE_ROW_WIDTH) | MAPGRID_IMPASSABLE);
+        MapGridSetMetatileIdAt(doorCoordsX[i] + MAP_OFFSET, doorCoordsY[i] + MAP_OFFSET, metatileId | MAPGRID_COLLISION_MASK);
+        MapGridSetMetatileIdAt(doorCoordsX[i] + MAP_OFFSET, doorCoordsY[i] + MAP_OFFSET + 1, (metatileId + METATILE_ROW_WIDTH) | MAPGRID_COLLISION_MASK);
     }
     DrawWholeMapView();
 }
@@ -985,7 +974,7 @@ void FieldShowRegionMap(void)
 
 static bool32 IsBuildingPCTile(u32 tileId)
 {
-    return (MetatileBehavior_IsPC(UNPACK_BEHAVIOR(GetMetatileAttributesById(tileId))));
+    return gMapHeader.mapLayout->primaryTileset == &gTileset_Building && (tileId == METATILE_Building_PC_On || tileId == METATILE_Building_PC_Off);
 }
 
 static bool32 IsPlayerHousePCTile(u32 tileId)
@@ -1099,7 +1088,7 @@ static void PCTurnOnEffect_SetMetatile(s16 isScreenOn, s8 dx, s8 dy)
         else if (gSpecialVar_0x8004 == PC_LOCATION_MAYS_HOUSE)
             metatileId = METATILE_BrendansMaysHouse_MayPC_On;
     }
-    MapGridSetMetatileIdAt(gSaveBlock1Ptr->pos.x + dx + MAP_OFFSET, gSaveBlock1Ptr->pos.y + dy + MAP_OFFSET, metatileId | MAPGRID_IMPASSABLE);
+    MapGridSetMetatileIdAt(gSaveBlock1Ptr->pos.x + dx + MAP_OFFSET, gSaveBlock1Ptr->pos.y + dy + MAP_OFFSET, metatileId | MAPGRID_COLLISION_MASK);
 }
 
 // For this special, gSpecialVar_0x8004 is expected to be some PC_LOCATION_* value.
@@ -1142,7 +1131,7 @@ static void PCTurnOffEffect(void)
     else if (gSpecialVar_0x8004 == PC_LOCATION_MAYS_HOUSE)
         metatileId = METATILE_BrendansMaysHouse_MayPC_Off;
 
-    MapGridSetMetatileIdAt(gSaveBlock1Ptr->pos.x + dx + MAP_OFFSET, gSaveBlock1Ptr->pos.y + dy + MAP_OFFSET, metatileId | MAPGRID_IMPASSABLE);
+    MapGridSetMetatileIdAt(gSaveBlock1Ptr->pos.x + dx + MAP_OFFSET, gSaveBlock1Ptr->pos.y + dy + MAP_OFFSET, metatileId | MAPGRID_COLLISION_MASK);
     DrawWholeMapView();
 }
 
@@ -1174,14 +1163,14 @@ static void LotteryCornerComputerEffect(struct Task *task)
         if (task->tIsScreenOn)
         {
             // Screen is on, set it off
-            MapGridSetMetatileIdAt(11 + MAP_OFFSET, 1 + MAP_OFFSET, METATILE_Shop_Laptop1_Normal | MAPGRID_IMPASSABLE);
-            MapGridSetMetatileIdAt(11 + MAP_OFFSET, 2 + MAP_OFFSET, METATILE_Shop_Laptop2_Normal | MAPGRID_IMPASSABLE);
+            MapGridSetMetatileIdAt(11 + MAP_OFFSET, 1 + MAP_OFFSET, METATILE_Shop_Laptop1_Normal | MAPGRID_COLLISION_MASK);
+            MapGridSetMetatileIdAt(11 + MAP_OFFSET, 2 + MAP_OFFSET, METATILE_Shop_Laptop2_Normal | MAPGRID_COLLISION_MASK);
         }
         else
         {
             // Screen is off, set it on
-            MapGridSetMetatileIdAt(11 + MAP_OFFSET, 1 + MAP_OFFSET, METATILE_Shop_Laptop1_Flash | MAPGRID_IMPASSABLE);
-            MapGridSetMetatileIdAt(11 + MAP_OFFSET, 2 + MAP_OFFSET, METATILE_Shop_Laptop2_Flash | MAPGRID_IMPASSABLE);
+            MapGridSetMetatileIdAt(11 + MAP_OFFSET, 1 + MAP_OFFSET, METATILE_Shop_Laptop1_Flash | MAPGRID_COLLISION_MASK);
+            MapGridSetMetatileIdAt(11 + MAP_OFFSET, 2 + MAP_OFFSET, METATILE_Shop_Laptop2_Flash | MAPGRID_COLLISION_MASK);
         }
         DrawWholeMapView();
 
@@ -1196,8 +1185,8 @@ static void LotteryCornerComputerEffect(struct Task *task)
 
 void EndLotteryCornerComputerEffect(void)
 {
-    MapGridSetMetatileIdAt(11 + MAP_OFFSET, 1 + MAP_OFFSET, METATILE_Shop_Laptop1_Normal | MAPGRID_IMPASSABLE);
-    MapGridSetMetatileIdAt(11 + MAP_OFFSET, 2 + MAP_OFFSET, METATILE_Shop_Laptop2_Normal | MAPGRID_IMPASSABLE);
+    MapGridSetMetatileIdAt(11 + MAP_OFFSET, 1 + MAP_OFFSET, METATILE_Shop_Laptop1_Normal | MAPGRID_COLLISION_MASK);
+    MapGridSetMetatileIdAt(11 + MAP_OFFSET, 2 + MAP_OFFSET, METATILE_Shop_Laptop2_Normal | MAPGRID_COLLISION_MASK);
     DrawWholeMapView();
 }
 
@@ -1274,7 +1263,7 @@ void IsGrassTypeInParty(void)
         if (GetMonData(pokemon, MON_DATA_SANITY_HAS_SPECIES) && !GetMonData(pokemon, MON_DATA_IS_EGG))
         {
             species = GetMonData(pokemon, MON_DATA_SPECIES);
-            if (GetSpeciesType(species, 0) == TYPE_GRASS || GetSpeciesType(species, 1) == TYPE_GRASS)
+            if (gSpeciesInfo[species].types[0] == TYPE_GRASS || gSpeciesInfo[species].types[1] == TYPE_GRASS)
             {
                 gSpecialVar_Result = TRUE;
                 return;
@@ -1673,7 +1662,7 @@ u16 GetMysteryGiftCardStat(void)
 
 bool8 BufferTMHMMoveName(void)
 {
-    if (gItemsInfo[gSpecialVar_0x8004].pocket == POCKET_TM_HM)
+    if (gSpecialVar_0x8004 >= ITEM_TM01 && gSpecialVar_0x8004 <= ITEM_HM10)
     {
         StringCopy(gStringVar2, GetMoveName(ItemIdToBattleMoveId(gSpecialVar_0x8004)));
         return TRUE;
@@ -1977,7 +1966,7 @@ static void Task_MoveElevatorWindowLights(u8 taskId)
             for (y = 0; y < ELEVATOR_WINDOW_HEIGHT; y++)
             {
                 for (x = 0; x < ELEVATOR_WINDOW_WIDTH; x++)
-                    MapGridSetMetatileIdAt(x + MAP_OFFSET + 1, y + MAP_OFFSET, sElevatorWindowTiles_Ascending[y][tMoveCounter % ELEVATOR_LIGHT_STAGES] | MAPGRID_IMPASSABLE);
+                    MapGridSetMetatileIdAt(x + MAP_OFFSET + 1, y + MAP_OFFSET, sElevatorWindowTiles_Ascending[y][tMoveCounter % ELEVATOR_LIGHT_STAGES] | MAPGRID_COLLISION_MASK);
             }
         }
         else
@@ -1986,7 +1975,7 @@ static void Task_MoveElevatorWindowLights(u8 taskId)
             for (y = 0; y < ELEVATOR_WINDOW_HEIGHT; y++)
             {
                 for (x = 0; x < ELEVATOR_WINDOW_WIDTH; x++)
-                    MapGridSetMetatileIdAt(x + MAP_OFFSET + 1, y + MAP_OFFSET, sElevatorWindowTiles_Descending[y][tMoveCounter % ELEVATOR_LIGHT_STAGES] | MAPGRID_IMPASSABLE);
+                    MapGridSetMetatileIdAt(x + MAP_OFFSET + 1, y + MAP_OFFSET, sElevatorWindowTiles_Descending[y][tMoveCounter % ELEVATOR_LIGHT_STAGES] | MAPGRID_COLLISION_MASK);
             }
         }
         DrawWholeMapView();
@@ -4361,11 +4350,4 @@ void GetCodeFeedback(void)
         gSpecialVar_Result = 1;
     else
         gSpecialVar_Result = 0;
-}
-
-void SetHiddenNature(void)
-{
-    u32 hiddenNature = gSpecialVar_Result;
-    SetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_HIDDEN_NATURE, &hiddenNature);
-    CalculateMonStats(&gPlayerParty[gSpecialVar_0x8004]);
 }

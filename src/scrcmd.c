@@ -14,7 +14,6 @@
 #include "event_data.h"
 #include "field_door.h"
 #include "field_effect.h"
-#include "field_move.h"
 #include "event_object_lock.h"
 #include "event_object_movement.h"
 #include "event_scripts.h"
@@ -35,6 +34,7 @@
 #include "money.h"
 #include "move.h"
 #include "mystery_event_script.h"
+#include "outfit_menu.h"
 #include "palette.h"
 #include "party_menu.h"
 #include "pokedex.h"
@@ -667,7 +667,7 @@ bool8 ScrCmd_checkitemtype(struct ScriptContext *ctx)
 
     Script_RequestEffects(SCREFF_V1);
 
-    gSpecialVar_Result = GetItemPocket(itemId);
+    gSpecialVar_Result = GetPocketByItemId(itemId);
     return FALSE;
 }
 
@@ -840,8 +840,6 @@ bool8 ScrCmd_fadescreenswapbuffers(struct ScriptContext *ctx)
     switch (mode)
     {
     case FADE_FROM_BLACK:
-        SetGpuReg(REG_OFFSET_BLDALPHA, BLDALPHA_BLEND(0, 0));
-        break;
     case FADE_FROM_WHITE:
         // Restore last weather blend before fading in,
         // since BLDALPHA was modified by fade-out
@@ -2286,20 +2284,15 @@ bool8 ScrCmd_setmonmove(struct ScriptContext *ctx)
     return FALSE;
 }
 
-bool8 ScrCmd_checkfieldmove(struct ScriptContext *ctx)
+bool8 ScrCmd_checkpartymove(struct ScriptContext *ctx)
 {
-    enum FieldMove fieldMove = ScriptReadByte(ctx);
-    bool32 doUnlockedCheck = ScriptReadByte(ctx);
-    u16 move;
+    u8 i;
+    u16 move = ScriptReadHalfword(ctx);
 
     Script_RequestEffects(SCREFF_V1);
 
     gSpecialVar_Result = PARTY_SIZE;
-    if (doUnlockedCheck && !IsFieldMoveUnlocked(fieldMove))
-        return FALSE;
-
-    move = FieldMove_GetMoveId(fieldMove);
-    for (u32 i = 0; i < PARTY_SIZE; i++)
+    for (i = 0; i < PARTY_SIZE; i++)
     {
         u16 species = GetMonData(&gPlayerParty[i], MON_DATA_SPECIES, NULL);
         if (!species)
@@ -2311,7 +2304,6 @@ bool8 ScrCmd_checkfieldmove(struct ScriptContext *ctx)
             break;
         }
     }
-
     return FALSE;
 }
 
@@ -2735,7 +2727,7 @@ bool8 ScrCmd_setmetatile(struct ScriptContext *ctx)
     if (!isImpassable)
         MapGridSetMetatileIdAt(x, y, metatileId);
     else
-        MapGridSetMetatileIdAt(x, y, metatileId | MAPGRID_IMPASSABLE);
+        MapGridSetMetatileIdAt(x, y, metatileId | MAPGRID_COLLISION_MASK);
     return FALSE;
 }
 
@@ -3005,7 +2997,7 @@ static void CloseBrailleWindow(void)
 bool8 ScrCmd_buffertrainerclassname(struct ScriptContext *ctx)
 {
     u8 stringVarIndex = ScriptReadByte(ctx);
-    enum TrainerClassID trainerClassId = VarGet(ScriptReadHalfword(ctx));
+    u16 trainerClassId = VarGet(ScriptReadHalfword(ctx));
 
     Script_RequestEffects(SCREFF_V1);
 
@@ -3016,7 +3008,7 @@ bool8 ScrCmd_buffertrainerclassname(struct ScriptContext *ctx)
 bool8 ScrCmd_buffertrainername(struct ScriptContext *ctx)
 {
     u8 stringVarIndex = ScriptReadByte(ctx);
-    enum TrainerClassID trainerClassId = VarGet(ScriptReadHalfword(ctx));
+    u16 trainerClassId = VarGet(ScriptReadHalfword(ctx));
 
     Script_RequestEffects(SCREFF_V1);
 
@@ -3042,6 +3034,66 @@ bool8 ScrCmd_warpwhitefade(struct ScriptContext *ctx)
     SetWarpDestination(mapGroup, mapNum, warpId, x, y);
     DoWhiteFadeWarp();
     ResetInitialPlayerAvatarState();
+    return TRUE;
+}
+
+bool8 ScrCmd_toggleoutfit(struct ScriptContext *ctx)
+{
+    u16 outfitId = VarGet(ScriptReadHalfword(ctx));
+    u8 type = ScriptReadByte(ctx);
+
+    switch(type)
+    {
+    default:
+    case OUTFIT_TOGGLE_UNLOCK:
+        UnlockOutfit(outfitId);
+        break;
+    case OUTFIT_TOGGLE_LOCK:
+        LockOutfit(outfitId);
+        break;
+    }
+    return TRUE;
+}
+
+bool8 ScrCmd_getoutfitstatus(struct ScriptContext *ctx)
+{
+    u16 outfitId = VarGet(ScriptReadHalfword(ctx));
+    u8 data = ScriptReadByte(ctx);
+
+    switch(data)
+    {
+        default:
+        case OUTFIT_CHECK_FLAG:
+            gSpecialVar_Result = GetOutfitStatus(outfitId);
+            break;
+        case OUTFIT_CHECK_USED:
+            gSpecialVar_Result = IsPlayerWearingOutfit(outfitId);
+            break;
+    }
+    return TRUE;
+}
+
+bool8 ScrCmd_bufferoutfitstr(struct ScriptContext *ctx)
+{
+    u8 strVarIdx = ScriptReadByte(ctx);
+    u16 outfit = VarGet(ScriptReadHalfword(ctx));
+    u8 type = ScriptReadByte(ctx);
+
+    BufferOutfitStrings(sScriptStringVars[strVarIdx], outfit, type);
+    return TRUE;
+}
+
+bool8 ScrCmd_pokemartoutfit(struct ScriptContext *ctx)
+{
+    const void *ptr = (void *)ScriptReadWord(ctx);
+
+    #ifdef MUDSKIP_SHOP_UI
+    NewShop_CreateOutfitShopMenu(ptr);
+    #else
+    CreateOutfitShopMenu(ptr);
+    #endif // MUDSKIP_SHOP_UI
+
+    ScriptContext_Stop();
     return TRUE;
 }
 
@@ -3101,7 +3153,7 @@ bool8 ScrCmd_checkobjectat(struct ScriptContext *ctx)
 
 bool8 Scrcmd_getsetpokedexflag(struct ScriptContext *ctx)
 {
-    enum NationalDexOrder speciesId = SpeciesToNationalPokedexNum(VarGet(ScriptReadHalfword(ctx)));
+    u32 speciesId = SpeciesToNationalPokedexNum(VarGet(ScriptReadHalfword(ctx)));
     u32 desiredFlag = VarGet(ScriptReadHalfword(ctx));
 
     if (desiredFlag == FLAG_SET_CAUGHT || desiredFlag == FLAG_SET_SEEN)
@@ -3154,12 +3206,10 @@ bool8 Scrcmd_getobjectfacingdirection(struct ScriptContext *ctx)
     return FALSE;
 }
 
-bool8 ScrCmd_hidefollower(struct ScriptContext *ctx)
+bool8 ScrFunc_hidefollower(struct ScriptContext *ctx)
 {
     bool16 wait = VarGet(ScriptReadHalfword(ctx));
     struct ObjectEvent *obj;
-
-    Script_RequestEffects(SCREFF_V1 | SCREFF_HARDWARE);
 
     if ((obj = ScriptHideFollower()) != NULL && wait)
     {
