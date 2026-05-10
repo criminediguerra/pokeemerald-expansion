@@ -283,3 +283,6 @@ const u16 gMetatileAttributes_AltPokecenter[] = INCBIN_U16("data/tilesets/second
 
 const u16 gMetatiles_Ecruteak[] = INCBIN_U16("data/tilesets/secondary/ecruteak/metatiles.bin");
 const u16 gMetatileAttributes_Ecruteak[] = INCBIN_U16("data/tilesets/secondary/ecruteak/metatile_attributes.bin");
+
+const u16 gMetatiles_GeneralJohto[] = INCBIN_U16("data/tilesets/primary/general_johto/metatiles.bin");
+const u16 gMetatileAttributes_GeneralJohto[] = INCBIN_U16("data/tilesets/primary/general_johto/metatile_attributes.bin");

@@ -2178,3 +2178,22 @@ const u16 gTilesetPalettes_Ecruteak[][16] =
 };
 
 const u32 gTilesetTiles_Ecruteak[] = INCBIN_U32("data/tilesets/secondary/ecruteak/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_GeneralJohto[][16] =
+{
+    INCBIN_U16("data/tilesets/primary/general_johto/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_johto/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_johto/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_johto/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_johto/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_johto/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_johto/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_johto/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_johto/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_johto/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_johto/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_johto/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_johto/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_GeneralJohto[] = INCBIN_U32("data/tilesets/primary/general_johto/tiles.4bpp.lz");

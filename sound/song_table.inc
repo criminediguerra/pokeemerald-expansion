@@ -654,6 +654,8 @@ gSongTable::
 	song eusine, 0, 0
 	song seviicenter, 0, 0
 	song seviitrainer, 0, 0
+	song silverbattle, 0, 0
+	song legendarybirds, 0, 0
 
 	.align 2
 dummy_song_header:

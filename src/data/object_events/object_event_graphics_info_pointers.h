@@ -2,6 +2,33 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BrendanNorm
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BrendanMachBike;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BrendanSurfing;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BrendanFieldMove;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EmeraldBrendanNormal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EmeraldBrendanMachBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EmeraldBrendanSurfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EmeraldBrendanFieldMove;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EmeraldBrendanUnderwater;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EmeraldBrendanAcroBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EmeraldBrendanFishing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EmeraldBrendanWatering;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EmeraldBrendanDecorating;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EmeraldMayNormal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EmeraldMayMachBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EmeraldMaySurfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EmeraldMayFieldMove;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EmeraldMayUnderwater;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EmeraldMayAcroBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EmeraldMayFishing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EmeraldMayWatering;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EmeraldMayDecorating;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphireDawnNormal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphireDawnMachBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphireDawnSurfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphireDawnFieldMove;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphireDawnUnderwater;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphireDawnAcroBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphireDawnFishing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphireDawnWatering;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphireDawnDecorating;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_QuintyPlump;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_NinjaBoy;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Twin;
@@ -380,6 +407,33 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_BRENDAN_MACH_BIKE] =        &gObjectEventGraphicsInfo_BrendanMachBike,
     [OBJ_EVENT_GFX_BRENDAN_SURFING] =          &gObjectEventGraphicsInfo_BrendanSurfing,
     [OBJ_EVENT_GFX_BRENDAN_FIELD_MOVE] =       &gObjectEventGraphicsInfo_BrendanFieldMove,
+    [OBJ_EVENT_GFX_EMERALD_BRENDAN_NORMAL] =   &gObjectEventGraphicsInfo_EmeraldBrendanNormal,
+    [OBJ_EVENT_GFX_EMERALD_BRENDAN_FIELD_MOVE] =       &gObjectEventGraphicsInfo_EmeraldBrendanFieldMove,
+    [OBJ_EVENT_GFX_EMERALD_BRENDAN_SURFING] =          &gObjectEventGraphicsInfo_EmeraldBrendanSurfing,
+    [OBJ_EVENT_GFX_EMERALD_BRENDAN_UNDERWATER] =       &gObjectEventGraphicsInfo_EmeraldBrendanUnderwater,
+    [OBJ_EVENT_GFX_EMERALD_BRENDAN_MACH_BIKE] =        &gObjectEventGraphicsInfo_EmeraldBrendanMachBike,
+    [OBJ_EVENT_GFX_EMERALD_BRENDAN_ACRO_BIKE] =        &gObjectEventGraphicsInfo_EmeraldBrendanAcroBike,
+    [OBJ_EVENT_GFX_EMERALD_BRENDAN_FISHING] =          &gObjectEventGraphicsInfo_EmeraldBrendanFishing,
+    [OBJ_EVENT_GFX_EMERALD_BRENDAN_WATERING] =         &gObjectEventGraphicsInfo_EmeraldBrendanWatering,
+    [OBJ_EVENT_GFX_EMERALD_BRENDAN_DECORATING] =       &gObjectEventGraphicsInfo_EmeraldBrendanDecorating,
+    [OBJ_EVENT_GFX_EMERALD_MAY_NORMAL] =   &gObjectEventGraphicsInfo_EmeraldMayNormal,
+    [OBJ_EVENT_GFX_EMERALD_MAY_FIELD_MOVE] =       &gObjectEventGraphicsInfo_EmeraldMayFieldMove,
+    [OBJ_EVENT_GFX_EMERALD_MAY_SURFING] =          &gObjectEventGraphicsInfo_EmeraldMaySurfing,
+    [OBJ_EVENT_GFX_EMERALD_MAY_UNDERWATER] =       &gObjectEventGraphicsInfo_EmeraldMayUnderwater,
+    [OBJ_EVENT_GFX_EMERALD_MAY_MACH_BIKE] =        &gObjectEventGraphicsInfo_EmeraldMayMachBike,
+    [OBJ_EVENT_GFX_EMERALD_MAY_ACRO_BIKE] =        &gObjectEventGraphicsInfo_EmeraldMayAcroBike,
+    [OBJ_EVENT_GFX_EMERALD_MAY_FISHING] =          &gObjectEventGraphicsInfo_EmeraldMayFishing,
+    [OBJ_EVENT_GFX_EMERALD_MAY_WATERING] =         &gObjectEventGraphicsInfo_EmeraldMayWatering,
+    [OBJ_EVENT_GFX_EMERALD_MAY_DECORATING] =       &gObjectEventGraphicsInfo_EmeraldMayDecorating,
+    [OBJ_EVENT_GFX_RUBY_SAPPHIRE_DAWN_NORMAL] =   &gObjectEventGraphicsInfo_RubySapphireDawnNormal,
+    [OBJ_EVENT_GFX_RUBY_SAPPHIRE_DAWN_FIELD_MOVE] =       &gObjectEventGraphicsInfo_RubySapphireDawnFieldMove,
+    [OBJ_EVENT_GFX_RUBY_SAPPHIRE_DAWN_SURFING] =          &gObjectEventGraphicsInfo_RubySapphireDawnSurfing,
+    [OBJ_EVENT_GFX_RUBY_SAPPHIRE_DAWN_UNDERWATER] =       &gObjectEventGraphicsInfo_RubySapphireDawnUnderwater,
+    [OBJ_EVENT_GFX_RUBY_SAPPHIRE_DAWN_MACH_BIKE] =        &gObjectEventGraphicsInfo_RubySapphireDawnMachBike,
+    [OBJ_EVENT_GFX_RUBY_SAPPHIRE_DAWN_ACRO_BIKE] =        &gObjectEventGraphicsInfo_RubySapphireDawnAcroBike,
+    [OBJ_EVENT_GFX_RUBY_SAPPHIRE_DAWN_FISHING] =          &gObjectEventGraphicsInfo_RubySapphireDawnFishing,
+    [OBJ_EVENT_GFX_RUBY_SAPPHIRE_DAWN_WATERING] =         &gObjectEventGraphicsInfo_RubySapphireDawnWatering,
+    [OBJ_EVENT_GFX_RUBY_SAPPHIRE_DAWN_DECORATING] =       &gObjectEventGraphicsInfo_RubySapphireDawnDecorating,
     [OBJ_EVENT_GFX_QUINTY_PLUMP] =             &gObjectEventGraphicsInfo_QuintyPlump,
     [OBJ_EVENT_GFX_NINJA_BOY] =                &gObjectEventGraphicsInfo_NinjaBoy,
     [OBJ_EVENT_GFX_TWIN] =                     &gObjectEventGraphicsInfo_Twin,

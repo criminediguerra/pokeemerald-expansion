@@ -1016,7 +1016,7 @@ LittlerootTown_Text_RarePokemonKanto:
 	.string "The second one looks like a green frog,\n"
 	.string "I think it's between VIRIDIAN FOREST\l"
 	.string "and BERRY FOREST.\p"
-	.string "The second one looks like a small turtle,\n"
+	.string "The third one looks like a small turtle,\n"
 	.string "I think it's located between ROUTE 25\l"
 	.string "and VERMILION CITY.$"
 
@@ -1033,7 +1033,7 @@ LittlerootTown_Text_RarePokemonJohto:
 	.string "The second one looks like a dinosaur,\n"
 	.string "I think it is located between ILEX\l"
 	.string "FOREST and PATTERN BUSH.\p"
-	.string "The second one looks like an alligator,\n"
+	.string "The third one looks like an alligator,\n"
 	.string "I think it's between LAKE OF RAGE and\l"
 	.string "WHIRL ISLANDS.$"
 
@@ -1050,7 +1050,7 @@ LittlerootTown_Text_RarePokemonHoenn:
 	.string "The second one looks like a gecko,\n"
 	.string "I think it is located around PETALBURG\l"
 	.string "WOODS.\p"
-	.string "The second one looks like an axolotl,\n"
+	.string "The third one looks like an axolotl,\n"
 	.string "I think it's around ROUTE 119.$"
 
 LittlerootTown_Psyduck::

@@ -1245,6 +1245,8 @@ SECTIONS {
         sound/songs/midi/gsvictoryroad.o(.rodata);
         sound/songs/midi/johtowild.o(.rodata);
         sound/songs/midi/seviiwild.o(.rodata);
+        sound/songs/midi/silverbattle.o(.rodata);
+        sound/songs/midi/legendarybirds.o(.rodata);
         sound/songs/midi/rocket.o(.rodata);
         sound/songs/midi/encounterrocket.o(.rodata);
         sound/songs/midi/johtocasino.o(.rodata);

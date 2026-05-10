@@ -390,6 +390,12 @@ $(MID_SUBDIR)/kimonogirl.s: %.s: %.mid
 $(MID_SUBDIR)/newbark.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G138 -V099
 
+$(MID_SUBDIR)/silverbattle.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G155 -V090
+
+$(MID_SUBDIR)/legendarybirds.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V075
+
 $(MID_SUBDIR)/johtowild.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G138 -V099
 
@@ -460,10 +466,10 @@ $(MID_SUBDIR)/natpark.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G138 -V075
 
 $(MID_SUBDIR)/route47.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G034 -V075
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V075
 
 $(MID_SUBDIR)/dragonsden.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G155 -V100
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V100
 
 $(MID_SUBDIR)/eusine.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G155 -V099
@@ -472,7 +478,7 @@ $(MID_SUBDIR)/johtosafari.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G034 -V075
 
 $(MID_SUBDIR)/route26.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G146 -V075
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V075
 
 $(MID_SUBDIR)/route30.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G155 -V100

@@ -182,8 +182,11 @@
 #define TRAINER_PIC_MARINA               164
 #define TRAINER_PIC_TRACEY               165
 #define TRAINER_PIC_SOLDIER              166
+#define TRAINER_PIC_EMERALD_BRENDAN      167
+#define TRAINER_PIC_EMERALD_MAY          168
+#define TRAINER_PIC_RIVAL_MAY            169
 
-#define TRAINER_PIC_COUNT                167
+#define TRAINER_PIC_COUNT                170
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0
@@ -194,6 +197,8 @@
 #define TRAINER_BACK_PIC_RUBY_SAPPHIRE_MAY      5
 #define TRAINER_BACK_PIC_WALLY                  6
 #define TRAINER_BACK_PIC_STEVEN                 7
+#define TRAINER_BACK_PIC_EMERALD_BRENDAN        8
+#define TRAINER_BACK_PIC_EMERALD_MAY            9
 
 #define FACILITY_CLASS_HIKER                 0x0
 #define FACILITY_CLASS_AQUA_GRUNT_M          0x1

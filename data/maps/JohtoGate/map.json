@@ -278,6 +278,20 @@
       "elevation": 0,
       "dest_map": "MAP_JOHTO_GATE",
       "dest_warp_id": "30"
+    },
+    {
+      "x": 94,
+      "y": 43,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE27",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 106,
+      "y": 43,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE26",
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [],

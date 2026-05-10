@@ -85,15 +85,15 @@
       "dest_warp_id": "1"
     },
     {
-      "x": 8,
-      "y": 2,
+      "x": 11,
+      "y": 1,
       "elevation": 0,
       "dest_map": "MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F",
       "dest_warp_id": "0"
     },
     {
-      "x": 11,
-      "y": 1,
+      "x": 8,
+      "y": 2,
       "elevation": 0,
       "dest_map": "MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F",
       "dest_warp_id": "4"
@@ -139,8 +139,8 @@
     },
     {
       "type": "trigger",
-      "x": 11,
-      "y": 2,
+      "x": 8,
+      "y": 3,
       "elevation": 0,
       "var": "VAR_LITTLEROOT_INTRO_STATE",
       "var_value": "4",

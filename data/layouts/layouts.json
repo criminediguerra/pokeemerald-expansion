@@ -4786,7 +4786,7 @@
       "name": "OlivineCity_Layout",
       "width": 67,
       "height": 50,
-      "primary_tileset": "gTileset_GeneralStairs",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_Sunnyshore",
       "border_filepath": "data/layouts/OlivineCity/border.bin",
       "blockdata_filepath": "data/layouts/OlivineCity/map.bin"
@@ -4796,7 +4796,7 @@
       "name": "Route40_Layout",
       "width": 35,
       "height": 61,
-      "primary_tileset": "gTileset_GeneralStairs",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
       "border_filepath": "data/layouts/Route40/border.bin",
       "blockdata_filepath": "data/layouts/Route40/map.bin"
@@ -4806,7 +4806,7 @@
       "name": "Route41_Layout",
       "width": 62,
       "height": 104,
-      "primary_tileset": "gTileset_GeneralStairs",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_Sootopolis",
       "border_filepath": "data/layouts/Route41/border.bin",
       "blockdata_filepath": "data/layouts/Route41/map.bin"
@@ -4816,7 +4816,7 @@
       "name": "CyanwoodCity_Layout",
       "width": 37,
       "height": 61,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/CyanwoodCity/border.bin",
       "blockdata_filepath": "data/layouts/CyanwoodCity/map.bin"
@@ -4826,7 +4826,7 @@
       "name": "Route47_Layout",
       "width": 95,
       "height": 64,
-      "primary_tileset": "gTileset_GeneralStairs",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/Route47/border.bin",
       "blockdata_filepath": "data/layouts/Route47/map.bin"
@@ -4836,7 +4836,7 @@
       "name": "Route48_Layout",
       "width": 41,
       "height": 41,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
       "border_filepath": "data/layouts/Route48/border.bin",
       "blockdata_filepath": "data/layouts/Route48/map.bin"
@@ -4846,7 +4846,7 @@
       "name": "JohtoSafari_Layout",
       "width": 30,
       "height": 34,
-      "primary_tileset": "gTileset_GeneralStairs",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/JohtoSafari/border.bin",
       "blockdata_filepath": "data/layouts/JohtoSafari/map.bin"
@@ -4856,7 +4856,7 @@
       "name": "Route39_Layout",
       "width": 38,
       "height": 66,
-      "primary_tileset": "gTileset_GeneralStairs",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/Route39/border.bin",
       "blockdata_filepath": "data/layouts/Route39/map.bin"
@@ -4866,7 +4866,7 @@
       "name": "Route38_Layout",
       "width": 66,
       "height": 37,
-      "primary_tileset": "gTileset_GeneralStairs",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_Ecruteak",
       "border_filepath": "data/layouts/Route38/border.bin",
       "blockdata_filepath": "data/layouts/Route38/map.bin"
@@ -5036,7 +5036,7 @@
       "name": "EcruteakCity_Layout",
       "width": 76,
       "height": 58,
-      "primary_tileset": "gTileset_GeneralStairs",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_Ecruteak",
       "border_filepath": "data/layouts/EcruteakCity/border.bin",
       "blockdata_filepath": "data/layouts/EcruteakCity/map.bin"
@@ -5046,7 +5046,7 @@
       "name": "Route37_Layout",
       "width": 32,
       "height": 32,
-      "primary_tileset": "gTileset_GeneralStairs",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_Ecruteak",
       "border_filepath": "data/layouts/Route37/border.bin",
       "blockdata_filepath": "data/layouts/Route37/map.bin"
@@ -5056,8 +5056,8 @@
       "name": "Route36_Layout",
       "width": 84,
       "height": 38,
-      "primary_tileset": "gTileset_GeneralStairs",
-      "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
+      "primary_tileset": "gTileset_GeneralJohto",
+      "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/Route36/border.bin",
       "blockdata_filepath": "data/layouts/Route36/map.bin"
     },
@@ -5066,8 +5066,8 @@
       "name": "Route35_Layout",
       "width": 42,
       "height": 60,
-      "primary_tileset": "gTileset_GeneralStairs",
-      "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
+      "primary_tileset": "gTileset_GeneralJohto",
+      "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/Route35/border.bin",
       "blockdata_filepath": "data/layouts/Route35/map.bin"
     },
@@ -5076,7 +5076,7 @@
       "name": "GoldenrodCity_Layout",
       "width": 70,
       "height": 68,
-      "primary_tileset": "gTileset_GeneralStairs",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/GoldenrodCity/border.bin",
       "blockdata_filepath": "data/layouts/GoldenrodCity/map.bin"
@@ -5086,7 +5086,7 @@
       "name": "Route34_Layout",
       "width": 42,
       "height": 90,
-      "primary_tileset": "gTileset_GeneralStairs",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/Route34/border.bin",
       "blockdata_filepath": "data/layouts/Route34/map.bin"
@@ -5106,7 +5106,7 @@
       "name": "RuinsofAlph_Layout",
       "width": 36,
       "height": 52,
-      "primary_tileset": "gTileset_GeneralStairs",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_Memorial_Pillar",
       "border_filepath": "data/layouts/RuinsofAlph/border.bin",
       "blockdata_filepath": "data/layouts/RuinsofAlph/map.bin"
@@ -5116,7 +5116,7 @@
       "name": "Route32_Layout",
       "width": 32,
       "height": 156,
-      "primary_tileset": "gTileset_GeneralStairs",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/Route32/border.bin",
       "blockdata_filepath": "data/layouts/Route32/map.bin"
@@ -5126,7 +5126,7 @@
       "name": "VioletCity_Layout",
       "width": 78,
       "height": 84,
-      "primary_tileset": "gTileset_GeneralStairs",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/VioletCity/border.bin",
       "blockdata_filepath": "data/layouts/VioletCity/map.bin"
@@ -5136,7 +5136,7 @@
       "name": "Route33_Layout",
       "width": 30,
       "height": 26,
-      "primary_tileset": "gTileset_GeneralStairs",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Route33/border.bin",
       "blockdata_filepath": "data/layouts/Route33/map.bin"
@@ -5146,7 +5146,7 @@
       "name": "AzaleaTown_Layout",
       "width": 60,
       "height": 36,
-      "primary_tileset": "gTileset_GeneralStairs",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/AzaleaTown/border.bin",
       "blockdata_filepath": "data/layouts/AzaleaTown/map.bin"
@@ -5156,7 +5156,7 @@
       "name": "Route31_Layout",
       "width": 62,
       "height": 30,
-      "primary_tileset": "gTileset_GeneralStairs",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
       "border_filepath": "data/layouts/Route31/border.bin",
       "blockdata_filepath": "data/layouts/Route31/map.bin"
@@ -5166,7 +5166,7 @@
       "name": "Route30_Layout",
       "width": 39,
       "height": 94,
-      "primary_tileset": "gTileset_GeneralStairs",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
       "border_filepath": "data/layouts/Route30/border.bin",
       "blockdata_filepath": "data/layouts/Route30/map.bin"
@@ -5176,7 +5176,7 @@
       "name": "CherrygroveCity_Layout",
       "width": 65,
       "height": 33,
-      "primary_tileset": "gTileset_GeneralStairs",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
       "border_filepath": "data/layouts/CherrygroveCity/border.bin",
       "blockdata_filepath": "data/layouts/CherrygroveCity/map.bin"
@@ -5186,7 +5186,7 @@
       "name": "Route29_Layout",
       "width": 96,
       "height": 32,
-      "primary_tileset": "gTileset_GeneralStairs",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
       "border_filepath": "data/layouts/Route29/border.bin",
       "blockdata_filepath": "data/layouts/Route29/map.bin"
@@ -5196,7 +5196,7 @@
       "name": "NewBarkTown_Layout",
       "width": 40,
       "height": 32,
-      "primary_tileset": "gTileset_GeneralStairs",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/NewBarkTown/border.bin",
       "blockdata_filepath": "data/layouts/NewBarkTown/map.bin"
@@ -5206,7 +5206,7 @@
       "name": "Route46_Layout",
       "width": 36,
       "height": 58,
-      "primary_tileset": "gTileset_GeneralStairs",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
       "border_filepath": "data/layouts/Route46/border.bin",
       "blockdata_filepath": "data/layouts/Route46/map.bin"
@@ -5216,7 +5216,7 @@
       "name": "Route45_Layout",
       "width": 33,
       "height": 150,
-      "primary_tileset": "gTileset_GeneralStairs",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/Route45/border.bin",
       "blockdata_filepath": "data/layouts/Route45/map.bin"
@@ -5226,7 +5226,7 @@
       "name": "BlackthornCity_Layout",
       "width": 64,
       "height": 64,
-      "primary_tileset": "gTileset_GeneralStairs",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/BlackthornCity/border.bin",
       "blockdata_filepath": "data/layouts/BlackthornCity/map.bin"
@@ -5236,7 +5236,7 @@
       "name": "Route44_Layout",
       "width": 95,
       "height": 34,
-      "primary_tileset": "gTileset_GeneralStairs",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/Route44/border.bin",
       "blockdata_filepath": "data/layouts/Route44/map.bin"
@@ -5246,7 +5246,7 @@
       "name": "MahoganyTown_Layout",
       "width": 34,
       "height": 32,
-      "primary_tileset": "gTileset_GeneralStairs",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/MahoganyTown/border.bin",
       "blockdata_filepath": "data/layouts/MahoganyTown/map.bin"
@@ -5256,7 +5256,7 @@
       "name": "Route43_Layout",
       "width": 39,
       "height": 61,
-      "primary_tileset": "gTileset_GeneralStairs",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Route43/border.bin",
       "blockdata_filepath": "data/layouts/Route43/map.bin"
@@ -5266,7 +5266,7 @@
       "name": "LakeofRage_Layout",
       "width": 80,
       "height": 70,
-      "primary_tileset": "gTileset_GeneralStairs",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/LakeofRage/border.bin",
       "blockdata_filepath": "data/layouts/LakeofRage/map.bin"
@@ -5276,7 +5276,7 @@
       "name": "Route42_Layout",
       "width": 96,
       "height": 35,
-      "primary_tileset": "gTileset_GeneralStairs",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_Ecruteak",
       "border_filepath": "data/layouts/Route42/border.bin",
       "blockdata_filepath": "data/layouts/Route42/map.bin"
@@ -5284,9 +5284,9 @@
     {
       "id": "LAYOUT_ROUTE27",
       "name": "Route27_Layout",
-      "width": 185,
+      "width": 175,
       "height": 37,
-      "primary_tileset": "gTileset_GeneralStairs",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
       "border_filepath": "data/layouts/Route27/border.bin",
       "blockdata_filepath": "data/layouts/Route27/map.bin"
@@ -5294,7 +5294,7 @@
     {
       "id": "LAYOUT_ROUTE26",
       "name": "Route26_Layout",
-      "width": 47,
+      "width": 57,
       "height": 118,
       "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Mauville",
@@ -5506,7 +5506,7 @@
       "name": "IlexForest_Layout",
       "width": 46,
       "height": 78,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_Celestic",
       "border_filepath": "data/layouts/IlexForest/border.bin",
       "blockdata_filepath": "data/layouts/IlexForest/map.bin"
@@ -5516,7 +5516,7 @@
       "name": "NationalPark_Layout",
       "width": 54,
       "height": 70,
-      "primary_tileset": "gTileset_GeneralStairs",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/NationalPark/border.bin",
       "blockdata_filepath": "data/layouts/NationalPark/map.bin"
@@ -5625,9 +5625,9 @@
       "id": "LAYOUT_SEAFOAM_ISLES_F1",
       "name": "SeafoamIslesF1_Layout",
       "width": 35,
-      "height": 12,
+      "height": 15,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_CaveIce",
       "border_filepath": "data/layouts/SeafoamIslesF1/border.bin",
       "blockdata_filepath": "data/layouts/SeafoamIslesF1/map.bin"
     },
@@ -5667,7 +5667,7 @@
       "width": 50,
       "height": 33,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_CaveIce",
       "border_filepath": "data/layouts/SeafoamIslesF5/border.bin",
       "blockdata_filepath": "data/layouts/SeafoamIslesF5/map.bin"
     },
@@ -7046,7 +7046,7 @@
       "name": "Route49_Layout",
       "width": 60,
       "height": 70,
-      "primary_tileset": "gTileset_GeneralStairs",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/Route49/border.bin",
       "blockdata_filepath": "data/layouts/Route49/map.bin"
@@ -7056,7 +7056,7 @@
       "name": "Route50_Layout",
       "width": 190,
       "height": 35,
-      "primary_tileset": "gTileset_GeneralStairs",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/Route50/border.bin",
       "blockdata_filepath": "data/layouts/Route50/map.bin"
@@ -9246,7 +9246,7 @@
       "name": "Route119a_Layout",
       "width": 40,
       "height": 20,
-      "primary_tileset": "gTileset_GeneralStairs",
+      "primary_tileset": "gTileset_GeneralJohto",
       "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/Route119a/border.bin",
       "blockdata_filepath": "data/layouts/Route119a/map.bin"

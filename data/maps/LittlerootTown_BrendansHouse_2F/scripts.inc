@@ -68,6 +68,7 @@ PlayersHouse_2F_Text_ItsAGameCube:
 Outfit_Unlock_Ruby::
 	removeobject VAR_LAST_TALKED
 	setflag FLAG_OUTFIT_RUBY
+	toggleoutfit OUTFIT_USUAL_GREEN FALSE
 	toggleoutfit OUTFIT_UNUSUAL_RED FALSE
 	playfanfare MUS_SLOTS_WIN
 	msgbox Outfit_Unlock_Ruby_Text_FoundOutfit, MSGBOX_DEFAULT

@@ -588,6 +588,8 @@
 #define EUSINE                      650
 #define SEVIICENTER                 651
 #define SEVIITRAINER                652
+#define SILVERBATTLE                653
+#define LEGENDARYBIRDS              654
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

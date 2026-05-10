@@ -1122,5 +1122,16 @@ const struct Tileset gTileset_Ecruteak =
     .palettes = gTilesetPalettes_Ecruteak,
     .metatiles = gMetatiles_Ecruteak,
     .metatileAttributes = gMetatileAttributes_Ecruteak,
-    .callback = NULL,
+    .callback = InitTilesetAnim_Petalburg,
+};
+
+const struct Tileset gTileset_GeneralJohto =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_GeneralJohto,
+    .palettes = gTilesetPalettes_GeneralJohto,
+    .metatiles = gMetatiles_GeneralJohto,
+    .metatileAttributes = gMetatileAttributes_GeneralJohto,
+    .callback = InitTilesetAnim_General,
 };

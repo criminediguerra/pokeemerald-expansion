@@ -398,6 +398,10 @@ PlayersHouse_1F_EventScript_Vigoroth2::
 PlayersHouse_1F_Movement_PlayerApproachTVForGymMale:
 	walk_down
 	walk_down
+	walk_down
+	walk_left
+	walk_left
+	walk_left
 	walk_left
 	walk_left
 	walk_left
