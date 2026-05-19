@@ -5885,7 +5885,7 @@
       "id": "LAYOUT_BURNED_TOWER",
       "name": "BurnedTower_Layout",
       "width": 26,
-      "height": 28,
+      "height": 27,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_InsideShip",
       "border_filepath": "data/layouts/BurnedTower/border.bin",
