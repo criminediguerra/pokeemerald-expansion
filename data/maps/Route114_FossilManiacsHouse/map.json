@@ -12,7 +12,7 @@
   "allow_running": true,
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": null,
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_NINJA_BOY",
@@ -30,14 +30,14 @@
   ],
   "warp_events": [
     {
-      "x": 4,
+      "x": 5,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_ROUTE114",
       "dest_warp_id": "1"
     },
     {
-      "x": 5,
+      "x": 4,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_ROUTE114",
@@ -51,9 +51,7 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [
-
-  ],
+  "coord_events": [],
   "bg_events": [
     {
       "type": "sign",

@@ -82,6 +82,20 @@
       "elevation": 0,
       "dest_map": "MAP_GOLDENROD_TUNNEL_F2",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 24,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_GOLDENROD_CITY",
+      "dest_warp_id": "21"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_GOLDENROD_CITY",
+      "dest_warp_id": "22"
     }
   ],
   "coord_events": [],

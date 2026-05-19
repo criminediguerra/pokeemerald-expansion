@@ -2,7 +2,7 @@
   "id": "MAP_ECRUTEAK_CITY",
   "name": "EcruteakCity",
   "layout": "LAYOUT_ECRUTEAK_CITY",
-  "music": "CYANWOOD",
+  "music": "ECRUTEAK",
   "region_map_section": "MAPSEC_ECRUTEAK",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

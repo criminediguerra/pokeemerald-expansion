@@ -1760,8 +1760,6 @@ EventScript_VsSeekerChargingDone::
 
 	.include "data/maps/BlackthornMart/scripts.inc"
 
-	.include "data/maps/BlackthornTest/scripts.inc"
-
 	.include "data/maps/BlackthornGym/scripts.inc"
 
 	.include "data/maps/MahoganyGym/scripts.inc"
@@ -2441,3 +2439,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route97/scripts.inc"
 
 	.include "data/maps/MayBrendanToilets/scripts.inc"
+
+	.include "data/maps/Route114_LanettesHouseF1/scripts.inc"
+
+	.include "data/maps/SaffronGymF1/scripts.inc"

@@ -656,6 +656,10 @@ gSongTable::
 	song seviitrainer, 0, 0
 	song silverbattle, 0, 0
 	song legendarybirds, 0, 0
+	song twinleaf, 0, 0
+	song fourisland, 0, 0
+	song lakeofrage, 0, 0
+	song ecruteak, 0, 0
 
 	.align 2
 dummy_song_header:

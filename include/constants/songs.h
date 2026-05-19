@@ -590,6 +590,10 @@
 #define SEVIITRAINER                652
 #define SILVERBATTLE                653
 #define LEGENDARYBIRDS              654
+#define TWINLEAF                    655
+#define FOURISLAND                  656
+#define LAKEOFRAGE                  657
+#define ECRUTEAK                    658
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

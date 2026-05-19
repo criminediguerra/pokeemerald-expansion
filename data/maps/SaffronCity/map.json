@@ -167,7 +167,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKEFAN_M",
-      "x": 50,
+      "x": 46,
       "y": 45,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
@@ -180,7 +180,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(JYNX)",
-      "x": 51,
+      "x": 47,
       "y": 45,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_UP",
@@ -193,7 +193,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(RATTATA)",
-      "x": 23,
+      "x": 22,
       "y": 35,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_LEFT_RIGHT_UP",
@@ -206,7 +206,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY",
-      "x": 22,
+      "x": 21,
       "y": 35,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",

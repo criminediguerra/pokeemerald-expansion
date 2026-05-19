@@ -448,7 +448,6 @@
     "LavenderOrphanage",
     "BlackthornCenter",
     "BlackthornMart",
-    "BlackthornTest",
     "BlackthornGym"
   ],
   "gMapGroup_IndoorPacifidlog": [
@@ -605,6 +604,7 @@
     "SaffronCenter",
     "SaffronMart",
     "SaffronGym",
+    "SaffronGymF1",
     "SaffronTrainerClub",
     "DojoKarate",
     "AzaleaCenter",
@@ -777,7 +777,8 @@
   "gMapGroup_IndoorRoute114": [
     "Route114_FossilManiacsHouse",
     "Route114_FossilManiacsTunnel",
-    "Route114_LanettesHouse"
+    "Route114_LanettesHouse",
+    "Route114_LanettesHouseF1"
   ],
   "gMapGroup_IndoorRoute116": [
     "Route116_TunnelersRestHouse"

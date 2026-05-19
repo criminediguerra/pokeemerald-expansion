@@ -409,8 +409,7 @@
 #define MAP_LAVENDER_ORPHANAGE                      (10 | (13 << 8))
 #define MAP_BLACKTHORN_CENTER                       (11 | (13 << 8))
 #define MAP_BLACKTHORN_MART                         (12 | (13 << 8))
-#define MAP_BLACKTHORN_TEST                         (13 | (13 << 8))
-#define MAP_BLACKTHORN_GYM                          (14 | (13 << 8))
+#define MAP_BLACKTHORN_GYM                          (13 | (13 << 8))
 
 // gMapGroup_IndoorPacifidlog
 #define MAP_PACIFIDLOG_TOWN_POKEMON_CENTER_1F (0 | (14 << 8))
@@ -566,12 +565,13 @@
 #define MAP_SAFFRON_CENTER                  (17 | (18 << 8))
 #define MAP_SAFFRON_MART                    (18 | (18 << 8))
 #define MAP_SAFFRON_GYM                     (19 | (18 << 8))
-#define MAP_SAFFRON_TRAINER_CLUB            (20 | (18 << 8))
-#define MAP_DOJO_KARATE                     (21 | (18 << 8))
-#define MAP_AZALEA_CENTER                   (22 | (18 << 8))
-#define MAP_AZALEA_MART                     (23 | (18 << 8))
-#define MAP_AZALEA_INTERIORS                (24 | (18 << 8))
-#define MAP_AZALEA_GYM                      (25 | (18 << 8))
+#define MAP_SAFFRON_GYM_F1                  (20 | (18 << 8))
+#define MAP_SAFFRON_TRAINER_CLUB            (21 | (18 << 8))
+#define MAP_DOJO_KARATE                     (22 | (18 << 8))
+#define MAP_AZALEA_CENTER                   (23 | (18 << 8))
+#define MAP_AZALEA_MART                     (24 | (18 << 8))
+#define MAP_AZALEA_INTERIORS                (25 | (18 << 8))
+#define MAP_AZALEA_GYM                      (26 | (18 << 8))
 
 // gMapGroup_IndoorFortree
 #define MAP_FORTREE_CITY_HOUSE1            (0 | (19 << 8))
@@ -739,6 +739,7 @@
 #define MAP_ROUTE114_FOSSIL_MANIACS_HOUSE  (0 | (27 << 8))
 #define MAP_ROUTE114_FOSSIL_MANIACS_TUNNEL (1 | (27 << 8))
 #define MAP_ROUTE114_LANETTES_HOUSE        (2 | (27 << 8))
+#define MAP_ROUTE114_LANETTES_HOUSE_F1     (3 | (27 << 8))
 
 // gMapGroup_IndoorRoute116
 #define MAP_ROUTE116_TUNNELERS_REST_HOUSE (0 | (28 << 8))

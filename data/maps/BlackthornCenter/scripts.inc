@@ -8,7 +8,7 @@ BlackthornCenter_MapScripts::
 	end
 
 	BlackthornCenter_MapScripts_EventScript_Nurse::
-	setvar VAR_0x800B, 1
+	setvar VAR_0x800B, 4
 	call Common_EventScript_PkmnCenterNurse
 	waitmessage
 	waitbuttonpress

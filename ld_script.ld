@@ -1247,6 +1247,10 @@ SECTIONS {
         sound/songs/midi/seviiwild.o(.rodata);
         sound/songs/midi/silverbattle.o(.rodata);
         sound/songs/midi/legendarybirds.o(.rodata);
+        sound/songs/midi/twinleaf.o(.rodata);
+        sound/songs/midi/fourisland.o(.rodata);
+        sound/songs/midi/lakeofrage.o(.rodata);
+        sound/songs/midi/ecruteak.o(.rodata);
         sound/songs/midi/rocket.o(.rodata);
         sound/songs/midi/encounterrocket.o(.rodata);
         sound/songs/midi/johtocasino.o(.rodata);

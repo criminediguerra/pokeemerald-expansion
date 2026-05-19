@@ -157,7 +157,7 @@ $(MID_SUBDIR)/mus_evolved.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G012 -V090 -P5
 
 $(MID_SUBDIR)/mus_gsc_route38.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -V080
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V090 -P5
 
 $(MID_SUBDIR)/mus_slateport.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G079 -V070
@@ -358,10 +358,13 @@ $(MID_SUBDIR)/mus_rg_encounter_deoxys.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G184 -V079
 
 $(MID_SUBDIR)/cyanwood.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G034 -V099
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V099
+
+$(MID_SUBDIR)/ecruteak.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V099
 
 $(MID_SUBDIR)/route34.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G189 -V084
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V084
 
 $(MID_SUBDIR)/route29.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G138 -V099
@@ -376,7 +379,7 @@ $(MID_SUBDIR)/darkcave.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G158 -V100
 
 $(MID_SUBDIR)/cherrygrove.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G173 -V075
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V075
 
 $(MID_SUBDIR)/goldenrod.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G138 -V075
@@ -395,6 +398,12 @@ $(MID_SUBDIR)/silverbattle.s: %.s: %.mid
 
 $(MID_SUBDIR)/legendarybirds.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V075
+
+$(MID_SUBDIR)/twinleaf.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V075
+
+$(MID_SUBDIR)/lakeofrage.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V080
 
 $(MID_SUBDIR)/johtowild.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G138 -V099
@@ -469,7 +478,7 @@ $(MID_SUBDIR)/route47.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V075
 
 $(MID_SUBDIR)/dragonsden.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V100
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
 
 $(MID_SUBDIR)/eusine.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G155 -V099
@@ -477,11 +486,14 @@ $(MID_SUBDIR)/eusine.s: %.s: %.mid
 $(MID_SUBDIR)/johtosafari.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G034 -V075
 
+$(MID_SUBDIR)/fourisland.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V075
+
 $(MID_SUBDIR)/route26.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V075
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V075
 
 $(MID_SUBDIR)/route30.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G155 -V100
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
 
 $(MID_SUBDIR)/sprouttower.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G158 -V075
@@ -517,7 +529,7 @@ $(MID_SUBDIR)/mus_rg_gym.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G134 -V090
 
 $(MID_SUBDIR)/mus_rg_fuchsia.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G167 -V090
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V090
 
 $(MID_SUBDIR)/mus_rg_poke_jump.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G132 -V090
@@ -532,16 +544,16 @@ $(MID_SUBDIR)/mus_rg_berry_pick.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G132 -V090
 
 $(MID_SUBDIR)/mus_rg_vermillion.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G172 -V090
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V090
 
 $(MID_SUBDIR)/mus_rg_route1.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G150 -V079
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V079
 
 $(MID_SUBDIR)/mus_rg_route3.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G152 -V083
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V083
 
 $(MID_SUBDIR)/mus_rg_route11.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G153 -V090
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V090
 
 $(MID_SUBDIR)/mus_rg_pallet.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G159 -V100
@@ -559,13 +571,13 @@ $(MID_SUBDIR)/mus_rg_sevii_123.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G173 -V084
 
 $(MID_SUBDIR)/mus_rg_sevii_cave.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G147 -V090
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V090
 
 $(MID_SUBDIR)/mus_rg_sevii_dungeon.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G192 -V090
 
 $(MID_SUBDIR)/mus_rg_sevii_route.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G187 -V080
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V080
 
 $(MID_SUBDIR)/mus_rg_net_center.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G162 -V096
@@ -580,7 +592,7 @@ $(MID_SUBDIR)/mus_rg_mystery_gift.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G183 -V100
 
 $(MID_SUBDIR)/mus_rg_route24.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G151 -V086
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V086
 
 $(MID_SUBDIR)/mus_rg_teachy_tv_show.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G131 -V068
@@ -682,7 +694,7 @@ $(MID_SUBDIR)/mus_rg_vs_trainer.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G156 -V090
 
 $(MID_SUBDIR)/mus_rg_vs_wild.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G157 -V090
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V090
 
 $(MID_SUBDIR)/mus_rg_victory_gym_leader.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G171 -V090

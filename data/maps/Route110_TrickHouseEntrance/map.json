@@ -12,7 +12,7 @@
   "allow_running": true,
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": null,
   "object_events": [
     {
       "local_id": "LOCALID_TRICK_MASTER",
@@ -31,14 +31,14 @@
   ],
   "warp_events": [
     {
-      "x": 5,
+      "x": 6,
       "y": 7,
       "elevation": 3,
       "dest_map": "MAP_ROUTE110",
       "dest_warp_id": "1"
     },
     {
-      "x": 6,
+      "x": 5,
       "y": 7,
       "elevation": 3,
       "dest_map": "MAP_ROUTE110",

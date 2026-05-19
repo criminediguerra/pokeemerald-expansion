@@ -31,14 +31,14 @@
   ],
   "warp_events": [
     {
-      "x": 3,
+      "x": 4,
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_FALLARBOR_TOWN",
       "dest_warp_id": "4"
     },
     {
-      "x": 4,
+      "x": 3,
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_FALLARBOR_TOWN",
