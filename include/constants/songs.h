@@ -594,6 +594,7 @@
 #define FOURISLAND                  656
 #define LAKEOFRAGE                  657
 #define ECRUTEAK                    658
+#define LAVENDERFOREST              659
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

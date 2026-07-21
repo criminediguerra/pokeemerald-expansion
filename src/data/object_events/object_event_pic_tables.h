@@ -1065,6 +1065,10 @@ static const struct SpriteFrameImage sPicTable_RedGyarados[] = {
     overworld_ascending_frames(gObjectEventPic_RedGyarados, 8, 8),
 };
 
+static const struct SpriteFrameImage sPicTable_OnixSleeping[] = {
+    overworld_ascending_frames(gObjectEventPic_OnixSleeping, 8, 8),
+};
+
 static const struct SpriteFrameImage sPicTable_Ritchie[] = {
     overworld_frame(gObjectEventPic_Ritchie, 2, 4, 0),
     overworld_frame(gObjectEventPic_Ritchie, 2, 4, 1),
@@ -1075,6 +1079,18 @@ static const struct SpriteFrameImage sPicTable_Ritchie[] = {
     overworld_frame(gObjectEventPic_Ritchie, 2, 4, 6),
     overworld_frame(gObjectEventPic_Ritchie, 2, 4, 7),
     overworld_frame(gObjectEventPic_Ritchie, 2, 4, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_Lever[] = {
+    overworld_frame(gObjectEventPic_Lever, 2, 2, 0),
+    overworld_frame(gObjectEventPic_Lever, 2, 2, 1),
+    overworld_frame(gObjectEventPic_Lever, 2, 2, 2),
+    overworld_frame(gObjectEventPic_Lever, 2, 2, 0),
+    overworld_frame(gObjectEventPic_Lever, 2, 2, 0),
+    overworld_frame(gObjectEventPic_Lever, 2, 2, 1),
+    overworld_frame(gObjectEventPic_Lever, 2, 2, 1),
+    overworld_frame(gObjectEventPic_Lever, 2, 2, 2),
+    overworld_frame(gObjectEventPic_Lever, 2, 2, 2),
 };
 
 static const struct SpriteFrameImage sPicTable_MewtwoStatue[] = {

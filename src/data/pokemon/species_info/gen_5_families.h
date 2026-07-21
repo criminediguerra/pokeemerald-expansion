@@ -5851,10 +5851,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL, EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_WANDERING_SPIRIT, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("Yamask"),
+        .speciesName = _("YAMASK"),
         .cryId = CRY_YAMASK,
         .natDexNum = NATIONAL_DEX_YAMASK,
-        .categoryName = _("Spirit"),
+        .categoryName = _("SPIRIT"),
         .height = 5,
         .weight = 15,
         .description = COMPOUND_STRING(
@@ -5961,6 +5961,150 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sRunerigusLevelUpLearnset,
         .teachableLearnset = sRunerigusTeachableLearnset,
+    },
+
+    [SPECIES_YAMASK_KANTO] =
+    {
+        .baseHP        = 38,
+        .baseAttack    = 55,
+        .baseDefense   = 85,
+        .baseSpeed     = 30,
+        .baseSpAttack  = 30,
+        .baseSpDefense = 65,
+        .types = MON_TYPES(TYPE_GHOST, TYPE_PSYCHIC),
+        .catchRate = 190,
+        .expYield = 61,
+        .evYield_Defense = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 25,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL, EGG_GROUP_AMORPHOUS),
+        .abilities = { ABILITY_WANDERING_SPIRIT, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_BLACK,
+        .speciesName = _("YAMASK"),
+        .cryId = CRY_YAMASK,
+        .natDexNum = NATIONAL_DEX_YAMASK,
+        .categoryName = _("SPIRIT"),
+        .height = 5,
+        .weight = 15,
+        .description = COMPOUND_STRING(
+            "A severed white hand took possession\n"
+            "of a YAMASK.\n"
+            "The hand is said to be absorbing the\n"
+            "YAMASK's dark power."),
+        .pokemonScale = 432,
+        .pokemonOffset = 13,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_YamaskKanto,
+        .frontPicSize = MON_COORDS_SIZE(48, 40),
+        .frontPicYOffset = 15,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 20),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 20),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = ANIM_V_SLIDE_WOBBLE,
+        .enemyMonElevation = 10,
+        .backPic = gMonBackPic_Yamask,
+        .backPicSize = MON_COORDS_SIZE(40, 40),
+        .backPicYOffset = 14,
+        .backAnimId = BACK_ANIM_V_SHAKE,
+        .palette = gMonPalette_YamaskKanto,
+        .shinyPalette = gMonShinyPalette_YamaskKanto,
+        .iconSprite = gMonIcon_YamaskKanto,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-1, 6, SHADOW_SIZE_S)
+        FOOTPRINT(Yamask)
+        OVERWORLD(
+            sPicTable_YamaskKanto,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_YamaskKanto,
+            gShinyOverworldPalette_YamaskKanto
+        )
+        .isGalarianForm = TRUE,
+        .levelUpLearnset = sYamaskKantoLevelUpLearnset,
+        .teachableLearnset = sHoopaConfinedTeachableLearnset,
+        .eggMoveLearnset = sYamaskGalarEggMoveLearnset,
+        .formSpeciesIdTable = sYamaskFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_CRYPTAGRIGUS, CONDITIONS({IF_IN_MAPSEC, MAPSEC_POKEMON_TOWER})},
+                                {EVO_LEVEL, 34, SPECIES_CRYPTAGRIGUS, CONDITIONS({IF_IN_MAPSEC, MAPSEC_MT_PYRE})},
+                                {EVO_LEVEL, 34, SPECIES_CRYPTAGRIGUS, CONDITIONS({IF_IN_MAPSEC, MAPSEC_LAVENDER_FOREST})},
+                                {EVO_LEVEL, 34, SPECIES_CRYPTAGRIGUS, CONDITIONS({IF_IN_MAPSEC, MAPSEC_OLD_LAVENDER})}),
+    },
+
+    [SPECIES_CRYPTAGRIGUS] =
+    {
+        .baseHP        = 58,
+        .baseAttack    = 95,
+        .baseDefense   = 145,
+        .baseSpeed     = 30,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 105,
+        .types = MON_TYPES(TYPE_GHOST, TYPE_PSYCHIC),
+        .catchRate = 90,
+        .expYield = 169,
+        .evYield_Defense = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 25,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL, EGG_GROUP_AMORPHOUS),
+        .abilities = { ABILITY_WANDERING_SPIRIT, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("CRYPTAGRIGUS"),
+        .cryId = CRY_RUNERIGUS,
+        .natDexNum = NATIONAL_DEX_CRYPTAGRIGUS,
+        .categoryName = _("BURIED"),
+        .height = 16,
+        .weight = 666,
+        .description = COMPOUND_STRING(
+            "Legends say it drags wandering souls into\n"
+            "forgotten graves beneath the earth.\n"
+            "Its body echoes with cries of TRAINERS\n"
+            "who vanished long ago."),
+        .pokemonScale = 259,
+        .pokemonOffset = 1,
+        .trainerScale = 296,
+        .trainerOffset = 1,
+        .frontPic = gMonFrontPic_Cryptagrigus,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 50),
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = ANIM_GLOW_BLACK,
+        .backPic = gMonBackPic_Cryptagrigus,
+        .backPicSize = MON_COORDS_SIZE(56, 56),
+        .backPicYOffset = 6,
+        .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
+        .palette = gMonPalette_Cryptagrigus,
+        .shinyPalette = gMonShinyPalette_Cryptagrigus,
+        .iconSprite = gMonIcon_Cryptagrigus,
+        .iconPalIndex = 1,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(6, 12, SHADOW_SIZE_M)
+        FOOTPRINT(Cofagrigus)
+        OVERWORLD(
+            sPicTable_Cryptagrigus,
+            SIZE_32x32,
+            SHADOW_SIZE_NONE,
+            TRACKS_SLITHER,
+            sAnimTable_Following,
+            gOverworldPalette_Cryptagrigus,
+            gShinyOverworldPalette_Cryptagrigus
+        )
+        .levelUpLearnset = sCryptagrigusLevelUpLearnset,
+        .teachableLearnset = sLunalaTeachableLearnset,
     },
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_YAMASK

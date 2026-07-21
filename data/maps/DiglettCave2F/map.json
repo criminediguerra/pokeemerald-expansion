@@ -1,0 +1,82 @@
+{
+  "id": "MAP_DIGLETT_CAVE2F",
+  "name": "DiglettCave2F",
+  "layout": "LAYOUT_DIGLETT_CAVE2F",
+  "music": "MUS_RG_MT_MOON",
+  "region_map_section": "MAPSEC_DIGLETTS_CAVE",
+  "requires_flash": true,
+  "weather": "WEATHER_SHADE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_DIGLETT_CAVE1F",
+      "offset": -86,
+      "direction": "left"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ONIX_SLEEPING",
+      "x": 13,
+      "y": 12,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_DEFEATED_ROUTE11SNORLAX"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAN_1",
+      "x": 13,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_DEFEATED_ROUTE11SNORLAX"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 4,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_DIGLETT_CAVE",
+      "dest_warp_id": "44"
+    },
+    {
+      "x": 27,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_DIGLETT_CAVE",
+      "dest_warp_id": "45"
+    },
+    {
+      "x": 32,
+      "y": 26,
+      "elevation": 0,
+      "dest_map": "MAP_DIGLETT_CAVE",
+      "dest_warp_id": "46"
+    },
+    {
+      "x": 27,
+      "y": 35,
+      "elevation": 0,
+      "dest_map": "MAP_DIGLETT_CAVE",
+      "dest_warp_id": "47"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

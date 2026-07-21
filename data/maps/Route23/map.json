@@ -35,14 +35,14 @@
       "x": 11,
       "y": 32,
       "elevation": 0,
-      "dest_map": "MAP_KANTO_VICTORY_ROAD",
+      "dest_map": "MAP_INDIGO_VICTORY_ROAD",
       "dest_warp_id": "0"
     },
     {
       "x": 24,
       "y": 32,
       "elevation": 0,
-      "dest_map": "MAP_KANTO_VICTORY_ROAD_F2",
+      "dest_map": "MAP_INDIGO_VICTORY_ROAD_F2",
       "dest_warp_id": "4"
     }
   ],

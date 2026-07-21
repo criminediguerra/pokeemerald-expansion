@@ -405,6 +405,9 @@ $(MID_SUBDIR)/twinleaf.s: %.s: %.mid
 $(MID_SUBDIR)/lakeofrage.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V080
 
+$(MID_SUBDIR)/lavenderforest.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V079
+
 $(MID_SUBDIR)/johtowild.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G138 -V099
 

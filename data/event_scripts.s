@@ -1398,11 +1398,11 @@ EventScript_VsSeekerChargingDone::
 
 	.include "data/maps/SeafoamIslesF6/scripts.inc"
 
-	.include "data/maps/KantoVictoryRoadF1/scripts.inc"
+	.include "data/maps/IndigoVictoryRoadF1/scripts.inc"
 
-	.include "data/maps/KantoVictoryRoadF2/scripts.inc"
+	.include "data/maps/IndigoVictoryRoadF2/scripts.inc"
 
-	.include "data/maps/KantoVictoryRoad/scripts.inc"
+	.include "data/maps/IndigoVictoryRoad/scripts.inc"
 
 	.include "data/maps/IndigoPlateauF1/scripts.inc"
 
@@ -2443,3 +2443,31 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route114_LanettesHouseF1/scripts.inc"
 
 	.include "data/maps/SaffronGymF1/scripts.inc"
+
+	.include "data/maps/LavenderForest/scripts.inc"
+
+	.include "data/maps/OldLavender/scripts.inc"
+
+	.include "data/maps/Route8a/scripts.inc"
+
+	.include "data/maps/OldLavenderF1/scripts.inc"
+
+	.include "data/maps/OldLavenderF2/scripts.inc"
+
+	.include "data/maps/OldLavenderF3/scripts.inc"
+
+	.include "data/maps/OldLavenderF4/scripts.inc"
+
+	.include "data/maps/Route53/scripts.inc"
+
+	.include "data/maps/SomberCity/scripts.inc"
+
+	.include "data/maps/Route54/scripts.inc"
+
+	.include "data/maps/Route55/scripts.inc"
+
+	.include "data/maps/Route11a/scripts.inc"
+
+	.include "data/maps/DiglettCave3F/scripts.inc"
+
+	.include "data/maps/DiglettCave2F/scripts.inc"

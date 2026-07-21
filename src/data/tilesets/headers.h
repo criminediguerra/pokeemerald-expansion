@@ -1135,3 +1135,25 @@ const struct Tileset gTileset_GeneralJohto =
     .metatileAttributes = gMetatileAttributes_GeneralJohto,
     .callback = InitTilesetAnim_General,
 };
+
+const struct Tileset gTileset_LavenderForest =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_LavenderForest,
+    .palettes = gTilesetPalettes_LavenderForest,
+    .metatiles = gMetatiles_LavenderForest,
+    .metatileAttributes = gMetatileAttributes_LavenderForest,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_Old_Lavender =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Old_Lavender,
+    .palettes = gTilesetPalettes_Old_Lavender,
+    .metatiles = gMetatiles_Old_Lavender,
+    .metatileAttributes = gMetatileAttributes_Old_Lavender,
+    .callback = NULL,
+};

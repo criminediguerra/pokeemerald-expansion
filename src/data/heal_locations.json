@@ -419,6 +419,12 @@
       "map": "MAP_RINSHIN_CITY",
       "x": 25,
       "y": 53
+    },
+    {
+      "id": "HEAL_LOCATION_SOMBER_CITY",
+      "map": "MAP_SOMBER_CITY",
+      "x": 49,
+      "y": 31
     }
   ]
 }

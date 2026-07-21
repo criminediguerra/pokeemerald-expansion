@@ -337,6 +337,7 @@ static const u16 sHoennToNationalOrder[HOENN_DEX_COUNT - 1] =
     HOENN_TO_NATIONAL(BLISSEY),
     HOENN_TO_NATIONAL(YAMASK),
     HOENN_TO_NATIONAL(COFAGRIGUS),
+    HOENN_TO_NATIONAL(CRYPTAGRIGUS),
     HOENN_TO_NATIONAL(SIGILYPH),
     HOENN_TO_NATIONAL(GOLETT),
     HOENN_TO_NATIONAL(GOLURK),
@@ -6378,11 +6379,11 @@ u16 GetBattleBGM(void)
     return MUS_RG_VS_WILD;
           if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_VIRIDIAN_LAKE) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_VIRIDIAN_LAKE))
     return MUS_RG_VS_WILD;
-          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_KANTO_VICTORY_ROAD) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_KANTO_VICTORY_ROAD))
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_INDIGO_VICTORY_ROAD) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_INDIGO_VICTORY_ROAD))
     return MUS_RG_VS_WILD;
-          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_KANTO_VICTORY_ROAD_F1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_KANTO_VICTORY_ROAD_F1))
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_INDIGO_VICTORY_ROAD_F1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_INDIGO_VICTORY_ROAD_F1))
     return MUS_RG_VS_WILD;
-          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_KANTO_VICTORY_ROAD_F2) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_KANTO_VICTORY_ROAD_F2))
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_INDIGO_VICTORY_ROAD_F2) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_INDIGO_VICTORY_ROAD_F2))
     return MUS_RG_VS_WILD;
           if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_CINNABAR_VOLCANO) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_CINNABAR_VOLCANO))
     return MUS_RG_VS_WILD;
@@ -6419,6 +6420,8 @@ u16 GetBattleBGM(void)
           if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_KANTO_SAFARI_F4) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_KANTO_SAFARI_F4))
     return MUS_RG_VS_WILD;
           if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_FAR_OFF_CAVE) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_FAR_OFF_CAVE))
+    return MUS_RG_VS_WILD;
+          if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_LAVENDER_FOREST) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_LAVENDER_FOREST))
     return MUS_RG_VS_WILD;
           if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_MT_MORTAR_F1) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_MT_MORTAR_F1))
     return JOHTOWILD;

@@ -3305,3 +3305,9 @@ void Script_EndTrainerCanSeeIf(struct ScriptContext *ctx)
     if (ctx->breakOnTrainerBattle && sScriptConditionTable[condition][ctx->comparisonResult] == 1)
         StopScript(ctx);
 }
+
+void Wrapper_For_fakertc(struct ScriptContext *ctx)
+{
+u32 hours =  gSpecialVar_0x8004;
+FakeRtc_ForwardTimeTo(hours, 0, 0);
+}

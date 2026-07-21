@@ -17713,6 +17713,31 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
+    const u32 gMonFrontPic_YamaskKanto[] = INCBIN_U32("graphics/pokemon/yamask/psychic/front.4bpp.lz");
+    const u16 gMonPalette_YamaskKanto[] = INCBIN_U16("graphics/pokemon/yamask/psychic/normal.gbapal");
+    const u16 gMonShinyPalette_YamaskKanto[] = INCBIN_U16("graphics/pokemon/yamask/psychic/shiny.gbapal");
+    const u8 gMonIcon_YamaskKanto[] = INCBIN_U8("graphics/pokemon/yamask/psychic/icon.4bpp");
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_YamaskKanto[] = INCBIN_COMP("graphics/pokemon/yamask/psychic/overworld.4bpp");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u16 gOverworldPalette_YamaskKanto[] = INCBIN_U16("graphics/pokemon/yamask/psychic/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_YamaskKanto[] = INCBIN_U16("graphics/pokemon/yamask/psychic/overworld_shiny.gbapal");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+
+    const u32 gMonFrontPic_Cryptagrigus[] = INCBIN_U32("graphics/pokemon/cryptagrigus/anim_front.4bpp.lz");
+    const u16 gMonPalette_Cryptagrigus[] = INCBIN_U16("graphics/pokemon/cryptagrigus/normal.gbapal");
+    const u32 gMonBackPic_Cryptagrigus[] = INCBIN_U32("graphics/pokemon/cryptagrigus/back.4bpp.lz");
+    const u16 gMonShinyPalette_Cryptagrigus[] = INCBIN_U16("graphics/pokemon/cryptagrigus/shiny.gbapal");
+    const u8 gMonIcon_Cryptagrigus[] = INCBIN_U8("graphics/pokemon/cryptagrigus/icon.4bpp");
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_Cryptagrigus[] = INCBIN_COMP("graphics/pokemon/cryptagrigus/overworld.4bpp");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u16 gOverworldPalette_Cryptagrigus[] = INCBIN_U16("graphics/pokemon/cryptagrigus/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Cryptagrigus[] = INCBIN_U16("graphics/pokemon/cryptagrigus/overworld_shiny.gbapal");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+
     const u32 gMonFrontPic_Runerigus[] = INCBIN_U32("graphics/pokemon/runerigus/front.4bpp.lz");
     const u16 gMonPalette_Runerigus[] = INCBIN_U16("graphics/pokemon/runerigus/normal.gbapal");
     const u32 gMonBackPic_Runerigus[] = INCBIN_U32("graphics/pokemon/runerigus/back.4bpp.lz");

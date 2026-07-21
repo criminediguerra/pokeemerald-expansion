@@ -214,7 +214,7 @@
     {
       "id": "LAYOUT_ROUTE106",
       "name": "Route106_Layout",
-      "width": 80,
+      "width": 82,
       "height": 20,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Dewford",
@@ -4454,8 +4454,8 @@
     {
       "id": "LAYOUT_ROUTE11",
       "name": "Route11_Layout",
-      "width": 76,
-      "height": 59,
+      "width": 50,
+      "height": 64,
       "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Dewford",
       "border_filepath": "data/layouts/Route11/border.bin",
@@ -4534,8 +4534,8 @@
     {
       "id": "LAYOUT_LAVENDER_TOWN",
       "name": "LavenderTown_Layout",
-      "width": 35,
-      "height": 27,
+      "width": 39,
+      "height": 40,
       "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/LavenderTown/border.bin",
@@ -4547,7 +4547,7 @@
       "width": 51,
       "height": 111,
       "primary_tileset": "gTileset_GeneralStairs",
-      "secondary_tileset": "gTileset_Mauville",
+      "secondary_tileset": "gTileset_Saffron",
       "border_filepath": "data/layouts/Route12/border.bin",
       "blockdata_filepath": "data/layouts/Route12/map.bin"
     },
@@ -4557,7 +4557,7 @@
       "width": 110,
       "height": 38,
       "primary_tileset": "gTileset_GeneralStairs",
-      "secondary_tileset": "gTileset_Mauville",
+      "secondary_tileset": "gTileset_Saffron",
       "border_filepath": "data/layouts/Route13/border.bin",
       "blockdata_filepath": "data/layouts/Route13/map.bin"
     },
@@ -4884,10 +4884,10 @@
     {
       "id": "LAYOUT_ROUTE8",
       "name": "Route8_Layout",
-      "width": 68,
-      "height": 28,
+      "width": 66,
+      "height": 32,
       "primary_tileset": "gTileset_GeneralStairs",
-      "secondary_tileset": "gTileset_Mauville",
+      "secondary_tileset": "gTileset_Saffron",
       "border_filepath": "data/layouts/Route8/border.bin",
       "blockdata_filepath": "data/layouts/Route8/map.bin"
     },
@@ -4934,7 +4934,7 @@
     {
       "id": "LAYOUT_DIGLETT_CAVE",
       "name": "DiglettCave_Layout",
-      "width": 38,
+      "width": 152,
       "height": 47,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
@@ -4944,9 +4944,9 @@
     {
       "id": "LAYOUT_DIGLETT_CAVE1F",
       "name": "DiglettCave1F_Layout",
-      "width": 65,
+      "width": 75,
       "height": 99,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/DiglettCave1F/border.bin",
       "blockdata_filepath": "data/layouts/DiglettCave1F/map.bin"
@@ -5307,7 +5307,7 @@
       "width": 33,
       "height": 35,
       "primary_tileset": "gTileset_GeneralStairs",
-      "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
+      "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/MtSilverF2/border.bin",
       "blockdata_filepath": "data/layouts/MtSilverF2/map.bin"
     },
@@ -5672,34 +5672,34 @@
       "blockdata_filepath": "data/layouts/SeafoamIslesF6/map.bin"
     },
     {
-      "id": "LAYOUT_KANTO_VICTORY_ROAD_F1",
-      "name": "KantoVictoryRoadF1_Layout",
+      "id": "LAYOUT_INDIGO_VICTORY_ROAD_F1",
+      "name": "IndigoVictoryRoadF1_Layout",
       "width": 65,
       "height": 36,
       "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/KantoVictoryRoadF1/border.bin",
-      "blockdata_filepath": "data/layouts/KantoVictoryRoadF1/map.bin"
+      "border_filepath": "data/layouts/IndigoVictoryRoadF1/border.bin",
+      "blockdata_filepath": "data/layouts/IndigoVictoryRoadF1/map.bin"
     },
     {
-      "id": "LAYOUT_KANTO_VICTORY_ROAD_F2",
-      "name": "KantoVictoryRoadF2_Layout",
+      "id": "LAYOUT_INDIGO_VICTORY_ROAD_F2",
+      "name": "IndigoVictoryRoadF2_Layout",
       "width": 63,
       "height": 37,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/KantoVictoryRoadF2/border.bin",
-      "blockdata_filepath": "data/layouts/KantoVictoryRoadF2/map.bin"
+      "border_filepath": "data/layouts/IndigoVictoryRoadF2/border.bin",
+      "blockdata_filepath": "data/layouts/IndigoVictoryRoadF2/map.bin"
     },
     {
-      "id": "LAYOUT_KANTO_VICTORY_ROAD",
-      "name": "KantoVictoryRoad_Layout",
+      "id": "LAYOUT_INDIGO_VICTORY_ROAD",
+      "name": "IndigoVictoryRoad_Layout",
       "width": 37,
       "height": 56,
       "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/KantoVictoryRoad/border.bin",
-      "blockdata_filepath": "data/layouts/KantoVictoryRoad/map.bin"
+      "border_filepath": "data/layouts/IndigoVictoryRoad/border.bin",
+      "blockdata_filepath": "data/layouts/IndigoVictoryRoad/map.bin"
     },
     {
       "id": "LAYOUT_INDIGO_PLATEAU_F1",
@@ -7404,8 +7404,8 @@
     {
       "id": "LAYOUT_ROUTE10A",
       "name": "Route10a_Layout",
-      "width": 35,
-      "height": 28,
+      "width": 39,
+      "height": 30,
       "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/Route10a/border.bin",
@@ -10490,6 +10490,146 @@
       "secondary_tileset": "gTileset_Saffron",
       "border_filepath": "data/layouts/SaffronGymF1/border.bin",
       "blockdata_filepath": "data/layouts/SaffronGymF1/map.bin"
+    },
+    {
+      "id": "LAYOUT_LAVENDER_FOREST",
+      "name": "LavenderForest_Layout",
+      "width": 112,
+      "height": 64,
+      "primary_tileset": "gTileset_GeneralStairs",
+      "secondary_tileset": "gTileset_LavenderForest",
+      "border_filepath": "data/layouts/LavenderForest/border.bin",
+      "blockdata_filepath": "data/layouts/LavenderForest/map.bin"
+    },
+    {
+      "id": "LAYOUT_OLD_LAVENDER",
+      "name": "OldLavender_Layout",
+      "width": 41,
+      "height": 43,
+      "primary_tileset": "gTileset_GeneralStairs",
+      "secondary_tileset": "gTileset_Old_Lavender",
+      "border_filepath": "data/layouts/OldLavender/border.bin",
+      "blockdata_filepath": "data/layouts/OldLavender/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE8A",
+      "name": "Route8a_Layout",
+      "width": 40,
+      "height": 32,
+      "primary_tileset": "gTileset_GeneralStairs",
+      "secondary_tileset": "gTileset_Lilycove",
+      "border_filepath": "data/layouts/Route8a/border.bin",
+      "blockdata_filepath": "data/layouts/Route8a/map.bin"
+    },
+    {
+      "id": "LAYOUT_OLD_LAVENDER_F1",
+      "name": "OldLavenderF1_Layout",
+      "width": 67,
+      "height": 67,
+      "primary_tileset": "gTileset_GeneralStairs",
+      "secondary_tileset": "gTileset_Old_Lavender",
+      "border_filepath": "data/layouts/OldLavenderF1/border.bin",
+      "blockdata_filepath": "data/layouts/OldLavenderF1/map.bin"
+    },
+    {
+      "id": "LAYOUT_OLD_LAVENDER_F2",
+      "name": "OldLavenderF2_Layout",
+      "width": 21,
+      "height": 27,
+      "primary_tileset": "gTileset_GeneralStairs",
+      "secondary_tileset": "gTileset_Old_Lavender",
+      "border_filepath": "data/layouts/OldLavenderF2/border.bin",
+      "blockdata_filepath": "data/layouts/OldLavenderF2/map.bin"
+    },
+    {
+      "id": "LAYOUT_OLD_LAVENDER_F3",
+      "name": "OldLavenderF3_Layout",
+      "width": 105,
+      "height": 64,
+      "primary_tileset": "gTileset_GeneralStairs",
+      "secondary_tileset": "gTileset_Old_Lavender",
+      "border_filepath": "data/layouts/OldLavenderF3/border.bin",
+      "blockdata_filepath": "data/layouts/OldLavenderF3/map.bin"
+    },
+    {
+      "id": "LAYOUT_OLD_LAVENDER_F4",
+      "name": "OldLavenderF4_Layout",
+      "width": 32,
+      "height": 18,
+      "primary_tileset": "gTileset_GeneralStairs",
+      "secondary_tileset": "gTileset_Old_Lavender",
+      "border_filepath": "data/layouts/OldLavenderF4/border.bin",
+      "blockdata_filepath": "data/layouts/OldLavenderF4/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE53",
+      "name": "Route53_Layout",
+      "width": 58,
+      "height": 36,
+      "primary_tileset": "gTileset_GeneralStairs",
+      "secondary_tileset": "gTileset_Ecruteak",
+      "border_filepath": "data/layouts/Route53/border.bin",
+      "blockdata_filepath": "data/layouts/Route53/map.bin"
+    },
+    {
+      "id": "LAYOUT_SOMBER_CITY",
+      "name": "SomberCity_Layout",
+      "width": 62,
+      "height": 57,
+      "primary_tileset": "gTileset_GeneralStairs",
+      "secondary_tileset": "gTileset_Ecruteak",
+      "border_filepath": "data/layouts/SomberCity/border.bin",
+      "blockdata_filepath": "data/layouts/SomberCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE54",
+      "name": "Route54_Layout",
+      "width": 129,
+      "height": 57,
+      "primary_tileset": "gTileset_GeneralStairs",
+      "secondary_tileset": "gTileset_Mossdeep",
+      "border_filepath": "data/layouts/Route54/border.bin",
+      "blockdata_filepath": "data/layouts/Route54/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE55",
+      "name": "Route55_Layout",
+      "width": 46,
+      "height": 76,
+      "primary_tileset": "gTileset_GeneralStairs",
+      "secondary_tileset": "gTileset_Mossdeep",
+      "border_filepath": "data/layouts/Route55/border.bin",
+      "blockdata_filepath": "data/layouts/Route55/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE11A",
+      "name": "Route11a_Layout",
+      "width": 28,
+      "height": 29,
+      "primary_tileset": "gTileset_GeneralStairs",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/Route11a/border.bin",
+      "blockdata_filepath": "data/layouts/Route11a/map.bin"
+    },
+    {
+      "id": "LAYOUT_DIGLETT_CAVE3F",
+      "name": "DiglettCave3F_Layout",
+      "width": 80,
+      "height": 83,
+      "primary_tileset": "gTileset_GeneralStairs",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/DiglettCave3F/border.bin",
+      "blockdata_filepath": "data/layouts/DiglettCave3F/map.bin"
+    },
+    {
+      "id": "LAYOUT_DIGLETT_CAVE2F",
+      "name": "DiglettCave2F_Layout",
+      "width": 39,
+      "height": 40,
+      "primary_tileset": "gTileset_GeneralStairs",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/DiglettCave2F/border.bin",
+      "blockdata_filepath": "data/layouts/DiglettCave2F/map.bin"
     }
   ]
 }

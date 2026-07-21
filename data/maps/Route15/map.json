@@ -22,6 +22,11 @@
       "map": "MAP_FUCHSIA_CITY",
       "offset": -20,
       "direction": "left"
+    },
+    {
+      "map": "MAP_ROUTE55",
+      "offset": 44,
+      "direction": "up"
     }
   ],
   "object_events": [

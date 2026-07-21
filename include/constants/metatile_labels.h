@@ -370,6 +370,33 @@
 // gTileset_MossdeepGym
 #define METATILE_MossdeepGym_YellowArrow_Right  0x250
 
+// gTileset_Old_Lavender
+#define METATILE_Old_Lavender_StoneDoorClosedCenterBottom        0x261
+#define METATILE_Old_Lavender_StoneDoorClosedCenterCenter        0x259
+#define METATILE_Old_Lavender_StoneDoorClosedCenterUp            0x251
+#define METATILE_Old_Lavender_StoneDoorClosedLeftColumn          0x258
+#define METATILE_Old_Lavender_StoneDoorClosedLeftFeet            0x260
+#define METATILE_Old_Lavender_StoneDoorClosedLeftUpperCorner     0x250
+#define METATILE_Old_Lavender_StoneDoorClosedRightColumn         0x25A
+#define METATILE_Old_Lavender_StoneDoorClosedRightFeet           0x262
+#define METATILE_Old_Lavender_StoneDoorClosedRightUpperCorner    0x252
+#define METATILE_Old_Lavender_StoneDoorOpenCenterUp              0x239
+#define METATILE_Old_Lavender_StoneDoorOpenLeftColumn            0x240
+#define METATILE_Old_Lavender_StoneDoorOpenLeftFeet              0x248
+#define METATILE_Old_Lavender_StoneDoorOpenLeftUpperCorner       0x238
+#define METATILE_Old_Lavender_StoneDoorOpenRightColumn           0x242
+#define METATILE_Old_Lavender_StoneDoorOpenRightFeet             0x24A
+#define METATILE_Old_Lavender_StoneDoorOpenRightUpperCorner      0x23A
+#define METATILE_Old_Lavender_StoneDoorOpenVoid                  0x23F
+#define METATILE_Old_Lavender_StoneFloor                         0x200
+#define METATILE_Old_Lavender_VoidStoneDoorOpenCenterUp          0x255
+#define METATILE_Old_Lavender_VoidStoneDoorOpenLeftColumn        0x256
+#define METATILE_Old_Lavender_VoidStoneDoorOpenLeftFeet          0x25E
+#define METATILE_Old_Lavender_VoidStoneDoorOpenLeftUpperCorner   0x24E
+#define METATILE_Old_Lavender_VoidStoneDoorOpenRightColumn       0x257
+#define METATILE_Old_Lavender_VoidStoneDoorOpenRightFeet         0x25F
+#define METATILE_Old_Lavender_VoidStoneDoorOpenRightUpperCorner  0x24F
+
 // gTileset_Pacifidlog
 #define METATILE_Pacifidlog_Door                               0x21A
 #define METATILE_Pacifidlog_FloatingLogs_HorizontalLeft        0x250

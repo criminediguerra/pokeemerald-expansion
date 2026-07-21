@@ -85,3 +85,55 @@ Outfit_Unlock_Ruby_Text_FoundOutfit:
 Outfit_Unlock_Ruby_Text_PutOutfitInPocket:
 	.string "{PLAYER}{KUN} put away the RUBY\n"
 	.string "TRACKSUIT in the OUTFIT POCKET.$"
+
+PlayersHouse_2F_Sleep::
+	msgbox PlayersHouse_2F_Text_ItsABed, MSGBOX_SIGN
+	closemessage
+	message PlayersHouse_2F_Text_HowLongDoYouWantToSleep
+	multichoice 25, 0, MULTI_SLEEP, FALSE
+	switch VAR_RESULT
+	case 0, PlayersHouse_2F_Text_SleepUntillMorning
+	case 1, PlayersHouse_2F_Text_SleepUntillDay
+	case 2, PlayersHouse_2F_Text_SleepUntillEvening
+	case 3, PlayersHouse_2F_Text_SleepUntillNight
+	case MULTI_B_PRESSED, PlayersHouse_2F_NotSleepy
+	closemessage
+	return
+
+PlayersHouse_2F_Text_ItsABed:
+	.string "It's a Bed!$"
+
+PlayersHouse_2F_Text_HowLongDoYouWantToSleep:
+	.string "How long do you want to sleep?$"
+
+PlayersHouse_2F_Text_SleepUntillMorning::
+	setvar VAR_0x8004 23
+	callnative Wrapper_For_fakertc
+	warp MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F, 1, 4
+	end
+
+PlayersHouse_2F_Text_SleepUntillDay::
+	setvar VAR_0x8004 2
+	callnative Wrapper_For_fakertc
+	warp MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F, 1, 4
+	end
+
+PlayersHouse_2F_Text_SleepUntillEvening::
+	setvar VAR_0x8004 12
+	callnative Wrapper_For_fakertc
+	warp MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F, 1, 4
+	end
+
+PlayersHouse_2F_Text_SleepUntillNight::
+	setvar VAR_0x8004 16
+	callnative Wrapper_For_fakertc
+	warp MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F, 1, 4
+	end
+
+PlayersHouse_2F_NotSleepy::
+	msgbox PlayersHouse_2F_Text_NotSleepy, MSGBOX_SIGN
+	closemessage
+	return
+
+PlayersHouse_2F_Text_NotSleepy:
+	.string "I'm not sleepy right now...$"

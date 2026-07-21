@@ -4172,6 +4172,12 @@ static const struct SpriteFrameImage sPicTable_YamaskGalar[] = {
 static const struct SpriteFrameImage sPicTable_Runerigus[] = {
     overworld_ascending_frames(gObjectEventPic_Runerigus, 4, 4),
 };
+static const struct SpriteFrameImage sPicTable_YamaskKanto[] = {
+    overworld_ascending_frames(gObjectEventPic_YamaskKanto, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Cryptagrigus[] = {
+    overworld_ascending_frames(gObjectEventPic_Cryptagrigus, 4, 4),
+};
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_YAMASK
 

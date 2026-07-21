@@ -726,6 +726,14 @@ static const struct MenuAction MultichoiceList_TVLati[] =
     {COMPOUND_STRING("BLUE")},
 };
 
+static const struct MenuAction MultichoiceList_Sleep[] =
+{
+    {COMPOUND_STRING("MORNING")},
+    {COMPOUND_STRING("DAY")},
+    {COMPOUND_STRING("EVENING")},
+    {COMPOUND_STRING("NIGHT")},
+};
+
 static const struct MenuAction MultichoiceList_BattleTowerFeelings[] =
 {
     {COMPOUND_STRING("I'll battle now!")},
@@ -906,6 +914,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_FALLARBOR_TENT_RULES]       = MULTICHOICE(MultichoiceList_FallarborTentRules),
     [MULTI_TAG_MATCH_TYPE]             = MULTICHOICE(MultichoiceList_TagMatchType),
     [MULTI_BERRY_PLOT]                 = MULTICHOICE(MultichoiceList_BerryPlot),
+    [MULTI_SLEEP]                      = MULTICHOICE(MultichoiceList_Sleep),
 };
 
 const u8 *const gStdStrings[] =

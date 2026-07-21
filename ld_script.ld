@@ -1250,6 +1250,7 @@ SECTIONS {
         sound/songs/midi/twinleaf.o(.rodata);
         sound/songs/midi/fourisland.o(.rodata);
         sound/songs/midi/lakeofrage.o(.rodata);
+        sound/songs/midi/lavenderforest.o(.rodata);
         sound/songs/midi/ecruteak.o(.rodata);
         sound/songs/midi/rocket.o(.rodata);
         sound/songs/midi/encounterrocket.o(.rodata);

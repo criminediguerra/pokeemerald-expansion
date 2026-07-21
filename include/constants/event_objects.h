@@ -399,11 +399,13 @@
 #define OBJ_EVENT_GFX_RUBY_SAPPHIRE_DAWN_FISHING     392
 #define OBJ_EVENT_GFX_RUBY_SAPPHIRE_DAWN_WATERING         393
 #define OBJ_EVENT_GFX_RUBY_SAPPHIRE_DAWN_DECORATING         394
+#define OBJ_EVENT_GFX_LEVER                      395
+#define OBJ_EVENT_GFX_ONIX_SLEEPING              396
 
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        395
+#define NUM_OBJ_EVENT_GFX                        397
 
 
 // These are dynamic object gfx ids.

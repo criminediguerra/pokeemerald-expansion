@@ -5,7 +5,7 @@
   "music": "MUS_RG_LAVENDER",
   "region_map_section": "MAPSEC_LAVENDER_TOWN",
   "requires_flash": false,
-  "weather": "WEATHER_NONE",
+  "weather": "WEATHER_FOG_HORIZONTAL",
   "map_type": "MAP_TYPE_TOWN",
   "allow_cycling": true,
   "allow_escaping": false,
@@ -15,18 +15,18 @@
   "connections": [
     {
       "map": "MAP_ROUTE12",
-      "offset": -2,
-      "direction": "down"
-    },
-    {
-      "map": "MAP_ROUTE8",
       "offset": -1,
-      "direction": "left"
+      "direction": "down"
     },
     {
       "map": "MAP_ROUTE10A",
       "offset": 4,
       "direction": "up"
+    },
+    {
+      "map": "MAP_ROUTE8A",
+      "offset": -3,
+      "direction": "left"
     }
   ],
   "object_events": [
@@ -45,8 +45,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_TWIN",
-      "x": 31,
-      "y": 11,
+      "x": 33,
+      "y": 14,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -58,8 +58,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_3",
-      "x": 20,
-      "y": 18,
+      "x": 19,
+      "y": 17,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -71,8 +71,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(CUBONE)",
-      "x": 21,
-      "y": 18,
+      "x": 20,
+      "y": 17,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 0,
@@ -97,8 +97,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
-      "x": 29,
-      "y": 16,
+      "x": 12,
+      "y": 21,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -107,11 +107,115 @@
       "trainer_sight_or_berry_tree_id": "LIGHT_TYPE_POKE_MART_SIGN",
       "script": "NULL",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GRAVE",
+      "x": 27,
+      "y": 19,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Lavender_Grave",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GRAVE",
+      "x": 32,
+      "y": 19,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Lavender_Grave",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GRAVE",
+      "x": 29,
+      "y": 19,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Lavender_Grave",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GRAVE",
+      "x": 30,
+      "y": 19,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Lavender_Grave",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GRAVE",
+      "x": 28,
+      "y": 20,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Lavender_Grave",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GRAVE",
+      "x": 31,
+      "y": 20,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Lavender_Grave",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
+      "x": 30,
+      "y": 32,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_CutTree",
+      "flag": "FLAG_TEMP_13"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
+      "x": 31,
+      "y": 32,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_CutTree",
+      "flag": "FLAG_TEMP_11"
     }
   ],
   "warp_events": [
     {
-      "x": 27,
+      "x": 31,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_LAVENDER_TOWER_F1",
@@ -125,29 +229,29 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 27,
-      "y": 16,
+      "x": 10,
+      "y": 21,
       "elevation": 0,
       "dest_map": "MAP_LAVENDER_MART",
       "dest_warp_id": "0"
     },
     {
-      "x": 14,
-      "y": 13,
+      "x": 29,
+      "y": 26,
       "elevation": 0,
       "dest_map": "MAP_LAVENDER_ORPHANAGE",
       "dest_warp_id": "0"
     },
     {
-      "x": 15,
-      "y": 19,
+      "x": 8,
+      "y": 16,
       "elevation": 0,
       "dest_map": "MAP_LAVENDER_ORPHANAGE",
       "dest_warp_id": "2"
     },
     {
-      "x": 10,
-      "y": 19,
+      "x": 22,
+      "y": 10,
       "elevation": 0,
       "dest_map": "MAP_LAVENDER_ORPHANAGE",
       "dest_warp_id": "3"
@@ -157,24 +261,24 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 29,
-      "y": 9,
+      "x": 33,
+      "y": 12,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "PalletTown_LavenderTowerSign"
     },
     {
       "type": "sign",
-      "x": 12,
-      "y": 13,
+      "x": 33,
+      "y": 27,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "PalletTown_LavenderOrphanageSign"
     },
     {
       "type": "sign",
-      "x": 13,
-      "y": 7,
+      "x": 17,
+      "y": 22,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "PalletTown_Lavender_TownSign"
@@ -197,16 +301,16 @@
     },
     {
       "type": "sign",
-      "x": 28,
-      "y": 16,
+      "x": 11,
+      "y": 21,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "Common_EventScript_ShowPokemartSign"
     },
     {
       "type": "sign",
-      "x": 29,
-      "y": 16,
+      "x": 12,
+      "y": 21,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "Common_EventScript_ShowPokemartSign"

@@ -115,6 +115,13 @@
       "elevation": 0,
       "dest_map": "MAP_SAFFRON_GYM_F1",
       "dest_warp_id": "30"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_LAVENDER_FOREST",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [],

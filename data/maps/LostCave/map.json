@@ -2,7 +2,7 @@
   "id": "MAP_LOST_CAVE",
   "name": "LostCave",
   "layout": "LAYOUT_LOST_CAVE",
-  "music": "MUS_RG_SEVII_CAVE",
+  "music": "MUS_RG_MT_MOON",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_FOG_HORIZONTAL",

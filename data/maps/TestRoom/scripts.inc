@@ -134,6 +134,7 @@ Testroom_EventScript_Fly::
 	setflag FLAG_VISITED_ASHLEAF
 	setflag FLAG_VISITED_LAROUSSE
 	setflag FLAG_VISITED_RINSHIN_CITY
+	setflag FLAG_VISITED_SOMBER
 end
 
 Testroom_EventScript_FlyHoenn::

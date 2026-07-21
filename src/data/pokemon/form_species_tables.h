@@ -1231,6 +1231,7 @@ static const u16 sYamaskFormSpeciesIdTable[] = {
     SPECIES_YAMASK,
 #if P_GALARIAN_FORMS
     SPECIES_YAMASK_GALAR,
+    SPECIES_YAMASK_KANTO,
 #endif
     FORM_SPECIES_END,
 };

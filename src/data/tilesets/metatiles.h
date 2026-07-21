@@ -286,3 +286,9 @@ const u16 gMetatileAttributes_Ecruteak[] = INCBIN_U16("data/tilesets/secondary/e
 
 const u16 gMetatiles_GeneralJohto[] = INCBIN_U16("data/tilesets/primary/general_johto/metatiles.bin");
 const u16 gMetatileAttributes_GeneralJohto[] = INCBIN_U16("data/tilesets/primary/general_johto/metatile_attributes.bin");
+
+const u16 gMetatiles_LavenderForest[] = INCBIN_U16("data/tilesets/secondary/lavender_forest/metatiles.bin");
+const u16 gMetatileAttributes_LavenderForest[] = INCBIN_U16("data/tilesets/secondary/lavender_forest/metatile_attributes.bin");
+
+const u16 gMetatiles_Old_Lavender[] = INCBIN_U16("data/tilesets/secondary/old_lavender/metatiles.bin");
+const u16 gMetatileAttributes_Old_Lavender[] = INCBIN_U16("data/tilesets/secondary/old_lavender/metatile_attributes.bin");

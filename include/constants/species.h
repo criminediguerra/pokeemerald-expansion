@@ -1669,9 +1669,11 @@
 #define SPECIES_ALAKAZAM_ALOLA                          1553
 #define SPECIES_VENUSTOR                                1554
 #define SPECIES_EXEGG                                   1555
+#define SPECIES_YAMASK_KANTO                            1556
+#define SPECIES_CRYPTAGRIGUS                            1557
 
 
-#define SPECIES_EGG                                     (SPECIES_EXEGG + 1)
+#define SPECIES_EGG                                     (SPECIES_CRYPTAGRIGUS + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

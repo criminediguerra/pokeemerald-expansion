@@ -1,0 +1,83 @@
+{
+  "id": "MAP_DIGLETT_CAVE3F",
+  "name": "DiglettCave3F",
+  "layout": "LAYOUT_DIGLETT_CAVE3F",
+  "music": "MUS_RG_MT_MOON",
+  "region_map_section": "MAPSEC_DIGLETTS_CAVE",
+  "requires_flash": true,
+  "weather": "WEATHER_SHADE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_DIGLETT_CAVE1F",
+      "offset": -60,
+      "direction": "right"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 19,
+      "y": 71,
+      "elevation": 0,
+      "dest_map": "MAP_DIGLETT_CAVE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 35,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_DIGLETT_CAVE3F",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 70,
+      "y": 80,
+      "elevation": 0,
+      "dest_map": "MAP_DIGLETT_CAVE3F",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 75,
+      "y": 73,
+      "elevation": 0,
+      "dest_map": "MAP_DIGLETT_CAVE3F",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 74,
+      "y": 63,
+      "elevation": 0,
+      "dest_map": "MAP_DIGLETT_CAVE3F",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 75,
+      "y": 39,
+      "elevation": 0,
+      "dest_map": "MAP_MT_MOON_F3",
+      "dest_warp_id": "5"
+    },
+    {
+      "x": 69,
+      "y": 56,
+      "elevation": 0,
+      "dest_map": "MAP_DIGLETT_CAVE3F",
+      "dest_warp_id": "7"
+    },
+    {
+      "x": 70,
+      "y": 46,
+      "elevation": 0,
+      "dest_map": "MAP_DIGLETT_CAVE3F",
+      "dest_warp_id": "6"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

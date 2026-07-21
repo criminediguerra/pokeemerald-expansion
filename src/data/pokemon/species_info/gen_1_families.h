@@ -6729,7 +6729,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             sPicTable_Diglett,
             SIZE_32x32,
             SHADOW_SIZE_M,
-            TRACKS_NONE,
+            TRACKS_SLITHER,
             sAnimTable_Following,
             gOverworldPalette_Diglett,
             gShinyOverworldPalette_Diglett
@@ -6808,7 +6808,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             sPicTable_Dugtrio,
             SIZE_32x32,
             SHADOW_SIZE_M,
-            TRACKS_NONE,
+            TRACKS_SLITHER,
             sAnimTable_Following,
             gOverworldPalette_Dugtrio,
             gShinyOverworldPalette_Dugtrio
@@ -6879,7 +6879,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             sPicTable_DiglettAlola,
             SIZE_32x32,
             SHADOW_SIZE_M,
-            TRACKS_FOOT,
+            TRACKS_SLITHER,
             sAnimTable_Following,
             gOverworldPalette_DiglettAlola,
             gShinyOverworldPalette_DiglettAlola
@@ -6961,7 +6961,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             sPicTable_DugtrioAlola,
             SIZE_32x32,
             SHADOW_SIZE_M,
-            TRACKS_FOOT,
+            TRACKS_SLITHER,
             sAnimTable_Following,
             gOverworldPalette_DugtrioAlola,
             gShinyOverworldPalette_DugtrioAlola

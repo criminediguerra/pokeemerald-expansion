@@ -72,15 +72,15 @@
       "dest_warp_id": "1"
     },
     {
-      "x": 23,
-      "y": 5,
+      "x": 31,
+      "y": 4,
       "elevation": 0,
       "dest_map": "MAP_MT_MOON_F3",
       "dest_warp_id": "3"
     },
     {
-      "x": 31,
-      "y": 4,
+      "x": 23,
+      "y": 5,
       "elevation": 0,
       "dest_map": "MAP_MT_MOON_F1",
       "dest_warp_id": "2"
