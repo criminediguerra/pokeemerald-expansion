@@ -4914,10 +4914,10 @@
     {
       "id": "LAYOUT_UNDERGROUND_PATH_VERTICAL",
       "name": "UndergroundPathVertical_Layout",
-      "width": 8,
-      "height": 63,
+      "width": 50,
+      "height": 50,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_InsideShip",
+      "secondary_tileset": "gTileset_Sewers",
       "border_filepath": "data/layouts/UndergroundPathVertical/border.bin",
       "blockdata_filepath": "data/layouts/UndergroundPathVertical/map.bin"
     },
@@ -10630,6 +10630,16 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/DiglettCave2F/border.bin",
       "blockdata_filepath": "data/layouts/DiglettCave2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_POKE_GOLD_SUPER_HOENN",
+      "name": "PokeGoldSuper_Hoenn_Layout",
+      "width": 80,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/PokeGoldSuper_Hoenn/border.bin",
+      "blockdata_filepath": "data/layouts/PokeGoldSuper_Hoenn/map.bin"
     }
   ]
 }

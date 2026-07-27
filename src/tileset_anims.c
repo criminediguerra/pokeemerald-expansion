@@ -44,8 +44,10 @@ static void TilesetAnim_MauvilleGym(u16);
 static void TilesetAnim_BikeShop(u16);
 static void TilesetAnim_BattlePyramid(u16);
 static void TilesetAnim_BattleDome(u16);
+static void TilesetAnim_Sewer(u16);
 static void QueueAnimTiles_General_Flower(u16);
 static void QueueAnimTiles_General_Water(u16);
+static void QueueAnimTiles_Sewer_Water(u16);
 static void QueueAnimTiles_General_SandWaterEdge(u16);
 static void QueueAnimTiles_General_Waterfall(u16);
 static void QueueAnimTiles_General_LandWaterEdge(u16);
@@ -105,6 +107,18 @@ const u16 *const gTilesetAnims_General_Water[] = {
     gTilesetAnims_General_Water_Frame5,
     gTilesetAnims_General_Water_Frame6,
     gTilesetAnims_General_Water_Frame7
+};
+
+const u16 gTilesetAnims_Sewer_Water_Frame0[] = INCBIN_U16("data/tilesets/secondary/sewers/anim/0.4bpp");
+const u16 gTilesetAnims_Sewer_Water_Frame1[] = INCBIN_U16("data/tilesets/secondary/sewers/anim/1.4bpp");
+const u16 gTilesetAnims_Sewer_Water_Frame2[] = INCBIN_U16("data/tilesets/secondary/sewers/anim/2.4bpp");
+const u16 gTilesetAnims_Sewer_Water_Frame3[] = INCBIN_U16("data/tilesets/secondary/sewers/anim/3.4bpp");
+
+const u16 *const gTilesetAnims_Sewer_Water[] = {
+    gTilesetAnims_Sewer_Water_Frame0,
+    gTilesetAnims_Sewer_Water_Frame1,
+    gTilesetAnims_Sewer_Water_Frame2,
+    gTilesetAnims_Sewer_Water_Frame3
 };
 
 const u16 gTilesetAnims_General_SandWaterEdge_Frame0[] = INCBIN_U16("data/tilesets/primary/general/anim/sand_water_edge/0.4bpp");
@@ -623,6 +637,13 @@ void InitTilesetAnim_General(void)
     sPrimaryTilesetAnimCallback = TilesetAnim_General;
 }
 
+void InitTilesetAnim_Sewer(void)
+{
+    sPrimaryTilesetAnimCounter = 0;
+    sPrimaryTilesetAnimCounterMax = 256;
+    sPrimaryTilesetAnimCallback = TilesetAnim_Sewer;
+}
+
 void InitTilesetAnim_Building(void)
 {
     sPrimaryTilesetAnimCounter = 0;
@@ -644,6 +665,12 @@ static void TilesetAnim_General(u16 timer)
         QueueAnimTiles_General_LandWaterEdge(timer / 16);
 }
 
+static void TilesetAnim_Sewer(u16 timer)
+{
+    if (timer % 16 == 0)
+        QueueAnimTiles_Sewer_Water(timer / 16);
+}
+
 static void TilesetAnim_Building(u16 timer)
 {
     if (timer % 8 == 0)
@@ -660,6 +687,12 @@ static void QueueAnimTiles_General_Water(u16 timer)
 {
     u8 i = timer % ARRAY_COUNT(gTilesetAnims_General_Water);
     AppendTilesetAnimToBuffer(gTilesetAnims_General_Water[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(432)), 30 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_Sewer_Water(u16 timer)
+{
+    u8 i = timer % ARRAY_COUNT(gTilesetAnims_Sewer_Water);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Sewer_Water[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 5)), 6 * TILE_SIZE_4BPP);
 }
 
 static void QueueAnimTiles_General_SandWaterEdge(u16 timer)

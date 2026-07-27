@@ -1157,3 +1157,14 @@ const struct Tileset gTileset_Old_Lavender =
     .metatileAttributes = gMetatileAttributes_Old_Lavender,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Sewers =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Sewers,
+    .palettes = gTilesetPalettes_Sewers,
+    .metatiles = gMetatiles_Sewers,
+    .metatileAttributes = gMetatileAttributes_Sewers,
+    .callback = InitTilesetAnim_Sewer,
+};

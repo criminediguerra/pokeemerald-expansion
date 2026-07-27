@@ -2471,3 +2471,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/DiglettCave3F/scripts.inc"
 
 	.include "data/maps/DiglettCave2F/scripts.inc"
+
+	.include "data/maps/PokeGoldSuper_Hoenn/scripts.inc"
