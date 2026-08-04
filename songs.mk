@@ -357,6 +357,9 @@ $(MID_SUBDIR)/mus_rg_hall_of_fame.s: %.s: %.mid
 $(MID_SUBDIR)/mus_rg_encounter_deoxys.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G184 -V079
 
+$(MID_SUBDIR)/izabe.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G196 -V099
+
 $(MID_SUBDIR)/cyanwood.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V099
 

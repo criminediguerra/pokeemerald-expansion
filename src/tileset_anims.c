@@ -692,7 +692,7 @@ static void QueueAnimTiles_General_Water(u16 timer)
 static void QueueAnimTiles_Sewer_Water(u16 timer)
 {
     u8 i = timer % ARRAY_COUNT(gTilesetAnims_Sewer_Water);
-    AppendTilesetAnimToBuffer(gTilesetAnims_Sewer_Water[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 5)), 6 * TILE_SIZE_4BPP);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Sewer_Water[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 7)), 4 * TILE_SIZE_4BPP);
 }
 
 static void QueueAnimTiles_General_SandWaterEdge(u16 timer)

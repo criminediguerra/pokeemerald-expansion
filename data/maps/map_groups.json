@@ -39,6 +39,7 @@
     "gMapGroup_DungeonsFiore",
     "gMapGroup_DungeonsSinnoh",
     "gMapGroup_Moon",
+    "gMapGroup_PokeGoldSuper",
     "gMapGroup_IndoorDynamic",
     "gMapGroup_SpecialArea",
     "gMapGroup_IndoorRoute104Prototype",
@@ -208,11 +209,13 @@
     "PacifidlogTown",
     "RinshinCity",
     "LarousseCity",
+    "IzabeTown",
     "CrossgateTown",
     "AshleafTown",
     "BattleFrontier_OutsideWest",
     "BattleFrontier_OutsideEast",
     "SouthernIsland_Exterior",
+    "Route96",
     "Route97",
     "Route98",
     "Route99",
@@ -230,6 +233,7 @@
     "Route110a",
     "Route110b",
     "Route111",
+    "Route111a",
     "Route112",
     "Route113",
     "Route114",
@@ -238,6 +242,7 @@
     "Route116",
     "Route117",
     "Route118",
+    "Route118a",
     "Route119",
     "Route119a",
     "Route120",
@@ -1154,6 +1159,10 @@
     "HeavenlyPalaceF3",
     "SpaceshipMoon"
   ],
+  "gMapGroup_PokeGoldSuper": [
+    "PokeGoldSuper_Hoenn",
+    "PokeGoldSuper_Hoenn_2"
+  ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
     "SecretBase_BrownCave1",
@@ -1300,8 +1309,7 @@
     "NavelRock_Down10",
     "NavelRock_Down11",
     "NavelRock_Bottom",
-    "TrainerHill_Elevator",
-    "PokeGoldSuper_Hoenn"
+    "TrainerHill_Elevator"
   ],
   "gMapGroup_IndoorRoute104Prototype": [
     "Route104_Prototype",

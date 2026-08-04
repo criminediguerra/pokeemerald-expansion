@@ -425,6 +425,12 @@
       "map": "MAP_SOMBER_CITY",
       "x": 49,
       "y": 31
+    },
+    {
+      "id": "HEAL_LOCATION_IZABE_TOWN",
+      "map": "MAP_IZABE_TOWN",
+      "x": 42,
+      "y": 34
     }
   ]
 }

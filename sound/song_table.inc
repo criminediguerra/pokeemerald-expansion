@@ -661,6 +661,7 @@ gSongTable::
 	song lakeofrage, 0, 0
 	song ecruteak, 0, 0
 	song lavenderforest, 0, 0
+	song izabe, 0, 0
 
 	.align 2
 dummy_song_header:

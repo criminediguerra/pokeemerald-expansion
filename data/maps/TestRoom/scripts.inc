@@ -135,6 +135,7 @@ Testroom_EventScript_Fly::
 	setflag FLAG_VISITED_LAROUSSE
 	setflag FLAG_VISITED_RINSHIN_CITY
 	setflag FLAG_VISITED_SOMBER
+	setflag FLAG_VISITED_IZABE
 end
 
 Testroom_EventScript_FlyHoenn::

@@ -2473,3 +2473,13 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/DiglettCave2F/scripts.inc"
 
 	.include "data/maps/PokeGoldSuper_Hoenn/scripts.inc"
+
+	.include "data/maps/PokeGoldSuper_Hoenn_2/scripts.inc"
+
+	.include "data/maps/Route96/scripts.inc"
+
+	.include "data/maps/IzabeTown/scripts.inc"
+
+	.include "data/maps/Route118a/scripts.inc"
+
+	.include "data/maps/Route111a/scripts.inc"

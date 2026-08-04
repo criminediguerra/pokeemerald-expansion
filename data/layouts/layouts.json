@@ -264,7 +264,7 @@
     {
       "id": "LAYOUT_ROUTE111",
       "name": "Route111_Layout",
-      "width": 40,
+      "width": 50,
       "height": 140,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mauville",
@@ -3894,7 +3894,7 @@
     {
       "id": "LAYOUT_ROUTE111_NO_MIRAGE_TOWER",
       "name": "Route111_NoMirageTower_Layout",
-      "width": 40,
+      "width": 50,
       "height": 140,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mauville",
@@ -10634,12 +10634,62 @@
     {
       "id": "LAYOUT_POKE_GOLD_SUPER_HOENN",
       "name": "PokeGoldSuper_Hoenn_Layout",
-      "width": 80,
-      "height": 80,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "width": 58,
+      "height": 126,
+      "primary_tileset": "gTileset_GeneralStairs",
+      "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/PokeGoldSuper_Hoenn/border.bin",
       "blockdata_filepath": "data/layouts/PokeGoldSuper_Hoenn/map.bin"
+    },
+    {
+      "id": "LAYOUT_POKE_GOLD_SUPER_HOENN_2",
+      "name": "PokeGoldSuper_Hoenn_2_Layout",
+      "width": 58,
+      "height": 126,
+      "primary_tileset": "gTileset_GeneralStairs",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/PokeGoldSuper_Hoenn_2/border.bin",
+      "blockdata_filepath": "data/layouts/PokeGoldSuper_Hoenn_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE96",
+      "name": "Route96_Layout",
+      "width": 37,
+      "height": 66,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/Route96/border.bin",
+      "blockdata_filepath": "data/layouts/Route96/map.bin"
+    },
+    {
+      "id": "LAYOUT_IZABE_TOWN",
+      "name": "IzabeTown_Layout",
+      "width": 80,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Izabe",
+      "border_filepath": "data/layouts/IzabeTown/border.bin",
+      "blockdata_filepath": "data/layouts/IzabeTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE118A",
+      "name": "Route118a_Layout",
+      "width": 33,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/Route118a/border.bin",
+      "blockdata_filepath": "data/layouts/Route118a/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE111A",
+      "name": "Route111a_Layout",
+      "width": 85,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/Route111a/border.bin",
+      "blockdata_filepath": "data/layouts/Route111a/map.bin"
     }
   ]
 }

@@ -2254,3 +2254,22 @@ const u16 gTilesetPalettes_Sewers[][16] =
 };
 
 const u32 gTilesetTiles_Sewers[] = INCBIN_U32("data/tilesets/secondary/sewers/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_Izabe[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/izabe/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/izabe/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/izabe/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/izabe/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/izabe/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/izabe/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/izabe/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/izabe/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/izabe/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/izabe/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/izabe/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/izabe/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/izabe/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_Izabe[] = INCBIN_U32("data/tilesets/secondary/izabe/tiles.4bpp.lz");

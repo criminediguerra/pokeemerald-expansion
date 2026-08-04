@@ -295,3 +295,6 @@ const u16 gMetatileAttributes_Old_Lavender[] = INCBIN_U16("data/tilesets/seconda
 
 const u16 gMetatiles_Sewers[] = INCBIN_U16("data/tilesets/secondary/sewers/metatiles.bin");
 const u16 gMetatileAttributes_Sewers[] = INCBIN_U16("data/tilesets/secondary/sewers/metatile_attributes.bin");
+
+const u16 gMetatiles_Izabe[] = INCBIN_U16("data/tilesets/secondary/izabe/metatiles.bin");
+const u16 gMetatileAttributes_Izabe[] = INCBIN_U16("data/tilesets/secondary/izabe/metatile_attributes.bin");

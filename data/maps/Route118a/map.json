@@ -1,0 +1,31 @@
+{
+  "id": "MAP_ROUTE118A",
+  "name": "Route118a",
+  "layout": "LAYOUT_ROUTE118A",
+  "music": "MUS_ROUTE118",
+  "region_map_section": "MAPSEC_ROUTE_118",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ROUTE118",
+      "offset": -6,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_IZABE_TOWN",
+      "offset": -35,
+      "direction": "up"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": []
+}
