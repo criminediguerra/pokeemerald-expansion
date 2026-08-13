@@ -721,8 +721,8 @@
 #define FLAG_VISITED_RINSHIN_CITY        0x2A2 // Unused Flag
 #define FLAG_VISITED_SOMBER              0x2A3 // Unused Flag
 #define FLAG_VISITED_IZABE               0x2A4 // Unused Flag
-#define FLAG_UNUSED_0x2A5                0x2A5 // Unused Flag
-#define FLAG_UNUSED_0x2A6                0x2A6 // Unused Flag
+#define FLAG_VISITED_HOLON               0x2A5 // Unused Flag
+#define FLAG_VISITED_LASTING_FLAME       0x2A6 // Unused Flag
 #define FLAG_UNUSED_0x2A7                0x2A7 // Unused Flag
 #define FLAG_UNUSED_0x2A8                0x2A8 // Unused Flag
 #define FLAG_UNUSED_0x2A9                0x2A9 // Unused Flag

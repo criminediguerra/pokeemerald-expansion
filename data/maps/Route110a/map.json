@@ -22,6 +22,11 @@
       "map": "MAP_RINSHIN_CITY",
       "offset": 32,
       "direction": "up"
+    },
+    {
+      "map": "MAP_ROUTE94",
+      "offset": 43,
+      "direction": "down"
     }
   ],
   "object_events": [],

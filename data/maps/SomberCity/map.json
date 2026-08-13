@@ -2,7 +2,7 @@
   "id": "MAP_SOMBER_CITY",
   "name": "SomberCity",
   "layout": "LAYOUT_SOMBER_CITY",
-  "music": "MUS_RG_PEWTER",
+  "music": "CYANWOOD",
   "region_map_section": "MAPSEC_SOMBER_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

@@ -1,0 +1,36 @@
+{
+  "id": "MAP_POKE_GOLD_SUPER_HOENN_4",
+  "name": "PokeGoldSuper_Hoenn_4",
+  "layout": "LAYOUT_POKE_GOLD_SUPER_HOENN_4",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_POKE_GOLD_SUPER_HOENN_2",
+      "offset": 13,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_POKE_GOLD_SUPER_HOENN_3",
+      "offset": 71,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_POKE_GOLD_SUPER_HOENN_5",
+      "offset": -17,
+      "direction": "up"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": []
+}

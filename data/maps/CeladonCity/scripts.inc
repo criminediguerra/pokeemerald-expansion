@@ -6,7 +6,7 @@ CeladonCity_OnTransition:
 	setflag FLAG_VISITED_CELADON
 	end
 
-	Celadon_Poliwrath::
+Celadon_Poliwrath::
 	lock
 	faceplayer
 	waitse
@@ -19,7 +19,7 @@ CeladonCity_OnTransition:
 Celadon_Poliwrath_Text:
 	.string "POLIWRATH: Poli!$"
 
-	Celadon_Dragonair::
+Celadon_Dragonair::
 	lock
 	faceplayer
 	waitse
@@ -32,7 +32,7 @@ Celadon_Poliwrath_Text:
 Celadon_Dragonair_Text:
 	.string "DRAGONAIR: Aaair!$"
 
-	Celadon_Slowpoke::
+Celadon_Slowpoke::
 	lock
 	faceplayer
 	waitse

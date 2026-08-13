@@ -2483,3 +2483,35 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route118a/scripts.inc"
 
 	.include "data/maps/Route111a/scripts.inc"
+
+	.include "data/maps/Route95/scripts.inc"
+
+	.include "data/maps/Route94/scripts.inc"
+
+	.include "data/maps/HolonTown/scripts.inc"
+
+	.include "data/maps/Route93/scripts.inc"
+
+	.include "data/maps/Route93a/scripts.inc"
+
+	.include "data/maps/LastingFlame/scripts.inc"
+
+	.include "data/maps/Route92/scripts.inc"
+
+	.include "data/maps/Underwater_Route92/scripts.inc"
+
+	.include "data/maps/GuardianIslands/scripts.inc"
+
+	.include "data/maps/GuardianIslandsF1/scripts.inc"
+
+	.include "data/maps/GuardianIslandsF2/scripts.inc"
+
+	.include "data/maps/MtSpikeF1/scripts.inc"
+
+	.include "data/maps/PokeGoldSuper_Hoenn_3/scripts.inc"
+
+	.include "data/maps/PokeGoldSuper_Hoenn_4/scripts.inc"
+
+	.include "data/maps/PokeGoldSuper_Hoenn_5/scripts.inc"
+
+	.include "data/maps/PokeGoldSuper_Hoenn_6/scripts.inc"

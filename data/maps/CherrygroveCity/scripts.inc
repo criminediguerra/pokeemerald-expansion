@@ -123,6 +123,19 @@ Cherrygrove_Gengar::
 Cherrygrove_Gengar_Text:
 	.string "GENGAR: Kekeke!$"
 
+Cherrygrove_Kecleon::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_KECLEON, CRY_MODE_NORMAL
+	msgbox Cherrygrove_Kecleon_Text, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Cherrygrove_Kecleon_Text:
+	.string "KECLEON: Kekeke!$"
+
 Cherrygrove_Golbat::
 	lock
 	faceplayer

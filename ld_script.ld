@@ -1214,6 +1214,9 @@ SECTIONS {
         sound/songs/midi/mus_rg_slow_pallet.o(.rodata);
         sound/songs/midi/mus_rg_teachy_tv_menu.o(.rodata);
         sound/songs/midi/izabe.o(.rodata);
+        sound/songs/midi/rinshin.o(.rodata);
+        sound/songs/midi/holon.o(.rodata);
+        sound/songs/midi/lasting_flame.o(.rodata);
         sound/songs/midi/cyanwood.o(.rodata);
         sound/songs/midi/route34.o(.rodata);
         sound/songs/midi/route29.o(.rodata);

@@ -431,6 +431,18 @@
       "map": "MAP_IZABE_TOWN",
       "x": 42,
       "y": 34
+    },
+    {
+      "id": "HEAL_LOCATION_HOLON_TOWN",
+      "map": "MAP_HOLON_TOWN",
+      "x": 11,
+      "y": 34
+    },
+    {
+      "id": "HEAL_LOCATION_LASTING_FLAME",
+      "map": "MAP_LASTING_FLAME",
+      "x": 16,
+      "y": 26
     }
   ]
 }

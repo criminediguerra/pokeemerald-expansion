@@ -2,7 +2,7 @@
   "id": "MAP_RINSHIN_CITY",
   "name": "RinshinCity",
   "layout": "LAYOUT_RINSHIN_CITY",
-  "music": "GOLDENROD",
+  "music": "RINSHIN",
   "region_map_section": "MAPSEC_RINSHIN_CITY",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

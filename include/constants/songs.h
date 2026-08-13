@@ -596,6 +596,9 @@
 #define ECRUTEAK                    658
 #define LAVENDERFOREST              659
 #define IZABE                       660
+#define RINSHIN                     661
+#define HOLON                       662
+#define LASTING_FLAME               663
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

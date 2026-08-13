@@ -5,9 +5,9 @@
     "gMapGroup_TownsAndRoutesJohto",
     "gMapGroup_TownsAndRoutesWhirl",
     "gMapGroup_TownsAndRoutesHoenn",
+    "gMapGroup_TownsAndRoutesHolon",
     "gMapGroup_TownsAndRoutesFiore",
     "gMapGroup_TownsAndRoutesSinnoh",
-    "gMapGroup_TownsAndRoutesSuperGSC",
     "gMapGroup_IndoorLittleroot",
     "gMapGroup_IndoorOldale",
     "gMapGroup_IndoorDewford",
@@ -36,6 +36,7 @@
     "gMapGroup_DungeonsJohto",
     "gMapGroup_DungeonsWhirl",
     "gMapGroup_DungeonsHoenn",
+    "gMapGroup_DungeonsHolon",
     "gMapGroup_DungeonsFiore",
     "gMapGroup_DungeonsSinnoh",
     "gMapGroup_Moon",
@@ -207,7 +208,6 @@
     "FallarborTown",
     "VerdanturfTown",
     "PacifidlogTown",
-    "RinshinCity",
     "LarousseCity",
     "IzabeTown",
     "CrossgateTown",
@@ -215,8 +215,8 @@
     "BattleFrontier_OutsideWest",
     "BattleFrontier_OutsideEast",
     "SouthernIsland_Exterior",
+    "Route95",
     "Route96",
-    "Route97",
     "Route98",
     "Route99",
     "Route100",
@@ -230,8 +230,6 @@
     "Route108",
     "Route109",
     "Route110",
-    "Route110a",
-    "Route110b",
     "Route111",
     "Route111a",
     "Route112",
@@ -274,6 +272,23 @@
     "Underwater_Route127",
     "Underwater_Route128",
     "Underwater_Route129"
+  ],
+  "gMapGroup_TownsAndRoutesHolon": [
+    "RinshinCity",
+    "HolonTown",
+    "LastingFlame",
+    "GuardianIslands",
+    "GuardianIslandsF1",
+    "GuardianIslandsF2",
+    "Route92",
+    "Route93",
+    "Route93a",
+    "Route94",
+    "Route97",
+    "Route110a",
+    "Route110b",
+    "Underwater_Route92",
+    "MtSpikeF1"
   ],
   "gMapGroup_TownsAndRoutesFiore": [
     "RingTown",
@@ -350,7 +365,6 @@
     "Route229",
     "Route230"
   ],
-  "gMapGroup_TownsAndRoutesSuperGSC": [],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
     "LittlerootTown_BrendansHouse_2F",
@@ -1056,8 +1070,6 @@
     "ShoalCave_LowTideExit",
     "ShoalCave_HighTideEntranceRoom",
     "ShoalCave_HighTideInnerRoom",
-    "NewMauville_Entrance",
-    "NewMauville_Inside",
     "AbandonedShip_Deck",
     "AbandonedShip_Corridors_1F",
     "AbandonedShip_Rooms_1F",
@@ -1115,6 +1127,10 @@
     "OldrootWoods",
     "DewfordForest"
   ],
+  "gMapGroup_DungeonsHolon": [
+    "NewMauville_Entrance",
+    "NewMauville_Inside"
+  ],
   "gMapGroup_DungeonsFiore": [
     "RingLake",
     "MtPanulaF1",
@@ -1161,7 +1177,11 @@
   ],
   "gMapGroup_PokeGoldSuper": [
     "PokeGoldSuper_Hoenn",
-    "PokeGoldSuper_Hoenn_2"
+    "PokeGoldSuper_Hoenn_2",
+    "PokeGoldSuper_Hoenn_3",
+    "PokeGoldSuper_Hoenn_4",
+    "PokeGoldSuper_Hoenn_5",
+    "PokeGoldSuper_Hoenn_6"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

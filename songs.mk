@@ -360,6 +360,15 @@ $(MID_SUBDIR)/mus_rg_encounter_deoxys.s: %.s: %.mid
 $(MID_SUBDIR)/izabe.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G196 -V099
 
+$(MID_SUBDIR)/rinshin.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -202 -V110
+
+$(MID_SUBDIR)/holon.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G201 -V110
+
+$(MID_SUBDIR)/lasting_flame.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G203 -V110
+
 $(MID_SUBDIR)/cyanwood.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V099
 
