@@ -2366,7 +2366,7 @@
       "name": "SafariZone_Northwest_Layout",
       "width": 40,
       "height": 40,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_Tropical",
       "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/SafariZone_Northwest/border.bin",
       "blockdata_filepath": "data/layouts/SafariZone_Northwest/map.bin"
@@ -2376,7 +2376,7 @@
       "name": "SafariZone_North_Layout",
       "width": 40,
       "height": 40,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_Tropical",
       "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/SafariZone_North/border.bin",
       "blockdata_filepath": "data/layouts/SafariZone_North/map.bin"
@@ -2386,7 +2386,7 @@
       "name": "SafariZone_Southwest_Layout",
       "width": 40,
       "height": 40,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_Tropical",
       "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/SafariZone_Southwest/border.bin",
       "blockdata_filepath": "data/layouts/SafariZone_Southwest/map.bin"
@@ -2396,7 +2396,7 @@
       "name": "SafariZone_South_Layout",
       "width": 40,
       "height": 40,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_Tropical",
       "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/SafariZone_South/border.bin",
       "blockdata_filepath": "data/layouts/SafariZone_South/map.bin"
@@ -3916,7 +3916,7 @@
       "name": "SafariZone_Northeast_Layout",
       "width": 40,
       "height": 40,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_Tropical",
       "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/SafariZone_Northeast/border.bin",
       "blockdata_filepath": "data/layouts/SafariZone_Northeast/map.bin"
@@ -3926,7 +3926,7 @@
       "name": "SafariZone_Southeast_Layout",
       "width": 40,
       "height": 40,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_Tropical",
       "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/SafariZone_Southeast/border.bin",
       "blockdata_filepath": "data/layouts/SafariZone_Southeast/map.bin"
@@ -10805,7 +10805,7 @@
       "id": "LAYOUT_MT_SPIKE_F1",
       "name": "MtSpikeF1_Layout",
       "width": 78,
-      "height": 80,
+      "height": 90,
       "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/MtSpikeF1/border.bin",
@@ -10824,7 +10824,7 @@
     {
       "id": "LAYOUT_POKE_GOLD_SUPER_HOENN_4",
       "name": "PokeGoldSuper_Hoenn_4_Layout",
-      "width": 78,
+      "width": 69,
       "height": 46,
       "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Mauville",
@@ -10834,8 +10834,8 @@
     {
       "id": "LAYOUT_POKE_GOLD_SUPER_HOENN_5",
       "name": "PokeGoldSuper_Hoenn_5_Layout",
-      "width": 73,
-      "height": 28,
+      "width": 89,
+      "height": 32,
       "primary_tileset": "gTileset_GeneralStairs",
       "secondary_tileset": "gTileset_Fallarbor",
       "border_filepath": "data/layouts/PokeGoldSuper_Hoenn_5/border.bin",
@@ -10844,12 +10844,52 @@
     {
       "id": "LAYOUT_POKE_GOLD_SUPER_HOENN_6",
       "name": "PokeGoldSuper_Hoenn_6_Layout",
-      "width": 50,
-      "height": 50,
+      "width": 60,
+      "height": 46,
       "primary_tileset": "gTileset_GeneralStairs",
-      "secondary_tileset": "gTileset_Fallarbor",
+      "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/PokeGoldSuper_Hoenn_6/border.bin",
       "blockdata_filepath": "data/layouts/PokeGoldSuper_Hoenn_6/map.bin"
+    },
+    {
+      "id": "LAYOUT_POKE_GOLD_SUPER_HOENN_7",
+      "name": "PokeGoldSuper_Hoenn_7_Layout",
+      "width": 86,
+      "height": 78,
+      "primary_tileset": "gTileset_GeneralStairs",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/PokeGoldSuper_Hoenn_7/border.bin",
+      "blockdata_filepath": "data/layouts/PokeGoldSuper_Hoenn_7/map.bin"
+    },
+    {
+      "id": "LAYOUT_LILYCOVE_AIRPORT",
+      "name": "LilycoveAirport_Layout",
+      "width": 41,
+      "height": 41,
+      "primary_tileset": "gTileset_GeneralStairs",
+      "secondary_tileset": "gTileset_Airport",
+      "border_filepath": "data/layouts/LilycoveAirport/border.bin",
+      "blockdata_filepath": "data/layouts/LilycoveAirport/map.bin"
+    },
+    {
+      "id": "LAYOUT_AIRPLANE_SKY",
+      "name": "AirplaneSky_Layout",
+      "width": 22,
+      "height": 11,
+      "primary_tileset": "gTileset_GeneralStairs",
+      "secondary_tileset": "gTileset_Airport",
+      "border_filepath": "data/layouts/AirplaneSky/border.bin",
+      "blockdata_filepath": "data/layouts/AirplaneSky/map.bin"
+    },
+    {
+      "id": "LAYOUT_CAPE_TURQOISE",
+      "name": "CapeTurqoise_Layout",
+      "width": 50,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/CapeTurqoise/border.bin",
+      "blockdata_filepath": "data/layouts/CapeTurqoise/map.bin"
     }
   ]
 }

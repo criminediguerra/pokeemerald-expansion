@@ -264,7 +264,7 @@
 #define VAR_ROXANNE_CALL_STEP_COUNTER                    0x40F4
 #define VAR_SCOTT_BF_CALL_STEP_COUNTER                   0x40F5
 #define VAR_RIVAL_RAYQUAZA_CALL_STEP_COUNTER             0x40F6
-#define VAR_SAFARI_LOCATION                              0x40F7 // Unused Var
+#define VAR_CONTEST_LOCATION                             0x40F7 // Unused Var
 #define VAR_HOENN_HARBOR                                 0x40F8 // Unused Var
 #define VAR_BEASTAWAKENED                                0x40F9 // Unused Var
 #define VAR_ELMEGGQUEST                                  0x40FA // Unused Var

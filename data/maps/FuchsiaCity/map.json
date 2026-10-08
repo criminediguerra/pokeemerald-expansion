@@ -31,7 +31,7 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(LAPRAS)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PRIMARINA)",
       "x": 17,
       "y": 26,
       "elevation": 0,
@@ -83,9 +83,9 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(OMASTAR)",
-      "x": 14,
-      "y": 12,
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(FLAMIGO)",
+      "x": 13,
+      "y": 13,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
@@ -96,7 +96,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(TAUROS)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(BLITZLE)",
       "x": 39,
       "y": 12,
       "elevation": 0,
@@ -531,7 +531,7 @@
       "y": 40,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "PalletTown_Fuchsia_GymSign"
+      "script": "Fuchsia_GymSign"
     },
     {
       "type": "sign",
@@ -539,7 +539,7 @@
       "y": 25,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "PalletTown_Fuchsia_TownSign"
+      "script": "Fuchsia_TownSign"
     },
     {
       "type": "sign",
@@ -547,7 +547,7 @@
       "y": 28,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "PalletTown_Fuchsia_LaprasSign"
+      "script": "Fuchsia_LaprasSign"
     },
     {
       "type": "sign",
@@ -555,7 +555,7 @@
       "y": 14,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "PalletTown_Fuchsia_OmastarSign"
+      "script": "Fuchsia_FlamigoSign"
     },
     {
       "type": "sign",
@@ -563,7 +563,7 @@
       "y": 14,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "PalletTown_Fuchsia_KangaskhanSign"
+      "script": "Fuchsia_KangaskhanSign"
     },
     {
       "type": "sign",
@@ -571,7 +571,7 @@
       "y": 14,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "PalletTown_Fuchsia_TaurosSign"
+      "script": "Fuchsia_BlitzleSign"
     },
     {
       "type": "sign",
@@ -579,7 +579,7 @@
       "y": 14,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "PalletTown_Fuchsia_ChanseySign"
+      "script": "Fuchsia_ChanseySign"
     },
     {
       "type": "sign",
@@ -587,7 +587,7 @@
       "y": 20,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "PalletTown_Fuchsia_RhydonSign"
+      "script": "Fuchsia_RhydonSign"
     },
     {
       "type": "sign",
@@ -595,7 +595,7 @@
       "y": 40,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "PalletTown_Fuchsia_WardenSign"
+      "script": "Fuchsia_WardenSign"
     },
     {
       "type": "sign",

@@ -4829,11 +4829,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(1, 10),
             ANIMCMD_FRAME(0, 10),
         ),
-        .frontAnimId = ANIM_SWING_CONCAVE_FAST_SHORT,
+        .frontAnimId = ANIM_ROTATE_UP_SLAM_DOWN,
         .backPic = gMonBackPic_Krookodile,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
-        .backAnimId = BACK_ANIM_V_SHAKE_LOW,
+        .backAnimId = BACK_ANIM_GROW_STUTTER,
         .palette = gMonPalette_Krookodile,
         .shinyPalette = gMonShinyPalette_Krookodile,
         .iconSprite = gMonIcon_Krookodile,
@@ -11876,6 +11876,89 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #endif //P_FAMILY_HEATMOR
 
 #if P_FAMILY_DURANT
+    [SPECIES_ANTIT] =
+    {
+        .baseHP        = 1,
+        .baseAttack    = 1,
+        .baseDefense   = 1,
+        .baseSpeed     = 200,
+        .baseSpAttack  = 1,
+        .baseSpDefense = 1,
+        .types = MON_TYPES(TYPE_BUG),
+        .catchRate = 90,
+        .expYield = 169,
+        .evYield_Defense = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
+        .abilities = { ABILITY_SWARM, ABILITY_HUSTLE, ABILITY_TRUANT },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("ANTIT"),
+        .cryId = CRY_BURMY,
+        .natDexNum = NATIONAL_DEX_ANTIT,
+        .categoryName = _("ANT"),
+        .height = 1,
+        .weight = 1,
+        .description = COMPOUND_STRING(
+            "ANTIT is the smallest POKéMON ever\n"
+            "discovered. It is believed that entire\n"
+            "colonies can live unnoticed beneath a\n"
+            "single stone."),
+        .pokemonScale = 1,
+        .pokemonOffset = 19,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Antit,
+        .frontPicSize = MON_COORDS_SIZE(48, 32),
+        .frontPicYOffset = 17,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 2),
+            ANIMCMD_FRAME(1, 2),
+            ANIMCMD_FRAME(0, 2),
+            ANIMCMD_FRAME(1, 2),
+            ANIMCMD_FRAME(0, 2),
+            ANIMCMD_FRAME(1, 2),
+            ANIMCMD_FRAME(0, 2),
+            ANIMCMD_FRAME(1, 2),
+            ANIMCMD_FRAME(0, 2),
+            ANIMCMD_FRAME(1, 2),
+            ANIMCMD_FRAME(0, 2),
+            ANIMCMD_FRAME(1, 2),
+            ANIMCMD_FRAME(0, 2),
+            ANIMCMD_FRAME(1, 2),
+            ANIMCMD_FRAME(0, 2),
+            ANIMCMD_FRAME(1, 2),
+            ANIMCMD_FRAME(0, 2),
+        ),
+        .frontAnimId = ANIM_RAPID_H_HOPS,
+        .backPic = gMonBackPic_Antit,
+        .backPicSize = MON_COORDS_SIZE(64, 32),
+        .backPicYOffset = 17,
+        .backAnimId = BACK_ANIM_H_VIBRATE,
+        .palette = gMonPalette_Durant,
+        .shinyPalette = gMonShinyPalette_Durant,
+        .iconSprite = gMonIcon_Antit,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
+        SHADOW(0, -3, SHADOW_SIZE_L)
+        FOOTPRINT(Durant)
+        OVERWORLD(
+            sPicTable_Antit,
+            SIZE_32x32,
+            SHADOW_SIZE_NONE,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Durant,
+            gShinyOverworldPalette_Durant
+        )
+        .levelUpLearnset = sKricketotLevelUpLearnset,
+        .teachableLearnset = sDurantTeachableLearnset,
+        .eggMoveLearnset = sDurantEggMoveLearnset,
+        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_DURANT},
+                                {EVO_ITEM, ITEM_BERSERK_GENE, SPECIES_DURANT}),
+    },
     [SPECIES_DURANT] =
     {
         .baseHP        = 58,
@@ -11902,7 +11985,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .height = 3,
         .weight = 330,
         .description = COMPOUND_STRING(
-            "Durant dig nests in mountains.\n"
+            "DURANT dig nests in mountains.\n"
             "Individuals each play different roles in\n"
             "driving HEATMOR, their natural predator,\n"
             "away from their colony."),
@@ -11955,7 +12038,6 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sDurantLevelUpLearnset,
         .teachableLearnset = sDurantTeachableLearnset,
-        .eggMoveLearnset = sDurantEggMoveLearnset,
     },
 #endif //P_FAMILY_DURANT
 

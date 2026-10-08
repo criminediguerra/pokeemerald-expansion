@@ -1078,3 +1078,7 @@ LilycoveCity_ContestLobby_Text_MadePokeblocksWithFamily:
 	.string "I bet you can make smoother, better\n"
 	.string "{POKEBLOCK}S if you have more people.$"
 
+LilycoveCity_ContestLobby_SetContestVar::
+	setvar VAR_CONTEST_LOCATION, 0
+	release
+	end

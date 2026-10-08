@@ -92,12 +92,15 @@ static const u16 sRaticateFormSpeciesIdTable[] = {
 static const u16 sPichuFormSpeciesIdTable[] = {
     SPECIES_PICHU,
     SPECIES_PICHU_SPIKY_EARED,
+    SPECIES_PICHU_ALOLA,
     FORM_SPECIES_END,
 };
 #endif //P_GEN_2_CROSS_EVOS
 
 static const u16 sPikachuFormSpeciesIdTable[] = {
     SPECIES_PIKACHU,
+    SPECIES_PIKACHU_ALOLAN,
+    SPECIES_PIKACHU_KANTO,
 #if P_COSPLAY_PIKACHU_FORMS
     SPECIES_PIKACHU_COSPLAY,
     SPECIES_PIKACHU_ROCK_STAR,
@@ -120,14 +123,6 @@ static const u16 sPikachuFormSpeciesIdTable[] = {
     SPECIES_PIKACHU_GMAX,
 #endif
     SPECIES_PIKACHU_STARTER,
-    FORM_SPECIES_END,
-};
-
-static const u16 sRaichuFormSpeciesIdTable[] = {
-    SPECIES_RAICHU,
-#if P_ALOLAN_FORMS
-    SPECIES_RAICHU_ALOLA,
-#endif
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_PIKACHU
@@ -534,9 +529,33 @@ static const u16 sEeveeFormSpeciesIdTable[] = {
 #if P_GIGANTAMAX_FORMS
     SPECIES_EEVEE_GMAX,
 #endif
-    SPECIES_EEVEE_STARTER,
     FORM_SPECIES_END,
 };
+
+static const u16 sFlareonFormSpeciesIdTable[] = {
+    SPECIES_FLAREON,
+#if P_ALOLAN_FORMS
+    SPECIES_FLAREON_ALOLA,
+#endif
+    FORM_SPECIES_END,
+};
+
+static const u16 sJolteonFormSpeciesIdTable[] = {
+    SPECIES_JOLTEON,
+#if P_ALOLAN_FORMS
+    SPECIES_JOLTEON_ALOLA,
+#endif
+    FORM_SPECIES_END,
+};
+
+static const u16 sVaporeonFormSpeciesIdTable[] = {
+    SPECIES_VAPOREON,
+#if P_ALOLAN_FORMS
+    SPECIES_VAPOREON_ALOLA,
+#endif
+    FORM_SPECIES_END,
+};
+
 #endif //P_FAMILY_EEVEE
 
 #if P_FAMILY_AERODACTYL
@@ -601,6 +620,14 @@ static const u16 sMewtwoFormSpeciesIdTable[] = {
 #endif //P_FAMILY_MEWTWO
 
 #if P_FAMILY_CYNDAQUIL
+static const u16 sQuilavaFormSpeciesIdTable[] = {
+    SPECIES_QUILAVA,
+#if P_HISUIAN_FORMS
+    SPECIES_QUILAVA_HISUI,
+#endif
+    FORM_SPECIES_END,
+};
+
 static const u16 sTyphlosionFormSpeciesIdTable[] = {
     SPECIES_TYPHLOSION,
 #if P_HISUIAN_FORMS

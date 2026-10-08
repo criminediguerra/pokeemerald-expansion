@@ -483,21 +483,21 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .catchRate = 45,
         .expYield = 64,
         .evYield_SpAttack = 1,
-        .genderRatio = PERCENT_FEMALE(12.5),
+        .genderRatio = PERCENT_FEMALE(70),
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FIELD),
         .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_LIQUID_VOICE },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Popplio"),
+        .speciesName = _("POPPLIO"),
         .cryId = CRY_POPPLIO,
         .natDexNum = NATIONAL_DEX_POPPLIO,
-        .categoryName = _("Sea Lion"),
+        .categoryName = _("SEA LION"),
         .height = 4,
         .weight = 75,
         .description = COMPOUND_STRING(
-            "This Pokémon snorts body fluids from\n"
+            "This POKéMON snorts body fluids from\n"
             "its nose, blowing balloons to smash into\n"
             "its foes. It practices diligently so it can\n"
             "learn to make big bubbles."),
@@ -508,16 +508,25 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Popplio,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 11),
+            ANIMCMD_FRAME(0, 11),
+            ANIMCMD_FRAME(1, 11),
+            ANIMCMD_FRAME(0, 1),
+        ),
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
         .backPic = gMonBackPic_Popplio,
         .backPicSize = MON_COORDS_SIZE(48, 48),
         .backPicYOffset = 11,
-        //.backAnimId = BACK_ANIM_NONE,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
         .palette = gMonPalette_Popplio,
         .shinyPalette = gMonShinyPalette_Popplio,
         .iconSprite = gMonIcon_Popplio,
         .iconPalIndex = 0,
+#if P_GENDER_DIFFERENCES
+        .frontPicFemale = gMonFrontPic_PopplioF,
+        .backPicFemale = gMonBackPic_PopplioF,
+#endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
         SHADOW(0, 1, SHADOW_SIZE_S)
         FOOTPRINT(Popplio)
@@ -529,6 +538,13 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             sAnimTable_Following,
             gOverworldPalette_Popplio,
             gShinyOverworldPalette_Popplio
+        )
+        OVERWORLD_FEMALE(
+            sPicTable_PopplioF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following
         )
         .levelUpLearnset = sPopplioLevelUpLearnset,
         .teachableLearnset = sPopplioTeachableLearnset,
@@ -548,22 +564,22 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .catchRate = 45,
         .expYield = 147,
         .evYield_SpAttack = 2,
-        .genderRatio = PERCENT_FEMALE(12.5),
+        .genderRatio = PERCENT_FEMALE(70),
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FIELD),
         .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_LIQUID_VOICE },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Brionne"),
+        .speciesName = _("BRIONNE"),
         .cryId = CRY_BRIONNE,
         .natDexNum = NATIONAL_DEX_BRIONNE,
-        .categoryName = _("Pop Star"),
+        .categoryName = _("POP STAR"),
         .height = 6,
         .weight = 175,
         .description = COMPOUND_STRING(
             "It cares deeply for its companions.\n"
-            "When its Trainer is feeling down, it\n"
+            "When its TRAINER is feeling down, it\n"
             "performs a cheery dance with a sequence\n"
             "of water balloons  to try and help."),
         .pokemonScale = 422,
@@ -573,16 +589,26 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Brionne,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
         .frontPicYOffset = 6,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_SHRINK_GROW,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 60),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 5),
+        ),
+        .frontAnimId = ANIM_SWING_CONVEX,
         .backPic = gMonBackPic_Brionne,
         .backPicSize = MON_COORDS_SIZE(48, 56),
         .backPicYOffset = 9,
-        //.backAnimId = BACK_ANIM_NONE,
+        .backAnimId = BACK_ANIM_H_SPRING,
         .palette = gMonPalette_Brionne,
         .shinyPalette = gMonShinyPalette_Brionne,
         .iconSprite = gMonIcon_Brionne,
         .iconPalIndex = 0,
+#if P_GENDER_DIFFERENCES
+        .frontPicFemale = gMonFrontPic_BrionneF,
+        .backPicFemale = gMonBackPic_BrionneF,
+        .iconSpriteFemale = gMonIcon_BrionneF,
+#endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
         SHADOW(-5, 6, SHADOW_SIZE_M)
         FOOTPRINT(Brionne)
@@ -594,6 +620,13 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             sAnimTable_Following,
             gOverworldPalette_Brionne,
             gShinyOverworldPalette_Brionne
+        )
+        OVERWORLD_FEMALE(
+            sPicTable_BrionneF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following
         )
         .levelUpLearnset = sBrionneLevelUpLearnset,
         .teachableLearnset = sBrionneTeachableLearnset,
@@ -612,17 +645,17 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 265 : 239,
         .evYield_SpAttack = 3,
-        .genderRatio = PERCENT_FEMALE(12.5),
+        .genderRatio = PERCENT_FEMALE(70),
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FIELD),
         .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_LIQUID_VOICE },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Primarina"),
+        .speciesName = _("PRIMARINA"),
         .cryId = CRY_PRIMARINA,
         .natDexNum = NATIONAL_DEX_PRIMARINA,
-        .categoryName = _("Soloist"),
+        .categoryName = _("SOLOIST"),
         .height = 18,
         .weight = 440,
         .description = COMPOUND_STRING(
@@ -637,16 +670,26 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Primarina,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_SHAKE_GLOW_BLUE_SLOW,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 25),
+            ANIMCMD_FRAME(0, 40),
+        ),
+        .frontAnimId = ANIM_V_SHAKE_TWICE,
         .backPic = gMonBackPic_Primarina,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        //.backAnimId = BACK_ANIM_NONE,
+        .backAnimId = BACK_ANIM_GROW_STUTTER,
         .palette = gMonPalette_Primarina,
         .shinyPalette = gMonShinyPalette_Primarina,
         .iconSprite = gMonIcon_Primarina,
         .iconPalIndex = 0,
+#if P_GENDER_DIFFERENCES
+        .frontPicFemale = gMonFrontPic_PrimarinaF,
+        .backPicFemale = gMonBackPic_PrimarinaF,
+        .iconSpriteFemale = gMonIcon_PrimarinaF,
+#endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-6, 11, SHADOW_SIZE_L)
         FOOTPRINT(Primarina)
@@ -658,6 +701,13 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             sAnimTable_Following,
             gOverworldPalette_Primarina,
             gShinyOverworldPalette_Primarina
+        )
+        OVERWORLD_FEMALE(
+            sPicTable_PrimarinaF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following
         )
         .levelUpLearnset = sPrimarinaLevelUpLearnset,
         .teachableLearnset = sPrimarinaTeachableLearnset,

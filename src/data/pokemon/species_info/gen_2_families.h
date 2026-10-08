@@ -302,7 +302,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sCyndaquilLevelUpLearnset,
         .teachableLearnset = sCyndaquilTeachableLearnset,
         .eggMoveLearnset = sCyndaquilEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_QUILAVA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_QUILAVA_HISUI, CONDITIONS({IF_IN_MAPSEC, MAPSEC_MT_PYRE})},
+                                {EVO_LEVEL, 14, SPECIES_QUILAVA}),
     },
 
     [SPECIES_QUILAVA] =
@@ -370,8 +371,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sQuilavaLevelUpLearnset,
         .teachableLearnset = sQuilavaTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_TYPHLOSION},
-                                {EVO_NONE, 0, SPECIES_TYPHLOSION_HISUI}),
+        .formSpeciesIdTable = sQuilavaFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_TYPHLOSION}),
     },
 
 #if P_UPDATED_EXP_YIELDS >= GEN_8
@@ -451,6 +452,75 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 
 #if P_HISUIAN_FORMS
+    [SPECIES_QUILAVA_HISUI] =
+    {
+        .baseHP        = 58,
+        .baseAttack    = 64,
+        .baseDefense   = 58,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 65,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_GHOST),
+        .catchRate = 45,
+        .expYield = 142,
+        .evYield_Speed = 1,
+        .evYield_SpAttack = 1,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_FRISK },
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("QUILAVA"),
+        .cryId = CRY_QUILAVA,
+        .natDexNum = NATIONAL_DEX_QUILAVA,
+        .categoryName = _("GHOST FLAME"),
+        .height = 9,
+        .weight = 190,
+        .description = COMPOUND_STRING(
+            "Said to purify lost, forsaken souls with\n"
+            "its flames and guide them to the afterlife.\n"
+            "It's believed its form was influenced by\n"
+            "the energy of MT. PYRE in ancient times."),
+        .pokemonScale = 329,
+        .pokemonOffset = 11,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_QuilavaHisui,
+        .frontPicSize = MON_COORDS_SIZE(64, 48),
+        .frontPicYOffset = 9,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 20),
+        ),
+        .frontAnimId = ANIM_FLICKER,
+        .backPic = gMonBackPic_QuilavaHisui,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 4,
+        .backAnimId = BACK_ANIM_JOLT_RIGHT,
+        .palette = gMonPalette_QuilavaHisui,
+        .shinyPalette = gMonShinyPalette_QuilavaHisui,
+        .iconSprite = gMonIcon_QuilavaHisui,
+        .iconPalIndex = 1,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(2, 14, SHADOW_SIZE_L)
+        FOOTPRINT(Quilava)
+        OVERWORLD(
+            sPicTable_QuilavaHisui,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_QuilavaHisui,
+            gShinyOverworldPalette_QuilavaHisui
+        )
+        .isHisuianForm = TRUE,
+        .levelUpLearnset = sTyphlosionHisuiLevelUpLearnset,
+        .teachableLearnset = sTyphlosionHisuiTeachableLearnset,
+        .formSpeciesIdTable = sQuilavaFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_TYPHLOSION_HISUI}),
+    },
     [SPECIES_TYPHLOSION_HISUI] =
     {
         .baseHP        = 73,
@@ -488,12 +558,15 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .frontPic = gMonFrontPic_TyphlosionHisui,
         .frontPicSize = MON_COORDS_SIZE(48, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 40),
+            ANIMCMD_FRAME(0, 5),
+        ),
+        .frontAnimId = ANIM_FLICKER,
         .backPic = gMonBackPic_TyphlosionHisui,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 2,
-        //.backAnimId = BACK_ANIM_NONE,
+        .backAnimId = BACK_ANIM_H_SHAKE,
         .palette = gMonPalette_TyphlosionHisui,
         .shinyPalette = gMonShinyPalette_TyphlosionHisui,
         .iconSprite = gMonIcon_TyphlosionHisui,
@@ -3746,6 +3819,78 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sHonchkrowLevelUpLearnset,
         .teachableLearnset = sHonchkrowTeachableLearnset,
     },
+    [SPECIES_PENPIN] =
+    {
+        .baseHP        = 40,
+        .baseAttack    = 45,
+        .baseDefense   = 40,
+        .baseSpeed     = 91,
+        .baseSpAttack  = 35,
+        .baseSpDefense = 35,
+        .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
+        .catchRate = 255,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 50 : 55,
+        .evYield_Speed = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
+    #if P_UPDATED_ABILITIES >= GEN_4
+        .abilities = { ABILITY_KEEN_EYE, ABILITY_TANGLED_FEET, ABILITY_BIG_PECKS },
+    #else
+        .abilities = { ABILITY_KEEN_EYE, ABILITY_NONE, ABILITY_BIG_PECKS },
+    #endif
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("PENPIN"),
+        .cryId = CRY_SMOOCHUM,
+        .natDexNum = NATIONAL_DEX_PENPIN,
+        .categoryName = _("CHICKEN"),
+        .height = 3,
+        .weight = 18,
+        .description = COMPOUND_STRING(
+            "Although it cannot fly, it loves flapping\n"
+            "its wings and running around at incredible\n"
+            "speeds. TRAINERS who earn its trust will\n"
+            "discover a loyal and cheerful companion."),
+        .pokemonScale = 508,
+        .pokemonOffset = -3,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Penpin,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 40) : MON_COORDS_SIZE(40, 40),
+        .frontPicYOffset = 4,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 17),
+            ANIMCMD_FRAME(1, 23),
+            ANIMCMD_FRAME(0, 17),
+        ),
+        .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_H_JUMPS : ANIM_CIRCLE_INTO_BG,
+        .enemyMonElevation = 0,
+        .backPic = gMonBackPic_Penpin,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 48) : MON_COORDS_SIZE(56, 48),
+        .backPicYOffset = 12,
+        .backAnimId = BACK_ANIM_CIRCLE_COUNTERCLOCKWISE,
+        .palette = gMonPalette_Penpin,
+        .shinyPalette = gMonShinyPalette_Penpin,
+        .iconSprite = gMonIcon_Penpin,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-1, -1, SHADOW_SIZE_S)
+        FOOTPRINT(Starly)
+        OVERWORLD(
+            sPicTable_Penpin,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gMonPalette_Penpin,
+            gMonShinyPalette_Penpin
+        )
+        .levelUpLearnset = sPidgeyLevelUpLearnset,
+        .teachableLearnset = sScytherTeachableLearnset,
+        .eggMoveLearnset = sPidgeyEggMoveLearnset,
+    },
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_MURKROW
 
@@ -4580,12 +4725,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .trainerOffset = 1,
         .frontPic = gMonFrontPic_DudunsparceTwoSegment,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 10,
+        .frontPicYOffset = 2,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(1, 20),
             ANIMCMD_FRAME(0, 10),
         ),
-        .frontAnimId = ANIM_V_SHAKE,
+        .frontAnimId = ANIM_V_JUMPS_BIG,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_DudunsparceTwoSegment,
         .backPicSize = MON_COORDS_SIZE(64, 64),
@@ -4648,13 +4793,13 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_DudunsparceThreeSegment,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 10,
+        .frontPicYOffset = 0,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 5),
             ANIMCMD_FRAME(1, 35),
             ANIMCMD_FRAME(0, 10),
         ),
-        .frontAnimId = ANIM_V_STRETCH,
+        .frontAnimId = ANIM_BACK_FLIP,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_DudunsparceThreeSegment,
         .backPicSize = MON_COORDS_SIZE(64, 64),
@@ -8075,7 +8220,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 115,
         .baseSpAttack  = 115,
         .baseSpDefense = 100,
-        .types = MON_TYPES(TYPE_ELECTRIC),
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_GHOST),
         .catchRate = 3,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 290,
@@ -8157,7 +8302,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 100,
         .baseSpAttack  = 90,
         .baseSpDefense = 75,
-        .types = MON_TYPES(TYPE_FIRE),
+        .types = MON_TYPES(TYPE_FIRE, TYPE_GHOST),
         .catchRate = 3,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 290,
@@ -8238,7 +8383,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 85,
         .baseSpAttack  = 90,
         .baseSpDefense = 115,
-        .types = MON_TYPES(TYPE_WATER),
+        .types = MON_TYPES(TYPE_WATER, TYPE_GHOST),
         .catchRate = 3,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 290,

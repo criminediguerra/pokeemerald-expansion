@@ -1671,9 +1671,31 @@
 #define SPECIES_EXEGG                                   1555
 #define SPECIES_YAMASK_KANTO                            1556
 #define SPECIES_CRYPTAGRIGUS                            1557
+#define SPECIES_QUILAVA_HISUI                           1558
+#define SPECIES_PICHU_ALOLA                             1559
+#define SPECIES_PIKACHU_ALOLAN                          1560
+#define SPECIES_PIKACHU_KANTO                           1561
+#define SPECIES_GOROCHU                                 1562
+#define SPECIES_FLAREON_ALOLA                           1563
+#define SPECIES_JOLTEON_ALOLA                           1564
+#define SPECIES_VAPOREON_ALOLA                          1565
+#define SPECIES_LINKEON                                 1566
+#define SPECIES_ANTIT                                   1567
+#define SPECIES_SLUDGEON                                1568
+#define SPECIES_GLIDEON                                 1569
+#define SPECIES_DRAKEON                                 1570
+#define SPECIES_BRAWLEON                                1571
+#define SPECIES_CHITEON                                 1572
+#define SPECIES_VEILEON                                 1573
+#define SPECIES_SPHYNXEON                               1574
+#define SPECIES_PETREON                                 1575
+#define SPECIES_CROCKY                                  1576
+#define SPECIES_HIFISHI                                 1577
+#define SPECIES_VOLTRYKE                                1578
+#define SPECIES_PENPIN                                  1579
 
 
-#define SPECIES_EGG                                     (SPECIES_CRYPTAGRIGUS + 1)
+#define SPECIES_EGG                                     (SPECIES_PENPIN + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

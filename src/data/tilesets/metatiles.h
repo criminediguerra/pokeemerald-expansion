@@ -298,3 +298,6 @@ const u16 gMetatileAttributes_Sewers[] = INCBIN_U16("data/tilesets/secondary/sew
 
 const u16 gMetatiles_Izabe[] = INCBIN_U16("data/tilesets/secondary/izabe/metatiles.bin");
 const u16 gMetatileAttributes_Izabe[] = INCBIN_U16("data/tilesets/secondary/izabe/metatile_attributes.bin");
+
+const u16 gMetatiles_Airport[] = INCBIN_U16("data/tilesets/secondary/airport/metatiles.bin");
+const u16 gMetatileAttributes_Airport[] = INCBIN_U16("data/tilesets/secondary/airport/metatile_attributes.bin");

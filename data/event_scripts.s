@@ -2515,3 +2515,11 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/PokeGoldSuper_Hoenn_5/scripts.inc"
 
 	.include "data/maps/PokeGoldSuper_Hoenn_6/scripts.inc"
+
+	.include "data/maps/PokeGoldSuper_Hoenn_7/scripts.inc"
+
+	.include "data/maps/LilycoveAirport/scripts.inc"
+
+	.include "data/maps/AirplaneSky/scripts.inc"
+
+	.include "data/maps/CapeTurqoise/scripts.inc"

@@ -11629,6 +11629,160 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_KANTO_SAFARI_F1",
+          "base_label": "gKantoSafariF1",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 21,
+                "max_level": 33,
+                "species": "SPECIES_SCYTHER"
+              },
+              {
+                "min_level": 21,
+                "max_level": 33,
+                "species": "SPECIES_RHYHORN"
+              },
+              {
+                "min_level": 21,
+                "max_level": 33,
+                "species": "SPECIES_PINSIR"
+              },
+              {
+                "min_level": 21,
+                "max_level": 33,
+                "species": "SPECIES_DONPHAN"
+              },
+              {
+                "min_level": 21,
+                "max_level": 33,
+                "species": "SPECIES_PARASECT"
+              },
+              {
+                "min_level": 21,
+                "max_level": 33,
+                "species": "SPECIES_PHANPY"
+              },
+              {
+                "min_level": 21,
+                "max_level": 33,
+                "species": "SPECIES_RHYDON"
+              },
+              {
+                "min_level": 21,
+                "max_level": 33,
+                "species": "SPECIES_EXEGGCUTE"
+              },
+              {
+                "min_level": 21,
+                "max_level": 33,
+                "species": "SPECIES_NIDORINO"
+              },
+              {
+                "min_level": 21,
+                "max_level": 33,
+                "species": "SPECIES_NIDORINA"
+              },
+              {
+                "min_level": 21,
+                "max_level": 33,
+                "species": "SPECIES_CHANSEY"
+              },
+              {
+                "min_level": 21,
+                "max_level": 33,
+                "species": "SPECIES_CHANSEY"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 4,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_PSYDUCK"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SLOWPOKE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_REMORAID"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_REMORAID"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_DRATINI"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "encounter_rate": 30,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_REMORAID"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_HORSEA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_GOLDEEN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_GYARADOS"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SHELLDER"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_STARYU"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CLAMPERL"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_DRATINI"
+              }
+            ]
+          }
         }
       ]
     },

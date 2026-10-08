@@ -435,9 +435,9 @@ ContestHall_EventScript_SetExitWarpLinkContest::
 	end
 
 ContestHall_EventScript_Exit::
-	goto_if_eq VAR_SAFARI_LOCATION, 0, ContestHall_EventScript_Hoenn
-	goto_if_eq VAR_SAFARI_LOCATION, 1, ContestHall_EventScript_Kanto
-	goto_if_eq VAR_SAFARI_LOCATION, 2, ContestHall_EventScript_Johto
+	goto_if_eq VAR_CONTEST_LOCATION, 0, ContestHall_EventScript_Hoenn
+	goto_if_eq VAR_CONTEST_LOCATION, 1, ContestHall_EventScript_Kanto
+	goto_if_eq VAR_CONTEST_LOCATION, 2, ContestHall_EventScript_Johto
 	waitstate
 	end
 

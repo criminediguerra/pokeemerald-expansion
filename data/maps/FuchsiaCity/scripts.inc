@@ -176,3 +176,90 @@ Fuchsia_Chansey::
 
 Fuchsia_Chansey_Text:
 	.string "CHANSEY: Chan Chan!$"
+
+Fuchsia_TownSign::
+	msgbox Fuchsia_Text_TownSign, MSGBOX_SIGN
+	end
+
+Fuchsia_Text_TownSign:
+	.string "FUCHSIA CITY\n"
+	.string "“Happening and Passing City!”$"
+
+Fuchsia_GymSign::
+	call_if_eq VAR_LEAGUE_REMATCH, 0, Fuchsia_GymSignKoga
+	call_if_eq VAR_LEAGUE_REMATCH, 1, Fuchsia_GymSignJanine
+	end
+
+Fuchsia_GymSignKoga::
+	msgbox Fuchsia_Text_GymSignKoga, MSGBOX_SIGN
+	end
+
+Fuchsia_GymSignJanine::
+	msgbox Fuchsia_Text_GymSignJanine, MSGBOX_SIGN
+	end
+
+Fuchsia_Text_GymSignKoga:
+	.string "FUCHSIA CITY POKéMON GYM\n"
+	.string "LEADER: KOGA\l"
+	.string "“The Poisonous Ninja Master!”$"
+
+Fuchsia_Text_GymSignJanine:
+	.string "FUCHSIA CITY POKéMON GYM\n"
+	.string "LEADER: JANINE\l"
+	.string "“The Poisonous Ninja Master!”$"
+
+Fuchsia_ChanseySign::
+	msgbox Fuchsia_Text_ChanseySign, MSGBOX_SIGN
+	end
+
+Fuchsia_Text_ChanseySign:
+	.string "CHANSEY\n"
+	.string "“The EGG POKéMON”$"
+
+Fuchsia_BlitzleSign::
+	msgbox Fuchsia_Text_BlitzleSign, MSGBOX_SIGN
+	end
+
+Fuchsia_Text_BlitzleSign:
+	.string "BLITZLE\n"
+	.string "“The ELECTRIFIED POKéMON”$"
+
+Fuchsia_FlamigoSign::
+	msgbox Fuchsia_Text_FlamigoSign, MSGBOX_SIGN
+	end
+
+Fuchsia_Text_FlamigoSign:
+	.string "FLAMIGO\n"
+	.string "“The SYNCHRONIZE POKéMON”$"
+
+Fuchsia_RhydonSign::
+	msgbox Fuchsia_Text_RhydonSign, MSGBOX_SIGN
+	end
+
+Fuchsia_Text_RhydonSign:
+	.string "RHYDON\n"
+	.string "“The DRILL POKéMON”$"
+
+Fuchsia_KangaskhanSign::
+	msgbox Fuchsia_Text_KangaskhanSign, MSGBOX_SIGN
+	end
+
+Fuchsia_Text_KangaskhanSign:
+	.string "KANGASKHAN\n"
+	.string "“The PARENT POKéMON”$"
+
+Fuchsia_LaprasSign::
+	msgbox Fuchsia_Text_LaprasSign, MSGBOX_SIGN
+	end
+
+Fuchsia_Text_LaprasSign:
+	.string "PRIMARINA\n"
+	.string "“The SOLOIST POKéMON”$"
+
+Fuchsia_WardenSign::
+	msgbox Fuchsia_Text_WardenSign, MSGBOX_SIGN
+	end
+
+Fuchsia_Text_WardenSign:
+	.string "SAFARI ZONE\n"
+	.string "WARDEN HOUSE$"

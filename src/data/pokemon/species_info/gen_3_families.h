@@ -5609,6 +5609,76 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sManectricTeachableLearnset,
         .formSpeciesIdTable = sManectricFormSpeciesIdTable,
         .formChangeTable = sManectricFormChangeTable,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_VOLTRYKE}),
+    },
+
+    [SPECIES_VOLTRYKE] =
+    {
+        .baseHP        = 105,
+        .baseAttack    = 75,
+        .baseDefense   = 75,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 120,
+        .baseSpDefense = 75,
+        .types = MON_TYPES(TYPE_ELECTRIC),
+        .catchRate = 45,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 166 : 168,
+        .evYield_Speed = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        .abilities = { ABILITY_STATIC, ABILITY_LIGHTNING_ROD, ABILITY_MINUS },
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("VOLTRYKE"),
+        .cryId = CRY_SWAMPERT,
+        .natDexNum = NATIONAL_DEX_VOLTRYKE,
+        .categoryName = _("STORM FANG"),
+        .height = 23,
+        .weight = 888,
+        .description = COMPOUND_STRING(
+            "The jagged fur around its neck acts as a\n"
+            "natural lightning rod, allowing it to\n"
+            "absorb bolts from the sky and unleash\n"
+            "them through its fangs."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 342,
+        .trainerOffset = 7,
+        .frontPic = gMonFrontPic_Voltryke,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 56) : MON_COORDS_SIZE(56, 64),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 4 : 2,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 8),
+            ANIMCMD_FRAME(1, 33),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(0, 25),
+            ANIMCMD_FRAME(0, 3),
+        ),
+        .frontAnimId = ANIM_SHAKE_FLASH_YELLOW,
+        .backPic = gMonBackPic_Voltryke,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 56) : MON_COORDS_SIZE(56, 64),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_V_SHAKE,
+        .palette = gMonPalette_Manectric,
+        .shinyPalette = gMonShinyPalette_Manectric,
+        .iconSprite = gMonIcon_Voltryke,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(1, 10, SHADOW_SIZE_M)
+        FOOTPRINT(Pangoro)
+        OVERWORLD(
+            sPicTable_Voltryke,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Manectric,
+            gShinyOverworldPalette_Manectric
+        )
+        .levelUpLearnset = sManectricLevelUpLearnset,
+        .teachableLearnset = sManectricTeachableLearnset,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -6758,7 +6828,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .trainerOffset = 18,
         .frontPic = gMonFrontPic_Wailord,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
-        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 10 : 4,
+        .frontPicYOffset = 3,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 26),
             ANIMCMD_FRAME(1, 48),

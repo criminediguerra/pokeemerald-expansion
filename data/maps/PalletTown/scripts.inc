@@ -236,93 +236,6 @@ PalletTown_Celadon_CondoSign::
 PalletTown_Celadon_Text_CondoSign:
 	.string "CELADON CONDO$"
 
-PalletTown_Fuchsia_TownSign::
-	msgbox PalletTown_Fuchsia_Text_TownSign, MSGBOX_SIGN
-	end
-
-PalletTown_Fuchsia_Text_TownSign:
-	.string "FUCHSIA CITY\n"
-	.string "“Happening and Passing City!”$"
-
-PalletTown_Fuchsia_GymSign::
-	call_if_eq VAR_LEAGUE_REMATCH, 0, PalletTown_Fuchsia_GymSignKoga
-	call_if_eq VAR_LEAGUE_REMATCH, 1, PalletTown_Fuchsia_GymSignJanine
-	end
-
-PalletTown_Fuchsia_GymSignKoga::
-	msgbox PalletTown_Fuchsia_Text_GymSignKoga, MSGBOX_SIGN
-	end
-
-PalletTown_Fuchsia_GymSignJanine::
-	msgbox PalletTown_Fuchsia_Text_GymSignJanine, MSGBOX_SIGN
-	end
-
-PalletTown_Fuchsia_Text_GymSignKoga:
-	.string "FUCHSIA CITY POKéMON GYM\n"
-	.string "LEADER: KOGA\l"
-	.string "“The Poisonous Ninja Master!”$"
-
-PalletTown_Fuchsia_Text_GymSignJanine:
-	.string "FUCHSIA CITY POKéMON GYM\n"
-	.string "LEADER: JANINE\l"
-	.string "“The Poisonous Ninja Master!”$"
-
-PalletTown_Fuchsia_ChanseySign::
-	msgbox PalletTown_Fuchsia_Text_ChanseySign, MSGBOX_SIGN
-	end
-
-PalletTown_Fuchsia_Text_ChanseySign:
-	.string "CHANSEY\n"
-	.string "“The EGG POKéMON”$"
-
-PalletTown_Fuchsia_TaurosSign::
-	msgbox PalletTown_Fuchsia_Text_TaurosSign, MSGBOX_SIGN
-	end
-
-PalletTown_Fuchsia_Text_TaurosSign:
-	.string "TAUROS\n"
-	.string "“The WILD BULL POKéMON”$"
-
-PalletTown_Fuchsia_OmastarSign::
-	msgbox PalletTown_Fuchsia_Text_OmastarSign, MSGBOX_SIGN
-	end
-
-PalletTown_Fuchsia_Text_OmastarSign:
-	.string "OMASTAR\n"
-	.string "“The SPIRAL POKéMON”$"
-
-PalletTown_Fuchsia_RhydonSign::
-	msgbox PalletTown_Fuchsia_Text_RhydonSign, MSGBOX_SIGN
-	end
-
-PalletTown_Fuchsia_Text_RhydonSign:
-	.string "RHYDON\n"
-	.string "“The DRILL POKéMON”$"
-
-PalletTown_Fuchsia_KangaskhanSign::
-	msgbox PalletTown_Fuchsia_Text_KangaskhanSign, MSGBOX_SIGN
-	end
-
-PalletTown_Fuchsia_Text_KangaskhanSign:
-	.string "KANGASKHAN\n"
-	.string "“The PARENT POKéMON”$"
-
-PalletTown_Fuchsia_LaprasSign::
-	msgbox PalletTown_Fuchsia_Text_LaprasSign, MSGBOX_SIGN
-	end
-
-PalletTown_Fuchsia_Text_LaprasSign:
-	.string "LAPRAS\n"
-	.string "“The TRANSPORT POKéMON”$"
-
-PalletTown_Fuchsia_WardenSign::
-	msgbox PalletTown_Fuchsia_Text_WardenSign, MSGBOX_SIGN
-	end
-
-PalletTown_Fuchsia_Text_WardenSign:
-	.string "SAFARI ZONE\n"
-	.string "WARDEN HOUSE$"
-
 PalletTown_Cinnabar_TownSign::
 	msgbox PalletTown_Cinnabar_Text_TownSign, MSGBOX_SIGN
 	end
@@ -559,3 +472,10 @@ PalletTown_UndergroundOrizSign::
 PalletTown_UndergroundOrizSignText:
 	.string "UNDERGROUND PATH\n"
 	.string "CELADON CITY - LAVENDER TOWN$"
+
+PalletTown_Rock::
+	msgbox PalletTown_RockText, MSGBOX_SIGN
+	end
+
+PalletTown_RockText:
+	.string "There is a new rock by the water.$"

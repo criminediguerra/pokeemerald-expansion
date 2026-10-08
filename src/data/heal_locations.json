@@ -443,6 +443,12 @@
       "map": "MAP_LASTING_FLAME",
       "x": 16,
       "y": 26
+    },
+    {
+      "id": "HEAL_LOCATION_SAFARI_ZONE_NORTH",
+      "map": "MAP_SAFARI_ZONE_NORTH",
+      "x": 20,
+      "y": 20
     }
   ]
 }

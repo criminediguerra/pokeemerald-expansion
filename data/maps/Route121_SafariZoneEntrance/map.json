@@ -12,7 +12,7 @@
   "allow_running": true,
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": null,
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
@@ -70,14 +70,14 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 14,
+      "x": 15,
       "y": 13,
       "elevation": 0,
       "dest_map": "MAP_ROUTE121",
       "dest_warp_id": "0"
     },
     {
-      "x": 15,
+      "x": 14,
       "y": 13,
       "elevation": 0,
       "dest_map": "MAP_ROUTE121",

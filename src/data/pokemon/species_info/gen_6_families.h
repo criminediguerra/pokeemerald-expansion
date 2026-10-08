@@ -3447,11 +3447,11 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_DRAGON),
         .abilities = { ABILITY_POISON_POINT, ABILITY_POISON_TOUCH, ABILITY_ADAPTABILITY },
-        .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Skrelp"),
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("SKRELP"),
         .cryId = CRY_SKRELP,
         .natDexNum = NATIONAL_DEX_SKRELP,
-        .categoryName = _("Mock Kelp"),
+        .categoryName = _("MOCK KELP"),
         .height = 5,
         .weight = 73,
         .description = COMPOUND_STRING(
@@ -3484,7 +3484,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .palette = gMonPalette_Skrelp,
         .shinyPalette = gMonShinyPalette_Skrelp,
         .iconSprite = gMonIcon_Skrelp,
-        .iconPalIndex = 2,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(3, 5, SHADOW_SIZE_S)
         FOOTPRINT(Skrelp)
@@ -3521,18 +3521,18 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_DRAGON),
         .abilities = { ABILITY_POISON_POINT, ABILITY_POISON_TOUCH, ABILITY_ADAPTABILITY },
-        .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Dragalge"),
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("DRAGALGE"),
         .cryId = CRY_DRAGALGE,
         .natDexNum = NATIONAL_DEX_DRAGALGE,
-        .categoryName = _("Mock Kelp"),
+        .categoryName = _("MOCK KELP"),
         .height = 18,
         .weight = 815,
         .description = COMPOUND_STRING(
             "Their poison is strong enough to eat\n"
             "through the hull of a tanker. Tales are\n"
             "told of ships that wander into seas where\n"
-            "Dragalge live, never to return."),
+            "DRAGALGE live, never to return."),
         .pokemonScale = 267,
         .pokemonOffset = 2,
         .trainerScale = 286,

@@ -2,6 +2,7 @@
   "group_order": [
     "gMapGroup_TownsAndRoutesKanto",
     "gMapGroup_TownsAndRoutesSevii",
+    "gMapGroup_TownsAndRoutesGuyana",
     "gMapGroup_TownsAndRoutesJohto",
     "gMapGroup_TownsAndRoutesWhirl",
     "gMapGroup_TownsAndRoutesHoenn",
@@ -137,6 +138,16 @@
     "TanobyRuins",
     "CobaltBay",
     "CobaltBeacha"
+  ],
+  "gMapGroup_TownsAndRoutesGuyana": [
+    "CapeTurqoise",
+    "SafariZone_Northwest",
+    "SafariZone_North",
+    "SafariZone_Southwest",
+    "SafariZone_South",
+    "SafariZone_RestHouse",
+    "SafariZone_Northeast",
+    "SafariZone_Southeast"
   ],
   "gMapGroup_TownsAndRoutesJohto": [
     "NewBarkTown",
@@ -814,7 +825,9 @@
   "gMapGroup_IndoorRoute121": [
     "Route121_SafariZoneEntrance",
     "KantoSafariEntrance",
-    "JohtoSafariEntrance"
+    "JohtoSafariEntrance",
+    "LilycoveAirport",
+    "AirplaneSky"
   ],
   "gMapGroup_DungeonsKanto": [
     "ViridianForest",
@@ -1181,7 +1194,8 @@
     "PokeGoldSuper_Hoenn_3",
     "PokeGoldSuper_Hoenn_4",
     "PokeGoldSuper_Hoenn_5",
-    "PokeGoldSuper_Hoenn_6"
+    "PokeGoldSuper_Hoenn_6",
+    "PokeGoldSuper_Hoenn_7"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
@@ -1248,18 +1262,11 @@
     "UnionRoom"
   ],
   "gMapGroup_SpecialArea": [
-    "SafariZone_Northwest",
-    "SafariZone_North",
-    "SafariZone_Southwest",
-    "SafariZone_South",
     "BattleFrontier_BattleTowerLobby",
     "BattleFrontier_BattleTowerElevator",
     "BattleFrontier_BattleTowerCorridor",
     "BattleFrontier_BattleTowerBattleRoom",
     "SouthernIsland_Interior",
-    "SafariZone_RestHouse",
-    "SafariZone_Northeast",
-    "SafariZone_Southeast",
     "BattleFrontier_BattleTowerMultiPartnerRoom",
     "BattleFrontier_BattleTowerMultiCorridor",
     "BattleFrontier_BattleTowerMultiBattleRoom",

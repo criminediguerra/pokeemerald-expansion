@@ -1,11 +1,6 @@
 KantoSafariEntrance_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, KantoSafariEntrance_OnFrame
-	map_script MAP_SCRIPT_ON_TRANSITION, KantoSafariEntrance_OnTransition
 	.byte 0
-
-KantoSafariEntrance_OnTransition:
-	setvar VAR_SAFARI_LOCATION, 1
-	end
 
 KantoSafariEntrance_OnFrame:
 	map_script_2 VAR_SAFARI_ZONE_STATE, 1, KantoSafariEntrance_EventScript_ExitSafariZone

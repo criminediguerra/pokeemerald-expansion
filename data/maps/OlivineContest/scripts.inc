@@ -3,5 +3,5 @@ OlivineContest_MapScripts::
 	.byte 0
 
 OlivineContest_OnTransition:
-	setvar VAR_SAFARI_LOCATION, 2
+	setvar VAR_CONTEST_LOCATION, 2
 	end

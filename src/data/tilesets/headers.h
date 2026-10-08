@@ -1179,3 +1179,14 @@ const struct Tileset gTileset_Izabe =
     .metatileAttributes = gMetatileAttributes_Izabe,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Airport =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Airport,
+    .palettes = gTilesetPalettes_Airport,
+    .metatiles = gMetatiles_Airport,
+    .metatileAttributes = gMetatileAttributes_Airport,
+    .callback = NULL,
+};

@@ -3,5 +3,5 @@ VermilionContest_MapScripts::
 	.byte 0
 
 VermilionContest_OnTransition:
-	setvar VAR_SAFARI_LOCATION, 1
+	setvar VAR_CONTEST_LOCATION, 1
 	end

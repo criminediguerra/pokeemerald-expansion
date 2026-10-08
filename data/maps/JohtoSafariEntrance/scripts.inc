@@ -1,11 +1,6 @@
 JohtoSafariEntrance_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, JohtoSafariEntrance_OnFrame
-	map_script MAP_SCRIPT_ON_TRANSITION, JohtoSafariEntrance_OnTransition
 	.byte 0
-
-JohtoSafariEntrance_OnTransition:
-	setvar VAR_SAFARI_LOCATION, 2
-	end
 
 JohtoSafariEntrance_OnFrame:
 	map_script_2 VAR_SAFARI_ZONE_STATE, 1, JohtoSafariEntrance_EventScript_ExitSafariZone
@@ -178,7 +173,7 @@ JohtoSafariEntrance_EventScript_TrainerTipSign::
 	end
 
 JohtoSafariEntrance_Checkvar::
-goto_if_eq VAR_SAFARI_LOCATION, 2 , JohtoSafariEntrance_CheckTrue
+goto_if_eq VAR_CONTEST_LOCATION, 2 , JohtoSafariEntrance_CheckTrue
 end
 
 JohtoSafariEntrance_CheckTrue::
