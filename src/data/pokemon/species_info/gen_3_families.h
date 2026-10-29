@@ -1228,8 +1228,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sLinooneLevelUpLearnset,
         .teachableLearnset = sLinooneTeachableLearnset,
         .formSpeciesIdTable = sLinooneFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_OBSTAGOON},
-                                {EVO_ITEM, ITEM_BERSERK_GENE, SPECIES_OBSTAGOON}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_BERSERK_GENE, SPECIES_OBSTAGOON}),
     },
 
     [SPECIES_OBSTAGOON] =
@@ -5752,6 +5751,78 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #endif //P_FAMILY_ELECTRIKE
 
 #if P_FAMILY_PLUSLE
+    [SPECIES_NEUSAL] =
+    {
+        .baseHP        = 20,
+        .baseAttack    = 40,
+        .baseDefense   = 15,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 35,
+        .baseSpDefense = 35,
+        .types = MON_TYPES(TYPE_ELECTRIC),
+        .catchRate = 200,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 142 : 120,
+        .evYield_Speed = 1,
+        .itemRare = ITEM_CELL_BATTERY,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY),
+        .abilities = { ABILITY_LIGHTNING_ROD, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("NEUSAL"),
+        .cryId = CRY_ARON,
+        .natDexNum = NATIONAL_DEX_NEUSAL,
+        .categoryName = _("CHEERING"),
+        .height = 3,
+        .weight = 20,
+        .description = COMPOUND_STRING(
+            "Scientists believe that its electrical\n"
+            "nature has not yet settled into a stable\n"
+            "polarity. As a result sometimes attracts\n"
+            "loose objects, sometimes pushes them away."),
+        .pokemonScale = 508,
+        .pokemonOffset = 20,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Neusal,
+        .frontPicSize = MON_COORDS_SIZE(40, 48),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 14 : 11,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_V_SQUISH_AND_BOUNCE : ANIM_V_JUMPS_H_JUMPS,
+        .backPic = gMonBackPic_Neusal,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 48) : MON_COORDS_SIZE(56, 64),
+        .backPicYOffset = 20,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
+        .palette = gMonPalette_Neusal,
+        .shinyPalette = gMonShinyPalette_Neusal,
+        .iconSprite = gMonIcon_Neusal,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
+        SHADOW(2, 3, SHADOW_SIZE_S)
+        FOOTPRINT(Pichu)
+        OVERWORLD(
+            sPicTable_Neusal,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gMonPalette_Neusal,
+            gMonShinyPalette_Neusal
+        )
+        .levelUpLearnset = sNeusalLevelUpLearnset,
+        .teachableLearnset = sPlusleTeachableLearnset,
+        .eggMoveLearnset = sNeusalEggMoveLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_PLUSLE, CONDITIONS({IF_GENDER, MON_FEMALE})},
+                                {EVO_LEVEL, 15, SPECIES_MINUN, CONDITIONS({IF_GENDER, MON_MALE})}),
+    },
     [SPECIES_PLUSLE] =
     {
         .baseHP        = 60,
@@ -5765,7 +5836,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 142 : 120,
         .evYield_Speed = 1,
         .itemRare = ITEM_CELL_BATTERY,
-        .genderRatio = PERCENT_FEMALE(50),
+        .genderRatio = PERCENT_FEMALE(100),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
@@ -5822,9 +5893,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
             gOverworldPalette_Plusle,
             gShinyOverworldPalette_Plusle
         )
-        .levelUpLearnset = sPlusleLevelUpLearnset,
+        .levelUpLearnset = sNeusalLevelUpLearnset,
         .teachableLearnset = sPlusleTeachableLearnset,
-        .eggMoveLearnset = sPlusleEggMoveLearnset,
     },
 #endif //P_FAMILY_PLUSLE
 
@@ -5842,7 +5912,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 142 : 120,
         .evYield_Speed = 1,
         .itemRare = ITEM_CELL_BATTERY,
-        .genderRatio = PERCENT_FEMALE(50),
+        .genderRatio = MON_MALE,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
@@ -5899,13 +5969,90 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
             gOverworldPalette_Minun,
             gShinyOverworldPalette_Minun
         )
-        .levelUpLearnset = sMinunLevelUpLearnset,
+        .levelUpLearnset = sNeusalLevelUpLearnset,
         .teachableLearnset = sMinunTeachableLearnset,
-        .eggMoveLearnset = sMinunEggMoveLearnset,
     },
 #endif //P_FAMILY_MINUN
 
 #if P_FAMILY_VOLBEAT_ILLUMISE
+    [SPECIES_GLOMITE] =
+    {
+        .baseHP        = 45,
+        .baseAttack    = 45,
+        .baseDefense   = 35,
+        .baseSpeed     = 20,
+        .baseSpAttack  = 20,
+        .baseSpDefense = 30,
+        .types = MON_TYPES(TYPE_BUG),
+        .catchRate = 255,
+    #if P_UPDATED_EXP_YIELDS >= GEN_7
+        .expYield = 56,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 39,
+    #else
+        .expYield = 54,
+    #endif
+        .evYield_HP = 1,
+        .itemCommon = ITEM_PECHA_BERRY,
+        .itemRare = ITEM_BRIGHT_POWDER,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
+        .abilities = { ABILITY_SHIELD_DUST, ABILITY_NONE, ABILITY_RUN_AWAY },
+        .bodyColor = BODY_COLOR_BLACK,
+        .speciesName = _("GLOMITE"),
+        .cryId = CRY_TANGELA,
+        .natDexNum = NATIONAL_DEX_GLOMITE,
+        .categoryName = _("MOSQUITO"),
+        .height = 3,
+        .weight = 36,
+        .description = COMPOUND_STRING(
+            "Spends most of time concealed, emerging\n"
+            "only to suck blood from other POKéMONs.\n"
+            "He needs energy for survival and to\n"
+            "allow him to develop toward EVOLUTION."),
+        .pokemonScale = 711,
+        .pokemonOffset = 24,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Glomite,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(32, 40) : MON_COORDS_SIZE(40, 40),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 14 : 12,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 50),
+            ANIMCMD_FRAME(0, 14),
+        ),
+        .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_ZIGZAG_SLOW : ANIM_V_SHAKE_TWICE,
+        .enemyMonElevation = 11,
+        .backPic = gMonBackPic_Glomite,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 48) : MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 18,
+        .backAnimId = BACK_ANIM_V_SHAKE,
+        .palette = gMonPalette_Glomite,
+        .shinyPalette = gMonShinyPalette_Glomite,
+        .iconSprite = gMonIcon_Glomite,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
+        SHADOW(0, 1, SHADOW_SIZE_S)
+        FOOTPRINT(Surskit)
+        OVERWORLD(
+            sPicTable_Glomite,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_BUG,
+            sAnimTable_Following,
+            gMonPalette_Glomite,
+            gMonShinyPalette_Glomite
+        )
+        .tmIlliterate = TRUE,
+        .levelUpLearnset = sGlomiteLevelUpLearnset,
+        .teachableLearnset = sWurmpleTeachableLearnset,
+        .eggMoveLearnset = sGlomiteEggMoveLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_ILLUMISE, CONDITIONS({IF_GENDER, MON_FEMALE})},
+                                {EVO_LEVEL, 15, SPECIES_VOLBEAT, CONDITIONS({IF_GENDER, MON_MALE})}),
+    },
     [SPECIES_VOLBEAT] =
     {
         .baseHP        = 65,
@@ -5959,7 +6106,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
             ANIMCMD_FRAME(1, 11),
             ANIMCMD_FRAME(0, 5),
         ),
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_FLASH_YELLOW,
+        .enemyMonElevation = 9,
         .backPic = gMonBackPic_Volbeat,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 48) : MON_COORDS_SIZE(48, 64),
         .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 8 : 3,
@@ -5982,7 +6130,6 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sVolbeatLevelUpLearnset,
         .teachableLearnset = sVolbeatTeachableLearnset,
-        .eggMoveLearnset = sVolbeatEggMoveLearnset,
     },
 
     [SPECIES_ILLUMISE] =
@@ -6040,7 +6187,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
             ANIMCMD_FRAME(1, 22),
             ANIMCMD_FRAME(0, 11),
         ),
-        .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_BOUNCE_ROTATE_TO_SIDES : ANIM_RISING_WOBBLE,
+        .frontAnimId = ANIM_FLASH_YELLOW,
+        .enemyMonElevation = 9,
         .backPic = gMonBackPic_Illumise,
         .backPicSize = MON_COORDS_SIZE(48, 56),
         .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 6 : 8,
@@ -6063,7 +6211,6 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sIllumiseLevelUpLearnset,
         .teachableLearnset = sIllumiseTeachableLearnset,
-        .eggMoveLearnset = sIllumiseEggMoveLearnset,
     },
 #endif //P_FAMILY_VOLBEAT_ILLUMISE
 

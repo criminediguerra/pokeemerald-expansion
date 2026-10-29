@@ -146,6 +146,15 @@ static const struct SpriteFrameImage sPicTable_BeedrillMega[] = {
 static const struct SpriteFrameImage sPicTable_Penpin[] = {
     overworld_ascending_frames(gObjectEventPic_Penpin, 4, 4),
 };
+static const struct SpriteFrameImage sPicTable_Kujatta[] = {
+    overworld_ascending_frames(gObjectEventPic_Kujatta, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Rinring[] = {
+    overworld_ascending_frames(gObjectEventPic_Rinring, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Bellboyant[] = {
+    overworld_ascending_frames(gObjectEventPic_Bellboyant, 4, 4),
+};
 static const struct SpriteFrameImage sPicTable_Pidgey[] = {
     overworld_ascending_frames(gObjectEventPic_Pidgey, 4, 4),
 };
@@ -445,6 +454,9 @@ static const struct SpriteFrameImage sPicTable_Bellossom[] = {
 #endif //P_FAMILY_ODDISH
 
 #if P_FAMILY_PARAS
+static const struct SpriteFrameImage sPicTable_Sect[] = {
+    overworld_ascending_frames(gObjectEventPic_Sect, 4, 4),
+};
 static const struct SpriteFrameImage sPicTable_Paras[] = {
     overworld_ascending_frames(gObjectEventPic_Paras, 4, 4),
 };
@@ -1210,6 +1222,9 @@ static const struct SpriteFrameImage sPicTable_Smoochum[] = {
 static const struct SpriteFrameImage sPicTable_Jynx[] = {
     overworld_ascending_frames(gObjectEventPic_Jynx, 4, 4),
 };
+static const struct SpriteFrameImage sPicTable_Snowspelle[] = {
+    overworld_ascending_frames(gObjectEventPic_Snowspelle, 4, 4),
+};
 #endif //P_FAMILY_JYNX
 
 #if P_FAMILY_ELECTABUZZ
@@ -1410,6 +1425,9 @@ static const struct SpriteFrameImage sPicTable_Porygon[] = {
     overworld_ascending_frames(gObjectEventPic_Porygon, 4, 4),
 };
 #if P_GEN_2_CROSS_EVOS
+static const struct SpriteFrameImage sPicTable_Porygon15[] = {
+    overworld_ascending_frames(gObjectEventPic_Porygon15, 4, 4),
+};
 static const struct SpriteFrameImage sPicTable_Porygon2[] = {
     overworld_ascending_frames(gObjectEventPic_Porygon2, 4, 4),
 };
@@ -1827,6 +1845,9 @@ static const struct SpriteFrameImage sPicTable_Mismagius[] = {
 #endif //P_FAMILY_MISDREAVUS
 
 #if P_FAMILY_UNOWN
+static const struct SpriteFrameImage sPicTable_Monolysk[] = {
+    overworld_ascending_frames(gObjectEventPic_Monolysk, 4, 4),
+};
 static const struct SpriteFrameImage sPicTable_UnownA[] = {
     overworld_ascending_frames(gObjectEventPic_UnownA, 4, 4),
 };
@@ -2005,6 +2026,9 @@ static const struct SpriteFrameImage sPicTable_QwilfishHisui[] = {
 };
 static const struct SpriteFrameImage sPicTable_Overqwil[] = {
     overworld_ascending_frames(gObjectEventPic_Overqwil, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_OverqwilHisui[] = {
+    overworld_ascending_frames(gObjectEventPic_OverqwilHisui, 4, 4),
 };
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_QWILFISH
@@ -2697,6 +2721,9 @@ static const struct SpriteFrameImage sPicTable_ManectricMega[] = {
 #endif //P_FAMILY_ELECTRIKE
 
 #if P_FAMILY_PLUSLE
+static const struct SpriteFrameImage sPicTable_Neusal[] = {
+    overworld_ascending_frames(gObjectEventPic_Neusal, 4, 4),
+};
 static const struct SpriteFrameImage sPicTable_Plusle[] = {
     overworld_ascending_frames(gObjectEventPic_Plusle, 4, 4),
 };
@@ -2709,6 +2736,9 @@ static const struct SpriteFrameImage sPicTable_Minun[] = {
 #endif //P_FAMILY_MINUN
 
 #if P_FAMILY_VOLBEAT_ILLUMISE
+static const struct SpriteFrameImage sPicTable_Glomite[] = {
+    overworld_ascending_frames(gObjectEventPic_Glomite, 4, 4),
+};
 static const struct SpriteFrameImage sPicTable_Volbeat[] = {
     overworld_ascending_frames(gObjectEventPic_Volbeat, 4, 4),
 };
@@ -4195,6 +4225,9 @@ static const struct SpriteFrameImage sPicTable_DarmanitanGalarStandard[] = {
 #endif //P_FAMILY_DARUMAKA
 
 #if P_FAMILY_MARACTUS
+static const struct SpriteFrameImage sPicTable_Ractus[] = {
+    overworld_ascending_frames(gObjectEventPic_Ractus, 4, 4),
+};
 static const struct SpriteFrameImage sPicTable_Maractus[] = {
     overworld_ascending_frames(gObjectEventPic_Maractus, 4, 4),
 };

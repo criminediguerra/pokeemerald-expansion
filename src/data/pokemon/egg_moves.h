@@ -2770,7 +2770,7 @@ static const u16 sElectrikeEggMoveLearnset[] = {
 #endif //P_FAMILY_ELECTRIKE
 
 #if P_FAMILY_PLUSLE
-static const u16 sPlusleEggMoveLearnset[] = {
+static const u16 sNeusalEggMoveLearnset[] = {
     MOVE_WISH,
     MOVE_SING,
     MOVE_SWEET_KISS,
@@ -2783,45 +2783,24 @@ static const u16 sPlusleEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_PLUSLE
 
-#if P_FAMILY_MINUN
-static const u16 sMinunEggMoveLearnset[] = {
-    MOVE_WISH,
-    MOVE_SING,
-    MOVE_SWEET_KISS,
-    MOVE_DISCHARGE,
-    MOVE_LUCKY_CHANT,
-    MOVE_CHARM,
-    MOVE_FAKE_TEARS,
-    MOVE_TEARFUL_LOOK,
-    MOVE_UNAVAILABLE,
-};
-#endif //P_FAMILY_MINUN
-
 #if P_FAMILY_VOLBEAT_ILLUMISE
-static const u16 sVolbeatEggMoveLearnset[] = {
+static const u16 sGlomiteEggMoveLearnset[] = {
     MOVE_BATON_PASS,
     MOVE_SILVER_WIND,
+    MOVE_GROWTH,
     MOVE_TRICK,
     MOVE_ENCORE,
+    MOVE_CAPTIVATE,
     MOVE_BUG_BUZZ,
     MOVE_DIZZY_PUNCH,
     MOVE_SEISMIC_TOSS,
+    MOVE_FAKE_TEARS,
+    MOVE_CONFUSE_RAY,
+    MOVE_AROMATHERAPY,
     MOVE_LUNGE,
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sIllumiseEggMoveLearnset[] = {
-    MOVE_BATON_PASS,
-    MOVE_SILVER_WIND,
-    MOVE_GROWTH,
-    MOVE_ENCORE,
-    MOVE_BUG_BUZZ,
-    MOVE_CAPTIVATE,
-    MOVE_FAKE_TEARS,
-    MOVE_CONFUSE_RAY,
-    MOVE_AROMATHERAPY,
-    MOVE_UNAVAILABLE,
-};
 #endif //P_FAMILY_VOLBEAT_ILLUMISE
 
 #if P_FAMILY_ROSELIA

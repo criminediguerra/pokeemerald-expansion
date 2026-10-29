@@ -313,8 +313,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sExeggutorLevelUpLearnset,
         .teachableLearnset = sVenusaurTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_VENUSTOR, CONDITIONS({IF_MIN_OVERWORLD_STEPS, 500})},
-                                {EVO_SPLIT_FROM_EVO, SPECIES_VENUSTOR, SPECIES_EXEGG}),
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -4256,7 +4254,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_PichuAlola,
         .frontPicSize = MON_COORDS_SIZE(32, 40),
-        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 12 : 14,
+        .frontPicYOffset = 7,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 15),
             ANIMCMD_FRAME(1, 20),
@@ -4266,7 +4264,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .frontAnimId = ANIM_V_JUMPS_BIG,
         .backPic = gMonBackPic_PichuAlola,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 48) : MON_COORDS_SIZE(48, 56),
-        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 11 : 8,
+        .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
         .palette = gMonPalette_RaichuAlola,
         .shinyPalette = gMonShinyPalette_RaichuAlola,
@@ -4285,7 +4283,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             gShinyOverworldPalette_RaichuAlola
         )
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sRaichuAlolaLevelUpLearnset,
+        .levelUpLearnset = sPichuAlolaLevelUpLearnset,
         .teachableLearnset = sRaichuAlolaTeachableLearnset,
         .eggMoveLearnset = sPichuEggMoveLearnset,
         .formSpeciesIdTable = sPichuFormSpeciesIdTable,
@@ -4353,7 +4351,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         FOOTPRINT(Pikachu)
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sRaichuAlolaLevelUpLearnset,
+        .levelUpLearnset = sPikachuAlolaLevelUpLearnset,
         .teachableLearnset = sRaichuAlolaTeachableLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
         .formChangeTable = sPikachuFormChangeTable,
@@ -6660,6 +6658,92 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_FAMILY_ODDISH
 
 #if P_FAMILY_PARAS
+    [SPECIES_SECT] =
+    {
+        .baseHP        = 35,
+        .baseAttack    = 70,
+        .baseDefense   = 55,
+        .baseSpeed     = 25,
+        .baseSpAttack  = P_UPDATED_STATS >= GEN_2 ? 45 : 55,
+        .baseSpDefense = 55,
+        .types = MON_TYPES(TYPE_BUG),
+        .catchRate = 190,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 57 : 70,
+        .evYield_Attack = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG, EGG_GROUP_GRASS),
+    #if P_UPDATED_ABILITIES >= GEN_4
+        .abilities = { ABILITY_RUN_AWAY, ABILITY_DRY_SKIN, ABILITY_DAMP },
+    #else
+        .abilities = { ABILITY_RUN_AWAY, ABILITY_NONE, ABILITY_DAMP },
+    #endif
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("SECT"),
+        .cryId = CRY_STARYU,
+        .natDexNum = NATIONAL_DEX_SECT,
+        .categoryName = _("COCKROACH"),
+        .height = 3,
+        .weight = 54,
+        .description = COMPOUND_STRING(
+            "It tends to hide under rocks to avoid\n"
+            "predators. It is said that, in the event\n"
+            "of a disaster, it would be among the few\n"
+            "species to survive."),
+        .pokemonScale = 593,
+        .pokemonOffset = 22,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Sect,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(40, 40) : MON_COORDS_SIZE(48, 40),
+        .frontPicYOffset = 15,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 5),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 5),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 5),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 5),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 5),
+        ),
+        .frontAnimId = ANIM_H_SLIDE_SLOW,
+        .frontAnimDelay = 10,
+        .backPic = gMonBackPic_Sect,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 24) : MON_COORDS_SIZE(64, 32),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 20 : 18,
+        .backAnimId = BACK_ANIM_H_SLIDE,
+        .palette = gMonPalette_Paras,
+        .shinyPalette = gMonShinyPalette_Paras,
+        .iconSprite = gMonIcon_Sect,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
+        SHADOW(7, -11, SHADOW_SIZE_M)
+        FOOTPRINT(Paras)
+        OVERWORLD(
+            sPicTable_Sect,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_BUG,
+            sAnimTable_Following,
+            gOverworldPalette_Paras,
+            gShinyOverworldPalette_Paras
+        )
+        .levelUpLearnset = sWeedleLevelUpLearnset,
+        .teachableLearnset = sWeedleTeachableLearnset,
+        .eggMoveLearnset = sParasEggMoveLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_PARAS, CONDITIONS({IF_IN_MAPSEC, MAPSEC_MT_MOON})}),
+    },
     [SPECIES_PARAS] =
     {
         .baseHP        = 35,
@@ -6745,7 +6829,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sParasLevelUpLearnset,
         .teachableLearnset = sParasTeachableLearnset,
-        .eggMoveLearnset = sParasEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_PARASECT}),
     },
 
@@ -7393,7 +7476,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggMoveLearnset = sMeowthEggMoveLearnset,
         .formSpeciesIdTable = sMeowthFormSpeciesIdTable,
         .formChangeTable = sMeowthFormChangeTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_PERSIAN}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_PERSIAN},
+                                {EVO_ITEM, ITEM_BERSERK_GENE, SPECIES_PERRSERKER}),
     },
 
     [SPECIES_PERSIAN] =
@@ -7676,7 +7760,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sMeowthGalarTeachableLearnset,
         .eggMoveLearnset = sMeowthGalarEggMoveLearnset,
         .formSpeciesIdTable = sMeowthFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_PERRSERKER}),
     },
 
     [SPECIES_PERRSERKER] =
@@ -7715,12 +7798,15 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .frontPic = gMonFrontPic_Perrserker,
         .frontPicSize = MON_COORDS_SIZE(48, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 50),
+            ANIMCMD_FRAME(0, 20),
+        ),
+        .frontAnimId = ANIM_H_JUMPS,
         .backPic = gMonBackPic_Perrserker,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 5,
-        //.backAnimId = BACK_ANIM_NONE,
+        .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
         .palette = gMonPalette_Perrserker,
         .shinyPalette = gMonShinyPalette_Perrserker,
         .iconSprite = gMonIcon_Perrserker,
@@ -9027,23 +9113,23 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
     [SPECIES_ABRA_ALOLA] =
     {
-        .baseHP        = 25,
-        .baseAttack    = 20,
-        .baseDefense   = 15,
-        .baseSpeed     = 90,
-        .baseSpAttack  = 105,
-        .baseSpDefense = P_UPDATED_STATS >= GEN_2 ? 55 : 105,
-        .types = MON_TYPES(TYPE_PSYCHIC, TYPE_ELECTRIC),
+        .baseHP        = 70,
+        .baseAttack    = 80,
+        .baseDefense   = 50,
+        .baseSpeed     = 35,
+        .baseSpAttack  = 35,
+        .baseSpDefense = 35,
+        .types = MON_TYPES(TYPE_FIGHTING),
         .catchRate = 200,
         .expYield = 75,
         .evYield_SpAttack = 1,
-        .itemRare = ITEM_TWISTED_SPOON,
+        .itemRare = ITEM_ANCESTORS_REMAINS,
         .genderRatio = PERCENT_FEMALE(25),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_SYNCHRONIZE, ABILITY_INNER_FOCUS, ABILITY_MAGIC_GUARD },
+        .abilities = { ABILITY_GUTS, ABILITY_NO_GUARD, ABILITY_STEADFAST },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("ABRA"),
         .cryId = CRY_ABRA,
@@ -9062,7 +9148,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_AbraAlola,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 48) : MON_COORDS_SIZE(56, 48),
-        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 11 : 10,
+        .frontPicYOffset = 3,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 7),
             ANIMCMD_FRAME(1, 21),
@@ -9073,7 +9159,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_H_JUMPS : ANIM_H_VIBRATE,
         .backPic = gMonBackPic_AbraAlola,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 48) : MON_COORDS_SIZE(56, 48),
-        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 11 : 12,
+        .backPicYOffset = 12,
         .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
         .palette = gMonPalette_AbraAlola,
         .shinyPalette = gMonShinyPalette_AbraAlola,
@@ -9093,31 +9179,31 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .isAlolanForm = TRUE,
         .levelUpLearnset = sAbraAlolaLevelUpLearnset,
-        .teachableLearnset = sAbraTeachableLearnset,
-        .eggMoveLearnset = sAbraEggMoveLearnset,
+        .teachableLearnset = sMachopTeachableLearnset,
+        .eggMoveLearnset = sMachopEggMoveLearnset,
         .formSpeciesIdTable = sAbraFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_KADABRA_ALOLA}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ANCESTORS_REMAINS, SPECIES_KADABRA_ALOLA}),
     },
 
     [SPECIES_KADABRA_ALOLA] =
     {
-        .baseHP        = 40,
-        .baseAttack    = 35,
-        .baseDefense   = 30,
-        .baseSpeed     = 105,
-        .baseSpAttack  = 120,
-        .baseSpDefense = P_UPDATED_STATS >= GEN_2 ? 70 : 120,
-        .types = MON_TYPES(TYPE_PSYCHIC, TYPE_ELECTRIC),
+        .baseHP        = 90,
+        .baseAttack    = 130,
+        .baseDefense   = 80,
+        .baseSpeed     = 55,
+        .baseSpAttack  = 65,
+        .baseSpDefense = P_UPDATED_STATS >= GEN_2 ? 85 : 65,
+        .types = MON_TYPES(TYPE_FIGHTING, TYPE_DARK),
         .catchRate = 100,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 140 : 145,
         .evYield_SpAttack = 2,
-        .itemRare = ITEM_TWISTED_SPOON,
+        .itemRare = ITEM_BLACK_BELT,
         .genderRatio = PERCENT_FEMALE(25),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_SYNCHRONIZE, ABILITY_INNER_FOCUS, ABILITY_MAGIC_GUARD },
+        .abilities = { ABILITY_GUTS, ABILITY_NO_GUARD, ABILITY_STEADFAST },
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = TRUE,
         .speciesName = _("KADABRA"),
@@ -9137,17 +9223,17 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_KadabraAlola,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 56) : MON_COORDS_SIZE(64, 56),
-        .frontPicYOffset = 5,
+        .frontPicYOffset = 0,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 12),
             ANIMCMD_FRAME(1, 45),
             ANIMCMD_FRAME(0, 15),
         ),
-        .frontAnimId = ANIM_GROW_VIBRATE,
+        .frontAnimId = ANIM_H_SHAKE,
         .backPic = gMonBackPic_KadabraAlola,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 48) : MON_COORDS_SIZE(64, 48),
-        .backPicYOffset = 8,
-        .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
+        .backPicYOffset = 3,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
         .palette = gMonPalette_KadabraAlola,
         .shinyPalette = gMonShinyPalette_KadabraAlola,
         .iconSprite = gMonIcon_KadabraAlola,
@@ -9179,21 +9265,20 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .isAlolanForm = TRUE,
         .levelUpLearnset = sKadabraAlolaLevelUpLearnset,
-        .teachableLearnset = sKadabraTeachableLearnset,
+        .teachableLearnset = sScraggyTeachableLearnset,
         .formSpeciesIdTable = sKadabraFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_ALAKAZAM_ALOLA},
-                                {EVO_ITEM, ITEM_BERSERK_GENE, SPECIES_ALAKAZAM_ALOLA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_ALAKAZAM_ALOLA}),
     },
 
     [SPECIES_ALAKAZAM_ALOLA] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 50,
-        .baseDefense   = 45,
-        .baseSpeed     = 120,
-        .baseSpAttack  = 135,
-        .baseSpDefense = ALAKAZAM_SP_DEF,
-        .types = MON_TYPES(TYPE_PSYCHIC, TYPE_ELECTRIC),
+        .baseHP        = 90,
+        .baseAttack    = 130,
+        .baseDefense   = 80,
+        .baseSpeed     = 55,
+        .baseSpAttack  = 65,
+        .baseSpDefense = P_UPDATED_STATS >= GEN_2 ? 85 : 65,
+        .types = MON_TYPES(TYPE_FIGHTING, TYPE_DARK),
         .catchRate = 50,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 250,
@@ -9205,13 +9290,13 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .expYield = 186,
     #endif
         .evYield_SpAttack = 3,
-        .itemRare = ITEM_TWISTED_SPOON,
+        .itemRare = ITEM_BLACK_BELT,
         .genderRatio = PERCENT_FEMALE(25),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_SYNCHRONIZE, ABILITY_INNER_FOCUS, ABILITY_MAGIC_GUARD },
+        .abilities = { ABILITY_GUTS, ABILITY_NO_GUARD, ABILITY_STEADFAST },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("ALAKAZAM"),
         .cryId = CRY_ALAKAZAM,
@@ -9230,7 +9315,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_AlakazamAlola,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 56) : MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 4 : 2,
+        .frontPicYOffset = 0,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 9),
             ANIMCMD_FRAME(1, 54),
@@ -9239,7 +9324,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_V_STRETCH : ANIM_GROW_VIBRATE,
         .backPic = gMonBackPic_AlakazamAlola,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 56) : MON_COORDS_SIZE(64, 56),
-        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 5 : 6,
+        .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_GROW_STUTTER,
         .palette = gMonPalette_AlakazamAlola,
         .shinyPalette = gMonShinyPalette_AlakazamAlola,
@@ -9272,7 +9357,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .isAlolanForm = TRUE,
         .levelUpLearnset = sAlakazamAlolaLevelUpLearnset,
-        .teachableLearnset = sAlakazamTeachableLearnset,
+        .teachableLearnset = sScraftyTeachableLearnset,
         .formSpeciesIdTable = sAlakazamFormSpeciesIdTable,
     },
 
@@ -10925,8 +11010,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggMoveLearnset = sSlowpokeEggMoveLearnset,
         .formSpeciesIdTable = sSlowpokeFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_SLOWBRO},
-                                {EVO_TRADE, 0, SPECIES_SLOWKING, CONDITIONS({IF_HOLD_ITEM, ITEM_ANCESTORS_REMAINS,})},
-                                {EVO_ITEM, ITEM_ANCESTORS_REMAINS, SPECIES_SLOWKING}),
+                                {EVO_ITEM, ITEM_BERSERK_GENE, SPECIES_SLOWKING}),
     },
 
     [SPECIES_SLOWBRO] =
@@ -10996,6 +11080,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sSlowbroTeachableLearnset,
         .formSpeciesIdTable = sSlowbroFormSpeciesIdTable,
         .formChangeTable = sSlowbroFormChangeTable,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_SLOWPOKE_TAIL, SPECIES_SLOWPOKE_GALAR},
+                                {EVO_SPLIT_FROM_EVO, SPECIES_SLOWPOKE_GALAR, SPECIES_TURBAN}),
     },
 
 #if P_GEN_2_CROSS_EVOS
@@ -11206,7 +11292,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggMoveLearnset = sSlowpokeGalarEggMoveLearnset,
         .formSpeciesIdTable = sSlowpokeFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_GALARICA_CUFF, SPECIES_SLOWBRO_GALAR},
-                                {EVO_ITEM, ITEM_GALARICA_WREATH, SPECIES_SLOWKING_GALAR}),
+                                {EVO_ITEM, ITEM_BERSERK_GENE, SPECIES_SLOWKING_GALAR}),
     },
 
     [SPECIES_SLOWBRO_GALAR] =
@@ -12653,7 +12739,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sShellderLevelUpLearnset,
         .teachableLearnset = sShellderTeachableLearnset,
         .eggMoveLearnset = sShellderEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_CLOYSTER}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_CLOYSTER},
+                                {EVO_ITEM, ITEM_SLOWPOKE_TAIL, SPECIES_TURBAN}),
     },
 
     [SPECIES_CLOYSTER] =
@@ -12761,7 +12848,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 15,
         .weight = 1325,
         .description = COMPOUND_STRING(
-            "This Pokémon clamps tightly onto a\n"
+            "This POKéMON clamps tightly onto a\n"
             "SLOWPOKE's tail, feeding on its host's\n"
             "natural fluids. it rarely lets go."),
         .pokemonScale = 256,
@@ -12947,8 +13034,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sHaunterLevelUpLearnset,
         .teachableLearnset = sHaunterTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_GENGAR},
-                                {EVO_ITEM, ITEM_BERSERK_GENE, SPECIES_GENGAR}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DUSK_STONE, SPECIES_GENGAR}),
     },
 
 #if P_UPDATED_ABILITIES >= GEN_7
@@ -16880,8 +16966,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sKangaskhanTeachableLearnset,
         .formSpeciesIdTable = sKangaskhanFormSpeciesIdTable,
         .formChangeTable = sKangaskhanFormChangeTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_KANGASKHAN_CHILDLESS, CONDITIONS({IF_MIN_OVERWORLD_STEPS, 1000})},
-                                {EVO_SPLIT_FROM_EVO, SPECIES_KANGASKHAN, SPECIES_KANGASKID}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_KANGASKHAN_CHILDLESS, CONDITIONS({IF_MIN_OVERWORLD_STEPS, 500})},
+                                {EVO_SPLIT_FROM_EVO, SPECIES_KANGASKHAN_CHILDLESS, SPECIES_KANGASKID}),
     },
     [SPECIES_KANGASKHAN_CHILDLESS] =
     {
@@ -16950,7 +17036,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sKangaskhanLevelUpLearnset,
         .teachableLearnset = sKangaskhanTeachableLearnset,
         .formSpeciesIdTable = sKangaskhanFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_KANGASKHAN, CONDITIONS({IF_MIN_OVERWORLD_STEPS, 1000}, {IF_SPECIES_IN_PARTY, SPECIES_KANGASKHAN_MALE})}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_KANGASKHAN, CONDITIONS({IF_MIN_OVERWORLD_STEPS, 500}, {IF_SPECIES_IN_PARTY, SPECIES_KANGASKHAN_MALE})}),
     },
     [SPECIES_KANGASKHAN_MALE] =
     {
@@ -18365,10 +18451,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 14,
         .weight = 406,
         .description = COMPOUND_STRING(
-            "A JYNX sashays rhythmically as if it were\n"
-            "dancing. Its motions are so bouncingly\n"
-            "alluring, people seeing it are compelled to\n"
-            "shake their hips without noticing."),
+            "It speaks using a language that sounds\n"
+            "human.\n"
+            "Research is under way to determine what\n"
+            "is being said."),
         .pokemonScale = 256,
         .pokemonOffset = 3,
         .trainerScale = 300,
@@ -18403,6 +18489,76 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             sAnimTable_Following,
             gOverworldPalette_Jynx,
             gShinyOverworldPalette_Jynx
+        )
+        .levelUpLearnset = sJynxLevelUpLearnset,
+        .teachableLearnset = sJynxTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_SACHET, SPECIES_SNOWSPELLE}),
+    },
+    [SPECIES_SNOWSPELLE] =
+    {
+        .baseHP        = 75,
+        .baseAttack    = 67,
+        .baseDefense   = 83,
+        .baseSpeed     = 95,
+        .baseSpAttack  = 125,
+        .baseSpDefense = 95,
+        .types = MON_TYPES(TYPE_ICE, TYPE_PSYCHIC),
+        .catchRate = 45,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 159 : 137,
+        .evYield_SpAttack = 2,
+        .genderRatio = MON_FEMALE,
+        .eggCycles = 25,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
+    #if P_UPDATED_ABILITIES >= GEN_4
+        .abilities = { ABILITY_OBLIVIOUS, ABILITY_FOREWARN, ABILITY_DRY_SKIN },
+    #else
+        .abilities = { ABILITY_OBLIVIOUS, ABILITY_NONE, ABILITY_DRY_SKIN },
+    #endif
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("SNOWSPELLE"),
+        .cryId = CRY_CRYOGONAL,
+        .natDexNum = NATIONAL_DEX_SNOWSPELLE,
+        .categoryName = _("SNOWSLIDE"),
+        .height = 24,
+        .weight = 588,
+        .description = COMPOUND_STRING(
+            "Unlike other POKéMONs that communicate\n"
+            "through cries or gestures, SNOWSPELLE\n"
+            "can lure travelers in the woods imitating\n"
+            "human voices with unsettling accuracy."),
+        .pokemonScale = 256,
+        .pokemonOffset = 3,
+        .trainerScale = 300,
+        .trainerOffset = 1,
+        .frontPic = gMonFrontPic_Snowspelle,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 56) : MON_COORDS_SIZE(64, 48),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 40),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = ANIM_V_STRETCH,
+        .backPic = gMonBackPic_Snowspelle,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 48) : MON_COORDS_SIZE(56, 64),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
+        .palette = gMonPalette_Snowspelle,
+        .shinyPalette = gMonShinyPalette_Snowspelle,
+        .iconSprite = gMonIcon_Snowspelle,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(0, 3, SHADOW_SIZE_L)
+        FOOTPRINT(Jynx)
+        OVERWORLD(
+            sPicTable_Snowspelle,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gMonPalette_Snowspelle,
+            gMonShinyPalette_Snowspelle
         )
         .levelUpLearnset = sJynxLevelUpLearnset,
         .teachableLearnset = sJynxTeachableLearnset,
@@ -21346,11 +21502,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
-    #if P_UPDATED_ABILITIES >= GEN_4
         .abilities = { ABILITY_TRACE, ABILITY_DOWNLOAD, ABILITY_ANALYTIC },
-    #else
-        .abilities = { ABILITY_TRACE, ABILITY_NONE, ABILITY_ANALYTIC },
-    #endif
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("PORYGON"),
         .cryId = CRY_PORYGON,
@@ -21399,11 +21551,77 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sPorygonLevelUpLearnset,
         .teachableLearnset = sPorygonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_PORYGON2, CONDITIONS({IF_HOLD_ITEM, ITEM_UPGRADE})},
-                                {EVO_ITEM, ITEM_UPGRADE, SPECIES_PORYGON2}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_UPGRADE, SPECIES_PORYGON2},
+                                {EVO_ITEM, ITEM_BETA_BUILD, SPECIES_PORYGON15}),
     },
 
 #if P_GEN_2_CROSS_EVOS
+    [SPECIES_PORYGON15] =
+    {
+        .baseHP        = 95,
+        .baseAttack    = 85,
+        .baseDefense   = 70,
+        .baseSpeed     = 90,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_NORMAL),
+        .catchRate = 30,
+        .expYield = 185,
+        .evYield_SpAttack = 3,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
+        .abilities = { ABILITY_COLOR_CHANGE, ABILITY_DOWNLOAD, ABILITY_PROTEAN },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("PORYGON1.5"),
+        .cryId = CRY_PORYGON2,
+        .natDexNum = NATIONAL_DEX_PORYGON15,
+        .categoryName = _("VIRTUAL"),
+        .height = 9,
+        .weight = 340,
+        .description = COMPOUND_STRING(
+            "A prototype made by DEVON that never\n"
+            "went into production. It was intended\n"
+            "to be a standalone POKéMON based on\n"
+            "PORYGON's stolen source code."),
+        .pokemonScale = 338,
+        .pokemonOffset = 8,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Porygon15,
+        .frontPicSize = MON_COORDS_SIZE(40, 56),
+        .frontPicYOffset = 6,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 30),
+        ),
+        .frontAnimId = ANIM_CIRCLE_C_CLOCKWISE_SLOW,
+        .enemyMonElevation = 12,
+        .backPic = gMonBackPic_Porygon15,
+        .backPicSize = MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 8,
+        .backAnimId = BACK_ANIM_H_VIBRATE,
+        .palette = gMonPalette_Porygon15,
+        .shinyPalette = gMonShinyPalette_Porygon15,
+        .iconSprite = gMonIcon_Porygon15,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(0, 17, SHADOW_SIZE_S)
+        FOOTPRINT(Ledyba)
+        OVERWORLD(
+            sPicTable_Porygon15,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gMonPalette_Porygon15,
+            gMonShinyPalette_Porygon15
+        )
+        .levelUpLearnset = sPorygon2LevelUpLearnset,
+        .teachableLearnset = sPorygon2TeachableLearnset,
+    },
     [SPECIES_PORYGON2] =
     {
         .baseHP        = 85,
@@ -21421,11 +21639,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
-    #if P_UPDATED_ABILITIES >= GEN_4
         .abilities = { ABILITY_TRACE, ABILITY_DOWNLOAD, ABILITY_ANALYTIC },
-    #else
-        .abilities = { ABILITY_TRACE, ABILITY_NONE, ABILITY_ANALYTIC },
-    #endif
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("PORYGON2"),
         .cryId = CRY_PORYGON2,
@@ -21434,7 +21648,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 6,
         .weight = 325,
         .description = COMPOUND_STRING(
-            "It was created by humans using the power\n"
+            "It was created by SILPH using the power\n"
             "of science. It has been given artificial\n"
             "intelligence that enables it to learn new\n"
             "gestures and emotions on its own."),
@@ -21513,10 +21727,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 9,
         .weight = 340,
         .description = COMPOUND_STRING(
-            "In order to create a more advanced\n"
-            "POKéMON, an additional program was\n"
+            "In order to enable PORYGON to work in\n"
+            "space an additional program was\n"
             "installed, but apparently it contained a\n"
-            "defect that made it move oddly."),
+            "defect that made him move oddly."),
         .pokemonScale = 338,
         .pokemonOffset = 8,
         .trainerScale = 256,

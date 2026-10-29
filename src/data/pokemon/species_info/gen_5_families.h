@@ -5248,6 +5248,79 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #endif //P_FAMILY_DARUMAKA
 
 #if P_FAMILY_MARACTUS
+    [SPECIES_RACTUS] =
+    {
+        .baseHP        = 50,
+        .baseAttack    = 85,
+        .baseDefense   = 40,
+        .baseSpeed     = 35,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 40,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_WATER),
+        .catchRate = 190,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 67 : 97,
+        .evYield_SpAttack = 1,
+        .itemRare = ITEM_STICKY_BARB,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = 35,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS, EGG_GROUP_HUMAN_LIKE),
+        .abilities = { ABILITY_SAND_VEIL, ABILITY_NONE, ABILITY_WATER_ABSORB },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("RACTUS"),
+        .cryId = CRY_LUDICOLO,
+        .natDexNum = NATIONAL_DEX_RACTUS,
+        .categoryName = _("CACTUS"),
+        .height = 9,
+        .weight = 260,
+        .description = COMPOUND_STRING(
+            "His stinger can detect traces of moisture\n"
+            "far below the surface, allowing RACTUS to\n"
+            "siphon up hidden water and store it inside\n"
+            "its body."),
+        .pokemonScale = 305,
+        .pokemonOffset = 6,
+        .trainerScale = 257,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Ractus,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 32) : MON_COORDS_SIZE(56, 40),
+        .frontPicYOffset = 5,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 15),
+        ),
+        .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES_SLOW,
+        .backPic = gMonBackPic_Ractus,
+        .backPicSize = MON_COORDS_SIZE(64, 40),
+        .backPicYOffset = 12,
+        .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
+        .palette = gMonPalette_Maractus,
+        .shinyPalette = gMonShinyPalette_Maractus,
+        .iconSprite = gMonIcon_Ractus,
+        .iconPalIndex = 1,
+        .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
+        SHADOW(0, 1, SHADOW_SIZE_S)
+        FOOTPRINT(Fearow)
+        OVERWORLD(
+            sPicTable_Ractus,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Maractus,
+            gShinyOverworldPalette_Maractus
+        )
+        .levelUpLearnset = sRactusLevelUpLearnset,
+        .teachableLearnset = sMaractusTeachableLearnset,
+        .eggMoveLearnset = sMaractusEggMoveLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_MARACTUS}),
+    },
     [SPECIES_MARACTUS] =
     {
         .baseHP        = 75,
@@ -5256,7 +5329,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseSpeed     = 60,
         .baseSpAttack  = 106,
         .baseSpDefense = 67,
-        .types = MON_TYPES(TYPE_GRASS),
+        .types = MON_TYPES(TYPE_GRASS, TYPE_WATER),
         .catchRate = 255,
         .expYield = 161,
         .evYield_SpAttack = 2,
@@ -5268,17 +5341,17 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS),
         .abilities = { ABILITY_WATER_ABSORB, ABILITY_CHLOROPHYLL, ABILITY_STORM_DRAIN },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Maractus"),
+        .speciesName = _("MARACTUS"),
         .cryId = CRY_MARACTUS,
         .natDexNum = NATIONAL_DEX_MARACTUS,
-        .categoryName = _("Cactus"),
+        .categoryName = _("CACTUS"),
         .height = 10,
         .weight = 280,
         .description = COMPOUND_STRING(
             "Arid regions are their habitat.\n"
             "When it moves rhythmically, it makes a\n"
             "sound similar to maracas, making the\n"
-            "surprised Pokémon flee."),
+            "surprised POKéMON flee."),
         .pokemonScale = 305,
         .pokemonOffset = 6,
         .trainerScale = 257,
@@ -5318,7 +5391,6 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sMaractusLevelUpLearnset,
         .teachableLearnset = sMaractusTeachableLearnset,
-        .eggMoveLearnset = sMaractusEggMoveLearnset,
     },
 #endif //P_FAMILY_MARACTUS
 
@@ -11956,8 +12028,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sKricketotLevelUpLearnset,
         .teachableLearnset = sDurantTeachableLearnset,
         .eggMoveLearnset = sDurantEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_DURANT},
-                                {EVO_ITEM, ITEM_BERSERK_GENE, SPECIES_DURANT}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_SUN_STONE, SPECIES_DURANT}),
     },
     [SPECIES_DURANT] =
     {

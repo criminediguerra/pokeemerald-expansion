@@ -752,6 +752,8 @@ extern const u32 gItemIcon_Magmarizer[];
 extern const u16 gItemIconPalette_Magmarizer[];
 extern const u32 gItemIcon_DubiousDisc[];
 extern const u16 gItemIconPalette_DubiousDisc[];
+extern const u32 gItemIcon_SlowpokeTail[];
+extern const u16 gItemIconPalette_SlowpokeTail[];
 extern const u32 gItemIcon_ReaperCloth[];
 extern const u16 gItemIconPalette_ReaperCloth[];
 extern const u32 gItemIcon_PrismScale[];
@@ -1742,6 +1744,8 @@ extern const u16 gItemIconPalette_TwiceSpicedRadish[];
 
 extern const u32 gItemIcon_OutfitBox[];
 extern const u16 gItemIconPalette_OutfitBox[];
+extern const u16 gItemIconPalette_Emerald[];
+extern const u16 gItemIconPalette_BetaBuild[];
 
 extern const u32 gItemIcon_ReturnToFieldArrow[];
 extern const u16 gItemIconPalette_ReturnToFieldArrow[];

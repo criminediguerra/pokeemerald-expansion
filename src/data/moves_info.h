@@ -20397,7 +20397,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "bypasses a foe's Protect."),
         .effect = EFFECT_HIT,
         .power = 100,
-        .type = TYPE_NORMAL,
+        .type = TYPE_ROCK,
         .accuracy = 100,
         .pp = 5,
         .target = MOVE_TARGET_SELECTED,

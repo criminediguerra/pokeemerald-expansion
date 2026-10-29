@@ -691,19 +691,19 @@ static const u16 sUnownFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_UNOWN
 
-#if P_FAMILY_DUNSPARCE
-static const u16 sDudunsparceFormSpeciesIdTable[] = {
-    SPECIES_DUDUNSPARCE_TWO_SEGMENT,
-    SPECIES_DUDUNSPARCE_THREE_SEGMENT,
-    FORM_SPECIES_END,
-};
-#endif //P_FAMILY_DUNSPARCE
-
 #if P_FAMILY_QWILFISH
 static const u16 sQwilfishFormSpeciesIdTable[] = {
     SPECIES_QWILFISH,
 #if P_HISUIAN_FORMS
     SPECIES_QWILFISH_HISUI,
+#endif
+    FORM_SPECIES_END,
+};
+
+static const u16 sOverqwilFormSpeciesIdTable[] = {
+    SPECIES_OVERQWIL,
+#if P_HISUIAN_FORMS
+    SPECIES_OVERQWIL_HISUI,
 #endif
     FORM_SPECIES_END,
 };

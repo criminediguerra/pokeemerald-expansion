@@ -609,6 +609,9 @@ const u16 gItemIconPalette_Magmarizer[] = INCBIN_U16("graphics/items/icon_palett
 const u32 gItemIcon_DubiousDisc[] = INCBIN_U32("graphics/items/icons/dubious_disc.4bpp.lz");
 const u16 gItemIconPalette_DubiousDisc[] = INCBIN_U16("graphics/items/icon_palettes/dubious_disc.gbapal");
 
+const u32 gItemIcon_SlowpokeTail[] = INCBIN_U32("graphics/items/icons/slowpoke_tail.4bpp.lz");
+const u16 gItemIconPalette_SlowpokeTail[] = INCBIN_U16("graphics/items/icon_palettes/slowpoke_tail.gbapal");
+
 const u32 gItemIcon_ReaperCloth[] = INCBIN_U32("graphics/items/icons/reaper_cloth.4bpp.lz");
 const u16 gItemIconPalette_ReaperCloth[] = INCBIN_U16("graphics/items/icon_palettes/reaper_cloth.gbapal");
 
@@ -2102,3 +2105,5 @@ const u16 gItemIconPalette_TwiceSpicedRadish[] = INCBIN_U16("graphics/items/icon
 
 const u32 gItemIcon_OutfitBox[] = INCBIN_U32("graphics/items/icons/outfit_box.4bpp.lz");
 const u16 gItemIconPalette_OutfitBox[] = INCBIN_U16("graphics/items/icon_palettes/outfit_box.gbapal");
+const u16 gItemIconPalette_Emerald[] = INCBIN_U16("graphics/items/icon_palettes/emerald.gbapal");
+const u16 gItemIconPalette_BetaBuild[] = INCBIN_U16("graphics/items/icon_palettes/beta_build.gbapal");

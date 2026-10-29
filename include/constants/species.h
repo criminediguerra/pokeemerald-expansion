@@ -1471,9 +1471,8 @@
 #define SPECIES_ANNIHILAPE                              1370
 #define SPECIES_CLODSIRE                                1371
 #define SPECIES_FARIGIRAF                               1372
-#define SPECIES_DUDUNSPARCE                             SPECIES_DUDUNSPARCE_TWO_SEGMENT
-#define SPECIES_DUDUNSPARCE_TWO_SEGMENT                 1373
-#define SPECIES_DUDUNSPARCE_THREE_SEGMENT               1374
+#define SPECIES_DUDUNSPARCE                             1373
+#define SPECIES_DUDUNVERN                               1374
 #define SPECIES_KINGAMBIT                               1375
 #define SPECIES_GREAT_TUSK                              1376
 #define SPECIES_SCREAM_TAIL                             1377
@@ -1693,9 +1692,20 @@
 #define SPECIES_HIFISHI                                 1577
 #define SPECIES_VOLTRYKE                                1578
 #define SPECIES_PENPIN                                  1579
+#define SPECIES_KUJATTA                                 1580
+#define SPECIES_NEUSAL                                  1581
+#define SPECIES_GLOMITE                                 1582
+#define SPECIES_SNOWSPELLE                              1583
+#define SPECIES_SECT                                    1584
+#define SPECIES_PORYGON15                               1585
+#define SPECIES_MONOLYSK                                1586
+#define SPECIES_RINRING                                 1587
+#define SPECIES_BELLBOYANT                              1588
+#define SPECIES_RACTUS                                  1589
+#define SPECIES_OVERQWIL_HISUI                          1590
 
 
-#define SPECIES_EGG                                     (SPECIES_PENPIN + 1)
+#define SPECIES_EGG                                     (SPECIES_OVERQWIL_HISUI + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

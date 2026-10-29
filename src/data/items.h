@@ -4235,8 +4235,8 @@ const struct Item gItemsInfo[] =
         .name = _("SACHET"),
         .price = (I_PRICE >= GEN_7) ? 2000 * TREASURE_FACTOR : 2100,
         .description = COMPOUND_STRING(
-            "A sachet of strong\n"
-            "perfumes, loved by\n"
+            "A sachet of scrolls\n"
+            "and spells, loved by\n"
             "a certain POKéMON."),
         .pocket = POCKET_ITEMS,
         .type = EVO_HELD_ITEM_TYPE,
@@ -13068,7 +13068,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_Gem,
-        .iconPalette = gItemIconPalette_GrassiumZ,
+        .iconPalette = gItemIconPalette_Emerald,
     },
 
     [ITEM_SAPPHIRE] =
@@ -14203,5 +14203,37 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_OutfitBox,
 	.iconPic = gItemIcon_OutfitBox,
 	.iconPalette = gItemIconPalette_OutfitBox,
+    },
+    [ITEM_BETA_BUILD] =
+    {
+        .name = _("BETA BUILD"),
+        .price = (I_PRICE >= GEN_7) ? 2000 * TREASURE_FACTOR : 2100,
+        .description = COMPOUND_STRING(
+            "An unreleased disc\n"
+            "made by DEVON filled\n"
+            "with incomplete data."),
+        .pocket = POCKET_ITEMS,
+        .type = EVO_HELD_ITEM_TYPE,
+        .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
+        .effect = gItemEffect_EvoItem,
+        .flingPower = 50,
+        .iconPic = gItemIcon_DubiousDisc,
+        .iconPalette = gItemIconPalette_BetaBuild,
+    },
+    [ITEM_SLOWPOKE_TAIL] =
+    {
+        .name = _("SLOWPOKE TAIL"),
+        .price = 30000 * TREASURE_FACTOR,
+        .description = COMPOUND_STRING(
+            "A very tasty tail.\n"
+            "It sells for a high\n"
+            "price."),
+        .pocket = POCKET_ITEMS,
+        .type = EVO_HELD_ITEM_TYPE,
+        .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
+        .effect = gItemEffect_EvoItem,
+        .flingPower = 50,
+        .iconPic = gItemIcon_SlowpokeTail,
+        .iconPalette = gItemIconPalette_SlowpokeTail,
     },
 };
