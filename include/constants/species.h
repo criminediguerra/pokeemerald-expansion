@@ -1703,9 +1703,26 @@
 #define SPECIES_BELLBOYANT                              1588
 #define SPECIES_RACTUS                                  1589
 #define SPECIES_OVERQWIL_HISUI                          1590
+#define SPECIES_ANIMON                                  1591
+#define SPECIES_ANIMON_ELECTRIC                         1592
+#define SPECIES_ANIMON_WATER                            1593
+#define SPECIES_ANIMON_FIRE                             1594
+#define SPECIES_ANIMON_POISON                           1595
+#define SPECIES_ANIMON_FAIRY                            1596
+#define SPECIES_ANIMON_GHOST                            1597
+#define SPECIES_ANIMON_DRAGON                           1598
+#define SPECIES_ANIMON_FLYING                           1599
+#define SPECIES_ANIMON_DARK                             1600
+#define SPECIES_ANIMON_STEEL                            1601
+#define SPECIES_ANIMON_GRASS                            1602
+#define SPECIES_ANIMON_ROCK                             1603
+#define SPECIES_ANIMON_BUG                              1604
+#define SPECIES_ANIMON_FIGHTING                         1605
+#define SPECIES_ANIMON_GROUND                           1606
+#define SPECIES_ANIMON_ICE                              1607
 
 
-#define SPECIES_EGG                                     (SPECIES_OVERQWIL_HISUI + 1)
+#define SPECIES_EGG                                     (SPECIES_ANIMON_ICE + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

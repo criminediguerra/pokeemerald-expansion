@@ -5939,6 +5939,38 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gMonBackPic_Ditto[] = INCBIN_U32("graphics/pokemon/ditto/back.4bpp.lz");
     const u16 gMonShinyPalette_Ditto[] = INCBIN_U16("graphics/pokemon/ditto/shiny.gbapal");
 #else
+    const u32 gMonFrontPic_Animon[] = INCBIN_U32("graphics/pokemon/animon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Animon[] = INCBIN_U16("graphics/pokemon/animon/normal.gbapal");
+    const u32 gMonBackPic_Animon[] = INCBIN_U32("graphics/pokemon/animon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Animon[] = INCBIN_U16("graphics/pokemon/animon/shiny.gbapal");
+    const u8 gMonIcon_Animon[] = INCBIN_U8("graphics/pokemon/animon/icon.4bpp");
+    const u32 gObjectEventPic_Animon[] = INCBIN_COMP("graphics/pokemon/animon/overworld.4bpp");
+
+    const u16 gMonPalette_AnimonElectric[] = INCBIN_U16("graphics/pokemon/animon/normalelectric.gbapal");
+    const u16 gMonShinyPalette_AnimonElectric[] = INCBIN_U16("graphics/pokemon/animon/shinyelectric.gbapal");
+    const u8 gMonIcon_AnimonElectric[] = INCBIN_U8("graphics/pokemon/animon/iconelectric.4bpp");
+
+    const u16 gMonPalette_AnimonWater[] = INCBIN_U16("graphics/pokemon/animon/normalwater.gbapal");
+    const u16 gMonShinyPalette_AnimonWater[] = INCBIN_U16("graphics/pokemon/animon/shinywater.gbapal");
+    const u8 gMonIcon_AnimonWater[] = INCBIN_U8("graphics/pokemon/animon/iconwater.4bpp");
+
+    const u16 gMonPalette_AnimonFire[] = INCBIN_U16("graphics/pokemon/animon/normalfire.gbapal");
+    const u16 gMonShinyPalette_AnimonFire[] = INCBIN_U16("graphics/pokemon/animon/shinyfire.gbapal");
+    const u8 gMonIcon_AnimonFire[] = INCBIN_U8("graphics/pokemon/animon/iconfire.4bpp");
+
+    const u16 gMonPalette_AnimonGrass[] = INCBIN_U16("graphics/pokemon/animon/normalgrass.gbapal");
+    const u16 gMonShinyPalette_AnimonGrass[] = INCBIN_U16("graphics/pokemon/animon/shinygrass.gbapal");
+    const u8 gMonIcon_AnimonGrass[] = INCBIN_U8("graphics/pokemon/animon/icongrass.4bpp");
+
+    const u16 gMonPalette_AnimonRock[] = INCBIN_U16("graphics/pokemon/animon/normalrock.gbapal");
+    const u8 gMonIcon_AnimonRock[] = INCBIN_U8("graphics/pokemon/animon/iconrock.4bpp");
+
+    const u16 gMonPalette_AnimonSteel[] = INCBIN_U16("graphics/pokemon/animon/normalsteel.gbapal");
+    const u8 gMonIcon_AnimonSteel[] = INCBIN_U8("graphics/pokemon/animon/iconsteel.4bpp");
+
+    const u16 gMonPalette_AnimonDark[] = INCBIN_U16("graphics/pokemon/animon/normaldark.gbapal");
+    const u8 gMonIcon_AnimonDark[] = INCBIN_U8("graphics/pokemon/animon/icondark.4bpp");
+
     const u32 gMonFrontPic_Ditto[] = INCBIN_U32("graphics/pokemon/ditto/anim_front_gba.4bpp.lz");
     const u16 gMonPalette_Ditto[] = INCBIN_U16("graphics/pokemon/ditto/normal_gba.gbapal");
     const u32 gMonBackPic_Ditto[] = INCBIN_U32("graphics/pokemon/ditto/back_gba.4bpp.lz");

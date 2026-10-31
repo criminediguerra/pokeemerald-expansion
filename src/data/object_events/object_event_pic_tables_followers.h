@@ -1330,6 +1330,9 @@ static const struct SpriteFrameImage sPicTable_Lapras[] = {
 static const struct SpriteFrameImage sPicTable_Ditto[] = {
     overworld_ascending_frames(gObjectEventPic_Ditto, 4, 4),
 };
+static const struct SpriteFrameImage sPicTable_Animon[] = {
+    overworld_ascending_frames(gObjectEventPic_Animon, 4, 4),
+};
 #endif //P_FAMILY_DITTO
 
 #if P_FAMILY_EEVEE

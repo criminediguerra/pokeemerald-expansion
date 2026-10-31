@@ -284,6 +284,7 @@ static const u16 sHoennToNationalOrder[HOENN_DEX_COUNT - 1] =
     HOENN_TO_NATIONAL(GYARADOS),
     HOENN_TO_NATIONAL(LAPRAS),
     HOENN_TO_NATIONAL(DITTO),
+    HOENN_TO_NATIONAL(ANIMON),
     HOENN_TO_NATIONAL(EEVEE),
     HOENN_TO_NATIONAL(EEVEON),
     HOENN_TO_NATIONAL(VAPOREON),
@@ -5878,7 +5879,7 @@ u8 CanLearnTeachableMove(u16 species, u16 move)
     {
         return FALSE;
     }
-    else if (species == SPECIES_MEW)
+    else if (species == SPECIES_MEW || species == SPECIES_ANIMON || species == SPECIES_ANIMON_ELECTRIC || species == SPECIES_ANIMON_FIRE || species == SPECIES_ANIMON_WATER || species == SPECIES_ANIMON_POISON || species == SPECIES_ANIMON_FAIRY || species == SPECIES_ANIMON_GHOST || species == SPECIES_ANIMON_DRAGON || species == SPECIES_ANIMON_FLYING || species == SPECIES_ANIMON_DARK || species == SPECIES_ANIMON_STEEL || species == SPECIES_ANIMON_GRASS || species == SPECIES_ANIMON_ROCK || species == SPECIES_ANIMON_BUG || species == SPECIES_ANIMON_FIGHTING || species == SPECIES_ANIMON_GROUND || species == SPECIES_ANIMON_ICE)
     {
         switch (move)
         {
