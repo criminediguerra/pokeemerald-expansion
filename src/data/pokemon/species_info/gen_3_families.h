@@ -4341,7 +4341,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_STURDY, ABILITY_MAGNET_PULL, ABILITY_SAND_FORCE },
         .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("NOSEPASS"),
@@ -4418,7 +4418,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_STURDY, ABILITY_MAGNET_PULL, ABILITY_SAND_FORCE },
         .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("PROBOPASS"),
@@ -9838,7 +9838,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggCycles = 25,
         .friendship = 35,
         .growthRate = GROWTH_FAST,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
     #if P_UPDATED_ABILITIES >= GEN_4
         .abilities = { ABILITY_INSOMNIA, ABILITY_FRISK, ABILITY_CURSED_BODY },
     #else
@@ -9918,7 +9918,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggCycles = 25,
         .friendship = 35,
         .growthRate = GROWTH_FAST,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
     #if P_UPDATED_ABILITIES >= GEN_4
         .abilities = { ABILITY_INSOMNIA, ABILITY_FRISK, ABILITY_CURSED_BODY },
     #else
@@ -12348,6 +12348,82 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sRegiceLevelUpLearnset,
         .teachableLearnset = sRegiceTeachableLearnset,
     },
+    [SPECIES_REGITUBE] =
+    {
+        .baseHP        = 80,
+        .baseAttack    = 50,
+        .baseDefense   = 100,
+        .baseSpeed     = 50,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 200,
+        .types = MON_TYPES(TYPE_WATER),
+        .catchRate = 3,
+    #if P_UPDATED_EXP_YIELDS >= GEN_8
+        .expYield = 290,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 261,
+    #else
+        .expYield = 216,
+    #endif
+        .evYield_SpDefense = 3,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 80,
+        .friendship = 35,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_WATER_ABSORB, ABILITY_NONE, ABILITY_CLEAR_BODY },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("REGITUBE"),
+        .cryId = CRY_REUNICLUS,
+        .natDexNum = NATIONAL_DEX_REGITUBE,
+        .categoryName = _("HYDRODUCT"),
+        .height = 18,
+        .weight = 1750,
+        .description = COMPOUND_STRING(
+            "It looks like an enormous pile of\n"
+            "inflatable tubes, but it appears to be\n"
+            "composed by an arcane membrane that\n"
+            "collects water used to fuel its brain."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 301,
+        .trainerOffset = 2,
+        .frontPic = gMonFrontPic_Regitube,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 20),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 18),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
+        .backPic = gMonBackPic_Regitube,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 40) : MON_COORDS_SIZE(64, 48),
+        .backPicYOffset = 11,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
+        .palette = gMonPalette_Regitube,
+        .shinyPalette = gMonShinyPalette_Regitube,
+        .iconSprite = gMonIcon_Regitube,
+        .iconPalIndex = 4,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(1, 10, SHADOW_SIZE_L)
+        FOOTPRINT(Remoraid)
+        OVERWORLD(
+            sPicTable_Regitube,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gMonPalette_Regitube,
+            gMonShinyPalette_Regitube
+        )
+        .isLegendary = TRUE,
+        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sWailordLevelUpLearnset,
+        .teachableLearnset = sWailordTeachableLearnset,
+    },
 #endif //P_FAMILY_REGICE
 
 #if P_FAMILY_REGISTEEL
@@ -12431,6 +12507,78 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #endif //P_FAMILY_REGISTEEL
 
 #if P_FAMILY_LATIAS
+    [SPECIES_LATI] =
+    {
+        .baseHP        = 63,
+        .baseAttack    = 60,
+        .baseDefense   = 55,
+        .baseSpeed     = 71,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 50,
+        .types = MON_TYPES(TYPE_DRAGON),
+        .catchRate = 3,
+        .expYield = 211,
+        .evYield_Speed = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 50,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_DRAGON),
+        .abilities = { ABILITY_LEVITATE, ABILITY_LEVITATE, ABILITY_LEVITATE },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("LATI"),
+        .cryId = CRY_LATIAS,
+        .natDexNum = NATIONAL_DEX_LATI,
+        .categoryName = _("EON"),
+        .height = 10,
+        .weight = 405,
+        .description = COMPOUND_STRING(
+            "They make a small herd of only several\n"
+            "members. They rarely make contact with\n"
+            "people or other POKéMON. They disappear\n"
+            "if they sense enemies."),
+        .pokemonScale = 356,
+        .pokemonOffset = 10,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Lati,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 32) : MON_COORDS_SIZE(48, 48),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 16 : 11,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
+        .enemyMonElevation = 14,
+        .backPic = gMonBackPic_Lati,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 32) : MON_COORDS_SIZE(56, 40),
+        .backPicYOffset = 3,
+        .backAnimId = BACK_ANIM_H_VIBRATE,
+        .palette = gMonPalette_Lati,
+        .shinyPalette = gMonShinyPalette_Lati,
+        .iconSprite = gMonIcon_Lati,
+        .iconPalIndex = 5,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-3, 1, SHADOW_SIZE_S)
+        FOOTPRINT(Latias)
+        OVERWORLD(
+            sPicTable_Lati,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gMonPalette_Lati,
+            gMonShinyPalette_Lati
+        )
+        .levelUpLearnset = sDrampaLevelUpLearnset,
+        .teachableLearnset = sAltariaTeachableLearnset,
+        .eggMoveLearnset = sBagonEggMoveLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_LATIAS, CONDITIONS({IF_GENDER, MON_FEMALE})},
+                                {EVO_LEVEL, 25, SPECIES_LATIOS, CONDITIONS({IF_GENDER, MON_MALE})}),
+    },
     [SPECIES_LATIAS] =
     {
         .baseHP        = 80,
@@ -12453,7 +12601,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggCycles = 120,
         .friendship = 90,
         .growthRate = GROWTH_SLOW,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_DRAGON),
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("LATIAS"),
@@ -12463,10 +12611,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 14,
         .weight = 400,
         .description = COMPOUND_STRING(
-            "They make a small herd of only several\n"
-            "members. They rarely make contact with\n"
-            "people or other POKéMON. They disappear\n"
-            "if they sense enemies."),
+            "LATIAS is highly sensitive to the emotions\n"
+            "of people. If it senses any hostility, this\n"
+            "POKéMON ruffles the feathers all over its\n"
+            "body and cries shrilly to intimidate the foe."),
         .pokemonScale = 304,
         .pokemonOffset = 3,
         .trainerScale = 256,
@@ -12608,7 +12756,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggCycles = 120,
         .friendship = 90,
         .growthRate = GROWTH_SLOW,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_DRAGON),
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("LATIOS"),

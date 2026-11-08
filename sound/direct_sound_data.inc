@@ -5316,7 +5316,6 @@ Cry_Grimmsnarl::
 	.incbin "sound/direct_sound_samples/cries/grimmsnarl.bin"
 .endif @ P_FAMILY_IMPIDIMP
 
-.if P_FAMILY_MILCERY == TRUE
 	.align 2
 Cry_Milcery::
 	.incbin "sound/direct_sound_samples/cries/milcery.bin"
@@ -5324,7 +5323,6 @@ Cry_Milcery::
 	.align 2
 Cry_Alcremie::
 	.incbin "sound/direct_sound_samples/cries/alcremie.bin"
-.endif @ P_FAMILY_MILCERY
 
 .if P_FAMILY_FALINKS == TRUE
 	.align 2

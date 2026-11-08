@@ -10884,31 +10884,6 @@ static const u16 sQwilfishTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-#if P_HISUIAN_FORMS
-static const u16 sQwilfishHisuiTeachableLearnset[] = {
-    MOVE_BLIZZARD,
-    MOVE_DOUBLE_EDGE,
-    MOVE_ENDURE,
-    MOVE_FACADE,
-    MOVE_ICE_BEAM,
-    MOVE_ICY_WIND,
-    MOVE_PROTECT,
-    MOVE_RAIN_DANCE,
-    MOVE_REST,
-    MOVE_SHADOW_BALL,
-    MOVE_SLEEP_TALK,
-    MOVE_SLUDGE_BOMB,
-    MOVE_SURF,
-    MOVE_WHIRLPOOL,
-    MOVE_SWIFT,
-    MOVE_SWORDS_DANCE,
-    MOVE_TAUNT,
-    MOVE_TOXIC,
-    MOVE_WATERFALL,
-    MOVE_WATER_PULSE,
-    MOVE_UNAVAILABLE,
-};
-
 static const u16 sOverqwilTeachableLearnset[] = {
     MOVE_BLIZZARD,
     MOVE_DOUBLE_EDGE,
@@ -10935,6 +10910,31 @@ static const u16 sOverqwilTeachableLearnset[] = {
     MOVE_WATERFALL,
     MOVE_WATER_PULSE,
     MOVE_WHIRLPOOL,
+    MOVE_UNAVAILABLE,
+};
+
+#if P_HISUIAN_FORMS
+static const u16 sQwilfishHisuiTeachableLearnset[] = {
+    MOVE_BLIZZARD,
+    MOVE_DOUBLE_EDGE,
+    MOVE_ENDURE,
+    MOVE_FACADE,
+    MOVE_ICE_BEAM,
+    MOVE_ICY_WIND,
+    MOVE_PROTECT,
+    MOVE_RAIN_DANCE,
+    MOVE_REST,
+    MOVE_SHADOW_BALL,
+    MOVE_SLEEP_TALK,
+    MOVE_SLUDGE_BOMB,
+    MOVE_SURF,
+    MOVE_WHIRLPOOL,
+    MOVE_SWIFT,
+    MOVE_SWORDS_DANCE,
+    MOVE_TAUNT,
+    MOVE_TOXIC,
+    MOVE_WATERFALL,
+    MOVE_WATER_PULSE,
     MOVE_UNAVAILABLE,
 };
 static const u16 sOverqwilHisuiTeachableLearnset[] = {

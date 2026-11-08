@@ -3895,7 +3895,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Tyrunt,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
-        .frontPicYOffset = 11,
+        .frontPicYOffset = 8,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(1, 10),
             ANIMCMD_FRAME(0, 20),
@@ -3970,11 +3970,11 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
             ANIMCMD_FRAME(1, 40),
             ANIMCMD_FRAME(0, 5),
         ),
-        .frontAnimId = ANIM_V_SHAKE,
+        .frontAnimId = ANIM_BACK_AND_LUNGE,
         .backPic = gMonBackPic_Tyrantrum,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 5,
-        .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
+        .backAnimId = BACK_ANIM_H_SHAKE,
         .palette = gMonPalette_Tyrantrum,
         .shinyPalette = gMonShinyPalette_Tyrantrum,
         .iconSprite = gMonIcon_Tyrantrum,
@@ -3984,7 +3984,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         FOOTPRINT(Tyrantrum)
         OVERWORLD(
             sPicTable_Tyrantrum,
-            SIZE_32x32,
+            SIZE_64x64,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
@@ -4033,7 +4033,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Amaura,
         .frontPicSize = MON_COORDS_SIZE(32, 56),
-        .frontPicYOffset = 5,
+        .frontPicYOffset = 0,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(1, 5),
             ANIMCMD_FRAME(0, 4),
@@ -4128,7 +4128,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         FOOTPRINT(Aurorus)
         OVERWORLD(
             sPicTable_Aurorus,
-            SIZE_32x32,
+            SIZE_64x64,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
@@ -4807,13 +4807,13 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS, EGG_GROUP_AMORPHOUS),
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_NATURAL_CURE, ABILITY_FRISK, ABILITY_HARVEST },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Phantump"),
+        .speciesName = _("PHANTUMP"),
         .cryId = CRY_PHANTUMP,
         .natDexNum = NATIONAL_DEX_PHANTUMP,
-        .categoryName = _("Stump"),
+        .categoryName = _("STUMP"),
         .height = 4,
         .weight = 70,
         .description = COMPOUND_STRING(
@@ -4878,20 +4878,20 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS, EGG_GROUP_AMORPHOUS),
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_NATURAL_CURE, ABILITY_FRISK, ABILITY_HARVEST },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Trevenant"),
+        .speciesName = _("TREVENANT"),
         .cryId = CRY_TREVENANT,
         .natDexNum = NATIONAL_DEX_TREVENANT,
-        .categoryName = _("Elder Tree"),
+        .categoryName = _("ELDER TREE"),
         .height = 15,
         .weight = 710,
         .description = COMPOUND_STRING(
             "Through its roots, it exerts control over\n"
             "other trees. A deadly curse falls upon\n"
             "anyone cutting down trees in forests\n"
-            "where Trevenant dwell."),
+            "where TREVENANT dwell."),
         .pokemonScale = 268,
         .pokemonOffset = 2,
         .trainerScale = 271,

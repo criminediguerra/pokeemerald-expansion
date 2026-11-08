@@ -2064,10 +2064,8 @@ gCryTable::
 	cry Cry_Morgrem
 	cry Cry_Grimmsnarl
 .endif @ P_FAMILY_IMPIDIMP
-.if P_FAMILY_MILCERY == TRUE
 	cry Cry_Milcery
 	cry Cry_Alcremie
-.endif @ P_FAMILY_MILCERY
 .if P_FAMILY_FALINKS == TRUE
 	cry Cry_Falinks
 .endif @ P_FAMILY_FALINKS
@@ -4492,10 +4490,8 @@ gCryTable_Reverse::
 	cry_reverse Cry_Morgrem
 	cry_reverse Cry_Grimmsnarl
 .endif @ P_FAMILY_IMPIDIMP
-.if P_FAMILY_MILCERY == TRUE
 	cry_reverse Cry_Milcery
 	cry_reverse Cry_Alcremie
-.endif @ P_FAMILY_MILCERY
 .if P_FAMILY_FALINKS == TRUE
 	cry_reverse Cry_Falinks
 .endif @ P_FAMILY_FALINKS

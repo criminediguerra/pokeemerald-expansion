@@ -4496,7 +4496,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .tmIlliterate = TRUE,
         .levelUpLearnset = sWynautLevelUpLearnset,
         .teachableLearnset = sWynautTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_WOBBUFFET}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_WOBBUFFET},
+                                {EVO_NONE, 0, SPECIES_GASTLY}),
     },
 #endif //P_GEN_3_CROSS_EVOS
 
@@ -7327,6 +7328,76 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sOctilleryLevelUpLearnset,
         .teachableLearnset = sOctilleryTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_METAL_COAT, SPECIES_OCTANK}),
+    },
+    [SPECIES_OCTANK] =
+    {
+        .baseHP        = 80,
+        .baseAttack    = 105,
+        .baseDefense   = 85,
+        .baseSpeed     = 15,
+        .baseSpAttack  = 105,
+        .baseSpDefense = 95,
+        .types = MON_TYPES(TYPE_WATER, TYPE_STEEL),
+        .catchRate = 75,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 168 : 164,
+        .evYield_Attack = 1,
+        .evYield_SpAttack = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_2),
+        .abilities = { ABILITY_SUCTION_CUPS, ABILITY_SNIPER, ABILITY_MOODY },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("OCTANK"),
+        .cryId = CRY_GOREBYSS,
+        .natDexNum = NATIONAL_DEX_OCTANK,
+        .categoryName = _("CANNON"),
+        .height = 9,
+        .weight = 720,
+        .description = COMPOUND_STRING(
+            "Widely used in the navy, its new armor\n"
+            "makes it much more resistant, but also\n"
+            "much slower. Its iron-rich ink is also\n"
+            "used for medical purposes."),
+        .pokemonScale = 296,
+        .pokemonOffset = 3,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Octank,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 48) : MON_COORDS_SIZE(56, 48),
+        .frontPicYOffset = 3,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = ANIM_V_STRETCH,
+        .frontAnimDelay = 20,
+        .backPic = gMonBackPic_Octank,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 48) : MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 6,
+        .backAnimId = BACK_ANIM_SHRINK_GROW,
+        .palette = gMonPalette_Octank,
+        .shinyPalette = gMonShinyPalette_Octank,
+        .iconSprite = gMonIcon_Octank,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(1, 4, SHADOW_SIZE_M)
+        FOOTPRINT(Octillery)
+        OVERWORLD(
+            sPicTable_Octank,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_SLITHER,
+            sAnimTable_Following,
+            gMonPalette_Octank,
+            gMonShinyPalette_Octank
+        )
+        .levelUpLearnset = sOctankLevelUpLearnset,
+        .teachableLearnset = sAggronTeachableLearnset,
     },
 #endif //P_FAMILY_REMORAID
 
@@ -7562,7 +7633,6 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .catchRate = 25,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 163 : 168,
         .evYield_Defense = 2,
-        .itemRare = ITEM_METAL_COAT,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 25,
         .friendship = STANDARD_FRIENDSHIP,
@@ -8506,7 +8576,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 100,
         .baseSpAttack  = 40,
         .baseSpDefense = 70,
-        .types = MON_TYPES(TYPE_NORMAL),
+        .types = MON_TYPES(TYPE_NORMAL, TYPE_FAIRY),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 172 : 200,
         .evYield_Defense = 2,
@@ -8568,7 +8638,6 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sMiltankLevelUpLearnset,
         .teachableLearnset = sMiltankTeachableLearnset,
-        .eggMoveLearnset = sMiltankEggMoveLearnset,
     },
 #endif //P_FAMILY_MILTANK
 

@@ -1720,9 +1720,14 @@
 #define SPECIES_ANIMON_FIGHTING                         1605
 #define SPECIES_ANIMON_GROUND                           1606
 #define SPECIES_ANIMON_ICE                              1607
+#define SPECIES_OCTANK                                  1608
+#define SPECIES_REGITUBE                                1609
+#define SPECIES_MOOH                                    1610
+#define SPECIES_GHUAL                                   1611
+#define SPECIES_LATI                                    1612
 
 
-#define SPECIES_EGG                                     (SPECIES_ANIMON_ICE + 1)
+#define SPECIES_EGG                                     (SPECIES_LATI + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

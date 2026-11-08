@@ -3325,13 +3325,13 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .eggCycles = 30,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FLUCTUATING,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_AFTERMATH, ABILITY_UNBURDEN, ABILITY_FLARE_BOOST },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Drifloon"),
+        .speciesName = _("DRIFLOON"),
         .cryId = CRY_DRIFLOON,
         .natDexNum = NATIONAL_DEX_DRIFLOON,
-        .categoryName = _("Balloon"),
+        .categoryName = _("BALLOON"),
         .height = 4,
         .weight = 12,
         .description = COMPOUND_STRING(
@@ -3396,18 +3396,18 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .eggCycles = 30,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FLUCTUATING,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_AFTERMATH, ABILITY_UNBURDEN, ABILITY_FLARE_BOOST },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Drifblim"),
+        .speciesName = _("DRIFBLIM"),
         .cryId = CRY_DRIFBLIM,
         .natDexNum = NATIONAL_DEX_DRIFBLIM,
-        .categoryName = _("Blimp"),
+        .categoryName = _("BLIMP"),
         .height = 12,
         .weight = 150,
         .description = COMPOUND_STRING(
             "Even while under careful observation,\n"
-            "large flocks of Drifblim flying at dusk\n"
+            "large flocks of DRIFBLIM flying at dusk\n"
             "will inexplicably disappear from view.\n"
             "No one knows where they go."),
         .pokemonScale = 282,
@@ -3961,7 +3961,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_LEVITATE, ABILITY_HEATPROOF, ABILITY_HEAVY_METAL },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Bronzor"),
@@ -4039,7 +4039,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_LEVITATE, ABILITY_HEATPROOF, ABILITY_HEAVY_METAL },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Bronzong"),
@@ -4196,20 +4196,20 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .eggCycles = 30,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_INFILTRATOR },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Spiritomb"),
+        .speciesName = _("SPIRITOMB"),
         .cryId = CRY_SPIRITOMB,
         .natDexNum = NATIONAL_DEX_SPIRITOMB,
-        .categoryName = _("Forbidden"),
+        .categoryName = _("FORBIDDEN"),
         .height = 10,
         .weight = 1080,
         .description = COMPOUND_STRING(
-            "A Pokémon that was formed by 108 spirits.\n"
+            "A POKéMON that was formed by 108 spirits.\n"
             "Its constant mischief and misdeeds\n"
             "resulted in it being bound to an\n"
-            "Odd Keystone by a mysterious spell."),
+            "ODD KEYSTONE by a mysterious spell."),
         .pokemonScale = 305,
         .pokemonOffset = 7,
         .trainerScale = 257,
@@ -6874,24 +6874,24 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_SLOW_START, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Regigigas"),
+        .speciesName = _("REGIGIGAS"),
         .cryId = CRY_REGIGIGAS,
         .natDexNum = NATIONAL_DEX_REGIGIGAS,
-        .categoryName = _("Colossal"),
+        .categoryName = _("COLOSSAL"),
         .height = 37,
         .weight = 4200,
         .description = COMPOUND_STRING(
-            "There is an enduring legend that\n"
-            "states this Pokémon shaped Regirock,\n"
-            "Regice, and Registeel out of clay, ice,\n"
-            "and magma."),
+            "There is an enduring legend that states\n"
+            "this POKéMON shaped many golem-like\n"
+            "elemental minions out of clay, ice,\n"
+            "magma and other elements."),
         .pokemonScale = 256,
         .pokemonOffset = 2,
         .trainerScale = 610,
         .trainerOffset = 17,
         .frontPic = gMonFrontPic_Regigigas,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 4,
+        .frontPicYOffset = 0,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(1, 40),
             ANIMCMD_FRAME(0, 5),
