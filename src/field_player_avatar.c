@@ -256,13 +256,13 @@ static const u8 sAcroBikeTrickCollisionTypes[NUM_ACRO_BIKE_COLLISIONS] = {
 
 static void (*const sPlayerAvatarTransitionFuncs[])(struct ObjectEvent *) =
 {
-    [PLAYER_AVATAR_STATE_NORMAL]       = PlayerAvatarTransition_Normal,
-    [PLAYER_AVATAR_STATE_BIKE]         = PlayerAvatarTransition_Bike,
-    [PLAYER_AVATAR_STATE_SURFING]      = PlayerAvatarTransition_Surfing,
-    [PLAYER_AVATAR_STATE_UNDERWATER]   = PlayerAvatarTransition_Underwater,
-    [PLAYER_AVATAR_STATE_CONTROLLABLE] = PlayerAvatarTransition_ReturnToField,
-    [PLAYER_AVATAR_STATE_FORCED]       = PlayerAvatarTransition_Dummy,
-    [PLAYER_AVATAR_STATE_DASH]         = PlayerAvatarTransition_Dummy,
+    [PLAYER_AVATAR_TRANSITION_STATE_ON_FOOT]      = PlayerAvatarTransition_Normal,
+    [PLAYER_AVATAR_TRANSITION_STATE_BIKE]         = PlayerAvatarTransition_Bike,
+    [PLAYER_AVATAR_TRANSITION_STATE_SURFING]      = PlayerAvatarTransition_Surfing,
+    [PLAYER_AVATAR_TRANSITION_STATE_UNDERWATER]   = PlayerAvatarTransition_Underwater,
+    [PLAYER_AVATAR_TRANSITION_STATE_CONTROLLABLE] = PlayerAvatarTransition_ReturnToField,
+    [PLAYER_AVATAR_TRANSITION_STATE_FORCED]       = PlayerAvatarTransition_Dummy,
+    [PLAYER_AVATAR_TRANSITION_STATE_DASH]         = PlayerAvatarTransition_Dummy,
 };
 
 static bool8 (*const sArrowWarpMetatileBehaviorChecks[])(u8) =
@@ -276,7 +276,8 @@ static bool8 (*const sArrowWarpMetatileBehaviorChecks[])(u8) =
 static const u8 sRivalAvatarGfxIds[][GENDER_COUNT] =
 {
     [PLAYER_AVATAR_STATE_NORMAL]     = {OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL,     OBJ_EVENT_GFX_RIVAL_MAY_NORMAL},
-    [PLAYER_AVATAR_STATE_BIKE]       = {OBJ_EVENT_GFX_RIVAL_BRENDAN_ACRO_BIKE,  OBJ_EVENT_GFX_RIVAL_MAY_ACRO_BIKE},
+    [PLAYER_AVATAR_STATE_MACH_BIKE]  = {OBJ_EVENT_GFX_RIVAL_BRENDAN_MACH_BIKE, OBJ_EVENT_GFX_RIVAL_MAY_MACH_BIKE},
+    [PLAYER_AVATAR_STATE_ACRO_BIKE]  = {OBJ_EVENT_GFX_RIVAL_BRENDAN_ACRO_BIKE, OBJ_EVENT_GFX_RIVAL_MAY_ACRO_BIKE},
     [PLAYER_AVATAR_STATE_SURFING]    = {OBJ_EVENT_GFX_RIVAL_BRENDAN_SURFING,    OBJ_EVENT_GFX_RIVAL_MAY_SURFING},
     [PLAYER_AVATAR_STATE_UNDERWATER] = {OBJ_EVENT_GFX_BRENDAN_UNDERWATER,       OBJ_EVENT_GFX_MAY_UNDERWATER},
 };
@@ -301,10 +302,11 @@ static const u16 sRSAvatarGfxIds[GENDER_COUNT] =
     [FEMALE] = OBJ_EVENT_GFX_LINK_RS_MAY
 };
 
-static const u8 sPlayerAvatarGfxToStateFlag[4] =
+static const u8 sPlayerAvatarGfxToStateFlag[PLAYER_AVATAR_STATE_COUNT] =
 {
     [PLAYER_AVATAR_STATE_NORMAL]     = PLAYER_AVATAR_FLAG_ON_FOOT,
-    [PLAYER_AVATAR_STATE_BIKE]       = PLAYER_AVATAR_FLAG_BIKE,
+    [PLAYER_AVATAR_STATE_MACH_BIKE]  = PLAYER_AVATAR_FLAG_BIKE,
+    [PLAYER_AVATAR_STATE_ACRO_BIKE]  = PLAYER_AVATAR_FLAG_BIKE,
     [PLAYER_AVATAR_STATE_SURFING]    = PLAYER_AVATAR_FLAG_SURFING,
     [PLAYER_AVATAR_STATE_UNDERWATER] = PLAYER_AVATAR_FLAG_UNDERWATER,
 };
@@ -1040,9 +1042,16 @@ static void PlayerAvatarTransition_Normal(struct ObjectEvent *objEvent)
     SetPlayerAvatarTransitionState(objEvent, PLAYER_AVATAR_STATE_NORMAL);
 }
 
+static u8 GetPlayerAvatarBikeGraphicsState(void)
+{
+    if (gSaveBlock2Ptr->playerBike == ACRO_BIKE)
+        return PLAYER_AVATAR_STATE_ACRO_BIKE;
+    return PLAYER_AVATAR_STATE_MACH_BIKE;
+}
+
 static void PlayerAvatarTransition_Bike(struct ObjectEvent *objEvent)
 {
-    SetPlayerAvatarTransitionState(objEvent, PLAYER_AVATAR_STATE_BIKE);
+    SetPlayerAvatarTransitionState(objEvent, GetPlayerAvatarBikeGraphicsState());
     BikeClearState(0, 0);
     Bike_HandleBumpySlopeJump();
 }
@@ -1557,6 +1566,9 @@ u16 GetPlayerAvatarGraphicsIdByCurrentState(void)
     u8 i;
     u8 flags = gPlayerAvatar.flags;
 
+    if (flags & PLAYER_AVATAR_FLAG_BIKE)
+        return GetPlayerAvatarGraphicsIdByStateId(GetPlayerAvatarBikeGraphicsState());
+
     for (i = 0; i < ARRAY_COUNT(sPlayerAvatarGfxToStateFlag); i++)
     {
         if (sPlayerAvatarGfxToStateFlag[i] & flags)
@@ -1626,7 +1638,7 @@ void SetPlayerAvatarFieldMove(void)
 
 void PlayerUseAcroBikeOnBumpySlope(u8 direction)
 {
-    ObjectEventSetGraphicsId(&gObjectEvents[gPlayerAvatar.objectEventId], GetPlayerAvatarGraphicsIdByStateId(PLAYER_AVATAR_STATE_BIKE));
+    ObjectEventSetGraphicsId(&gObjectEvents[gPlayerAvatar.objectEventId], GetPlayerAvatarGraphicsIdByStateId(GetPlayerAvatarBikeGraphicsState()));
     StartSpriteAnim(&gSprites[gPlayerAvatar.spriteId], GetAcroWheelieDirectionAnimNum(direction));
     SeekSpriteAnim(&gSprites[gPlayerAvatar.spriteId], 1);
 }
