@@ -6701,6 +6701,158 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sMagcargoLevelUpLearnset,
         .teachableLearnset = sMagcargoTeachableLearnset,
     },
+    [SPECIES_SLUGMA_ALOLA] =
+    {
+        .baseHP        = 40,
+        .baseAttack    = 40,
+        .baseDefense   = 40,
+        .baseSpeed     = 20,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 40,
+        .types = MON_TYPES(TYPE_WATER),
+        .catchRate = 190,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 50 : 78,
+        .evYield_SpAttack = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
+        .abilities = { ABILITY_STICKY_HOLD, ABILITY_STORM_DRAIN, ABILITY_SAND_FORCE },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("SLUGMA"),
+        .cryId = CRY_SLUGMA,
+        .natDexNum = NATIONAL_DEX_SLUGMA,
+        .categoryName = _("LAVA"),
+        .height = 7,
+        .weight = 350,
+        .description = COMPOUND_STRING(
+            "It is a species of POKéMON that lives in\n"
+            "volcanic areas. If its body cools, its skin\n"
+            "hardens and immobilizes it. To avoid that,\n"
+            "it sleeps near magma."),
+        .pokemonScale = 329,
+        .pokemonOffset = 15,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_SlugmaAlola,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(32, 40) : MON_COORDS_SIZE(32, 48),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 13 : 12,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = ANIM_V_STRETCH,
+        .backPic = gMonBackPic_SlugmaAlola,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 48) : MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 8 : 6,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
+        .palette = gMonPalette_SlugmaAlola,
+        .shinyPalette = gMonShinyPalette_SlugmaAlola,
+        .iconSprite = gMonIcon_SlugmaAlola,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
+        SHADOW(0, 0, SHADOW_SIZE_S)
+        FOOTPRINT(Slugma)
+        OVERWORLD(
+            sPicTable_SlugmaAlola,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_SLITHER,
+            sAnimTable_Following,
+            gMonPalette_SlugmaAlola,
+            gMonShinyPalette_SlugmaAlola
+        )
+        .isAlolanForm = TRUE,
+        .levelUpLearnset = sShellosLevelUpLearnset,
+        .teachableLearnset = sShellosTeachableLearnset,
+        .eggMoveLearnset = sShellosEggMoveLearnset,
+        .formSpeciesIdTable = sSlugmaFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_MAGCARGO_ALOLA}),
+    },
+
+    [SPECIES_MAGCARGO_ALOLA] =
+    {
+        .baseHP        = P_UPDATED_STATS >= GEN_7 ? 60 : 50,
+        .baseAttack    = 50,
+        .baseDefense   = 120,
+        .baseSpeed     = 30,
+        .baseSpAttack  = P_UPDATED_STATS >= GEN_7 ? 90 : 80,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_WATER, TYPE_GROUND),
+        .catchRate = 75,
+    #if P_UPDATED_EXP_YIELDS >= GEN_7
+        .expYield = 151,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 144,
+    #else
+        .expYield = 154,
+    #endif
+        .evYield_Defense = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
+        .abilities = { ABILITY_STICKY_HOLD, ABILITY_STORM_DRAIN, ABILITY_SAND_FORCE },
+        .bodyColor = BODY_COLOR_RED,
+        .noFlip = TRUE,
+        .speciesName = _("MAGCARGO"),
+        .cryId = CRY_MAGCARGO,
+        .natDexNum = NATIONAL_DEX_MAGCARGO,
+        .categoryName = _("LAVA"),
+        .height = 8,
+        .weight = 550,
+        .description = COMPOUND_STRING(
+            "The shell on its back is made of hardened\n"
+            "magma. Tens of thousands of years spent\n"
+            "living in volcanic craters have turned\n"
+            "MAGCARGO's bodies into magma."),
+        .pokemonScale = 332,
+        .pokemonOffset = 15,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_MagcargoAlola,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(40, 56) : MON_COORDS_SIZE(56, 64),
+        .frontPicYOffset = 4,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = ANIM_H_SLIDE_SLOW,
+        .backPic = gMonBackPic_MagcargoAlola,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 48) : MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
+        .palette = gMonPalette_SlugmaAlola,
+        .shinyPalette = gMonShinyPalette_SlugmaAlola,
+        .iconSprite = gMonIcon_MagcargoAlola,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(0, 5, SHADOW_SIZE_M)
+        FOOTPRINT(Magcargo)
+        OVERWORLD(
+            sPicTable_MagcargoAlola,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_SLITHER,
+            sAnimTable_Following,
+            gMonPalette_SlugmaAlola,
+            gMonShinyPalette_SlugmaAlola
+        )
+        .isAlolanForm = TRUE,
+        .levelUpLearnset = sGastrodonLevelUpLearnset,
+        .teachableLearnset = sGastrodonTeachableLearnset,
+        .formSpeciesIdTable = sMagcargoFormSpeciesIdTable,
+    },
 #endif //P_FAMILY_SLUGMA
 
 #if P_FAMILY_SWINUB

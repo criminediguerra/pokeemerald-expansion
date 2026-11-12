@@ -5489,6 +5489,159 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sClefableLevelUpLearnset,
         .teachableLearnset = sClefableTeachableLearnset,
     },
+
+    [SPECIES_CLEFFA_GALAR] =
+    {
+        .baseHP        = 50,
+        .baseAttack    = 25,
+        .baseDefense   = 28,
+        .baseSpeed     = 15,
+        .baseSpAttack  = 45,
+        .baseSpDefense = 55,
+        .types = MON_TYPES(TYPE_FAIRY, TYPE_PSYCHIC),
+        .catchRate = 150,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 44 : 37,
+        .evYield_SpDefense = 1,
+        .itemRare = ITEM_MOON_STONE,
+        .genderRatio = PERCENT_FEMALE(75),
+        .eggCycles = 10,
+        .friendship = 140,
+        .growthRate = GROWTH_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+    #if P_UPDATED_ABILITIES >= GEN_4
+        .abilities = { ABILITY_CUTE_CHARM, ABILITY_MAGIC_GUARD, ABILITY_FRIEND_GUARD },
+    #else
+        .abilities = { ABILITY_CUTE_CHARM, ABILITY_NONE, ABILITY_FRIEND_GUARD },
+    #endif
+        .bodyColor = BODY_COLOR_PINK,
+        .noFlip = TRUE,
+        .speciesName = _("CLEFFA"),
+        .cryId = CRY_CLEFFA,
+        .natDexNum = NATIONAL_DEX_CLEFFA,
+        .categoryName = _("STAR SHAPE"),
+        .height = 3,
+        .weight = 30,
+        .description = COMPOUND_STRING(
+            "On nights with many shooting stars,\n"
+            "CLEFFA can be seen dancing in a ring.\n"
+            "They dance until daybreak, when they\n"
+            "quench their thirst with the morning dew."),
+        .pokemonScale = 462,
+        .pokemonOffset = 23,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_CleffaGalar,
+        .frontPicSize = MON_COORDS_SIZE(32, 32),
+        .frontPicYOffset = 12,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = ANIM_V_JUMPS_SMALL,
+        .backPic = gMonBackPic_CleffaGalar,
+        .backPicSize = MON_COORDS_SIZE(48, 40),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 15 : 13,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
+        .palette = gMonPalette_Clefairy,
+        .shinyPalette = gMonShinyPalette_Clefairy,
+        .iconSprite = gMonIcon_CleffaGalar,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
+        SHADOW(0, -4, SHADOW_SIZE_S)
+        FOOTPRINT(Cleffa)
+        OVERWORLD(
+            sPicTable_CleffaGalar,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Cleffa,
+            gShinyOverworldPalette_Cleffa
+        )
+        .isGalarianForm = TRUE,
+        .levelUpLearnset = sMimeJrLevelUpLearnset,
+        .teachableLearnset = sMimeJrTeachableLearnset,
+        .eggMoveLearnset = sMimeJrEggMoveLearnset,
+        .formSpeciesIdTable = sCleffaFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_CLEFAIRY_GALAR}),
+    },
+
+    [SPECIES_CLEFAIRY_GALAR] =
+    {
+        .baseHP        = 70,
+        .baseAttack    = 45,
+        .baseDefense   = 48,
+        .baseSpeed     = 35,
+        .baseSpAttack  = 60,
+        .baseSpDefense = P_UPDATED_STATS >= GEN_2 ? 65 : 60,
+        .types = MON_TYPES(TYPE_FAIRY, TYPE_PSYCHIC),
+        .catchRate = 150,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 113 : 68,
+        .evYield_HP = 2,
+        .itemRare = ITEM_MOON_STONE,
+        .genderRatio = PERCENT_FEMALE(75),
+        .eggCycles = 10,
+        .friendship = 140,
+        .growthRate = GROWTH_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY),
+    #if P_UPDATED_ABILITIES >= GEN_4
+        .abilities = { ABILITY_CUTE_CHARM, ABILITY_MAGIC_GUARD, ABILITY_FRIEND_GUARD },
+    #else
+        .abilities = { ABILITY_CUTE_CHARM, ABILITY_NONE, ABILITY_FRIEND_GUARD },
+    #endif
+        .bodyColor = BODY_COLOR_PINK,
+        .noFlip = TRUE,
+        .speciesName = _("CLEFAIRY"),
+        .cryId = CRY_CLEFAIRY,
+        .natDexNum = NATIONAL_DEX_CLEFAIRY,
+        .categoryName = _("FAIRY"),
+        .height = 6,
+        .weight = 75,
+        .description = COMPOUND_STRING(
+            "On every night of a full moon, they come\n"
+            "out to play. When dawn arrives, the tired\n"
+            "CLEFAIRY go to sleep nestled up against\n"
+            "each other in deep and quiet mountains."),
+        .pokemonScale = 441,
+        .pokemonOffset = 20,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_ClefairyGalar,
+        .frontPicSize = MON_COORDS_SIZE(40, 40),
+        .frontPicYOffset = 3,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_ClefairyGalar,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 40) : MON_COORDS_SIZE(56, 40),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 13 : 14,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
+        .palette = gMonPalette_ClefairyGalar,
+        .shinyPalette = gMonShinyPalette_ClefairyGalar,
+        .iconSprite = gMonIcon_ClefairyGalar,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
+        SHADOW(1, 1, SHADOW_SIZE_S)
+        FOOTPRINT(Clefairy)
+        OVERWORLD(
+            sPicTable_ClefairyGalar,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gMonPalette_ClefairyGalar,
+            gMonShinyPalette_ClefairyGalar
+        )
+        .isGalarianForm = TRUE,
+        .levelUpLearnset = sMrMimeLevelUpLearnset,
+        .teachableLearnset = sMrMimeTeachableLearnset,
+        .formSpeciesIdTable = sClefairyFormSpeciesIdTable,
+    },
 #endif //P_FAMILY_CLEFAIRY
 
 #if P_FAMILY_VULPIX
@@ -9910,7 +10063,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sWeepinbellLevelUpLearnset,
         .teachableLearnset = sWeepinbellTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_VICTREEBEL}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_VICTREEBEL},
+                                {EVO_ITEM, ITEM_BERSERK_GENE, SPECIES_WYRMSPROUT}),
     },
 
 #if P_UPDATED_STATS >= GEN_6
@@ -9920,6 +10074,72 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #else
     #define VICTREEBEL_SP_DEF 100
 #endif
+
+    [SPECIES_WYRMSPROUT] =
+    {
+        .baseHP        = 68,
+        .baseAttack    = 64,
+        .baseDefense   = 60,
+        .baseSpeed     = 117,
+        .baseSpAttack  = 111,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_DRAGON),
+        .catchRate = 45,
+        .expYield = 168,
+        .evYield_Speed = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS, EGG_GROUP_DRAGON),
+        .abilities = { ABILITY_CORROSION, ABILITY_NONE, ABILITY_OBLIVIOUS },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("WYRMSPROUT"),
+        .cryId = CRY_MAGCARGO,
+        .natDexNum = NATIONAL_DEX_WYRMSPROUT,
+        .categoryName = _("SNAPDRAGON"),
+        .height = 21,
+        .weight = 222,
+        .description = COMPOUND_STRING(
+            "Behind its vacant gaze hides a very\n"
+            "irritable POKéMON; He's responsible for\n"
+            "many of the forest fires that have\n"
+            "occurred in recent years."),
+        .pokemonScale = 256,
+        .pokemonOffset = 4,
+        .trainerScale = 423,
+        .trainerOffset = 11,
+        .frontPic = gMonFrontPic_Wyrmsprout,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 1,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 40),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = ANIM_H_SHAKE,
+        .backPic = gMonBackPic_Wyrmsprout,
+        .backPicSize = MON_COORDS_SIZE(48, 64),
+        .backPicYOffset = 2,
+        .backAnimId = BACK_ANIM_H_STRETCH,
+        .palette = gMonPalette_Wyrmsprout,
+        .shinyPalette = gMonShinyPalette_Wyrmsprout,
+        .iconSprite = gMonIcon_Wyrmsprout,
+        .iconPalIndex = 1,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-4, 9, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Excadrill)
+        OVERWORLD(
+            sPicTable_Wyrmsprout,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gMonPalette_Wyrmsprout,
+            gMonShinyPalette_Wyrmsprout
+        )
+        .levelUpLearnset = sWyrmsproutLevelUpLearnset,
+        .teachableLearnset = sAppletunTeachableLearnset,
+    },
 
     [SPECIES_VICTREEBEL] =
     {

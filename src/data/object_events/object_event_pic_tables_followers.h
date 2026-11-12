@@ -369,6 +369,12 @@ static const struct SpriteFrameImage sPicTable_Clefairy[] = {
 static const struct SpriteFrameImage sPicTable_Clefable[] = {
     overworld_ascending_frames(gObjectEventPic_Clefable, 4, 4),
 };
+static const struct SpriteFrameImage sPicTable_CleffaGalar[] = {
+    overworld_ascending_frames(gObjectEventPic_CleffaGalar, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_ClefairyGalar[] = {
+    overworld_ascending_frames(gObjectEventPic_ClefairyGalar, 4, 4),
+};
 #endif //P_FAMILY_CLEFAIRY
 
 #if P_FAMILY_VULPIX
@@ -663,6 +669,9 @@ static const struct SpriteFrameImage sPicTable_Weepinbell[] = {
 };
 static const struct SpriteFrameImage sPicTable_Victreebel[] = {
     overworld_ascending_frames(gObjectEventPic_Victreebel, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Wyrmsprout[] = {
+    overworld_ascending_frames(gObjectEventPic_Wyrmsprout, 4, 4),
 };
 #endif //P_FAMILY_BELLSPROUT
 
@@ -2129,6 +2138,13 @@ static const struct SpriteFrameImage sPicTable_Slugma[] = {
 };
 static const struct SpriteFrameImage sPicTable_Magcargo[] = {
     overworld_ascending_frames(gObjectEventPic_Magcargo, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_SlugmaAlola[] = {
+    overworld_ascending_frames(gObjectEventPic_SlugmaAlola, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_MagcargoAlola[] = {
+    overworld_ascending_frames(gObjectEventPic_MagcargoAlola, 4, 4),
 };
 #endif //P_FAMILY_SLUGMA
 

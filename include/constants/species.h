@@ -1725,9 +1725,14 @@
 #define SPECIES_MOOH                                    1610
 #define SPECIES_GHUAL                                   1611
 #define SPECIES_LATI                                    1612
+#define SPECIES_WYRMSPROUT                              1613
+#define SPECIES_SLUGMA_ALOLA                            1614
+#define SPECIES_MAGCARGO_ALOLA                          1615
+#define SPECIES_CLEFFA_GALAR                            1616
+#define SPECIES_CLEFAIRY_GALAR                          1617
 
 
-#define SPECIES_EGG                                     (SPECIES_LATI + 1)
+#define SPECIES_EGG                                     (SPECIES_CLEFAIRY_GALAR + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

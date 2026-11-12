@@ -87,6 +87,20 @@ static const u16 sRaticateFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_RATTATA
 
+#if P_FAMILY_CLEFAIRY
+static const u16 sCleffaFormSpeciesIdTable[] = {
+    SPECIES_CLEFFA,
+    SPECIES_CLEFFA_GALAR,
+    FORM_SPECIES_END,
+};
+
+static const u16 sClefairyFormSpeciesIdTable[] = {
+    SPECIES_CLEFAIRY,
+    SPECIES_CLEFAIRY_GALAR,
+    FORM_SPECIES_END,
+};
+#endif //P_FAMILY_CLEFAIRY
+
 #if P_FAMILY_PIKACHU
 #if P_GEN_2_CROSS_EVOS
 static const u16 sPichuFormSpeciesIdTable[] = {
@@ -749,6 +763,20 @@ static const u16 sSneaselFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_SNEASEL
+
+#if P_FAMILY_SLUGMA
+static const u16 sSlugmaFormSpeciesIdTable[] = {
+    SPECIES_SLUGMA,
+    SPECIES_SLUGMA_ALOLA,
+    FORM_SPECIES_END,
+};
+
+static const u16 sMagcargoFormSpeciesIdTable[] = {
+    SPECIES_MAGCARGO,
+    SPECIES_MAGCARGO_ALOLA,
+    FORM_SPECIES_END,
+};
+#endif //P_FAMILY_SLUGMA
 
 #if P_FAMILY_TEDDIURSA
 static const u16 sUrsalunaFormSpeciesIdTable[] = {
